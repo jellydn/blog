@@ -1,10 +1,12 @@
 ---
 title: Welcome to my experimental world
-date:
+date: 08/07/2020 12:00 AM +0800
 author: Dung Huynh
-hero_image: '/uploads/productsway.jpeg'
----
+hero_image: "/uploads/productsway.jpeg"
+description: I’m Dung Huynh Duc. I work at AirCarbon as a Software Engineer. I often
+  get into something new and always feel exciting when trying with new/hot technology.
 
+---
 # Hello there
 
 I’m Dung Huynh Duc. I work at [AirCarbon](https://aircarbon.co/) as a Software Engineer. I often get into something new and always feel exciting when trying with new/hot technology.
