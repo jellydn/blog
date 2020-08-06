@@ -29,7 +29,7 @@ fields:
     required: true
     date_format: 
     time_format: 
-    display_utc: false
+    display_utc: true
   default: now
 pages:
 - posts/welcome-to-my-experimental-world.md
