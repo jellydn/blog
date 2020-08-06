@@ -2,11 +2,6 @@
 label: Post
 hide_body: false
 fields:
-- name: title
-  type: text
-  config:
-    required: true
-  label: Title
 - name: author
   type: textarea
   default: ''
@@ -16,11 +11,6 @@ fields:
     schema:
       format: markdown
   label: Author
-- name: hero_image
-  type: file
-  config:
-    maxSize: 64
-  label: Hero Image
 - name: date
   type: datetime
   label: Date
@@ -31,5 +21,15 @@ fields:
     time_format: 
     display_utc: true
   default: now
+- name: hero_image
+  type: file
+  config:
+    maxSize: 64
+  label: Hero Image
+- name: title
+  type: text
+  config:
+    required: true
+  label: Title
 pages:
 - posts/welcome-to-my-experimental-world.md
