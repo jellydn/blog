@@ -5,39 +5,31 @@ fields:
 - name: title
   type: text
   config:
-    required: false
+    required: true
   label: Title
-- name: description
+- name: author
   type: textarea
   default: ''
   config:
-    required: false
+    required: true
     wysiwyg: false
     schema:
       format: markdown
-  label: Description
-- name: thumbnail_image
+  label: Author
+- name: hero_image
   type: file
   config:
     maxSize: 64
-  label: Thumbnail Image
-- name: created_at
+  label: Hero Image
+- name: date
   type: datetime
-  label: Created at
+  label: Date
   description: ''
   config:
-    required: false
+    required: true
     date_format: 
     time_format: 
     display_utc: false
-- name: published_at
-  type: datetime
-  label: Published at
-  description: ''
-  config:
-    required: false
-    date_format: 
-    time_format: 
-    display_utc: false
+  default: now
 pages:
 - posts/welcome-to-my-experimental-world.md
