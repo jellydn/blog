@@ -12,6 +12,6 @@ hero_image: "/uploads/productsway.jpeg"
 ---
 Hello there
 
-I’m Dung Huynh Duc. I work at [AirCarbon](https://aircarbon.co/) as a Software Engineer. I often get into something new and always feel exciting when trying with new/hot technology. 
+I’m Dung Huynh Duc. I work at [AirCarbon](https://aircarbon.co/) as a Software Engineer. I often get into something new and always feel exciting when trying with new/hot technology.
 
-Hopefully, you would find something useful for you on my blog.
+For upcoming posts, I will write some short article which is `TIL`(Today I learned) and some dedicated articles about website development. Hopefully, you would find something useful for you on my blog.
