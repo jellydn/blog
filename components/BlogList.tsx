@@ -1,7 +1,8 @@
+/* eslint-disable react/jsx-one-expression-per-line */
 import Link from 'next/link'
 import ReactMarkdown from 'react-markdown'
 
-const BlogList = ({ allBlogs }) => {
+const BlogList = ({ allBlogs }: { allBlogs: any }) => {
   function truncateSummary(content) {
     return content.slice(0, 200).trimEnd()
   }
@@ -17,25 +18,23 @@ const BlogList = ({ allBlogs }) => {
         {allBlogs.length > 0 &&
           allBlogs.map((post) => (
             <Link key={post.slug} href={{ pathname: `/blog/${post.slug}` }}>
-              <a>
-                <li>
-                  <div className="hero_image">
-                    <img
-                      src={post.frontmatter.hero_image}
-                      alt={post.frontmatter.hero_image}
+              <li>
+                <div className="hero_image">
+                  <img
+                    src={post.frontmatter.hero_image}
+                    alt={post.frontmatter.hero_image}
+                  />
+                </div>
+                <div className="blog__info">
+                  <h2>{post.frontmatter.title}</h2>
+                  <h3> {reformatDate(post.frontmatter.date)}</h3>
+                  <p>
+                    <ReactMarkdown
+                      source={truncateSummary(post.frontmatter.description)}
                     />
-                  </div>
-                  <div className="blog__info">
-                    <h2>{post.frontmatter.title}</h2>
-                    <h3> {reformatDate(post.frontmatter.date)}</h3>
-                    <p>
-                      <ReactMarkdown
-                        source={truncateSummary(post.frontmatter.description)}
-                      />
-                    </p>
-                  </div>
-                </li>
-              </a>
+                  </p>
+                </div>
+              </li>
             </Link>
           ))}
       </ul>

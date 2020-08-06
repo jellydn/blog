@@ -1,8 +1,17 @@
-import Layout from '../components/Layout'
 import matter from 'gray-matter'
 import ReactMarkdown from 'react-markdown'
 
-export default function Info({ frontmatter, markdownBody, title }) {
+import Layout from '../components/Layout'
+
+export default function Info({
+  frontmatter,
+  markdownBody,
+  title,
+}: {
+  frontmatter: Record<string, any>
+  markdownBody: string
+  title: string
+}) {
   return (
     <Layout
       pathname="info"
@@ -12,29 +21,32 @@ export default function Info({ frontmatter, markdownBody, title }) {
       <section className="info_blurb">
         <ReactMarkdown source={markdownBody} />
       </section>
-      <style jsx>{`
-        .info_blurb {
-          max-width: 800px;
-          padding: 1.5rem 1.25rem;
-        }
-
-        @media (min-width: 768px) {
+      <style jsx>
+        {`
           .info_blurb {
-            padding: 2rem;
+            max-width: 800px;
+            padding: 1.5rem 1.25rem;
           }
-        }
 
-        @media (min-width: 1440px) {
-          .info_blurb {
-            padding: 3rem;
+          @media (min-width: 768px) {
+            .info_blurb {
+              padding: 2rem;
+            }
           }
-        }
-      `}</style>
+
+          @media (min-width: 1440px) {
+            .info_blurb {
+              padding: 3rem;
+            }
+          }
+        `}
+      </style>
     </Layout>
   )
 }
 
 export async function getStaticProps() {
+  // @ts-expect-error there is no types for md
   const content = await import(`../data/info.md`)
   const config = await import(`../data/config.json`)
   const data = matter(content.default)

@@ -1,21 +1,30 @@
 import Header from './Header'
 import Meta from './Meta'
 
-export default function Layout(props) {
+export default function Layout({
+  pathname,
+  bgColor,
+  siteTitle,
+  siteDescription,
+  children,
+}: {
+  pathname?: string
+  siteTitle: string
+  bgColor?: string
+  siteDescription?: string
+  children?: any
+}) {
   return (
     <section
-      className={`layout ${props.pathname == 'info' && 'info_page'}`}
+      className={`layout ${pathname === 'info' && 'info_page'}`}
       style={{
-        backgroundColor: `${props.bgColor && props.bgColor}`,
-        color: `${props.pathname == 'info' && 'white'}`,
+        backgroundColor: `${bgColor && bgColor}`,
+        color: `${pathname === 'info' && 'white'}`,
       }}
     >
-      <Meta
-        siteTitle={props.siteTitle}
-        siteDescription={props.siteDescription}
-      />
-      <Header siteTitle={props.siteTitle} />
-      <div className="content">{props.children}</div>
+      <Meta siteTitle={siteTitle} siteDescription={siteDescription} />
+      <Header siteTitle={siteTitle} />
+      <div className="content">{children}</div>
       <style jsx>
         {`
           .layout {

@@ -1,11 +1,20 @@
 import * as React from 'react'
 import matter from 'gray-matter'
 import ReactMarkdown from 'react-markdown'
-const glob = require('glob')
 
 import Layout from '../../components/Layout'
 
-export default function BlogTemplate({ frontmatter, markdownBody, siteTitle }) {
+const glob = require('glob')
+
+export default function BlogTemplate({
+  frontmatter,
+  markdownBody,
+  siteTitle,
+}: {
+  frontmatter: Record<string, any>
+  markdownBody: string
+  siteTitle: string
+}) {
   function reformatDate(fullDate) {
     const date = new Date(fullDate)
     return date.toDateString().slice(4)
@@ -35,7 +44,10 @@ export default function BlogTemplate({ frontmatter, markdownBody, siteTitle }) {
         <div className="blog__body">
           <ReactMarkdown source={markdownBody} />
         </div>
-        <h2 className="blog__footer">Written By: {frontmatter.author}</h2>
+        <h2 className="blog__footer">
+          Written By:
+          {frontmatter.author}
+        </h2>
       </article>
       <style jsx>
         {`
@@ -188,10 +200,10 @@ export async function getStaticProps({ ...ctx }) {
 }
 
 export async function getStaticPaths() {
-  //get all .md files in the posts dir
+  // get all .md files in the posts dir
   const blogs = glob.sync('posts/**/*.md')
 
-  //remove path and extension to leave filename only
+  // remove path and extension to leave filename only
   const blogSlugs = blogs.map((file) =>
     file.split('/')[1].replace(/ /g, '-').slice(0, -3).trim()
   )

@@ -2,15 +2,19 @@ import matter from 'gray-matter'
 import Layout from '../components/Layout'
 import BlogList from '../components/BlogList'
 
-const Index = (props) => {
+const Index = ({
+  title,
+  description,
+  allBlogs,
+}: {
+  title: string
+  description: string
+  allBlogs: any
+}) => {
   return (
-    <Layout
-      pathname="/"
-      siteTitle={props.title}
-      siteDescription={props.description}
-    >
+    <Layout pathname="/" siteTitle={title} siteDescription={description}>
       <section>
-        <BlogList allBlogs={props.allBlogs} />
+        <BlogList allBlogs={allBlogs} />
       </section>
     </Layout>
   )
@@ -20,7 +24,7 @@ export default Index
 
 export async function getStaticProps() {
   const siteConfig = await import(`../data/config.json`)
-  //get posts & context from folder
+  // get posts & context from folder
   const posts = ((context) => {
     const keys = context.keys()
     const values = keys.map(context)
@@ -28,7 +32,7 @@ export async function getStaticProps() {
     const data = keys.map((key, index) => {
       // Create slug from filename
       const slug = key
-        .replace(/^.*[\\\/]/, '')
+        .replace(/^.*[\\/]/, '')
         .split('.')
         .slice(0, -1)
         .join('.')
@@ -42,6 +46,7 @@ export async function getStaticProps() {
       }
     })
     return data
+    // @ts-expect-error this is special function from webpack, refer https://stackoverflow.com/questions/54059179/what-is-require-context
   })(require.context('../posts', true, /\.md$/))
 
   return {
