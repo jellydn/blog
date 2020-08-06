@@ -30,7 +30,7 @@ const BlogList = ({ allBlogs }) => {
                     <h3> {reformatDate(post.frontmatter.date)}</h3>
                     <p>
                       <ReactMarkdown
-                        source={truncateSummary(post.markdownBody)}
+                        source={truncateSummary(post.frontmatter.description)}
                       />
                     </p>
                   </div>
