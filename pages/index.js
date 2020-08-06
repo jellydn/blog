@@ -2,7 +2,7 @@ import matter from 'gray-matter'
 import Layout from '../components/Layout'
 import BlogList from '../components/BlogList'
 
-const Index = props => {
+const Index = (props) => {
   return (
     <Layout
       pathname="/"
@@ -21,7 +21,7 @@ export default Index
 export async function getStaticProps() {
   const siteConfig = await import(`../data/config.json`)
   //get posts & context from folder
-  const posts = (context => {
+  const posts = ((context) => {
     const keys = context.keys()
     const values = keys.map(context)
 

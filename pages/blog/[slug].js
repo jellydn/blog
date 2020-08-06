@@ -192,16 +192,12 @@ export async function getStaticPaths() {
   const blogs = glob.sync('posts/**/*.md')
 
   //remove path and extension to leave filename only
-  const blogSlugs = blogs.map(file =>
-    file
-      .split('/')[1]
-      .replace(/ /g, '-')
-      .slice(0, -3)
-      .trim()
+  const blogSlugs = blogs.map((file) =>
+    file.split('/')[1].replace(/ /g, '-').slice(0, -3).trim()
   )
 
   // create paths with `slug` param
-  const paths = blogSlugs.map(slug => `/blog/${slug}`)
+  const paths = blogSlugs.map((slug) => `/blog/${slug}`)
   return {
     paths,
     fallback: false,
