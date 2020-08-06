@@ -2,10 +2,9 @@
 title: info page
 background_color: '#AEC4BE'
 ---
-## This blog was created using [TinaCMS](https://tinacms.org) & [NextJS](https://nextjs.org/) 
 
-## To get started, read the TinaCMS [docs](https://tinacms.org/docs) or checkout the [repository](https://github.com/kendallstrautman/brevifolia-next-tinacms).
+## This blog was created using [Forestry](https://forestry.io/) & [NextJS](https://nextjs.org/)
 
-- ## Email: [hello@tinacms.org]
-- ## Twitter: [@tina_cms](https://twitter.com/tina_cms)
-- ## Github: [tinacms](https://github.com/tinacms/tinacms)
+- ## Email: [contact@productsway.com]
+- ## Twitter: [@jellydn](https://twitter.com/jellydn)
+- ## Github: [jellydn](https://github.com/jellydn/jellydn)
