@@ -16,15 +16,6 @@ fields:
     schema:
       format: markdown
   label: Description
-- name: content
-  type: textarea
-  default: ''
-  config:
-    required: false
-    wysiwyg: false
-    schema:
-      format: markdown
-  label: Content
 - name: thumbnail_image
   type: file
   config:
@@ -48,3 +39,5 @@ fields:
     date_format: 
     time_format: 
     display_utc: false
+pages:
+- posts/welcome-to-my-experimental-world.md
