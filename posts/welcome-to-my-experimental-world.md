@@ -5,7 +5,7 @@ content: ''
 thumbnail_image: "/uploads/productsway.jpeg"
 created_at: '2020-09-02T00:00:00.000+08:00'
 published_at: ''
-date: 2020-08-06T00:00:00+08:00
+date: 
 author: Dung Huynh
 hero_image: "/uploads/productsway.jpeg"
 

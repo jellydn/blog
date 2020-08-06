@@ -26,7 +26,7 @@ fields:
   label: Date
   description: ''
   config:
-    required: true
+    required: false
     date_format: 
     time_format: 
     display_utc: true
