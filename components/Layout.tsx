@@ -1,56 +1,30 @@
 import Header from './Header'
 import Meta from './Meta'
+import Footer from './Footer'
+import HeroIntro from './HeroIntro'
+import Projects from './Projects'
 
 export default function Layout({
-  pathname,
-  bgColor,
   siteTitle,
   siteDescription,
   children,
 }: {
-  pathname?: string
   siteTitle: string
-  bgColor?: string
   siteDescription?: string
   children?: any
 }) {
   return (
-    <section
-      className={`layout ${pathname === 'info' && 'info_page'}`}
-      style={{
-        backgroundColor: `${bgColor && bgColor}`,
-        color: `${pathname === 'info' && 'white'}`,
-      }}
-    >
+    <>
       <Meta siteTitle={siteTitle} siteDescription={siteDescription} />
-      <Header siteTitle={siteTitle} />
-      <div className="content">{children}</div>
-      <style jsx>
-        {`
-          .layout {
-            overflow-x: hidden;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-          }
-          .layout .info_page {
-            color: #ebebeb;
-          }
-          .content {
-            flex-grow: 1;
-          }
-          @media (min-width: 768px) {
-            .layout {
-              display: block;
-            }
-            .content {
-              flex-grow: none;
-              width: 70vw;
-              margin-left: 30vw;
-            }
-          }
-        `}
-      </style>
-    </section>
+      <main className="font-sans bg-white">
+        <div>
+          <Header siteTitle={siteTitle} />
+          <HeroIntro />
+          {children}
+          <Projects />
+          <Footer />
+        </div>
+      </main>
+    </>
   )
 }

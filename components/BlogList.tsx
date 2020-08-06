@@ -1,134 +1,34 @@
-/* eslint-disable react/jsx-one-expression-per-line */
-import Link from 'next/link'
-import ReactMarkdown from 'react-markdown'
-
 const BlogList = ({ allBlogs }: { allBlogs: any }) => {
-  function truncateSummary(content) {
-    return content.slice(0, 200).trimEnd()
-  }
-
   function reformatDate(fullDate) {
     const date = new Date(fullDate)
     return date.toDateString().slice(4)
   }
 
   return (
-    <>
-      <ul className="list">
-        {allBlogs.length > 0 &&
-          allBlogs.map((post) => (
-            <Link key={post.slug} href={{ pathname: `/blog/${post.slug}` }}>
-              <li>
-                <div className="hero_image">
-                  <img
-                    src={post.frontmatter.hero_image}
-                    alt={post.frontmatter.hero_image}
-                  />
+    <section className="bg-white py-20">
+      <div className="max-w-5xl px-6 mx-auto text-center">
+        <h2 className="text-2xl font-semibold text-gray-800">Latest Posts</h2>
+        <div className="flex flex-col items-center justify-center mt-6">
+          {allBlogs.length > 0 &&
+            allBlogs.map((post) => (
+              <a
+                className="max-w-2xl w-full block bg-white shadow-md rounded-md border-t-4 border-indigo-600 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+                key={post.slug}
+                href={`/blog/${post.slug}`}
+              >
+                <div className="flex items-center justify-between px-4 py-2">
+                  <h3 className="text-lg font-medium text-gray-700">
+                    {post.frontmatter.title}
+                  </h3>
+                  <span className="block text-gray-600 font-light text-sm">
+                    {reformatDate(post.frontmatter.date)}
+                  </span>
                 </div>
-                <div className="blog__info">
-                  <h2>{post.frontmatter.title}</h2>
-                  <h3> {reformatDate(post.frontmatter.date)}</h3>
-                  <p>
-                    <ReactMarkdown
-                      source={truncateSummary(post.frontmatter.description)}
-                    />
-                  </p>
-                </div>
-              </li>
-            </Link>
-          ))}
-      </ul>
-      <style jsx>
-        {`
-          margin-bottom: 0;
-          a:hover {
-            opacity: 1;
-          }
-          a:hover li div.hero_image img {
-            opacity: 0.8;
-            transition: opacity 0.3s ease;
-          }
-          a:hover li .blog__info h2,
-          a:hover li .blog__info h3,
-          a:hover li .blog__info p {
-            transform: translateX(10px);
-            transition: transform 0.5s ease-out;
-          }
-          .hero_image {
-            width: 100%;
-            height: 33vh;
-            overflow: hidden;
-            background-color: #000;
-          }
-          .hero_image img {
-            object-fit: cover;
-            object-position: 50% 50%;
-            opacity: 1;
-            transition: opacity 0.3s ease;
-            min-height: 100%;
-          }
-          .blog__info {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding: 1.5rem 1.25rem;
-            transform: translateX(0px);
-            transition: transform 0.3s ease-in;
-            border-bottom: 1px solid #ebebeb;
-          }
-          .blog__info h2,
-          .blog__info h3,
-          .blog__info p {
-            transform: translateX(0px);
-            transition: transform 0.5s ease-out;
-          }
-          li {
-            opacity: inherit;
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            min-height: 38vh;
-            margin-bottom: 0;
-          }
-          h2 {
-            margin-bottom: 0.5rem;
-          }
-          h3 {
-            margin-bottom: 1rem;
-          }
-          p {
-            max-width: 900px;
-          }
-          @media (min-width: 768px) {
-            li {
-              min-height: 250px;
-              height: 33.333vh;
-              flex-direction: row;
-            }
-            .hero_image {
-              height: 100%;
-            }
-            .hero_image img {
-              min-width: 100%;
-              height: 100%;
-              width: auto;
-              min-height: 0;
-            }
-            .blog__info {
-              min-width: 70%;
-            }
-          }
-          @media (min-width: 1280px) {
-            .blog__info {
-              padding: 3rem;
-            }
-            h3 {
-              margin-bottom: 1.2rem;
-            }
-          }
-        `}
-      </style>
-    </>
+              </a>
+            ))}
+        </div>
+      </div>
+    </section>
   )
 }
 

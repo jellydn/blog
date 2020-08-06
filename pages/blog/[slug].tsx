@@ -56,17 +56,17 @@ export default function BlogTemplate({
           }
 
           .blog__hero {
-            min-height: 300px;
-            height: 60vh;
             width: 100%;
             margin: 0;
+            justify-content: center;
+            display: flex;
             overflow: hidden;
           }
           .blog__hero img {
+            margin: 10px;
             margin-bottom: 0;
             object-fit: cover;
             min-height: 100%;
-            min-width: 100%;
             object-position: center;
           }
 
@@ -150,10 +150,6 @@ export default function BlogTemplate({
               margin-left: 1.5rem;
               margin-bottom: 1.5rem;
             }
-            .blog__hero {
-              min-height: 600px;
-              height: 75vh;
-            }
             .blog__info {
               text-align: center;
               padding: 2rem 0;
@@ -168,9 +164,6 @@ export default function BlogTemplate({
           }
 
           @media (min-width: 1440px) {
-            .blog__hero {
-              height: 70vh;
-            }
             .blog__info {
               padding: 3rem 0;
             }

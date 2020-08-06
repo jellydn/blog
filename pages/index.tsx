@@ -12,7 +12,7 @@ const Index = ({
   allBlogs: any
 }) => {
   return (
-    <Layout pathname="/" siteTitle={title} siteDescription={description}>
+    <Layout siteTitle={title} siteDescription={description}>
       <section>
         <BlogList allBlogs={allBlogs} />
       </section>

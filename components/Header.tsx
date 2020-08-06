@@ -1,67 +1,66 @@
-import Link from 'next/link'
-
 export default function Header({ siteTitle }: { siteTitle: string }) {
   return (
-    <header className="header">
-      <nav className="nav" role="navigation" aria-label="main navigation">
-        <Link href="/">
-          <h1>{siteTitle}</h1>
-        </Link>
-        <div>
-          <Link
-            href={`${
-              typeof window !== 'undefined' &&
-              window.location.pathname === '/info'
-                ? '/'
-                : '/info'
-            }`}
-          >
-            <h1>
-              {`${
-                typeof window !== 'undefined' &&
-                window.location.pathname === '/info'
-                  ? 'close'
-                  : 'info'
-              }`}
-            </h1>
-          </Link>
+    <header className="bg-white shadow border-t-4 border-indigo-600">
+      <div className="container mx-auto px-6 py-4">
+        <div className="flex items-center justify-between">
+          <div>
+            <a
+              className="flex items-center text-gray-800 hover:text-indigo-600"
+              href="/"
+            >
+              <svg
+                className="h-6 w-6 sm:h-6 sm:w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                />
+              </svg>
+              <span className="mx-3 font-medium text-sm md:text-base">
+                {siteTitle}
+              </span>
+            </a>
+          </div>
+          <div className="flex items-center -mx-2">
+            <a
+              className="flex items-center mx-2 text-gray-800 hover:text-indigo-600"
+              href="/resume.pdf"
+            >
+              <svg
+                className="h-5 w-5 sm:h-6 sm:w-6"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19 11H5M19 11C20.1046 11 21 11.8954 21 13V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V13C3 11.8954 3.89543 11 5 11M19 11V9C19 7.89543 18.1046 7 17 7M5 11V9C5 7.89543 5.89543 7 7 7M7 7V5C7 3.89543 7.89543 3 9 3H15C16.1046 3 17 3.89543 17 5V7M7 7H17"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </a>
+            <a
+              className="flex items-center mx-2 text-gray-800 hover:text-indigo-600"
+              href="https://github.com/jellydn"
+            >
+              <svg
+                className="h-5 w-5 sm:h-6 sm:w-6 fill-current"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path d="M256,32C132.3,32,32,134.9,32,261.7c0,101.5,64.2,187.5,153.2,217.9a17.56,17.56,0,0,0,3.8.4c8.3,0,11.5-6.1,11.5-11.4,0-5.5-.2-19.9-.3-39.1a102.4,102.4,0,0,1-22.6,2.7c-43.1,0-52.9-33.5-52.9-33.5-10.2-26.5-24.9-33.6-24.9-33.6-19.5-13.7-.1-14.1,1.4-14.1h.1c22.5,2,34.3,23.8,34.3,23.8,11.2,19.6,26.2,25.1,39.6,25.1a63,63,0,0,0,25.6-6c2-14.8,7.8-24.9,14.2-30.7-49.7-5.8-102-25.5-102-113.5,0-25.1,8.7-45.6,23-61.6-2.3-5.8-10-29.2,2.2-60.8a18.64,18.64,0,0,1,5-.5c8.1,0,26.4,3.1,56.6,24.1a208.21,208.21,0,0,1,112.2,0c30.2-21,48.5-24.1,56.6-24.1a18.64,18.64,0,0,1,5,.5c12.2,31.6,4.5,55,2.2,60.8,14.3,16.1,23,36.6,23,61.6,0,88.2-52.4,107.6-102.3,113.3,8,7.1,15.2,21.1,15.2,42.5,0,30.7-.3,55.5-.3,63,0,5.4,3.1,11.5,11.4,11.5a19.35,19.35,0,0,0,4-.4C415.9,449.2,480,363.1,480,261.7,480,134.9,379.7,32,256,32Z" />
+              </svg>
+            </a>
+          </div>
         </div>
-      </nav>
-      <style jsx>
-        {`
-          h1 {
-            margin-bottom: 0;
-          }
-          h1:hover {
-            cursor: pointer;
-          }
-          nav {
-            padding: 1.5rem 1.25rem;
-            border-bottom: 1px solid #ebebeb;
-            display: flex;
-            justify-content: space-between;
-            flex-direction: row;
-            align-items: center;
-          }
-          @media (min-width: 768px) {
-            .header {
-              height: 100vh;
-              position: fixed;
-              left: 0;
-              top: 0;
-            }
-            .nav {
-              padding: 2rem;
-              width: 30vw;
-              height: 100%;
-              border-right: 1px solid #ebebeb;
-              border-bottom: none;
-              flex-direction: column;
-              align-items: flex-start;
-            }
-          }
-        `}
-      </style>
+      </div>
     </header>
   )
 }
