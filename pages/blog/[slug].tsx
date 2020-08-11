@@ -31,12 +31,14 @@ export default function BlogTemplate({
   return (
     <Layout siteTitle={siteTitle}>
       <article className="blog">
-        <figure className="blog__hero">
-          <img
-            src={frontmatter.hero_image}
-            alt={`blog_hero_${frontmatter.title}`}
-          />
-        </figure>
+        {frontmatter.hero_image && (
+          <figure className="blog__hero">
+            <img
+              src={frontmatter.hero_image}
+              alt={`blog_hero_${frontmatter.title}`}
+            />
+          </figure>
+        )}
         <div className="blog__info">
           <h1>{frontmatter.title}</h1>
           <h3>{reformatDate(frontmatter.date)}</h3>
