@@ -30,151 +30,50 @@ export default function BlogTemplate({
 
   return (
     <Layout siteTitle={siteTitle}>
-      <article className="blog">
-        {frontmatter.hero_image && (
-          <figure className="blog__hero">
+      <main className="container mt-10 mx-auto text-cente">
+        <div className="mb-4 md:mb-0 w-full mx-auto relative">
+          <div className="px-4 lg:px-0">
+            <h2 className="text-4xl font-semibold text-gray-800 leading-tight">
+              {frontmatter.title}
+            </h2>
+            <h3>{reformatDate(frontmatter.date)}</h3>
+          </div>
+
+          {frontmatter.hero_image && (
             <img
               src={frontmatter.hero_image}
               alt={`blog_hero_${frontmatter.title}`}
+              className="object-cover lg:rounded justify-center"
             />
-          </figure>
-        )}
-        <div className="blog__info">
-          <h1>{frontmatter.title}</h1>
-          <h3>{reformatDate(frontmatter.date)}</h3>
+          )}
         </div>
-        <div className="blog__body">
-          <ReactMarkdown source={markdownBody} />
+
+        <div className="flex flex-col lg:flex-row lg:space-x-12">
+          <div className="px-4 lg:px-0 mt-12 text-gray-700 text-lg leading-relaxed w-full lg:w-3/4">
+            <ReactMarkdown source={markdownBody} />
+          </div>
+
+          <div className="w-full lg:w-1/4 m-auto mt-12 max-w-screen-sm">
+            <div className="p-4 border-t border-b md:border md:rounded">
+              <div className="flex py-2">
+                <div>
+                  <p className="font-semibold text-gray-700 text-sm">
+                    {frontmatter.author}
+                  </p>
+                  <p className="font-semibold text-gray-600 text-xs">Editor</p>
+                </div>
+              </div>
+              <button
+                type="button"
+                className="px-2 py-1 text-gray-100 bg-green-700 flex w-full items-center justify-center rounded"
+              >
+                Follow
+                <i className="bx bx-user-plus ml-2" />
+              </button>
+            </div>
+          </div>
         </div>
-        <h2 className="blog__footer">
-          Written By:
-          {frontmatter.author}
-        </h2>
-      </article>
-      <style jsx>
-        {`
-          .blog h1 {
-            margin-bottom: 0.7rem;
-          }
-
-          .blog__hero {
-            width: 100%;
-            margin: 0;
-            justify-content: center;
-            display: flex;
-            overflow: hidden;
-          }
-          .blog__hero img {
-            margin: 10px;
-            margin-bottom: 0;
-            object-fit: cover;
-            min-height: 100%;
-            object-position: center;
-          }
-
-          .blog__info {
-            padding: 1.5rem 1.25rem;
-            width: 100%;
-            max-width: 768px;
-            margin: 0 auto;
-          }
-          .blog__info h1 {
-            margin-bottom: 0.66rem;
-          }
-          .blog__info h3 {
-            margin-bottom: 0;
-          }
-
-          .blog__body {
-            width: 100%;
-            padding: 0 1.25rem;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-          }
-          .blog__body a {
-            padding-bottom: 1.5rem;
-          }
-          .blog__body:last-child {
-            margin-bottom: 0;
-          }
-          .blog__body h1 h2 h3 h4 h5 h6 p {
-            font-weight: normal;
-          }
-          .blog__body p {
-            color: inherit;
-          }
-          .blog__body ul {
-            list-style: initial;
-          }
-          .blog__body ul ol {
-            margin-left: 1.25rem;
-            margin-bottom: 1.25rem;
-            padding-left: 1.45rem;
-          }
-
-          .blog__footer {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1.5rem 1.25rem;
-            width: 100%;
-            max-width: 800px;
-            margin: 0 auto;
-          }
-          .blog__footer h2 {
-            margin-bottom: 0;
-          }
-          .blog__footer a {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-          }
-          .blog__footer a svg {
-            width: 20px;
-          }
-
-          @media (min-width: 768px) {
-            .blog {
-              display: flex;
-              flex-direction: column;
-            }
-            .blog__body {
-              max-width: 800px;
-              padding: 0 2rem;
-            }
-            .blog__body span {
-              width: 100%;
-              margin: 1.5rem auto;
-            }
-            .blog__body ul ol {
-              margin-left: 1.5rem;
-              margin-bottom: 1.5rem;
-            }
-            .blog__info {
-              text-align: center;
-              padding: 2rem 0;
-            }
-            .blog__info h1 {
-              max-width: 500px;
-              margin: 0 auto 0.66rem auto;
-            }
-            .blog__footer {
-              padding: 2.25rem;
-            }
-          }
-
-          @media (min-width: 1440px) {
-            .blog__info {
-              padding: 3rem 0;
-            }
-            .blog__footer {
-              padding: 2rem 2rem 3rem 2rem;
-            }
-          }
-        `}
-      </style>
+      </main>
     </Layout>
   )
 }
