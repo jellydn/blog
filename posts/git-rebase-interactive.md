@@ -2,7 +2,7 @@
 date: 08/11/2020 10:34 PM +0800
 author: Dung Huynh
 hero_image: ''
-title: Git Rebase Interactive
+title: "#TIL 1 - Git Rebase Interactive"
 description: ''
 
 ---
