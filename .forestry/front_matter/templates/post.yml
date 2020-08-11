@@ -42,4 +42,5 @@ fields:
       format: markdown
   label: Description
 pages:
+- posts/git-rebase-interactive.md
 - posts/welcome-to-my-experimental-world.md
