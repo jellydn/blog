@@ -2,7 +2,7 @@
 date: 08/12/2020 2:35 PM +0800
 author: Dung Huynh
 hero_image: ''
-title: Create and apply git patch from a commit hash
+title: "#TIL 2 - Create and apply git patch from a commit hash"
 description: ''
 
 ---
