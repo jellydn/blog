@@ -42,5 +42,6 @@ fields:
       format: markdown
   label: Description
 pages:
+- posts/create-and-apply-git-patch-from-a-commit-hash.md
 - posts/git-rebase-interactive.md
 - posts/welcome-to-my-experimental-world.md
