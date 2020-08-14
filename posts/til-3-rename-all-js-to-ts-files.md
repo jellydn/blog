@@ -6,3 +6,4 @@ title: "#TIL 3 - Rename all JS to TS files"
 description: ''
 
 ---
+    find src -name "*.js" -exec sh -c 'mv "$0" "${0%.js}.ts"' {} \;
