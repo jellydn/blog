@@ -44,4 +44,5 @@ fields:
 pages:
 - posts/create-and-apply-git-patch-from-a-commit-hash.md
 - posts/git-rebase-interactive.md
+- posts/til-3-rename-all-js-to-ts-files.md
 - posts/welcome-to-my-experimental-world.md
