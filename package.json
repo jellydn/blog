@@ -17,7 +17,7 @@
     "raw-loader": "4.0.1",
     "react": "17.0.0-rc.1",
     "react-dom": "17.0.0-rc.1",
-    "react-markdown": "4.3.1",
+    "react-markdown": "5.0.3",
     "webpack": "4.44.1"
   },
   "devDependencies": {
