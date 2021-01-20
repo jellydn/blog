@@ -1,7 +1,7 @@
 export default function Header({ siteTitle }: { siteTitle: string }) {
   return (
-    <header className="bg-white shadow border-t-4 border-indigo-600">
-      <div className="container mx-auto px-6 py-4">
+    <header className="bg-white border-t-4 border-indigo-600 shadow">
+      <div className="container px-6 py-4 mx-auto">
         <div className="flex items-center justify-between">
           <div>
             <a
@@ -9,7 +9,7 @@ export default function Header({ siteTitle }: { siteTitle: string }) {
               href="/"
             >
               <svg
-                className="h-6 w-6 sm:h-6 sm:w-6"
+                className="w-6 h-6 sm:h-6 sm:w-6"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -21,7 +21,7 @@ export default function Header({ siteTitle }: { siteTitle: string }) {
                   d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
                 />
               </svg>
-              <span className="mx-3 font-medium text-sm md:text-base">
+              <span className="mx-3 text-sm font-medium md:text-base">
                 {siteTitle}
               </span>
             </a>
@@ -32,7 +32,7 @@ export default function Header({ siteTitle }: { siteTitle: string }) {
               href="/resume.pdf"
             >
               <svg
-                className="h-5 w-5 sm:h-6 sm:w-6"
+                className="w-5 h-5 sm:h-6 sm:w-6"
                 viewBox="0 0 24 24"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -51,7 +51,7 @@ export default function Header({ siteTitle }: { siteTitle: string }) {
               href="https://github.com/jellydn"
             >
               <svg
-                className="h-5 w-5 sm:h-6 sm:w-6 fill-current"
+                className="w-5 h-5 fill-current sm:h-6 sm:w-6"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
               >
