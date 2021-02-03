@@ -2,7 +2,7 @@
 date: 10/08/2020 12:06 PM +0800
 author: Dung Huynh
 hero_image: ''
-title: "#TIL7 - Use tsconfig.json for ts-node"
+title: "#TIL 7 - Use tsconfig.json for ts-node"
 description: ''
 
 ---
@@ -21,4 +21,3 @@ Use the same tsconfig.json for [https://github.com/TypeStrong/ts-node](https://g
       },
       ...
     =}
-    
