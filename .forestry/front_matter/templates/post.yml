@@ -49,5 +49,6 @@ pages:
 - posts/til-5-delete-all-local-branches-except-master.md
 - posts/til-6-delete-all-users-from-aws-cognito.md
 - posts/til-8-jest-testing-with-absolute-import.md
+- posts/til-9-delete-all-databases-on-mongo-db-on-local.md
 - posts/til7-use-tsconfig.json-for-ts-node.md
 - posts/welcome-to-my-experimental-world.md
