@@ -6,7 +6,7 @@ title: "#TIL 10 - Add User Define Function to TypeORM entity"
 description: ''
 
 ---
-This is a workaround that I found from the TypeORM [issue](https://github.com/typeorm/typeorm/issues/1822#issuecomment-573492291). Simply, the solution would implement as below
+This is a workaround that I found from the [TypeORM](https://typeorm.io/#/) [issue](https://github.com/typeorm/typeorm/issues/1822#issuecomment-573492291). Simply, the solution would implement as below
 
 Step 1: Add custom field to the class entity
 
