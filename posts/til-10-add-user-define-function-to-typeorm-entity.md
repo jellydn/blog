@@ -10,14 +10,14 @@ This is a workaround that I found from the [TypeORM](https://typeorm.io/#/) [iss
 
 Step 1: Add custom field to the class entity
 
-    // add to User.ts entity
-    @Column('int', { insert: false, readonly: true })
-    public qty: number;
+        // add to User.ts entity
+        @Column('int', { insert: false, readonly: true })
+        public qty: number;
 
 Step 2: query the custom field with query builder
 
-    // need to mapping with the convention: table + _ + UDF column (user_qty)
-    .addSelect('dbo.udfFindTotalQty(user.id)', 'user_qty')
-    ...
-    .printSql()
-    .getManyAndCount();
+        // need to mapping with the convention: table + _ + UDF column (user_qty)
+        .addSelect('dbo.udfFindTotalQty(user.id)', 'user_qty')
+        ...
+        .printSql()
+        .getManyAndCount();
