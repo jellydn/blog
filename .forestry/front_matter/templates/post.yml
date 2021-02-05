@@ -44,6 +44,7 @@ fields:
 pages:
 - posts/create-and-apply-git-patch-from-a-commit-hash.md
 - posts/git-rebase-interactive.md
+- posts/til-10-add-user-define-function-to-typeorm-entity.md
 - posts/til-3-rename-all-js-to-ts-files.md
 - posts/til-4-trigger-github-action-base-on-the-comment.md
 - posts/til-5-delete-all-local-branches-except-master.md
