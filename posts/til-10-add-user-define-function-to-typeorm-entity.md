@@ -11,7 +11,8 @@ This is a workaround that I found from the [TypeORM](https://typeorm.io/#/) [iss
 Step 1: Add custom field to the class entity
 
     // add to User.ts entity
-    @Column('int', { select: false })public qty: number;
+    @Column('int', { insert: false, readonly: true })
+    public qty: number;
 
 Step 2: query the custom field with query builder
 
