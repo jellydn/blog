@@ -2,10 +2,10 @@
 date: 08/12/2020 2:35 PM +0800
 author: Dung Huynh
 hero_image: ''
-title: "#TIL 2 - Create and apply git patch from a commit hash"
-description: ''
-
+title: '#TIL 2 - Create and apply git patch from a commit hash'
+description: 'Create a path from other branch and apply to your working branch'
 ---
+
 Create a patch from master then apply to work branch
 
     git checkout master

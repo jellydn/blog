@@ -1,12 +1,9 @@
 import '../styles.css'
 
-function App({
-  Component,
-  pageProps,
-}: {
-  Component: React.ComponentType<any>
-  pageProps: any
-}) {
-  return <Component {...pageProps} />
-}
-export default App
+import { AppProps } from 'next/app'
+
+const MyApp = ({ Component, pageProps }: AppProps) => (
+  <Component {...pageProps} />
+)
+
+export default MyApp

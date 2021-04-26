@@ -1,4 +1,5 @@
 import matter from 'gray-matter'
+
 import Layout from '../components/Layout'
 import BlogList from '../components/BlogList'
 
@@ -10,15 +11,13 @@ const Index = ({
   title: string
   description: string
   allBlogs: any
-}) => {
-  return (
-    <Layout siteTitle={title} siteDescription={description}>
-      <section>
-        <BlogList allBlogs={allBlogs} />
-      </section>
-    </Layout>
-  )
-}
+}) => (
+  <Layout siteTitle={title} siteDescription={description}>
+    <section>
+      <BlogList allBlogs={allBlogs} />
+    </section>
+  </Layout>
+)
 
 export default Index
 
