@@ -35,7 +35,7 @@ const Projects = () => (
               />
             </div>
             <a
-              href="https://use-wait-for-transaction-hash.vercel.app/"
+              href="https://github.com/jellydn/eth-revert-reason"
               className="block mt-5 overflow-hidden transition duration-500 ease-in-out transform bg-gray-700 rounded-md hover:-translate-y-1 hover:scale-110"
             >
               <div className="px-3 py-2 text-sm text-center">
@@ -43,7 +43,7 @@ const Projects = () => (
                   Decode revert reason from failed transaction
                 </p>
                 <span className="block mt-2 text-gray-500">
-                  https://use-wait-for-transaction-hash.vercel.app/
+                  https://github.com/jellydn/eth-revert-reason
                 </span>
               </div>
             </a>
