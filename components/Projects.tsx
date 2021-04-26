@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 const Projects = () => (
   <section className="py-20 bg-gray-800 pattern">
     <div className="max-w-5xl px-6 mx-auto text-center">
@@ -6,7 +8,9 @@ const Projects = () => (
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           <div className="w-full max-w-xs">
             <div className="flex items-center justify-center h-56 overflow-hidden bg-white border-b-8 border-teal-400 rounded-md">
-              <img
+              <Image
+                width="300"
+                height="200"
                 className="object-cover h-56"
                 src="/static/rrandom.png"
                 alt="RRandom"
@@ -28,7 +32,9 @@ const Projects = () => (
           </div>
           <div className="w-full max-w-xs">
             <div className="flex items-center justify-center h-56 overflow-hidden bg-white border-b-8 border-teal-400 rounded-md">
-              <img
+              <Image
+                width="300"
+                height="200"
                 className="object-cover h-56"
                 src="/static/wip.jpeg"
                 alt="Eth Revert Reason"
@@ -50,7 +56,9 @@ const Projects = () => (
           </div>
           <div className="w-full max-w-xs">
             <div className="flex items-center justify-center h-56 overflow-hidden bg-white border-b-8 border-teal-400 rounded-md">
-              <img
+              <Image
+                width="300"
+                height="200"
                 className="object-cover h-56"
                 src="/static/wip.jpeg"
                 alt="Eth Revert Reason"
@@ -73,7 +81,9 @@ const Projects = () => (
           </div>
           <div className="w-full max-w-xs">
             <div className="flex items-center justify-center h-56 overflow-hidden bg-white border-b-8 border-teal-400 rounded-md">
-              <img
+              <Image
+                width="300"
+                height="200"
                 className="object-cover h-56"
                 src="/static/use-wait-for-transaction-hash.png"
                 alt="React hook - use-for-wait-transaction-hash"
@@ -96,7 +106,9 @@ const Projects = () => (
           </div>
           <div className="w-full max-w-xs">
             <div className="flex items-center justify-center h-56 overflow-hidden bg-white border-b-8 border-teal-400 rounded-md">
-              <img
+              <Image
+                width="300"
+                height="200"
                 className="object-cover h-56"
                 src="/static/next-app-starter.png"
                 alt="Next App Starter"
@@ -119,7 +131,9 @@ const Projects = () => (
           </div>
           <div className="w-full max-w-xs">
             <div className="flex items-center justify-center h-56 overflow-hidden bg-white border-b-8 border-teal-400 rounded-md">
-              <img
+              <Image
+                width="300"
+                height="200"
                 className="object-cover h-56"
                 src="/static/svelte-kit-test.png"
                 alt="Svelte-kit app with tailwindcss"
