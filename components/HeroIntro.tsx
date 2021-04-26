@@ -1,7 +1,3 @@
-/* eslint-disable react/jsx-one-expression-per-line */
-import React from 'react'
-
-// TODO: read intro from headless cms (md file)
 const HeroIntro = () => (
   <>
     <section className="mt-20 bg-white">
@@ -19,13 +15,13 @@ const HeroIntro = () => (
       <div className="max-w-5xl px-6 mx-auto text-center">
         <h2 className="text-2xl font-semibold text-white">About Me</h2>
         <p className="mt-4 text-gray-400">
-          I’m a full stack developer. I’m a fast learner and self-taught
-          coder. I often take my time for researching and learning about hot
-          and trending technology.
+          I’m a full stack developer. I’m a fast learner and self-taught coder.
+          I often take my time for researching and learning about hot and
+          trending technology.
         </p>
       </div>
     </section>
   </>
-  )
+)
 
 export default HeroIntro
