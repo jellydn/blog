@@ -117,6 +117,28 @@ const Projects = () => (
               </div>
             </a>
           </div>
+          <div className="w-full max-w-xs">
+            <div className="flex items-center justify-center h-56 overflow-hidden bg-white border-b-8 border-teal-400 rounded-md">
+              <img
+                className="object-cover h-56"
+                src="/static/svelte-kit-test.png"
+                alt="Svelte-kit app with tailwindcss"
+              />
+            </div>
+            <a
+              href="https://github.com/jellydn/svelte-kit-test"
+              className="block mt-5 overflow-hidden transition duration-500 ease-in-out transform bg-gray-700 rounded-md hover:-translate-y-1 hover:scale-110"
+            >
+              <div className="px-3 py-2 text-sm text-center">
+                <p className="text-gray-300">
+                  Svelte-kit app with tailwind css
+                </p>
+                <span className="block mt-2 text-gray-500">
+                  https://svelte-kit-test.web.app
+                </span>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
       <div className="flex items-center justify-center mt-12">
