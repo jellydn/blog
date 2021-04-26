@@ -5,7 +5,7 @@ function Footer() {
         <div className="flex items-center justify-between">
           <div>
             <div className="text-gray-600">
-              © ProductsWay 2020 - {new Date().getFullYear()}.
+              © ProductsWay 2020-{new Date().getFullYear()}.
             </div>
           </div>
         </div>

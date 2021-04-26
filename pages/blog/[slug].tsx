@@ -69,13 +69,32 @@ export default function BlogTemplate({
                   <p className="text-xs font-semibold text-gray-600">Editor</p>
                 </div>
               </div>
-              <button
-                type="button"
-                className="flex items-center justify-center w-full px-2 py-1 text-gray-100 bg-green-700 rounded"
+
+              {/* Twitter button */}
+              <a
+                href="https://twitter.com/jellydn?ref_src=twsrc%5Etfw"
+                className="twitter-follow-button"
+                data-show-count="false"
               >
-                Follow
-                <i className="ml-2 bx bx-user-plus" />
-              </button>
+                Follow @jellydn
+              </a>
+              <script
+                async
+                src="https://platform.twitter.com/widgets.js"
+                charSet="utf-8"
+              />
+              {/* Github button */}
+              <a
+                className="github-button"
+                href="https://github.com/jellydn"
+                data-color-scheme="no-preference: light; light: light; dark: dark;"
+                data-size="large"
+                data-show-count="true"
+                aria-label="Follow @jellydn on GitHub"
+              >
+                Follow @jellydn
+              </a>
+              <script async defer src="https://buttons.github.io/buttons.js" />
             </div>
           </div>
         </div>
