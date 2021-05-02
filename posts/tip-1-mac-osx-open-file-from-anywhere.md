@@ -7,9 +7,10 @@ description: 'How to Allow Apps from Anywhere in macOS Gatekeeper (Big Sur, Cata
   Mojave, Sierra, High Sierra)
 
 '
-
 ---
+
+```sh
     sudo spctl --master-disable
-    
+
     sudo spctl --master-enable
-    
+```

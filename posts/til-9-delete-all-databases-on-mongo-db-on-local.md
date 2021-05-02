@@ -6,4 +6,6 @@ title: '#TIL 9 - Delete all databases on mongo db on local'
 description: 'Simple CLI command for delete all mongodb databases'
 ---
 
+```sh
     mongo --quiet --eval 'db.getMongo().getDBNames().forEach(function(i){db.getSiblingDB(i).dropDatabase()})'
+```

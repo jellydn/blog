@@ -1,3 +1,5 @@
+const kutty = require('kutty')
+
 module.exports = {
   purge: ['./components/**/*.{js,ts,jsx,tsx}', './pages/**/*.{js,ts,jsx,tsx}'],
   theme: {
@@ -8,5 +10,5 @@ module.exports = {
     },
   },
   variants: {},
-  plugins: [],
+  plugins: [kutty],
 }

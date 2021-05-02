@@ -6,4 +6,6 @@ title: '#TIL 3 - Rename all JS to TS files'
 description: 'How to migrate from Javascript file to Typescript file'
 ---
 
+```sh
     find src -name "*.js" -exec sh -c 'mv "$0" "${0%.js}.ts"' {} \;
+```

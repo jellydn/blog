@@ -8,6 +8,7 @@ description: 'How to use tsconfig.json for ts-node'
 
 Use the same tsconfig.json for [https://github.com/TypeStrong/ts-node](https://github.com/TypeStrong/ts-node 'ts-node')
 
+```json
     {
       "ts-node": {
         // these options are overrides used only by ts-node
@@ -20,4 +21,5 @@ Use the same tsconfig.json for [https://github.com/TypeStrong/ts-node](https://g
         ...
       },
       ...
-    =}
+    }
+```

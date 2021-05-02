@@ -6,4 +6,6 @@ title: '#TIL 5 - Delete all local branches except master'
 description: 'Clean up your local branches with one command'
 ---
 
+```sh
     git branch | grep -v "master" | xargs git branch -D
+```

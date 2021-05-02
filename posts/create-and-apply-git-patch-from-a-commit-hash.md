@@ -8,7 +8,9 @@ description: 'Create a path from other branch and apply to your working branch'
 
 Create a patch from master then apply to work branch
 
+```sh
     git checkout master
     git format-patch -1 COMMIT_HASH
     git checkout WORKING_BRANCH
     git am FILE_PATH
+```

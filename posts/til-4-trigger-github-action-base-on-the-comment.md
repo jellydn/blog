@@ -6,6 +6,7 @@ title: '#TIL 4 - Trigger github action base on the comment'
 description: 'Use github issue comment as the CD/CI'
 ---
 
+```sh
     # .github/workflows/comment.yml
     on:
       issue_comment:
@@ -19,3 +20,4 @@ description: 'Use github issue comment as the CD/CI'
         if: github.event.comment.body == 'Build web'
         steps:
          ...
+```

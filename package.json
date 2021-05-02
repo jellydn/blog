@@ -15,11 +15,13 @@
     "next": "10.2.0",
     "next-seo": "4.24.0",
     "node-glob": "1.2.0",
+    "prismjs": "^1.23.0",
     "raw-loader": "4.0.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "react-markdown": "5.0.3",
-    "webpack": "5.36.1"
+    "react-markdown": "6.0.1",
+    "remark-gfm": "^1.0.0",
+    "webpack": "5.36.2"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "4.0.3",
@@ -36,6 +38,7 @@
     "eslint-plugin-jsx-a11y": "6.4.1",
     "eslint-plugin-react": "7.23.2",
     "eslint-plugin-react-hooks": "4.2.0",
+    "kutty": "^0.5.1",
     "postcss-flexbugs-fixes": "5.0.2",
     "postcss-preset-env": "6.7.0",
     "prettier": "2.2.1",
