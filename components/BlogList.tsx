@@ -1,3 +1,6 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import Link from 'next/link'
+
 const BlogList = ({ allBlogs }: { allBlogs: any }) => {
   function reformatDate(fullDate) {
     const date = new Date(fullDate)
@@ -11,20 +14,18 @@ const BlogList = ({ allBlogs }: { allBlogs: any }) => {
         <div className="flex flex-col items-center justify-center mt-6">
           {allBlogs.length > 0 &&
             allBlogs.map((post) => (
-              <a
-                className="block w-full max-w-2xl transition duration-500 ease-in-out transform bg-white border-t-4 border-indigo-600 rounded-md shadow-md hover:-translate-y-1 hover:scale-110"
-                key={post.slug}
-                href={`/blog/${post.slug}`}
-              >
-                <div className="flex items-center justify-between px-4 py-2">
-                  <h3 className="text-lg font-medium text-gray-700">
-                    {post.frontmatter.title}
-                  </h3>
-                  <span className="block text-sm font-light text-gray-600">
-                    {reformatDate(post.frontmatter.date)}
-                  </span>
-                </div>
-              </a>
+              <Link key={post.slug} href={`/blog/${post.slug}`}>
+                <a className="block w-full max-w-2xl transition duration-500 ease-in-out transform bg-white border-t-4 border-indigo-600 rounded-md shadow-md hover:-translate-y-1 hover:scale-110">
+                  <div className="flex items-center justify-between px-4 py-2">
+                    <h3 className="text-lg font-medium text-gray-700">
+                      {post.frontmatter.title}
+                    </h3>
+                    <span className="block text-sm font-light text-gray-600">
+                      {reformatDate(post.frontmatter.date)}
+                    </span>
+                  </div>
+                </a>
+              </Link>
             ))}
         </div>
       </div>
