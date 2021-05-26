@@ -46,7 +46,9 @@ export default function BlogTemplate({
       >
         <div className="w-full mx-auto mb-12 text-left md:w-3/4 lg:w-1/2">
           {frontmatter.hero_image && (
-            <img
+            <Image
+              width="1000"
+              height="200"
               src={frontmatter.hero_image}
               alt={`blog_hero_${frontmatter.title}`}
               className="object-cover w-full h-64 bg-center rounded-lg"

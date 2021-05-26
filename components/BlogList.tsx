@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import Link from 'next/link'
+import Image from 'next/image'
 
 const BlogList = ({ allBlogs }: { allBlogs: any }) => {
   function reformatDate(fullDate) {
@@ -21,7 +22,9 @@ const BlogList = ({ allBlogs }: { allBlogs: any }) => {
             {post.frontmatter.hero_image && (
               <Link key={post.slug} href={`/blog/${post.slug}`}>
                 <a>
-                  <img
+                  <Image
+                    width="50"
+                    height="30"
                     src={post.frontmatter.hero_image}
                     className="object-cover w-full h-56 mb-5 bg-center rounded"
                     alt={post.frontmatter.title}
