@@ -1,7 +1,7 @@
 ---
 date: 02/04/2021 10:33 AM +0800
 author: Dung Huynh
-hero_image: ''
+hero_image: '/static/til.jpeg'
 title: '#TIL 9 - Delete all databases on mongo db on local'
 description: 'Simple CLI command for delete all mongodb databases'
 ---

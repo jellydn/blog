@@ -1,7 +1,7 @@
 ---
 date: 09/01/2020 6:10 PM +0800
 author: Dung Huynh
-hero_image: ''
+hero_image: '/static/til.jpeg'
 title: '#TIL 6 - Delete all users from AWS Cognito'
 description: 'Delete all cognito user from AWS CLI'
 ---

@@ -1,7 +1,7 @@
 ---
 date: 05/21/2021 1:56 AM +0800
 author: Dung Huynh
-hero_image: ''
+hero_image: '/static/til.jpeg'
 title: '#TIL 13 - How to fix refusing to allow an OAuth App to create or update workflow'
 description: The simple solution is Git Credential Manager Core
 ---

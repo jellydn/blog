@@ -1,7 +1,7 @@
 ---
 date: 04/30/2021 9:53 PM +0800
 author: Dung Huynh
-hero_image: ''
+hero_image: '/static/use-wait-for-transaction-hash.png'
 title: React Hook - Use wait for transaction hash
 description: Simple hook for getting transaction status from the ETH network.
 ---
