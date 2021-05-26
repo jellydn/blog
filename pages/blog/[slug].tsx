@@ -39,7 +39,7 @@ export default function BlogTemplate({
         description={siteDescription}
       />
       <article
-        className="px-4 py-24 mx-auto max-w-7xl"
+        className="px-4 py-24 mx-auto"
         itemID="#"
         itemScope
         itemType="http://schema.org/BlogPosting"
@@ -53,6 +53,7 @@ export default function BlogTemplate({
             />
           )}
           <p className="mt-6 mb-2 text-xs font-semibold tracking-wider uppercase text-primary">
+            {/* TODO: add tags */}
             Development
           </p>
           <h1
