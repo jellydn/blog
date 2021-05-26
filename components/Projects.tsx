@@ -12,6 +12,32 @@ const Projects = () => (
                 width="300"
                 height="200"
                 className="object-cover h-56"
+                src="/static/new-web-app.png"
+                alt="Frontend app generator, built on top vitejs"
+              />
+            </div>
+            <a
+              href="https://github.com/jellydn/new-web-app"
+              className="block mt-5 overflow-hidden transition duration-500 ease-in-out transform bg-gray-700 rounded-md hover:-translate-y-1 hover:scale-110"
+            >
+              <div className="px-3 py-2 text-sm text-center">
+                <p className="text-gray-300">
+                  Frontend app generator, built on top vitejs (React +
+                  Typescript + React-Query + TailwindCSS + ESlint + Prettier +
+                  Storybook)
+                </p>
+                <span className="block mt-2 text-gray-500">
+                  https://github.com/jellydn/new-web-app
+                </span>
+              </div>
+            </a>
+          </div>
+          <div className="w-full max-w-xs">
+            <div className="flex items-center justify-center h-56 overflow-hidden bg-white border-b-8 border-teal-400 rounded-md">
+              <Image
+                width="300"
+                height="200"
+                className="object-cover h-56"
                 src="/static/next-validations.png"
                 alt="Svelte-kit app with tailwindcss"
               />
