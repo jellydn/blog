@@ -1,3 +1,4 @@
+import { FeedbackPopup } from 'usermatters-react'
 import { NextSeo } from 'next-seo'
 import Image from 'next/image'
 import matter from 'gray-matter'
@@ -112,6 +113,13 @@ export default function BlogTemplate({
         <div className="w-full mx-auto prose md:w-3/4 lg:w-1/2">
           <ReactMarkdown remarkPlugins={[gfm]}>{markdownBody}</ReactMarkdown>
         </div>
+        <FeedbackPopup project="r1AxH4JBSbo">
+          {({ handleClick }) => (
+            <button type="button" onClick={handleClick}>
+              Feedback
+            </button>
+          )}
+        </FeedbackPopup>
       </article>
     </Layout>
   )
