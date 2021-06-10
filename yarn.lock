@@ -6117,7 +6117,7 @@ usermatters-js@^1.2.8:
     "@popperjs/core" "^2.9.2"
     svelte "^3.38.2"
 
-usermatters-react@^1.2.0:
+usermatters-react@1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/usermatters-react/-/usermatters-react-1.2.0.tgz#738ac3e9f5a51e27400534e0d509ecf7d12c516b"
   integrity sha512-yZKzAZSWzWmbS6hJpYNRyRuwVXYb+lD2FUklIRDErqZdIfbBNfoycufRtOLfqaBBgCScIew4iv+bSpUQcv2EzA==
