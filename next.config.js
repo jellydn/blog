@@ -6,9 +6,6 @@ module.exports = {
     })
     return config
   },
-  future: {
-    webpack5: true,
-  },
   images: {
     domains: ['gyazo.com'],
   },
