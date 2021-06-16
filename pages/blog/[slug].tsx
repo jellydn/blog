@@ -82,44 +82,20 @@ export default function BlogTemplate({
               </p>
             </div>
           </a>
-          <div className="flex items-center mb-6 space-x-2">
-            {/* Twitter button */}
-            <a
-              href="https://twitter.com/jellydn?ref_src=twsrc%5Etfw"
-              className="twitter-follow-button"
-              data-show-count="false"
-            >
-              Follow @jellydn
-            </a>
-            <script
-              async
-              src="https://platform.twitter.com/widgets.js"
-              charSet="utf-8"
-            />
-            {/* Github button */}
-            <a
-              className="github-button"
-              href="https://github.com/jellydn"
-              data-color-scheme="no-preference: light; light: light; dark: dark;"
-              data-size="large"
-              data-show-count="true"
-              aria-label="Follow @jellydn on GitHub"
-            >
-              Follow @jellydn
-            </a>
-            <script async defer src="https://buttons.github.io/buttons.js" />
-          </div>
         </div>
         <div className="w-full mx-auto prose md:w-3/4 lg:w-1/2">
           <ReactMarkdown remarkPlugins={[gfm]}>{markdownBody}</ReactMarkdown>
+          <hr className="mt-4" />
+          <div className="mt-2">
+            <FeedbackPopup project="r1AxH4JBSbo">
+              {({ handleClick }) => (
+                <button type="button" onClick={handleClick}>
+                  Feedback
+                </button>
+              )}
+            </FeedbackPopup>
+          </div>
         </div>
-        <FeedbackPopup project="r1AxH4JBSbo">
-          {({ handleClick }) => (
-            <button type="button" onClick={handleClick}>
-              Feedback
-            </button>
-          )}
-        </FeedbackPopup>
       </article>
     </Layout>
   )

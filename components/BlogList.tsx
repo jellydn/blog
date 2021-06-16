@@ -18,7 +18,7 @@ const BlogList = ({ allBlogs }: { allBlogs: any }) => {
       </p>
       <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
         {allBlogs.map((post) => (
-          <div id={post.slug}>
+          <div key={post.slug} id={post.slug}>
             {post.frontmatter.hero_image && (
               <Link key={post.slug} href={`/blog/${post.slug}`}>
                 <a>
