@@ -57,4 +57,5 @@ pages:
 - posts/til-9-delete-all-databases-on-mongo-db-on-local.md
 - posts/til7-use-tsconfig.json-for-ts-node.md
 - posts/tip-1-mac-osx-open-file-from-anywhere.md
+- posts/truffle-cli-exec-with-arguments.md
 - posts/welcome-to-my-experimental-world.md
