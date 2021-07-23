@@ -49,6 +49,7 @@ pages:
 - posts/til-10-add-user-define-function-to-typeorm-entity.md
 - posts/til-12-fix-the-ssh-issue-with-droplet-on-digital-ocean.md
 - posts/til-13-how-to-fix-refusing-to-allow-an-oauth-app-to-create-or-update-workflow-without-workflow-scope.md
+- posts/til-14-revert-to-1st-commit-with-git-command.md
 - posts/til-3-rename-all-js-to-ts-files.md
 - posts/til-4-trigger-github-action-base-on-the-comment.md
 - posts/til-5-delete-all-local-branches-except-master.md
