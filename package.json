@@ -23,7 +23,7 @@
     "react-markdown": "6.0.2",
     "remark-gfm": "1.0.0",
     "usermatters-react": "1.2.0",
-    "webpack": "5.39.0"
+    "webpack": "5.52.0"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "4.0.3",
