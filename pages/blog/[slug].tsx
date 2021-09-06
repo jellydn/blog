@@ -39,30 +39,26 @@ export default function BlogTemplate({
         title={`${siteTitle} | ${frontmatter.title}`}
         description={siteDescription}
       />
-      <article
-        className="px-4 py-24 mx-auto"
-        itemID="#"
-        itemScope
-        itemType="http://schema.org/BlogPosting"
-      >
-        <div className="w-full mx-auto mb-12 text-left md:w-3/4 lg:w-1/2">
+      <article className="w-full max-w-5xl px-6 py-12 mx-auto">
+        <div data-theme="dark" className="mb-12">
           {frontmatter.hero_image && (
-            <Image
-              width="1000"
-              height="200"
-              src={frontmatter.hero_image}
-              alt={`blog_hero_${frontmatter.title}`}
-              className="object-cover w-full h-64 bg-center rounded-lg"
-            />
+            <div className="avatar">
+              <Image
+                width="1000"
+                height="200"
+                src={frontmatter.hero_image}
+                alt={`blog_hero_${frontmatter.title}`}
+                className="w-24 h-24 mb-8 rounded-btn"
+              />
+            </div>
           )}
-          <p className="mt-6 mb-2 text-xs font-semibold tracking-wider uppercase text-primary">
-            {/* TODO: add tags */}
-            Development
-          </p>
+          {/* TODO: add tags */}
+          <div className="badge badge-primary">Development</div>
+
           <h1
             className="mb-3 text-3xl font-bold leading-tight text-gray-900 md:text-4xl"
             itemProp="headline"
-            title="Rise of Tailwind - A Utility First CSS Framework"
+            title={frontmatter.title}
           >
             {frontmatter.title}
           </h1>
@@ -83,8 +79,10 @@ export default function BlogTemplate({
             </div>
           </a>
         </div>
-        <div className="w-full mx-auto prose md:w-3/4 lg:w-1/2">
-          <ReactMarkdown remarkPlugins={[gfm]}>{markdownBody}</ReactMarkdown>
+        <div className="prose text-black lg:prose-xl">
+          <div data-theme="retro">
+            <ReactMarkdown remarkPlugins={[gfm]}>{markdownBody}</ReactMarkdown>
+          </div>
           <hr className="mt-4" />
           <div className="mt-2">
             <FeedbackPopup project="r1AxH4JBSbo">

@@ -11,6 +11,7 @@ const HeroIntro = () => (
         </h2>
       </div>
     </section>
+
     <section className="py-20 bg-gray-800 pattern">
       <div className="max-w-5xl px-6 mx-auto text-center">
         <h2 className="text-2xl font-semibold text-white">About Me</h2>

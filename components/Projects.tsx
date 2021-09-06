@@ -12,11 +12,88 @@ const Projects = () => (
                 width="300"
                 height="200"
                 className="object-cover h-56"
+                src="https://gyazo.com/1fe5ed77da50835e77e1eae5d5c4ad04.gif"
+                alt="Opinionated Dapp Starter Template"
+              />
+            </div>
+            <a
+              target="_bank"
+              href="https://github.com/jellydn/dapp-starter"
+              className="block mt-5 overflow-hidden transition duration-500 ease-in-out transform bg-gray-700 rounded-md hover:-translate-y-1 hover:scale-110"
+            >
+              <div className="px-3 py-2 text-sm text-center">
+                <p className="text-gray-300">
+                  Opinionated Dapp Starter Template
+                </p>
+                <span className="block mt-2 text-gray-500">
+                  https://github.com/jellydn/dapp-starter
+                </span>
+              </div>
+            </a>
+          </div>
+          <div className="w-full max-w-xs">
+            <div className="flex items-center justify-center h-56 overflow-hidden bg-white border-b-8 border-teal-400 rounded-md">
+              <Image
+                width="300"
+                height="200"
+                className="object-cover h-56"
+                src="https://gyazo.com/c6f068b6fe3e94bfe80d042639784faf.gif"
+                alt="Dapp Example with ERC20 Token and Simple Greeter Contract. Built with Hardhat + EthersJs + React + TypeScript."
+              />
+            </div>
+            <a
+              target="_bank"
+              href="https://github.com/jellydn/react-dapp"
+              className="block mt-5 overflow-hidden transition duration-500 ease-in-out transform bg-gray-700 rounded-md hover:-translate-y-1 hover:scale-110"
+            >
+              <div className="px-3 py-2 text-sm text-center">
+                <p className="text-gray-300">
+                  Dapp Example with ERC20 Token and Simple Greeter Contract.
+                  Built with Hardhat + EthersJs + React + TypeScript.
+                </p>
+                <span className="block mt-2 text-gray-500">
+                  https://github.com/jellydn/react-dapp
+                </span>
+              </div>
+            </a>
+          </div>
+          <div className="w-full max-w-xs">
+            <div className="flex items-center justify-center h-56 overflow-hidden bg-white border-b-8 border-teal-400 rounded-md">
+              <Image
+                width="300"
+                height="200"
+                className="object-cover h-56"
+                src="https://gyazo.com/d6361cc2a18ca3140f2aa9b09fc385ca.gif"
+                alt="How to do your first ICO smart contract"
+              />
+            </div>
+            <a
+              target="_bank"
+              href="https://github.com/jellydn/dapp-token-ico"
+              className="block mt-5 overflow-hidden transition duration-500 ease-in-out transform bg-gray-700 rounded-md hover:-translate-y-1 hover:scale-110"
+            >
+              <div className="px-3 py-2 text-sm text-center">
+                <p className="text-gray-300">
+                  How to do your first ICO smart contract
+                </p>
+                <span className="block mt-2 text-gray-500">
+                  https://github.com/jellydn/dapp-token-ico
+                </span>
+              </div>
+            </a>
+          </div>
+          <div className="w-full max-w-xs">
+            <div className="flex items-center justify-center h-56 overflow-hidden bg-white border-b-8 border-teal-400 rounded-md">
+              <Image
+                width="300"
+                height="200"
+                className="object-cover h-56"
                 src="/static/new-web-app.png"
                 alt="Frontend app generator, built on top vitejs"
               />
             </div>
             <a
+              target="_bank"
               href="https://github.com/jellydn/new-web-app"
               className="block mt-5 overflow-hidden transition duration-500 ease-in-out transform bg-gray-700 rounded-md hover:-translate-y-1 hover:scale-110"
             >
@@ -43,6 +120,7 @@ const Projects = () => (
               />
             </div>
             <a
+              target="_bank"
               href="https://github.com/jellydn/next-validations"
               className="block mt-5 overflow-hidden transition duration-500 ease-in-out transform bg-gray-700 rounded-md hover:-translate-y-1 hover:scale-110"
             >
@@ -68,6 +146,7 @@ const Projects = () => (
               />
             </div>
             <a
+              target="_bank"
               href="https://github.com/jellydn/next-swagger-doc"
               className="block mt-5 overflow-hidden transition duration-500 ease-in-out transform bg-gray-700 rounded-md hover:-translate-y-1 hover:scale-110"
             >
@@ -118,6 +197,7 @@ const Projects = () => (
               />
             </div>
             <a
+              target="_bank"
               href="https://github.com/jellydn/eth-revert-reason"
               className="block mt-5 overflow-hidden transition duration-500 ease-in-out transform bg-gray-700 rounded-md hover:-translate-y-1 hover:scale-110"
             >
@@ -142,6 +222,7 @@ const Projects = () => (
               />
             </div>
             <a
+              target="_bank"
               href="https://github.com/jellydn/vs-code-preset"
               className="block mt-5 overflow-hidden transition duration-500 ease-in-out transform bg-gray-700 rounded-md hover:-translate-y-1 hover:scale-110"
             >
@@ -167,6 +248,7 @@ const Projects = () => (
               />
             </div>
             <a
+              target="_bank"
               href="https://github.com/jellydn/use-wait-for-transaction-hash"
               className="block mt-5 overflow-hidden transition duration-500 ease-in-out transform bg-gray-700 rounded-md hover:-translate-y-1 hover:scale-110"
             >
@@ -192,6 +274,7 @@ const Projects = () => (
               />
             </div>
             <a
+              target="_bank"
               href="https://github.com/jellydn/next-app-starter"
               className="block mt-5 overflow-hidden transition duration-500 ease-in-out transform bg-gray-700 rounded-md hover:-translate-y-1 hover:scale-110"
             >
@@ -217,6 +300,7 @@ const Projects = () => (
               />
             </div>
             <a
+              target="_bank"
               href="https://github.com/jellydn/svelte-kit-test"
               className="block mt-5 overflow-hidden transition duration-500 ease-in-out transform bg-gray-700 rounded-md hover:-translate-y-1 hover:scale-110"
             >
@@ -234,7 +318,7 @@ const Projects = () => (
       </div>
       <div className="flex items-center justify-center mt-12">
         <a
-          className="flex items-center text-white hover:underline hover:text-gray-200"
+          className="flex items-center link link-accent"
           href="https://github.com/jellydn"
         >
           <span>View More On Github</span>

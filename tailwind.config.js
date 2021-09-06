@@ -1,14 +1,21 @@
-const kutty = require('kutty')
-
+/* eslint-disable global-require */
 module.exports = {
-  purge: ['./components/**/*.{js,ts,jsx,tsx}', './pages/**/*.{js,ts,jsx,tsx}'],
-  theme: {
-    extend: {
-      colors: {
-        'accent-1': '#333',
-      },
+  purge: {
+    content: [
+      './components/**/*.{js,ts,jsx,tsx}',
+      './pages/**/*.{js,ts,jsx,tsx}',
+    ],
+    options: {
+      safelist: [/data-theme$/],
     },
   },
-  variants: {},
-  plugins: [kutty],
+  mode: 'jit',
+  darkMode: 'class', // or 'media' or 'class'
+  theme: {
+    extend: {},
+  },
+  variants: {
+    extend: {},
+  },
+  plugins: [require('@tailwindcss/typography'), require('daisyui')],
 }
