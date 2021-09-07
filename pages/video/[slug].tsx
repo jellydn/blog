@@ -52,8 +52,12 @@ export default function VideoTemplate({
               />
             </div>
           )}
-          {/* TODO: add tags */}
-          <div className="badge badge-primary">Development</div>
+
+          {frontmatter.tag.map((tag: string) => (
+            <div key={tag} className="badge badge-primary">
+              {tag}
+            </div>
+          ))}
 
           <h1
             className="mb-3 text-3xl font-bold leading-tight text-gray-900 md:text-4xl"

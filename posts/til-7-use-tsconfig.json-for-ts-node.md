@@ -1,5 +1,8 @@
 ---
 date: 10/08/2020 12:06 PM +0800
+tag:
+  - Typescript
+  - TS-Node
 author: Dung Huynh
 hero_image: '/static/til.jpeg'
 title: '#TIL 7 - Use tsconfig.json for ts-node'

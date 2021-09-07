@@ -1,5 +1,8 @@
 ---
 date: 08/15/2020 12:41 AM +0800
+tag:
+  - TIL
+  - CLI
 author: Dung Huynh
 hero_image: '/static/til.jpeg'
 title: '#TIL 3 - Rename all JS to TS files'

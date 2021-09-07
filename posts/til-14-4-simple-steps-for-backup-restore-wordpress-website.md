@@ -1,5 +1,10 @@
 ---
 date: 09/01/2021 11:31 PM +0800
+tag:
+  - Wordpress
+  - Backup
+  - Restore
+  - Migrate
 author: Dung Huynh
 hero_image: '/static/til.jpeg'
 title: '#TIL 14 - 4 simple steps for backup/restore WordPress website'

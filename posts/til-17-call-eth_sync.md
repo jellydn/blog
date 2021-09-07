@@ -1,5 +1,8 @@
 ---
 date: 09/07/2021 7:43 PM +0800
+tag:
+  - Web3
+  - EthersJs
 author: Dung Huynh
 hero_image: '/static/til.jpeg'
 title: '#TIL 17 - Call eth_sync'

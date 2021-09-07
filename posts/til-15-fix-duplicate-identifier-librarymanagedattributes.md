@@ -1,5 +1,8 @@
 ---
 date: 08/21/2021 10:22 PM +0800
+tag:
+  - React
+  - Typescript
 author: Dung Huynh
 hero_image: '/static/til.jpeg'
 title: "#TIL 15 - Fix Duplicate identifier 'LibraryManagedAttributes'"

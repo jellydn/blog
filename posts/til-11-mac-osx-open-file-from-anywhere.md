@@ -1,5 +1,8 @@
 ---
 date: 04/29/2021 10:36 PM +0800
+tag:
+  - CLI
+  - MacOSX
 author: Dung Huynh
 hero_image: '/static/til.jpeg'
 title: "#TIL 11 - Mac OSX - Open file from anywhere"
