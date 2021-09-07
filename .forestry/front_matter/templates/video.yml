@@ -26,8 +26,3 @@ fields:
   type: tag_list
   default: []
   label: Tag
-- name: youtube_play
-  type: text
-  config:
-    required: false
-  label: Youtube Playlist Id
