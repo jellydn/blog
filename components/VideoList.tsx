@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import Link from 'next/link'
 import Image from 'next/image'
 import dynamic from 'next/dynamic'
@@ -46,8 +47,7 @@ const VideoList = ({ allVideos }: { allVideos: any }) => {
               </Link>
             </h2>
             <YoutubeVideo
-              videoId="LXRgV99S0Zk"
-              // videoId={post.frontmatter.youtube_id}
+              videoId={post.frontmatter.youtube_id}
               title={post.frontmatter.title}
             />
             <p className="mb-3 text-sm font-normal text-gray-500">
