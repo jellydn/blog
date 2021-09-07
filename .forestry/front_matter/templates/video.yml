@@ -17,3 +17,12 @@ fields:
 - type: text
   name: description
   label: description
+- name: youtube_id
+  type: text
+  config:
+    required: false
+  label: Youtube ID
+- name: tag
+  type: tag_list
+  default: []
+  label: Tag
