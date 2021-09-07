@@ -2,8 +2,8 @@
 date: 09/08/2021 12:50 AM +0800
 author: Dung Huynh
 hero_image: "/uploads/dapp.png"
-title: Blockchain - DApp 101 - How to get started [Vietnamese]
-description: 3 simple ways to get started with blockchain
+title: Blockchain - DApp 101 - Interact with your Smart Contract  [Vietnamese]
+description: How to learn and build your DApp
 tag:
 - Blockchain
 - " ITManVietnam"
