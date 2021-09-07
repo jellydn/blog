@@ -41,6 +41,10 @@ fields:
     schema:
       format: markdown
   label: Description
+- name: tag
+  type: tag_list
+  default: []
+  label: Tag
 pages:
 - posts/create-and-apply-git-patch-from-a-commit-hash.md
 - posts/git-rebase-interactive.md
