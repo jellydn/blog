@@ -1,11 +1,11 @@
 ---
 date: 09/08/2021 12:50 AM +0800
 author: Dung Huynh
-hero_image: ''
-title: 'Blockchain - DApp 101 [Vietnamese]'
-description: 'How to learn and build your DApp'
----
+hero_image: "/uploads/dapp.png"
+title: Blockchain - DApp 101 [Vietnamese]
+description: How to learn and build your DApp
 
+---
 ### How to get started
 
 [![DApp 101 - How to get started](https://img.youtube.com/vi/LXRgV99S0Zk/0.jpg)](https://www.youtube.com/watch?v=LXRgV99S0Zk)
