@@ -10,6 +10,7 @@ tag:
 - ITMan
 - DApp
 youtube_play: PLOdXIcVPTyB-jyB4UmrwncHDK0mgl-Ex-
+youtube_id: LXRgV99S0Zk
 
 ---
 ### How to get started
