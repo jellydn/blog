@@ -1,6 +1,11 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import Link from 'next/link'
 import Image from 'next/image'
+import dynamic from 'next/dynamic'
+
+const YoutubeVideo = dynamic(() => import('./YoutubeVideo'), {
+  loading: () => <div>Loading...</div>,
+  ssr: false,
+})
 
 const VideoList = ({ allVideos }: { allVideos: any }) => {
   function reformatDate(fullDate) {
@@ -16,7 +21,7 @@ const VideoList = ({ allVideos }: { allVideos: any }) => {
       <p className="mb-20 text-lg text-gray-500">
         My latest videos on web development and blockchain.
       </p>
-      <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
+      <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-2">
         {allVideos.map((post) => (
           <div key={post.slug} id={post.slug}>
             {post.frontmatter.hero_image && (
@@ -40,6 +45,11 @@ const VideoList = ({ allVideos }: { allVideos: any }) => {
                 </a>
               </Link>
             </h2>
+            <YoutubeVideo
+              videoId="LXRgV99S0Zk"
+              // videoId={post.frontmatter.youtube_id}
+              title={post.frontmatter.title}
+            />
             <p className="mb-3 text-sm font-normal text-gray-500">
               {post.frontmatter.description}
             </p>
