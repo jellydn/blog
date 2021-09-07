@@ -48,6 +48,7 @@ fields:
 pages:
 - posts/create-and-apply-git-patch-from-a-commit-hash.md
 - posts/git-rebase-interactive.md
+- posts/how-to-use-custom-element-with-nextjs-react.md
 - posts/new-web-app-cli.md
 - posts/react-hook-use-wait-for-transaction-hash.md
 - posts/til-10-add-user-define-function-to-typeorm-entity.md
