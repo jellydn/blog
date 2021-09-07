@@ -3,7 +3,7 @@ date: 09/07/2021 7:43 PM +0800
 author: Dung Huynh
 hero_image: ''
 title: "#TIL 17 - Call eth_sync"
-description: ''
+description: How to call eth_syncing with ethersjs
 
 ---
 Hi there,
