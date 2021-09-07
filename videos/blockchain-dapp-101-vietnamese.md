@@ -4,6 +4,12 @@ author: Dung Huynh
 hero_image: "/uploads/dapp.png"
 title: Blockchain - DApp 101 [Vietnamese]
 description: How to learn and build your DApp
+tag:
+- Blockchain
+- " ITManVietnam"
+- ITMan
+- DApp
+youtube_play: PLOdXIcVPTyB-jyB4UmrwncHDK0mgl-Ex-
 
 ---
 ### How to get started
