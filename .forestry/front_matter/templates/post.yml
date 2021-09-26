@@ -57,6 +57,7 @@ pages:
 - posts/til-13-how-to-fix-refusing-to-allow-an-oauth-app-to-create-or-update-workflow-without-workflow-scope.md
 - posts/til-14-4-simple-steps-for-backup-restore-wordpress-website.md
 - posts/til-17-call-eth_sync.md
+- posts/til-18-deploy-to-heroku-from-sub-directory.md
 - posts/til-3-rename-all-js-to-ts-files.md
 - posts/til-4-trigger-github-action-base-on-the-comment.md
 - posts/til-5-delete-all-local-branches-except-master.md
