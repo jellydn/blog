@@ -10,21 +10,29 @@ tag:
 - ITMan
 - DApp
 youtube_play: PLOdXIcVPTyB-jyB4UmrwncHDK0mgl-Ex-
-youtube_id: LXRgV99S0Zk
+youtube_id: keI4tymfIbo
 
 ---
-### How to get started
+### Smart Contract Security Best Practices
 
-[![DApp 101 - How to get started](https://img.youtube.com/vi/LXRgV99S0Zk/0.jpg)](https://www.youtube.com/watch?v=LXRgV99S0Zk)
+[![DApp 101 - Smart Contract Security Best Practices](https://img.youtube.com/vi/keI4tymfIbo/0.jpg)](https://www.youtube.com/watch?v=keI4tymfIbo)
 
-- LEARN BY CODING
+- Smart Contract Security Best Practices
 
-https://ethereum.org/en/developers/learning-tools/
+https://github.com/ConsenSys/smart-contract-best-practices/blob/master/README-vi.md
 
-- SET UP YOUR LOCAL DEVELOPMENT ENVIRONMENT
+This document provides a baseline knowledge of security considerations for intermediate Solidity programmers. It is maintained by ConsenSys Diligence, with contributions from our friends in the broader Ethereum community.
 
-https://ethereum.org/en/developers/local-environment/
+https://consensys.github.io/smart-contract-best-practices/
 
-- Learn to Code Blockchain DApps By Building Simple Games
+- Solidity Patterns
 
-https://cryptozombies.io/
+https://github.com/fravoll/solidity-patterns
+
+This repository contains a collection of design and programming patterns for the smart contract programming language Solidity in version 0.4.20.
+
+- Awesome Blockchains
+
+https://github.com/openblockchains/awesome-blockchains
+
+A collection about awesome blockchains - open distributed databases w/ crypto hashes incl. git ;-). Blockchains are the new tulips 🌷🌷🌷.
