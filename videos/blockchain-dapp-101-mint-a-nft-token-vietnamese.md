@@ -1,40 +1,32 @@
 ---
-date: 2021-09-12T00:50:00+08:00
+date: 2021-09-26T00:50:00+08:00
 author: Dung Huynh
 hero_image: "/uploads/dapp.png"
-title: Blockchain - DApp 101 - Mint a NFT token [Vietnamese]
-description: How to create NFT token (ERC721)
+title: Blockchain - DApp 101 - Mint an NFT token [Vietnamese]
+description: How to mint an NFT token (ERC721)
 tag:
 - Blockchain
 - ITManVietnam
 - ITMan
 - DApp
 youtube_play: PLOdXIcVPTyB-jyB4UmrwncHDK0mgl-Ex-
-youtube_id: _veIZBaHkSk
+youtube_id: UWJJa1hAYlo
 
 ---
-### Create your own NFT token
+### Mint an NFT token
 
-[![DApp 101 - Create your own NFT token](https://img.youtube.com/vi/_veIZBaHkSk/0.jpg)](https://www.youtube.com/watch?v=_veIZBaHkSk)
+[![DApp 101 - Mint a NFT token](https://img.youtube.com/vi/UWJJa1hAYlo/0.jpg)](https://www.youtube.com/watch?v=UWJJa1hAYlo)
 
-* DApp NFT Demo
+Step by step to build an API and React UI for mint an NFT token.
 
-[https://github.com/jellydn/nft-app](https://github.com/jellydn/nft-app "https://github.com/jellydn/nft-app")
+* Source code
 
-* References
+[https://github.com/jellydn/nft-app]()
 
-OpenZeppelin Contract v4
+* NFT APP UI
 
-[https://docs.openzeppelin.com/contracts/4.x/](https://docs.openzeppelin.com/contracts/4.x/ "https://docs.openzeppelin.com/contracts/4.x/")
+[https://nft-app.productsway.com/]()
 
-ERC721 Tutorial
-Simple tutorial for a customizable marketplace for buying and selling on OpenSea
+* NFT APP API
 
-[https://docs.opensea.io/docs/1-structuring-your-smart-contract](https://docs.opensea.io/docs/1-structuring-your-smart-contract "https://docs.opensea.io/docs/1-structuring-your-smart-contract")
-
-NFT Minter Tutorial  
-[https://docs.alchemy.com/alchemy/tutorials/nft-minter](https://docs.alchemy.com/alchemy/tutorials/nft-minter "https://docs.alchemy.com/alchemy/tutorials/nft-minter")
-
-Free Storage for NFTs
-Free decentralized storage and bandwidth for NFTs on IPFS logo IPFS and Filecoin logo Filecoin.
-[https://nft.storage/](https://nft.storage/ "https://nft.storage/")
+[https://nft-app-api.herokuapp.com/]()
