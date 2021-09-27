@@ -1,5 +1,5 @@
 ---
-date: 09/08/2021 12:50 AM +0800
+date: 2021-09-12T00:50:00+08:00
 author: Dung Huynh
 hero_image: "/uploads/dapp.png"
 title: Blockchain - DApp 101 - Create your own NFT token [Vietnamese]
@@ -13,18 +13,28 @@ youtube_play: PLOdXIcVPTyB-jyB4UmrwncHDK0mgl-Ex-
 youtube_id: LXRgV99S0Zk
 
 ---
-### How to get started
+### Create your own NFT token
 
-[![DApp 101 - How to get started](https://img.youtube.com/vi/LXRgV99S0Zk/0.jpg)](https://www.youtube.com/watch?v=LXRgV99S0Zk)
+[![DApp 101 - Create your own NFT token](https://img.youtube.com/vi/_veIZBaHkSk/0.jpg)](https://www.youtube.com/watch?v=_veIZBaHkSk)
 
-- LEARN BY CODING
+* DApp NFT Demo
 
-https://ethereum.org/en/developers/learning-tools/
+[https://github.com/jellydn/nft-app](https://github.com/jellydn/nft-app "https://github.com/jellydn/nft-app")
 
-- SET UP YOUR LOCAL DEVELOPMENT ENVIRONMENT
+* References
 
-https://ethereum.org/en/developers/local-environment/
+OpenZeppelin Contract v4
 
-- Learn to Code Blockchain DApps By Building Simple Games
+[https://docs.openzeppelin.com/contracts/4.x/](https://docs.openzeppelin.com/contracts/4.x/ "https://docs.openzeppelin.com/contracts/4.x/")
 
-https://cryptozombies.io/
+ERC721 Tutorial
+Simple tutorial for a customizable marketplace for buying and selling on OpenSea
+
+[https://docs.opensea.io/docs/1-structuring-your-smart-contract](https://docs.opensea.io/docs/1-structuring-your-smart-contract "https://docs.opensea.io/docs/1-structuring-your-smart-contract")
+
+NFT Minter Tutorial  
+[https://docs.alchemy.com/alchemy/tutorials/nft-minter](https://docs.alchemy.com/alchemy/tutorials/nft-minter "https://docs.alchemy.com/alchemy/tutorials/nft-minter")
+
+Free Storage for NFTs
+Free decentralized storage and bandwidth for NFTs on IPFS logo IPFS and Filecoin logo Filecoin.
+[https://nft.storage/](https://nft.storage/ "https://nft.storage/")
