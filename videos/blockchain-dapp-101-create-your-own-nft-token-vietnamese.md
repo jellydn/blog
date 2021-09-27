@@ -3,14 +3,14 @@ date: 2021-09-12T00:50:00+08:00
 author: Dung Huynh
 hero_image: "/uploads/dapp.png"
 title: Blockchain - DApp 101 - Create your own NFT token [Vietnamese]
-description: How to learn and build your DApp
+description: How to create NFT token (ERC721)
 tag:
 - Blockchain
 - ITManVietnam
 - ITMan
 - DApp
 youtube_play: PLOdXIcVPTyB-jyB4UmrwncHDK0mgl-Ex-
-youtube_id: LXRgV99S0Zk
+youtube_id: _veIZBaHkSk
 
 ---
 ### Create your own NFT token
