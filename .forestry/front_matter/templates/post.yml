@@ -60,6 +60,7 @@ pages:
 - posts/til-18-deploy-to-heroku-from-sub-directory.md
 - posts/til-19-how-to-fix-android-studio-missing-essential-plugin-org.jetbrains.android.md
 - posts/til-20-how-to-fix-unsupported-scan-storing-driver.value-type-uint8-into-type.md
+- posts/til-21-how-to-fix-postgresql-duplicate-key-violates-out-of-sync.md
 - posts/til-3-rename-all-js-to-ts-files.md
 - posts/til-4-trigger-github-action-base-on-the-comment.md
 - posts/til-5-delete-all-local-branches-except-master.md
