@@ -1,50 +1,58 @@
 {
-  "name": "productsway-blog",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next",
-    "develop": "yarn dev",
-    "lint": "next lint",
-    "build": "next build",
-    "start": "next start"
-  },
-  "dependencies": {
-    "@tailwindcss/typography": "^0.4.1",
-    "daisyui": "1.16.0",
-    "glob": "7.2.0",
-    "gray-matter": "4.0.3",
-    "kutty": "0.5.2",
-    "lite-youtube-embed": "^0.2.0",
-    "next": "12.0.1",
-    "next-seo": "4.28.1",
-    "node-glob": "1.2.0",
-    "prismjs": "1.25.0",
-    "raw-loader": "4.0.2",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "react-markdown": "7.1.0",
-    "remark-gfm": "3.0.0",
-    "usermatters-react": "1.2.0"
-  },
-  "devDependencies": {
-    "@fullhuman/postcss-purgecss": "4.0.3",
-    "@types/node": "14.17.19",
-    "@types/react": "17.0.33",
-    "autoprefixer": "10.3.7",
-    "cz-conventional-changelog": "3.3.0",
-    "eslint": "<8.0.0",
-    "eslint-config-next": "12.0.1",
-    "postcss": "8.3.11",
-    "postcss-flexbugs-fixes": "5.0.2",
-    "postcss-preset-env": "6.7.0",
-    "prettier": "2.4.1",
-    "tailwindcss": "2.2.17",
-    "typescript": "4.4.4"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
+    "name": "productsway-blog",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next",
+        "develop": "yarn dev",
+        "lint": "next lint",
+        "build": "next build",
+        "start": "next start",
+        "prepare": "husky install"
+    },
+    "dependencies": {
+        "@tailwindcss/typography": "^0.4.1",
+        "daisyui": "1.16.0",
+        "glob": "7.2.0",
+        "gray-matter": "4.0.3",
+        "kutty": "0.5.2",
+        "lite-youtube-embed": "^0.2.0",
+        "next": "12.0.1",
+        "next-seo": "4.28.1",
+        "node-glob": "1.2.0",
+        "prismjs": "1.25.0",
+        "raw-loader": "4.0.2",
+        "react": "17.0.2",
+        "react-dom": "17.0.2",
+        "react-markdown": "7.1.0",
+        "remark-gfm": "3.0.0",
+        "usermatters-react": "1.2.0"
+    },
+    "devDependencies": {
+        "@fullhuman/postcss-purgecss": "4.0.3",
+        "@trivago/prettier-plugin-sort-imports": "3.0.0",
+        "@types/node": "14.17.19",
+        "@types/react": "17.0.33",
+        "autoprefixer": "10.3.7",
+        "cz-conventional-changelog": "3.3.0",
+        "eslint": "<8.0.0",
+        "eslint-config-next": "12.0.1",
+        "husky": "7.0.4",
+        "lint-staged": "11.2.6",
+        "postcss": "8.3.11",
+        "postcss-flexbugs-fixes": "5.0.2",
+        "postcss-preset-env": "6.7.0",
+        "prettier": "2.4.1",
+        "tailwindcss": "2.2.17",
+        "typescript": "4.4.4"
+    },
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog"
+        }
+    },
+    "lint-staged": {
+        "*.{js,jsx,ts,tsx}": "eslint --cache --fix",
+        "*.{js,jsx,ts,tsx,css,md}": "prettier --write"
     }
-  }
 }

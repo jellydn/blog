@@ -1,91 +1,90 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
-import Link from 'next/link'
-import Image from 'next/image'
-import dynamic from 'next/dynamic'
+import dynamic from 'next/dynamic';
+import Image from 'next/image';
+import Link from 'next/link';
 
 const YoutubeVideo = dynamic(() => import('./YoutubeVideo'), {
-  loading: () => <div>Loading...</div>,
-  ssr: false,
-})
+    loading: () => <div>Loading...</div>,
+    ssr: false,
+});
 
 const VideoList = ({ allVideos }: { allVideos: any }) => {
-  function reformatDate(fullDate) {
-    const date = new Date(fullDate)
-    return date.toDateString().slice(4)
-  }
+    function reformatDate(fullDate) {
+        const date = new Date(fullDate);
+        return date.toDateString().slice(4);
+    }
 
-  return (
-    <section className="px-4 py-24 mx-auto max-w-7xl">
-      <h2 className="mb-2 text-3xl font-extrabold leading-tight text-gray-900">
-        Latest Videos
-      </h2>
-      <p className="mb-20 text-lg text-gray-500">
-        My latest videos on web development and blockchain.
-      </p>
-      <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-2">
-        {allVideos.map((post) => (
-          <div key={post.slug} id={post.slug}>
-            {post.frontmatter.hero_image && (
-              <Link key={post.slug} href={`/video/${post.slug}`}>
-                <a>
-                  <Image
-                    width="50"
-                    height="30"
-                    src={post.frontmatter.hero_image}
-                    className="object-cover w-full h-56 mb-5 bg-center rounded"
-                    alt={post.frontmatter.title}
-                    loading="lazy"
-                  />
-                </a>
-              </Link>
-            )}
-            <h2 className="mb-2 text-lg font-semibold text-gray-900">
-              <Link key={post.slug} href={`/video/${post.slug}`}>
-                <a className="text-gray-900 hover:text-purple-700">
-                  {post.frontmatter.title}
-                </a>
-              </Link>
+    return (
+        <section className="px-4 py-24 mx-auto max-w-7xl">
+            <h2 className="mb-2 text-3xl font-extrabold leading-tight text-gray-900">
+                Latest Videos
             </h2>
-            <YoutubeVideo
-              videoId={post.frontmatter.youtube_id}
-              title={post.frontmatter.title}
-            />
-            <p className="mb-3 text-sm font-normal text-gray-500">
-              {post.frontmatter.description}
+            <p className="mb-20 text-lg text-gray-500">
+                My latest videos on web development and blockchain.
             </p>
-            <p className="mb-3 text-sm font-normal text-gray-500">
-              {reformatDate(post.frontmatter.date)}
-            </p>
-          </div>
-        ))}
-      </div>
-    </section>
-  )
+            <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-2">
+                {allVideos.map((post) => (
+                    <div key={post.slug} id={post.slug}>
+                        {post.frontmatter.hero_image && (
+                            <Link key={post.slug} href={`/video/${post.slug}`}>
+                                <a>
+                                    <Image
+                                        width="50"
+                                        height="30"
+                                        src={post.frontmatter.hero_image}
+                                        className="object-cover w-full h-56 mb-5 bg-center rounded"
+                                        alt={post.frontmatter.title}
+                                        loading="lazy"
+                                    />
+                                </a>
+                            </Link>
+                        )}
+                        <h2 className="mb-2 text-lg font-semibold text-gray-900">
+                            <Link key={post.slug} href={`/video/${post.slug}`}>
+                                <a className="text-gray-900 hover:text-purple-700">
+                                    {post.frontmatter.title}
+                                </a>
+                            </Link>
+                        </h2>
+                        <YoutubeVideo
+                            videoId={post.frontmatter.youtube_id}
+                            title={post.frontmatter.title}
+                        />
+                        <p className="mb-3 text-sm font-normal text-gray-500">
+                            {post.frontmatter.description}
+                        </p>
+                        <p className="mb-3 text-sm font-normal text-gray-500">
+                            {reformatDate(post.frontmatter.date)}
+                        </p>
+                    </div>
+                ))}
+            </div>
+        </section>
+    );
 
-  // return (
-  //   <section className="py-20 bg-white">
-  //     <div className="max-w-5xl px-6 mx-auto text-center">
-  //       <h2 className="text-2xl font-semibold text-gray-800">Latest Posts</h2>
-  //       <div className="flex flex-col items-center justify-center mt-6">
-  //         {allVideos.length > 0 &&
-  //           allVideos.map((post) => (
-  //             <Link key={post.slug} href={`/video/${post.slug}`}>
-  //               <a className="block w-full max-w-2xl transition duration-500 ease-in-out transform bg-white border-t-4 border-indigo-600 rounded-md shadow-md hover:-translate-y-1 hover:scale-110">
-  //                 <div className="flex items-center justify-between px-4 py-2">
-  //                   <h3 className="text-lg font-medium text-gray-700">
-  //                     {post.frontmatter.title}
-  //                   </h3>
-  //                   <span className="block text-sm font-light text-gray-600">
-  //                     {reformatDate(post.frontmatter.date)}
-  //                   </span>
-  //                 </div>
-  //               </a>
-  //             </Link>
-  //           ))}
-  //       </div>
-  //     </div>
-  //   </section>
-  // )
-}
+    // return (
+    //   <section className="py-20 bg-white">
+    //     <div className="max-w-5xl px-6 mx-auto text-center">
+    //       <h2 className="text-2xl font-semibold text-gray-800">Latest Posts</h2>
+    //       <div className="flex flex-col items-center justify-center mt-6">
+    //         {allVideos.length > 0 &&
+    //           allVideos.map((post) => (
+    //             <Link key={post.slug} href={`/video/${post.slug}`}>
+    //               <a className="block w-full max-w-2xl transition duration-500 ease-in-out transform bg-white border-t-4 border-indigo-600 rounded-md shadow-md hover:-translate-y-1 hover:scale-110">
+    //                 <div className="flex items-center justify-between px-4 py-2">
+    //                   <h3 className="text-lg font-medium text-gray-700">
+    //                     {post.frontmatter.title}
+    //                   </h3>
+    //                   <span className="block text-sm font-light text-gray-600">
+    //                     {reformatDate(post.frontmatter.date)}
+    //                   </span>
+    //                 </div>
+    //               </a>
+    //             </Link>
+    //           ))}
+    //       </div>
+    //     </div>
+    //   </section>
+    // )
+};
 
-export default VideoList
+export default VideoList;
