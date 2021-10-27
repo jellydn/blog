@@ -1,7 +1,9 @@
+import matter from 'gray-matter';
+import unique from 'just-unique';
+
 import BlogList from 'components/BlogList';
 import Layout from 'components/Layout';
 import VideoList from 'components/VideoList';
-import matter from 'gray-matter';
 
 const Index = ({
     title,
@@ -78,8 +80,12 @@ export async function getStaticProps() {
 
     return {
         props: {
-            allBlogs: posts,
-            allVideos: videos,
+            allBlogs: unique(posts.map((post) => post.slug)).map((slug) =>
+                posts.find((post) => post.slug === slug),
+            ),
+            allVideos: unique(videos.map((post) => post.slug)).map((slug) =>
+                videos.find((post) => post.slug === slug),
+            ),
             title: siteConfig.default.title,
             description: siteConfig.default.description,
         },
