@@ -1,14 +1,14 @@
 ---
 date: 09/08/2021 3:12 AM +0800
 tag:
-  - React
-  - NextJs
+    - React
+    - NextJs
 author: Dung Huynh
 hero_image: ''
 title: How to use custom element with NextJS/React
 description:
-  By use lite-youtube-embed and dynamic import, we will have a custom element
-  with your React component
+    By use lite-youtube-embed and dynamic import, we will have a custom element
+    with your React component
 ---
 
 Hi there,

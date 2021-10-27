@@ -1,16 +1,17 @@
 ---
 date: 09/10/2021 7:06 PM +0800
 tag:
-- react
-- iframe
-- website
+    - react
+    - iframe
+    - website
 author: Dung Huynh
 hero_image: ''
 title: Reload page from iframe with cross-domain support
-description: On this tutorial, I will share with you a trick to reload parent website
-  from iframe
-
+description:
+    On this tutorial, I will share with you a trick to reload parent website
+    from iframe
 ---
+
 Hi there,
 
 This demo use React as a demonstration but it should work the same for other UI framework or with vanilla JS.
@@ -46,16 +47,16 @@ Then from a UI component, we will use `useEffect` to listen to messages from Ifr
             window.location.reload();
           }
         };
-        
+
         // listen to reload message on iframe
         window.addEventListener('message', listener);
-    
+
         return () => {
           // clean listener
           window.removeEventListener('message', listener);
         };
       }, []);
-    
+
       return (
          <iframe
               title="Trading System"

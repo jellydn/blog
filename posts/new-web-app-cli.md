@@ -1,8 +1,8 @@
 ---
 date: 05/30/2021 3:12 PM +0800
 tag:
-  - React
-  - CLI
+    - React
+    - CLI
 author: Dung Huynh
 hero_image: ''
 title: New Web APP CLI

@@ -1,8 +1,8 @@
 ---
 date: 07/14/2021 6:15 PM +0800
 tag:
-  - DApp
-  - Truffle
+    - DApp
+    - Truffle
 author: Dung Huynh
 hero_image: ''
 title: Truffle CLI exec with arguments
