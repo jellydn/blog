@@ -1,14 +1,16 @@
-import Layout from 'components/Layout';
-import glob from 'glob';
 import matter from 'gray-matter';
 import { NextSeo } from 'next-seo';
-import Image from 'next/image';
 import Prism from 'prismjs';
 import { useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
 import gfm from 'remark-gfm';
 import { FeedbackPopup } from 'usermatters-react';
 
+import Image from 'next/image';
+
+import Layout from 'components/Layout';
+
+const glob = require('glob');
 export default function VideoTemplate({
     frontmatter,
     siteDescription,

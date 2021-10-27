@@ -1,5 +1,6 @@
-import { AppProps } from 'next/app';
 import 'prismjs/themes/prism-okaidia.css';
+
+import { AppProps } from 'next/app';
 
 import '../styles.css';
 

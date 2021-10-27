@@ -19,7 +19,7 @@ const BlogList = ({ allBlogs }: { allBlogs: any }) => {
                 {allBlogs.map((post) => (
                     <div key={post.slug} id={post.slug}>
                         {post.frontmatter.hero_image && (
-                            <Link key={post.slug} href={`/blog/${post.slug}`}>
+                            <Link passHref href={`/blog/${post.slug}`}>
                                 <a>
                                     <Image
                                         width="50"
@@ -33,7 +33,7 @@ const BlogList = ({ allBlogs }: { allBlogs: any }) => {
                             </Link>
                         )}
                         <h2 className="mb-2 text-lg font-semibold text-gray-900">
-                            <Link key={post.slug} href={`/blog/${post.slug}`}>
+                            <Link passHref href={`/blog/${post.slug}`}>
                                 <a className="text-gray-900 hover:text-purple-700">
                                     {post.frontmatter.title}
                                 </a>
