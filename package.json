@@ -15,7 +15,7 @@
         "daisyui": "1.16.0",
         "glob": "7.2.0",
         "gray-matter": "4.0.3",
-        "just-unique": "^3.3.0",
+        "just-unique": "4.0.1",
         "kutty": "0.5.2",
         "lite-youtube-embed": "^0.2.0",
         "next": "^12.0.1",
