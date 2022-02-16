@@ -26,7 +26,7 @@
         "react": "18.0.0-rc.0-next-fe905f152-20220107",
         "react-dom": "18.0.0-rc.0-next-fe905f152-20220107",
         "react-markdown": "7.1.0",
-        "remark-gfm": "3.0.0",
+        "remark-gfm": "3.0.1",
         "usermatters-react": "1.2.0"
     },
     "devDependencies": {
