@@ -5,7 +5,6 @@ import Prism from 'prismjs';
 import { useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
 import gfm from 'remark-gfm';
-import { FeedbackPopup } from 'usermatters-react';
 
 import Image from 'next/image';
 
@@ -88,15 +87,6 @@ export default function BlogTemplate({
                         </ReactMarkdown>
                     </div>
                     <hr className="mt-4" />
-                    <div className="mt-2">
-                        <FeedbackPopup project="r1AxH4JBSbo">
-                            {({ handleClick }) => (
-                                <button type="button" onClick={handleClick}>
-                                    Feedback
-                                </button>
-                            )}
-                        </FeedbackPopup>
-                    </div>
                 </div>
             </article>
         </Layout>
