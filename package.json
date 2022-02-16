@@ -23,8 +23,8 @@
         "node-glob": "1.2.0",
         "prismjs": "1.25.0",
         "raw-loader": "4.0.2",
-        "react": "18.0.0-alpha-fd5e01c2e-20210913",
-        "react-dom": "18.0.0-alpha-fd5e01c2e-20210913",
+        "react": "18.0.0-rc.0-next-fe905f152-20220107",
+        "react-dom": "18.0.0-rc.0-next-fe905f152-20220107",
         "react-markdown": "7.1.0",
         "remark-gfm": "3.0.0",
         "usermatters-react": "1.2.0"
