@@ -17,7 +17,7 @@
         "gray-matter": "4.0.3",
         "just-unique": "4.0.1",
         "kutty": "0.6.0",
-        "lite-youtube-embed": "^0.2.0",
+        "lite-youtube-embed": "0.2.0",
         "next": "12.0.10",
         "next-seo": "5.1.0",
         "node-glob": "1.2.0",
