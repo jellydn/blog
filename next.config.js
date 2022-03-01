@@ -1,5 +1,9 @@
 // next.config.js
 module.exports = {
+    reactStrictMode: true,
+    experimental: {
+        reactRoot: true,
+    },
     images: {
         domains: ['gyazo.com'],
     },
