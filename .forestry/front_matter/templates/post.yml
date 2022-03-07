@@ -64,6 +64,7 @@ pages:
 - posts/til-21-how-to-fix-postgresql-duplicate-key-violates-out-of-sync.md
 - posts/til-22-enum-type-with-postgresql-and-sqlx.md
 - posts/til-23-restart-mac-os-x-coreaudio-daemon.md
+- posts/til-24-workaround-for-trpc-fastify-adatper-cors-policy.md
 - posts/til-3-rename-all-js-to-ts-files.md
 - posts/til-4-trigger-github-action-base-on-the-comment.md
 - posts/til-5-delete-all-local-branches-except-master.md
