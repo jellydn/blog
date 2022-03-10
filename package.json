@@ -12,7 +12,7 @@
     },
     "dependencies": {
         "@tailwindcss/typography": "0.5.2",
-        "daisyui": "2.6.0",
+        "daisyui": "2.6.4",
         "glob": "7.2.0",
         "gray-matter": "4.0.3",
         "just-unique": "4.0.1",
