@@ -1,14 +1,14 @@
 ---
 date: 03/07/2022 10:20 AM +0800
 tag:
-- fastify
-- trpc
+    - fastify
+    - trpc
 author: Dung Huynh
-hero_image: ''
-title: "#TIL 24 - Workaround for tRPC Fastify adatper CORS policy"
+hero_image: '/static/til.jpeg'
+title: '#TIL 24 - Workaround for tRPC Fastify adatper CORS policy'
 description: 'Handling CORS and CORS preflight requests '
-
 ---
+
     void app.register(fp(fastifyTRPCPlugin), {
       prefix: "/trpc",
       trpcOptions: {
@@ -30,7 +30,7 @@ description: 'Handling CORS and CORS preflight requests '
               },
             };
           }
-    
+
           return {
             // Enable CORS, refer https://github.com/trpc/trpc/issues/623#issuecomment-878639248
             headers: {
