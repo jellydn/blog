@@ -7,6 +7,7 @@ import Projects from './Projects';
 const Layout: React.FC<{
     siteTitle: string;
     siteDescription?: string;
+    children: React.ReactNode;
 }> = ({ siteTitle, siteDescription, children }) => (
     <>
         <Meta siteTitle={siteTitle} siteDescription={siteDescription} />
