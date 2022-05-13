@@ -38,31 +38,31 @@ export default function BlogTemplate({
                 description={siteDescription}
             />
             <article className="w-full max-w-5xl px-6 py-12 mx-auto">
-                <div data-theme="dark" className="mb-12">
-                    {frontmatter.hero_image && (
-                        <div className="avatar">
-                            <Image
-                                width="1000"
-                                height="200"
-                                src={frontmatter.hero_image}
-                                alt={`blog_hero_${frontmatter.title}`}
-                                className="w-24 h-24 mb-8 rounded-btn"
-                            />
-                        </div>
-                    )}
-                    {frontmatter.tag.map((tag: string) => (
-                        <div key={tag} className="badge badge-primary">
-                            {tag}
-                        </div>
-                    ))}
+                {frontmatter.tag.map((tag: string) => (
+                    <div key={tag} className="badge badge-primary">
+                        {tag}
+                    </div>
+                ))}
+                <h1
+                    className="mb-3 text-3xl font-bold leading-tight text-gray-900 md:text-4xl"
+                    itemProp="headline"
+                    title={frontmatter.title}
+                >
+                    {frontmatter.title}
+                </h1>
 
-                    <h1
-                        className="mb-3 text-3xl font-bold leading-tight text-gray-900 md:text-4xl"
-                        itemProp="headline"
-                        title={frontmatter.title}
-                    >
-                        {frontmatter.title}
-                    </h1>
+                {frontmatter.hero_image && (
+                    <div className="avatar">
+                        <Image
+                            width="1000"
+                            height="200"
+                            src={frontmatter.hero_image}
+                            alt={`blog_hero_${frontmatter.title}`}
+                            className="w-24 h-24 mb-8 rounded-btn"
+                        />
+                    </div>
+                )}
+                <div className="mb-2">
                     <a
                         className="flex items-center text-gray-700"
                         href="https://github.com/jellydn"
@@ -81,11 +81,9 @@ export default function BlogTemplate({
                     </a>
                 </div>
                 <div className="prose text-black lg:prose-xl">
-                    <div data-theme="retro">
-                        <ReactMarkdown remarkPlugins={[gfm]}>
-                            {markdownBody}
-                        </ReactMarkdown>
-                    </div>
+                    <ReactMarkdown remarkPlugins={[gfm]}>
+                        {markdownBody}
+                    </ReactMarkdown>
                     <hr className="mt-4" />
                 </div>
             </article>
