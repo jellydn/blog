@@ -50,7 +50,7 @@
         "eslint-config-next": "^12.1.6",
         "husky": "^8.0.1",
         "lint-staged": "^12.4.1",
-        "postcss": "^8.4.13",
+        "postcss": "8.4.14",
         "postcss-flexbugs-fixes": "^5.0.2",
         "postcss-preset-env": "^7.5.0",
         "prettier": "^2.6.2",
