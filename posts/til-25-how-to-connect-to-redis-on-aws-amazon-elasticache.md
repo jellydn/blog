@@ -6,7 +6,7 @@ tag:
 - Amazon ElastiCache
 author: Dung Huynh
 hero_image: ''
-title: 'TIL #25 - How to connect to Redis on AWS (Amazon ElastiCache)'
+title: 'TIL #26 - How to connect to Redis on AWS (Amazon ElastiCache)'
 description: This is common issue on https://github.com/luin/ioredis for connecting
   to Redis on AWS
 
