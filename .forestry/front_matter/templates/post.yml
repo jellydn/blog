@@ -68,6 +68,7 @@ pages:
 - posts/til-25-yarn-global-upgrade-all-packages.md
 - posts/til-26-how-to-connect-to-redis-on-aws-amazon-elasticache.md
 - posts/til-27-install-homebrew-manually.md
+- posts/til-28-decode-receipt-logs-with-ethers.md
 - posts/til-3-rename-all-js-to-ts-files.md
 - posts/til-4-trigger-github-action-base-on-the-comment.md
 - posts/til-5-delete-all-local-branches-except-master.md
