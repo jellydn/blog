@@ -5,7 +5,7 @@ tag:
     - cli
 author: Dung Huynh
 hero_image: '/static/til.jpeg'
-title: 'TIL #25 - Yarn global upgrade all packages'
+title: '#TIL 25 - Yarn global upgrade all packages'
 description: How to upgrade all global packages with yarn
 ---
 

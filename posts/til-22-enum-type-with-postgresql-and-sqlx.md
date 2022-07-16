@@ -6,7 +6,7 @@ tag:
     - enum type
 author: Dung Huynh
 hero_image: '/static/til.jpeg'
-title: 'TIL #22 - Enum Type with PostgreSQL and sqlx'
+title: '#TIL 22 - Enum Type with PostgreSQL and sqlx'
 description: How to define Scan/Value with sqlx in go lang
 ---
 

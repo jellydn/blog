@@ -1,18 +1,19 @@
 ---
 date: 05/31/2022 11:41 AM +0800
 tag:
-- redis
-- aws
-- Amazon ElastiCache
+    - redis
+    - aws
+    - Amazon ElastiCache
 author: Dung Huynh
-hero_image: ''
-title: 'TIL #26 - How to connect to Redis on AWS (Amazon ElastiCache)'
-description: This is common issue on https://github.com/luin/ioredis for connecting
-  to Redis on AWS
-
+hero_image: '/static/til.jpeg'
+title: '#TIL 26 - How to connect to Redis on AWS (Amazon ElastiCache)'
+description:
+    This is common issue on https://github.com/luin/ioredis for connecting
+    to Redis on AWS
 ---
+
     import Redis, { RedisOptions } from 'ioredis';
-    
+
     const parseRedisCredentials = (url: string, opts: RedisOptions = {}): RedisOptions => {
     	const { port, hostname, password, pathname } = new URL(url);
     	const db = pathname.startsWith('/') ? Number(pathname.split('/')[1]) : 0;
@@ -26,10 +27,10 @@ description: This is common issue on https://github.com/luin/ioredis for connect
     		const { tls: _, ...rest } = opts;
     		return { ...baseOpts, ...rest };
     	}
-    
+
     	return { ...baseOpts, ...opts };
     };
-    
+
     export const redisClient = new Redis(
     	parseRedisCredentials(process.env.REDIS_CONNECTION ?? 'redis://localhost:6379', {
     		lazyConnect: true,

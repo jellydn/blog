@@ -5,7 +5,7 @@ tag:
     - flutter
 author: Dung Huynh
 hero_image: '/static/til.jpeg'
-title: 'TIL #19 - How to fix Android Studio missing essential plugin org.jetbrains.android'
+title: '#TIL 19 - How to fix Android Studio missing essential plugin org.jetbrains.android'
 description: This is the issue which I got when upgraded Android Studio
 ---
 

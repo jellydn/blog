@@ -5,7 +5,7 @@ tag:
     - db
 author: Dung Huynh
 hero_image: '/static/til.jpeg'
-title: 'TIL #21 - How to fix PostgreSQL duplicate key violates (out of sync)'
+title: '#TIL 21 - How to fix PostgreSQL duplicate key violates (out of sync)'
 description: This is quite tricky to get to this issue
 ---
 

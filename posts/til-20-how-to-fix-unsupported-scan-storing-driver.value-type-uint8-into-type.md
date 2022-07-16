@@ -6,7 +6,7 @@ tag:
 author: Dung Huynh
 hero_image: '/static/til.jpeg'
 title:
-    'TIL #20 - How to fix unsupported Scan, storing driver.Value type []uint8 into
+    '#TIL 20 - How to fix unsupported Scan, storing driver.Value type []uint8 into
     type'
 description:
     This is common issue with sqlx and how to use custom Scan to fix this

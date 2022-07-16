@@ -4,7 +4,7 @@ tag:
     - macosx
 author: Dung Huynh
 hero_image: '/static/til.jpeg'
-title: 'TIL #23 - Restart Mac OS X coreaudio daemon'
+title: '#TIL 23 - Restart Mac OS X coreaudio daemon'
 description: Restart Mac OS X coreaudio daemon
 ---
 
