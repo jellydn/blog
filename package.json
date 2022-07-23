@@ -17,7 +17,7 @@
     },
     "dependencies": {
         "@tailwindcss/typography": "^0.5.4",
-        "daisyui": "2.19.0",
+        "daisyui": "2.20.0",
         "glob": "^8.0.3",
         "gray-matter": "^4.0.3",
         "just-unique": "^4.0.1",
