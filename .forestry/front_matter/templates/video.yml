@@ -26,3 +26,5 @@ fields:
   type: tag_list
   default: []
   label: Tag
+pages:
+- videos/it-man-talk-20-unboxing-d-cent-biometric-wallet-reviewing-vietnamese.md
