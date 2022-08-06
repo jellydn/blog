@@ -1,3 +1,4 @@
+import Giscus from '@giscus/react';
 import matter from 'gray-matter';
 import { NextSeo } from 'next-seo';
 import Prism from 'prismjs';
@@ -82,13 +83,28 @@ export default function VideoTemplate({
                     </a>
                 </div>
                 <div className="prose text-black lg:prose-xl">
-                    <div data-theme="retro">
+                    <div>
                         <ReactMarkdown remarkPlugins={[gfm]}>
                             {markdownBody}
                         </ReactMarkdown>
                     </div>
                     <hr className="mt-4" />
                 </div>
+                <Giscus
+                    id="comments"
+                    repo="jellydn/blog"
+                    repoId="MDEwOlJlcG9zaXRvcnkyODM1MjQ3NTE="
+                    category="Ideas"
+                    categoryId="DIC_kwDOEOY-j84CQqDK"
+                    mapping="specific"
+                    term="Welcome to @giscus/react component!"
+                    reactionsEnabled="1"
+                    emitMetadata="0"
+                    inputPosition="top"
+                    theme="light"
+                    lang="en"
+                    loading="lazy"
+                />
             </article>
         </Layout>
     );

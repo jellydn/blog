@@ -1,3 +1,4 @@
+import Giscus from '@giscus/react';
 import glob from 'glob';
 import matter from 'gray-matter';
 import { NextSeo } from 'next-seo';
@@ -86,6 +87,21 @@ export default function BlogTemplate({
                     </ReactMarkdown>
                     <hr className="mt-4" />
                 </div>
+                <Giscus
+                    id="comments"
+                    repo="jellydn/blog"
+                    repoId="MDEwOlJlcG9zaXRvcnkyODM1MjQ3NTE="
+                    category="Ideas"
+                    categoryId="DIC_kwDOEOY-j84CQqDK"
+                    mapping="specific"
+                    term="Welcome to @giscus/react component!"
+                    reactionsEnabled="1"
+                    emitMetadata="0"
+                    inputPosition="top"
+                    theme="light"
+                    lang="en"
+                    loading="lazy"
+                />
             </article>
         </Layout>
     );
