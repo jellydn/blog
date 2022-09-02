@@ -97,7 +97,7 @@ export default function VideoTemplate({
                     category="Ideas"
                     categoryId="DIC_kwDOEOY-j84CQqDK"
                     mapping="specific"
-                    term="Welcome to @giscus/react component!"
+                    term={frontmatter.title}
                     reactionsEnabled="1"
                     emitMetadata="0"
                     inputPosition="top"
