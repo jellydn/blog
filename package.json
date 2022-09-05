@@ -34,7 +34,7 @@
         "react-dom": "^18.2.0",
         "react-markdown": "^8.0.3",
         "remark-gfm": "^3.0.1",
-        "sharp": "0.30.7"
+        "sharp": "0.31.0"
     },
     "devDependencies": {
         "@fullhuman/postcss-purgecss": "^4.1.3",
