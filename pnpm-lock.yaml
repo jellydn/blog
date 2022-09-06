@@ -6,11 +6,11 @@ specifiers:
   '@happykit/flags': ^2.0.7
   '@tailwindcss/typography': ^0.5.7
   '@trivago/prettier-plugin-sort-imports': ^3.3.0
-  '@types/node': 18.7.14
+  '@types/node': 18.7.15
   '@types/react': 18.0.18
   autoprefixer: ^10.4.8
   cz-conventional-changelog: ^3.3.0
-  daisyui: 2.24.0
+  daisyui: 2.25.0
   eslint: ^8.23.0
   eslint-config-next: ^12.2.5
   glob: ^8.0.3
@@ -33,7 +33,7 @@ specifiers:
   react-dom: ^18.2.0
   react-markdown: ^8.0.3
   remark-gfm: ^3.0.1
-  sharp: 0.30.7
+  sharp: 0.31.0
   sort-package-json: ^1.57.0
   tailwindcss: ^3.1.8
   typescript: 4.8.2
@@ -42,7 +42,7 @@ dependencies:
   '@giscus/react': 2.2.0_biqbaboplfbrettd7655fr4n2y
   '@happykit/flags': 2.0.7_next@12.2.5+react@18.2.0
   '@tailwindcss/typography': 0.5.7_tailwindcss@3.1.8
-  daisyui: 2.24.0_25hquoklqeoqwmt7fwvvcyxm5e
+  daisyui: 2.25.0_25hquoklqeoqwmt7fwvvcyxm5e
   glob: 8.0.3
   gray-matter: 4.0.3
   just-unique: 4.1.1
@@ -57,12 +57,12 @@ dependencies:
   react-dom: 18.2.0_react@18.2.0
   react-markdown: 8.0.3_7v64pk2mkrohwh22gx7lrz5ive
   remark-gfm: 3.0.1
-  sharp: 0.30.7
+  sharp: 0.31.0
 
 devDependencies:
   '@fullhuman/postcss-purgecss': 4.1.3_postcss@8.4.16
   '@trivago/prettier-plugin-sort-imports': 3.3.0_prettier@2.7.1
-  '@types/node': 18.7.14
+  '@types/node': 18.7.15
   '@types/react': 18.0.18
   autoprefixer: 10.4.8_postcss@8.4.16
   cz-conventional-changelog: 3.3.0
@@ -363,10 +363,10 @@ packages:
       '@commitlint/execute-rule': 17.0.0
       '@commitlint/resolve-extends': 17.0.3
       '@commitlint/types': 17.0.0
-      '@types/node': 18.7.14
+      '@types/node': 18.7.15
       chalk: 4.1.2
       cosmiconfig: 7.0.1
-      cosmiconfig-typescript-loader: 2.0.2_tphhiizkxv2hzwkunblc3hbmra
+      cosmiconfig-typescript-loader: 2.0.2_r4hqq7vrw4pxsipnb7ha25ylfe
       lodash: 4.17.21
       resolve-from: 5.0.0
       typescript: 4.8.2
@@ -896,7 +896,7 @@ packages:
     resolution: {integrity: sha512-ZUxbzKl0IfJILTS6t7ip5fQQM/J3TJYubDm3nMbgubNNYS62eXeUpoLUC8/7fJNiFYHTrGPQn7hspDUzIHX3UA==}
     dependencies:
       '@types/minimatch': 5.1.0
-      '@types/node': 18.7.14
+      '@types/node': 18.7.15
     dev: true
 
   /@types/hast/2.3.4:
@@ -931,8 +931,8 @@ packages:
     resolution: {integrity: sha512-iiUgKzV9AuaEkZqkOLDIvlQiL6ltuZd9tGcW3gwpnX8JbuiuhFlEGmmFXEXkN50Cvq7Os88IY2v0dkDqXYWVgA==}
     dev: false
 
-  /@types/node/18.7.14:
-    resolution: {integrity: sha512-6bbDaETVi8oyIARulOE9qF1/Qdi/23z6emrUh0fNJRUmjznqrixD4MpGDdgOFk5Xb0m2H6Xu42JGdvAxaJR/wA==}
+  /@types/node/18.7.15:
+    resolution: {integrity: sha512-XnjpaI8Bgc3eBag2Aw4t2Uj/49lLBSStHWfqKvIuXD7FIrZyMLWp8KuAFHAqxMZYTF9l08N1ctUn9YNybZJVmQ==}
     dev: true
 
   /@types/parse-json/4.0.0:
@@ -1456,16 +1456,16 @@ packages:
     requiresBuild: true
     dev: true
 
-  /cosmiconfig-typescript-loader/2.0.2_tphhiizkxv2hzwkunblc3hbmra:
+  /cosmiconfig-typescript-loader/2.0.2_r4hqq7vrw4pxsipnb7ha25ylfe:
     resolution: {integrity: sha512-KmE+bMjWMXJbkWCeY4FJX/npHuZPNr9XF9q9CIQ/bpFwi1qHfCmSiKarrCcRa0LO4fWjk93pVoeRtJAkTGcYNw==}
     engines: {node: '>=12', npm: '>=6'}
     peerDependencies:
       '@types/node': '*'
       typescript: '>=3'
     dependencies:
-      '@types/node': 18.7.14
+      '@types/node': 18.7.15
       cosmiconfig: 7.0.1
-      ts-node: 10.9.1_tphhiizkxv2hzwkunblc3hbmra
+      ts-node: 10.9.1_r4hqq7vrw4pxsipnb7ha25ylfe
       typescript: 4.8.2
     transitivePeerDependencies:
       - '@swc/core'
@@ -1567,8 +1567,8 @@ packages:
       - '@swc/wasm'
     dev: true
 
-  /daisyui/2.24.0_25hquoklqeoqwmt7fwvvcyxm5e:
-    resolution: {integrity: sha512-Fdu/4LCdTfWLWAbCuPxvnaRotEfJ+hVPgZ2kv/aUk9RZ00Yk8fGdJtIf0kXJ3IgUKOr8rCXUpfQY6DQU9usPCQ==}
+  /daisyui/2.25.0_25hquoklqeoqwmt7fwvvcyxm5e:
+    resolution: {integrity: sha512-tv2sFHMOCEr+3A2JOFMaFjV6O/tkXYrytCSptXU8GRS7FDCR0pUmHA/o6K+3nydor7rQ06gMyVbCDHE9WdMW0Q==}
     peerDependencies:
       autoprefixer: ^10.0.2
       postcss: ^8.1.6
@@ -4434,9 +4434,9 @@ packages:
     dependencies:
       lru-cache: 6.0.0
 
-  /sharp/0.30.7:
-    resolution: {integrity: sha512-G+MY2YW33jgflKPTXXptVO28HvNOo9G3j0MybYAHeEmby+QuD2U98dT6ueht9cv/XDqZspSpIhoSW+BAKJ7Hig==}
-    engines: {node: '>=12.13.0'}
+  /sharp/0.31.0:
+    resolution: {integrity: sha512-ft96f8WzGxavg0rkLpMw90MTPMUZDyf0tHjPPh8Ob59xt6KzX8EqtotcqZGUm7kwqpX2pmYiyYX2LL0IZ/FDEw==}
+    engines: {node: '>=14.15.0'}
     requiresBuild: true
     dependencies:
       color: 4.2.3
@@ -4730,7 +4730,7 @@ packages:
     resolution: {integrity: sha512-AqTiAOLcj85xS7vQ8QkAV41hPDIJ71XJB4RCUrzo/1GM2CQwhkJGaf9Hgr7BOugMRpgGUrqRg/DrBDl4H40+8g==}
     dev: false
 
-  /ts-node/10.9.1_tphhiizkxv2hzwkunblc3hbmra:
+  /ts-node/10.9.1_r4hqq7vrw4pxsipnb7ha25ylfe:
     resolution: {integrity: sha512-NtVysVPkxxrwFGUUxGYhfux8k78pQB3JqYBXlLRZgdGUqTO5wU/UyHop5p70iEbGhB7q5KmiZiU0Y3KlJrScEw==}
     hasBin: true
     peerDependencies:
@@ -4749,7 +4749,7 @@ packages:
       '@tsconfig/node12': 1.0.11
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.3
-      '@types/node': 18.7.14
+      '@types/node': 18.7.15
       acorn: 8.8.0
       acorn-walk: 8.2.0
       arg: 4.1.3
