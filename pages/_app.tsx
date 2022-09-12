@@ -4,7 +4,7 @@ import { AppProps } from 'next/app';
 
 import '../styles.css';
 
-import '../flags.config';
+import '../flags/config';
 
 const MyApp = ({ Component, pageProps }: AppProps) => (
     <div data-theme="dark">

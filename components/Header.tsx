@@ -1,9 +1,8 @@
 import Link from 'next/link';
-import { useFlags } from '@happykit/flags/client';
-import { AppFlags } from 'types/AppFlags';
+import { useFlags } from 'flags/client';
 
 export default function Header({ siteTitle }: { siteTitle: string }) {
-    const { flags } = useFlags<AppFlags>();
+    const { flags } = useFlags();
 
     return (
         <div className="mb-2 shadow-lg navbar bg-neutral text-neutral-content">
