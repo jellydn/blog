@@ -7,7 +7,7 @@ specifiers:
   '@tailwindcss/typography': 0.5.7
   '@trivago/prettier-plugin-sort-imports': 3.3.0
   '@types/node': 18.7.16
-  '@types/react': 18.0.19
+  '@types/react': 18.0.20
   autoprefixer: 10.4.9
   cz-conventional-changelog: 3.3.0
   daisyui: 2.27.0
@@ -55,7 +55,7 @@ dependencies:
   raw-loader: 4.0.2
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
-  react-markdown: 8.0.3_fn6mmk7tilns4p7ajkklhuudvi
+  react-markdown: 8.0.3_w5j4k42lgipnm43s3brx6h3c34
   remark-gfm: 3.0.1
   sharp: 0.31.0
 
@@ -63,7 +63,7 @@ devDependencies:
   '@fullhuman/postcss-purgecss': 4.1.3_postcss@8.4.16
   '@trivago/prettier-plugin-sort-imports': 3.3.0_prettier@2.7.1
   '@types/node': 18.7.16
-  '@types/react': 18.0.19
+  '@types/react': 18.0.20
   autoprefixer: 10.4.9_postcss@8.4.16
   cz-conventional-changelog: 3.3.0
   eslint: 8.23.1
@@ -943,8 +943,8 @@ packages:
   /@types/prop-types/15.7.5:
     resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==}
 
-  /@types/react/18.0.19:
-    resolution: {integrity: sha512-BDc3Q+4Q3zsn7k9xZrKfjWyJsSlEDMs38gD1qp2eDazLCdcPqAT+vq1ND+Z8AGel/UiwzNUk8ptpywgNQcJ1MQ==}
+  /@types/react/18.0.20:
+    resolution: {integrity: sha512-MWul1teSPxujEHVwZl4a5HxQ9vVNsjTchVA+xRqv/VYGCuKGAU6UhfrTdF5aBefwD1BHUD8i/zq+O/vyCm/FrA==}
     dependencies:
       '@types/prop-types': 15.7.5
       '@types/scheduler': 0.16.2
@@ -4199,7 +4199,7 @@ packages:
     resolution: {integrity: sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==}
     dev: false
 
-  /react-markdown/8.0.3_fn6mmk7tilns4p7ajkklhuudvi:
+  /react-markdown/8.0.3_w5j4k42lgipnm43s3brx6h3c34:
     resolution: {integrity: sha512-We36SfqaKoVNpN1QqsZwWSv/OZt5J15LNgTLWynwAN5b265hrQrsjMtlRNwUvS+YyR3yDM8HpTNc4pK9H/Gc0A==}
     peerDependencies:
       '@types/react': '>=16'
@@ -4207,7 +4207,7 @@ packages:
     dependencies:
       '@types/hast': 2.3.4
       '@types/prop-types': 15.7.5
-      '@types/react': 18.0.19
+      '@types/react': 18.0.20
       '@types/unist': 2.0.6
       comma-separated-tokens: 2.0.2
       hast-util-whitespace: 2.0.0
