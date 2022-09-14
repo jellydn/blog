@@ -71,6 +71,7 @@ pages:
 - posts/til-28-decode-receipt-logs-with-ethers.md
 - posts/til-3-rename-all-js-to-ts-files.md
 - posts/til-30-merge-to-videos-from-cli-with-ffmpeg.md
+- posts/til-31-fix-build-error-on-oclif-cli-for-typescript-4.8.3.md
 - posts/til-4-trigger-github-action-base-on-the-comment.md
 - posts/til-5-delete-all-local-branches-except-master.md
 - posts/til-6-delete-all-users-from-aws-cognito.md
