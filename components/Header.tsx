@@ -6,7 +6,7 @@ export default function Header({ siteTitle }: { siteTitle: string }) {
 
     return (
         <div className="mb-2 shadow-lg navbar bg-neutral text-neutral-content">
-            <Link href="/">
+            <Link href="/" legacyBehavior>
                 <div className="flex-1 px-2 mx-2">
                     <svg
                         className="w-6 h-6 sm:h-6 sm:w-6"
@@ -26,7 +26,7 @@ export default function Header({ siteTitle }: { siteTitle: string }) {
             </Link>
             <div className="flex-none px-2 mx-2">
                 <div className="items-stretch hidden lg:flex">
-                    <Link href="/">
+                    <Link href="/" legacyBehavior>
                         <button
                             type="button"
                             className="btn btn-ghost btn-sm rounded-btn"

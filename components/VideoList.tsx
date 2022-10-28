@@ -26,23 +26,23 @@ const VideoList = ({ allVideos }: { allVideos: any }) => {
                     <div key={post.slug}>
                         {post.frontmatter.hero_image && (
                             <Link passHref href={`/video/${post.slug}`}>
-                                <a>
-                                    <Image
-                                        width="50"
-                                        height="30"
-                                        src={post.frontmatter.hero_image}
-                                        className="object-cover w-full h-56 mb-5 bg-center rounded"
-                                        alt={post.frontmatter.title}
-                                        loading="lazy"
-                                    />
-                                </a>
+                                <Image
+                                    width="50"
+                                    height="30"
+                                    src={post.frontmatter.hero_image}
+                                    className="object-cover w-full h-56 mb-5 bg-center rounded"
+                                    alt={post.frontmatter.title}
+                                    loading="lazy"
+                                />
                             </Link>
                         )}
                         <h2 className="mb-2 text-lg font-semibold text-gray-900">
-                            <Link passHref href={`/video/${post.slug}`}>
-                                <a className="text-gray-900 hover:text-purple-700">
-                                    {post.frontmatter.title}
-                                </a>
+                            <Link
+                                passHref
+                                href={`/video/${post.slug}`}
+                                className="text-gray-900 hover:text-purple-700"
+                            >
+                                {post.frontmatter.title}
                             </Link>
                         </h2>
                         <YoutubeVideo
