@@ -70,7 +70,12 @@ export default function VideoTemplate({
                         href="https://github.com/jellydn"
                     >
                         <div className="avatar">
-                            <Image src="/avatar.jpg" width="48" height="48" />
+                            <Image
+                                src="/avatar.jpg"
+                                width="48"
+                                height="48"
+                                alt="avatar"
+                            />
                         </div>
                         <div className="ml-2">
                             <p className="text-sm font-semibold text-gray-800">
