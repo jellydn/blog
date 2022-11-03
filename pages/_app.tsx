@@ -8,6 +8,11 @@ import '../flags/config';
 
 const MyApp = ({ Component, pageProps }: AppProps) => (
     <div data-theme="dark">
+        <script
+            data-goatcounter="https://dunghd.goatcounter.com/count"
+            async
+            src="//gc.zgo.at/count.js"
+        ></script>
         <Component {...pageProps} />
     </div>
 );
