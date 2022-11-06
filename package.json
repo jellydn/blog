@@ -43,7 +43,7 @@
         "@types/react": "18.0.25",
         "autoprefixer": "10.4.13",
         "cz-conventional-changelog": "3.3.0",
-        "eslint": "8.26.0",
+        "eslint": "8.27.0",
         "eslint-config-next": "13.0.2",
         "husky": "8.0.1",
         "nano-staged": "0.8.0",
