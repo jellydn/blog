@@ -4,7 +4,7 @@ specifiers:
   '@fullhuman/postcss-purgecss': 5.0.0
   '@giscus/react': 2.2.0
   '@happykit/flags': 3.0.0
-  '@tailwindcss/typography': 0.5.7
+  '@tailwindcss/typography': 0.5.8
   '@trivago/prettier-plugin-sort-imports': 3.4.0
   '@types/node': 18.11.9
   '@types/react': 18.0.25
@@ -41,7 +41,7 @@ specifiers:
 dependencies:
   '@giscus/react': 2.2.0_biqbaboplfbrettd7655fr4n2y
   '@happykit/flags': 3.0.0_next@13.0.2+react@18.2.0
-  '@tailwindcss/typography': 0.5.7_tailwindcss@3.2.2
+  '@tailwindcss/typography': 0.5.8_tailwindcss@3.2.2
   daisyui: 2.38.1_lycaqaeny3mp632atgvyvqdgwe
   glob: 8.0.3
   gray-matter: 4.0.3
@@ -833,8 +833,8 @@ packages:
       tslib: 2.4.0
     dev: false
 
-  /@tailwindcss/typography/0.5.7_tailwindcss@3.2.2:
-    resolution: {integrity: sha512-JTTSTrgZfp6Ki4svhPA4mkd9nmQ/j9EfE7SbHJ1cLtthKkpW2OxsFXzSmxbhYbEkfNIyAyhle5p4SYyKRbz/jg==}
+  /@tailwindcss/typography/0.5.8_tailwindcss@3.2.2:
+    resolution: {integrity: sha512-xGQEp8KXN8Sd8m6R4xYmwxghmswrd0cPnNI2Lc6fmrC3OojysTBJJGSIVwPV56q4t6THFUK3HJ0EaWwpglSxWw==}
     peerDependencies:
       tailwindcss: '>=3.0.0 || insiders'
     dependencies:
