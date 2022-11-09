@@ -10,7 +10,7 @@ specifiers:
   '@types/react': 18.0.25
   autoprefixer: 10.4.13
   cz-conventional-changelog: 3.3.0
-  daisyui: 2.38.1
+  daisyui: 2.39.0
   eslint: 8.27.0
   eslint-config-next: 13.0.2
   glob: 8.0.3
@@ -21,7 +21,7 @@ specifiers:
   lite-youtube-embed: 0.2.0
   nano-staged: 0.8.0
   next: 13.0.2
-  next-seo: 5.14.0
+  next-seo: 5.14.1
   node-glob: 1.2.0
   postcss: 8.4.18
   postcss-flexbugs-fixes: 5.0.2
@@ -42,14 +42,14 @@ dependencies:
   '@giscus/react': 2.2.2_biqbaboplfbrettd7655fr4n2y
   '@happykit/flags': 3.0.0_next@13.0.2+react@18.2.0
   '@tailwindcss/typography': 0.5.8_tailwindcss@3.2.2
-  daisyui: 2.38.1_lycaqaeny3mp632atgvyvqdgwe
+  daisyui: 2.39.0_lycaqaeny3mp632atgvyvqdgwe
   glob: 8.0.3
   gray-matter: 4.0.3
   just-unique: 4.1.1
   kutty: 0.6.0_tailwindcss@3.2.2
   lite-youtube-embed: 0.2.0
   next: 13.0.2_biqbaboplfbrettd7655fr4n2y
-  next-seo: 5.14.0_pknogjuzx4bv7zxtatcb2ahtsq
+  next-seo: 5.14.1_pknogjuzx4bv7zxtatcb2ahtsq
   node-glob: 1.2.0
   prismjs: 1.29.0
   raw-loader: 4.0.2
@@ -1619,8 +1619,8 @@ packages:
       - '@swc/wasm'
     dev: true
 
-  /daisyui/2.38.1_lycaqaeny3mp632atgvyvqdgwe:
-    resolution: {integrity: sha512-fHAVi+bT3H9QCNM7LNEH1EMPT0IwqufuW2RNhTJZorX3TftB1bWW437BVmSt70AZH72Xvp0mVxwVS3ChSKSj0w==}
+  /daisyui/2.39.0_lycaqaeny3mp632atgvyvqdgwe:
+    resolution: {integrity: sha512-r3vbDI+pafB//QFfKJMkMxLlKGjdk21O/NieG+zY+LXH4hinyAA1/2/jE1+fNR+qQbuBL8USnN4wR3grG78nHQ==}
     peerDependencies:
       autoprefixer: ^10.0.2
       postcss: ^8.1.6
@@ -3482,8 +3482,8 @@ packages:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
     dev: true
 
-  /next-seo/5.14.0_pknogjuzx4bv7zxtatcb2ahtsq:
-    resolution: {integrity: sha512-VpbVFXbDzy31qoKBH7xoxtzh+nDhEWYOBnlc18zkXmypRd3X9vxdwh7rlr3q2BQTfbfk2J/a6Y2vEb+oTcCW0w==}
+  /next-seo/5.14.1_pknogjuzx4bv7zxtatcb2ahtsq:
+    resolution: {integrity: sha512-NiJeQbxYP3z+EMp52q8k3Q+OfX2+Yv2WehERDj98r2wjXxL+woKpRBdsSVYolTD0Hm8IWs42SzaISE93RoQdOw==}
     peerDependencies:
       next: ^8.1.1-canary.54 || >=9.0.0
       react: '>=16.0.0'
