@@ -4,11 +4,12 @@ tag:
 - renovate
 - auto-merge
 author: Dung Huynh
-hero_image: ''
+hero_image: '/static/til.jpeg
 title: "#TIL 33 - Auto-merge your pull request on GitHub with Renovate bot"
 description: 'How to auto merge your PR on Github '
 
 ---
+
 This is a neat trick for auto-merge your pull request on GitHub with Renovate bot if that's passed the check (build, linter) for non-major update packages.
 
 Here is the `renovate.json` file.
