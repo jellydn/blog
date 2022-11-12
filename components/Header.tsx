@@ -43,6 +43,13 @@ export default function Header({ siteTitle }: { siteTitle: string }) {
                     </a>
                     <a
                         target="_blank"
+                        href="https://blog.productsway.com/"
+                        className="btn btn-ghost btn-sm rounded-btn" rel="noreferrer"
+                    >
+                        Blog
+                    </a>
+                    <a
+                        target="_blank"
                         href="https://www.youtube.com/c/ITManVietnam"
                         className="btn btn-ghost btn-sm rounded-btn"
                         rel="noreferrer"
