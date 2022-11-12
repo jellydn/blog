@@ -16,7 +16,7 @@
         }
     },
     "dependencies": {
-        "@giscus/react": "2.2.2",
+        "@giscus/react": "2.2.3",
         "@happykit/flags": "3.0.0",
         "@tailwindcss/typography": "0.5.8",
         "daisyui": "2.39.1",
