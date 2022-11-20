@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@fullhuman/postcss-purgecss': 5.0.0
-  '@giscus/react': 2.2.3
+  '@giscus/react': 2.2.4
   '@happykit/flags': 3.0.0
   '@tailwindcss/typography': 0.5.8
   '@trivago/prettier-plugin-sort-imports': 3.4.0
@@ -39,7 +39,7 @@ specifiers:
   typescript: 4.9.3
 
 dependencies:
-  '@giscus/react': 2.2.3_biqbaboplfbrettd7655fr4n2y
+  '@giscus/react': 2.2.4_biqbaboplfbrettd7655fr4n2y
   '@happykit/flags': 3.0.0_next@13.0.4+react@18.2.0
   '@tailwindcss/typography': 0.5.8_tailwindcss@3.2.4
   daisyui: 2.41.0_2lwn2upnx27dqeg6hqdu7sq75m
@@ -587,13 +587,13 @@ packages:
       purgecss: 5.0.0
     dev: true
 
-  /@giscus/react/2.2.3_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-zsu+ADvxR12PyGZBYMFxYfSQL1eefq/Wkh5g0Eg75BWBiaIT8jSFss4l0Xb2BLQpNAjZ5bzLfJcirz/dPQOkGQ==}
+  /@giscus/react/2.2.4_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-VkXZ36HL30ynThncflHxPwY/5Ay4a8HuqS3zMczj4a+oIqG1A7IRNeviteYl9lH6FOVc8zSIh/yfLQOIiyrBrw==}
     peerDependencies:
       react: ^16 || ^17 || ^18
       react-dom: ^16 || ^17 || ^18
     dependencies:
-      giscus: 1.2.3
+      giscus: 1.2.4
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
     dev: false
@@ -2377,8 +2377,8 @@ packages:
     resolution: {integrity: sha512-X8u8fREiYOE6S8hLbq99PeykTDoLVnxvF4DjWKJmz9xy2nNRdUcV8ZN9tniJFeKyTU3qnC9lL8n4Chd6LmVKHg==}
     dev: true
 
-  /giscus/1.2.3:
-    resolution: {integrity: sha512-1sYu6B3cUzPVZHH93f1DX5PJHf5ak2bPp8N1xZrAPxqccN7C/R6r93usllmCVESJ8cvnyYUaNVyXzOYz9B6OxQ==}
+  /giscus/1.2.4:
+    resolution: {integrity: sha512-c//t+vrEDNJ3jcM2TLz6UG7gZHyRDdYtj2PV0TaKk8eKMfq4OB8K1BFclaQ0UbUh6UN6hp89BNJTTcnibkiILA==}
     dependencies:
       lit: 2.4.1
     dev: false
