@@ -6,6 +6,13 @@ export default function Header({ siteTitle }: { siteTitle: string }) {
 
     return (
         <div className="mb-2 shadow-lg navbar bg-neutral text-neutral-content">
+            <a
+                rel="me"
+                className="hidden"
+                href="https://mastodon.online/@jellydn"
+            >
+                Mastodon
+            </a>
             <Link href="/" legacyBehavior>
                 <div className="flex-1 px-2 mx-2">
                     <svg
