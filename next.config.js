@@ -12,4 +12,13 @@ module.exports = {
         });
         return config;
     },
+    async redirects() {
+        return [
+            {
+                source: '/.well-known/webfinger',
+                destination: '/.well-known/webfinger.json',
+                permanent: true,
+            },
+        ];
+    },
 };
