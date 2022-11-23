@@ -14,7 +14,7 @@ const VideoList = ({ allVideos }: { allVideos: any }) => {
     }
 
     return (
-        <section className="px-4 py-24 mx-auto max-w-7xl">
+        <section className="py-24 px-4 mx-auto max-w-7xl">
             <h2 className="mb-2 text-3xl font-extrabold leading-tight text-gray-900">
                 Latest Videos
             </h2>
@@ -30,7 +30,7 @@ const VideoList = ({ allVideos }: { allVideos: any }) => {
                                     width="50"
                                     height="30"
                                     src={post.frontmatter.hero_image}
-                                    className="object-cover w-full h-56 mb-5 bg-center rounded"
+                                    className="object-cover mb-5 w-full h-56 bg-center rounded"
                                     alt={post.frontmatter.title}
                                     loading="lazy"
                                 />

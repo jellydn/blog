@@ -1,7 +1,7 @@
 const HeroIntro = () => (
     <>
         <section className="mt-20 bg-white">
-            <div className="max-w-2xl px-6 mx-auto text-center">
+            <div className="px-6 mx-auto max-w-2xl text-center">
                 <h2 className="text-3xl font-semibold text-gray-800">
                     Hi,{' '}
                     <span className="px-1 text-white bg-indigo-600 rounded">
@@ -13,7 +13,7 @@ const HeroIntro = () => (
         </section>
 
         <section className="py-20 bg-gray-800 pattern">
-            <div className="max-w-5xl px-6 mx-auto text-center">
+            <div className="px-6 mx-auto max-w-5xl text-center">
                 <h2 className="text-2xl font-semibold text-white">About Me</h2>
                 <p className="mt-4 text-gray-400">
                     I’m a full stack developer. I’m a fast learner and

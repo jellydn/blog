@@ -38,7 +38,7 @@ export default function VideoTemplate({
                 title={`${siteTitle} | ${frontmatter.title}`}
                 description={siteDescription}
             />
-            <article className="w-full max-w-5xl px-6 py-12 mx-auto">
+            <article className="py-12 px-6 mx-auto w-full max-w-5xl">
                 <div data-theme="dark" className="mb-12">
                     {frontmatter.hero_image && (
                         <div className="avatar">
@@ -47,7 +47,7 @@ export default function VideoTemplate({
                                 height="200"
                                 src={frontmatter.hero_image}
                                 alt={`video_hero_${frontmatter.title}`}
-                                className="w-24 h-24 mb-8 rounded-btn"
+                                className="mb-8 w-24 h-24 rounded-btn"
                             />
                         </div>
                     )}
@@ -87,7 +87,7 @@ export default function VideoTemplate({
                         </div>
                     </a>
                 </div>
-                <div className="prose text-black lg:prose-xl">
+                <div className="text-black prose lg:prose-xl">
                     <div>
                         <ReactMarkdown remarkPlugins={[gfm]}>
                             {markdownBody}

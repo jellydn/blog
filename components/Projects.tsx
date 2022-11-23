@@ -2,12 +2,12 @@ import Image from 'next/image';
 
 const Projects = () => (
     <section className="py-20 bg-gray-800 pattern">
-        <div className="max-w-5xl px-6 mx-auto text-center">
+        <div className="px-6 mx-auto max-w-5xl text-center">
             <h2 className="text-2xl font-semibold text-white">Side Projects</h2>
-            <div className="flex items-center justify-center mt-10">
+            <div className="flex justify-center items-center mt-10">
                 <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
                     <div className="w-full max-w-xs">
-                        <div className="flex items-center justify-center h-56 overflow-hidden bg-white border-b-8 border-teal-400 rounded-md">
+                        <div className="flex overflow-hidden justify-center items-center h-56 bg-white rounded-md border-b-8 border-teal-400">
                             <Image
                                 width="300"
                                 height="200"
@@ -19,9 +19,9 @@ const Projects = () => (
                         <a
                             target="_bank"
                             href="https://github.com/jellydn/dapp-starter"
-                            className="block mt-5 overflow-hidden transition duration-500 ease-in-out transform bg-gray-700 rounded-md hover:-translate-y-1 hover:scale-110"
+                            className="block overflow-hidden mt-5 bg-gray-700 rounded-md transition duration-500 ease-in-out transform hover:scale-110 hover:-translate-y-1"
                         >
-                            <div className="px-3 py-2 text-sm text-center">
+                            <div className="py-2 px-3 text-sm text-center">
                                 <p className="text-gray-300">
                                     Opinionated Dapp Starter Template
                                 </p>
@@ -32,7 +32,7 @@ const Projects = () => (
                         </a>
                     </div>
                     <div className="w-full max-w-xs">
-                        <div className="flex items-center justify-center h-56 overflow-hidden bg-white border-b-8 border-teal-400 rounded-md">
+                        <div className="flex overflow-hidden justify-center items-center h-56 bg-white rounded-md border-b-8 border-teal-400">
                             <Image
                                 width="300"
                                 height="200"
@@ -44,9 +44,9 @@ const Projects = () => (
                         <a
                             target="_bank"
                             href="https://github.com/jellydn/react-dapp"
-                            className="block mt-5 overflow-hidden transition duration-500 ease-in-out transform bg-gray-700 rounded-md hover:-translate-y-1 hover:scale-110"
+                            className="block overflow-hidden mt-5 bg-gray-700 rounded-md transition duration-500 ease-in-out transform hover:scale-110 hover:-translate-y-1"
                         >
-                            <div className="px-3 py-2 text-sm text-center">
+                            <div className="py-2 px-3 text-sm text-center">
                                 <p className="text-gray-300">
                                     Dapp Example with ERC20 Token and Simple
                                     Greeter Contract. Built with Hardhat +
@@ -59,7 +59,7 @@ const Projects = () => (
                         </a>
                     </div>
                     <div className="w-full max-w-xs">
-                        <div className="flex items-center justify-center h-56 overflow-hidden bg-white border-b-8 border-teal-400 rounded-md">
+                        <div className="flex overflow-hidden justify-center items-center h-56 bg-white rounded-md border-b-8 border-teal-400">
                             <Image
                                 width="300"
                                 height="200"
@@ -71,9 +71,9 @@ const Projects = () => (
                         <a
                             target="_bank"
                             href="https://github.com/jellydn/dapp-token-ico"
-                            className="block mt-5 overflow-hidden transition duration-500 ease-in-out transform bg-gray-700 rounded-md hover:-translate-y-1 hover:scale-110"
+                            className="block overflow-hidden mt-5 bg-gray-700 rounded-md transition duration-500 ease-in-out transform hover:scale-110 hover:-translate-y-1"
                         >
-                            <div className="px-3 py-2 text-sm text-center">
+                            <div className="py-2 px-3 text-sm text-center">
                                 <p className="text-gray-300">
                                     How to do your first ICO smart contract
                                 </p>
@@ -84,7 +84,7 @@ const Projects = () => (
                         </a>
                     </div>
                     <div className="w-full max-w-xs">
-                        <div className="flex items-center justify-center h-56 overflow-hidden bg-white border-b-8 border-teal-400 rounded-md">
+                        <div className="flex overflow-hidden justify-center items-center h-56 bg-white rounded-md border-b-8 border-teal-400">
                             <Image
                                 width="300"
                                 height="200"
@@ -96,9 +96,9 @@ const Projects = () => (
                         <a
                             target="_bank"
                             href="https://github.com/jellydn/new-web-app"
-                            className="block mt-5 overflow-hidden transition duration-500 ease-in-out transform bg-gray-700 rounded-md hover:-translate-y-1 hover:scale-110"
+                            className="block overflow-hidden mt-5 bg-gray-700 rounded-md transition duration-500 ease-in-out transform hover:scale-110 hover:-translate-y-1"
                         >
-                            <div className="px-3 py-2 text-sm text-center">
+                            <div className="py-2 px-3 text-sm text-center">
                                 <p className="text-gray-300">
                                     Frontend app generator, built on top vitejs
                                     (React + Typescript + React-Query +
@@ -111,7 +111,7 @@ const Projects = () => (
                         </a>
                     </div>
                     <div className="w-full max-w-xs">
-                        <div className="flex items-center justify-center h-56 overflow-hidden bg-white border-b-8 border-teal-400 rounded-md">
+                        <div className="flex overflow-hidden justify-center items-center h-56 bg-white rounded-md border-b-8 border-teal-400">
                             <Image
                                 width="300"
                                 height="200"
@@ -123,9 +123,9 @@ const Projects = () => (
                         <a
                             target="_bank"
                             href="https://github.com/jellydn/next-validations"
-                            className="block mt-5 overflow-hidden transition duration-500 ease-in-out transform bg-gray-700 rounded-md hover:-translate-y-1 hover:scale-110"
+                            className="block overflow-hidden mt-5 bg-gray-700 rounded-md transition duration-500 ease-in-out transform hover:scale-110 hover:-translate-y-1"
                         >
-                            <div className="px-3 py-2 text-sm text-center">
+                            <div className="py-2 px-3 text-sm text-center">
                                 <p className="text-gray-300">
                                     NextJS API Validations, support Yup,
                                     Fastest-Validator, Joi, and more.
@@ -137,7 +137,7 @@ const Projects = () => (
                         </a>
                     </div>
                     <div className="w-full max-w-xs">
-                        <div className="flex items-center justify-center h-56 overflow-hidden bg-white border-b-8 border-teal-400 rounded-md">
+                        <div className="flex overflow-hidden justify-center items-center h-56 bg-white rounded-md border-b-8 border-teal-400">
                             <Image
                                 width="300"
                                 height="200"
@@ -149,9 +149,9 @@ const Projects = () => (
                         <a
                             target="_bank"
                             href="https://github.com/jellydn/next-swagger-doc"
-                            className="block mt-5 overflow-hidden transition duration-500 ease-in-out transform bg-gray-700 rounded-md hover:-translate-y-1 hover:scale-110"
+                            className="block overflow-hidden mt-5 bg-gray-700 rounded-md transition duration-500 ease-in-out transform hover:scale-110 hover:-translate-y-1"
                         >
-                            <div className="px-3 py-2 text-sm text-center">
+                            <div className="py-2 px-3 text-sm text-center">
                                 <p className="text-gray-300">
                                     NextJS Swagger Doc - This package reads your
                                     JSDoc-annotated source code on NextJS API
@@ -165,7 +165,7 @@ const Projects = () => (
                         </a>
                     </div>
                     <div className="w-full max-w-xs">
-                        <div className="flex items-center justify-center h-56 overflow-hidden bg-white border-b-8 border-teal-400 rounded-md">
+                        <div className="flex overflow-hidden justify-center items-center h-56 bg-white rounded-md border-b-8 border-teal-400">
                             <Image
                                 width="300"
                                 height="200"
@@ -176,9 +176,9 @@ const Projects = () => (
                         </div>
                         <a
                             href="https://rrandom.productsway.com/"
-                            className="block mt-5 overflow-hidden transition duration-500 ease-in-out transform bg-gray-700 rounded-md hover:-translate-y-1 hover:scale-110"
+                            className="block overflow-hidden mt-5 bg-gray-700 rounded-md transition duration-500 ease-in-out transform hover:scale-110 hover:-translate-y-1"
                         >
-                            <div className="px-3 py-2 text-sm text-center">
+                            <div className="py-2 px-3 text-sm text-center">
                                 <p className="text-gray-300">
                                     What&apos;s this fuss about true randomness?
                                 </p>
@@ -189,7 +189,7 @@ const Projects = () => (
                         </a>
                     </div>
                     <div className="w-full max-w-xs">
-                        <div className="flex items-center justify-center h-56 overflow-hidden bg-white border-b-8 border-teal-400 rounded-md">
+                        <div className="flex overflow-hidden justify-center items-center h-56 bg-white rounded-md border-b-8 border-teal-400">
                             <Image
                                 width="300"
                                 height="200"
@@ -201,9 +201,9 @@ const Projects = () => (
                         <a
                             target="_bank"
                             href="https://github.com/jellydn/eth-revert-reason"
-                            className="block mt-5 overflow-hidden transition duration-500 ease-in-out transform bg-gray-700 rounded-md hover:-translate-y-1 hover:scale-110"
+                            className="block overflow-hidden mt-5 bg-gray-700 rounded-md transition duration-500 ease-in-out transform hover:scale-110 hover:-translate-y-1"
                         >
-                            <div className="px-3 py-2 text-sm text-center">
+                            <div className="py-2 px-3 text-sm text-center">
                                 <p className="text-gray-300">
                                     Decode revert reason from failed transaction
                                 </p>
@@ -214,7 +214,7 @@ const Projects = () => (
                         </a>
                     </div>
                     <div className="w-full max-w-xs">
-                        <div className="flex items-center justify-center h-56 overflow-hidden bg-white border-b-8 border-teal-400 rounded-md">
+                        <div className="flex overflow-hidden justify-center items-center h-56 bg-white rounded-md border-b-8 border-teal-400">
                             <Image
                                 width="300"
                                 height="200"
@@ -226,9 +226,9 @@ const Projects = () => (
                         <a
                             target="_bank"
                             href="https://github.com/jellydn/vs-code-preset"
-                            className="block mt-5 overflow-hidden transition duration-500 ease-in-out transform bg-gray-700 rounded-md hover:-translate-y-1 hover:scale-110"
+                            className="block overflow-hidden mt-5 bg-gray-700 rounded-md transition duration-500 ease-in-out transform hover:scale-110 hover:-translate-y-1"
                         >
-                            <div className="px-3 py-2 text-sm text-center">
+                            <div className="py-2 px-3 text-sm text-center">
                                 <p className="text-gray-300">
                                     Easy to quickly enable/disable VS Code
                                     extensions base on your preset
@@ -240,7 +240,7 @@ const Projects = () => (
                         </a>
                     </div>
                     <div className="w-full max-w-xs">
-                        <div className="flex items-center justify-center h-56 overflow-hidden bg-white border-b-8 border-teal-400 rounded-md">
+                        <div className="flex overflow-hidden justify-center items-center h-56 bg-white rounded-md border-b-8 border-teal-400">
                             <Image
                                 width="300"
                                 height="200"
@@ -252,9 +252,9 @@ const Projects = () => (
                         <a
                             target="_bank"
                             href="https://github.com/jellydn/use-wait-for-transaction-hash"
-                            className="block mt-5 overflow-hidden transition duration-500 ease-in-out transform bg-gray-700 rounded-md hover:-translate-y-1 hover:scale-110"
+                            className="block overflow-hidden mt-5 bg-gray-700 rounded-md transition duration-500 ease-in-out transform hover:scale-110 hover:-translate-y-1"
                         >
-                            <div className="px-3 py-2 text-sm text-center">
+                            <div className="py-2 px-3 text-sm text-center">
                                 <p className="text-gray-300">
                                     Simple hook for getting transaction status
                                     from the ETH/BSC network.
@@ -266,7 +266,7 @@ const Projects = () => (
                         </a>
                     </div>
                     <div className="w-full max-w-xs">
-                        <div className="flex items-center justify-center h-56 overflow-hidden bg-white border-b-8 border-teal-400 rounded-md">
+                        <div className="flex overflow-hidden justify-center items-center h-56 bg-white rounded-md border-b-8 border-teal-400">
                             <Image
                                 width="300"
                                 height="200"
@@ -278,9 +278,9 @@ const Projects = () => (
                         <a
                             target="_bank"
                             href="https://github.com/jellydn/next-app-starter"
-                            className="block mt-5 overflow-hidden transition duration-500 ease-in-out transform bg-gray-700 rounded-md hover:-translate-y-1 hover:scale-110"
+                            className="block overflow-hidden mt-5 bg-gray-700 rounded-md transition duration-500 ease-in-out transform hover:scale-110 hover:-translate-y-1"
                         >
-                            <div className="px-3 py-2 text-sm text-center">
+                            <div className="py-2 px-3 text-sm text-center">
                                 <p className="text-gray-300">
                                     Another awesome starter for your app base on
                                     nextjs + tailwind + react-query +
@@ -293,7 +293,7 @@ const Projects = () => (
                         </a>
                     </div>
                     <div className="w-full max-w-xs">
-                        <div className="flex items-center justify-center h-56 overflow-hidden bg-white border-b-8 border-teal-400 rounded-md">
+                        <div className="flex overflow-hidden justify-center items-center h-56 bg-white rounded-md border-b-8 border-teal-400">
                             <Image
                                 width="300"
                                 height="200"
@@ -305,9 +305,9 @@ const Projects = () => (
                         <a
                             target="_bank"
                             href="https://github.com/jellydn/svelte-kit-test"
-                            className="block mt-5 overflow-hidden transition duration-500 ease-in-out transform bg-gray-700 rounded-md hover:-translate-y-1 hover:scale-110"
+                            className="block overflow-hidden mt-5 bg-gray-700 rounded-md transition duration-500 ease-in-out transform hover:scale-110 hover:-translate-y-1"
                         >
-                            <div className="px-3 py-2 text-sm text-center">
+                            <div className="py-2 px-3 text-sm text-center">
                                 <p className="text-gray-300">
                                     Svelte-kit app with tailwind css
                                 </p>
@@ -319,14 +319,14 @@ const Projects = () => (
                     </div>
                 </div>
             </div>
-            <div className="flex items-center justify-center mt-12">
+            <div className="flex justify-center items-center mt-12">
                 <a
                     className="flex items-center link link-accent"
                     href="https://github.com/jellydn"
                 >
                     <span>View More On Github</span>
                     <svg
-                        className="w-5 h-5 ml-1"
+                        className="ml-1 w-5 h-5"
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"

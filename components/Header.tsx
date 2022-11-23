@@ -9,7 +9,7 @@ export default function Header({ siteTitle }: { siteTitle: string }) {
             <Link href="/" legacyBehavior>
                 <div className="flex-1 px-2 mx-2">
                     <svg
-                        className="w-6 h-6 sm:h-6 sm:w-6"
+                        className="w-6 h-6 sm:w-6 sm:h-6"
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
@@ -25,7 +25,7 @@ export default function Header({ siteTitle }: { siteTitle: string }) {
                 </div>
             </Link>
             <div className="flex-none px-2 mx-2">
-                <div className="items-stretch hidden lg:flex">
+                <div className="hidden items-stretch lg:flex">
                     <Link href="/" legacyBehavior>
                         <button
                             type="button"
@@ -44,7 +44,8 @@ export default function Header({ siteTitle }: { siteTitle: string }) {
                     <a
                         target="_blank"
                         href="https://blog.productsway.com/"
-                        className="btn btn-ghost btn-sm rounded-btn" rel="noreferrer"
+                        className="btn btn-ghost btn-sm rounded-btn"
+                        rel="noreferrer"
                     >
                         Blog
                     </a>
@@ -111,7 +112,7 @@ export default function Header({ siteTitle }: { siteTitle: string }) {
                     rel="noreferrer"
                 >
                     <svg
-                        className="w-5 h-5 fill-current sm:h-6 sm:w-6"
+                        className="w-5 h-5 fill-current sm:w-6 sm:h-6"
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 512 512"
                     >

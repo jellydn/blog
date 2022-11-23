@@ -38,7 +38,7 @@ export default function BlogTemplate({
                 title={`${siteTitle} | ${frontmatter.title}`}
                 description={siteDescription}
             />
-            <article className="w-full max-w-5xl px-6 py-12 mx-auto">
+            <article className="py-12 px-6 mx-auto w-full max-w-5xl">
                 {frontmatter.tag.map((tag: string) => (
                     <div key={tag} className="badge badge-primary">
                         {tag}
@@ -59,7 +59,7 @@ export default function BlogTemplate({
                             height="200"
                             src={frontmatter.hero_image}
                             alt={`blog_hero_${frontmatter.title}`}
-                            className="w-24 h-24 mb-8 rounded-btn"
+                            className="mb-8 w-24 h-24 rounded-btn"
                         />
                     </div>
                 )}
@@ -86,7 +86,7 @@ export default function BlogTemplate({
                         </div>
                     </a>
                 </div>
-                <div className="prose text-black lg:prose-xl">
+                <div className="text-black prose lg:prose-xl">
                     <ReactMarkdown remarkPlugins={[gfm]}>
                         {markdownBody}
                     </ReactMarkdown>
