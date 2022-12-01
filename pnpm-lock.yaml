@@ -31,7 +31,7 @@ specifiers:
   raw-loader: 4.0.2
   react: 18.2.0
   react-dom: 18.2.0
-  react-markdown: 8.0.3
+  react-markdown: 8.0.4
   remark-gfm: 3.0.1
   sharp: 0.31.2
   sort-package-json: 2.1.0
@@ -55,7 +55,7 @@ dependencies:
   raw-loader: 4.0.2
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
-  react-markdown: 8.0.3_fan5qbzahqtxlm5dzefqlqx5ia
+  react-markdown: 8.0.4_fan5qbzahqtxlm5dzefqlqx5ia
   remark-gfm: 3.0.1
   sharp: 0.31.2
 
@@ -4334,8 +4334,8 @@ packages:
     resolution: {integrity: sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==}
     dev: false
 
-  /react-markdown/8.0.3_fan5qbzahqtxlm5dzefqlqx5ia:
-    resolution: {integrity: sha512-We36SfqaKoVNpN1QqsZwWSv/OZt5J15LNgTLWynwAN5b265hrQrsjMtlRNwUvS+YyR3yDM8HpTNc4pK9H/Gc0A==}
+  /react-markdown/8.0.4_fan5qbzahqtxlm5dzefqlqx5ia:
+    resolution: {integrity: sha512-2oxHa6oDxc1apg/Gnc1Goh06t3B617xeywqI/92wmDV9FELI6ayRkwge7w7DoEqM0gRpZGTNU6xQG+YpJISnVg==}
     peerDependencies:
       '@types/react': '>=16'
       react: '>=16'
