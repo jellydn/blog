@@ -74,6 +74,7 @@ pages:
 - posts/til-31-fix-build-error-on-oclif-cli-for-typescript-4.8.3.md
 - posts/til-32-list-all-express-routes.md
 - posts/til-33-auto-merge-your-pull-request-on-github-with-renovate-bot.md
+- posts/til-34-remove-some-files-from-last-commit.md
 - posts/til-4-trigger-github-action-base-on-the-comment.md
 - posts/til-5-delete-all-local-branches-except-master.md
 - posts/til-6-delete-all-users-from-aws-cognito.md
