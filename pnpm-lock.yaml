@@ -6,7 +6,7 @@ specifiers:
   '@happykit/flags': 3.0.0
   '@tailwindcss/typography': 0.5.8
   '@trivago/prettier-plugin-sort-imports': 4.0.0
-  '@types/node': 18.11.12
+  '@types/node': 18.11.13
   '@types/react': 18.0.26
   autoprefixer: 10.4.13
   cz-conventional-changelog: 3.3.0
@@ -62,7 +62,7 @@ dependencies:
 devDependencies:
   '@fullhuman/postcss-purgecss': 5.0.0_postcss@8.4.19
   '@trivago/prettier-plugin-sort-imports': 4.0.0_prettier@2.8.1
-  '@types/node': 18.11.12
+  '@types/node': 18.11.13
   '@types/react': 18.0.26
   autoprefixer: 10.4.13_postcss@8.4.19
   cz-conventional-changelog: 3.3.0
@@ -933,8 +933,8 @@ packages:
     dev: true
     optional: true
 
-  /@types/node/18.11.12:
-    resolution: {integrity: sha512-FgD3NtTAKvyMmD44T07zz2fEf+OKwutgBCEVM8GcvMGVGaDktiLNTDvPwC/LUe3PinMW+X6CuLOF2Ui1mAlSXg==}
+  /@types/node/18.11.13:
+    resolution: {integrity: sha512-IASpMGVcWpUsx5xBOrxMj7Bl8lqfuTY7FKAnPmu5cHkfQVWF8GulWS1jbRqA934qZL35xh5xN/+Xe/i26Bod4w==}
     dev: true
 
   /@types/parse-json/4.0.0:
