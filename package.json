@@ -22,7 +22,7 @@
         "daisyui": "2.45.0",
         "glob": "8.0.3",
         "gray-matter": "4.0.3",
-        "just-unique": "4.1.1",
+        "just-unique": "4.2.0",
         "kutty": "0.6.0",
         "lite-youtube-embed": "0.2.0",
         "next": "13.0.7",
@@ -39,7 +39,7 @@
     "devDependencies": {
         "@fullhuman/postcss-purgecss": "5.0.0",
         "@trivago/prettier-plugin-sort-imports": "4.0.0",
-        "@types/node": "18.11.16",
+        "@types/node": "18.11.17",
         "@types/react": "18.0.26",
         "autoprefixer": "10.4.13",
         "cz-conventional-changelog": "3.3.0",
