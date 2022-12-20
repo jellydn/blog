@@ -10,7 +10,7 @@ specifiers:
   '@types/react': 18.0.26
   autoprefixer: 10.4.13
   cz-conventional-changelog: 3.3.0
-  daisyui: 2.45.0
+  daisyui: 2.46.0
   eslint: 8.30.0
   eslint-config-next: 13.0.7
   glob: 8.0.3
@@ -42,7 +42,7 @@ dependencies:
   '@giscus/react': 2.2.6_biqbaboplfbrettd7655fr4n2y
   '@happykit/flags': 3.0.0_next@13.0.7+react@18.2.0
   '@tailwindcss/typography': 0.5.8_tailwindcss@3.2.4
-  daisyui: 2.45.0_r4gnkvssmvyxmi2wmat5xbx36a
+  daisyui: 2.46.0_r4gnkvssmvyxmi2wmat5xbx36a
   glob: 8.0.3
   gray-matter: 4.0.3
   just-unique: 4.2.0
@@ -1579,8 +1579,8 @@ packages:
       - '@swc/wasm'
     dev: true
 
-  /daisyui/2.45.0_r4gnkvssmvyxmi2wmat5xbx36a:
-    resolution: {integrity: sha512-hAWs7vQLxsWXCd3KMLAMBrZPO6OdU0gIDfOKGmZlyM0ro/pW3J2eGEaBs90Dy8w8L6wD/w1s8Ujd7zG8TYtD3g==}
+  /daisyui/2.46.0_r4gnkvssmvyxmi2wmat5xbx36a:
+    resolution: {integrity: sha512-7L+KMCADsAmZkJUIabgDSpqEF9+uVPvyJSkSieOpY2WKeDd2pvcELZMs/AKaKkB5gcrb9cPP9vFdLXeDFJj90g==}
     peerDependencies:
       autoprefixer: ^10.0.2
       postcss: ^8.1.6
