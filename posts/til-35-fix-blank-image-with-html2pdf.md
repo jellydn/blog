@@ -27,4 +27,4 @@ Below is the way I've fixed for Threadify+ app which I'm working on recently.
       return window.html2pdf().set(opt).from(element).save();
     };
 
-More detail on \[feat: add pdf download button · jellydn/threadify-plus@5b5327b\]([https://github.com/jellydn/threadify-plus/commit/5b5327b4d407db1b98bcf5ffd90dcfa80a35deb4](https://github.com/jellydn/threadify-plus/commit/5b5327b4d407db1b98bcf5ffd90dcfa80a35deb4 'https://github.com/jellydn/threadify-plus/commit/5b5327b4d407db1b98bcf5ffd90dcfa80a35deb4'))
+More detail on [feat: add pdf download button · jellydn/threadify-plus@5b5327b](https://github.com/jellydn/threadify-plus/commit/5b5327b4d407db1b98bcf5ffd90dcfa80a35deb4)
