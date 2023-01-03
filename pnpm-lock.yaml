@@ -10,12 +10,12 @@ specifiers:
   '@types/react': 18.0.26
   autoprefixer: 10.4.13
   cz-conventional-changelog: 3.3.0
-  daisyui: 2.46.0
+  daisyui: 2.46.1
   eslint: 8.31.0
   eslint-config-next: 13.1.1
   glob: 8.0.3
   gray-matter: 4.0.3
-  husky: 8.0.2
+  husky: 8.0.3
   just-unique: 4.2.0
   kutty: 0.6.0
   lite-youtube-embed: 0.2.0
@@ -42,7 +42,7 @@ dependencies:
   '@giscus/react': 2.2.6_biqbaboplfbrettd7655fr4n2y
   '@happykit/flags': 3.0.0_next@13.1.1+react@18.2.0
   '@tailwindcss/typography': 0.5.8_tailwindcss@3.2.4
-  daisyui: 2.46.0_r4gnkvssmvyxmi2wmat5xbx36a
+  daisyui: 2.46.1_r4gnkvssmvyxmi2wmat5xbx36a
   glob: 8.0.3
   gray-matter: 4.0.3
   just-unique: 4.2.0
@@ -68,7 +68,7 @@ devDependencies:
   cz-conventional-changelog: 3.3.0
   eslint: 8.31.0
   eslint-config-next: 13.1.1_iukboom6ndih5an6iafl45j2fe
-  husky: 8.0.2
+  husky: 8.0.3
   nano-staged: 0.8.0
   postcss: 8.4.20
   postcss-flexbugs-fixes: 5.0.2_postcss@8.4.20
@@ -1580,8 +1580,8 @@ packages:
       - '@swc/wasm'
     dev: true
 
-  /daisyui/2.46.0_r4gnkvssmvyxmi2wmat5xbx36a:
-    resolution: {integrity: sha512-7L+KMCADsAmZkJUIabgDSpqEF9+uVPvyJSkSieOpY2WKeDd2pvcELZMs/AKaKkB5gcrb9cPP9vFdLXeDFJj90g==}
+  /daisyui/2.46.1_r4gnkvssmvyxmi2wmat5xbx36a:
+    resolution: {integrity: sha512-i59+nLuzzPAVOhNhot3KLtt6stfYeCIPXs9uiLcpXjykpqxHfBA3W6hQWOUWPMwfqhyQd0WKub3sydtPGjzLtA==}
     peerDependencies:
       autoprefixer: ^10.0.2
       postcss: ^8.1.6
@@ -2542,8 +2542,8 @@ packages:
       parse-passwd: 1.0.0
     dev: true
 
-  /husky/8.0.2:
-    resolution: {integrity: sha512-Tkv80jtvbnkK3mYWxPZePGFpQ/tT3HNSs/sasF9P2YfkMezDl3ON37YN6jUUI4eTg5LcyVynlb6r4eyvOmspvg==}
+  /husky/8.0.3:
+    resolution: {integrity: sha512-+dQSyqPh4x1hlO1swXBiNb2HzTDN1I2IGLQx1GrBuiqFJfoMrnZWwVmatvSiO+Iz8fBUnf+lekwNo4c2LlXItg==}
     engines: {node: '>=14'}
     hasBin: true
     dev: true
