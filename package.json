@@ -20,7 +20,7 @@
         "@happykit/flags": "3.0.0",
         "@tailwindcss/typography": "0.5.9",
         "daisyui": "2.46.1",
-        "glob": "8.0.3",
+        "glob": "8.1.0",
         "gray-matter": "4.0.3",
         "just-unique": "4.2.0",
         "kutty": "0.6.0",
