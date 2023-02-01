@@ -10,7 +10,7 @@ specifiers:
   '@types/react': 18.0.27
   autoprefixer: 10.4.13
   cz-conventional-changelog: 3.3.0
-  daisyui: 2.49.0
+  daisyui: 2.50.0
   eslint: 8.33.0
   eslint-config-next: 13.1.6
   glob: 8.1.0
@@ -34,7 +34,7 @@ specifiers:
   react-markdown: 8.0.5
   remark-gfm: 3.0.1
   sharp: 0.31.3
-  sort-package-json: 2.3.0
+  sort-package-json: 2.4.0
   tailwindcss: 3.2.4
   typescript: 4.9.5
 
@@ -42,7 +42,7 @@ dependencies:
   '@giscus/react': 2.2.6_biqbaboplfbrettd7655fr4n2y
   '@happykit/flags': 3.0.0_next@13.1.6+react@18.2.0
   '@tailwindcss/typography': 0.5.9_tailwindcss@3.2.4
-  daisyui: 2.49.0_gbtt6ss3tbiz4yjtvdr6fbrj44
+  daisyui: 2.50.0_gbtt6ss3tbiz4yjtvdr6fbrj44
   glob: 8.1.0
   gray-matter: 4.0.3
   just-unique: 4.2.0
@@ -74,7 +74,7 @@ devDependencies:
   postcss-flexbugs-fixes: 5.0.2_postcss@8.4.21
   postcss-preset-env: 7.8.3_postcss@8.4.21
   prettier: 2.8.3
-  sort-package-json: 2.3.0
+  sort-package-json: 2.4.0
   tailwindcss: 3.2.4_postcss@8.4.21
   typescript: 4.9.5
 
@@ -1567,8 +1567,8 @@ packages:
       - '@swc/wasm'
     dev: true
 
-  /daisyui/2.49.0_gbtt6ss3tbiz4yjtvdr6fbrj44:
-    resolution: {integrity: sha512-+hEFMupi/7rqkAH4d3iBWj1TXRq73V3PrkJ3HiDqFuQgMoE1/UQOgMoeqaHa3r4IRo4fjMNauwHBA17qT0YSIA==}
+  /daisyui/2.50.0_gbtt6ss3tbiz4yjtvdr6fbrj44:
+    resolution: {integrity: sha512-KiqRvqMXi9rgoH84M8D69gXPg6x+cbdiaHqm8pFHOsXXN1rTl/+OcCKkSnkEwTtIge9VJVDGU6l4B8/n+Juc5g==}
     peerDependencies:
       autoprefixer: ^10.0.2
       postcss: ^8.1.6
@@ -4718,8 +4718,8 @@ packages:
     resolution: {integrity: sha512-855pvK+VkU7PaKYPc+Jjnmt4EzejQHyhhF33q31qG8x7maDzkeFhAAThdCYay11CISO+qAMwjOBP+fPZe0IPyg==}
     dev: true
 
-  /sort-package-json/2.3.0:
-    resolution: {integrity: sha512-710DJwqqPVKRI0B/BzyF/tiTP+Lu5n0BluxrBs6ZA4T1gs2Cr+CXmFW0xr5eGmuh+yZYFRQn6cCxMaxm7aEUJw==}
+  /sort-package-json/2.4.0:
+    resolution: {integrity: sha512-vhoGWP7XDlQbO7/sBchjOetLyTKb26kyZaQQklfTJpH5BuDaXII/61wQ/o8fZgdx1kPwMbNiCoBUs3+qCEDJsQ==}
     hasBin: true
     dependencies:
       detect-indent: 7.0.1
