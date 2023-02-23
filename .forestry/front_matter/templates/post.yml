@@ -77,6 +77,7 @@ pages:
 - posts/til-34-remove-some-files-from-last-commit.md
 - posts/til-35-fix-blank-image-with-html2pdf.md
 - posts/til-36-github-copilot-with-nvchad-nvim.md
+- posts/til-37-how-to-fix-session-id-unknown-with-socket.io.md
 - posts/til-4-trigger-github-action-base-on-the-comment.md
 - posts/til-5-delete-all-local-branches-except-master.md
 - posts/til-6-delete-all-users-from-aws-cognito.md
