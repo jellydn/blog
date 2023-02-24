@@ -5,7 +5,7 @@ specifiers:
   '@giscus/react': 2.2.6
   '@happykit/flags': 3.0.0
   '@tailwindcss/typography': 0.5.9
-  '@trivago/prettier-plugin-sort-imports': 4.1.0
+  '@trivago/prettier-plugin-sort-imports': 4.1.1
   '@types/node': 18.14.1
   '@types/react': 18.0.28
   autoprefixer: 10.4.13
@@ -61,7 +61,7 @@ dependencies:
 
 devDependencies:
   '@fullhuman/postcss-purgecss': 5.0.0_postcss@8.4.21
-  '@trivago/prettier-plugin-sort-imports': 4.1.0_prettier@2.8.4
+  '@trivago/prettier-plugin-sort-imports': 4.1.1_prettier@2.8.4
   '@types/node': 18.14.1
   '@types/react': 18.0.28
   autoprefixer: 10.4.13_postcss@8.4.21
@@ -838,8 +838,8 @@ packages:
       tailwindcss: 3.2.7_postcss@8.4.21
     dev: false
 
-  /@trivago/prettier-plugin-sort-imports/4.1.0_prettier@2.8.4:
-    resolution: {integrity: sha512-aTr6QPFaPAAzPRFn9yWB/9yKi3ZAFqfGpxIGLPWuQfYJFGUed+W3KKwxntsoCiNvNE2iuKOg6haMo5KG8WXltg==}
+  /@trivago/prettier-plugin-sort-imports/4.1.1_prettier@2.8.4:
+    resolution: {integrity: sha512-dQ2r2uzNr1x6pJsuh/8x0IRA3CBUB+pWEW3J/7N98axqt7SQSm+2fy0FLNXvXGg77xEDC7KHxJlHfLYyi7PDcw==}
     peerDependencies:
       '@vue/compiler-sfc': 3.x
       prettier: 2.x
