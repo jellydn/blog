@@ -34,13 +34,13 @@
         "react-dom": "18.2.0",
         "react-markdown": "8.0.6",
         "remark-gfm": "3.0.1",
-        "sharp": "0.31.3"
+        "sharp": "0.32.0"
     },
     "devDependencies": {
         "@fullhuman/postcss-purgecss": "5.0.0",
         "@trivago/prettier-plugin-sort-imports": "4.1.1",
         "@types/node": "18.15.7",
-        "@types/react": "18.0.28",
+        "@types/react": "18.0.29",
         "autoprefixer": "10.4.14",
         "cz-conventional-changelog": "3.3.0",
         "eslint": "8.36.0",
