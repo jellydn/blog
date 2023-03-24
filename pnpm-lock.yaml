@@ -7,7 +7,7 @@ specifiers:
   '@tailwindcss/typography': 0.5.9
   '@trivago/prettier-plugin-sort-imports': 4.1.1
   '@types/node': 18.15.7
-  '@types/react': 18.0.28
+  '@types/react': 18.0.29
   autoprefixer: 10.4.14
   cz-conventional-changelog: 3.3.0
   daisyui: 2.51.5
@@ -33,7 +33,7 @@ specifiers:
   react-dom: 18.2.0
   react-markdown: 8.0.6
   remark-gfm: 3.0.1
-  sharp: 0.31.3
+  sharp: 0.32.0
   sort-package-json: 2.4.1
   tailwindcss: 3.2.7
   typescript: 4.9.5
@@ -55,15 +55,15 @@ dependencies:
   raw-loader: 4.0.2
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
-  react-markdown: 8.0.6_pmekkgnqduwlme35zpnqhenc34
+  react-markdown: 8.0.6_k4en7uapxoluuejoeg6o3ic2aa
   remark-gfm: 3.0.1
-  sharp: 0.31.3
+  sharp: 0.32.0
 
 devDependencies:
   '@fullhuman/postcss-purgecss': 5.0.0_postcss@8.4.21
   '@trivago/prettier-plugin-sort-imports': 4.1.1_prettier@2.8.7
   '@types/node': 18.15.7
-  '@types/react': 18.0.28
+  '@types/react': 18.0.29
   autoprefixer: 10.4.14_postcss@8.4.21
   cz-conventional-changelog: 3.3.0
   eslint: 8.36.0
@@ -907,8 +907,8 @@ packages:
   /@types/prop-types/15.7.5:
     resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==}
 
-  /@types/react/18.0.28:
-    resolution: {integrity: sha512-RD0ivG1kEztNBdoAK7lekI9M+azSnitIn85h4iOiaLjaTrMjzslhaqCGaI4IyCJ1RljWiLCEu4jyrLLgqxBTew==}
+  /@types/react/18.0.29:
+    resolution: {integrity: sha512-wXHktgUABxplw1+UnljseDq4+uztQyp2tlWZRIxHlpchsCFqiYkvaDS8JR7eKOQm8wziTH/el5qL7D6gYNkYcw==}
     dependencies:
       '@types/prop-types': 15.7.5
       '@types/scheduler': 0.16.2
@@ -3619,8 +3619,8 @@ packages:
       semver: 7.3.8
     dev: false
 
-  /node-addon-api/5.1.0:
-    resolution: {integrity: sha512-eh0GgfEkpnoWDq+VY8OyvYhFEzBk6jIYbRKdIlyTiAXIVJ8PyBaKb0rp7oDtoddbdoHWhq8wwr+XZ81F1rpNdA==}
+  /node-addon-api/6.0.0:
+    resolution: {integrity: sha512-GyHvgPvUXBvAkXa0YvYnhilSB1A+FRYMpIVggKzPZqdaZfevZOuzfWzyvgzOwRLHBeo/MMswmJFsrNF4Nw1pmA==}
     dev: false
 
   /node-glob/1.2.0:
@@ -4367,7 +4367,7 @@ packages:
     resolution: {integrity: sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==}
     dev: false
 
-  /react-markdown/8.0.6_pmekkgnqduwlme35zpnqhenc34:
+  /react-markdown/8.0.6_k4en7uapxoluuejoeg6o3ic2aa:
     resolution: {integrity: sha512-KgPWsYgHuftdx510wwIzpwf+5js/iHqBR+fzxefv8Khk3mFbnioF1bmL2idHN3ler0LMQmICKeDrWnZrX9mtbQ==}
     peerDependencies:
       '@types/react': '>=16'
@@ -4375,7 +4375,7 @@ packages:
     dependencies:
       '@types/hast': 2.3.4
       '@types/prop-types': 15.7.5
-      '@types/react': 18.0.28
+      '@types/react': 18.0.29
       '@types/unist': 2.0.6
       comma-separated-tokens: 2.0.3
       hast-util-whitespace: 2.0.1
@@ -4605,14 +4605,14 @@ packages:
     dependencies:
       lru-cache: 6.0.0
 
-  /sharp/0.31.3:
-    resolution: {integrity: sha512-XcR4+FCLBFKw1bdB+GEhnUNXNXvnt0tDo4WsBsraKymuo/IAuPuCBVAL2wIkUw2r/dwFW5Q5+g66Kwl2dgDFVg==}
+  /sharp/0.32.0:
+    resolution: {integrity: sha512-yLAypVcqj1toSAqRSwbs86nEzfyZVDYqjuUX8grhFpeij0DDNagKJXELS/auegDBRDg1XBtELdOGfo2X1cCpeA==}
     engines: {node: '>=14.15.0'}
     requiresBuild: true
     dependencies:
       color: 4.2.3
       detect-libc: 2.0.1
-      node-addon-api: 5.1.0
+      node-addon-api: 6.0.0
       prebuild-install: 7.1.1
       semver: 7.3.8
       simple-get: 4.0.1
