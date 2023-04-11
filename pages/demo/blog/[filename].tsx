@@ -4,6 +4,7 @@
 import Head from 'next/head';
 import { useTina } from 'tinacms/dist/react';
 import { TinaMarkdown } from 'tinacms/dist/rich-text';
+// @ts-expect-error no type for generated file
 import client from '../../../tina/__generated__/client';
 
 const BlogPage = (props) => {
@@ -31,12 +32,12 @@ const BlogPage = (props) => {
                         textAlign: 'center',
                     }}
                 >
-                    <h1 className="text-3xl m-8 text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    <h1 className="m-8 text-3xl font-extrabold tracking-tight leading-8 text-center text-gray-900 sm:text-4xl">
                         {data.post.title}
                     </h1>
                     <ContentSection content={data.post.body}></ContentSection>
                 </div>
-                <div className="bg-green-100 text-center">
+                <div className="text-center bg-green-100">
                     Lost and looking for a place to start?
                     <a
                         href="https://tina.io/guides/tina-cloud/getting-started/overview/"
@@ -103,10 +104,10 @@ const components = {
 
 const ContentSection = ({ content }) => {
     return (
-        <div className="relative py-16 bg-white overflow-hidden">
-            <div className="hidden lg:block lg:absolute lg:inset-y-0 lg:h-full lg:w-full">
+        <div className="overflow-hidden relative py-16 bg-white">
+            <div className="hidden lg:block lg:absolute lg:inset-y-0 lg:w-full lg:h-full">
                 <div
-                    className="relative h-full text-lg max-w-prose mx-auto"
+                    className="relative mx-auto max-w-prose h-full text-lg"
                     aria-hidden="true"
                 >
                     <svg
@@ -142,7 +143,7 @@ const ContentSection = ({ content }) => {
                         />
                     </svg>
                     <svg
-                        className="absolute top-1/2 right-full transform -translate-y-1/2 -translate-x-32"
+                        className="absolute top-1/2 right-full transform -translate-x-32 -translate-y-1/2"
                         width={404}
                         height={384}
                         fill="none"
@@ -208,7 +209,7 @@ const ContentSection = ({ content }) => {
                 </div>
             </div>
             <div className="relative px-4 sm:px-6 lg:px-8">
-                <div className="text-lg max-w-prose mx-auto">
+                <div className="mx-auto max-w-prose text-lg">
                     <TinaMarkdown components={components} content={content} />
                 </div>
             </div>
