@@ -19,7 +19,7 @@
     "@giscus/react": "2.2.8",
     "@happykit/flags": "3.0.0",
     "@tailwindcss/typography": "0.5.9",
-    "@tinacms/cli": "^1.5.5",
+    "@tinacms/cli": "1.5.5",
     "daisyui": "2.51.5",
     "glob": "8.1.0",
     "gray-matter": "4.0.3",
@@ -36,7 +36,7 @@
     "react-markdown": "8.0.6",
     "remark-gfm": "3.0.1",
     "sharp": "0.32.0",
-    "tinacms": "^1.4.5"
+    "tinacms": "1.4.5"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "5.0.0",
