@@ -81,6 +81,7 @@ pages:
 - posts/til-38-cherry-pick-git-merge-from-cli.md
 - posts/til-39-how-to-fix-not-a-test-file-error-with-vim-test.md
 - posts/til-4-trigger-github-action-base-on-the-comment.md
+- posts/til-40-how-to-set-up-folding-in-neovim.md
 - posts/til-5-delete-all-local-branches-except-master.md
 - posts/til-6-delete-all-users-from-aws-cognito.md
 - posts/til-8-jest-testing-with-absolute-import.md
