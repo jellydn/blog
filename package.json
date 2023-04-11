@@ -1,63 +1,65 @@
 {
-    "name": "productsway-blog",
-    "version": "0.1.0",
-    "private": true,
-    "scripts": {
-        "build": "next build",
-        "dev": "next",
-        "develop": "yarn dev",
-        "lint": "next lint",
-        "prepare": "husky install",
-        "start": "next start"
-    },
-    "config": {
-        "commitizen": {
-            "path": "./node_modules/cz-conventional-changelog"
-        }
-    },
-    "dependencies": {
-        "@giscus/react": "2.2.8",
-        "@happykit/flags": "3.0.0",
-        "@tailwindcss/typography": "0.5.9",
-        "daisyui": "2.51.5",
-        "glob": "8.1.0",
-        "gray-matter": "4.0.3",
-        "just-unique": "4.2.0",
-        "kutty": "0.6.0",
-        "lite-youtube-embed": "0.2.0",
-        "next": "13.3.0",
-        "next-seo": "5.15.0",
-        "node-glob": "1.2.0",
-        "prismjs": "1.29.0",
-        "raw-loader": "4.0.2",
-        "react": "18.2.0",
-        "react-dom": "18.2.0",
-        "react-markdown": "8.0.6",
-        "remark-gfm": "3.0.1",
-        "sharp": "0.32.0"
-    },
-    "devDependencies": {
-        "@fullhuman/postcss-purgecss": "5.0.0",
-        "@trivago/prettier-plugin-sort-imports": "4.1.1",
-        "@types/node": "18.15.11",
-        "@types/react": "18.0.34",
-        "autoprefixer": "10.4.14",
-        "cz-conventional-changelog": "3.3.0",
-        "eslint": "8.38.0",
-        "eslint-config-next": "13.3.0",
-        "husky": "8.0.3",
-        "nano-staged": "0.8.0",
-        "postcss": "8.4.21",
-        "postcss-flexbugs-fixes": "5.0.2",
-        "postcss-preset-env": "8.3.1",
-        "prettier": "2.8.7",
-        "sort-package-json": "2.4.1",
-        "tailwindcss": "3.3.1",
-        "typescript": "4.9.5"
-    },
-    "nano-staged": {
-        "package.json": "sort-package-json",
-        "*.{js,jsx,ts,tsx}": "eslint --cache --fix",
-        "*.{js,jsx,ts,tsx,css,md}": "prettier --write"
+  "name": "productsway-blog",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "tinacms build && next build",
+    "dev": "tinacms dev -c \"next\"",
+    "develop": "yarn dev",
+    "lint": "next lint",
+    "prepare": "husky install",
+    "start": "tinacms build && next start"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "dependencies": {
+    "@giscus/react": "2.2.8",
+    "@happykit/flags": "3.0.0",
+    "@tailwindcss/typography": "0.5.9",
+    "@tinacms/cli": "^1.5.5",
+    "daisyui": "2.51.5",
+    "glob": "8.1.0",
+    "gray-matter": "4.0.3",
+    "just-unique": "4.2.0",
+    "kutty": "0.6.0",
+    "lite-youtube-embed": "0.2.0",
+    "next": "13.3.0",
+    "next-seo": "5.15.0",
+    "node-glob": "1.2.0",
+    "prismjs": "1.29.0",
+    "raw-loader": "4.0.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-markdown": "8.0.6",
+    "remark-gfm": "3.0.1",
+    "sharp": "0.32.0",
+    "tinacms": "^1.4.5"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "5.0.0",
+    "@trivago/prettier-plugin-sort-imports": "4.1.1",
+    "@types/node": "18.15.11",
+    "@types/react": "18.0.34",
+    "autoprefixer": "10.4.14",
+    "cz-conventional-changelog": "3.3.0",
+    "eslint": "8.38.0",
+    "eslint-config-next": "13.3.0",
+    "husky": "8.0.3",
+    "nano-staged": "0.8.0",
+    "postcss": "8.4.21",
+    "postcss-flexbugs-fixes": "5.0.2",
+    "postcss-preset-env": "8.3.1",
+    "prettier": "2.8.7",
+    "sort-package-json": "2.4.1",
+    "tailwindcss": "3.3.1",
+    "typescript": "4.9.5"
+  },
+  "nano-staged": {
+    "package.json": "sort-package-json",
+    "*.{js,jsx,ts,tsx}": "eslint --cache --fix",
+    "*.{js,jsx,ts,tsx,css,md}": "prettier --write"
+  }
 }

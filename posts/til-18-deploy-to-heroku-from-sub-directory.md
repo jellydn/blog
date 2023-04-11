@@ -1,12 +1,13 @@
 ---
-date: 09/26/2021 1:05 PM +0800
+date: '09/26/2021 1:05 PM +0800'
 tag:
     - heroku
     - devops
 author: Dung Huynh
-hero_image: '/static/til.jpeg'
+hero_image: /static/til.jpeg
 title: '#TIL 18 - Deploy to heroku from sub directory'
 description: 2 simple steps for deployment to heroku
+_template: post
 ---
 
 Step 1: Add Heroku git repository

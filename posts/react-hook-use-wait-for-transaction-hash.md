@@ -1,12 +1,13 @@
 ---
-date: 04/30/2021 9:53 PM +0800
+date: '04/30/2021 9:53 PM +0800'
 tag:
-  - React
-  - Hooks
+    - React
+    - Hooks
 author: Dung Huynh
-hero_image: '/static/use-wait-for-transaction-hash.png'
+hero_image: /static/use-wait-for-transaction-hash.png
 title: React Hook - Use wait for transaction hash
 description: Simple hook for getting transaction status from the ETH network.
+_template: post
 ---
 
 Hi there,
@@ -30,24 +31,24 @@ There is a solution comes up to my mind right away. That's "HTTP polling" techni
 ## Usage
 
 ```typescript
-import { useWaitForTransactionHash } from 'use-wait-for-transaction-hash'
+import { useWaitForTransactionHash } from 'use-wait-for-transaction-hash';
 
 interface Props {
-  providerUrl: string
-  transactionHash: string
+    providerUrl: string;
+    transactionHash: string;
 }
 
 function Notify({ providerUrl, transactionHash }: Props) {
-  const { status } = useWaitForTransactionHash({
-    hash: transactionHash,
-    providerUrl,
-  })
-  return (
-    <div>
-      <pre>Hash: {transactionHash}</pre>
-      <pre>Provider Url: {providerUrl}</pre>
-      <pre>Status: {status}</pre>
-    </div>
-  )
+    const { status } = useWaitForTransactionHash({
+        hash: transactionHash,
+        providerUrl,
+    });
+    return (
+        <div>
+            <pre>Hash: {transactionHash}</pre>
+            <pre>Provider Url: {providerUrl}</pre>
+            <pre>Status: {status}</pre>
+        </div>
+    );
 }
 ```

@@ -1,12 +1,13 @@
 ---
-date: 08/28/2020 11:17 AM +0800
+date: '08/28/2020 11:17 AM +0800'
 tag:
-  - CLI
-  - GIT
+    - CLI
+    - GIT
 author: Dung Huynh
-hero_image: '/static/til.jpeg'
+hero_image: /static/til.jpeg
 title: '#TIL 5 - Delete all local branches except master'
-description: 'Clean up your local branches with one command'
+description: Clean up your local branches with one command
+_template: post
 ---
 
 ```sh

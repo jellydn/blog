@@ -1,5 +1,5 @@
 ---
-date: 04/11/2023 9:08 PM +0800
+date: '04/11/2023 9:08 PM +0800'
 tag:
     - neovim
     - nvim
@@ -7,9 +7,10 @@ tag:
     - ufo
     - preview
 author: Dung Huynh
-hero_image: '/static/til.jpeg'
+hero_image: /static/til.jpeg
 title: 'TIL #40 - How to Set Up Folding in Neovim'
-description: How to setup folding on Neovim, including support preview the fold
+description: 'How to setup folding on Neovim, including support preview the fold'
+_template: post
 ---
 
 In this post, I will guide you through the process of setting up folding in Neovim using Nvim UFO (kevinhwang91/nvim-ufo) and fold-preview.nvim plugins. Follow the steps below:

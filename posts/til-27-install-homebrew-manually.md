@@ -1,11 +1,12 @@
 ---
-date: 07/06/2022 3:25 PM +0800
+date: '07/06/2022 3:25 PM +0800'
 tag:
     - brew
 author: Dung Huynh
-hero_image: '/static/til.jpeg'
+hero_image: /static/til.jpeg
 title: '#TIL 27 - Install Homebrew manually'
 description: Install homebrew without root account
+_template: post
 ---
 
 Clone repo

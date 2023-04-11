@@ -1,12 +1,13 @@
 ---
-date: 08/20/2020 4:14 PM +0800
+date: '08/20/2020 4:14 PM +0800'
 tag:
-  - Github
-  - Github Action
+    - Github
+    - Github Action
 author: Dung Huynh
-hero_image: '/static/til.jpeg'
+hero_image: /static/til.jpeg
 title: '#TIL 4 - Trigger github action base on the comment'
-description: 'Use github issue comment as the CD/CI'
+description: Use github issue comment as the CD/CI
+_template: post
 ---
 
 ```sh

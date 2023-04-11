@@ -1,14 +1,16 @@
 ---
 tag: []
-date: 05/22/2022 12:50 AM +0800
+date: '05/22/2022 12:50 AM +0800'
 author: Dung Huynh
 hero_image: ''
 title: 'IT Man - Talk #19 - Foundry + ThirdWeb CLI = Awesome [Vietnamese]'
-description:
-    'Foundry is a blazing fast, portable and modular toolkit for Ethereum
-    application development written in Rust.  The thirdweb CLI is your one-stop-shop
-    for publishing custom contracts for your team or the world to use. '
+description: >-
+    Foundry is a blazing fast, portable and modular toolkit for Ethereum
+    application development written in Rust.  The thirdweb CLI is your
+    one-stop-shop for publishing custom contracts for your team or the world to
+    use.
 youtube_id: ApSqlVBsRJ4
+_template: video
 ---
 
 [![IT Man - Talk #19 - Foundry + ThirdWeb CLI = Awesome [Vietnamese]](https://i.ytimg.com/vi/ApSqlVBsRJ4/hqdefault.jpg)](https://www.youtube.com/watch?v=ApSqlVBsRJ4)

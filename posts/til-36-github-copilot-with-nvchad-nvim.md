@@ -1,12 +1,13 @@
 ---
-date: 01/03/2023 11:41 PM +0800
+date: '01/03/2023 11:41 PM +0800'
 tag:
     - nvim
     - github copilot
 author: Dung Huynh
-hero_image: '/static/til.jpeg'
+hero_image: /static/til.jpeg
 title: '#TIL 36 - Github Copilot with NvChad/Nvim'
 description: How to setup Github Copilot
+_template: post
 ---
 
 GitHub Copilot is a powerful tool that can help you write code more efficiently by suggesting entire functions and code snippets in real-time as you work. If you use Neovim or Vim as your code editor, you can install the **`[github/copilot.vim: Neovim plugin for GitHub Copilot](https://github.com/github/copilot.vim)`** plugin to integrate GitHub Copilot into your workflow. Here's a step-by-step guide on how to set up GitHub Copilot with Neovim or Vim:
