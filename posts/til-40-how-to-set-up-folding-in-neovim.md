@@ -1,17 +1,19 @@
 ---
 date: 04/11/2023 9:08 PM +0800
 tag:
-- neovim
-- nvim
-- folding
-- ufo
-- preview
+    - neovim
+    - nvim
+    - folding
+    - ufo
+    - preview
 author: Dung Huynh
-hero_image: ''
+hero_image: '/static/til.jpeg'
 title: 'TIL #40 - How to Set Up Folding in Neovim'
 description: How to setup folding on Neovim, including support preview the fold
-
 ---
+
+In this post, I will guide you through the process of setting up folding in Neovim using Nvim UFO (kevinhwang91/nvim-ufo) and fold-preview.nvim plugins. Follow the steps below:
+
 Step 1: Setup options
 
     -- UFO folding
@@ -50,7 +52,7 @@ Step 2: Install folding plugins
             return { "treesitter", "indent" }
           end,
         },
-    
+
         init = function()
           vim.keymap.set("n", "zR", function()
             require("ufo").openAllFolds()
@@ -66,4 +68,7 @@ Step 2: Install folding plugins
       -- When preview is opened, the l key will close it and open fold. In all other cases these keys will work as usual.
       { "anuvyklack/fold-preview.nvim", dependencies = "anuvyklack/keymap-amend.nvim", config = true },
     }
-    
+
+That's it! Now you have folding enabled in Neovim using the Nvim UFO and fold-preview.nvim plugins. Enjoy your enhanced code navigation and organization!
+
+More detail about my config on [feat: add ufo folding and support preview · jellydn/lazy-nvim-ide@426f235](https://github.com/jellydn/lazy-nvim-ide/commit/426f235702636a673cfa2075e978f5ebe7331830)
