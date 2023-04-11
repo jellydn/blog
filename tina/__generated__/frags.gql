@@ -1,0 +1,20 @@
+fragment VideosParts on Videos {
+  body
+  date
+  author
+  hero_image
+  title
+  description
+  youtube_id
+  tag
+}
+
+fragment PostsParts on Posts {
+  body
+  author
+  date
+  hero_image
+  title
+  description
+  tag
+}
