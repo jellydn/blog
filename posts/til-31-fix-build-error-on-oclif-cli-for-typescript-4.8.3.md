@@ -1,15 +1,16 @@
 ---
-date: 09/14/2022 12:27 PM +0800
+date: '09/14/2022 12:27 PM +0800'
 tag:
     - cli
     - oclif
     - tsup
 author: Dung Huynh
-hero_image: '/static/til.jpeg'
+hero_image: /static/til.jpeg
 title: '#TIL 31 - Fix build error on oclif CLI for Typescript 4.8.3'
-description:
-    "Fix error TS2344: Type 'F' does not satisfy the constraint 'FlagOutput'
-    for oclif"
+description: >-
+    Fix error TS2344: Type 'F' does not satisfy the constraint 'FlagOutput' for
+    oclif
+_template: post
 ---
 
 I ran into an issue with TS 4.8.3 for [oclif](https://github.com/oclif/oclif/issues/720 'oclif').

@@ -1,17 +1,18 @@
 ---
-date: 03/13/2023 9:56 PM +0800
+date: '03/13/2023 9:56 PM +0800'
 tag:
     - lazyvim
     - nvim
     - vim-test
     - ide
 author: Dung Huynh
-hero_image: '/static/til.jpeg'
+hero_image: /static/til.jpeg
 title: '#TIL 39 - How to fix "Not a test file" error with vim-test'
-description:
-    'Vim-test plugin has not supported on large project or monorepo yet.
-    A lot of issues on Github. e.g: "Not a test file" error when running any of the
-    test command.'
+description: >-
+    Vim-test plugin has not supported on large project or monorepo yet. A lot of
+    issues on Github. e.g: "Not a test file" error when running any of the test
+    command.
+_template: post
 ---
 
 Hi all,

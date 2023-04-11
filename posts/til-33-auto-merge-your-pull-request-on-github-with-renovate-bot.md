@@ -1,12 +1,13 @@
 ---
-date: 11/09/2022 12:27 PM +0800
+date: '11/09/2022 12:27 PM +0800'
 tag:
     - renovate
     - auto-merge
 author: Dung Huynh
-hero_image: '/static/til.jpeg'
+hero_image: /static/til.jpeg
 title: '#TIL 33 - Auto-merge your pull request on GitHub with Renovate bot'
 description: 'How to auto merge your PR on Github '
+_template: post
 ---
 
 This is a neat trick for auto-merge your pull request on GitHub with Renovate

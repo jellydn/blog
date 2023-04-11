@@ -1,12 +1,13 @@
 ---
-date: 10/21/2021 9:30 PM +0800
+date: '10/21/2021 9:30 PM +0800'
 tag:
     - PostgreSQL.
     - db
 author: Dung Huynh
-hero_image: '/static/til.jpeg'
+hero_image: /static/til.jpeg
 title: '#TIL 21 - How to fix PostgreSQL duplicate key violates (out of sync)'
 description: This is quite tricky to get to this issue
+_template: post
 ---
 
 # Why

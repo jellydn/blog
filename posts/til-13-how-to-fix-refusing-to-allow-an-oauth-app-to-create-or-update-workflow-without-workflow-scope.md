@@ -1,12 +1,15 @@
 ---
-date: 05/21/2021 1:56 AM +0800
+date: '05/21/2021 1:56 AM +0800'
 tag:
-  - Github
-  - CLI
+    - Github
+    - CLI
 author: Dung Huynh
-hero_image: '/static/til.jpeg'
-title: '#TIL 13 - How to fix refusing to allow an OAuth App to create or update workflow'
+hero_image: /static/til.jpeg
+title: >-
+    #TIL 13 - How to fix refusing to allow an OAuth App to create or update
+    workflow
 description: The simple solution is Git Credential Manager Core
+_template: post
 ---
 
 Hi,

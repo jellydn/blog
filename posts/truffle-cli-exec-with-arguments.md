@@ -1,5 +1,5 @@
 ---
-date: 07/14/2021 6:15 PM +0800
+date: '07/14/2021 6:15 PM +0800'
 tag:
     - DApp
     - Truffle
@@ -7,6 +7,7 @@ author: Dung Huynh
 hero_image: ''
 title: Truffle CLI exec with arguments
 description: Workaround for Truffle CLI exec with arguments
+_template: post
 ---
 
 >     const argv = require('yargs-parser')(process.argv.slice(2));

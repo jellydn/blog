@@ -1,14 +1,15 @@
 ---
-date: 12/31/2022 11:47 PM +0800
+date: '12/31/2022 11:47 PM +0800'
 tag:
     - html2pdf
     - threadify
 author: Dung Huynh
-hero_image: '/static/til.jpeg'
+hero_image: /static/til.jpeg
 title: '#TIL 35 - Fix blank image with html2pdf'
-description:
-    HTML2PDF is quite popular tool for convert html2pdf from client side.
-    However, I run into this issue with blank image.
+description: >-
+    HTML2PDF is quite popular tool for convert html2pdf from client side. However,
+    I run into this issue with blank image.
+_template: post
 ---
 
 HTML2PDF is quite popular tool for convert html2pdf from client side. However, I run into this issue with blank image. It is a bit surprise as the document doesn't mention about this one. I've searched on Github issues and found out that's common issue. The default is rendering image from same domain.

@@ -1,13 +1,14 @@
 ---
-date: 09/01/2020 6:10 PM +0800
+date: '09/01/2020 6:10 PM +0800'
 tag:
-  - AWS
-  - AWS Cognito
-  - CLI
+    - AWS
+    - AWS Cognito
+    - CLI
 author: Dung Huynh
-hero_image: '/static/til.jpeg'
+hero_image: /static/til.jpeg
 title: '#TIL 6 - Delete all users from AWS Cognito'
-description: 'Delete all cognito user from AWS CLI'
+description: Delete all cognito user from AWS CLI
+_template: post
 ---
 
 ```sh

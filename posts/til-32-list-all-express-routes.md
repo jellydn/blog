@@ -1,12 +1,13 @@
 ---
-date: 10/09/2022 3:07 PM +0800
+date: '10/09/2022 3:07 PM +0800'
 tag:
     - nodejs
     - expressjs
 author: Dung Huynh
-hero_image: '/static/til.jpeg'
+hero_image: /static/til.jpeg
 title: '#TIL 32 - List all express routes'
 description: Find all routes mapping for your ExpressJs App
+_template: post
 ---
 
 I'm pretty surprised this has been an [open issue for ExpressJs](https://github.com/expressjs/express/issues/3308) for a long time.
