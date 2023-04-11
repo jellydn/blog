@@ -4,7 +4,6 @@
 import Head from 'next/head';
 import { useTina } from 'tinacms/dist/react';
 import { TinaMarkdown } from 'tinacms/dist/rich-text';
-// @ts-expect-error no type for generated file
 import client from '../../../tina/__generated__/client';
 
 const BlogPage = (props) => {

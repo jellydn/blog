@@ -11,7 +11,7 @@ export default defineConfig({
     branch,
     clientId: tinaClientId, // Get this from tina.io
     token: tinaToken, // Get this from tina.io
-    client: { skip: true },
+    client: { skip: false },
     build: {
         outputFolder: 'admin',
         publicFolder: 'public',
