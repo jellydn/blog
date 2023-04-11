@@ -1,5 +1,5 @@
 import Giscus from '@giscus/react';
-import glob from 'glob';
+import { globSync } from 'glob';
 import matter from 'gray-matter';
 import { NextSeo } from 'next-seo';
 import Prism from 'prismjs';
@@ -130,7 +130,7 @@ export async function getStaticProps({ ...ctx }) {
 
 export async function getStaticPaths() {
     // get all .md files in the posts dir
-    const blogs = glob.sync('posts/**/*.md');
+    const blogs = globSync('posts/**/*.md');
 
     // remove path and extension to leave filename only
     const blogSlugs = blogs.map((file: string) =>

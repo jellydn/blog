@@ -1,6 +1,7 @@
 import Giscus from '@giscus/react';
 import matter from 'gray-matter';
 import { NextSeo } from 'next-seo';
+import { globSync } from 'glob';
 import Prism from 'prismjs';
 import { useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
@@ -10,7 +11,6 @@ import Image from 'next/image';
 
 import Layout from 'components/Layout';
 
-const glob = require('glob');
 export default function VideoTemplate({
     frontmatter,
     siteDescription,
@@ -133,7 +133,7 @@ export async function getStaticProps({ ...ctx }) {
 
 export async function getStaticPaths() {
     // get all .md files in the videos dir
-    const videos = glob.sync('videos/**/*.md');
+    const videos = globSync('videos/**/*.md');
 
     // remove path and extension to leave filename only
     const videoSlugs = videos.map((file: string) =>
