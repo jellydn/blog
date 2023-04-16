@@ -49,7 +49,7 @@
     "eslint-config-next": "13.3.0",
     "husky": "8.0.3",
     "nano-staged": "0.8.0",
-    "postcss": "8.4.21",
+    "postcss": "8.4.22",
     "postcss-flexbugs-fixes": "5.0.2",
     "postcss-preset-env": "8.3.1",
     "prettier": "2.8.7",
