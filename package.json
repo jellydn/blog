@@ -21,7 +21,7 @@
     "@tailwindcss/typography": "0.5.9",
     "@tinacms/cli": "1.5.6",
     "daisyui": "2.51.5",
-    "glob": "10.1.0",
+    "glob": "10.2.1",
     "gray-matter": "4.0.3",
     "just-unique": "4.2.0",
     "kutty": "0.6.0",
