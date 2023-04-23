@@ -12,13 +12,13 @@ dependencies:
     version: 0.5.9(tailwindcss@3.3.1)
   '@tinacms/cli':
     specifier: 1.5.6
-    version: 1.5.6(@babel/core@7.21.4)(@codemirror/language@6.0.0)(@types/node@18.15.13)(@types/react@18.0.38)(graphql-tag@2.12.6)(postcss@8.4.23)(react@18.2.0)(scheduler@0.23.0)(ts-node@10.9.1)(typanion@3.12.1)
+    version: 1.5.6(@babel/core@7.21.4)(@codemirror/language@6.0.0)(@types/node@18.16.0)(@types/react@18.0.38)(graphql-tag@2.12.6)(postcss@8.4.23)(react@18.2.0)(scheduler@0.23.0)(ts-node@10.9.1)(typanion@3.12.1)
   daisyui:
     specifier: 2.51.5
     version: 2.51.5(autoprefixer@10.4.14)(postcss@8.4.23)(ts-node@10.9.1)
   glob:
-    specifier: 10.2.1
-    version: 10.2.1
+    specifier: 10.2.2
+    version: 10.2.2
   gray-matter:
     specifier: 4.0.3
     version: 4.0.3
@@ -71,10 +71,10 @@ devDependencies:
     version: 5.0.0(postcss@8.4.23)
   '@trivago/prettier-plugin-sort-imports':
     specifier: 4.1.1
-    version: 4.1.1(prettier@2.8.7)
+    version: 4.1.1(prettier@2.8.8)
   '@types/node':
-    specifier: 18.15.13
-    version: 18.15.13
+    specifier: 18.16.0
+    version: 18.16.0
   '@types/react':
     specifier: 18.0.38
     version: 18.0.38
@@ -106,8 +106,8 @@ devDependencies:
     specifier: 8.3.2
     version: 8.3.2(postcss@8.4.23)
   prettier:
-    specifier: 2.8.7
-    version: 2.8.7
+    specifier: 2.8.8
+    version: 2.8.8
   sort-package-json:
     specifier: 2.4.1
     version: 2.4.1
@@ -905,15 +905,15 @@ packages:
       '@commitlint/execute-rule': 17.4.0
       '@commitlint/resolve-extends': 17.4.4
       '@commitlint/types': 17.4.4
-      '@types/node': 18.15.13
+      '@types/node': 18.16.0
       chalk: 4.1.2
       cosmiconfig: 8.1.3
-      cosmiconfig-typescript-loader: 4.3.0(@types/node@18.15.13)(cosmiconfig@8.1.3)(ts-node@10.9.1)(typescript@5.0.4)
+      cosmiconfig-typescript-loader: 4.3.0(@types/node@18.16.0)(cosmiconfig@8.1.3)(ts-node@10.9.1)(typescript@5.0.4)
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       lodash.uniq: 4.5.0
       resolve-from: 5.0.0
-      ts-node: 10.9.1(@types/node@18.15.13)(typescript@5.0.4)
+      ts-node: 10.9.1(@types/node@18.16.0)(typescript@5.0.4)
       typescript: 5.0.4
     transitivePeerDependencies:
       - '@swc/core'
@@ -1612,14 +1612,14 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /@graphiql/react@0.17.1(@codemirror/language@6.0.0)(@types/node@18.15.13)(@types/react@18.0.38)(graphql@15.8.0)(react-dom@17.0.2)(react-is@17.0.2)(react@17.0.2):
+  /@graphiql/react@0.17.1(@codemirror/language@6.0.0)(@types/node@18.16.0)(@types/react@18.0.38)(graphql@15.8.0)(react-dom@17.0.2)(react-is@17.0.2)(react@17.0.2):
     resolution: {integrity: sha512-p99Vnl3aoQsh/T651pkGiS0wqvn7y65Bv4Q32l990T2IIgEDqeqJxgwRp3F48Ol9dWzk6KzxNkZYqe5IVHEmoA==}
     peerDependencies:
       graphql: ^15.5.0 || ^16.0.0
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
       react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
     dependencies:
-      '@graphiql/toolkit': 0.8.3(@types/node@18.15.13)(graphql@15.8.0)
+      '@graphiql/toolkit': 0.8.3(@types/node@18.16.0)(graphql@15.8.0)
       '@reach/combobox': 0.17.0(react-dom@17.0.2)(react@17.0.2)
       '@reach/dialog': 0.17.0(@types/react@18.0.38)(react-dom@17.0.2)(react@17.0.2)
       '@reach/listbox': 0.17.0(react-dom@17.0.2)(react@17.0.2)
@@ -1644,7 +1644,7 @@ packages:
       - react-is
     dev: false
 
-  /@graphiql/toolkit@0.8.3(@types/node@18.15.13)(graphql@15.8.0):
+  /@graphiql/toolkit@0.8.3(@types/node@18.16.0)(graphql@15.8.0):
     resolution: {integrity: sha512-B5WfZlBes/tMmM7TeTTD/F2E1kbtQD6PYmyX76qWrIt1Sx3+lQoCe8NzHbBvNII77F5sr737RASmkhQ1fcdFWQ==}
     peerDependencies:
       graphql: ^15.5.0 || ^16.0.0
@@ -1655,7 +1655,7 @@ packages:
     dependencies:
       '@n1ru4l/push-pull-async-iterable-iterator': 3.2.0
       graphql: 15.8.0
-      meros: 1.2.1(@types/node@18.15.13)
+      meros: 1.2.1(@types/node@18.16.0)
     transitivePeerDependencies:
       - '@types/node'
     dev: false
@@ -2107,7 +2107,7 @@ packages:
     dependencies:
       '@types/istanbul-lib-coverage': 2.0.4
       '@types/istanbul-reports': 3.0.1
-      '@types/node': 18.15.13
+      '@types/node': 18.16.0
       '@types/yargs': 15.0.15
       chalk: 4.1.2
     dev: false
@@ -3278,10 +3278,10 @@ packages:
       - supports-color
     dev: false
 
-  /@tinacms/app@1.2.6(@babel/core@7.21.4)(@codemirror/language@6.0.0)(@types/node@18.15.13)(@types/react@18.0.38)(scheduler@0.23.0)(ts-node@10.9.1)(yup@0.32.11):
+  /@tinacms/app@1.2.6(@babel/core@7.21.4)(@codemirror/language@6.0.0)(@types/node@18.16.0)(@types/react@18.0.38)(scheduler@0.23.0)(ts-node@10.9.1)(yup@0.32.11):
     resolution: {integrity: sha512-t9rHXYMeIrEPfEZMhU9BgJ2T2etuojmVu7CIrxlY1BXw66qMe+gf3TuWlzqvT9UVx3BbRyhywiJBOzPZnwKL3Q==}
     dependencies:
-      '@graphiql/toolkit': 0.8.3(@types/node@18.15.13)(graphql@15.8.0)
+      '@graphiql/toolkit': 0.8.3(@types/node@18.16.0)(graphql@15.8.0)
       '@headlessui/react': 1.6.6(react-dom@17.0.2)(react@17.0.2)
       '@heroicons/react': 1.0.6(react@17.0.2)
       '@monaco-editor/react': 4.4.5(monaco-editor@0.31.0)(react-dom@17.0.2)(react@17.0.2)
@@ -3289,7 +3289,7 @@ packages:
       '@tinacms/toolkit': 1.6.4(@babel/core@7.21.4)(@types/react@18.0.38)(react-dom@17.0.2)(react-is@17.0.2)(react@17.0.2)(scheduler@0.23.0)
       '@xstate/react': 3.0.0(@types/react@18.0.38)(react@17.0.2)(xstate@4.32.1)
       final-form: 4.20.7
-      graphiql: 2.4.1(@codemirror/language@6.0.0)(@types/node@18.15.13)(@types/react@18.0.38)(graphql@15.8.0)(react-dom@17.0.2)(react-is@17.0.2)(react@17.0.2)
+      graphiql: 2.4.1(@codemirror/language@6.0.0)(@types/node@18.16.0)(@types/react@18.0.38)(graphql@15.8.0)(react-dom@17.0.2)(react-is@17.0.2)(react@17.0.2)
       graphql: 15.8.0
       monaco-editor: 0.31.0
       postcss: 8.4.23
@@ -3327,7 +3327,7 @@ packages:
       - yup
     dev: false
 
-  /@tinacms/cli@1.5.6(@babel/core@7.21.4)(@codemirror/language@6.0.0)(@types/node@18.15.13)(@types/react@18.0.38)(graphql-tag@2.12.6)(postcss@8.4.23)(react@18.2.0)(scheduler@0.23.0)(ts-node@10.9.1)(typanion@3.12.1):
+  /@tinacms/cli@1.5.6(@babel/core@7.21.4)(@codemirror/language@6.0.0)(@types/node@18.16.0)(@types/react@18.0.38)(graphql-tag@2.12.6)(postcss@8.4.23)(react@18.2.0)(scheduler@0.23.0)(ts-node@10.9.1)(typanion@3.12.1):
     resolution: {integrity: sha512-xg8iPabC8qzN7//BKl9hm9ofqCZGZeel7uai2lSj8XoZNgOPoeJm8eyQ5zSNs14AVpfTDTCQ9+0Id/MNxV+r5w==}
     hasBin: true
     dependencies:
@@ -3345,7 +3345,7 @@ packages:
       '@tailwindcss/aspect-ratio': 0.4.2(tailwindcss@3.3.1)
       '@tailwindcss/line-clamp': 0.3.1(tailwindcss@3.3.1)
       '@tailwindcss/typography': 0.5.9(tailwindcss@3.3.1)
-      '@tinacms/app': 1.2.6(@babel/core@7.21.4)(@codemirror/language@6.0.0)(@types/node@18.15.13)(@types/react@18.0.38)(scheduler@0.23.0)(ts-node@10.9.1)(yup@0.32.11)
+      '@tinacms/app': 1.2.6(@babel/core@7.21.4)(@codemirror/language@6.0.0)(@types/node@18.16.0)(@types/react@18.0.38)(scheduler@0.23.0)(ts-node@10.9.1)(yup@0.32.11)
       '@tinacms/datalayer': 1.2.7(react@18.2.0)
       '@tinacms/graphql': 1.4.7(react@18.2.0)
       '@tinacms/metrics': 1.0.2(fs-extra@9.1.0)
@@ -3382,14 +3382,14 @@ packages:
       node-fetch: 2.6.9(encoding@0.1.13)
       normalize-path: 3.0.0
       postcss-nested: 5.0.6(postcss@8.4.23)
-      prettier: 2.8.7
+      prettier: 2.8.8
       progress: 2.0.3
       prompts: 2.4.2
       readable-stream: 4.3.0
       rollup-plugin-visualizer: 5.9.0
       tailwindcss: 3.3.1(postcss@8.4.23)(ts-node@10.9.1)
       url-pattern: 1.0.3
-      vite: 4.1.4(@types/node@18.15.13)
+      vite: 4.1.4(@types/node@18.16.0)
       yarn: 1.22.19
       yup: 0.32.11
       zod: 3.21.4
@@ -3479,7 +3479,7 @@ packages:
       micromark-extension-mdxjs: 1.0.0
       micromatch: 4.0.5
       normalize-path: 3.0.0
-      prettier: 2.8.7
+      prettier: 2.8.8
       readable-stream: 4.3.0
       rehype-format: 3.1.0
       rehype-stringify: 8.0.0
@@ -3545,7 +3545,7 @@ packages:
       micromark-util-symbol: 1.0.1
       micromark-util-types: 1.0.2
       parse-entities: 4.0.1
-      prettier: 2.8.7
+      prettier: 2.8.8
       remark: 14.0.2
       remark-mdx: 2.3.0
       stringify-entities: 4.0.3
@@ -3603,7 +3603,7 @@ packages:
       micromark-util-symbol: 1.0.1
       micromark-util-types: 1.0.2
       parse-entities: 4.0.1
-      prettier: 2.8.7
+      prettier: 2.8.8
       remark: 14.0.2
       remark-mdx: 2.3.0
       stringify-entities: 4.0.3
@@ -3811,7 +3811,7 @@ packages:
       - supports-color
     dev: false
 
-  /@trivago/prettier-plugin-sort-imports@4.1.1(prettier@2.8.7):
+  /@trivago/prettier-plugin-sort-imports@4.1.1(prettier@2.8.8):
     resolution: {integrity: sha512-dQ2r2uzNr1x6pJsuh/8x0IRA3CBUB+pWEW3J/7N98axqt7SQSm+2fy0FLNXvXGg77xEDC7KHxJlHfLYyi7PDcw==}
     peerDependencies:
       '@vue/compiler-sfc': 3.x
@@ -3826,7 +3826,7 @@ packages:
       '@babel/types': 7.17.0
       javascript-natural-sort: 0.7.1
       lodash: 4.17.21
-      prettier: 2.8.7
+      prettier: 2.8.8
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -3925,7 +3925,7 @@ packages:
   /@types/graceful-fs@4.1.6:
     resolution: {integrity: sha512-Sig0SNORX9fdW+bQuTEovKj3uHcUL6LQKbCrrqb1X7J6/ReAbhCXRAhc+SMejhLELFj2QcyuxmUooZ4bt5ReSw==}
     dependencies:
-      '@types/node': 18.15.13
+      '@types/node': 18.16.0
     dev: false
 
   /@types/hast@2.3.4:
@@ -3987,8 +3987,8 @@ packages:
     resolution: {integrity: sha512-iiUgKzV9AuaEkZqkOLDIvlQiL6ltuZd9tGcW3gwpnX8JbuiuhFlEGmmFXEXkN50Cvq7Os88IY2v0dkDqXYWVgA==}
     dev: false
 
-  /@types/node@18.15.13:
-    resolution: {integrity: sha512-N+0kuo9KgrUQ1Sn/ifDXsvg0TTleP7rIy4zOBGECxAljqvqfqpTfzx0Q1NUedOixRMBfe2Whhb056a42cWs26Q==}
+  /@types/node@18.16.0:
+    resolution: {integrity: sha512-BsAaKhB+7X+H4GnSjGhJG9Qi8Tw+inU9nJDwmD5CgOmBLEI6ArdhikpLX7DjbjDRDTbqZzU2LSQNZg8WGPiSZQ==}
 
   /@types/normalize-package-data@2.4.1:
     resolution: {integrity: sha512-Gj7cI7z+98M282Tqmp2K5EIsoouUEzbBJhQQzDE3jSIRk6r9gsz0oUokqIUR4u1R3dMHo0pDHM7sNOHyhulypw==}
@@ -6475,7 +6475,7 @@ packages:
       '@babel/plugin-transform-react-jsx-source': 7.19.6(@babel/core@7.21.4)
       magic-string: 0.27.0
       react-refresh: 0.14.0
-      vite: 4.1.4(@types/node@18.15.13)
+      vite: 4.1.4(@types/node@18.16.0)
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -7747,7 +7747,7 @@ packages:
       vary: 1.1.2
     dev: false
 
-  /cosmiconfig-typescript-loader@4.3.0(@types/node@18.15.13)(cosmiconfig@8.1.3)(ts-node@10.9.1)(typescript@5.0.4):
+  /cosmiconfig-typescript-loader@4.3.0(@types/node@18.16.0)(cosmiconfig@8.1.3)(ts-node@10.9.1)(typescript@5.0.4):
     resolution: {integrity: sha512-NTxV1MFfZDLPiBMjxbHRwSh5LaLcPMwNdCutmnHJCKoVnlvldPWlllonKwrsRJ5pYZBIBGRWWU2tfvzxgeSW5Q==}
     engines: {node: '>=12', npm: '>=6'}
     peerDependencies:
@@ -7756,9 +7756,9 @@ packages:
       ts-node: '>=10'
       typescript: '>=3'
     dependencies:
-      '@types/node': 18.15.13
+      '@types/node': 18.16.0
       cosmiconfig: 8.1.3
-      ts-node: 10.9.1(@types/node@18.15.13)(typescript@5.0.4)
+      ts-node: 10.9.1(@types/node@18.16.0)(typescript@5.0.4)
       typescript: 5.0.4
     dev: true
     optional: true
@@ -9567,13 +9567,12 @@ packages:
     resolution: {integrity: sha512-lkX1HJXwyMcprw/5YUZc2s7DrpAiHB21/V+E1rHUrVNokkvB6bqMzT0VfV6/86ZNabt1k14YOIaT7nDvOX3Iiw==}
     dev: false
 
-  /glob@10.2.1:
-    resolution: {integrity: sha512-ngom3wq2UhjdbmRE/krgkD8BQyi1KZ5l+D2dVm4+Yj+jJIBp74/ZGunL6gNGc/CYuQmvUBiavWEXIotRiv5R6A==}
+  /glob@10.2.2:
+    resolution: {integrity: sha512-Xsa0BcxIC6th9UwNjZkhrMtNo/MnyRL8jGCP+uEwhA5oFOCY1f2s1/oNKY47xQ0Bg5nkjsfAEIej1VeH62bDDQ==}
     engines: {node: '>=16 || 14 >=14.17'}
     hasBin: true
     dependencies:
       foreground-child: 3.1.1
-      fs.realpath: 1.0.0
       jackspeak: 2.0.3
       minimatch: 9.0.0
       minipass: 5.0.0
@@ -9711,15 +9710,15 @@ packages:
     resolution: {integrity: sha512-bzh50DW9kTPM00T8y4o8vQg89Di9oLJVLW/KaOGIXJWP/iqCN6WKYkbNOF04vFLJhwcpYUh9ydh/+5vpOqV4YQ==}
     dev: true
 
-  /graphiql@2.4.1(@codemirror/language@6.0.0)(@types/node@18.15.13)(@types/react@18.0.38)(graphql@15.8.0)(react-dom@17.0.2)(react-is@17.0.2)(react@17.0.2):
+  /graphiql@2.4.1(@codemirror/language@6.0.0)(@types/node@18.16.0)(@types/react@18.0.38)(graphql@15.8.0)(react-dom@17.0.2)(react-is@17.0.2)(react@17.0.2):
     resolution: {integrity: sha512-PLTY2KI+FwU6548Bsrip2ptne/t2QzNdARHZwXl/KGJ+KVfSpXjjfryJQBHXiEq4plQnG4orw7dJpm8KfM5iig==}
     peerDependencies:
       graphql: ^15.5.0 || ^16.0.0
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
       react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
     dependencies:
-      '@graphiql/react': 0.17.1(@codemirror/language@6.0.0)(@types/node@18.15.13)(@types/react@18.0.38)(graphql@15.8.0)(react-dom@17.0.2)(react-is@17.0.2)(react@17.0.2)
-      '@graphiql/toolkit': 0.8.3(@types/node@18.15.13)(graphql@15.8.0)
+      '@graphiql/react': 0.17.1(@codemirror/language@6.0.0)(@types/node@18.16.0)(@types/react@18.0.38)(graphql@15.8.0)(react-dom@17.0.2)(react-is@17.0.2)(react@17.0.2)
+      '@graphiql/toolkit': 0.8.3(@types/node@18.16.0)(graphql@15.8.0)
       graphql: 15.8.0
       graphql-language-service: 5.1.3(graphql@15.8.0)
       markdown-it: 12.3.2
@@ -10607,7 +10606,7 @@ packages:
     dependencies:
       '@jest/types': 26.6.2
       '@types/graceful-fs': 4.1.6
-      '@types/node': 18.15.13
+      '@types/node': 18.16.0
       anymatch: 3.1.3
       fb-watchman: 2.0.2
       graceful-fs: 4.2.11
@@ -10633,7 +10632,7 @@ packages:
     resolution: {integrity: sha512-S5wqyz0DXnNJPd/xfIzZ5Xnp1HrJWBczg8mMfMpN78OJ5eDxXyf+Ygld9wX1DnUWbIbhM1YDY95NjR4CBXkb2g==}
     engines: {node: '>= 10.14.2'}
     dependencies:
-      '@types/node': 18.15.13
+      '@types/node': 18.16.0
       graceful-fs: 4.2.11
     dev: false
 
@@ -10642,7 +10641,7 @@ packages:
     engines: {node: '>= 10.14.2'}
     dependencies:
       '@jest/types': 26.6.2
-      '@types/node': 18.15.13
+      '@types/node': 18.16.0
       chalk: 4.1.2
       graceful-fs: 4.2.11
       is-ci: 2.0.0
@@ -10653,7 +10652,7 @@ packages:
     resolution: {integrity: sha512-KWYVV1c4i+jbMpaBC+U++4Va0cp8OisU185o73T1vo99hqi7w8tSJfUXYswwqqrjzwxa6KpRK54WhPvwf5w6PQ==}
     engines: {node: '>= 10.13.0'}
     dependencies:
-      '@types/node': 18.15.13
+      '@types/node': 18.16.0
       merge-stream: 2.0.0
       supports-color: 7.2.0
     dev: false
@@ -10662,7 +10661,7 @@ packages:
     resolution: {integrity: sha512-7vuh85V5cdDofPyxn58nrPjBktZo0u9x1g8WtjQol+jZDaE+fhN+cIvTj11GndBnMnyfrUOG1sZQxCdjKh+DKg==}
     engines: {node: '>= 10.13.0'}
     dependencies:
-      '@types/node': 18.15.13
+      '@types/node': 18.16.0
       merge-stream: 2.0.0
       supports-color: 8.1.1
     dev: false
@@ -11634,7 +11633,7 @@ packages:
     resolution: {integrity: sha512-jz+Cfrg9GWOZbQAnDQ4hlVnQky+341Yk5ru8bZSe6sIDTCIg8n9i/u7hSQGSVOF3C7lH6mGtqjkiT9G4wFLL0w==}
     dev: true
 
-  /meros@1.2.1(@types/node@18.15.13):
+  /meros@1.2.1(@types/node@18.16.0):
     resolution: {integrity: sha512-R2f/jxYqCAGI19KhAvaxSOxALBMkaXWH2a7rOyqQw+ZmizX5bKkEYWLzdhC+U82ZVVPVp6MCXe3EkVligh+12g==}
     engines: {node: '>=13'}
     peerDependencies:
@@ -11643,7 +11642,7 @@ packages:
       '@types/node':
         optional: true
     dependencies:
-      '@types/node': 18.15.13
+      '@types/node': 18.16.0
     dev: false
 
   /methods@1.1.2:
@@ -13070,7 +13069,7 @@ packages:
     dependencies:
       lilconfig: 2.1.0
       postcss: 8.4.23
-      ts-node: 10.9.1(@types/node@18.15.13)(typescript@5.0.4)
+      ts-node: 10.9.1(@types/node@18.16.0)(typescript@5.0.4)
       yaml: 1.10.2
 
   /postcss-logical@6.1.0(postcss@8.4.23):
@@ -13301,8 +13300,8 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: true
 
-  /prettier@2.8.7:
-    resolution: {integrity: sha512-yPngTo3aXUUmyuTjeTUT75txrf+aMh9FiD7q9ZE/i6r0bPb22g4FsE6Y338PQX1bmfy08i9QQCB7/rcUAVntfw==}
+  /prettier@2.8.8:
+    resolution: {integrity: sha512-tdN8qQGvNjw4CHbY+XXk0JgCXn9QiF21a55rBe5LJAU+kDyC4WQn4+awm2Xfk2lQMk5fKup9XgzTZtGkjBdP9Q==}
     engines: {node: '>=10.13.0'}
     hasBin: true
 
@@ -15559,7 +15558,7 @@ packages:
   /ts-interface-checker@0.1.13:
     resolution: {integrity: sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==}
 
-  /ts-node@10.9.1(@types/node@18.15.13)(typescript@5.0.4):
+  /ts-node@10.9.1(@types/node@18.16.0)(typescript@5.0.4):
     resolution: {integrity: sha512-NtVysVPkxxrwFGUUxGYhfux8k78pQB3JqYBXlLRZgdGUqTO5wU/UyHop5p70iEbGhB7q5KmiZiU0Y3KlJrScEw==}
     hasBin: true
     peerDependencies:
@@ -15578,7 +15577,7 @@ packages:
       '@tsconfig/node12': 1.0.11
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.3
-      '@types/node': 18.15.13
+      '@types/node': 18.16.0
       acorn: 8.8.2
       acorn-walk: 8.2.0
       arg: 4.1.3
@@ -16211,7 +16210,7 @@ packages:
       vfile-message: 3.1.4
     dev: false
 
-  /vite@4.1.4(@types/node@18.15.13):
+  /vite@4.1.4(@types/node@18.16.0):
     resolution: {integrity: sha512-3knk/HsbSTKEin43zHu7jTwYWv81f8kgAL99G5NWBcA1LKvtvcVAC4JjBH1arBunO9kQka+1oGbrMKOjk4ZrBg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -16236,7 +16235,7 @@ packages:
       terser:
         optional: true
     dependencies:
-      '@types/node': 18.15.13
+      '@types/node': 18.16.0
       esbuild: 0.16.17
       postcss: 8.4.23
       resolve: 1.22.3
