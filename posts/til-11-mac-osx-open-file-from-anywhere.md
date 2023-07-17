@@ -1,14 +1,14 @@
 ---
-date: 2021-04-29T14:36:00.000Z
+date: '04/29/2021 14:36 AM +0800'
 tag:
-  - CLI
-  - MacOSX
+    - CLI
+    - MacOSX
 author: Dung Huynh
 hero_image: /til.jpeg
 title: '#TIL 11 - Mac OSX - Open file from anywhere'
 description: >
-  How to Allow Apps from Anywhere in macOS Gatekeeper (Big Sur, Catalina,
-  Mojave, Sierra, High Sierra)
+    How to Allow Apps from Anywhere in macOS Gatekeeper (Big Sur, Catalina,
+    Mojave, Sierra, High Sierra)
 ---
 
 ```sh
