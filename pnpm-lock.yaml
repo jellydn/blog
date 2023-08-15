@@ -10,13 +10,13 @@ dependencies:
     version: 2.3.0(react-dom@18.2.0)(react@18.2.0)
   '@happykit/flags':
     specifier: 3.3.0
-    version: 3.3.0(next@13.4.13)(react@18.2.0)
+    version: 3.3.0(next@13.4.16)(react@18.2.0)
   '@tailwindcss/typography':
     specifier: 0.5.9
     version: 0.5.9(tailwindcss@3.3.3)
   '@tinacms/cli':
-    specifier: 1.5.27
-    version: 1.5.27(@babel/core@7.22.9)(@types/node@20.5.0)(@types/react@18.2.20)(react-dom@18.2.0)(react@18.2.0)(ts-node@10.9.1)
+    specifier: 1.5.28
+    version: 1.5.28(@babel/core@7.22.9)(@types/node@20.5.0)(@types/react@18.2.20)(react-dom@18.2.0)(react@18.2.0)(ts-node@10.9.1)
   daisyui:
     specifier: 3.5.1
     version: 3.5.1(ts-node@10.9.1)
@@ -36,11 +36,11 @@ dependencies:
     specifier: 0.2.0
     version: 0.2.0
   next:
-    specifier: 13.4.13
-    version: 13.4.13(@babel/core@7.22.9)(react-dom@18.2.0)(react@18.2.0)
+    specifier: 13.4.16
+    version: 13.4.16(@babel/core@7.22.9)(react-dom@18.2.0)(react@18.2.0)
   next-seo:
     specifier: 6.1.0
-    version: 6.1.0(next@13.4.13)(react-dom@18.2.0)(react@18.2.0)
+    version: 6.1.0(next@13.4.16)(react-dom@18.2.0)(react@18.2.0)
   node-glob:
     specifier: 1.2.0
     version: 1.2.0
@@ -66,8 +66,8 @@ dependencies:
     specifier: 0.32.4
     version: 0.32.4
   tinacms:
-    specifier: 1.5.18
-    version: 1.5.18(@babel/core@7.22.9)(@types/react@18.2.20)(react-dom@18.2.0)(react@18.2.0)
+    specifier: 1.5.19
+    version: 1.5.19(@babel/core@7.22.9)(@types/react@18.2.20)(react-dom@18.2.0)(react@18.2.0)
 
 devDependencies:
   '@fullhuman/postcss-purgecss':
@@ -92,8 +92,8 @@ devDependencies:
     specifier: 8.47.0
     version: 8.47.0
   eslint-config-next:
-    specifier: 13.4.13
-    version: 13.4.13(eslint@8.47.0)(typescript@5.1.6)
+    specifier: 13.4.16
+    version: 13.4.16(eslint@8.47.0)(typescript@5.1.6)
   husky:
     specifier: 8.0.3
     version: 8.0.3
@@ -1952,14 +1952,14 @@ packages:
       graphql: 15.8.0
     dev: false
 
-  /@happykit/flags@3.3.0(next@13.4.13)(react@18.2.0):
+  /@happykit/flags@3.3.0(next@13.4.16)(react@18.2.0):
     resolution: {integrity: sha512-QyywkKYctdo0bnNf+bBd+3B/3Rsnjdaz+jtVA+jSqLxm0/lw51Z1+q2sEfc62MyNwQnY6w7eqajdwhuvH3VWAw==}
     peerDependencies:
       next: '>=12.0.2'
       react: '>=16.13.1'
     dependencies:
       nanoid: 3.2.0
-      next: 13.4.13(@babel/core@7.22.9)(react-dom@18.2.0)(react@18.2.0)
+      next: 13.4.16(@babel/core@7.22.9)(react-dom@18.2.0)(react@18.2.0)
       react: 18.2.0
     dev: false
 
@@ -2257,18 +2257,18 @@ packages:
     engines: {node: '>=12'}
     dev: false
 
-  /@next/env@13.4.13:
-    resolution: {integrity: sha512-fwz2QgVg08v7ZL7KmbQBLF2PubR/6zQdKBgmHEl3BCyWTEDsAQEijjw2gbFhI1tcKfLdOOJUXntz5vZ4S0Polg==}
+  /@next/env@13.4.16:
+    resolution: {integrity: sha512-pCU0sJBqdfKP9mwDadxvZd+eLz3fZrTlmmDHY12Hdpl3DD0vy8ou5HWKVfG0zZS6tqhL4wnQqRbspdY5nqa7MA==}
     dev: false
 
-  /@next/eslint-plugin-next@13.4.13:
-    resolution: {integrity: sha512-RpZeXlPxQ9FLeYN84XHDqRN20XxmVNclYCraLYdifRsmibtcWUWdwE/ANp2C8kgesFRsvwfsw6eOkYNl9sLJ3A==}
+  /@next/eslint-plugin-next@13.4.16:
+    resolution: {integrity: sha512-QuFtQl+oSEEQb0HMYBdvBoUaTiMxbY3go/MFkF3zOnfY0t84+IbAX78cw8ZCfr6cA6UcTq3nMIlCrHwDC/moxg==}
     dependencies:
       glob: 7.1.7
     dev: true
 
-  /@next/swc-darwin-arm64@13.4.13:
-    resolution: {integrity: sha512-ZptVhHjzUuivnXMNCJ6lER33HN7lC+rZ01z+PM10Ows21NHFYMvGhi5iXkGtBDk6VmtzsbqnAjnx4Oz5um0FjA==}
+  /@next/swc-darwin-arm64@13.4.16:
+    resolution: {integrity: sha512-Rl6i1uUq0ciRa3VfEpw6GnWAJTSKo9oM2OrkGXPsm7rMxdd2FR5NkKc0C9xzFCI4+QtmBviWBdF2m3ur3Nqstw==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [darwin]
@@ -2276,8 +2276,8 @@ packages:
     dev: false
     optional: true
 
-  /@next/swc-darwin-x64@13.4.13:
-    resolution: {integrity: sha512-t9nTiWCLApw8W4G1kqJyYP7y6/7lyal3PftmRturIxAIBlZss9wrtVN8nci50StDHmIlIDxfguYIEGVr9DbFTg==}
+  /@next/swc-darwin-x64@13.4.16:
+    resolution: {integrity: sha512-o1vIKYbZORyDmTrPV1hApt9NLyWrS5vr2p5hhLGpOnkBY1cz6DAXjv8Lgan8t6X87+83F0EUDlu7klN8ieZ06A==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [darwin]
@@ -2285,8 +2285,8 @@ packages:
     dev: false
     optional: true
 
-  /@next/swc-linux-arm64-gnu@13.4.13:
-    resolution: {integrity: sha512-xEHUqC8eqR5DHe8SOmMnDU1K3ggrJ28uIKltrQAwqFSSSmzjnN/XMocZkcVhuncuxYrpbri0iMQstRyRVdQVWg==}
+  /@next/swc-linux-arm64-gnu@13.4.16:
+    resolution: {integrity: sha512-JRyAl8lCfyTng4zoOmE6hNI2f1MFUr7JyTYCHl1RxX42H4a5LMwJhDVQ7a9tmDZ/yj+0hpBn+Aan+d6lA3v0UQ==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
@@ -2294,8 +2294,8 @@ packages:
     dev: false
     optional: true
 
-  /@next/swc-linux-arm64-musl@13.4.13:
-    resolution: {integrity: sha512-sNf3MnLAm8rquSSAoeD9nVcdaDeRYOeey4stOWOyWIgbBDtP+C93amSgH/LPTDoUV7gNiU6f+ghepTjTjRgIUQ==}
+  /@next/swc-linux-arm64-musl@13.4.16:
+    resolution: {integrity: sha512-9gqVqNzUMWbUDgDiND18xoUqhwSm2gmksqXgCU0qaOKt6oAjWz8cWYjgpPVD0WICKFylEY/gvPEP1fMZDVFZ/g==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
@@ -2303,8 +2303,8 @@ packages:
     dev: false
     optional: true
 
-  /@next/swc-linux-x64-gnu@13.4.13:
-    resolution: {integrity: sha512-WhcRaJJSHyx9OWmKjjz+OWHumiPZWRqmM/09Bt7Up4UqUJFFhGExeztR4trtv3rflvULatu9IH/nTV8fUUgaMA==}
+  /@next/swc-linux-x64-gnu@13.4.16:
+    resolution: {integrity: sha512-KcQGwchAKmZVPa8i5PLTxvTs1/rcFnSltfpTm803Tr/BtBV3AxCkHLfhtoyVtVzx/kl/oue8oS+DSmbepQKwhw==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
@@ -2312,8 +2312,8 @@ packages:
     dev: false
     optional: true
 
-  /@next/swc-linux-x64-musl@13.4.13:
-    resolution: {integrity: sha512-+Y4LLhOWWZQIDKVwr2R17lq2KSN0F1c30QVgGIWfnjjHpH8nrIWHEndhqYU+iFuW8It78CiJjQKTw4f51HD7jA==}
+  /@next/swc-linux-x64-musl@13.4.16:
+    resolution: {integrity: sha512-2RbMZNxYnJmW8EPHVBsGZPq5zqWAyBOc/YFxq/jIQ/Yn3RMFZ1dZVCjtIcsiaKmgh7mjA/W0ApbumutHNxRqqQ==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
@@ -2321,8 +2321,8 @@ packages:
     dev: false
     optional: true
 
-  /@next/swc-win32-arm64-msvc@13.4.13:
-    resolution: {integrity: sha512-rWurdOR20uxjfqd1X9vDAgv0Jb26KjyL8akF9CBeFqX8rVaBAnW/Wf6A2gYEwyYY4Bai3T7p1kro6DFrsvBAAw==}
+  /@next/swc-win32-arm64-msvc@13.4.16:
+    resolution: {integrity: sha512-thDcGonELN7edUKzjzlHrdoKkm7y8IAdItQpRvvMxNUXa4d9r0ElofhTZj5emR7AiXft17hpen+QAkcWpqG7Jg==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [win32]
@@ -2330,8 +2330,8 @@ packages:
     dev: false
     optional: true
 
-  /@next/swc-win32-ia32-msvc@13.4.13:
-    resolution: {integrity: sha512-E8bSPwRuY5ibJ3CzLQmJEt8qaWrPYuUTwnrwygPUEWoLzD5YRx9SD37oXRdU81TgGwDzCxpl7z5Nqlfk50xAog==}
+  /@next/swc-win32-ia32-msvc@13.4.16:
+    resolution: {integrity: sha512-f7SE1Mo4JAchUWl0LQsbtySR9xCa+x55C0taetjUApKtcLR3AgAjASrrP+oE1inmLmw573qRnE1eZN8YJfEBQw==}
     engines: {node: '>= 10'}
     cpu: [ia32]
     os: [win32]
@@ -2339,8 +2339,8 @@ packages:
     dev: false
     optional: true
 
-  /@next/swc-win32-x64-msvc@13.4.13:
-    resolution: {integrity: sha512-4KlyC6jWRubPnppgfYsNTPeWfGCxtWLh5vaOAW/kdzAk9widqho8Qb5S4K2vHmal1tsURi7Onk2MMCV1phvyqA==}
+  /@next/swc-win32-x64-msvc@13.4.16:
+    resolution: {integrity: sha512-WamDZm1M/OEM4QLce3lOmD1XdLEl37zYZwlmOLhmF7qYJ2G6oYm9+ejZVv+LakQIsIuXhSpVlOvrxIAHqwRkPQ==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [win32]
@@ -3834,15 +3834,15 @@ packages:
       tailwindcss: 3.3.3(ts-node@10.9.1)
     dev: false
 
-  /@tinacms/app@1.2.25(@babel/core@7.22.9)(@types/node@20.5.0)(@types/react@18.2.20)(ts-node@10.9.1)(yup@0.32.11):
-    resolution: {integrity: sha512-GbFGKwhmYef5oaekUWA7hYRL+1aNfNadRdlfyE8hL3uXuSRFM8wfJx/oHErRDmnw8aZCw1FccmDpDQAchU/0PQ==}
+  /@tinacms/app@1.2.26(@babel/core@7.22.9)(@types/node@20.5.0)(@types/react@18.2.20)(ts-node@10.9.1)(yup@0.32.11):
+    resolution: {integrity: sha512-B3M05J9OhmSs8SsIC/wZEtmgL27f9dUYJNI5KCVImuDyy2sF12iyChlmUckYi0h8FN1GwRH3meGIn0ues9pWlQ==}
     dependencies:
       '@codemirror/language': 6.0.0
       '@graphiql/toolkit': 0.8.4(@types/node@20.5.0)(graphql@15.8.0)
       '@headlessui/react': 1.6.6(react-dom@17.0.2)(react@17.0.2)
       '@heroicons/react': 1.0.6(react@17.0.2)
       '@monaco-editor/react': 4.4.5(monaco-editor@0.31.0)(react-dom@17.0.2)(react@17.0.2)
-      '@tinacms/mdx': 1.3.16(react@17.0.2)(yup@0.32.11)
+      '@tinacms/mdx': 1.3.17(react@17.0.2)(yup@0.32.11)
       '@xstate/react': 3.0.0(@types/react@18.2.20)(react@17.0.2)
       final-form: 4.20.7
       graphiql: 3.0.0-alpha.1(@codemirror/language@6.0.0)(@types/node@20.5.0)(@types/react@18.2.20)(graphql@15.8.0)(react-dom@17.0.2)(react@17.0.2)
@@ -3853,7 +3853,7 @@ packages:
       react-dom: 17.0.2(react@17.0.2)
       react-router-dom: 6.3.0(react-dom@17.0.2)(react@17.0.2)
       tailwindcss: 3.3.3(ts-node@10.9.1)
-      tinacms: 1.5.18(@babel/core@7.22.9)(@types/react@18.2.20)(react-dom@17.0.2)(react@17.0.2)
+      tinacms: 1.5.19(@babel/core@7.22.9)(@types/react@18.2.20)(react-dom@17.0.2)(react@17.0.2)
       typescript: 4.9.5
       zod: 3.21.4
     transitivePeerDependencies:
@@ -3880,8 +3880,8 @@ packages:
       - yup
     dev: false
 
-  /@tinacms/cli@1.5.27(@babel/core@7.22.9)(@types/node@20.5.0)(@types/react@18.2.20)(react-dom@18.2.0)(react@18.2.0)(ts-node@10.9.1):
-    resolution: {integrity: sha512-a1ZjUZDMLTjYCWEDkyTBttwLfDO9mkg3KL9/kuyyRlDD4uQGYbVfhYP0bLqLXnTY1i79ukxAAFghvpgEzHnygw==}
+  /@tinacms/cli@1.5.28(@babel/core@7.22.9)(@types/node@20.5.0)(@types/react@18.2.20)(react-dom@18.2.0)(react@18.2.0)(ts-node@10.9.1):
+    resolution: {integrity: sha512-B78gYmBnsfHEEkqaRrID2DqO4jkZCoeJ7oGpOBF1cJ9ZVSfef7dXYnQhN3YNY9xTqBAhpfPQbXStxBtdtzvhEw==}
     hasBin: true
     dependencies:
       '@graphql-codegen/core': 2.6.8(graphql@15.8.0)
@@ -3898,12 +3898,12 @@ packages:
       '@tailwindcss/aspect-ratio': 0.4.2(tailwindcss@3.3.3)
       '@tailwindcss/line-clamp': 0.3.1(tailwindcss@3.3.3)
       '@tailwindcss/typography': 0.5.9(tailwindcss@3.3.3)
-      '@tinacms/app': 1.2.25(@babel/core@7.22.9)(@types/node@20.5.0)(@types/react@18.2.20)(ts-node@10.9.1)(yup@0.32.11)
-      '@tinacms/datalayer': 1.2.23(react@18.2.0)
-      '@tinacms/graphql': 1.4.23(react@18.2.0)
+      '@tinacms/app': 1.2.26(@babel/core@7.22.9)(@types/node@20.5.0)(@types/react@18.2.20)(ts-node@10.9.1)(yup@0.32.11)
+      '@tinacms/datalayer': 1.2.24(react@18.2.0)
+      '@tinacms/graphql': 1.4.24(react@18.2.0)
       '@tinacms/metrics': 1.0.2(fs-extra@9.1.0)
-      '@tinacms/schema-tools': 1.4.10(react@18.2.0)(yup@0.32.11)
-      '@tinacms/search': 1.0.8(react@18.2.0)(yup@0.32.11)
+      '@tinacms/schema-tools': 1.4.11(react@18.2.0)(yup@0.32.11)
+      '@tinacms/search': 1.0.9(react@18.2.0)(yup@0.32.11)
       '@vitejs/plugin-react': 3.1.0(vite@4.4.8)
       ajv: 6.12.6
       altair-express-middleware: 4.0.6
@@ -3942,7 +3942,7 @@ packages:
       readable-stream: 4.4.2
       rollup-plugin-visualizer: 5.9.2
       tailwindcss: 3.3.3(ts-node@10.9.1)
-      tinacms: 1.5.18(@babel/core@7.22.9)(@types/react@18.2.20)(react-dom@18.2.0)(react@18.2.0)
+      tinacms: 1.5.19(@babel/core@7.22.9)(@types/react@18.2.20)(react-dom@18.2.0)(react@18.2.0)
       typanion: 3.13.0
       url-pattern: 1.0.3
       vite: 4.4.8(@types/node@20.5.0)
@@ -3983,21 +3983,21 @@ packages:
       - xstate
     dev: false
 
-  /@tinacms/datalayer@1.2.23(react@18.2.0):
-    resolution: {integrity: sha512-CHYQfQLWqNqJHYanYBG8WHJRxE4pVVZcA1ZHB5jp/bffz/XC9bAvGv8uwbt8jJ+jrXkiE0RrUc/wkBIHx642qQ==}
+  /@tinacms/datalayer@1.2.24(react@18.2.0):
+    resolution: {integrity: sha512-O7vI/aUuBirGrNG13NwSO9eoXBOXkttRlVh7FXdlAhPYGZJwRdYql00yAHcluoaiK0630+LyvJeqdQQ0U4ymSA==}
     dependencies:
-      '@tinacms/graphql': 1.4.23(react@18.2.0)
+      '@tinacms/graphql': 1.4.24(react@18.2.0)
     transitivePeerDependencies:
       - react
       - supports-color
     dev: false
 
-  /@tinacms/graphql@1.4.23(react@17.0.2):
-    resolution: {integrity: sha512-JcfjpcAMLnnKoedUzTnADzPTipHMS0yCLA5V81PfubG84h+iK1AY3YjweIgmZgqmvMOjosqIrbHjhAqA0yLhOw==}
+  /@tinacms/graphql@1.4.24(react@17.0.2):
+    resolution: {integrity: sha512-yYKrE4a/QwHXWvoahgy9tDhqSTFO5QjZm8Ovg7PSp9EFsHVjMSNfFqHqMF5/1BXYqHPOEJCVUmGCxLk9djtmDA==}
     dependencies:
       '@iarna/toml': 2.2.5
-      '@tinacms/mdx': 1.3.16(react@17.0.2)(yup@0.32.11)
-      '@tinacms/schema-tools': 1.4.10(react@17.0.2)(yup@0.32.11)
+      '@tinacms/mdx': 1.3.17(react@17.0.2)(yup@0.32.11)
+      '@tinacms/schema-tools': 1.4.11(react@17.0.2)(yup@0.32.11)
       abstract-level: 1.0.3
       body-parser: 1.20.2
       cors: 2.8.5
@@ -4025,12 +4025,12 @@ packages:
       - supports-color
     dev: false
 
-  /@tinacms/graphql@1.4.23(react@18.2.0):
-    resolution: {integrity: sha512-JcfjpcAMLnnKoedUzTnADzPTipHMS0yCLA5V81PfubG84h+iK1AY3YjweIgmZgqmvMOjosqIrbHjhAqA0yLhOw==}
+  /@tinacms/graphql@1.4.24(react@18.2.0):
+    resolution: {integrity: sha512-yYKrE4a/QwHXWvoahgy9tDhqSTFO5QjZm8Ovg7PSp9EFsHVjMSNfFqHqMF5/1BXYqHPOEJCVUmGCxLk9djtmDA==}
     dependencies:
       '@iarna/toml': 2.2.5
-      '@tinacms/mdx': 1.3.16(react@18.2.0)(yup@0.32.11)
-      '@tinacms/schema-tools': 1.4.10(react@18.2.0)(yup@0.32.11)
+      '@tinacms/mdx': 1.3.17(react@18.2.0)(yup@0.32.11)
+      '@tinacms/schema-tools': 1.4.11(react@18.2.0)(yup@0.32.11)
       abstract-level: 1.0.3
       body-parser: 1.20.2
       cors: 2.8.5
@@ -4058,10 +4058,10 @@ packages:
       - supports-color
     dev: false
 
-  /@tinacms/mdx@1.3.16(react@17.0.2)(yup@0.32.11):
-    resolution: {integrity: sha512-lEfaIULPxiHbf58pb+Ohkzm+RK/sddvUYTJWXq/VxkgoPsbpsXIl5mEkzcI5RYQ3dynIpKU8oaselZYojuaOaw==}
+  /@tinacms/mdx@1.3.17(react@17.0.2)(yup@0.32.11):
+    resolution: {integrity: sha512-OLEcxn3L/f+tRFwcEj7TQw9DfFf+AvRul0NfUpIet+od8b4jtGAdmnw26wrRyIKtBRDyuKxyRJwZ1Q5j5luU4w==}
     dependencies:
-      '@tinacms/schema-tools': 1.4.10(react@17.0.2)(yup@0.32.11)
+      '@tinacms/schema-tools': 1.4.11(react@17.0.2)(yup@0.32.11)
       acorn: 8.8.2
       ccount: 2.0.1
       estree-util-is-identifier-name: 2.1.0
@@ -4094,10 +4094,10 @@ packages:
       - yup
     dev: false
 
-  /@tinacms/mdx@1.3.16(react@18.2.0)(yup@0.32.11):
-    resolution: {integrity: sha512-lEfaIULPxiHbf58pb+Ohkzm+RK/sddvUYTJWXq/VxkgoPsbpsXIl5mEkzcI5RYQ3dynIpKU8oaselZYojuaOaw==}
+  /@tinacms/mdx@1.3.17(react@18.2.0)(yup@0.32.11):
+    resolution: {integrity: sha512-OLEcxn3L/f+tRFwcEj7TQw9DfFf+AvRul0NfUpIet+od8b4jtGAdmnw26wrRyIKtBRDyuKxyRJwZ1Q5j5luU4w==}
     dependencies:
-      '@tinacms/schema-tools': 1.4.10(react@18.2.0)(yup@0.32.11)
+      '@tinacms/schema-tools': 1.4.11(react@18.2.0)(yup@0.32.11)
       acorn: 8.8.2
       ccount: 2.0.1
       estree-util-is-identifier-name: 2.1.0
@@ -4141,8 +4141,8 @@ packages:
       - encoding
     dev: false
 
-  /@tinacms/schema-tools@1.4.10(react@17.0.2)(yup@0.32.11):
-    resolution: {integrity: sha512-1ey2PF5UFI7M/4aearZ4IqTsZStVu6EpUd4nHdyQKKvxKSWkWxi1D8m1NvYrgYvC5nnWjsTIq6LrVdzKw9Tb+g==}
+  /@tinacms/schema-tools@1.4.11(react@17.0.2)(yup@0.32.11):
+    resolution: {integrity: sha512-WXQy+P8izp8ve9jUSQWT7JCZ9C5aRob53VxmagmBZ3/0QBbj2frv3aUlqWGy+ydTVdSNkTZuUob2bBLMgIAjDg==}
     peerDependencies:
       react: '>=16.14.0'
       yup: ^0.32.0
@@ -4154,8 +4154,8 @@ packages:
       zod: 3.21.4
     dev: false
 
-  /@tinacms/schema-tools@1.4.10(react@18.2.0)(yup@0.32.11):
-    resolution: {integrity: sha512-1ey2PF5UFI7M/4aearZ4IqTsZStVu6EpUd4nHdyQKKvxKSWkWxi1D8m1NvYrgYvC5nnWjsTIq6LrVdzKw9Tb+g==}
+  /@tinacms/schema-tools@1.4.11(react@18.2.0)(yup@0.32.11):
+    resolution: {integrity: sha512-WXQy+P8izp8ve9jUSQWT7JCZ9C5aRob53VxmagmBZ3/0QBbj2frv3aUlqWGy+ydTVdSNkTZuUob2bBLMgIAjDg==}
     peerDependencies:
       react: '>=16.14.0'
       yup: ^0.32.0
@@ -4167,11 +4167,11 @@ packages:
       zod: 3.21.4
     dev: false
 
-  /@tinacms/search@1.0.8(encoding@0.1.13)(react@17.0.2)(yup@0.32.11):
-    resolution: {integrity: sha512-FSW1x7v3ni2HKCHnTAOWdiAr6Zq1hton6RTyL3Cja0Zv7XiJXoMkRqJYd0EP9UHiUc7i5XIxJdJqMOoyZRa/dg==}
+  /@tinacms/search@1.0.9(encoding@0.1.13)(react@17.0.2)(yup@0.32.11):
+    resolution: {integrity: sha512-crRMW9kThdVGX+58wJX/Gp+gyORmlrViI0R1jjESMYxCkKQtiHxVTk9oA6i5iv3sWReq6BKZO3letYaQYH6DcA==}
     dependencies:
-      '@tinacms/graphql': 1.4.23(react@17.0.2)
-      '@tinacms/schema-tools': 1.4.10(react@17.0.2)(yup@0.32.11)
+      '@tinacms/graphql': 1.4.24(react@17.0.2)
+      '@tinacms/schema-tools': 1.4.11(react@17.0.2)(yup@0.32.11)
       abstract-level: 1.0.3
       memory-level: 1.0.0
       module-error: 1.0.2
@@ -4186,11 +4186,11 @@ packages:
       - yup
     dev: false
 
-  /@tinacms/search@1.0.8(encoding@0.1.13)(react@18.2.0)(yup@0.32.11):
-    resolution: {integrity: sha512-FSW1x7v3ni2HKCHnTAOWdiAr6Zq1hton6RTyL3Cja0Zv7XiJXoMkRqJYd0EP9UHiUc7i5XIxJdJqMOoyZRa/dg==}
+  /@tinacms/search@1.0.9(encoding@0.1.13)(react@18.2.0)(yup@0.32.11):
+    resolution: {integrity: sha512-crRMW9kThdVGX+58wJX/Gp+gyORmlrViI0R1jjESMYxCkKQtiHxVTk9oA6i5iv3sWReq6BKZO3letYaQYH6DcA==}
     dependencies:
-      '@tinacms/graphql': 1.4.23(react@18.2.0)
-      '@tinacms/schema-tools': 1.4.10(react@18.2.0)(yup@0.32.11)
+      '@tinacms/graphql': 1.4.24(react@18.2.0)
+      '@tinacms/schema-tools': 1.4.11(react@18.2.0)(yup@0.32.11)
       abstract-level: 1.0.3
       memory-level: 1.0.0
       module-error: 1.0.2
@@ -4205,11 +4205,11 @@ packages:
       - yup
     dev: false
 
-  /@tinacms/search@1.0.8(react@18.2.0)(yup@0.32.11):
-    resolution: {integrity: sha512-FSW1x7v3ni2HKCHnTAOWdiAr6Zq1hton6RTyL3Cja0Zv7XiJXoMkRqJYd0EP9UHiUc7i5XIxJdJqMOoyZRa/dg==}
+  /@tinacms/search@1.0.9(react@18.2.0)(yup@0.32.11):
+    resolution: {integrity: sha512-crRMW9kThdVGX+58wJX/Gp+gyORmlrViI0R1jjESMYxCkKQtiHxVTk9oA6i5iv3sWReq6BKZO3letYaQYH6DcA==}
     dependencies:
-      '@tinacms/graphql': 1.4.23(react@18.2.0)
-      '@tinacms/schema-tools': 1.4.10(react@18.2.0)(yup@0.32.11)
+      '@tinacms/graphql': 1.4.24(react@18.2.0)
+      '@tinacms/schema-tools': 1.4.11(react@18.2.0)(yup@0.32.11)
       abstract-level: 1.0.3
       memory-level: 1.0.0
       module-error: 1.0.2
@@ -4467,7 +4467,7 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dependencies:
       '@typescript-eslint/types': 5.62.0
-      eslint-visitor-keys: 3.4.2
+      eslint-visitor-keys: 3.4.3
     dev: true
 
   /@udecode/plate-alignment@21.5.0(@babel/core@7.22.9)(@types/react@18.2.20)(react-dom@17.0.2)(react@17.0.2)(scheduler@0.19.0)(slate-history@0.93.0)(slate-react@0.97.2)(slate@0.94.1):
@@ -8299,10 +8299,6 @@ packages:
     engines: {node: '>=10'}
     dev: false
 
-  /caniuse-lite@1.0.30001519:
-    resolution: {integrity: sha512-0QHgqR+Jv4bxHMp8kZ1Kn8CH55OikjKJ6JmKkZYP1F3D7w+lnFXF70nG5eNfsZS89jadi5Ywy5UCSKLAglIRkg==}
-    dev: false
-
   /caniuse-lite@1.0.30001520:
     resolution: {integrity: sha512-tahF5O9EiiTzwTUqAeFjIZbn4Dnqxzz7ktrgGlMYNLH43Ul26IgTMH/zvL3DG0lZxBYnlT04axvInszUsZULdA==}
 
@@ -9306,8 +9302,8 @@ packages:
     engines: {node: '>=12'}
     dev: false
 
-  /eslint-config-next@13.4.13(eslint@8.47.0)(typescript@5.1.6):
-    resolution: {integrity: sha512-EXAh5h1yG/YTNa5YdskzaSZncBjKjvFe2zclMCi2KXyTsXha22wB6MPs/U7idB6a2qjpBdbZcruQY1TWjfNMZw==}
+  /eslint-config-next@13.4.16(eslint@8.47.0)(typescript@5.1.6):
+    resolution: {integrity: sha512-Of73d/FiaGf0GLCxxTGdh4rW8bRDvsqypylefkshE/uDDpQr8ifVQsD4UiB99rhegks7nJGkYtUnR3dC7kfFlw==}
     peerDependencies:
       eslint: ^7.23.0 || ^8.0.0
       typescript: '>=3.3.1'
@@ -9315,7 +9311,7 @@ packages:
       typescript:
         optional: true
     dependencies:
-      '@next/eslint-plugin-next': 13.4.13
+      '@next/eslint-plugin-next': 13.4.16
       '@rushstack/eslint-patch': 1.3.2
       '@typescript-eslint/parser': 5.62.0(eslint@8.47.0)(typescript@5.1.6)
       eslint: 8.47.0
@@ -9503,11 +9499,6 @@ packages:
     dependencies:
       esrecurse: 4.3.0
       estraverse: 5.3.0
-    dev: true
-
-  /eslint-visitor-keys@3.4.2:
-    resolution: {integrity: sha512-8drBzUEyZ2llkpCA67iYrgEssKDUu68V8ChqqOfFupIaG/LCVPUT+CoGJpT77zJprs4T/W7p07LP7zAIMuweVw==}
-    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
   /eslint-visitor-keys@3.4.3:
@@ -12264,20 +12255,20 @@ packages:
     resolution: {integrity: sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==}
     dev: false
 
-  /next-seo@6.1.0(next@13.4.13)(react-dom@18.2.0)(react@18.2.0):
+  /next-seo@6.1.0(next@13.4.16)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-iMBpFoJsR5zWhguHJvsoBDxDSmdYTHtnVPB1ij+CD0NReQCP78ZxxbdL9qkKIf4oEuZEqZkrjAQLB0bkII7RYA==}
     peerDependencies:
       next: ^8.1.1-canary.54 || >=9.0.0
       react: '>=16.0.0'
       react-dom: '>=16.0.0'
     dependencies:
-      next: 13.4.13(@babel/core@7.22.9)(react-dom@18.2.0)(react@18.2.0)
+      next: 13.4.16(@babel/core@7.22.9)(react-dom@18.2.0)(react@18.2.0)
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /next@13.4.13(@babel/core@7.22.9)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-A3YVbVDNeXLhWsZ8Nf6IkxmNlmTNz0yVg186NJ97tGZqPDdPzTrHotJ+A1cuJm2XfuWPrKOUZILl5iBQkIf8Jw==}
+  /next@13.4.16(@babel/core@7.22.9)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-1xaA/5DrfpPu0eV31Iro7JfPeqO8uxQWb1zYNTe+KDKdzqkAGapLcDYHMLNKXKB7lHjZ7LfKUOf9dyuzcibrhA==}
     engines: {node: '>=16.8.0'}
     hasBin: true
     peerDependencies:
@@ -12291,10 +12282,10 @@ packages:
       sass:
         optional: true
     dependencies:
-      '@next/env': 13.4.13
+      '@next/env': 13.4.16
       '@swc/helpers': 0.5.1
       busboy: 1.6.0
-      caniuse-lite: 1.0.30001519
+      caniuse-lite: 1.0.30001520
       postcss: 8.4.14
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -12302,15 +12293,15 @@ packages:
       watchpack: 2.4.0
       zod: 3.21.4
     optionalDependencies:
-      '@next/swc-darwin-arm64': 13.4.13
-      '@next/swc-darwin-x64': 13.4.13
-      '@next/swc-linux-arm64-gnu': 13.4.13
-      '@next/swc-linux-arm64-musl': 13.4.13
-      '@next/swc-linux-x64-gnu': 13.4.13
-      '@next/swc-linux-x64-musl': 13.4.13
-      '@next/swc-win32-arm64-msvc': 13.4.13
-      '@next/swc-win32-ia32-msvc': 13.4.13
-      '@next/swc-win32-x64-msvc': 13.4.13
+      '@next/swc-darwin-arm64': 13.4.16
+      '@next/swc-darwin-x64': 13.4.16
+      '@next/swc-linux-arm64-gnu': 13.4.16
+      '@next/swc-linux-arm64-musl': 13.4.16
+      '@next/swc-linux-x64-gnu': 13.4.16
+      '@next/swc-linux-x64-musl': 13.4.16
+      '@next/swc-win32-arm64-msvc': 13.4.16
+      '@next/swc-win32-ia32-msvc': 13.4.16
+      '@next/swc-win32-x64-msvc': 13.4.16
     transitivePeerDependencies:
       - '@babel/core'
       - babel-plugin-macros
@@ -15024,8 +15015,8 @@ packages:
     resolution: {integrity: sha512-w89qg7PI8wAdvX60bMDP+bFoD5Dvhm9oLheFp5O4a2QF0cSBGsBX4qZmadPMvVqlLJBBci+WqGGOAPvcDeNSVg==}
     dev: true
 
-  /tinacms@1.5.18(@babel/core@7.22.9)(@types/react@18.2.20)(react-dom@17.0.2)(react@17.0.2):
-    resolution: {integrity: sha512-u87pXLEChzF/s7znoHfSJHGb22UyW7iJAxEeON3KdPFzSa2JainHMBOYMDcs6YiHqtKWUWvaY5PQv1PGWZFSHQ==}
+  /tinacms@1.5.19(@babel/core@7.22.9)(@types/react@18.2.20)(react-dom@17.0.2)(react@17.0.2):
+    resolution: {integrity: sha512-yfr4GZJFNF0dPcpzuvhvPbfkCWC3VC60x+XGnBOaZBCXJoZtmuHPm+ASBBdiS59cGP9rh00W6TPGc92QjrbJkg==}
     peerDependencies:
       react: '>=16.14.0'
       react-dom: '>=16.14.0'
@@ -15042,8 +15033,8 @@ packages:
       '@react-types/combobox': 3.6.2(react@17.0.2)
       '@react-types/shared': 3.18.1(react@17.0.2)
       '@sambego/storybook-styles': 1.0.0
-      '@tinacms/schema-tools': 1.4.10(react@17.0.2)(yup@0.32.11)
-      '@tinacms/search': 1.0.8(encoding@0.1.13)(react@17.0.2)(yup@0.32.11)
+      '@tinacms/schema-tools': 1.4.11(react@17.0.2)(yup@0.32.11)
+      '@tinacms/search': 1.0.9(encoding@0.1.13)(react@17.0.2)(yup@0.32.11)
       '@tinacms/sharedctx': 1.0.2(react-dom@17.0.2)(react@17.0.2)
       '@udecode/plate-headless': 21.5.0(@babel/core@7.22.9)(@types/react@18.2.20)(react-dom@17.0.2)(react@17.0.2)(scheduler@0.19.0)(slate-history@0.93.0)(slate-hyperscript@0.77.0)(slate-react@0.97.2)(slate@0.94.1)
       atob: 2.1.2
@@ -15102,8 +15093,8 @@ packages:
       - supports-color
     dev: false
 
-  /tinacms@1.5.18(@babel/core@7.22.9)(@types/react@18.2.20)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-u87pXLEChzF/s7znoHfSJHGb22UyW7iJAxEeON3KdPFzSa2JainHMBOYMDcs6YiHqtKWUWvaY5PQv1PGWZFSHQ==}
+  /tinacms@1.5.19(@babel/core@7.22.9)(@types/react@18.2.20)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-yfr4GZJFNF0dPcpzuvhvPbfkCWC3VC60x+XGnBOaZBCXJoZtmuHPm+ASBBdiS59cGP9rh00W6TPGc92QjrbJkg==}
     peerDependencies:
       react: '>=16.14.0'
       react-dom: '>=16.14.0'
@@ -15120,8 +15111,8 @@ packages:
       '@react-types/combobox': 3.6.2(react@18.2.0)
       '@react-types/shared': 3.18.1(react@18.2.0)
       '@sambego/storybook-styles': 1.0.0
-      '@tinacms/schema-tools': 1.4.10(react@18.2.0)(yup@0.32.11)
-      '@tinacms/search': 1.0.8(encoding@0.1.13)(react@18.2.0)(yup@0.32.11)
+      '@tinacms/schema-tools': 1.4.11(react@18.2.0)(yup@0.32.11)
+      '@tinacms/search': 1.0.9(encoding@0.1.13)(react@18.2.0)(yup@0.32.11)
       '@tinacms/sharedctx': 1.0.2(react-dom@18.2.0)(react@18.2.0)
       '@udecode/plate-headless': 21.5.0(@babel/core@7.22.9)(@types/react@18.2.20)(react-dom@18.2.0)(react@18.2.0)(scheduler@0.19.0)(slate-history@0.93.0)(slate-hyperscript@0.77.0)(slate-react@0.97.2)(slate@0.94.1)
       atob: 2.1.2
