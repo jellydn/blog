@@ -18,8 +18,8 @@ dependencies:
     specifier: 1.5.29
     version: 1.5.29(@babel/core@7.22.11)(@types/node@20.5.9)(@types/react@18.2.21)(react-dom@18.2.0)(react@18.2.0)(ts-node@10.9.1)
   daisyui:
-    specifier: 3.6.5
-    version: 3.6.5(ts-node@10.9.1)
+    specifier: 3.7.3
+    version: 3.7.3(ts-node@10.9.1)
   glob:
     specifier: 10.3.4
     version: 10.3.4
@@ -8817,8 +8817,8 @@ packages:
       - '@swc/wasm'
     dev: true
 
-  /daisyui@3.6.5(ts-node@10.9.1):
-    resolution: {integrity: sha512-1yPTKlCf1usfSsUaTvu5l/Fi8TEchy8H9/rAtvPMwWd++ifl56ASnaDQfHZhl9lnPtCWj/mWicrwL7aaNz53KA==}
+  /daisyui@3.7.3(ts-node@10.9.1):
+    resolution: {integrity: sha512-gKlz3RwfaukZxf8nQZsDAZ7quUSi7F8HjGGB34tkHruvfQB9cgVDQsmqUqSQtkAJYvzbrg/3dLUa9+5jF4iC1A==}
     engines: {node: '>=16.9.0'}
     dependencies:
       colord: 2.9.3
