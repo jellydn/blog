@@ -41,7 +41,7 @@
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "5.0.0",
     "@trivago/prettier-plugin-sort-imports": "4.2.0",
-    "@types/node": "20.6.4",
+    "@types/node": "20.6.5",
     "@types/react": "18.2.22",
     "autoprefixer": "10.4.16",
     "cz-conventional-changelog": "3.3.0",
