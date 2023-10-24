@@ -13,7 +13,7 @@ dependencies:
     version: 3.3.0(next@13.5.6)(react@18.2.0)
   '@tailwindcss/typography':
     specifier: 0.5.10
-    version: 0.5.10(tailwindcss@3.3.3)
+    version: 0.5.10(tailwindcss@3.3.4)
   '@tinacms/cli':
     specifier: 1.5.31
     version: 1.5.31(@babel/core@7.23.2)(@types/node@20.8.8)(@types/react@18.2.31)(react-dom@18.2.0)(react@18.2.0)(ts-node@10.9.1)
@@ -31,7 +31,7 @@ dependencies:
     version: 4.2.0
   kutty:
     specifier: 0.6.0
-    version: 0.6.0(tailwindcss@3.3.3)
+    version: 0.6.0(tailwindcss@3.3.4)
   lite-youtube-embed:
     specifier: 0.3.0
     version: 0.3.0
@@ -116,8 +116,8 @@ devDependencies:
     specifier: 2.6.0
     version: 2.6.0
   tailwindcss:
-    specifier: 3.3.3
-    version: 3.3.3(ts-node@10.9.1)
+    specifier: 3.3.4
+    version: 3.3.4(ts-node@10.9.1)
   typescript:
     specifier: 5.2.2
     version: 5.2.2
@@ -1871,7 +1871,7 @@ packages:
       graphql: ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
     dependencies:
       graphql: 15.8.0
-      tslib: 2.5.3
+      tslib: 2.6.2
     dev: false
 
   /@graphql-tools/relay-operation-optimizer@6.5.18(graphql@15.8.0):
@@ -1897,7 +1897,7 @@ packages:
       '@ardatan/relay-compiler': 12.0.0(graphql@15.8.0)
       '@graphql-tools/utils': 10.0.7(graphql@15.8.0)
       graphql: 15.8.0
-      tslib: 2.5.3
+      tslib: 2.6.2
     transitivePeerDependencies:
       - encoding
       - supports-color
@@ -3796,23 +3796,23 @@ packages:
       tslib: 2.6.2
     dev: false
 
-  /@tailwindcss/aspect-ratio@0.4.2(tailwindcss@3.3.3):
+  /@tailwindcss/aspect-ratio@0.4.2(tailwindcss@3.3.4):
     resolution: {integrity: sha512-8QPrypskfBa7QIMuKHg2TA7BqES6vhBrDLOv8Unb6FcFyd3TjKbc6lcmb9UPQHxfl24sXoJ41ux/H7qQQvfaSQ==}
     peerDependencies:
       tailwindcss: '>=2.0.0 || >=3.0.0 || >=3.0.0-alpha.1'
     dependencies:
-      tailwindcss: 3.3.3(ts-node@10.9.1)
+      tailwindcss: 3.3.4(ts-node@10.9.1)
     dev: false
 
-  /@tailwindcss/line-clamp@0.3.1(tailwindcss@3.3.3):
+  /@tailwindcss/line-clamp@0.3.1(tailwindcss@3.3.4):
     resolution: {integrity: sha512-pNr0T8LAc3TUx/gxCfQZRe9NB2dPEo/cedPHzUGIPxqDMhgjwNm6jYxww4W5l0zAsAddxr+XfZcqttGiFDgrGg==}
     peerDependencies:
       tailwindcss: '>=2.0.0 || >=3.0.0 || >=3.0.0-alpha.1'
     dependencies:
-      tailwindcss: 3.3.3(ts-node@10.9.1)
+      tailwindcss: 3.3.4(ts-node@10.9.1)
     dev: false
 
-  /@tailwindcss/typography@0.5.10(tailwindcss@3.3.3):
+  /@tailwindcss/typography@0.5.10(tailwindcss@3.3.4):
     resolution: {integrity: sha512-Pe8BuPJQJd3FfRnm6H0ulKIGoMEQS+Vq01R6M5aCrFB/ccR/shT+0kXLjouGC1gFLm9hopTFN+DMP0pfwRWzPw==}
     peerDependencies:
       tailwindcss: '>=3.0.0 || insiders'
@@ -3821,7 +3821,7 @@ packages:
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       postcss-selector-parser: 6.0.10
-      tailwindcss: 3.3.3(ts-node@10.9.1)
+      tailwindcss: 3.3.4(ts-node@10.9.1)
     dev: false
 
   /@tinacms/app@1.2.29(@babel/core@7.23.2)(@types/node@20.8.8)(@types/react@18.2.31)(ts-node@10.9.1)(yup@0.32.11):
@@ -3842,7 +3842,7 @@ packages:
       react: 17.0.2
       react-dom: 17.0.2(react@17.0.2)
       react-router-dom: 6.3.0(react-dom@17.0.2)(react@17.0.2)
-      tailwindcss: 3.3.3(ts-node@10.9.1)
+      tailwindcss: 3.3.4(ts-node@10.9.1)
       tinacms: 1.5.22(@babel/core@7.23.2)(@types/react@18.2.31)(react-dom@17.0.2)(react@17.0.2)
       typescript: 4.9.5
       zod: 3.22.4
@@ -3885,9 +3885,9 @@ packages:
       '@graphql-tools/load': 7.8.14(graphql@15.8.0)
       '@rollup/pluginutils': 5.0.5
       '@svgr/core': 6.3.1
-      '@tailwindcss/aspect-ratio': 0.4.2(tailwindcss@3.3.3)
-      '@tailwindcss/line-clamp': 0.3.1(tailwindcss@3.3.3)
-      '@tailwindcss/typography': 0.5.10(tailwindcss@3.3.3)
+      '@tailwindcss/aspect-ratio': 0.4.2(tailwindcss@3.3.4)
+      '@tailwindcss/line-clamp': 0.3.1(tailwindcss@3.3.4)
+      '@tailwindcss/typography': 0.5.10(tailwindcss@3.3.4)
       '@tinacms/app': 1.2.29(@babel/core@7.23.2)(@types/node@20.8.8)(@types/react@18.2.31)(ts-node@10.9.1)(yup@0.32.11)
       '@tinacms/datalayer': 1.2.27(react@18.2.0)
       '@tinacms/graphql': 1.4.27(react@18.2.0)
@@ -3931,7 +3931,7 @@ packages:
       prompts: 2.4.2
       readable-stream: 4.4.2
       rollup-plugin-visualizer: 5.9.2
-      tailwindcss: 3.3.3(ts-node@10.9.1)
+      tailwindcss: 3.3.4(ts-node@10.9.1)
       tinacms: 1.5.22(@babel/core@7.23.2)(@types/react@18.2.31)(react-dom@18.2.0)(react@18.2.0)
       typanion: 3.13.0
       url-pattern: 1.0.3
@@ -8869,7 +8869,7 @@ packages:
       css-selector-tokenizer: 0.8.0
       postcss: 8.4.31
       postcss-js: 4.0.1(postcss@8.4.31)
-      tailwindcss: 3.3.3(ts-node@10.9.1)
+      tailwindcss: 3.3.4(ts-node@10.9.1)
     transitivePeerDependencies:
       - ts-node
     dev: false
@@ -11173,12 +11173,12 @@ packages:
     engines: {node: '>=6'}
     dev: false
 
-  /kutty@0.6.0(tailwindcss@3.3.3):
+  /kutty@0.6.0(tailwindcss@3.3.4):
     resolution: {integrity: sha512-QI4qt0aDMG05BH845B16u9Fun5tBfpNcD89Yky4suU5iwmu5P3xPEcoRSDl9E7/WU5kfjuzTK1XzStglkd3Msg==}
     peerDependencies:
       tailwindcss: ^3.0.7
     dependencies:
-      tailwindcss: 3.3.3(ts-node@10.9.1)
+      tailwindcss: 3.3.4(ts-node@10.9.1)
     dev: false
 
   /language-subtag-registry@0.3.22:
@@ -15285,8 +15285,8 @@ packages:
     resolution: {integrity: sha512-Cat63mxsVJlzYvN51JmVXIgNoUokrIaT2zLclCXjRd8boZ0004U4KCs/sToJ75C6sdlByWxpYnb5Boif1VSFew==}
     dev: false
 
-  /tailwindcss@3.3.3(ts-node@10.9.1):
-    resolution: {integrity: sha512-A0KgSkef7eE4Mf+nKJ83i75TMyq8HqY3qmFIJSWy8bNt0v1lG7jUcpGpoTFxAwYcWOphcTBLPPJg+bDfhDf52w==}
+  /tailwindcss@3.3.4(ts-node@10.9.1):
+    resolution: {integrity: sha512-JXZNOkggUAc9T5E7nCrimoXHcSf9h3NWFe5sh36CGD/3M5TRLuQeFnQoDsit2uVTqgoOZHLx5rTykLUu16vsMQ==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
