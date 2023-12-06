@@ -24,7 +24,7 @@
     "@giscus/react": "2.3.0",
     "@happykit/flags": "3.3.0",
     "@tailwindcss/typography": "0.5.10",
-    "@tinacms/cli": "1.5.38",
+    "@tinacms/cli": "1.5.39",
     "daisyui": "4.4.19",
     "glob": "10.3.10",
     "gray-matter": "4.0.3",
