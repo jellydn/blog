@@ -13,7 +13,7 @@ dependencies:
     version: 3.3.0(next@14.0.4)(react@18.2.0)
   '@tailwindcss/typography':
     specifier: 0.5.10
-    version: 0.5.10(tailwindcss@3.3.7)
+    version: 0.5.10(tailwindcss@3.4.0)
   '@tinacms/cli':
     specifier: 1.5.39
     version: 1.5.39(@babel/core@7.23.5)(@types/node@20.10.5)(@types/react@18.2.45)(react-dom@18.2.0)(react@18.2.0)
@@ -31,7 +31,7 @@ dependencies:
     version: 4.2.0
   kutty:
     specifier: 0.6.0
-    version: 0.6.0(tailwindcss@3.3.7)
+    version: 0.6.0(tailwindcss@3.4.0)
   lite-youtube-embed:
     specifier: 0.3.0
     version: 0.3.0
@@ -116,8 +116,8 @@ devDependencies:
     specifier: 2.6.0
     version: 2.6.0
   tailwindcss:
-    specifier: 3.3.7
-    version: 3.3.7
+    specifier: 3.4.0
+    version: 3.4.0
   typescript:
     specifier: 5.3.3
     version: 5.3.3
@@ -4012,23 +4012,23 @@ packages:
       tslib: 2.6.2
     dev: false
 
-  /@tailwindcss/aspect-ratio@0.4.2(tailwindcss@3.3.7):
+  /@tailwindcss/aspect-ratio@0.4.2(tailwindcss@3.4.0):
     resolution: {integrity: sha512-8QPrypskfBa7QIMuKHg2TA7BqES6vhBrDLOv8Unb6FcFyd3TjKbc6lcmb9UPQHxfl24sXoJ41ux/H7qQQvfaSQ==}
     peerDependencies:
       tailwindcss: '>=2.0.0 || >=3.0.0 || >=3.0.0-alpha.1'
     dependencies:
-      tailwindcss: 3.3.7
+      tailwindcss: 3.4.0
     dev: false
 
-  /@tailwindcss/line-clamp@0.3.1(tailwindcss@3.3.7):
+  /@tailwindcss/line-clamp@0.3.1(tailwindcss@3.4.0):
     resolution: {integrity: sha512-pNr0T8LAc3TUx/gxCfQZRe9NB2dPEo/cedPHzUGIPxqDMhgjwNm6jYxww4W5l0zAsAddxr+XfZcqttGiFDgrGg==}
     peerDependencies:
       tailwindcss: '>=2.0.0 || >=3.0.0 || >=3.0.0-alpha.1'
     dependencies:
-      tailwindcss: 3.3.7
+      tailwindcss: 3.4.0
     dev: false
 
-  /@tailwindcss/typography@0.5.10(tailwindcss@3.3.7):
+  /@tailwindcss/typography@0.5.10(tailwindcss@3.4.0):
     resolution: {integrity: sha512-Pe8BuPJQJd3FfRnm6H0ulKIGoMEQS+Vq01R6M5aCrFB/ccR/shT+0kXLjouGC1gFLm9hopTFN+DMP0pfwRWzPw==}
     peerDependencies:
       tailwindcss: '>=3.0.0 || insiders'
@@ -4037,7 +4037,7 @@ packages:
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       postcss-selector-parser: 6.0.10
-      tailwindcss: 3.3.7
+      tailwindcss: 3.4.0
     dev: false
 
   /@tinacms/app@1.2.35(@babel/core@7.23.5)(@types/node@20.10.5)(@types/react@18.2.45)(yup@0.32.11):
@@ -4058,7 +4058,7 @@ packages:
       react: 17.0.2
       react-dom: 17.0.2(react@17.0.2)
       react-router-dom: 6.3.0(react-dom@17.0.2)(react@17.0.2)
-      tailwindcss: 3.3.7
+      tailwindcss: 3.4.0
       tinacms: 1.5.28(@babel/core@7.23.5)(@types/react@18.2.45)(react-dom@17.0.2)(react@17.0.2)
       typescript: 4.9.5
       zod: 3.22.4
@@ -4101,9 +4101,9 @@ packages:
       '@graphql-tools/load': 7.8.14(graphql@15.8.0)
       '@rollup/pluginutils': 5.1.0
       '@svgr/core': 6.3.1
-      '@tailwindcss/aspect-ratio': 0.4.2(tailwindcss@3.3.7)
-      '@tailwindcss/line-clamp': 0.3.1(tailwindcss@3.3.7)
-      '@tailwindcss/typography': 0.5.10(tailwindcss@3.3.7)
+      '@tailwindcss/aspect-ratio': 0.4.2(tailwindcss@3.4.0)
+      '@tailwindcss/line-clamp': 0.3.1(tailwindcss@3.4.0)
+      '@tailwindcss/typography': 0.5.10(tailwindcss@3.4.0)
       '@tinacms/app': 1.2.35(@babel/core@7.23.5)(@types/node@20.10.5)(@types/react@18.2.45)(yup@0.32.11)
       '@tinacms/datalayer': 1.2.32(react@18.2.0)
       '@tinacms/graphql': 1.4.32(react@18.2.0)
@@ -4148,7 +4148,7 @@ packages:
       prompts: 2.4.2
       readable-stream: 4.4.2
       rollup-plugin-visualizer: 5.11.0
-      tailwindcss: 3.3.7
+      tailwindcss: 3.4.0
       tinacms: 1.5.28(@babel/core@7.23.5)(@types/react@18.2.45)(react-dom@18.2.0)(react@18.2.0)
       typanion: 3.13.0
       typescript: 4.3.5
@@ -11359,12 +11359,12 @@ packages:
     engines: {node: '>=6'}
     dev: false
 
-  /kutty@0.6.0(tailwindcss@3.3.7):
+  /kutty@0.6.0(tailwindcss@3.4.0):
     resolution: {integrity: sha512-QI4qt0aDMG05BH845B16u9Fun5tBfpNcD89Yky4suU5iwmu5P3xPEcoRSDl9E7/WU5kfjuzTK1XzStglkd3Msg==}
     peerDependencies:
       tailwindcss: ^3.0.7
     dependencies:
-      tailwindcss: 3.3.7
+      tailwindcss: 3.4.0
     dev: false
 
   /language-subtag-registry@0.3.22:
@@ -15533,8 +15533,8 @@ packages:
     resolution: {integrity: sha512-Cat63mxsVJlzYvN51JmVXIgNoUokrIaT2zLclCXjRd8boZ0004U4KCs/sToJ75C6sdlByWxpYnb5Boif1VSFew==}
     dev: false
 
-  /tailwindcss@3.3.7:
-    resolution: {integrity: sha512-pjgQxDZPvyS/nG3ZYkyCvsbONJl7GdOejfm24iMt2ElYQQw8Jc4p0m8RdMp7mznPD0kUhfzwV3zAwa80qI0zmQ==}
+  /tailwindcss@3.4.0:
+    resolution: {integrity: sha512-VigzymniH77knD1dryXbyxR+ePHihHociZbXnLZHUyzf2MMs2ZVqlUrZ3FvpXP8pno9JzmILt1sZPD19M3IxtA==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
