@@ -18,8 +18,8 @@ dependencies:
     specifier: 1.5.39
     version: 1.5.39(@babel/core@7.23.5)(@types/node@20.10.5)(@types/react@18.2.45)(react-dom@18.2.0)(react@18.2.0)
   daisyui:
-    specifier: 4.4.22
-    version: 4.4.22(postcss@8.4.32)
+    specifier: 4.4.23
+    version: 4.4.23(postcss@8.4.32)
   glob:
     specifier: 10.3.10
     version: 10.3.10
@@ -9055,8 +9055,8 @@ packages:
       - typescript
     dev: true
 
-  /daisyui@4.4.22(postcss@8.4.32):
-    resolution: {integrity: sha512-hn50npYa07qS0v+WbBGhTMTIq0X1cHe8Jc5/vxnnkKUTKyJQ2C1UQnNa2HNMVoCyzBct1fv6VBnEB4LGc0dVEQ==}
+  /daisyui@4.4.23(postcss@8.4.32):
+    resolution: {integrity: sha512-IFQRGoGoAke8chxPcDqQJFldVVd51JL7b4mRA3LqsLexW/6xicZzz9X3GXdGdnYsu8QPxZN4uzQZ5fwRNYXOSg==}
     engines: {node: '>=16.9.0'}
     dependencies:
       css-selector-tokenizer: 0.8.0
