@@ -16,9 +16,25 @@ const HeroIntro = () => (
             <div className="px-6 mx-auto max-w-5xl text-center">
                 <h2 className="text-2xl font-semibold text-white">About Me</h2>
                 <p className="mt-4 text-gray-400">
-                    I’m a full stack developer. I’m a fast learner and
-                    self-taught coder. I often take my time for researching and
-                    learning about hot and trending technology.
+                    With over a decade of experience under my belt as a
+                    full-stack developer, I&apos;ve had the opportunity to
+                    spearhead project teams at tech startups in Vietnam,
+                    Thailand, Japan and Singapore. Additionally, I have worked
+                    as a freelance engineer for various companies based in Asia
+                    Pacific, Europe, and North America.
+                </p>
+                <p className="mt-4 text-gray-400">
+                    Presently, I serve the role of a Senior Full Stack Software
+                    Engineer at{' '}
+                    <a
+                        href="https://acx.net"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                    >
+                        ACX
+                    </a>
+                    . I am consistently committed to exploring and acquiring
+                    knowledge on emerging and popular technologies.
                 </p>
             </div>
         </section>
