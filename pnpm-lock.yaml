@@ -138,7 +138,7 @@ packages:
     engines: {node: '>=6.0.0'}
     dependencies:
       '@jridgewell/gen-mapping': 0.3.3
-      '@jridgewell/trace-mapping': 0.3.21
+      '@jridgewell/trace-mapping': 0.3.22
     dev: false
 
   /@ardatan/relay-compiler@12.0.0(graphql@15.8.0):
@@ -220,7 +220,7 @@ packages:
     dependencies:
       '@babel/types': 7.23.6
       '@jridgewell/gen-mapping': 0.3.3
-      '@jridgewell/trace-mapping': 0.3.21
+      '@jridgewell/trace-mapping': 0.3.22
       jsesc: 2.5.2
 
   /@babel/helper-annotate-as-pure@7.22.5:
@@ -2323,7 +2323,7 @@ packages:
     dependencies:
       '@jridgewell/set-array': 1.1.2
       '@jridgewell/sourcemap-codec': 1.4.15
-      '@jridgewell/trace-mapping': 0.3.21
+      '@jridgewell/trace-mapping': 0.3.22
 
   /@jridgewell/resolve-uri@3.1.1:
     resolution: {integrity: sha512-dSYZh7HhCDtCKm4QakX0xFpsRDqjjtZf/kjI/v3T3Nwt5r8/qz/M19F9ySyOqU94SXBmeG9ttTul+YnR4LOxFA==}
@@ -2337,14 +2337,14 @@ packages:
     resolution: {integrity: sha512-UTYAUj/wviwdsMfzoSJspJxbkH5o1snzwX0//0ENX1u/55kkZZkcTZP6u9bwKGkv+dkk9at4m1Cpt0uY80kcpQ==}
     dependencies:
       '@jridgewell/gen-mapping': 0.3.3
-      '@jridgewell/trace-mapping': 0.3.21
+      '@jridgewell/trace-mapping': 0.3.22
     dev: false
 
   /@jridgewell/sourcemap-codec@1.4.15:
     resolution: {integrity: sha512-eF2rxCRulEKXHTRiDrDy6erMYWqNw4LPdQ8UQA4huuxaQsVeRPFl2oM8oDGxMFhJUWZf9McpLtJasDDZb/Bpeg==}
 
-  /@jridgewell/trace-mapping@0.3.21:
-    resolution: {integrity: sha512-SRfKmRe1KvYnxjEMtxEr+J4HIeMX5YBg/qhRHpxEIGjhX1rshcHlnFUE9K0GazhVKWM7B+nARSkV8LuvJdJ5/g==}
+  /@jridgewell/trace-mapping@0.3.22:
+    resolution: {integrity: sha512-Wf963MzWtA2sjrNt+g18IAln9lKnlRp+K2eH4jjIoF1wYeq3aMREpG09xhlhdzS0EjwU7qmUJYangWa+151vZw==}
     dependencies:
       '@jridgewell/resolve-uri': 3.1.1
       '@jridgewell/sourcemap-codec': 1.4.15
@@ -4136,7 +4136,7 @@ packages:
       '@tinacms/metrics': 1.0.2(fs-extra@9.1.0)
       '@tinacms/schema-tools': 1.4.15(react@18.2.0)(yup@0.32.11)
       '@tinacms/search': 1.0.17(react@18.2.0)(yup@0.32.11)
-      '@vitejs/plugin-react': 3.1.0(vite@4.5.1)
+      '@vitejs/plugin-react': 3.1.0(vite@4.5.2)
       ajv: 6.12.6
       altair-express-middleware: 4.0.6
       auto-bind: 4.0.0
@@ -4149,7 +4149,7 @@ packages:
       clipanion: 3.2.1(typanion@3.13.0)
       cors: 2.8.5
       crypto-js: 4.2.0
-      dotenv: 16.3.1
+      dotenv: 16.3.2
       esbuild: 0.18.20
       express: 4.18.2
       fast-glob: 3.3.2
@@ -4179,7 +4179,7 @@ packages:
       typanion: 3.13.0
       typescript: 4.3.5
       url-pattern: 1.0.3
-      vite: 4.5.1(@types/node@20.11.5)
+      vite: 4.5.2(@types/node@20.11.5)
       yarn: 1.22.21
       yup: 0.32.11
       zod: 3.22.4
@@ -4232,7 +4232,7 @@ packages:
       '@iarna/toml': 2.2.5
       '@tinacms/mdx': 1.3.23(react@17.0.2)(yup@0.32.11)
       '@tinacms/schema-tools': 1.4.15(react@17.0.2)(yup@0.32.11)
-      abstract-level: 1.0.3
+      abstract-level: 1.0.4
       body-parser: 1.20.2
       cors: 2.8.5
       dataloader: 2.2.2
@@ -4266,7 +4266,7 @@ packages:
       '@iarna/toml': 2.2.5
       '@tinacms/mdx': 1.3.23(react@18.2.0)(yup@0.32.11)
       '@tinacms/schema-tools': 1.4.15(react@18.2.0)(yup@0.32.11)
-      abstract-level: 1.0.3
+      abstract-level: 1.0.4
       body-parser: 1.20.2
       cors: 2.8.5
       dataloader: 2.2.2
@@ -4414,11 +4414,11 @@ packages:
     dependencies:
       '@tinacms/graphql': 1.4.32(react@17.0.2)
       '@tinacms/schema-tools': 1.4.15(react@17.0.2)(yup@0.32.11)
-      abstract-level: 1.0.3
+      abstract-level: 1.0.4
       memory-level: 1.0.0
       module-error: 1.0.2
       node-fetch: 2.7.0(encoding@0.1.13)
-      search-index: 4.0.0(abstract-level@1.0.3)
+      search-index: 4.0.0(abstract-level@1.0.4)
       sqlite-level: 1.0.1
       stopword: 2.0.8
     transitivePeerDependencies:
@@ -4433,11 +4433,11 @@ packages:
     dependencies:
       '@tinacms/graphql': 1.4.32(react@18.2.0)
       '@tinacms/schema-tools': 1.4.15(react@18.2.0)(yup@0.32.11)
-      abstract-level: 1.0.3
+      abstract-level: 1.0.4
       memory-level: 1.0.0
       module-error: 1.0.2
       node-fetch: 2.7.0(encoding@0.1.13)
-      search-index: 4.0.0(abstract-level@1.0.3)
+      search-index: 4.0.0(abstract-level@1.0.4)
       sqlite-level: 1.0.1
       stopword: 2.0.8
     transitivePeerDependencies:
@@ -4452,11 +4452,11 @@ packages:
     dependencies:
       '@tinacms/graphql': 1.4.32(react@18.2.0)
       '@tinacms/schema-tools': 1.4.15(react@18.2.0)(yup@0.32.11)
-      abstract-level: 1.0.3
+      abstract-level: 1.0.4
       memory-level: 1.0.0
       module-error: 1.0.2
       node-fetch: 2.7.0(encoding@0.1.13)
-      search-index: 4.0.0(abstract-level@1.0.3)
+      search-index: 4.0.0(abstract-level@1.0.4)
       sqlite-level: 1.0.1
       stopword: 2.0.8
     transitivePeerDependencies:
@@ -7799,7 +7799,7 @@ packages:
   /@ungap/structured-clone@1.2.0:
     resolution: {integrity: sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==}
 
-  /@vitejs/plugin-react@3.1.0(vite@4.5.1):
+  /@vitejs/plugin-react@3.1.0(vite@4.5.2):
     resolution: {integrity: sha512-AfgcRL8ZBhAlc3BFdigClmTUMISmmzHn7sB2h9U1odvc5U/MjWXsAaz18b/WoppUTDBzxOJwo2VdClfUcItu9g==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
@@ -7810,7 +7810,7 @@ packages:
       '@babel/plugin-transform-react-jsx-source': 7.23.3(@babel/core@7.23.7)
       magic-string: 0.27.0
       react-refresh: 0.14.0
-      vite: 4.5.1(@types/node@20.11.5)
+      vite: 4.5.2(@types/node@20.11.5)
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -7964,8 +7964,8 @@ packages:
       event-target-shim: 5.0.1
     dev: false
 
-  /abstract-level@1.0.3:
-    resolution: {integrity: sha512-t6jv+xHy+VYwc4xqZMn2Pa9DjcdzvzZmQGRjTFc8spIbRGHgBrEKbPq+rYXc7CCo0lxgYvSgKVg9qZAhpVQSjA==}
+  /abstract-level@1.0.4:
+    resolution: {integrity: sha512-eUP/6pbXBkMbXFdx4IH2fVgvB7M0JvR7/lIL33zcs0IBcwjdzSSl31TOJsaCzmKSSDF9h8QYSOJux4Nd4YJqFg==}
     engines: {node: '>=12'}
     dependencies:
       buffer: 6.0.3
@@ -8452,7 +8452,7 @@ packages:
   /browser-level@1.0.1:
     resolution: {integrity: sha512-XECYKJ+Dbzw0lbydyQuJzwNXtOpbMSq737qxJN11sIRTErOMShvDpbzTlgju7orJKvx4epULolZAuJGLzCmWRQ==}
     dependencies:
-      abstract-level: 1.0.3
+      abstract-level: 1.0.4
       catering: 2.1.1
       module-error: 1.0.2
       run-parallel-limit: 1.1.0
@@ -8464,7 +8464,7 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001579
-      electron-to-chromium: 1.4.638
+      electron-to-chromium: 1.4.640
       node-releases: 2.0.14
       update-browserslist-db: 1.0.13(browserslist@4.22.2)
 
@@ -9307,8 +9307,8 @@ packages:
       tslib: 2.5.3
     dev: false
 
-  /dotenv@16.3.1:
-    resolution: {integrity: sha512-IPzF4w4/Rd94bA9imS68tZBaYyBWSCE47V1RGuMrB94iyTOIEwRmVL2x/4An+6mETpLrKJ5hQkB8W4kFAadeIQ==}
+  /dotenv@16.3.2:
+    resolution: {integrity: sha512-HTlk5nmhkm8F6JcdXvHIzaorzCoziNQT9mGxLPVXW8wJF1TiGSL60ZGB4gHWabHOaMmWmhvk2/lPHfnBiT78AQ==}
     engines: {node: '>=12'}
     dev: false
 
@@ -9350,8 +9350,8 @@ packages:
     resolution: {integrity: sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==}
     dev: false
 
-  /electron-to-chromium@1.4.638:
-    resolution: {integrity: sha512-gpmbAG2LbfPKcDaL5m9IKutKjUx4ZRkvGNkgL/8nKqxkXsBVYykVULboWlqCrHsh3razucgDJDuKoWJmGPdItA==}
+  /electron-to-chromium@1.4.640:
+    resolution: {integrity: sha512-z/6oZ/Muqk4BaE7P69bXhUhpJbUM9ZJeka43ZwxsDshKtePns4mhBlh8bU5+yrnOnz3fhG82XLzGUXazOmsWnA==}
 
   /emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
@@ -10017,12 +10017,12 @@ packages:
       - encoding
     dev: false
 
-  /fergies-inverted-index@12.0.0(abstract-level@1.0.3):
+  /fergies-inverted-index@12.0.0(abstract-level@1.0.4):
     resolution: {integrity: sha512-lAkyiDSdQog0aqWhyO8/8gnwbh6k27bd18IWJw7IOl2EUWEh22O4C9ebnw8Li3E+HK3Plxgv6ql1Ty/C3gndvg==}
     dependencies:
       browser-level: 1.0.1
       charwise: 3.0.1
-      level-read-stream: 1.1.0(abstract-level@1.0.3)
+      level-read-stream: 1.1.0(abstract-level@1.0.4)
       memory-level: 1.0.0
       traverse: 0.6.7
     transitivePeerDependencies:
@@ -11394,7 +11394,7 @@ packages:
     engines: {node: '>=10'}
     dev: false
 
-  /level-read-stream@1.1.0(abstract-level@1.0.3):
+  /level-read-stream@1.1.0(abstract-level@1.0.4):
     resolution: {integrity: sha512-pVRftTUgsJHH3O1o+cXRTZuRGPnTMyuocxpfl+b5L/papZhV810zhunAxn4mgvfDWzqxM5Df76z7C1Y0QQSLBw==}
     engines: {node: '>=12'}
     peerDependencies:
@@ -11403,7 +11403,7 @@ packages:
       abstract-level:
         optional: true
     dependencies:
-      abstract-level: 1.0.3
+      abstract-level: 1.0.4
       readable-stream: 3.6.2
     dev: false
 
@@ -11560,7 +11560,7 @@ packages:
       date-format: 4.0.14
       debug: 4.3.4
       flatted: 3.2.9
-      rfdc: 1.3.0
+      rfdc: 1.3.1
       streamroller: 3.1.5
     transitivePeerDependencies:
       - supports-color
@@ -11626,7 +11626,7 @@ packages:
     engines: {node: '>=12'}
     dependencies:
       '@vweevers/length-prefixed-stream': 1.0.0
-      abstract-level: 1.0.3
+      abstract-level: 1.0.4
       module-error: 1.0.2
       protocol-buffers-encodings: 1.2.0
       readable-stream: 4.5.2
@@ -12069,7 +12069,7 @@ packages:
     resolution: {integrity: sha512-UXzwewuWeHBz5krr7EvehKcmLFNoXxGcvuYhC41tRnkrTbJohtS7kVn9akmgirtRygg+f7Yjsfi8Uu5SGSQ4Og==}
     engines: {node: '>=12'}
     dependencies:
-      abstract-level: 1.0.3
+      abstract-level: 1.0.4
       functional-red-black-tree: 1.0.1
       module-error: 1.0.2
     dev: false
@@ -14798,8 +14798,8 @@ packages:
     resolution: {integrity: sha512-U9nH88a3fc/ekCF1l0/UP1IosiuIjyTh7hBvXVMHYgVcfGvt897Xguj2UOLDeI5BG2m7/uwyaLVT6fbtCwTyzw==}
     engines: {iojs: '>=1.0.0', node: '>=0.10.0'}
 
-  /rfdc@1.3.0:
-    resolution: {integrity: sha512-V2hovdzFbOi77/WajaSMXk2OLm+xNIeQdMMuB7icj7bk6zi2F8GGAxigcnDFpJHbNyNcgyJDiP+8nOrY5cZGrA==}
+  /rfdc@1.3.1:
+    resolution: {integrity: sha512-r5a3l5HzYlIC68TpmYKlxWjmOP6wiPJ1vWv2HeLhNsRZMrCkxeqxiHlQ21oXmQ4F3SiryXBHhAD7JZqvOJjFmg==}
     dev: false
 
   /rimraf@3.0.2:
@@ -14934,14 +14934,14 @@ packages:
       compute-scroll-into-view: 1.0.20
     dev: false
 
-  /search-index@4.0.0(abstract-level@1.0.3):
+  /search-index@4.0.0(abstract-level@1.0.4):
     resolution: {integrity: sha512-D3MRIWXO5yF5c33B1DLh8yqWvJu4gaH9gaKUNeWIZMkwb/+j2y/wOe1OB1dyoFvBw3aUCxYZQJJDZK02HOGrDQ==}
     engines: {node: '>=12'}
     dependencies:
       browser-level: 1.0.1
       charwise: 3.0.1
-      fergies-inverted-index: 12.0.0(abstract-level@1.0.3)
-      level-read-stream: 1.1.0(abstract-level@1.0.3)
+      fergies-inverted-index: 12.0.0(abstract-level@1.0.4)
+      level-read-stream: 1.1.0(abstract-level@1.0.4)
       lru-cache: 10.0.0
       memory-level: 1.0.0
       ngraminator: 3.0.2
@@ -15295,7 +15295,7 @@ packages:
   /sqlite-level@1.0.1:
     resolution: {integrity: sha512-uPo21L96VADz/PPkkZoPNMH9fURTQLDrSVe8XJUwPjqvTi3xigDvCfoektZdvoEgRAiaHchOgksW7YBoyVyEnw==}
     dependencies:
-      abstract-level: 1.0.3
+      abstract-level: 1.0.4
       better-sqlite3: 8.7.0
       module-error: 1.0.2
     dev: false
@@ -15599,7 +15599,7 @@ packages:
       uglify-js:
         optional: true
     dependencies:
-      '@jridgewell/trace-mapping': 0.3.21
+      '@jridgewell/trace-mapping': 0.3.22
       jest-worker: 27.5.1
       schema-utils: 3.3.0
       serialize-javascript: 6.0.2
@@ -16512,8 +16512,8 @@ packages:
       vfile-message: 4.0.2
     dev: false
 
-  /vite@4.5.1(@types/node@20.11.5):
-    resolution: {integrity: sha512-AXXFaAJ8yebyqzoNB9fu2pHoo/nWX+xZlaRwoeYUxEqBO+Zj4msE5G+BhGBll9lYEKv9Hfks52PAF2X7qDYXQA==}
+  /vite@4.5.2(@types/node@20.11.5):
+    resolution: {integrity: sha512-tBCZBNSBbHQkaGyhGCDUGqeo2ph8Fstyp6FMSvTtsXeZSPpSMGlviAOav2hxVTqFcx8Hj/twtWKsMJXNY0xI8w==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
