@@ -18,8 +18,8 @@ dependencies:
     specifier: 1.5.39
     version: 1.5.39(@babel/core@7.23.7)(@types/node@20.11.10)(@types/react@18.2.48)(react-dom@18.2.0)(react@18.2.0)
   daisyui:
-    specifier: 4.6.0
-    version: 4.6.0(postcss@8.4.33)
+    specifier: 4.6.1
+    version: 4.6.1(postcss@8.4.33)
   glob:
     specifier: 10.3.10
     version: 10.3.10
@@ -113,8 +113,8 @@ devDependencies:
     specifier: 3.2.4
     version: 3.2.4
   sort-package-json:
-    specifier: 2.6.0
-    version: 2.6.0
+    specifier: 2.7.0
+    version: 2.7.0
   tailwindcss:
     specifier: 3.4.1
     version: 3.4.1
@@ -9084,8 +9084,8 @@ packages:
       - typescript
     dev: true
 
-  /daisyui@4.6.0(postcss@8.4.33):
-    resolution: {integrity: sha512-B5ZB/sczXpp4LMdo/SZrtYY/U2hq+Vr9I15QawuWZ0VwgtSAbuZpAZUftKVryEsPuv3BM0yVlBED0nAmtis/dw==}
+  /daisyui@4.6.1(postcss@8.4.33):
+    resolution: {integrity: sha512-IXI8ypN/hkl1AKsag1XPlWt0wfvL4NedTUtUkv/VFP5q/xDbBZrZthq3/9M2yU1egcbbLhp01rluIz0GICUc+g==}
     engines: {node: '>=16.9.0'}
     dependencies:
       css-selector-tokenizer: 0.8.0
@@ -15244,8 +15244,8 @@ packages:
     resolution: {integrity: sha512-855pvK+VkU7PaKYPc+Jjnmt4EzejQHyhhF33q31qG8x7maDzkeFhAAThdCYay11CISO+qAMwjOBP+fPZe0IPyg==}
     dev: true
 
-  /sort-package-json@2.6.0:
-    resolution: {integrity: sha512-XSQ+lY9bAYA8ZsoChcEoPlgcSMaheziEp1beox1JVxy1SV4F2jSq9+h2rJ+3mC/Dhu9Ius1DLnInD5AWcsDXZw==}
+  /sort-package-json@2.7.0:
+    resolution: {integrity: sha512-6AayF8bp6L+WROgpbhTMUtB9JSFmpGHjmW7DyaNPS1HwlTw2oSVlUUtlkHSEZmg5o89F3zvLBZNvMeZ1T4fjQg==}
     hasBin: true
     dependencies:
       detect-indent: 7.0.1
