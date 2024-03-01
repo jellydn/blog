@@ -83,8 +83,8 @@ devDependencies:
     specifier: 18.2.61
     version: 18.2.61
   autoprefixer:
-    specifier: 10.4.17
-    version: 10.4.17(postcss@8.4.35)
+    specifier: 10.4.18
+    version: 10.4.18(postcss@8.4.35)
   cz-conventional-changelog:
     specifier: 3.3.0
     version: 3.3.0(@types/node@20.11.24)(typescript@5.3.3)
@@ -92,8 +92,8 @@ devDependencies:
     specifier: 8.57.0
     version: 8.57.0
   eslint-config-next:
-    specifier: 14.1.0
-    version: 14.1.0(eslint@8.57.0)(typescript@5.3.3)
+    specifier: 14.1.1
+    version: 14.1.1(eslint@8.57.0)(typescript@5.3.3)
   husky:
     specifier: 8.0.3
     version: 8.0.3
@@ -2451,7 +2451,7 @@ packages:
     dependencies:
       '@monaco-editor/loader': 1.4.0(monaco-editor@0.31.0)
       monaco-editor: 0.31.0
-      prop-types: 15.7.2
+      prop-types: 15.8.1
       react: 17.0.2
       react-dom: 17.0.2(react@17.0.2)
     dev: false
@@ -2465,7 +2465,7 @@ packages:
     dependencies:
       '@monaco-editor/loader': 1.4.0(monaco-editor@0.31.0)
       monaco-editor: 0.31.0
-      prop-types: 15.7.2
+      prop-types: 15.8.1
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
     dev: false
@@ -2526,8 +2526,8 @@ packages:
     resolution: {integrity: sha512-7CnQyD5G8shHxQIIg3c7/pSeYFeMhsNbpU/bmvH7ZnDql7mNRgg8O2JZrhrc/soFnfBnKP4/xXNiiSIPn2w8gA==}
     dev: false
 
-  /@next/eslint-plugin-next@14.1.0:
-    resolution: {integrity: sha512-x4FavbNEeXx/baD/zC/SdrvkjSby8nBn8KcCREqk6UuwvwoAPZmaV8TFCAuo/cpovBRTIY67mHhe86MQQm/68Q==}
+  /@next/eslint-plugin-next@14.1.1:
+    resolution: {integrity: sha512-NP1WoGFnFLpqqCWgGFjnn/sTwUExdPyjeFKRdQP1X/bL/tjAQ/TXDmYqw6vzGaP5NaZ2u6xzg+N/0nd7fOPOGQ==}
     dependencies:
       glob: 10.3.10
     dev: true
@@ -8333,15 +8333,15 @@ packages:
     engines: {node: '>=8'}
     dev: false
 
-  /autoprefixer@10.4.17(postcss@8.4.35):
-    resolution: {integrity: sha512-/cpVNRLSfhOtcGflT13P2794gVSgmPgTR+erw5ifnMLZb0UnSlkK4tquLmkd3BhA+nLo5tX8Cu0upUsGKvKbmg==}
+  /autoprefixer@10.4.18(postcss@8.4.35):
+    resolution: {integrity: sha512-1DKbDfsr6KUElM6wg+0zRNkB/Q7WcKYAaK+pzXn+Xqmszm/5Xa9coeNdtP88Vi+dPzZnMjhge8GIV49ZQkDa+g==}
     engines: {node: ^10 || ^12 || >=14}
     hasBin: true
     peerDependencies:
       postcss: ^8.1.0
     dependencies:
       browserslist: 4.23.0
-      caniuse-lite: 1.0.30001589
+      caniuse-lite: 1.0.30001591
       fraction.js: 4.3.7
       normalize-range: 0.1.2
       picocolors: 1.0.0
@@ -8532,7 +8532,7 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001589
+      caniuse-lite: 1.0.30001591
       electron-to-chromium: 1.4.681
       node-releases: 2.0.14
       update-browserslist-db: 1.0.13(browserslist@4.23.0)
@@ -8615,6 +8615,10 @@ packages:
 
   /caniuse-lite@1.0.30001589:
     resolution: {integrity: sha512-vNQWS6kI+q6sBlHbh71IIeC+sRwK2N3EDySc/updIGhIee2x5z00J4c1242/5/d6EpEMdOnk/m+6tuk4/tcsqg==}
+    dev: false
+
+  /caniuse-lite@1.0.30001591:
+    resolution: {integrity: sha512-PCzRMei/vXjJyL5mJtzNiUCKP59dm8Apqc3PH8gJkMnMXZGox93RbE76jHsmLwmIo6/3nsYIpJtx0O7u5PqFuQ==}
 
   /capital-case@1.0.4:
     resolution: {integrity: sha512-ds37W8CytHgwnhGGTi88pcPyR15qoNkOpYwmMMfnWqqWgESapLqvDx6huFjQ5vqWSn2Z06173XNA7LtMOeUh1A==}
@@ -9392,7 +9396,7 @@ packages:
     dependencies:
       '@babel/runtime': 7.23.9
       compute-scroll-into-view: 1.0.20
-      prop-types: 15.7.2
+      prop-types: 15.8.1
       react: 17.0.2
       react-is: 17.0.2
       tslib: 2.6.2
@@ -9405,7 +9409,7 @@ packages:
     dependencies:
       '@babel/runtime': 7.23.9
       compute-scroll-into-view: 1.0.20
-      prop-types: 15.7.2
+      prop-types: 15.8.1
       react: 18.2.0
       react-is: 17.0.2
       tslib: 2.6.2
@@ -9648,8 +9652,8 @@ packages:
     engines: {node: '>=12'}
     dev: false
 
-  /eslint-config-next@14.1.0(eslint@8.57.0)(typescript@5.3.3):
-    resolution: {integrity: sha512-SBX2ed7DoRFXC6CQSLc/SbLY9Ut6HxNB2wPTcoIWjUMd7aF7O/SIE7111L8FdZ9TXsNV4pulUDnfthpyPtbFUg==}
+  /eslint-config-next@14.1.1(eslint@8.57.0)(typescript@5.3.3):
+    resolution: {integrity: sha512-OLyw2oHzwE0M0EODGYMbjksDQKSshQWBzYY+Nkoxoe3+Q5G0lpb9EkekyDk7Foz9BMfotbYShJrgYoBEAVqU4Q==}
     peerDependencies:
       eslint: ^7.23.0 || ^8.0.0
       typescript: '>=3.3.1'
@@ -9657,7 +9661,7 @@ packages:
       typescript:
         optional: true
     dependencies:
-      '@next/eslint-plugin-next': 14.1.0
+      '@next/eslint-plugin-next': 14.1.1
       '@rushstack/eslint-patch': 1.7.2
       '@typescript-eslint/parser': 6.21.0(eslint@8.57.0)(typescript@5.3.3)
       eslint: 8.57.0
@@ -13784,7 +13788,7 @@ packages:
       '@csstools/postcss-text-decoration-shorthand': 3.0.4(postcss@8.4.35)
       '@csstools/postcss-trigonometric-functions': 3.0.5(postcss@8.4.35)
       '@csstools/postcss-unset-value': 3.0.1(postcss@8.4.35)
-      autoprefixer: 10.4.17(postcss@8.4.35)
+      autoprefixer: 10.4.18(postcss@8.4.35)
       browserslist: 4.23.0
       css-blank-pseudo: 6.0.1(postcss@8.4.35)
       css-has-pseudo: 6.0.2(postcss@8.4.35)
@@ -14148,7 +14152,7 @@ packages:
       lodash: 4.17.21
       lodash-es: 4.17.21
       material-colors: 1.2.6
-      prop-types: 15.7.2
+      prop-types: 15.8.1
       react: 17.0.2
       reactcss: 1.2.3(react@17.0.2)
       tinycolor2: 1.6.0
@@ -14163,7 +14167,7 @@ packages:
       lodash: 4.17.21
       lodash-es: 4.17.21
       material-colors: 1.2.6
-      prop-types: 15.7.2
+      prop-types: 15.8.1
       react: 18.2.0
       reactcss: 1.2.3(react@18.2.0)
       tinycolor2: 1.6.0
@@ -14179,7 +14183,7 @@ packages:
       create-react-class: 15.7.0
       moment: 2.29.4
       object-assign: 3.0.0
-      prop-types: 15.7.2
+      prop-types: 15.8.1
       react: 17.0.2
       react-dom: 17.0.2(react@17.0.2)
       react-onclickoutside: 6.13.0(react-dom@17.0.2)(react@17.0.2)
@@ -14195,7 +14199,7 @@ packages:
       create-react-class: 15.7.0
       moment: 2.29.4
       object-assign: 3.0.0
-      prop-types: 15.7.2
+      prop-types: 15.8.1
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
       react-onclickoutside: 6.13.0(react-dom@18.2.0)(react@18.2.0)
@@ -14369,7 +14373,7 @@ packages:
       '@types/react-redux': 7.1.33
       hoist-non-react-statics: 3.3.2
       loose-envify: 1.4.0
-      prop-types: 15.7.2
+      prop-types: 15.8.1
       react: 17.0.2
       react-dom: 17.0.2(react@17.0.2)
       react-is: 17.0.2
@@ -14391,7 +14395,7 @@ packages:
       '@types/react-redux': 7.1.33
       hoist-non-react-statics: 3.3.2
       loose-envify: 1.4.0
-      prop-types: 15.7.2
+      prop-types: 15.8.1
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
       react-is: 17.0.2
