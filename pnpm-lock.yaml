@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@giscus/react':
-    specifier: 2.4.0
-    version: 2.4.0(react-dom@18.3.1)(react@18.3.1)
+    specifier: 3.0.0
+    version: 3.0.0(react-dom@18.3.1)(react@18.3.1)
   '@happykit/flags':
     specifier: 3.3.0
     version: 3.3.0(next@14.2.3)(react@18.3.1)
@@ -1659,8 +1659,8 @@ packages:
       purgecss: 5.0.0
     dev: true
 
-  /@giscus/react@2.4.0(react-dom@18.3.1)(react@18.3.1):
-    resolution: {integrity: sha512-y8d8qiZ2sBuaXRcgn/ZWfMlRs9bx26p62BU/HEKQQ+IfHo3B/kglgPjX/IqudwlX+DOlHUl1NvtFo9C8Eqo0eQ==}
+  /@giscus/react@3.0.0(react-dom@18.3.1)(react@18.3.1):
+    resolution: {integrity: sha512-hgCjLpg3Wgh8VbTF5p8ZLcIHI74wvDk1VIFv12+eKhenNVUDjgwNg2B1aq/3puyHOad47u/ZSyqiMtohjy/OOA==}
     peerDependencies:
       react: ^16 || ^17 || ^18
       react-dom: ^16 || ^17 || ^18
