@@ -24,7 +24,7 @@
     "@giscus/react": "2.4.0",
     "@happykit/flags": "3.3.0",
     "@tailwindcss/typography": "0.5.13",
-    "@tinacms/cli": "1.5.44",
+    "@tinacms/cli": "1.5.45",
     "daisyui": "4.10.3",
     "glob": "10.3.12",
     "gray-matter": "4.0.3",
@@ -41,12 +41,12 @@
     "react-markdown": "9.0.1",
     "remark-gfm": "4.0.0",
     "sharp": "0.33.3",
-    "tinacms": "1.6.2"
+    "tinacms": "1.6.3"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "5.0.0",
     "@trivago/prettier-plugin-sort-imports": "4.3.0",
-    "@types/node": "20.12.7",
+    "@types/node": "20.12.8",
     "@types/react": "18.3.1",
     "autoprefixer": "10.4.19",
     "cz-conventional-changelog": "3.3.0",
