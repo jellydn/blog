@@ -18,8 +18,8 @@ dependencies:
     specifier: 1.5.45
     version: 1.5.45(@babel/core@7.24.5)(@types/node@20.12.10)(@types/react@18.3.1)(react-dom@18.3.1)(react@18.3.1)
   daisyui:
-    specifier: 4.10.5
-    version: 4.10.5(postcss@8.4.38)
+    specifier: 4.11.1
+    version: 4.11.1(postcss@8.4.38)
   glob:
     specifier: 10.3.12
     version: 10.3.12
@@ -1945,7 +1945,7 @@ packages:
     dependencies:
       '@graphql-tools/utils': 9.2.1(graphql@15.8.0)
       graphql: 15.8.0
-      tslib: 2.4.1
+      tslib: 2.6.2
     dev: false
 
   /@graphql-tools/optimize@1.4.0(graphql@15.8.0):
@@ -9162,8 +9162,8 @@ packages:
       - typescript
     dev: true
 
-  /daisyui@4.10.5(postcss@8.4.38):
-    resolution: {integrity: sha512-eOFUo5yEg0WV+3VK2C/+/XN1WH/OhFV4HzrMG5etAzcnB2hPg3aoR7gF1ZUpIv+b5MglLuAVMgub0rv660EgZg==}
+  /daisyui@4.11.1(postcss@8.4.38):
+    resolution: {integrity: sha512-obT9CUbQdW6eoHwSeT5VwaRrWlwrM4OT5qlfdJ0oQlSIEYhwnEl2+L2fwu5PioLbitwuMdYC2X8I1cyy8Pf6LQ==}
     engines: {node: '>=16.9.0'}
     dependencies:
       css-selector-tokenizer: 0.8.0
