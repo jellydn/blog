@@ -71,8 +71,8 @@ dependencies:
 
 devDependencies:
   '@fullhuman/postcss-purgecss':
-    specifier: 5.0.0
-    version: 5.0.0(postcss@8.4.38)
+    specifier: 6.0.0
+    version: 6.0.0(postcss@8.4.38)
   '@trivago/prettier-plugin-sort-imports':
     specifier: 4.3.0
     version: 4.3.0(prettier@3.3.0)
@@ -1642,13 +1642,13 @@ packages:
       tslib: 2.6.2
     dev: false
 
-  /@fullhuman/postcss-purgecss@5.0.0(postcss@8.4.38):
-    resolution: {integrity: sha512-onDS/b/2pMRzqSoj4qOs2tYFmOpaspjTAgvACIHMPiicu1ptajiBruTrjBzTKdxWdX0ldaBb7wj8nEaTLyFkJw==}
+  /@fullhuman/postcss-purgecss@6.0.0(postcss@8.4.38):
+    resolution: {integrity: sha512-sUvk5PV7O5xvTJcxDYrQ00xlKtSxivvJdZrwgxE8F1GmNMs7w9U+dSbr83N/qEs9b+f+6QsZKXDs0k8nMjBIqA==}
     peerDependencies:
       postcss: ^8.0.0
     dependencies:
       postcss: 8.4.38
-      purgecss: 5.0.0
+      purgecss: 6.0.0
     dev: true
 
   /@giscus/react@2.4.0(react-dom@18.3.1)(react@18.3.1):
@@ -8882,6 +8882,11 @@ packages:
     resolution: {integrity: sha512-Fu4hJdvzeylCfQPp9SGWidpzrMs7tTrlu6Vb8XGaRGck8QSNZJJp538Wrb60Lax4fPwR64ViY468OIUTbRlGZg==}
     dev: false
 
+  /commander@12.1.0:
+    resolution: {integrity: sha512-Vw8qHK3bZM9y/P10u3Vib8o/DdkvA2OtPtZvD871QKjy74Wj1WSKFILMPRPSdUSx5RFK1arlJzEtA4PkFgnbuA==}
+    engines: {node: '>=18'}
+    dev: true
+
   /commander@2.20.3:
     resolution: {integrity: sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==}
     dev: false
@@ -8889,11 +8894,6 @@ packages:
   /commander@4.1.1:
     resolution: {integrity: sha512-NOKm8xhkzAjzFx8B2v5OAHT+u5pRQc2UCa2Vq9jYL/31o2wi9mxBA7LIFs3sV5VSC49z6pEhfbMULvShKj26WA==}
     engines: {node: '>= 6'}
-
-  /commander@9.5.0:
-    resolution: {integrity: sha512-KRs7WVDKg86PWiuAqhDrAQnTXZKraVcCc6vFdL14qrZ/DcWwuRo7VoiYXalXO7S5GKpqYiVEwCbgFDfxNHKJBQ==}
-    engines: {node: ^12.20.0 || >=14}
-    dev: true
 
   /commitizen@4.3.0(@types/node@20.14.0)(typescript@5.4.5):
     resolution: {integrity: sha512-H0iNtClNEhT0fotHvGV3E9tDejDeS04sN1veIebsKYGMuGscFaswRoYJKmT3eW85eIJAs0F28bG2+a/9wCOfPw==}
@@ -10519,18 +10519,6 @@ packages:
       minimatch: 3.1.2
       once: 1.4.0
       path-is-absolute: 1.0.1
-
-  /glob@8.1.0:
-    resolution: {integrity: sha512-r8hpEjiQEYlF2QU0df3dS+nxxSIreXQS1qRhMJM0Q5NDdR386C7jb7Hwwod8Fgiuex+k0GFjgft18yvxm5XoCQ==}
-    engines: {node: '>=12'}
-    deprecated: Glob versions prior to v9 are no longer supported
-    dependencies:
-      fs.realpath: 1.0.0
-      inflight: 1.0.6
-      inherits: 2.0.4
-      minimatch: 5.1.6
-      once: 1.4.0
-    dev: true
 
   /global-directory@4.0.1:
     resolution: {integrity: sha512-wHTUcDUoZ1H5/0iVqEudYW4/kAlN5cZ3j/bXn0Dpbizl9iaUVeWSHqiOjsgk6OW2bkLclbBjzewBz6weQ1zA2Q==}
@@ -12947,6 +12935,7 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       brace-expansion: 2.0.1
+    dev: false
 
   /minimatch@9.0.3:
     resolution: {integrity: sha512-RHiac9mvaRw0x3AYRgDC1CxAP7HTcNrrECeA8YYJeWnpo+2Q5CegtZjaotWTWxDG3UeGA1coE05iH1mPjT/2mg==}
@@ -14136,12 +14125,12 @@ packages:
     engines: {node: '>=6'}
     requiresBuild: true
 
-  /purgecss@5.0.0:
-    resolution: {integrity: sha512-RAnuxrGuVyLLTr8uMbKaxDRGWMgK5CCYDfRyUNNcaz5P3kGgD2b7ymQGYEyo2ST7Tl/ScwFgf5l3slKMxHSbrw==}
+  /purgecss@6.0.0:
+    resolution: {integrity: sha512-s3EBxg5RSWmpqd0KGzNqPiaBbWDz1/As+2MzoYVGMqgDqRTLBhJW6sywfTBek7OwNfoS/6pS0xdtvChNhFj2cw==}
     hasBin: true
     dependencies:
-      commander: 9.5.0
-      glob: 8.1.0
+      commander: 12.1.0
+      glob: 10.4.1
       postcss: 8.4.38
       postcss-selector-parser: 6.1.0
     dev: true
