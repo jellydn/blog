@@ -94,12 +94,8 @@ function videoFields() {
 
 // tina/config.ts
 var branch = process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || 'master';
-var tinaClientId =
-    process.env.NEXT_TINACMS_CLIENT_ID ||
-    '8c986884-3b1d-4697-a6fa-857cdd2defd5';
-var tinaToken =
-    process.env.NEXT_TINACMS_TOKEN ||
-    '1c88e896ce0bdfeb1b61e78fafdaf24483d69e5a';
+var tinaClientId = process.env.NEXT_TINACMS_CLIENT_ID;
+var tinaToken = process.env.NEXT_TINACMS_TOKEN;
 var config_default = defineConfig({
     branch,
     clientId: tinaClientId,
