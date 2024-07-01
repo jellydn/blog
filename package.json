@@ -25,8 +25,8 @@
     "@happykit/flags": "3.3.0",
     "@tailwindcss/typography": "0.5.13",
     "@tinacms/cli": "1.5.46",
-    "daisyui": "4.12.2",
-    "glob": "10.4.1",
+    "daisyui": "4.12.10",
+    "glob": "10.4.2",
     "gray-matter": "4.0.3",
     "just-unique": "4.2.0",
     "kutty": "0.6.0",
@@ -46,20 +46,20 @@
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "6.0.0",
     "@trivago/prettier-plugin-sort-imports": "4.3.0",
-    "@types/node": "20.14.2",
+    "@types/node": "20.14.9",
     "@types/react": "18.3.3",
     "autoprefixer": "10.4.19",
     "cz-conventional-changelog": "3.3.0",
-    "eslint": "9.5.0",
+    "eslint": "9.6.0",
     "eslint-config-next": "14.2.4",
     "husky": "9.0.11",
     "nano-staged": "0.8.0",
-    "postcss": "8.4.38",
+    "postcss": "8.4.39",
     "postcss-flexbugs-fixes": "5.0.2",
-    "postcss-preset-env": "9.5.14",
+    "postcss-preset-env": "9.5.15",
     "prettier": "3.3.2",
     "sort-package-json": "2.10.0",
     "tailwindcss": "3.4.4",
-    "typescript": "5.4.5"
+    "typescript": "5.5.3"
   }
 }
