@@ -1,10 +1,11 @@
 ---
 title: "Better naming with AI (Copilot Chat)"
 seoTitle: "Better naming with AI (Copilot Chat)"
-seoDescription: "Simple prompt to improve your coding experience "
+seoDescription: "Simple prompt to improve your coding experience"
 datePublished: Wed Aug 14 2024 01:00:32 GMT+0000 (Coordinated Universal Time)
 cuid: clzt5aggf000009jw4jb783dm
 slug: better-naming-with-ai-copilot-chat
+cover: https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/DEci5GH0r0k/upload/af3c41a08fcf6420352ef2db8df3fbe7.jpeg
 tags: ai, neovim, copilot
 
 ---
