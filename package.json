@@ -7,7 +7,6 @@
     "dev": "tinacms dev -c \"next\"",
     "develop": "yarn dev",
     "lint": "next lint",
-    "prepare": "husky install",
     "start": "tinacms build && next start"
   },
   "nano-staged": {
