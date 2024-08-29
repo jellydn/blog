@@ -1,15 +1,15 @@
 ---
-date: '09/10/2021 7:06 PM +0800'
+date: "09/10/2021 7:06 PM +0800"
 tag:
-    - react
-    - iframe
-    - website
+  - react
+  - iframe
+  - website
 author: Dung Huynh
-hero_image: ''
+hero_image: ""
 title: Reload page from iframe with cross-domain support
 description: >-
-    On this tutorial, I will share with you a trick to reload parent website from
-    iframe
+  On this tutorial, I will share with you a trick to reload parent website from
+  iframe
 _template: post
 ---
 

@@ -1,11 +1,11 @@
 ---
-date: '10/09/2022 3:07 PM +0800'
+date: "10/09/2022 3:07 PM +0800"
 tag:
-    - nodejs
-    - expressjs
+  - nodejs
+  - expressjs
 author: Dung Huynh
 hero_image: /static/til.jpeg
-title: '#TIL 32 - List all express routes'
+title: "#TIL 32 - List all express routes"
 description: Find all routes mapping for your ExpressJs App
 _template: post
 ---

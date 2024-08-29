@@ -1,11 +1,11 @@
 ---
-date: '08/15/2020 12:41 AM +0800'
+date: "08/15/2020 12:41 AM +0800"
 tag:
-    - TIL
-    - CLI
+  - TIL
+  - CLI
 author: Dung Huynh
 hero_image: /static/til.jpeg
-title: '#TIL 3 - Rename all JS to TS files'
+title: "#TIL 3 - Rename all JS to TS files"
 description: How to migrate from Javascript file to Typescript file
 _template: post
 ---

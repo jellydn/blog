@@ -7,7 +7,6 @@ cuid: clw5qrt5z00000aju1clza6c2
 slug: the-latest-in-nodejs-development-for-2024
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1715606265374/a71eaf7e-76df-423f-ac80-4cbe38c4e771.png
 tags: nodejs, node-js-development
-
 ---
 
 ### Node [Fetch](https://nodejs.org/docs/latest-v18.x/api/globals.html#fetch) Built-in
@@ -51,7 +50,7 @@ node --test
 The `node --run` command introduced in [Node.js 22](https://nodejs.org/api/cli.html#--run) provides a built-in mechanism for a task runner, complementing but not replacing existing package managers like npm, yarn, or pnpm.
 
 > ##### **Intentional limitations**
-> 
+>
 > `node --run` is not meant [t](https://nodejs.org/api/cli.html#intentional-limitations)o match the behaviors of `npm run` or of the `run` commands of other package managers. The Node.js implementation is intentionally more limited, in order to focus on top performance for the most common use cases.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1715609990099/6c4adba2-fc2f-4bed-8926-11c76bcc3bfc.png align="center")
@@ -94,6 +93,6 @@ These features mark just the beginning of what’s possible with the latest upda
 
 For a more visual explanation and additional insights, watch my video on [YouTube](https://www.youtube.com/watch?v=HeuLPpc3x04)[.](https://www.youtube.com/watch?v=HeuLPpc3x04)
 
-%[https://www.youtube.com/watch?v=HeuLPpc3x04] 
+%[https://www.youtube.com/watch?v=HeuLPpc3x04]
 
 Cheers, and happy coding with the new Node.js features!

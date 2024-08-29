@@ -1,6 +1,6 @@
 import {
-    createGetFlags,
     type GenericEvaluationResponseBody,
+    createGetFlags,
 } from '@happykit/flags/server';
 import { type AppFlags, config } from './config';
 

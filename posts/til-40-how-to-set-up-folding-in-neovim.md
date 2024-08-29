@@ -1,15 +1,15 @@
 ---
-date: '04/11/2023 9:08 PM +0800'
+date: "04/11/2023 9:08 PM +0800"
 tag:
-    - neovim
-    - nvim
-    - folding
-    - ufo
-    - preview
+  - neovim
+  - nvim
+  - folding
+  - ufo
+  - preview
 author: Dung Huynh
 hero_image: /static/til.jpeg
-title: 'TIL #40 - How to Set Up Folding in Neovim'
-description: 'How to setup folding on Neovim, including support preview the fold'
+title: "TIL #40 - How to Set Up Folding in Neovim"
+description: "How to setup folding on Neovim, including support preview the fold"
 _template: post
 ---
 

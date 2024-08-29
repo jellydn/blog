@@ -1,7 +1,7 @@
 ---
 date: 09/26/2021 12:50 AM +0800
 author: Dung Huynh
-hero_image: '/uploads/dapp.png'
+hero_image: "/uploads/dapp.png"
 title: Blockchain - DApp 101 - Mint an NFT token [Vietnamese]
 description: How to mint an NFT token (ERC721)
 tag:

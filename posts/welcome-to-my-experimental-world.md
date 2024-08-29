@@ -1,14 +1,14 @@
 ---
 title: Welcome to my experimental world
-date: '08/07/2020 12:00 AM +0800'
+date: "08/07/2020 12:00 AM +0800"
 tag:
-    - ITManVietnam
-    - ITMan
+  - ITManVietnam
+  - ITMan
 author: Dung Huynh
 hero_image: /uploads/productsway.jpeg
 description: >-
-    I’m Dung Huynh Duc. I work at AirCarbon as a Software Engineer. I often get
-    into something new and always feel exciting when trying with hot technology.
+  I’m Dung Huynh Duc. I work at AirCarbon as a Software Engineer. I often get
+  into something new and always feel exciting when trying with hot technology.
 _template: post
 ---
 

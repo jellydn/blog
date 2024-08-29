@@ -1,14 +1,14 @@
 ---
-date: '02/23/2023 7:19 PM +0800'
+date: "02/23/2023 7:19 PM +0800"
 tag:
-    - Session ID unknown
-    - socket.io
+  - Session ID unknown
+  - socket.io
 author: Dung Huynh
 hero_image: /static/til.jpeg
-title: '#TIL 37 - How to fix Session ID unknown with socket.io'
+title: "#TIL 37 - How to fix Session ID unknown with socket.io"
 description: >-
-    Without enabling sticky-session, you will experience HTTP 400 errors due to
-    "Session ID unknown"
+  Without enabling sticky-session, you will experience HTTP 400 errors due to
+  "Session ID unknown"
 _template: post
 ---
 
@@ -19,4 +19,4 @@ If you're using Socket.io in your web application, you may encounter an issue wh
       transports: ["websocket"] // HTTP long-polling is disabled
     });
 
-The root cause is enabling "sticky session" if HTTP long-polling is enabled (which is the default). You can read more about why sticky sessions are required and how to implement them in the Socket.io documentation: [**https://socket.io/docs/v4/using-multiple-nodes/#why-is-sticky-session-required**](https://socket.io/docs/v4/using-multiple-nodes/#why-is-sticky-session-required 'https://socket.io/docs/v4/using-multiple-nodes/#why-is-sticky-session-required')
+The root cause is enabling "sticky session" if HTTP long-polling is enabled (which is the default). You can read more about why sticky sessions are required and how to implement them in the Socket.io documentation: [**https://socket.io/docs/v4/using-multiple-nodes/#why-is-sticky-session-required**](https://socket.io/docs/v4/using-multiple-nodes/#why-is-sticky-session-required "https://socket.io/docs/v4/using-multiple-nodes/#why-is-sticky-session-required")

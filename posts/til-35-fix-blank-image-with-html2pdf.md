@@ -1,14 +1,14 @@
 ---
-date: '12/31/2022 11:47 PM +0800'
+date: "12/31/2022 11:47 PM +0800"
 tag:
-    - html2pdf
-    - threadify
+  - html2pdf
+  - threadify
 author: Dung Huynh
 hero_image: /static/til.jpeg
-title: '#TIL 35 - Fix blank image with html2pdf'
+title: "#TIL 35 - Fix blank image with html2pdf"
 description: >-
-    HTML2PDF is quite popular tool for convert html2pdf from client side. However,
-    I run into this issue with blank image.
+  HTML2PDF is quite popular tool for convert html2pdf from client side. However,
+  I run into this issue with blank image.
 _template: post
 ---
 

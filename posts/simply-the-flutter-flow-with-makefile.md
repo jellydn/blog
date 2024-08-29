@@ -1,13 +1,13 @@
 ---
-date: '2021-11-11T02:57:00.000Z'
+date: "2021-11-11T02:57:00.000Z"
 tag:
-    - flutter
-    - makefile
-    - cli
+  - flutter
+  - makefile
+  - cli
 author: Dung Huynh
 hero_image: /IT Man Main Logo 800x600.png
 title: Simply the flutter flow with Makefile
-description: ''
+description: ""
 ---
 
 ```

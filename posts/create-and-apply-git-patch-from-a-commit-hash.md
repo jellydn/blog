@@ -1,11 +1,11 @@
 ---
-date: '08/12/2020 2:35 PM +0800'
+date: "08/12/2020 2:35 PM +0800"
 tag:
-    - Git
-    - TIL
+  - Git
+  - TIL
 author: Dung Huynh
 hero_image: /static/til.jpeg
-title: '#TIL 2 - Create and apply git patch from a commit hash'
+title: "#TIL 2 - Create and apply git patch from a commit hash"
 description: Create a path from other branch and apply to your working branch
 _template: post
 ---

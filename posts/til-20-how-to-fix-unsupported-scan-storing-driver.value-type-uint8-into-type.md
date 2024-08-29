@@ -1,13 +1,13 @@
 ---
-date: '10/20/2021 12:01 PM +0800'
+date: "10/20/2021 12:01 PM +0800"
 tag:
-    - go
-    - sqlx
+  - go
+  - sqlx
 author: Dung Huynh
 hero_image: /static/til.jpeg
 title: >-
-    #TIL 20 - How to fix unsupported Scan, storing driver.Value type []uint8 into
-    type
+  #TIL 20 - How to fix unsupported Scan, storing driver.Value type []uint8 into
+  type
 description: This is common issue with sqlx and how to use custom Scan to fix this error
 _template: post
 ---
@@ -22,7 +22,7 @@ Recently, I have run into this issue with mapping database fields with a struct.
 
 # How
 
-At first, I would suggest checking the document about it [https://jmoiron.github.io/sqlx/#advancedScanning](https://jmoiron.github.io/sqlx/#advancedScanning 'https://jmoiron.github.io/sqlx/#advancedScanning')
+At first, I would suggest checking the document about it [https://jmoiron.github.io/sqlx/#advancedScanning](https://jmoiron.github.io/sqlx/#advancedScanning "https://jmoiron.github.io/sqlx/#advancedScanning")
 
 then write your custom scan as below. Thanks for a comment on the open Github issue on sqlx repository. I could manage to make it work.
 

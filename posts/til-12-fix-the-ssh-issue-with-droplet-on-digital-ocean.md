@@ -1,12 +1,12 @@
 ---
-date: '03/28/2021 10:36 PM +0800'
+date: "03/28/2021 10:36 PM +0800"
 tag:
-    - SSH
-    - Digital Ocean
+  - SSH
+  - Digital Ocean
 author: Dung Huynh
 hero_image: /static/til.jpeg
-title: '#TIL 12 - Fix the SSH issue with droplet on Digital Ocean '
-description: 'This issue is really annoying. Hopefully, this will help someone like me.'
+title: "#TIL 12 - Fix the SSH issue with droplet on Digital Ocean "
+description: "This issue is really annoying. Hopefully, this will help someone like me."
 _template: post
 ---
 

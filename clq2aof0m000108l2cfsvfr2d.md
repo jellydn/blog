@@ -7,7 +7,6 @@ cuid: clq2aof0m000108l2cfsvfr2d
 slug: simplify-your-typescript-workflow-with-typechecknvim
 cover: https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/npxXWgQ33ZQ/upload/7024a3e720d6f534c58b980f5694e548.jpeg
 tags: neovim, typescript, typecheck
-
 ---
 
 ## Context
@@ -20,10 +19,8 @@ TypeScript development often involves switching between the editor and terminal 
 
 ## Features
 
-* Asynchronous type checking: Run TypeScript compiler (`tsc`) checks without blocking the Neovim UI.
-    
-* Integration with quickfix or [trouble.nvim](https://github.com/folke/trouble.nvim) window: View and navigate TypeScript errors and warnings directly within Neovim.
-    
+- Asynchronous type checking: Run TypeScript compiler (`tsc`) checks without blocking the Neovim UI.
+- Integration with quickfix or [trouble.nvim](https://github.com/folke/trouble.nvim) window: View and navigate TypeScript errors and warnings directly within Neovim.
 
 ## Installation
 

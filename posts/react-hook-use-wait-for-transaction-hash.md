@@ -1,8 +1,8 @@
 ---
-date: '04/30/2021 9:53 PM +0800'
+date: "04/30/2021 9:53 PM +0800"
 tag:
-    - React
-    - Hooks
+  - React
+  - Hooks
 author: Dung Huynh
 hero_image: /static/use-wait-for-transaction-hash.png
 title: React Hook - Use wait for transaction hash
@@ -12,7 +12,7 @@ _template: post
 
 Hi there,
 
-It's been a while when I am working on [https://use-wait-for-transaction-hash.vercel.app/](https://use-wait-for-transaction-hash.vercel.app/ 'use-wait-for-transaction-hash') react-hook library. Let me share with you about my journey when I wrote this library.
+It's been a while when I am working on [https://use-wait-for-transaction-hash.vercel.app/](https://use-wait-for-transaction-hash.vercel.app/ "use-wait-for-transaction-hash") react-hook library. Let me share with you about my journey when I wrote this library.
 
 ## What
 
@@ -20,7 +20,7 @@ If you have ever worked with blockchain, ETH is my case, after submitting a tran
 
 ## Why
 
-I tried to search and found a good library but it's not free :) [https://docs.blocknative.com/notify](https://docs.blocknative.com/notify 'BlockNative Notify')
+I tried to search and found a good library but it's not free :) [https://docs.blocknative.com/notify](https://docs.blocknative.com/notify "BlockNative Notify")
 
 Then I asked myself, could I write simple react-hook ? I think that would not be tricky for me to do so.
 

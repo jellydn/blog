@@ -1,7 +1,7 @@
 import Giscus from '@giscus/react';
+import { globSync } from 'glob';
 import matter from 'gray-matter';
 import { NextSeo } from 'next-seo';
-import { globSync } from 'glob';
 import Prism from 'prismjs';
 import { useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';

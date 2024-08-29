@@ -1,15 +1,15 @@
 ---
-date: '05/31/2022 11:41 AM +0800'
+date: "05/31/2022 11:41 AM +0800"
 tag:
-    - redis
-    - aws
-    - Amazon ElastiCache
+  - redis
+  - aws
+  - Amazon ElastiCache
 author: Dung Huynh
 hero_image: /static/til.jpeg
-title: '#TIL 26 - How to connect to Redis on AWS (Amazon ElastiCache)'
+title: "#TIL 26 - How to connect to Redis on AWS (Amazon ElastiCache)"
 description: >-
-    This is common issue on https://github.com/luin/ioredis for connecting to
-    Redis on AWS
+  This is common issue on https://github.com/luin/ioredis for connecting to
+  Redis on AWS
 _template: post
 ---
 

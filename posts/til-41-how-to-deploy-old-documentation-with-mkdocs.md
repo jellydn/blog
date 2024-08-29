@@ -1,15 +1,15 @@
 ---
 author: Dung Huynh
-date: '07/14/2023 9:48 PM +0800'
+date: "07/14/2023 9:48 PM +0800"
 hero_image: /til.jpeg
-title: '#TIL 41 - How to deploy old legacy documentation with MkDocs'
+title: "#TIL 41 - How to deploy old legacy documentation with MkDocs"
 description: >-
-    The motivation behind this is that sometimes, the homepage only displays the
-    latest version of a document. For instance, typeorm.com only shows the latest
-    version (e.g., TypeORM v0.3), making it hard to find previous versions.
+  The motivation behind this is that sometimes, the homepage only displays the
+  latest version of a document. For instance, typeorm.com only shows the latest
+  version (e.g., TypeORM v0.3), making it hard to find previous versions.
 tag:
-    - typeorm
-    - markdown
+  - typeorm
+  - markdown
 ---
 
 The process starts with cloning the GitHub repository that contains the documentation you want to deploy. For example, to clone the markdown docs from the typeorm/typeorm repository, we use the `npx degit` command.

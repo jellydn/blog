@@ -1,17 +1,17 @@
 ---
-date: '2021-05-30T07:12:00.000Z'
+date: "2021-05-30T07:12:00.000Z"
 tag:
-    - React
-    - CLI
+  - React
+  - CLI
 author: Dung Huynh
 hero_image: /static/new-web-app.png
 title: New Web APP CLI
-description: 'Frontend app generator, built on top vitejs'
+description: "Frontend app generator, built on top vitejs"
 ---
 
 Hi there,
 
-Recently, I often create react app with [http://vitejs.dev/](http://vitejs.dev/ 'http://vitejs.dev/') but it's missing some pre-configuration for me. So that's why I decided to build `new-web-app` CLI.
+Recently, I often create react app with [http://vitejs.dev/](http://vitejs.dev/ "http://vitejs.dev/") but it's missing some pre-configuration for me. So that's why I decided to build `new-web-app` CLI.
 
 ```
 npx new-web-app

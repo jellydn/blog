@@ -7,7 +7,6 @@ cuid: clqmkaiif000f08l45xpk43db
 slug: how-to-use-copilot-chat-with-neovim
 cover: https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/hGV2TfOh0ns/upload/80e813597ae1cce5f089140144a56eb0.png
 tags: neovim, copilot, copilot-chat
-
 ---
 
 ### Intro
@@ -18,7 +17,7 @@ If you're a Neovim/Vim user who has been eagerly anticipating Copilot Chat, your
 
 A few weeks ago, a new and somewhat unpolished plugin surfaced. It's not an official release from the GitHub team, but rather a community-driven initiative. It caught my attention, and I decided to explore it. Written in Python, integrating this plugin into my Neovim configuration involved copying a few files and running UpdateRemotePlugins, followed by a Neovim restart.
 
-%[https://www.youtube.com/watch?v=By_CCai62JE&t=7s] 
+%[https://www.youtube.com/watch?v=By_CCai62JE&t=7s]
 
 ### Demo & Usage
 

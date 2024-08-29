@@ -7,7 +7,6 @@ cuid: clualo8mh000408jrheor4hg3
 slug: discover-how-grit-makes-software-maintenance-a-breeze
 cover: https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/m_HRfLhgABo/upload/339255ef67fa37870caa9fdf1ae9d1ce.jpeg
 tags: grit, software-maintenance
-
 ---
 
 Software maintenance can often feel like a boring/time-consuming task. You're not alone. But what if I told you there's a magical tool that could change all that? Meet [`grit`](https://www.grit.io/), new best friend in the coding world promises to turn the tedious task of software development into something you might enjoy.
@@ -44,10 +43,8 @@ patterns:
     level: warn
 ```
 
-* Run `grit check` command to see the matching between patterns with your project.
-    
-* Run `grit apply PATTERN_NAME` command, e.g: `grit apply no_console_log`
-    
+- Run `grit check` command to see the matching between patterns with your project.
+- Run `grit apply PATTERN_NAME` command, e.g: `grit apply no_console_log`
 
 ## What Makes Grit So Special?
 
@@ -61,6 +58,6 @@ With Grit, those days spent on monotonous maintenance tasks are over. It's not j
 
 For a hands-on demonstration of how `grit` can be applied in a demo project, visit [https://github.com/jellydn/firebolt-grit-demo](https://github.com/jellydn/firebolt-grit-demo). Additionally, a comprehensive walkthrough is available in a video tutorial.
 
-%[https://www.youtube.com/watch?v=pRGxJRxCwII] 
+%[https://www.youtube.com/watch?v=pRGxJRxCwII]
 
 Cheer and Happy Coding!

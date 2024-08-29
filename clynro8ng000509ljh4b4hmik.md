@@ -7,7 +7,6 @@ cuid: clynro8ng000509ljh4b4hmik
 slug: c-spell-setup-in-neovim-a-comprehensive-guide
 cover: https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/R4ruOu3fH-s/upload/140311bfe9bc849e890b4afc22bbdc2a.jpeg
 tags: neovim, spellcheck, cspell
-
 ---
 
 ## Introduction
@@ -103,7 +102,7 @@ return {
 
 ## Code Action
 
-We will create small helpers to detect the project root and initialize the ***cspell.json*** file if it does not exist.
+We will create small helpers to detect the project root and initialize the **_cspell.json_** file if it does not exist.
 
 ### `utils/path.lua`
 

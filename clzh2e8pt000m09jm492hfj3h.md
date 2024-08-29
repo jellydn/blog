@@ -7,18 +7,17 @@ cuid: clzh2e8pt000m09jm492hfj3h
 slug: reassigning-the-caps-lock-key-a-small-change-with-big-impact
 cover: https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/uKceWpLNWcI/upload/cfb10b8aca7e81c4e4f01cda07576913.jpeg
 tags: keyboard-shortcuts, keyboard-mapping, karabiner-elements
-
 ---
 
 ## Context
 
-The first time I had the idea to reassign the **Caps Lock** key to an **Escape** key was when I worked at a startup in Thailand in 2018. I had no idea whether it was possible or advisable to make that change. It turns out that it was the best decision for me, especially as someone with *small hands*.
+The first time I had the idea to reassign the **Caps Lock** key to an **Escape** key was when I worked at a startup in Thailand in 2018. I had no idea whether it was possible or advisable to make that change. It turns out that it was the best decision for me, especially as someone with _small hands_.
 
 Recently, I've learned [one more trick](https://youtu.be/XuQVbZ0wENE?si=eFkfIB_GEZOGm_Jp): mapping Caps Lock to Control when holding it with other keys. Wow, it blew my mind.
 
 ## Why and how
 
-The **Caps Lock** key is in a good position on the keyboard, but it is also somewhat redundant since ***Shift + Key*** achieves the same result. Reassigning it can enhance your typing efficiency.
+The **Caps Lock** key is in a good position on the keyboard, but it is also somewhat redundant since **_Shift + Key_** achieves the same result. Reassigning it can enhance your typing efficiency.
 
 Up to today, it is always the first thing I do when I get a new laptop. Install my go-to application: [`Karabiner`](https://karabiner-elements.pqrs.org/) then go to `Complex Modifications`
 

@@ -1,23 +1,23 @@
 ---
-date: '03/13/2023 9:56 PM +0800'
+date: "03/13/2023 9:56 PM +0800"
 tag:
-    - lazyvim
-    - nvim
-    - vim-test
-    - ide
+  - lazyvim
+  - nvim
+  - vim-test
+  - ide
 author: Dung Huynh
 hero_image: /static/til.jpeg
 title: '#TIL 39 - How to fix "Not a test file" error with vim-test'
 description: >-
-    Vim-test plugin has not supported on large project or monorepo yet. A lot of
-    issues on Github. e.g: "Not a test file" error when running any of the test
-    command.
+  Vim-test plugin has not supported on large project or monorepo yet. A lot of
+  issues on Github. e.g: "Not a test file" error when running any of the test
+  command.
 _template: post
 ---
 
 Hi all,
 
-At the time I'm wring this TIL, there are 26 open issues with [https://github.com/vim-test/vim-test/issues?q=is:issue+is:open+Not+a+test+file](https://github.com/vim-test/vim-test/issues?q=is:issue+is:open+Not+a+test+file 'https://github.com/vim-test/vim-test/issues?q=is:issue+is:open+Not+a+test+file')
+At the time I'm wring this TIL, there are 26 open issues with [https://github.com/vim-test/vim-test/issues?q=is:issue+is:open+Not+a+test+file](https://github.com/vim-test/vim-test/issues?q=is:issue+is:open+Not+a+test+file "https://github.com/vim-test/vim-test/issues?q=is:issue+is:open+Not+a+test+file")
 
 You should find below"working directory" on readme as the solution. Either you use "autochdir" or "cd" to the test directory.
 
@@ -72,4 +72,4 @@ I have used user commands before so I could write my own to resolve this issue o
       vim.cmd("TestNearest")
     end, {})
 
-With those user commands, I could run it once if I've got any "Not a test file" error. More detail about my config on [https://github.com/jellydn/lazy-nvim-ide/blob/main/lua/plugins/test.lua](https://github.com/jellydn/lazy-nvim-ide/blob/main/lua/plugins/test.lua 'https://github.com/jellydn/lazy-nvim-ide/blob/main/lua/plugins/test.lua')
+With those user commands, I could run it once if I've got any "Not a test file" error. More detail about my config on [https://github.com/jellydn/lazy-nvim-ide/blob/main/lua/plugins/test.lua](https://github.com/jellydn/lazy-nvim-ide/blob/main/lua/plugins/test.lua "https://github.com/jellydn/lazy-nvim-ide/blob/main/lua/plugins/test.lua")

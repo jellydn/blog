@@ -1,7 +1,7 @@
 ---
 date: 09/08/2021 12:50 AM +0800
 author: Dung Huynh
-hero_image: '/uploads/dapp.png'
+hero_image: "/uploads/dapp.png"
 title: Blockchain - DApp 101 - Interact with your Smart Contract  [Vietnamese]
 description: How to work with Smart Contract with EtherJs/Remix
 tag:

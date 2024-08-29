@@ -7,7 +7,6 @@ cuid: clor9lajb000d09l08asc3tso
 slug: introducing-hurlnvim-a-new-neovim-plugin-for-http-requests
 cover: https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/f77Bh3inUpE/upload/c0ecc400d8c1c25bf15f55f8d1d4ecae.jpeg
 tags: nvim
-
 ---
 
 Today, I'm thrilled to introduce a plugin I've been working on called `hurl.nvim`. As a passionate Neovim user and developer, I wanted to create a tool that seamlessly integrates HTTP request handling into our favorite editor, and thus `hurl.nvim` was born.
@@ -18,12 +17,9 @@ Today, I'm thrilled to introduce a plugin I've been working on called `hurl.nvim
 
 **Key Features:**
 
-* 🚀 Run `.hurl` files for quick HTTP requests.
-    
-* 👁️ Multiple display modes: choose between popup and split views for API responses.
-    
-* 🌈 Fully customizable: set up your environment with a `vars.env` file and customize the output with different formatters for JSON, HTML, etc.
-    
+- 🚀 Run `.hurl` files for quick HTTP requests.
+- 👁️ Multiple display modes: choose between popup and split views for API responses.
+- 🌈 Fully customizable: set up your environment with a `vars.env` file and customize the output with different formatters for JSON, HTML, etc.
 
 I've made sure to include extensive customization options, so you can tailor the plugin to your workflow. Whether you prefer your responses in a split pane or a floating window, `hurl.nvim` has got you covered.
 

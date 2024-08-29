@@ -1,11 +1,11 @@
 ---
 date: 07/25/2022 11:27 AM +0800
 tag:
-    - github action
-    - semver
+  - github action
+  - semver
 author: Dung Huynh
-hero_image: '/static/til.jpeg'
-title: '#TIL 29 - Git version'
+hero_image: "/static/til.jpeg"
+title: "#TIL 29 - Git version"
 description: How to get version with github action
 ---
 

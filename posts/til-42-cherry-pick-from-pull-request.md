@@ -1,14 +1,14 @@
 ---
 author: Dung Huynh
-date: '10/16/2023 3:48 PM +0800'
+date: "10/16/2023 3:48 PM +0800"
 hero_image: /til.jpeg
-title: '#TIL 42 - Cherry pick from pull request'
+title: "#TIL 42 - Cherry pick from pull request"
 description: >-
-    This is simple trick to cherry pick from pull request
+  This is simple trick to cherry pick from pull request
 tag:
-    - github
-    - git
-    - hub
+  - github
+  - git
+  - hub
 ---
 
 ### How to cherry pick from pull request
@@ -27,17 +27,17 @@ After installing, configure `hub` to work with GitHub by editing the `~/.config/
 
 1. **Create or Edit the Configuration File**:
 
-    ```bash
-    vi ~/.config/hub  # You can use any text editor
-    ```
+   ```bash
+   vi ~/.config/hub  # You can use any text editor
+   ```
 
 2. **Add Your Configuration**:
-    ```yaml
-    github.com:
-        - user: YOUR_USERNAME
-          oauth_token: ghp_YOUR_TOKEN
-          protocol: https
-    ```
+   ```yaml
+   github.com:
+     - user: YOUR_USERNAME
+       oauth_token: ghp_YOUR_TOKEN
+       protocol: https
+   ```
 3. **Save and Exit** the text editor.
 
 #### Cherry pick from pull request

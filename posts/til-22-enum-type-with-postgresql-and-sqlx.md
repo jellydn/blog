@@ -1,12 +1,12 @@
 ---
-date: '10/23/2021 1:06 AM +0800'
+date: "10/23/2021 1:06 AM +0800"
 tag:
-    - go
-    - sqlx
-    - enum type
+  - go
+  - sqlx
+  - enum type
 author: Dung Huynh
 hero_image: /static/til.jpeg
-title: '#TIL 22 - Enum Type with PostgreSQL and sqlx'
+title: "#TIL 22 - Enum Type with PostgreSQL and sqlx"
 description: How to define Scan/Value with sqlx in go lang
 _template: post
 ---

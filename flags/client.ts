@@ -1,6 +1,6 @@
 import {
-    createUseFlags,
     type InitialFlagState as GenericInitialFlagState,
+    createUseFlags,
 } from '@happykit/flags/client';
 import { createUseFlagBag } from '@happykit/flags/context';
 import { type AppFlags, config } from './config';

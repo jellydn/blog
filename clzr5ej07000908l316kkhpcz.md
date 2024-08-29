@@ -7,7 +7,6 @@ cuid: clzr5ej07000908l316kkhpcz
 slug: simplifying-tmux
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1723473188202/08a428b6-9beb-47f0-a207-5a113e3d5628.png
 tags: tmux
-
 ---
 
 ## Introduction
@@ -68,10 +67,8 @@ tmux_conf_theme_colour_17="#dcd7ba"   # white
 
 To improve your Tmux experience, consider installing these plugins:
 
-* [https://github.com/christoomey/vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator) - Seamless navigation between Neovim/Vim and Tmux panes.
-    
-* [https://github.com/tmux-plugins/tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect) - Save and restore your Tmux session
-    
+- [https://github.com/christoomey/vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator) - Seamless navigation between Neovim/Vim and Tmux panes.
+- [https://github.com/tmux-plugins/tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect) - Save and restore your Tmux session
 
 You can enable plugins by searching for `tpm` in your configuration file, then uncommenting or adding new plugins:
 

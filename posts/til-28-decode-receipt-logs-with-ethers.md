@@ -1,11 +1,11 @@
 ---
-date: '07/15/2022 11:27 PM +0800'
+date: "07/15/2022 11:27 PM +0800"
 tag:
-    - tx receipt
-    - abi decoder
+  - tx receipt
+  - abi decoder
 author: Dung Huynh
 hero_image: /static/til.jpeg
-title: '#TIL 28 - Decode receipt logs with ethers'
+title: "#TIL 28 - Decode receipt logs with ethers"
 description: How to decode event logs with ABI
 _template: post
 ---

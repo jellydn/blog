@@ -1,5 +1,5 @@
-import Link from 'next/link';
 import { useFlags } from 'flags/client';
+import Link from 'next/link';
 
 export default function Header({ siteTitle }: { siteTitle: string }) {
     const { flags } = useFlags();
@@ -45,6 +45,7 @@ export default function Header({ siteTitle }: { siteTitle: string }) {
                         target="_blank"
                         href="/resume.pdf"
                         className="btn btn-ghost btn-sm rounded-btn"
+                        rel="noreferrer"
                     >
                         Resume
                     </a>

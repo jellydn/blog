@@ -7,7 +7,6 @@ cuid: clzt5aggf000009jw4jb783dm
 slug: better-naming-with-ai-copilot-chat
 cover: https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/DEci5GH0r0k/upload/af3c41a08fcf6420352ef2db8df3fbe7.jpeg
 tags: ai, neovim, copilot
-
 ---
 
 If you know your blind spot, you will find a way to resolve it :) For me, naming is not easy. [CopilotChat.nvim](https://github.com/CopilotC-Nvim/CopilotChat.nvim) helps me with this. Here is an example where I could ask AI to suggest better names for my code.
@@ -16,7 +15,7 @@ If you know your blind spot, you will find a way to resolve it :) For me, naming
 
 If you want to see how I use it, check out my YouTube channel.
 
-%[https://www.youtube.com/watch?v=sSih4khcstc] 
+%[https://www.youtube.com/watch?v=sSih4khcstc]
 
 Give it a try and boost your productivity! 🚀
 

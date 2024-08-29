@@ -24,9 +24,9 @@ yarn run start
 
 👤 **Dung Huynh Duc (dung@productsway.com)**
 
--   Website: https://productsway.com/
--   Twitter: [@jellydn](https://twitter.com/jellydn)
--   Github: [@jellydn](https://github.com/jellydn)
+- Website: https://productsway.com/
+- Twitter: [@jellydn](https://twitter.com/jellydn)
+- Github: [@jellydn](https://github.com/jellydn)
 
 ## Show your support
 

@@ -1,11 +1,11 @@
 ---
-date: '01/03/2023 11:41 PM +0800'
+date: "01/03/2023 11:41 PM +0800"
 tag:
-    - nvim
-    - github copilot
+  - nvim
+  - github copilot
 author: Dung Huynh
 hero_image: /static/til.jpeg
-title: '#TIL 36 - Github Copilot with NvChad/Nvim'
+title: "#TIL 36 - Github Copilot with NvChad/Nvim"
 description: How to setup Github Copilot
 _template: post
 ---

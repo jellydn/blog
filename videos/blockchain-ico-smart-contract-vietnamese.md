@@ -1,7 +1,7 @@
 ---
 date: 09/08/2021 12:50 AM +0800
 author: Dung Huynh
-hero_image: '/uploads/dapp.png'
+hero_image: "/uploads/dapp.png"
 title: Blockchain - DApp 101 - ICO Smart Contract [Vietnamese]
 description: How to create an ERC20 and ICO your Smart Contract
 tag:

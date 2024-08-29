@@ -4,7 +4,7 @@ tag:
   - React
   - Typescript
 author: Dung Huynh
-hero_image: '/static/til.jpeg'
+hero_image: "/static/til.jpeg"
 title: "#TIL 15 - Fix Duplicate identifier 'LibraryManagedAttributes'"
 description:
   How to fix duplicate identifier 'LibraryManagedAttributes' with yarn

@@ -1,12 +1,12 @@
 ---
-date: '03/07/2022 10:20 AM +0800'
+date: "03/07/2022 10:20 AM +0800"
 tag:
-    - fastify
-    - trpc
+  - fastify
+  - trpc
 author: Dung Huynh
 hero_image: /static/til.jpeg
-title: '#TIL 24 - Workaround for tRPC Fastify adatper CORS policy'
-description: 'Handling CORS and CORS preflight requests '
+title: "#TIL 24 - Workaround for tRPC Fastify adatper CORS policy"
+description: "Handling CORS and CORS preflight requests "
 _template: post
 ---
 

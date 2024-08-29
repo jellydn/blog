@@ -4,8 +4,8 @@ tag:
   - Git
   - CLI
 author: Dung Huynh
-hero_image: '/static/til.jpeg'
-title: '#TIL 16 - Revert to 1st commit with Git command'
+hero_image: "/static/til.jpeg"
+title: "#TIL 16 - Revert to 1st commit with Git command"
 description: Revert to init commit on Git
 ---
 

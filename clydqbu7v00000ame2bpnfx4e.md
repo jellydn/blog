@@ -7,7 +7,6 @@ cuid: clydqbu7v00000ame2bpnfx4e
 slug: master-vscode-like-a-pro
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1720486261207/d1eec38d-833d-4164-81b5-5df144a89e6c.png
 tags: vscode-cjevho8kk00bo1ss2lmqqjr51, vscode-extensions, vscode-tips,  vscode
-
 ---
 
 ## Introduction
@@ -18,12 +17,9 @@ This guide will help you turn Visual Studio Code (VSCode) into a clean, optimize
 
 The right VSCode setup can change your coding experience by reducing clutter and improving functionality. Here’s why you should customize your environment:
 
-* **Enhanced Cleanliness:** A simple setup reduces distractions and keeps the focus on your code.
-    
-* **Optimized Performance:** Improve your workflow with tools that make navigation and editing faster.
-    
-* **Personalized Experience:** Adjust your editor to fit your needs and preferences, making daily tasks more enjoyable and efficient.
-    
+- **Enhanced Cleanliness:** A simple setup reduces distractions and keeps the focus on your code.
+- **Optimized Performance:** Improve your workflow with tools that make navigation and editing faster.
+- **Personalized Experience:** Adjust your editor to fit your needs and preferences, making daily tasks more enjoyable and efficient.
 
 ## How to Set Up Your VSCode
 
@@ -31,8 +27,7 @@ The right VSCode setup can change your coding experience by reducing clutter and
 
 This allows extensive customization of VSCode's user interface, enabling you to adjust visual elements to your preference.
 
-* **How to Use:** They provide options to tweak the settings to hide or modify UI components like the status bar, activity bar, and header. Just try and pick something that works great for your eyes.
-    
+- **How to Use:** They provide options to tweak the settings to hide or modify UI components like the status bar, activity bar, and header. Just try and pick something that works great for your eyes.
 
 ```json
 {
@@ -71,7 +66,7 @@ This allows extensive customization of VSCode's user interface, enabling you to 
     "editorCursor.foreground": "#ffc600",
     "tab.activeBorder": "#ffc600"
   },
-  "workbench.layoutControl.enabled": false,
+  "workbench.layoutControl.enabled": false
 }
 ```
 
@@ -79,8 +74,7 @@ This allows extensive customization of VSCode's user interface, enabling you to 
 
 This extension helps manage your workspace's visibility by letting you quickly hide or show excluded files and folders.
 
-* **Benefits:** Keeps your file explorer tidy by hiding unnecessary files or folders, such as `node_modules` or build directories, enhancing focus and reducing load times.
-    
+- **Benefits:** Keeps your file explorer tidy by hiding unnecessary files or folders, such as `node_modules` or build directories, enhancing focus and reducing load times.
 
 ```json
 {
@@ -100,7 +94,7 @@ This extension helps manage your workspace's visibility by letting you quickly h
     "**/*.nyc_output": true,
     "**/*.tap": true,
     "**/.astro": true
-  },
+  }
 }
 ```
 
@@ -110,19 +104,15 @@ VS Code has included these features since version 1.67. Below is a useful config
 
 ![](https://user-images.githubusercontent.com/11247099/157142238-b00deecb-8d56-424f-9b20-ef6a6f5ddf99.png align="left")
 
-* **How to Use:** Incorporate these configurations into your `settings.json` for better file management.
-    
+- **How to Use:** Incorporate these configurations into your `settings.json` for better file management.
 
 ### 4\. Icon & Theme
 
 There are many options available, but here are my favorites:
 
-* **Cobalt2:** [https://github.com/wesbos/cobalt2-vscode](https://github.com/wesbos/cobalt2-vscode)
-    
-* **Catppuccin Icons:** [https://github.com/catppuccin/vscode-icons](https://github.com/catppuccin/vscode-icons)
-    
-* **Catppuccin Theme:** [https://github.com/catppuccin/vscode](https://github.com/catppuccin/vscode)
-    
+- **Cobalt2:** [https://github.com/wesbos/cobalt2-vscode](https://github.com/wesbos/cobalt2-vscode)
+- **Catppuccin Icons:** [https://github.com/catppuccin/vscode-icons](https://github.com/catppuccin/vscode-icons)
+- **Catppuccin Theme:** [https://github.com/catppuccin/vscode](https://github.com/catppuccin/vscode)
 
 [![Theme switcher](https://i.gyazo.com/57139ebccf6b73f09e60125749c89584.gif align="left")](https://gyazo.com/57139ebccf6b73f09e60125749c89584)
 
@@ -130,7 +120,7 @@ There are many options available, but here are my favorites:
 
 Learn more about customizing VSCode in my detailed guide [VS Code Like a Pro](https://github.com/jellydn/vscode-like-pro) or watch our tutorial on YouTube.
 
-%[https://www.youtube.com/watch?v=yMh0FQ-okog] 
+%[https://www.youtube.com/watch?v=yMh0FQ-okog]
 
 ## Conclusion
 
