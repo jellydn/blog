@@ -11,8 +11,7 @@
   },
   "nano-staged": {
     "package.json": "sort-package-json",
-    "*.{js,jsx,ts,tsx}": "eslint --cache --fix",
-    "*.{js,jsx,ts,tsx,css,md}": "prettier --write"
+    "*.{js,jsx,ts,tsx,css,md}": "biome check --fix"
   },
   "config": {
     "commitizen": {
@@ -43,21 +42,18 @@
     "tinacms": "2.2.1"
   },
   "devDependencies": {
+    "@biomejs/biome": "1.8.3",
     "@cloudflare/next-on-pages": "1.13.2",
     "@fullhuman/postcss-purgecss": "6.0.0",
-    "@trivago/prettier-plugin-sort-imports": "4.3.0",
     "@types/node": "22.5.1",
     "@types/react": "18.3.4",
     "autoprefixer": "10.4.20",
     "cz-conventional-changelog": "3.3.0",
-    "eslint": "9.9.1",
-    "eslint-config-next": "14.2.7",
     "husky": "9.1.5",
     "nano-staged": "0.8.0",
     "postcss": "8.4.41",
     "postcss-flexbugs-fixes": "5.0.2",
     "postcss-preset-env": "10.0.2",
-    "prettier": "3.3.3",
     "sort-package-json": "2.10.1",
     "tailwindcss": "3.4.10",
     "typescript": "5.5.4"

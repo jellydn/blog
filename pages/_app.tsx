@@ -1,6 +1,6 @@
 import 'prismjs/themes/prism-okaidia.css';
 
-import { AppProps } from 'next/app';
+import type { AppProps } from 'next/app';
 
 import '../styles.css';
 
@@ -12,7 +12,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => (
             data-goatcounter="https://dunghd.goatcounter.com/count"
             async
             src="//gc.zgo.at/count.js"
-        ></script>
+        />
         <Component {...pageProps} />
     </div>
 );
