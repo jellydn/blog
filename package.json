@@ -3,11 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "next build",
+    "build": "tinacms build && next build",
     "dev": "tinacms dev -c \"next\"",
     "develop": "yarn dev",
     "lint": "next lint",
-    "start": "next start"
+    "start": "tinacms build && next start"
   },
   "nano-staged": {
     "package.json": "sort-package-json",
