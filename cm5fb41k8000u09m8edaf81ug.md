@@ -7,7 +7,6 @@ cuid: cm5fb41k8000u09m8edaf81ug
 slug: a-curated-list-of-awesome-typescript-typesafe-libraries
 cover: https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/UVMPVIRCF5w/upload/cfcfe4e0c1b647264034e19bd4f7f9de.jpeg
 tags: typescript, open-source-community
-
 ---
 
 # **What is Typesafe?**
@@ -32,13 +31,13 @@ Type safety is a programming language property that ensures operations are perfo
 
 At [Awesome Typesafe Libraries](https://github.com/jellydn/awesome-typesafe): [https://github.com/jellydn/awesome-typesafe](https://github.com/jellydn/awesome-typesafe), I have curated a collection of libraries that emphasize type safety in TypeScript.
 
-%[https://www.youtube.com/watch?v=nDdAmZQTjSQ] 
+%[https://www.youtube.com/watch?v=nDdAmZQTjSQ]
 
 Despite its potential, this repository hasn’t garnered much attention yet. I believe this collection can significantly benefit the TypeScript community by promoting libraries that enhance type safety and improve overall development practices.
 
 # **Why Contribute?**
 
-The strength of the open-source community lies in ***collaboration and shared knowledge.*** If you know of any libraries that fit the criteria for this curated list, I encourage you to contribute:
+The strength of the open-source community lies in **_collaboration and shared knowledge._** If you know of any libraries that fit the criteria for this curated list, I encourage you to contribute:
 
 1\. **Share Your Discoveries**: If you’ve come across a library that ensures typesafety and isn’t on the list, share it with the community.
 
