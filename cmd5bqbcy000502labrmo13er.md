@@ -5,7 +5,6 @@ cuid: cmd5bqbcy000502labrmo13er
 slug: label-your-ai-vs-human-code-in-commit
 cover: https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/505eectW54k/upload/cd7691d4eb7e9a4cb6baf98335b2337c.jpeg
 tags: ai, git, tips, coding
-
 ---
 
 ## Quick Tip for Better Team Collaboration
@@ -42,14 +41,10 @@ feat: implement user authentication
 
 ## Why Do This?
 
-* Reviewers know what they’re looking at instantly
-    
-* Team learns from both AI and human approaches
-    
-* Builds trust in AI tools through transparency
-    
-* Creates clear accountability
-    
+- Reviewers know what they’re looking at instantly
+- Team learns from both AI and human approaches
+- Builds trust in AI tools through transparency
+- Creates clear accountability
 
 ## Bonus Tip: Clean Up AI Comments
 
@@ -60,7 +55,7 @@ AI tools often generate redundant or overly verbose comments. Clean them up:
 ```javascript
 // This function calculates the sum of two numbers
 function add(a, b) {
-    return a + b; // Returns the sum of a and b
+  return a + b; // Returns the sum of a and b
 }
 ```
 
@@ -68,11 +63,11 @@ function add(a, b) {
 
 ```javascript
 function add(a, b) {
-    return a + b;
+  return a + b;
 }
 ```
 
-Only keep comments that explain *why*, not *what*.
+Only keep comments that explain _why_, not _what_.
 
 ## Just Add It
 
