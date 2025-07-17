@@ -16,7 +16,7 @@ importers:
         version: 3.3.0(next@15.2.3(@babel/core@7.24.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
       '@tailwindcss/typography':
         specifier: 0.5.15
-        version: 0.5.15(tailwindcss@3.4.14(ts-node@10.9.1(@types/node@22.9.0)(typescript@5.6.3)))
+        version: 0.5.15(tailwindcss@4.1.11)
       '@tinacms/cli':
         specifier: 1.6.11
         version: 1.6.11(@codemirror/language@6.0.0)(@types/node@22.9.0)(@types/react@18.3.12)(abstract-level@1.0.4)(encoding@0.1.13)(immer@10.1.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rollup@3.29.4)(scheduler@0.23.2)(sucrase@3.35.0)(terser@5.31.1)(ts-node@10.9.1(@types/node@22.9.0)(typescript@5.6.3))
@@ -34,7 +34,7 @@ importers:
         version: 4.2.0
       kutty:
         specifier: 0.6.0
-        version: 0.6.0(tailwindcss@3.4.14(ts-node@10.9.1(@types/node@22.9.0)(typescript@5.6.3)))
+        version: 0.6.0(tailwindcss@4.1.11)
       lite-youtube-embed:
         specifier: 0.3.3
         version: 0.3.3
@@ -103,8 +103,8 @@ importers:
         specifier: 2.10.1
         version: 2.10.1
       tailwindcss:
-        specifier: 3.4.14
-        version: 3.4.14(ts-node@10.9.1(@types/node@22.9.0)(typescript@5.6.3))
+        specifier: 4.1.11
+        version: 4.1.11
       typescript:
         specifier: 5.6.3
         version: 5.6.3
@@ -7007,6 +7007,9 @@ packages:
     engines: {node: '>=14.0.0'}
     hasBin: true
 
+  tailwindcss@4.1.11:
+    resolution: {integrity: sha512-2E9TBm6MDD/xKYe+dvJZAmg3yxIEDNRc0jwlNyDg/4Fil2QcSLjFKGVff0lAf1jjeaArlG/M75Ey/EYr/OJtBA==}
+
   tapable@2.2.1:
     resolution: {integrity: sha512-GNzQvQTOIP6RyTfE2Qxb8ZVlNmw0n88vp1szwWRimP02mnTsx3Wtn5qRdqY9w2XduFNUgvOwhNnQsjwCp+kqaQ==}
     engines: {node: '>=6'}
@@ -9802,6 +9805,14 @@ snapshots:
       lodash.merge: 4.6.2
       postcss-selector-parser: 6.0.10
       tailwindcss: 3.4.14(ts-node@10.9.1(@types/node@22.9.0)(typescript@5.6.3))
+
+  '@tailwindcss/typography@0.5.15(tailwindcss@4.1.11)':
+    dependencies:
+      lodash.castarray: 4.4.0
+      lodash.isplainobject: 4.0.6
+      lodash.merge: 4.6.2
+      postcss-selector-parser: 6.0.10
+      tailwindcss: 4.1.11
 
   '@tanstack/react-virtual@3.10.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
@@ -13033,9 +13044,9 @@ snapshots:
 
   kleur@4.1.5: {}
 
-  kutty@0.6.0(tailwindcss@3.4.14(ts-node@10.9.1(@types/node@22.9.0)(typescript@5.6.3))):
+  kutty@0.6.0(tailwindcss@4.1.11):
     dependencies:
-      tailwindcss: 3.4.14(ts-node@10.9.1(@types/node@22.9.0)(typescript@5.6.3))
+      tailwindcss: 4.1.11
 
   level-read-stream@1.1.0(abstract-level@1.0.4):
     dependencies:
@@ -15676,6 +15687,8 @@ snapshots:
       sucrase: 3.35.0
     transitivePeerDependencies:
       - ts-node
+
+  tailwindcss@4.1.11: {}
 
   tapable@2.2.1: {}
 
