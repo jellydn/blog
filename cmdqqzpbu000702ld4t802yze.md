@@ -1,9 +1,13 @@
 ---
-title: "⚙️ 3 Practical Enhancements for Claude Code to Maximize Productivity"
+title: "3 Practical Enhancements for Claude Code to Maximize Productivity"
+seoTitle: "Boost Productivity: 3 Enhancements for Claude Code"
+seoDescription: "Boost productivity with shell aliases, hooks, real-time monitoring. Effortlessly integrate these tweaks into your workflow"
 datePublished: Thu Jul 31 2025 02:00:36 GMT+0000 (Coordinated Universal Time)
 cuid: cmdqqzpbu000702ld4t802yze
 slug: 3-practical-enhancements-for-claude-code-to-maximize-productivity
+cover: https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/db2y7AD7s7M/upload/06e5029164211fb7c4a3df0b9fa82351.jpeg
 tags: claude-code
+
 ---
 
 [Claude Code](https://claude.ai/) is a powerful CLI-based developer assistant. But with a few tweaks, you can make it even more efficient and integrated into your daily workflow. Here are three enhancements I use daily to boost my productivity:
