@@ -7,6 +7,7 @@ cuid: cmdqqzpbu000702ld4t802yze
 slug: 3-practical-enhancements-for-claude-code-to-maximize-productivity
 cover: https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/db2y7AD7s7M/upload/06e5029164211fb7c4a3df0b9fa82351.jpeg
 tags: claude-code
+
 ---
 
 [Claude Code](https://claude.ai/) is a powerful CLI-based developer assistant. But with a few tweaks, you can make it even more efficient and integrated into your daily workflow. Here are three enhancements I use daily to boost my productivity:
@@ -152,6 +153,11 @@ Here’s my configuration:
       "Bash(* | uniq*)"
     ],
     "deny": []
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "bun x ccusage statusline",
+    "padding": 0
   }
 }
 ```
