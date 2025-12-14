@@ -17,7 +17,7 @@ Recently, I've learned [one more trick](https://youtu.be/XuQVbZ0wENE?si=eFkfIB_G
 
 ## Why and how
 
-The **Caps Lock** key is in a good position on the keyboard, but it is also somewhat redundant since **_Shift + Key_** achieves the same result. Reassigning it can enhance your typing efficiency.
+The **Caps Lock** key is in a good position on the keyboard, but it is also somewhat redundant since ***Shift + Key*** achieves the same result. Reassigning it can enhance your typing efficiency.
 
 ### Mac OSX
 
