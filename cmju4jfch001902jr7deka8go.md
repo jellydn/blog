@@ -1,10 +1,13 @@
 ---
 title: "Reflections on 2025: Key Learnings and What's Ahead"
+seoTitle: "Key Insights and Future Outlook 2025"
+seoDescription: "Reflections on 2025 reveal personal growth, AI transformative experiences, and insights on future productivity trends and keyboard ergonomics"
 datePublished: Wed Dec 31 2025 14:41:24 GMT+0000 (Coordinated Universal Time)
 cuid: cmju4jfch001902jr7deka8go
 slug: reflections-on-2025-key-learnings-and-whats-ahead
 cover: https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/r2qsJ-T9_jg/upload/1149341397c311324b47beab92f7cce5.jpeg
 tags: itman
+
 ---
 
 As 2025 comes to a close, I want to take a moment to reflect on what I learned, how I’ve grown, and where I’m headed next.
