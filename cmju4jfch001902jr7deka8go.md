@@ -5,7 +5,6 @@ cuid: cmju4jfch001902jr7deka8go
 slug: reflections-on-2025-key-learnings-and-whats-ahead
 cover: https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/r2qsJ-T9_jg/upload/1149341397c311324b47beab92f7cce5.jpeg
 tags: itman
-
 ---
 
 As 2025 comes to a close, I want to take a moment to reflect on what I learned, how I’ve grown, and where I’m headed next.
