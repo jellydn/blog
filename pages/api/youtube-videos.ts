@@ -29,7 +29,7 @@ interface YouTubeApiResponse {
 }
 
 const YOUTUBE_API_KEY = process.env.YOUTUBE_API_KEY;
-const CHANNEL_ID = process.env.CHANNEL_ID || 'UC5zpZbIHT3S2J9_6-SdG4vg';
+const CHANNEL_ID = process.env.CHANNEL_ID;
 
 export default async function handler(
     req: NextApiRequest,
