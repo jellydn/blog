@@ -9,8 +9,8 @@ import gfm from 'remark-gfm';
 
 import Link from 'next/link';
 
-import Layout from 'components/Layout';
 import { Badge } from 'components/Badge';
+import Layout from 'components/Layout';
 
 type BlogFrontmatter = {
     title: string;

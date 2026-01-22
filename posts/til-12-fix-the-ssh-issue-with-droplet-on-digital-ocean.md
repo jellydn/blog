@@ -28,6 +28,7 @@ PasswordAuthentication yes
 ```
 
 Restart SSH:
+
 ```sh
 sudo service ssh restart
 ```

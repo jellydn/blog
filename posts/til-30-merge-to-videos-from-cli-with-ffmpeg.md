@@ -21,12 +21,14 @@ Quick way to combine videos without re-encoding (preserves quality).
 ## How
 
 Create `list.txt`:
+
 ```
 file 'video1.mp4'
 file 'video2.mp4'
 ```
 
 Run:
+
 ```sh
 ffmpeg -f concat -safe 0 -i list.txt -c copy output.mp4
 ```

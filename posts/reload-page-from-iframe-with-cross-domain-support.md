@@ -18,6 +18,7 @@ When an iframe is cross-domain, direct parent access is blocked. Use `postMessag
 ## Usage
 
 **Inside iframe (sender):**
+
 ```typescript
 <button onClick={() => window.parent.postMessage("reload-page", "*")}>
   Reload Parent
@@ -25,17 +26,18 @@ When an iframe is cross-domain, direct parent access is blocked. Use `postMessag
 ```
 
 **In parent page (receiver):**
+
 ```typescript
 useEffect(() => {
   const listener = (event: MessageEvent) => {
     // TODO: Verify event.origin for security
-    if (event.data === 'reload-page') {
+    if (event.data === "reload-page") {
       window.location.reload();
     }
   };
 
-  window.addEventListener('message', listener);
-  return () => window.removeEventListener('message', listener);
+  window.addEventListener("message", listener);
+  return () => window.removeEventListener("message", listener);
 }, []);
 ```
 

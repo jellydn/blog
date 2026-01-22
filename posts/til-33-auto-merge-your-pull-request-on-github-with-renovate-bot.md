@@ -21,6 +21,7 @@ Reduce noise in PR list. Safe updates (non-major) can be merged automatically.
 ## How
 
 **renovate.json:**
+
 ```json
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",

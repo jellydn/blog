@@ -1,4 +1,4 @@
-import type { ReactNode, AnchorHTMLAttributes } from 'react';
+import type { AnchorHTMLAttributes, ReactNode } from 'react';
 
 type ButtonVariant = 'primary' | 'secondary' | 'outline' | 'ghost';
 type ButtonSize = 'sm' | 'md' | 'lg';
@@ -9,7 +9,10 @@ type ButtonProps = {
     size?: ButtonSize;
     className?: string;
     href?: string;
-} & (AnchorHTMLAttributes<HTMLAnchorElement> | React.ButtonHTMLAttributes<HTMLButtonElement>);
+} & (
+    | AnchorHTMLAttributes<HTMLAnchorElement>
+    | React.ButtonHTMLAttributes<HTMLButtonElement>
+);
 
 const variantStyles: Record<ButtonVariant, string> = {
     primary: 'btn-primary',
@@ -36,14 +39,21 @@ export function Button({
 
     if (href) {
         return (
-            <a href={href} className={classes} {...(props as AnchorHTMLAttributes<HTMLAnchorElement>)}>
+            <a
+                href={href}
+                className={classes}
+                {...(props as AnchorHTMLAttributes<HTMLAnchorElement>)}
+            >
                 {children}
             </a>
         );
     }
 
     return (
-        <button className={classes} {...(props as React.ButtonHTMLAttributes<HTMLButtonElement>)}>
+        <button
+            className={classes}
+            {...(props as React.ButtonHTMLAttributes<HTMLButtonElement>)}
+        >
             {children}
         </button>
     );

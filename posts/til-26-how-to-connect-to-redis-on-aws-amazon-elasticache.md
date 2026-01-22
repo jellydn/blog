@@ -22,7 +22,7 @@ ElastiCache requires TLS (`rediss://`) and needs special handling for connection
 ## How
 
 ```typescript
-import Redis from 'ioredis';
+import Redis from "ioredis";
 
 const redisClient = new Redis(process.env.REDIS_URL, {
   lazyConnect: true,
@@ -30,7 +30,7 @@ const redisClient = new Redis(process.env.REDIS_URL, {
   retryStrategy: (times) => Math.min(times * 30, 1000),
   reconnectOnError(err) {
     // Retry on specific errors
-    return [/READONLY/, /ETIMEDOUT/].some(re => re.test(err.message));
+    return [/READONLY/, /ETIMEDOUT/].some((re) => re.test(err.message));
   },
 });
 ```

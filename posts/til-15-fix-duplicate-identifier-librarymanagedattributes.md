@@ -24,6 +24,7 @@ npx yarn-deduplicate yarn.lock
 ```
 
 Then reinstall dependencies:
+
 ```sh
 yarn install
 ```

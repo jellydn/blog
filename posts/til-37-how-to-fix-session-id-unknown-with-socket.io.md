@@ -25,7 +25,7 @@ Disable HTTP long-polling, use WebSockets only:
 ```typescript
 // Client-side
 const socket = io({
-  transports: ["websocket"]
+  transports: ["websocket"],
 });
 ```
 

@@ -24,6 +24,7 @@ Native folding is slow and limited. UFO provides fast, Treesitter-based folding 
 ## How
 
 **1. Set options:**
+
 ```lua
 vim.o.foldcolumn = "1"
 vim.o.foldlevel = 99
@@ -32,6 +33,7 @@ vim.o.fillchars = [[eob: ,fold: ,foldopen:,foldsep: ,foldclose:]]
 ```
 
 **2. Install plugins (with lazy.nvim):**
+
 ```lua
 {
   "kevinhwang91/nvim-ufo",

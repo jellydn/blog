@@ -21,11 +21,13 @@ Heroku expects app root at repository root. Monorepos need custom deployment.
 ## How
 
 Add Heroku remote:
+
 ```sh
 heroku git:remote -a your-app-name
 ```
 
 Deploy subdirectory:
+
 ```sh
 git subtree push --prefix server heroku main
 ```

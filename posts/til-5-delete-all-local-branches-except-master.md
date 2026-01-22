@@ -25,6 +25,7 @@ git branch | grep -v "master" | xargs git branch -D
 ```
 
 **For main branch:**
+
 ```sh
 git branch | grep -v "main" | xargs git branch -D
 ```

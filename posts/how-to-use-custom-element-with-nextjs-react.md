@@ -16,23 +16,31 @@ Embedding YouTube's default player loads heavy JS/CSS. `lite-youtube-embed` is a
 ## Usage
 
 **Create `YoutubeVideo.tsx`:**
-```tsx
-import 'lite-youtube-embed/src/lite-yt-embed.css'
-import 'lite-youtube-embed/src/lite-yt-embed.js'
 
-const YoutubeVideo = ({ videoId, title }: { videoId: string; title: string }) => (
+```tsx
+import "lite-youtube-embed/src/lite-yt-embed.css";
+import "lite-youtube-embed/src/lite-yt-embed.js";
+
+const YoutubeVideo = ({
+  videoId,
+  title,
+}: {
+  videoId: string;
+  title: string;
+}) => (
   // @ts-expect-error custom element
   <lite-youtube videoid={videoId}>
     <button type="button" className="lty-playbtn">
       <span className="lyt-visually-hidden">{title}</span>
     </button>
   </lite-youtube>
-)
+);
 
-export default YoutubeVideo
+export default YoutubeVideo;
 ```
 
 **Dynamic import (disable SSR):**
+
 ```tsx
 import dynamic from 'next/dynamic'
 

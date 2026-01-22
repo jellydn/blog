@@ -9,9 +9,11 @@ A Next.js 15 blog with TinaCMS for content management, using TypeScript, Tailwin
 ## Build, Lint, and Test Commands
 
 ### Package Manager
+
 This project uses **pnpm** as the package manager.
 
 ### Core Commands
+
 ```bash
 # Install dependencies
 pnpm install
@@ -34,11 +36,14 @@ pnpm exec biome check --apply .
 ```
 
 ### Pre-commit Hooks
+
 Pre-commit hooks are configured via `.pre-commit-config.yaml`:
+
 - Biome for formatting, importing, and linting
 - Prettier for files Biome doesn't support (HTML, CSS, Markdown)
 
 Run hooks manually:
+
 ```bash
 pnpm exec biome-check
 ```
@@ -46,6 +51,7 @@ pnpm exec biome-check
 ## Code Style Guidelines
 
 ### TypeScript
+
 - **Strict mode**: Disabled in `tsconfig.json` (currently `strict: false`)
 - **Target**: ES5
 - **JSX**: Preserve
@@ -55,6 +61,7 @@ pnpm exec biome-check
 - Define custom types in `lib/*.ts` files
 
 ### React Components
+
 - Use `React.FC<Props>` for component typing
 - Use named exports for components: `export default ComponentName`
 - Props interfaces should be inline or in the same file for simple components
@@ -62,20 +69,22 @@ pnpm exec biome-check
 - Handle null/undefined states explicitly
 
 ### Imports
+
 ```typescript
 // Relative imports for local files
-import Layout from './Layout';
+import Layout from "./Layout";
 
 // Alias imports for project-wide imports (configured in tsconfig)
-import { client } from '../tina/__generated__/client';
+import { client } from "../tina/__generated__/client";
 
 // Standard library imports
-import React from 'react';
+import React from "react";
 
 // Third-party imports (alphabetical order within groups)
 ```
 
 ### Formatting (Biome)
+
 - **Indent style**: Spaces (4 spaces)
 - **Line width**: 80 characters
 - **Line endings**: LF
@@ -85,6 +94,7 @@ import React from 'react';
 - **Bracket spacing**: Enabled
 
 ### Naming Conventions
+
 - **Components**: PascalCase (`Layout`, `BlogList`)
 - **Files**: camelCase for utility files, PascalCase for components
 - **Variables/functions**: camelCase (`fetchLatestPosts`)
@@ -92,6 +102,7 @@ import React from 'react';
 - **Interfaces**: PascalCase, optionally prefixed with type (`TinaPost`)
 
 ### Error Handling
+
 - Use try/catch for async operations
 - Log errors with descriptive messages
 - Return empty arrays or default values on error (see `lib/tina.ts`)
@@ -99,12 +110,14 @@ import React from 'react';
 - Never commit secrets or API keys to the repository
 
 ### CSS/Styling
+
 - Use Tailwind CSS utility classes
 - DaisyUI themes: `corporate` and `winter` (configured in `tailwind.config.js`)
 - Typography plugin for prose content
 - Custom classes should be minimal; leverage DaisyUI/Tailwind
 
 ### File Organization
+
 ```
 components/     - React components (Pages, Layout, UI)
 lib/           - Utility functions and API clients
@@ -117,6 +130,7 @@ scripts/       - Build and utility scripts
 ```
 
 ### Important Configuration Files
+
 - `biome.json` - Linting and formatting rules
 - `tsconfig.json` - TypeScript configuration
 - `tailwind.config.js` - Tailwind and DaisyUI config
@@ -124,12 +138,14 @@ scripts/       - Build and utility scripts
 - `package.json` - Scripts and dependencies
 
 ### Development Notes
+
 - TinaCMS requires running `tinacms build` before production build
 - Markdown files use raw-loader for direct import
 - Image domains: `gyazo.com` configured in Next.js config
 - Webfinger redirects configured for Fediverse support
 
 ### Common Tasks
+
 ```bash
 # Create a new blog post
 # Add .md file to posts/ directory with frontmatter

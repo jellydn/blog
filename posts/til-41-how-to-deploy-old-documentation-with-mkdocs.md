@@ -20,11 +20,13 @@ Some projects only host latest docs. Older versions may still be in use.
 ## How
 
 **1. Clone specific version:**
+
 ```sh
 npx degit typeorm/typeorm#0.2.38 typeorm-legacy
 ```
 
 **2. Create mkdocs.yml:**
+
 ```yaml
 site_name: TypeORM v0.2.38
 site_url: https://your-url.com/
@@ -32,6 +34,7 @@ theme: readthedocs
 ```
 
 **3. Build and deploy:**
+
 ```sh
 pip install mkdocs
 mkdocs build

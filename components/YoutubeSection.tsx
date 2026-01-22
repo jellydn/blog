@@ -62,15 +62,24 @@ export function YoutubeSection({ fallbackVideos }: YoutubeSectionProps) {
                 <div className="container mx-auto px-4 max-w-6xl">
                     <div className="flex justify-between items-center mb-12">
                         <div>
-                            <h2 className="text-4xl font-bold mb-2">Latest Videos</h2>
-                            <p className="text-xl text-base-content/70">Loading...</p>
+                            <h2 className="text-4xl font-bold mb-2">
+                                Latest Videos
+                            </h2>
+                            <p className="text-xl text-base-content/70">
+                                Loading...
+                            </p>
                         </div>
                     </div>
                     <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                         {fallbackVideos.slice(0, 6).map((video) => (
-                            <div key={video.slug} className="card bg-base-200 shadow-xl">
+                            <div
+                                key={video.slug}
+                                className="card bg-base-200 shadow-xl"
+                            >
                                 <div className="card-body">
-                                    <p className="text-sm text-base-content/70">Loading videos...</p>
+                                    <p className="text-sm text-base-content/70">
+                                        Loading videos...
+                                    </p>
                                 </div>
                             </div>
                         ))}
@@ -81,25 +90,28 @@ export function YoutubeSection({ fallbackVideos }: YoutubeSectionProps) {
     }
 
     // Use YouTube API data if available, otherwise fallback
-    const displayVideos = videos && videos.length > 0
-        ? videos.map((v) => ({
-              slug: v.id,
-              frontmatter: {
-                  title: v.title,
-                  description: v.description,
-                  date: v.publishedAt,
-                  hero_image: v.thumbnailUrl,
-                  youtube_id: v.id,
-              },
-          }))
-        : fallbackVideos;
+    const displayVideos =
+        videos && videos.length > 0
+            ? videos.map((v) => ({
+                  slug: v.id,
+                  frontmatter: {
+                      title: v.title,
+                      description: v.description,
+                      date: v.publishedAt,
+                      hero_image: v.thumbnailUrl,
+                      youtube_id: v.id,
+                  },
+              }))
+            : fallbackVideos;
 
     return (
         <section className="py-20 bg-base-100">
             <div className="container mx-auto px-4 max-w-6xl">
                 <div className="flex justify-between items-center mb-12">
                     <div>
-                        <h2 className="text-4xl font-bold mb-2">Latest Videos</h2>
+                        <h2 className="text-4xl font-bold mb-2">
+                            Latest Videos
+                        </h2>
                         <p className="text-xl text-base-content/70">
                             {videos && videos.length > 0
                                 ? 'Fresh from IT Man Channel'
@@ -126,12 +138,19 @@ export function YoutubeSection({ fallbackVideos }: YoutubeSectionProps) {
                         >
                             <figure className="aspect-video relative">
                                 <img
-                                    src={video.frontmatter.hero_image || `https://i.ytimg.com/vi/${video.frontmatter.youtube_id}/mqdefault.jpg`}
+                                    src={
+                                        video.frontmatter.hero_image ||
+                                        `https://i.ytimg.com/vi/${video.frontmatter.youtube_id}/mqdefault.jpg`
+                                    }
                                     alt={video.frontmatter.title}
                                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                                 />
                                 <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/30 transition-colors">
-                                    <svg className="w-12 h-12 text-white opacity-80" viewBox="0 0 24 24" fill="currentColor">
+                                    <svg
+                                        className="w-12 h-12 text-white opacity-80"
+                                        viewBox="0 0 24 24"
+                                        fill="currentColor"
+                                    >
                                         <path d="M8 5v14l11-7z" />
                                     </svg>
                                 </div>

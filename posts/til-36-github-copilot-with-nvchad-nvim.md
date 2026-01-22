@@ -21,11 +21,13 @@ Copilot provides AI-powered code suggestions. Official vim plugin works with Neo
 ## How
 
 **1. Install plugin** (with packer/vim-plug):
+
 ```lua
 use { "github/copilot.vim" }
 ```
 
 **2. Add to init.lua:**
+
 ```lua
 -- Prevent default mappings
 vim.g.copilot_assume_mapped = true
@@ -37,6 +39,7 @@ vim.keymap.set("i", "<C-l>", "<Plug>(copilot-suggest)", { nowait = true })
 ```
 
 **3. Authenticate:**
+
 ```vim
 :Copilot setup
 ```

@@ -25,6 +25,7 @@ mongo --quiet --eval 'db.getMongo().getDBNames().forEach(function(i){db.getSibli
 ```
 
 **For MongoDB 5+ (mongosh):**
+
 ```sh
 mongosh --quiet --eval 'db.getMongo().getDBNames().forEach(i=>db.getSiblingDB(i).dropDatabase())'
 ```

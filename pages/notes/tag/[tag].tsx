@@ -1,6 +1,6 @@
+import { NextSeo } from 'next-seo';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { NextSeo } from 'next-seo';
 
 import Layout from 'components/Layout';
 
@@ -60,8 +60,12 @@ export default function TagPage({ tag, siteTitle }: TagPageProps) {
                                     Tag filtering coming soon
                                 </h2>
                                 <p className="text-base-content/70 mb-6">
-                                    This feature is under development. In the meantime, you can browse{' '}
-                                    <Link href="/notes" className="link link-primary">
+                                    This feature is under development. In the
+                                    meantime, you can browse{' '}
+                                    <Link
+                                        href="/notes"
+                                        className="link link-primary"
+                                    >
                                         all notes
                                     </Link>
                                     .

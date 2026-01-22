@@ -21,15 +21,18 @@ TypeORM doesn't natively support database functions in selects. This workaround 
 ## How
 
 **1. Add virtual column to entity:**
+
 ```typescript
 @Column('int', { insert: false, readonly: true })
 public qty: number;
 ```
 
 **2. Select UDF in QueryBuilder:**
+
 ```typescript
-repository.createQueryBuilder('user')
-  .addSelect('dbo.udfFindTotalQty(user.id)', 'user_qty')
+repository
+  .createQueryBuilder("user")
+  .addSelect("dbo.udfFindTotalQty(user.id)", "user_qty")
   .getManyAndCount();
 ```
 

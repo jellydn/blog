@@ -17,10 +17,10 @@ _template: post
 ## Usage
 
 ```javascript
-const argv = require('yargs-parser')(process.argv.slice(2));
+const argv = require("yargs-parser")(process.argv.slice(2));
 
 module.exports = async (callback) => {
-  const name = argv?.n || 'World';
+  const name = argv?.n || "World";
   callback(`Hello ${name}`);
 };
 ```

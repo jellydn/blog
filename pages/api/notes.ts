@@ -27,19 +27,24 @@ export default async function handler(
             sort: 'date',
         });
 
-        const posts: TinaPost[] = response.data.postsConnection.edges.map((edge: any) => ({
-            _sys: {
-                filename: edge.node._sys.filename,
-            },
-            title: edge.node.title,
-            description: edge.node.description,
-            date: edge.node.date,
-            tag: edge.node.tag,
-            hero_image: edge.node.hero_image,
-        }));
+        const posts: TinaPost[] = response.data.postsConnection.edges.map(
+            (edge: any) => ({
+                _sys: {
+                    filename: edge.node._sys.filename,
+                },
+                title: edge.node.title,
+                description: edge.node.description,
+                date: edge.node.date,
+                tag: edge.node.tag,
+                hero_image: edge.node.hero_image,
+            }),
+        );
 
         // Cache for 1 hour
-        res.setHeader('Cache-Control', 'public, s-maxage=3600, stale-while-revalidate=3600');
+        res.setHeader(
+            'Cache-Control',
+            'public, s-maxage=3600, stale-while-revalidate=3600',
+        );
         res.status(200).json(posts);
     } catch (error) {
         console.error('Failed to fetch notes from Tina:', error);

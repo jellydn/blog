@@ -22,5 +22,5 @@ Ethers.js doesn't wrap every RPC method. Some like `eth_syncing` need raw calls.
 
 ```typescript
 const provider = new ethers.providers.JsonRpcProvider(RPC_URL);
-const syncing = await provider.send('eth_syncing', []);
+const syncing = await provider.send("eth_syncing", []);
 ```

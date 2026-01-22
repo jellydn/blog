@@ -24,6 +24,7 @@ TypeScript 4.8 introduced stricter type checking that breaks oclif's default `ts
 Replace `tsc` with `tsup`:
 
 **package.json:**
+
 ```json
 {
   "build": "tsup"
@@ -31,6 +32,7 @@ Replace `tsc` with `tsup`:
 ```
 
 **tsup.config.json:**
+
 ```json
 {
   "entry": ["src/**/*.ts"],

@@ -21,7 +21,9 @@ export default async function handler(
     }
 
     if (!YOUTUBE_API_KEY) {
-        return res.status(500).json({ error: 'YouTube API key not configured' });
+        return res
+            .status(500)
+            .json({ error: 'YouTube API key not configured' });
     }
 
     const maxResults = 6;
@@ -44,12 +46,17 @@ export default async function handler(
             id: item.id.videoId,
             title: item.snippet.title,
             description: item.snippet.description,
-            thumbnailUrl: item.snippet.thumbnails.medium?.url || item.snippet.thumbnails.default?.url,
+            thumbnailUrl:
+                item.snippet.thumbnails.medium?.url ||
+                item.snippet.thumbnails.default?.url,
             publishedAt: item.snippet.publishedAt,
         }));
 
         // Cache for 1 hour
-        res.setHeader('Cache-Control', 'public, s-maxage=3600, stale-while-revalidate=3600');
+        res.setHeader(
+            'Cache-Control',
+            'public, s-maxage=3600, stale-while-revalidate=3600',
+        );
         res.status(200).json(videos);
     } catch (error) {
         console.error('Failed to fetch YouTube videos:', error);

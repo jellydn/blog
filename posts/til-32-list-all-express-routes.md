@@ -21,31 +21,36 @@ Express has no built-in method to list routes. Useful for debugging and document
 ## How
 
 ```typescript
-import { Application } from 'express';
+import { Application } from "express";
 
 function split(thing: any): string {
-  if (typeof thing === 'string') return thing;
-  if (thing.fast_slash) return '';
-  const match = thing.toString()
-    .replace('\\/?', '')
-    .replace('(?=\\/|$)', '$')
+  if (typeof thing === "string") return thing;
+  if (thing.fast_slash) return "";
+  const match = thing
+    .toString()
+    .replace("\\/?", "")
+    .replace("(?=\\/|$)", "$")
     .match(/^\/\^((?:\\[._+?^${}()|[\]\\/]|[^._+?^${}()|[\]\\/])*)\$\//);
-  return match ? match[1].replace(/\\(.)/g, '$1') : `<complex:${thing}>`;
+  return match ? match[1].replace(/\\(.)/g, "$1") : `<complex:${thing}>`;
 }
 
 function getRoutesOfLayer(path: string, layer: any): string[] {
   if (layer.method) return [`${layer.method.toUpperCase()} ${path}`];
-  if (layer.route) return getRoutesOfLayer(path + split(layer.route.path), layer.route.stack[0]);
-  if (layer.name === 'router' && layer.handle.stack) {
+  if (layer.route)
+    return getRoutesOfLayer(
+      path + split(layer.route.path),
+      layer.route.stack[0],
+    );
+  if (layer.name === "router" && layer.handle.stack) {
     return layer.handle.stack.flatMap((item: any) =>
-      getRoutesOfLayer(path + split(layer.regexp), item)
+      getRoutesOfLayer(path + split(layer.regexp), item),
     );
   }
   return [];
 }
 
 export function getRoutes(app: Application): string[] {
-  return app._router.stack.flatMap((layer: any) => getRoutesOfLayer('', layer));
+  return app._router.stack.flatMap((layer: any) => getRoutesOfLayer("", layer));
 }
 
 // Usage

@@ -1,11 +1,11 @@
 import matter from 'gray-matter';
 import { NextSeo } from 'next-seo';
 
-import Layout from 'components/Layout';
 import { Button } from 'components/Button';
+import Layout from 'components/Layout';
+import { NotesSection } from 'components/NotesSection';
 import { RepoStars } from 'components/RepoStars';
 import { YoutubeSection } from 'components/YoutubeSection';
-import { NotesSection } from 'components/NotesSection';
 
 import type { BlogPost } from 'components/BlogList';
 import type { VideoPost } from 'components/VideoList';
@@ -182,7 +182,9 @@ const Index = ({
                                                 {project.name}
                                             </h3>
                                             <div className="badge badge-primary gap-1">
-                                                <RepoStars stars={project.stars} />
+                                                <RepoStars
+                                                    stars={project.stars}
+                                                />
                                             </div>
                                         </div>
                                         <p className="text-sm text-base-content/70 line-clamp-2 mb-4">

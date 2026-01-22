@@ -21,14 +21,14 @@ npx new-web-app
 
 ### Options
 
-| Option | Description |
-|--------|-------------|
-| `-n, --name` | Folder name to create |
-| `-a, --airbnb` | Add ESLint + Prettier with Airbnb style |
-| `-t, --tailwind` | Add Tailwind CSS |
-| `-q, --react-query` | Add React Query |
-| `-f, --react-hook-form` | Add React Hook Form |
-| `-s, --storybook` | Add Storybook |
+| Option                  | Description                             |
+| ----------------------- | --------------------------------------- |
+| `-n, --name`            | Folder name to create                   |
+| `-a, --airbnb`          | Add ESLint + Prettier with Airbnb style |
+| `-t, --tailwind`        | Add Tailwind CSS                        |
+| `-q, --react-query`     | Add React Query                         |
+| `-f, --react-hook-form` | Add React Hook Form                     |
+| `-s, --storybook`       | Add Storybook                           |
 
 ### Examples
 

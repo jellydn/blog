@@ -17,6 +17,7 @@ Flutter development involves repetitive commands: clean, build, test, format, li
 ## Usage
 
 **Makefile:**
+
 ```makefile
 .PHONY: all run_dev_web run_dev_mobile run_unit clean upgrade lint format build_dev_mobile help
 
@@ -50,6 +51,7 @@ build_dev_mobile: clean run_unit ## Build dev APK
 ```
 
 **Commands:**
+
 ```sh
 make help        # List all commands
 make run_dev_web # Start web dev server

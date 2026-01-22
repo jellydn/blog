@@ -25,7 +25,8 @@ Enable CORS in html2canvas options:
 ```typescript
 const element = document.getElementById("thread");
 
-window.html2pdf()
+window
+  .html2pdf()
   .set({
     filename: `${id}-${Date.now()}.pdf`,
     html2canvas: {

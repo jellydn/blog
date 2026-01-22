@@ -21,14 +21,16 @@ Logs are hex-encoded. Need ABI to parse them into readable event data.
 ## How
 
 ```typescript
-import { ethers } from 'ethers';
+import { ethers } from "ethers";
 
 const iface = new ethers.utils.Interface(abi);
 
 function decodeLogs(logs: Log[], contractAddress: string) {
   return logs
-    .filter(log => log.address.toLowerCase() === contractAddress.toLowerCase())
-    .map(log => iface.parseLog({ topics: log.topics, data: log.data }))
+    .filter(
+      (log) => log.address.toLowerCase() === contractAddress.toLowerCase(),
+    )
+    .map((log) => iface.parseLog({ topics: log.topics, data: log.data }))
     .filter(Boolean);
 }
 ```

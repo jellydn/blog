@@ -2,9 +2,9 @@ import matter from 'gray-matter';
 import unique from 'just-unique';
 import { NextSeo } from 'next-seo';
 
-import Layout from 'components/Layout';
 import { Badge, getCategory, getCategoryLabel } from 'components/Badge';
 import type { BlogPost } from 'components/BlogList';
+import Layout from 'components/Layout';
 import type { VideoPost } from 'components/VideoList';
 
 type BlogFrontmatter = {
@@ -41,11 +41,7 @@ function isVideoPost(post: BlogPost | VideoPost): post is VideoPost {
     return 'youtube_id' in post.frontmatter;
 }
 
-const BlogPage = ({
-    title,
-    description,
-    items,
-}: BlogPageProps) => {
+const BlogPage = ({ title, description, items }: BlogPageProps) => {
     return (
         <Layout siteTitle={title} siteDescription={description}>
             <NextSeo
@@ -86,7 +82,8 @@ const BlogPage = ({
                         <ul className="space-y-4">
                             {items.map((post) => {
                                 const isVideo = isVideoPost(post);
-                                const isTil = !isVideo && post.slug.startsWith('til-');
+                                const isTil =
+                                    !isVideo && post.slug.startsWith('til-');
 
                                 return (
                                     <li key={post.slug}>
@@ -128,14 +125,13 @@ const BlogPage = ({
                                                         ),
                                                     )}
                                                 </Badge>
-                                                {post.frontmatter.tag?.slice(
-                                                    0,
-                                                    2,
-                                                )?.map((tag: string) => (
-                                                    <Badge key={tag}>
-                                                        {tag}
-                                                    </Badge>
-                                                ))}
+                                                {post.frontmatter.tag
+                                                    ?.slice(0, 2)
+                                                    ?.map((tag: string) => (
+                                                        <Badge key={tag}>
+                                                            {tag}
+                                                        </Badge>
+                                                    ))}
                                             </div>
                                         </a>
                                     </li>
@@ -203,8 +199,10 @@ export async function getStaticProps() {
         (slug) => posts.find((post: BlogPost) => post.slug === slug),
     ) as BlogPost[];
 
-    const uniqueVideos = unique(videos.map((video: VideoPost) => video.slug)).map(
-        (slug) => videos.find((video: VideoPost) => video.slug === slug),
+    const uniqueVideos = unique(
+        videos.map((video: VideoPost) => video.slug),
+    ).map((slug) =>
+        videos.find((video: VideoPost) => video.slug === slug),
     ) as VideoPost[];
 
     // Sort all items by date (newest first)

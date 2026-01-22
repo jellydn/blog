@@ -66,25 +66,28 @@ export function NotesSection({ fallbackPosts }: NotesSectionProps) {
     }, []);
 
     // Convert Tina posts to BlogPost format
-    const displayPosts = posts && posts.length > 0
-        ? posts.map((post) => ({
-              slug: post._sys.filename,
-              frontmatter: {
-                  title: post.title,
-                  description: post.description,
-                  date: post.date,
-                  tag: post.tag,
-                  hero_image: post.hero_image,
-              },
-          }))
-        : fallbackPosts;
+    const displayPosts =
+        posts && posts.length > 0
+            ? posts.map((post) => ({
+                  slug: post._sys.filename,
+                  frontmatter: {
+                      title: post.title,
+                      description: post.description,
+                      date: post.date,
+                      tag: post.tag,
+                      hero_image: post.hero_image,
+                  },
+              }))
+            : fallbackPosts;
 
     return (
         <section className="py-20 bg-base-200/50">
             <div className="container mx-auto px-4 max-w-6xl">
                 <div className="flex justify-between items-center mb-12">
                     <div>
-                        <h2 className="text-4xl font-bold mb-2">Latest Notes</h2>
+                        <h2 className="text-4xl font-bold mb-2">
+                            Latest Notes
+                        </h2>
                         <p className="text-xl text-base-content/70">
                             {posts && posts.length > 0
                                 ? 'Fresh from the notebook'
@@ -116,11 +119,16 @@ export function NotesSection({ fallbackPosts }: NotesSectionProps) {
                                     <span className="badge badge-ghost text-xs">
                                         {getCategory(post.slug)}
                                     </span>
-                                    {post.frontmatter.tag?.slice(0, 2).map((tag: string) => (
-                                        <span key={tag} className="badge badge-outline text-xs">
-                                            {tag}
-                                        </span>
-                                    ))}
+                                    {post.frontmatter.tag
+                                        ?.slice(0, 2)
+                                        .map((tag: string) => (
+                                            <span
+                                                key={tag}
+                                                className="badge badge-outline text-xs"
+                                            >
+                                                {tag}
+                                            </span>
+                                        ))}
                                 </div>
                                 <h3 className="card-title text-lg line-clamp-2">
                                     {post.frontmatter.title}

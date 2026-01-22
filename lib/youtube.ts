@@ -12,7 +12,9 @@ export type YouTubeVideo = {
 const YOUTUBE_API_KEY = process.env.YOUTUBE_API_KEY;
 const CHANNEL_ID = process.env.CHANNEL_ID || 'UC5zpZbIHT3S2J9_6-SdG4vg';
 
-export async function fetchLatestYouTubeVideos(maxResults = 6): Promise<YouTubeVideo[]> {
+export async function fetchLatestYouTubeVideos(
+    maxResults = 6,
+): Promise<YouTubeVideo[]> {
     if (!YOUTUBE_API_KEY) {
         console.warn('YOUTUBE_API_KEY not set, returning empty videos');
         return [];
@@ -37,7 +39,9 @@ export async function fetchLatestYouTubeVideos(maxResults = 6): Promise<YouTubeV
             id: item.id.videoId,
             title: item.snippet.title,
             description: item.snippet.description,
-            thumbnailUrl: item.snippet.thumbnails.medium?.url || item.snippet.thumbnails.default?.url,
+            thumbnailUrl:
+                item.snippet.thumbnails.medium?.url ||
+                item.snippet.thumbnails.default?.url,
             publishedAt: item.snippet.publishedAt,
         }));
     } catch (error) {

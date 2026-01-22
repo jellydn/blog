@@ -21,11 +21,13 @@ Sequence may be behind actual data due to manual inserts or imports.
 ## How
 
 Check current state:
+
 ```sql
 SELECT nextval('public.source_id_seq'), MAX(id) FROM "source";
 ```
 
 Reset sequence:
+
 ```sql
 SELECT SETVAL(
   (SELECT PG_GET_SERIAL_SEQUENCE('"source"', 'id')),

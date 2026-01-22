@@ -25,6 +25,7 @@ git branch -r | grep -v 'main' | sed 's/origin\///' | xargs -I {} git push origi
 ```
 
 **Prune outdated tracking branches first:**
+
 ```sh
 git remote prune origin
 ```
