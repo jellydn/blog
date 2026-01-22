@@ -1,22 +1,43 @@
 import matter from 'gray-matter';
 import unique from 'just-unique';
+import { NextSeo } from 'next-seo';
 
 import BlogList from 'components/BlogList';
 import Layout from 'components/Layout';
 import VideoList from 'components/VideoList';
 
-const Index = ({
-    title,
-    description,
-    allBlogs,
-    allVideos,
-}: {
+import type { BlogPost } from 'components/BlogList';
+import type { VideoPost } from 'components/VideoList';
+
+type IndexProps = {
     title: string;
     description: string;
-    allBlogs: any;
-    allVideos: any;
-}) => (
+    allBlogs: BlogPost[];
+    allVideos: VideoPost[];
+};
+
+const Index = ({ title, description, allBlogs, allVideos }: IndexProps) => (
     <Layout siteTitle={title} siteDescription={description}>
+        <NextSeo
+            title={title}
+            description={description}
+            canonical="https://productsway.com"
+            openGraph={{
+                type: 'website',
+                url: 'https://productsway.com',
+                title,
+                description,
+                images: [
+                    {
+                        url: 'https://productsway.com/og-image.png',
+                        alt: title,
+                    },
+                ],
+            }}
+            twitter={{
+                cardType: 'summary_large_image',
+            }}
+        />
         <section>
             <VideoList allVideos={allVideos} />
             <BlogList allBlogs={allBlogs} />
@@ -33,7 +54,7 @@ export async function getStaticProps() {
         const keys = context.keys();
         const values = keys.map(context);
 
-        const data = keys.map((key, index) => {
+        const data = keys.map((key: string, index: number) => {
             // Create slug from filename
             const slug = key
                 .replace(/^.*[\\/]/, '')
@@ -58,7 +79,7 @@ export async function getStaticProps() {
         const keys = context.keys();
         const values = keys.map(context);
 
-        const data = keys.map((key, index) => {
+        const data = keys.map((key: string, index: number) => {
             // Create slug from filename
             const slug = key
                 .replace(/^.*[\\/]/, '')
@@ -80,12 +101,12 @@ export async function getStaticProps() {
 
     return {
         props: {
-            allBlogs: unique(posts.map((post) => post.slug)).map((slug) =>
-                posts.find((post) => post.slug === slug),
-            ),
-            allVideos: unique(videos.map((post) => post.slug)).map((slug) =>
-                videos.find((post) => post.slug === slug),
-            ),
+            allBlogs: unique(posts.map((post: BlogPost) => post.slug)).map(
+                (slug) => posts.find((post: BlogPost) => post.slug === slug),
+            ) as BlogPost[],
+            allVideos: unique(videos.map((post: VideoPost) => post.slug)).map(
+                (slug) => videos.find((post: VideoPost) => post.slug === slug),
+            ) as VideoPost[],
             title: siteConfig.default.title,
             description: siteConfig.default.description,
         },

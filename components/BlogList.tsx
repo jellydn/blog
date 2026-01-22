@@ -1,12 +1,24 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-const BlogList = ({ allBlogs }: { allBlogs: any }) => {
-    function reformatDate(fullDate) {
-        const date = new Date(fullDate);
-        return date.toDateString().slice(4);
-    }
+type BlogFrontmatter = {
+    title: string;
+    description: string;
+    date: string;
+    hero_image?: string;
+};
 
+type BlogPost = {
+    slug: string;
+    frontmatter: BlogFrontmatter;
+};
+
+function reformatDate(fullDate: string): string {
+    const date = new Date(fullDate);
+    return date.toDateString().slice(4);
+}
+
+const BlogList = ({ allBlogs }: { allBlogs: BlogPost[] }) => {
     return (
         <section className="py-24 px-4 mx-auto max-w-7xl">
             <h2 className="mb-2 text-3xl font-extrabold leading-tight text-gray-900">
@@ -19,7 +31,7 @@ const BlogList = ({ allBlogs }: { allBlogs: any }) => {
                 {allBlogs.map((post) => (
                     <div key={post.slug} id={post.slug}>
                         {post.frontmatter.hero_image && (
-                            <Link passHref href={`/blog/${post.slug}`}>
+                            <Link href={`/blog/${post.slug}`}>
                                 <Image
                                     width="50"
                                     height="30"
@@ -32,7 +44,6 @@ const BlogList = ({ allBlogs }: { allBlogs: any }) => {
                         )}
                         <h2 className="mb-2 text-lg font-semibold text-gray-900">
                             <Link
-                                passHref
                                 href={`/blog/${post.slug}`}
                                 className="text-gray-900 hover:text-purple-700"
                             >
@@ -53,3 +64,4 @@ const BlogList = ({ allBlogs }: { allBlogs: any }) => {
 };
 
 export default BlogList;
+export type { BlogPost, BlogFrontmatter };

@@ -15,7 +15,27 @@ export default function Meta({
             />
             <meta charSet="utf-8" />
             <title>{siteTitle}</title>
-            <meta name="Description" content={siteDescription} />
+            <meta name="description" content={siteDescription} />
+
+            {/* Open Graph / Facebook */}
+            <meta property="og:type" content="website" />
+            <meta property="og:title" content={siteTitle} />
+            <meta property="og:description" content={siteDescription} />
+            <meta
+                property="og:image"
+                content="https://blog.productsway.com/og-image.png"
+            />
+
+            {/* Twitter */}
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta name="twitter:title" content={siteTitle} />
+            <meta name="twitter:description" content={siteDescription} />
+            <meta
+                name="twitter:image"
+                content="https://blog.productsway.com/og-image.png"
+            />
+
+            {/* Favicon */}
             <link
                 rel="apple-touch-icon"
                 sizes="57x57"

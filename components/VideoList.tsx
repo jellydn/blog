@@ -7,12 +7,25 @@ const YoutubeVideo = dynamic(() => import('./YoutubeVideo'), {
     ssr: false,
 });
 
-const VideoList = ({ allVideos }: { allVideos: any }) => {
-    function reformatDate(fullDate) {
-        const date = new Date(fullDate);
-        return date.toDateString().slice(4);
-    }
+type VideoFrontmatter = {
+    title: string;
+    description: string;
+    date: string;
+    hero_image?: string;
+    youtube_id: string;
+};
 
+type VideoPost = {
+    slug: string;
+    frontmatter: VideoFrontmatter;
+};
+
+function reformatDate(fullDate: string): string {
+    const date = new Date(fullDate);
+    return date.toDateString().slice(4);
+}
+
+const VideoList = ({ allVideos }: { allVideos: VideoPost[] }) => {
     return (
         <section className="py-24 px-4 mx-auto max-w-7xl">
             <h2 className="mb-2 text-3xl font-extrabold leading-tight text-gray-900">
@@ -25,7 +38,7 @@ const VideoList = ({ allVideos }: { allVideos: any }) => {
                 {allVideos.map((post) => (
                     <div key={post.slug}>
                         {post.frontmatter.hero_image && (
-                            <Link passHref href={`/video/${post.slug}`}>
+                            <Link href={`/video/${post.slug}`}>
                                 <Image
                                     width="50"
                                     height="30"
@@ -38,7 +51,6 @@ const VideoList = ({ allVideos }: { allVideos: any }) => {
                         )}
                         <h2 className="mb-2 text-lg font-semibold text-gray-900">
                             <Link
-                                passHref
                                 href={`/video/${post.slug}`}
                                 className="text-gray-900 hover:text-purple-700"
                             >
@@ -63,3 +75,4 @@ const VideoList = ({ allVideos }: { allVideos: any }) => {
 };
 
 export default VideoList;
+export type { VideoPost, VideoFrontmatter };

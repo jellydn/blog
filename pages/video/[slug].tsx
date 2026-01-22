@@ -11,32 +11,71 @@ import Image from 'next/image';
 
 import Layout from 'components/Layout';
 
+type VideoFrontmatter = {
+    title: string;
+    description?: string;
+    date: string;
+    author?: string;
+    tag?: string[];
+    hero_image?: string;
+    youtube_id: string;
+};
+
+type VideoTemplateProps = {
+    frontmatter: VideoFrontmatter;
+    markdownBody: string;
+    siteDescription?: string;
+    siteTitle: string;
+    slug: string;
+};
+
+function reformatDate(fullDate: string | number | Date): string {
+    const date = new Date(fullDate);
+    return date.toDateString();
+}
+
 export default function VideoTemplate({
     frontmatter,
     siteDescription,
     markdownBody,
     siteTitle,
-}: {
-    frontmatter: Record<string, any>;
-    markdownBody: string;
-    siteDescription?: string;
-    siteTitle: string;
-}) {
-    function reformatDate(fullDate: string | number | Date) {
-        const date = new Date(fullDate);
-        return date.toDateString();
-    }
-
+    slug,
+}: VideoTemplateProps) {
     // highlight text color
     useEffect(() => {
         Prism.highlightAll();
     }, []);
 
+    const canonicalUrl = `https://productsway.com/video/${slug}`;
+    const ogImage =
+        frontmatter.hero_image ?? 'https://productsway.com/og-image.png';
+
     return (
         <Layout siteTitle={siteTitle}>
             <NextSeo
-                title={`${siteTitle} | ${frontmatter.title}`}
-                description={siteDescription}
+                title={`${frontmatter.title} | ${siteTitle}`}
+                description={frontmatter.description ?? siteDescription}
+                canonical={canonicalUrl}
+                openGraph={{
+                    type: 'article',
+                    url: canonicalUrl,
+                    title: frontmatter.title,
+                    description: frontmatter.description ?? siteDescription,
+                    images: [
+                        {
+                            url: ogImage,
+                            alt: frontmatter.title,
+                        },
+                    ],
+                    article: {
+                        publishedTime: frontmatter.date,
+                        authors: [frontmatter.author ?? 'Dung Huynh Duc'],
+                        tags: frontmatter.tag ?? [],
+                    },
+                }}
+                twitter={{
+                    cardType: 'summary_large_image',
+                }}
             />
             <article className="py-12 px-6 mx-auto w-full max-w-5xl">
                 <div data-theme="dark" className="mb-12">
@@ -52,7 +91,7 @@ export default function VideoTemplate({
                         </div>
                     )}
 
-                    {frontmatter.tag.map((tag: string) => (
+                    {frontmatter.tag?.map((tag: string) => (
                         <div key={tag} className="badge badge-primary">
                             {tag}
                         </div>
@@ -115,18 +154,25 @@ export default function VideoTemplate({
     );
 }
 
-export async function getStaticProps({ ...ctx }) {
-    const { slug } = ctx.params;
+type StaticPropsContext = {
+    params: {
+        slug: string;
+    };
+};
+
+export async function getStaticProps({ params }: StaticPropsContext) {
+    const { slug } = params;
     const content = await import(`../../videos/${slug}.md`);
-    const config = await import(`../../data/config.json`);
+    const config = await import('../../data/config.json');
     const data = matter(content.default);
 
     return {
         props: {
-            siteTitle: config.title,
-            siteDescription: config.description,
+            siteTitle: config.default.title,
+            siteDescription: config.default.description,
             frontmatter: data.data,
             markdownBody: data.content,
+            slug,
         },
     };
 }
@@ -141,7 +187,9 @@ export async function getStaticPaths() {
     );
 
     // create paths with `slug` param
-    const paths = videoSlugs.map((slug: string) => `/video/${slug}`);
+    const paths = videoSlugs.map((slug: string) => ({
+        params: { slug },
+    }));
     return {
         paths,
         fallback: false,

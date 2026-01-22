@@ -17,9 +17,10 @@ const Projects = () => (
                             />
                         </div>
                         <a
-                            target="_bank"
+                            target="_blank"
                             href="https://github.com/jellydn/dapp-starter"
                             className="block overflow-hidden mt-5 bg-gray-700 rounded-md transition duration-500 ease-in-out transform hover:scale-110 hover:-translate-y-1"
+                            rel="noreferrer"
                         >
                             <div className="py-2 px-3 text-sm text-center">
                                 <p className="text-gray-300">
@@ -42,9 +43,10 @@ const Projects = () => (
                             />
                         </div>
                         <a
-                            target="_bank"
+                            target="_blank"
                             href="https://github.com/jellydn/react-dapp"
                             className="block overflow-hidden mt-5 bg-gray-700 rounded-md transition duration-500 ease-in-out transform hover:scale-110 hover:-translate-y-1"
+                            rel="noreferrer"
                         >
                             <div className="py-2 px-3 text-sm text-center">
                                 <p className="text-gray-300">
@@ -69,9 +71,10 @@ const Projects = () => (
                             />
                         </div>
                         <a
-                            target="_bank"
+                            target="_blank"
                             href="https://github.com/jellydn/dapp-token-ico"
                             className="block overflow-hidden mt-5 bg-gray-700 rounded-md transition duration-500 ease-in-out transform hover:scale-110 hover:-translate-y-1"
+                            rel="noreferrer"
                         >
                             <div className="py-2 px-3 text-sm text-center">
                                 <p className="text-gray-300">
@@ -94,9 +97,10 @@ const Projects = () => (
                             />
                         </div>
                         <a
-                            target="_bank"
+                            target="_blank"
                             href="https://github.com/jellydn/new-web-app"
                             className="block overflow-hidden mt-5 bg-gray-700 rounded-md transition duration-500 ease-in-out transform hover:scale-110 hover:-translate-y-1"
+                            rel="noreferrer"
                         >
                             <div className="py-2 px-3 text-sm text-center">
                                 <p className="text-gray-300">
@@ -121,9 +125,10 @@ const Projects = () => (
                             />
                         </div>
                         <a
-                            target="_bank"
+                            target="_blank"
                             href="https://github.com/jellydn/next-validations"
                             className="block overflow-hidden mt-5 bg-gray-700 rounded-md transition duration-500 ease-in-out transform hover:scale-110 hover:-translate-y-1"
+                            rel="noreferrer"
                         >
                             <div className="py-2 px-3 text-sm text-center">
                                 <p className="text-gray-300">
@@ -147,9 +152,10 @@ const Projects = () => (
                             />
                         </div>
                         <a
-                            target="_bank"
+                            target="_blank"
                             href="https://github.com/jellydn/next-swagger-doc"
                             className="block overflow-hidden mt-5 bg-gray-700 rounded-md transition duration-500 ease-in-out transform hover:scale-110 hover:-translate-y-1"
+                            rel="noreferrer"
                         >
                             <div className="py-2 px-3 text-sm text-center">
                                 <p className="text-gray-300">
@@ -199,9 +205,10 @@ const Projects = () => (
                             />
                         </div>
                         <a
-                            target="_bank"
+                            target="_blank"
                             href="https://github.com/jellydn/eth-revert-reason"
                             className="block overflow-hidden mt-5 bg-gray-700 rounded-md transition duration-500 ease-in-out transform hover:scale-110 hover:-translate-y-1"
+                            rel="noreferrer"
                         >
                             <div className="py-2 px-3 text-sm text-center">
                                 <p className="text-gray-300">
@@ -224,9 +231,10 @@ const Projects = () => (
                             />
                         </div>
                         <a
-                            target="_bank"
+                            target="_blank"
                             href="https://github.com/jellydn/vs-code-preset"
                             className="block overflow-hidden mt-5 bg-gray-700 rounded-md transition duration-500 ease-in-out transform hover:scale-110 hover:-translate-y-1"
+                            rel="noreferrer"
                         >
                             <div className="py-2 px-3 text-sm text-center">
                                 <p className="text-gray-300">
@@ -250,9 +258,10 @@ const Projects = () => (
                             />
                         </div>
                         <a
-                            target="_bank"
+                            target="_blank"
                             href="https://github.com/jellydn/use-wait-for-transaction-hash"
                             className="block overflow-hidden mt-5 bg-gray-700 rounded-md transition duration-500 ease-in-out transform hover:scale-110 hover:-translate-y-1"
+                            rel="noreferrer"
                         >
                             <div className="py-2 px-3 text-sm text-center">
                                 <p className="text-gray-300">
@@ -276,9 +285,10 @@ const Projects = () => (
                             />
                         </div>
                         <a
-                            target="_bank"
+                            target="_blank"
                             href="https://github.com/jellydn/next-app-starter"
                             className="block overflow-hidden mt-5 bg-gray-700 rounded-md transition duration-500 ease-in-out transform hover:scale-110 hover:-translate-y-1"
+                            rel="noreferrer"
                         >
                             <div className="py-2 px-3 text-sm text-center">
                                 <p className="text-gray-300">
@@ -303,9 +313,10 @@ const Projects = () => (
                             />
                         </div>
                         <a
-                            target="_bank"
+                            target="_blank"
                             href="https://github.com/jellydn/svelte-kit-test"
                             className="block overflow-hidden mt-5 bg-gray-700 rounded-md transition duration-500 ease-in-out transform hover:scale-110 hover:-translate-y-1"
+                            rel="noreferrer"
                         >
                             <div className="py-2 px-3 text-sm text-center">
                                 <p className="text-gray-300">

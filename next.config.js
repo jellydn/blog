@@ -3,7 +3,12 @@ module.exports = {
     reactStrictMode: true,
     experimental: {},
     images: {
-        domains: ['gyazo.com'],
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: 'gyazo.com',
+            },
+        ],
     },
     webpack(config) {
         config.module.rules.push({
