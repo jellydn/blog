@@ -102,7 +102,7 @@ export default function VideoTemplate({
                             {frontmatter.tag?.map((tag: string) => (
                                 <Link
                                     key={tag}
-                                    href={`/notes/tag/${tag}`}
+                                    href={`/notes/tag/${tag.toLowerCase()}`}
                                     className="badge badge-primary hover:opacity-80"
                                 >
                                     {tag}

@@ -56,9 +56,10 @@ export function NotesList({ items, currentTag }: NotesListProps) {
                                     ?.map((t: string) => (
                                         <Link
                                             key={t}
-                                            href={`/notes/tag/${t}`}
+                                            href={`/notes/tag/${t.toLowerCase()}`}
                                             className={
-                                                currentTag && t === currentTag
+                                                currentTag &&
+                                                t.toLowerCase() === currentTag
                                                     ? 'badge badge-primary'
                                                     : 'badge'
                                             }
