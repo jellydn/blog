@@ -1,54 +1,54 @@
 {
-  "name": "productsway-blog",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "build": "tinacms build && next build",
-    "dev": "tinacms dev -c \"next\"",
-    "develop": "yarn dev",
-    "lint": "next lint",
-    "start": "tinacms build && next start"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
+    "name": "productsway-blog",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "build": "tinacms build && next build",
+        "dev": "tinacms dev -c \"next\"",
+        "develop": "yarn dev",
+        "lint": "next lint",
+        "start": "tinacms build && next start"
+    },
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog"
+        }
+    },
+    "dependencies": {
+        "@giscus/react": "3.0.0",
+        "@happykit/flags": "3.3.0",
+        "@tailwindcss/typography": "0.5.15",
+        "@tinacms/cli": "1.6.11",
+        "daisyui": "4.12.14",
+        "glob": "11.0.0",
+        "gray-matter": "4.0.3",
+        "just-unique": "4.2.0",
+        "kutty": "0.6.0",
+        "lite-youtube-embed": "0.3.3",
+        "next": "15.2.8",
+        "next-seo": "6.6.0",
+        "node-glob": "1.2.0",
+        "prismjs": "1.30.0",
+        "raw-loader": "4.0.2",
+        "react": "18.3.1",
+        "react-dom": "18.3.1",
+        "react-markdown": "9.0.1",
+        "remark-gfm": "4.0.0",
+        "sharp": "0.33.5",
+        "tinacms": "2.4.0"
+    },
+    "devDependencies": {
+        "@biomejs/biome": "1.9.4",
+        "@cloudflare/next-on-pages": "1.13.5",
+        "@fullhuman/postcss-purgecss": "6.0.0",
+        "@types/node": "22.9.0",
+        "@types/react": "18.3.12",
+        "autoprefixer": "10.4.20",
+        "postcss": "8.4.49",
+        "postcss-flexbugs-fixes": "5.0.2",
+        "postcss-preset-env": "10.1.0",
+        "sort-package-json": "2.10.1",
+        "tailwindcss": "3.4.14",
+        "typescript": "5.6.3"
     }
-  },
-  "dependencies": {
-    "@giscus/react": "3.0.0",
-    "@happykit/flags": "3.3.0",
-    "@tailwindcss/typography": "0.5.15",
-    "@tinacms/cli": "1.6.11",
-    "daisyui": "4.12.14",
-    "glob": "11.0.0",
-    "gray-matter": "4.0.3",
-    "just-unique": "4.2.0",
-    "kutty": "0.6.0",
-    "lite-youtube-embed": "0.3.3",
-    "next": "15.2.8",
-    "next-seo": "6.6.0",
-    "node-glob": "1.2.0",
-    "prismjs": "1.30.0",
-    "raw-loader": "4.0.2",
-    "react": "18.3.1",
-    "react-dom": "18.3.1",
-    "react-markdown": "9.0.1",
-    "remark-gfm": "4.0.0",
-    "sharp": "0.33.5",
-    "tinacms": "2.4.0"
-  },
-  "devDependencies": {
-    "@biomejs/biome": "1.9.4",
-    "@cloudflare/next-on-pages": "1.13.5",
-    "@fullhuman/postcss-purgecss": "6.0.0",
-    "@types/node": "22.9.0",
-    "@types/react": "18.3.12",
-    "autoprefixer": "10.4.20",
-    "postcss": "8.4.49",
-    "postcss-flexbugs-fixes": "5.0.2",
-    "postcss-preset-env": "10.1.0",
-    "sort-package-json": "2.10.1",
-    "tailwindcss": "3.4.14",
-    "typescript": "5.6.3"
-  }
 }
