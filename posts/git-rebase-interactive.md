@@ -25,6 +25,7 @@ git rebase -i HEAD~N
 ```
 
 Replace `N` with the number of commits to edit. In the editor:
+
 - `squash` / `s`: combine with previous commit
 - `drop` / `d`: remove commit
 - `reword` / `r`: edit commit message
