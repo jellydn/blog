@@ -2,9 +2,9 @@ import matter from 'gray-matter';
 import unique from 'just-unique';
 import { NextSeo } from 'next-seo';
 
+import type { BlogPost } from 'components/BlogList';
 import Layout from 'components/Layout';
 import { NotesList } from 'components/NotesList';
-import type { BlogPost } from 'components/BlogList';
 import type { VideoPost } from 'components/VideoList';
 
 type BlogFrontmatter = {
