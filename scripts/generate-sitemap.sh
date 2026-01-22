@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Generate sitemap.xml for the blog
+# Generate sitemap.xml for the notes
 # This script scans posts and videos directories and generates sitemap.xml
 
 set -e
@@ -29,7 +29,17 @@ cat >> "$OUTPUT_FILE" << EOF
   </url>
 EOF
 
-# Add blog posts
+# Add notes page
+cat >> "$OUTPUT_FILE" << EOF
+  <url>
+    <loc>${BASE_URL}/notes</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+    <lastmod>${LASTMOD}</lastmod>
+  </url>
+EOF
+
+# Add notes
 if [ -d "$POSTS_DIR" ]; then
     for file in "$POSTS_DIR"/*.md; do
         if [ -f "$file" ]; then
@@ -42,7 +52,7 @@ if [ -d "$POSTS_DIR" ]; then
 
             cat >> "$OUTPUT_FILE" << EOF
   <url>
-    <loc>${BASE_URL}/blog/${slug_url}</loc>
+    <loc>${BASE_URL}/notes/${slug_url}</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <lastmod>${file_date}</lastmod>

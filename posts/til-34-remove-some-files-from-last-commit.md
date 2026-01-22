@@ -5,10 +5,22 @@ tag:
 author: Dung Huynh
 hero_image: /static/til.jpeg
 title: "#TIL 34 - Remove some files from last commit"
-description: >-
-  Sometime, you want to remove some files from last commit. This is a simple
-  trick for you with git command
+description: Undo last commit and unstage files
 _template: post
 ---
 
-    git reset --soft HEAD~1
+## What
+
+Undo the last commit but keep changes as staged modifications.
+
+## Why
+
+Accidentally committed files you want to exclude, or need to amend the commit.
+
+## How
+
+```sh
+git reset --soft HEAD~1
+```
+
+Files return to staging area. Remove unwanted files with `git reset <files>`, then re-commit.

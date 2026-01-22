@@ -6,16 +6,26 @@ tag:
 author: Dung Huynh
 hero_image: /static/til.jpeg
 title: "#TIL 18 - Deploy to heroku from sub directory"
-description: 2 simple steps for deployment to heroku
+description: Deploy monorepo subdirectory to Heroku
 _template: post
 ---
 
-Step 1: Add Heroku git repository
+## What
 
-    # e.g: Add nft-app-api repo
-    heroku git:remote -a nft-app-api
+Deploy a subdirectory (e.g., `server/`) to Heroku from a monorepo.
 
-Step: Deploy from sub folder with git substree
+## Why
 
-    # e.g: server is the sub directory
-    git subtree push --prefix server heroku master
+Heroku expects app root at repository root. Monorepos need custom deployment.
+
+## How
+
+Add Heroku remote:
+```sh
+heroku git:remote -a your-app-name
+```
+
+Deploy subdirectory:
+```sh
+git subtree push --prefix server heroku main
+```

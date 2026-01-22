@@ -6,18 +6,26 @@ tag:
 author: Dung Huynh
 hero_image: /til.jpeg
 title: "#TIL 11 - Mac OSX - Open file from anywhere"
-description: >
-  How to Allow Apps from Anywhere in macOS Gatekeeper (Big Sur, Catalina,
-  Mojave, Sierra, High Sierra)
+description: Bypass macOS Gatekeeper for unsigned apps
 ---
 
-```sh
-    sudo spctl --master-disable
-    sudo spctl --master-enable
-```
+## What
 
-Then run
+Disable Gatekeeper to run apps from unidentified developers.
+
+## Why
+
+Some apps aren't signed or can't be verified by Apple. Gatekeeper blocks them by default.
+
+## How
 
 ```sh
-xattr -cr /Applications/YourApp
+# Disable Gatekeeper
+sudo spctl --master-disable
+
+# Remove app quarantine attributes
+xattr -cr /Applications/YourApp.app
+
+# Re-enable when done
+sudo spctl --master-enable
 ```

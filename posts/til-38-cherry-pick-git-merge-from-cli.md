@@ -6,8 +6,22 @@ tag:
 author: Dung Huynh
 hero_image: /static/til.jpeg
 title: "#TIL 38 - Cherry pick git merge from CLI"
-description: How to use git to cherry pick a merge commit
+description: Cherry-pick a merge commit
 _template: post
 ---
 
-    ❯ git cherry-pick HASH -m 1
+## What
+
+Cherry-pick a merge commit to another branch.
+
+## Why
+
+Sometimes you need the changes from a merge commit without merging the entire branch.
+
+## How
+
+```sh
+git cherry-pick <merge-commit-hash> -m 1
+```
+
+`-m 1` specifies the first parent branch as the source of changes.

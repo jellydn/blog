@@ -6,40 +6,38 @@ tag:
 author: Dung Huynh
 hero_image: /static/new-web-app.png
 title: New Web APP CLI
-description: "Frontend app generator, built on top vitejs"
+description: "React app generator built on Vite"
 ---
 
-Hi there,
+## Context
 
-Recently, I often create react app with [http://vitejs.dev/](http://vitejs.dev/ "http://vitejs.dev/") but it's missing some pre-configuration for me. So that's why I decided to build `new-web-app` CLI.
+Vite is fast, but creating a new app requires additional setup: ESLint, Prettier, Tailwind, Storybook, React Query, React Hook Form. `new-web-app` CLI provides pre-configured templates so you don't have to manually add these tools.
 
-```
+## Usage
+
+```sh
 npx new-web-app
 ```
 
-Simple usage and friendly for developers
+### Options
 
-```
-.New Web App Generator
+| Option | Description |
+|--------|-------------|
+| `-n, --name` | Folder name to create |
+| `-a, --airbnb` | Add ESLint + Prettier with Airbnb style |
+| `-t, --tailwind` | Add Tailwind CSS |
+| `-q, --react-query` | Add React Query |
+| `-f, --react-hook-form` | Add React Hook Form |
+| `-s, --storybook` | Add Storybook |
 
-USAGE
-  $ new-web-app
+### Examples
 
-OPTIONS
-  -a, --airbnb=yes|no           add ESLint, Prettier with Airbnb style (Typescript)
-  -f, --react-hook-form=yes|no  add react-hook-form
-  -h, --help                    show CLI help
-  -n, --name=name               folder name to create
-  -q, --react-query=yes|no      add react-query
-  -s, --storybook=yes|no        add storybook
-  -t, --tailwind=yes|no         add tailwind css
-  -v, --version                 show CLI version
+```sh
+# Full stack with Airbnb style
+npx new-web-app -n=react-app -a=yes -q=yes -t=yes
 
-EXAMPLES
-  $ npx new-web-app -n=react-app -a=yes -q=yes
-  $ npx new-web-app --name=react-app --airbnb=yes --react-query=yes
+# Long form
+npx new-web-app --name=react-app --airbnb=yes --react-query=yes
 ```
 
-Demo
-
-![](https://gyazo.com/2ace08cfb1435f82a1c8e9550f547e44.gif)
+[Demo](https://gyazo.com/2ace08cfb1435f82a1c8e9550f547e44.gif)

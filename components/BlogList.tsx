@@ -6,6 +6,8 @@ type BlogFrontmatter = {
     description: string;
     date: string;
     hero_image?: string;
+    tag?: string[];
+    author?: string;
 };
 
 type BlogPost = {

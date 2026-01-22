@@ -6,17 +6,29 @@ tag:
 author: Dung Huynh
 hero_image: /static/til.jpeg
 title: "#TIL 30 - Merge to videos from CLI with ffmpeg"
-description: Simple command for concat videos
+description: Concatenate videos with ffmpeg
 _template: post
 ---
 
-Step 1: Create a text file for merge. For instance: list.txt
+## What
 
-    file 'video1.mp4'
-    file 'video2.mp4'
+Merge multiple video files into one using ffmpeg.
 
-Step 2: Run the below command
+## Why
 
-    ffmpeg -f concat -safe 0 -i list.txt -c copy video.mp4
+Quick way to combine videos without re-encoding (preserves quality).
 
-More usage on [https://trac.ffmpeg.org/wiki/Concatenate](https://trac.ffmpeg.org/wiki/Concatenate "https://trac.ffmpeg.org/wiki/Concatenate")
+## How
+
+Create `list.txt`:
+```
+file 'video1.mp4'
+file 'video2.mp4'
+```
+
+Run:
+```sh
+ffmpeg -f concat -safe 0 -i list.txt -c copy output.mp4
+```
+
+The `-c copy` flag streams without re-encoding for fast merging.

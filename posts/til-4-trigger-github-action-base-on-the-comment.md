@@ -6,22 +6,31 @@ tag:
 author: Dung Huynh
 hero_image: /static/til.jpeg
 title: "#TIL 4 - Trigger github action base on the comment"
-description: Use github issue comment as the CD/CI
+description: Trigger GitHub Actions via issue comments
 _template: post
 ---
 
-```sh
-    # .github/workflows/comment.yml
-    on:
-      issue_comment:
-        types: [created, edited]
+## What
 
-    name: Deploy action
-    jobs:
-      web-image:
-        name: build and deploy web docker image to AWS ECR
-        runs-on: ubuntu-latest
-        if: github.event.comment.body == 'Build web'
-        steps:
-         ...
+Run GitHub Actions workflows when specific comments are posted on issues/PRs.
+
+## Why
+
+Enable manual deployments via comments without push access or creating branches.
+
+## How
+
+```yaml
+# .github/workflows/comment.yml
+on:
+  issue_comment:
+    types: [created, edited]
+
+name: Deploy action
+jobs:
+  web-image:
+    runs-on: ubuntu-latest
+    if: github.event.comment.body == 'Build web'
+    steps:
+      - run: echo "Deploying..."
 ```

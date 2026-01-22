@@ -11,7 +11,7 @@ module.exports = {
         extend: {},
     },
     daisyui: {
-        themes: ['winter'],
+        themes: ['corporate', 'winter'],
     },
     plugins: [require('@tailwindcss/typography'), require('daisyui')],
 };

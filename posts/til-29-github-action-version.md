@@ -6,31 +6,35 @@ tag:
 author: Dung Huynh
 hero_image: "/static/til.jpeg"
 title: "#TIL 29 - Git version"
-description: How to get version with github action
+description: Generate semantic version from git history
 ---
 
-    # .github/workflows/version.yml
-    name: Git Version
+## What
 
-    on:
-      push:
-        branches:
-          - release
-          - main
+Auto-generate semantic version from git commits in GitHub Actions.
 
-    jobs:
-      version:
-        runs-on: ubuntu-latest
-        steps:
-          - name: Checkout Code
-            uses: actions/checkout@v3
-            with:
-              ref: ${{ github.head_ref }}   # checkout the correct branch name
-              fetch-depth: 0                # fetch the whole repo history
+## Why
 
-          - name: Git Version
-            id: get-version
-            uses: codacy/git-version@2.5.4
+Automate versioning based on commit history and tags.
 
-          - name: New Version
-            run: echo ${{ steps.get-version.outputs.version }}
+## How
+
+```yaml
+name: Git Version
+on:
+  push:
+    branches: [main, release]
+
+jobs:
+  version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - uses: codacy/git-version@2.5.4
+        id: version
+
+      - run: echo "${{ steps.version.outputs.version }}"
+```

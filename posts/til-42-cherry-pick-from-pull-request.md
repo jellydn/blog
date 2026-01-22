@@ -4,52 +4,45 @@ date: "10/16/2023 3:48 PM +0800"
 hero_image: /til.jpeg
 title: "#TIL 42 - Cherry pick from pull request"
 description: >-
-  This is simple trick to cherry pick from pull request
+  Apply PR changes to your branch using hub CLI
 tag:
   - github
   - git
   - hub
 ---
 
-### How to cherry pick from pull request
+## What
 
-#### Installation
+Cherry-pick changes from any GitHub pull request directly to your local branch using `hub am`.
 
-Use Homebrew to install `hub` on macOS:
+## Why
+
+Manual cherry-picking requires finding commits, copying hashes, and handling conflicts. `hub am` downloads and applies PR patches in one command.
+
+## How
+
+### Install hub
 
 ```bash
-  brew install hub
+brew install hub
 ```
 
-#### Configuration
+### Configure
 
-After installing, configure `hub` to work with GitHub by editing the `~/.config/hub` file.
+Edit `~/.config/hub`:
 
-1. **Create or Edit the Configuration File**:
-
-   ```bash
-   vi ~/.config/hub  # You can use any text editor
-   ```
-
-2. **Add Your Configuration**:
-   ```yaml
-   github.com:
-     - user: YOUR_USERNAME
-       oauth_token: ghp_YOUR_TOKEN
-       protocol: https
-   ```
-3. **Save and Exit** the text editor.
-
-#### Cherry pick from pull request
-
-**Use `hub am` Command**: To apply the changes from a specific GitHub pull request to your local branch, use the following command:
-
-```sh
-  hub am -3 GITHUB-URL
+```yaml
+github.com:
+  - user: YOUR_USERNAME
+    oauth_token: ghp_YOUR_TOKEN
+    protocol: https
 ```
 
-Here, `-3` is recommended for three-way merging and `GITHUB-URL` is the URL of the pull request or commit you want to apply.
+### Apply PR
 
-This will download the pull request's patch to a temporary location and then use `git am` to apply it to your local branch.
+```bash
+hub am -3 https://github.com/user/repo/pull/123
+```
 
-Hope this provides a concise and informative explanation.
+- `-3`: three-way merge for better conflict resolution
+- URL: any PR or commit URL

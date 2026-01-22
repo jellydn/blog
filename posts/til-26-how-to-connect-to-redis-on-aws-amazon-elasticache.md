@@ -7,40 +7,30 @@ tag:
 author: Dung Huynh
 hero_image: /static/til.jpeg
 title: "#TIL 26 - How to connect to Redis on AWS (Amazon ElastiCache)"
-description: >-
-  This is common issue on https://github.com/luin/ioredis for connecting to
-  Redis on AWS
+description: Connect ioredis to AWS ElastiCache with TLS
 _template: post
 ---
 
-    import Redis, { RedisOptions } from 'ioredis';
+## What
 
-    const parseRedisCredentials = (url: string, opts: RedisOptions = {}): RedisOptions => {
-    	const { port, hostname, password, pathname } = new URL(url);
-    	const db = pathname.startsWith('/') ? Number(pathname.split('/')[1]) : 0;
-    	const baseOpts = {
-    		port: Number(port),
-    		host: hostname,
-    		password,
-    		db,
-    	};
-    	if (!url.startsWith('rediss://')) {
-    		const { tls: _, ...rest } = opts;
-    		return { ...baseOpts, ...rest };
-    	}
+Connect ioredis to AWS ElastiCache Redis with proper TLS and reconnection handling.
 
-    	return { ...baseOpts, ...opts };
-    };
+## Why
 
-    export const redisClient = new Redis(
-    	parseRedisCredentials(process.env.REDIS_CONNECTION ?? 'redis://localhost:6379', {
-    		lazyConnect: true,
-    		connectTimeout: 15000,
-    		retryStrategy: (times) => Math.min(times * 30, 1000),
-    		reconnectOnError(error) {
-    			const targetErrors = [/READONLY/, /ETIMEDOUT/];
-    			logger.warn(`Redis connection error: ${error.message}`, error);
-    			return targetErrors.some((targetError) => targetError.test(error.message));
-    		},
-    	}),
-    );
+ElastiCache requires TLS (`rediss://`) and needs special handling for connection errors.
+
+## How
+
+```typescript
+import Redis from 'ioredis';
+
+const redisClient = new Redis(process.env.REDIS_URL, {
+  lazyConnect: true,
+  connectTimeout: 15000,
+  retryStrategy: (times) => Math.min(times * 30, 1000),
+  reconnectOnError(err) {
+    // Retry on specific errors
+    return [/READONLY/, /ETIMEDOUT/].some(re => re.test(err.message));
+  },
+});
+```

@@ -5,20 +5,28 @@ tag:
 author: Dung Huynh
 hero_image: /static/til.jpeg
 title: "#TIL 27 - Install Homebrew manually"
-description: Install homebrew without root account
+description: Install Homebrew without sudo
 _template: post
 ---
 
-Clone repo
+## What
 
-    mkdir homebrew && curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C homebrew
+Install Homebrew to a local directory without root access.
 
-or
+## Why
 
-    git clone https://github.com/Homebrew/brew homebrew
+Some servers don't allow sudo. Local installation works without system permissions.
 
-then
+## How
 
-    eval "$(homebrew/bin/brew shellenv)"
-    brew update --force --quiet
-    chmod -R go-w "$(brew --prefix)/share/zsh"
+```sh
+# Clone Homebrew
+git clone https://github.com/Homebrew/brew homebrew
+
+# Add to PATH
+eval "$(homebrew/bin/brew shellenv)"
+
+# Initialize
+brew update --force --quiet
+chmod -R go-w "$(brew --prefix)/share/zsh"
+```

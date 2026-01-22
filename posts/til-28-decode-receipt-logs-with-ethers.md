@@ -6,28 +6,29 @@ tag:
 author: Dung Huynh
 hero_image: /static/til.jpeg
 title: "#TIL 28 - Decode receipt logs with ethers"
-description: How to decode event logs with ABI
+description: Decode event logs with ethers.js
 _template: post
 ---
 
-    import { ethers } from 'ethers';
+## What
 
-    // create an interface with your abi
-    const iface = ACX__factory.createInterface(abi);
+Decode transaction receipt event logs using contract ABI with ethers.js.
 
-    function decodeLogsByEsther(
-      logs: Log[],
-      contractAddress: string,
-    ): Array<ethers.utils.LogDescription & { values?: any }> {
-      logger.info('decodeLogsByEsther', logs);
-      const decodedLogs = logs
-        .filter((log) => log.address.toLowerCase() === contractAddress.toLowerCase()) // only check log if from same smart contract address
-        .map((log) =>
-          iface.parseLog({
-            topics: log.topics,
-            data: log.data,
-          }),
-        );
-      logger.info('decodedLogs', JSON.stringify(decodedLogs, null, 2));
-      return decodedLogs.filter(Boolean);
-    }
+## Why
+
+Logs are hex-encoded. Need ABI to parse them into readable event data.
+
+## How
+
+```typescript
+import { ethers } from 'ethers';
+
+const iface = new ethers.utils.Interface(abi);
+
+function decodeLogs(logs: Log[], contractAddress: string) {
+  return logs
+    .filter(log => log.address.toLowerCase() === contractAddress.toLowerCase())
+    .map(log => iface.parseLog({ topics: log.topics, data: log.data }))
+    .filter(Boolean);
+}
+```

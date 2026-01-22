@@ -7,63 +7,43 @@ tag:
 author: Dung Huynh
 hero_image: ""
 title: Reload page from iframe with cross-domain support
-description: >-
-  On this tutorial, I will share with you a trick to reload parent website from
-  iframe
+description: Trigger parent page reload from iframe
 _template: post
 ---
 
-Hi there,
+## Context
 
-This demo use React as a demonstration but it should work the same for other UI framework or with vanilla JS.
+When an iframe is cross-domain, direct parent access is blocked. Use `postMessage` API with a message listener to communicate between iframe and parent.
 
-At first, we will send a message from the iframe to the parent.
+## Usage
 
-    function App() {
-      return (
-        <div className="App">
-          <header className="App-header">
-            <p>Reload Iframe Example</p>
-            <p>
-              <button
-                type="button"
-                onClick={() => {
-                  window.parent.postMessage("reload-page", "*");
-                }}
-              >
-                Reload
-              </button>
-            </p>
-          </header>
-        </div>
-      );
+**Inside iframe (sender):**
+```typescript
+<button onClick={() => window.parent.postMessage("reload-page", "*")}>
+  Reload Parent
+</button>
+```
+
+**In parent page (receiver):**
+```typescript
+useEffect(() => {
+  const listener = (event: MessageEvent) => {
+    // TODO: Verify event.origin for security
+    if (event.data === 'reload-page') {
+      window.location.reload();
     }
+  };
 
-Then from a UI component, we will use `useEffect` to listen to messages from Iframe.
+  window.addEventListener('message', listener);
+  return () => window.removeEventListener('message', listener);
+}, []);
+```
 
-    useEffect(() => {
-        const listener = (event: any) => {
-          // TODO: check origin source for security
-          if (event.data === 'reload-page') {
-            window.location.reload();
-          }
-        };
+```tsx
+<iframe
+  src="https://your-iframe-url.com"
+  sandbox="allow-same-origin allow-scripts"
+/>
+```
 
-        // listen to reload message on iframe
-        window.addEventListener('message', listener);
-
-        return () => {
-          // clean listener
-          window.removeEventListener('message', listener);
-        };
-      }, []);
-
-      return (
-         <iframe
-              title="Trading System"
-              src={`https://reload-iframe-example.vercel.app`}
-              sandbox="allow-same-origin allow-scripts"
-            />
-       );
-
-That's all :) Cheer.
+**Security:** Replace `"*"` with specific origin in production.

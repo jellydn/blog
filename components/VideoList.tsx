@@ -13,6 +13,8 @@ type VideoFrontmatter = {
     date: string;
     hero_image?: string;
     youtube_id: string;
+    tag?: string[];
+    author?: string;
 };
 
 type VideoPost = {

@@ -6,27 +6,29 @@ tag:
 author: Dung Huynh
 hero_image: /static/til.jpeg
 title: "#TIL 33 - Auto-merge your pull request on GitHub with Renovate bot"
-description: "How to auto merge your PR on Github "
+description: Auto-merge non-major Renovate PRs
 _template: post
 ---
 
-This is a neat trick for auto-merge your pull request on GitHub with Renovate
-bot if that's passed the check (build, linter) for non-major update packages.
+## What
 
-Here is the `renovate.json` file.
+Auto-merge Renovate PRs for minor/patch dependencies when tests pass.
 
-    {
-      "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-      "extends": [
-        "config:base",
-        "group:allNonMajor",
-        ":pinAllExceptPeerDependencies"
-      ],
-      "lockFileMaintenance": {
-        "enabled": true
-      },
-      "automerge": true,
-      "major": {
-        "automerge": false
-      }
-    }
+## Why
+
+Reduce noise in PR list. Safe updates (non-major) can be merged automatically.
+
+## How
+
+**renovate.json:**
+```json
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:base", "group:allNonMajor"],
+  "automerge": true,
+  "major": { "automerge": false }
+}
+```
+
+- `automerge: true` - auto-merge passing PRs
+- `major.automerge: false` - require manual review for major versions

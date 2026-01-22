@@ -8,56 +8,35 @@ hero_image: /static/til.jpeg
 title: >-
   #TIL 20 - How to fix unsupported Scan, storing driver.Value type []uint8 into
   type
-description: This is common issue with sqlx and how to use custom Scan to fix this error
+description: Custom Scan for JSON columns in Go sqlx
 _template: post
 ---
 
-# What
+## What
 
-Recently, I have run into this issue with mapping database fields with a struct.
+Fix "unsupported Scan" error when scanning JSON database columns into custom Go types.
 
-> unsupported Scan, storing driver.Value type \[\]uint8 into type YOUR_STRUCT
->
-> ---
+## Why
 
-# How
+sqlx can't automatically scan JSON/JSONB columns into custom structs. Need custom `Scan` method.
 
-At first, I would suggest checking the document about it [https://jmoiron.github.io/sqlx/#advancedScanning](https://jmoiron.github.io/sqlx/#advancedScanning "https://jmoiron.github.io/sqlx/#advancedScanning")
+## How
 
-then write your custom scan as below. Thanks for a comment on the open Github issue on sqlx repository. I could manage to make it work.
+Implement `sql.Scanner` interface:
 
-    package models
+```go
+type Registries []Registry
 
-    import (
-    	"encoding/json"
-    )
-
-    type Accreditor struct {
-    	ID   int32  `json:"id" db:"id"`
-    	Name string `json:"name" db:"name"`
+func (r *Registries) Scan(src interface{}) error {
+    var data []byte
+    switch v := src.(type) {
+    case []byte:
+        data = v
+    case string:
+        data = []byte(v)
+    case nil:
+        return nil
     }
-
-    type Registries []Registry
-    type AccreditorRegistries struct {
-    	Registries Registries `json:"registries" db:"registries,omitempty"`
-    	Accreditor
-    }
-
-    // advance scan for custom type, refer https://github.com/jmoiron/sqlx/issues/578#issuecomment-562401476
-    func parseJSONToModel(src interface{}, dest interface{}) error {
-    	var data []byte
-
-    	if b, ok := src.([]byte); ok {
-    		data = b
-    	} else if s, ok := src.(string); ok {
-    		data = []byte(s)
-    	} else if src == nil {
-    		return nil
-    	}
-
-    	return json.Unmarshal(data, dest)
-    }
-
-    func (r *Registries) Scan(src interface{}) error {
-    	return parseJSONToModel(src, r)
-    }
+    return json.Unmarshal(data, r)
+}
+```
