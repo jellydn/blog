@@ -2,37 +2,12 @@
 
 import { useEffect, useState } from 'react';
 
-type YouTubeVideo = {
-    id: string;
-    title: string;
-    description: string;
-    thumbnailUrl: string;
-    publishedAt: string;
-};
-
-type VideoPost = {
-    slug: string;
-    frontmatter: {
-        title: string;
-        description: string;
-        date: string;
-        hero_image?: string;
-        youtube_id: string;
-    };
-};
+import type { VideoPost, YouTubeVideo } from 'lib/types';
+import { reformatDateShort } from 'lib/utils/date';
 
 type YoutubeSectionProps = {
     fallbackVideos: VideoPost[];
 };
-
-function reformatDate(fullDate: string): string {
-    const date = new Date(fullDate);
-    return date.toLocaleDateString('en-US', {
-        month: 'short',
-        day: 'numeric',
-        year: 'numeric',
-    });
-}
 
 export function YoutubeSection({ fallbackVideos }: YoutubeSectionProps) {
     const [videos, setVideos] = useState<YouTubeVideo[] | null>(null);
@@ -46,8 +21,8 @@ export function YoutubeSection({ fallbackVideos }: YoutubeSectionProps) {
                     const data = await res.json();
                     setVideos(data);
                 }
-            } catch {
-                // Fallback to static videos
+            } catch (error) {
+                console.error('Failed to fetch YouTube videos:', error);
             } finally {
                 setLoading(false);
             }
@@ -160,7 +135,7 @@ export function YoutubeSection({ fallbackVideos }: YoutubeSectionProps) {
                                     {video.frontmatter.title}
                                 </h3>
                                 <p className="text-sm text-base-content/70">
-                                    {reformatDate(video.frontmatter.date)}
+                                    {reformatDateShort(video.frontmatter.date)}
                                 </p>
                             </div>
                         </a>

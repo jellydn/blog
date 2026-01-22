@@ -2,49 +2,13 @@
 
 import { useEffect, useState } from 'react';
 
-type TinaPost = {
-    _sys: {
-        filename: string;
-    };
-    title: string;
-    description: string;
-    date: string;
-    tag?: string[];
-    hero_image?: string;
-};
-
-type BlogPost = {
-    slug: string;
-    frontmatter: {
-        title: string;
-        description: string;
-        date: string;
-        tag?: string[];
-        hero_image?: string;
-    };
-};
+import { getCategory, getCategoryLabel } from 'components/Badge';
+import type { BlogPost, TinaPost } from 'lib/types';
+import { reformatDateShort } from 'lib/utils/date';
 
 type NotesSectionProps = {
     fallbackPosts: BlogPost[];
 };
-
-function reformatDate(fullDate: string): string {
-    const date = new Date(fullDate);
-    return date.toLocaleDateString('en-US', {
-        month: 'short',
-        day: 'numeric',
-        year: 'numeric',
-    });
-}
-
-function isTil(slug: string): boolean {
-    return slug.startsWith('til-');
-}
-
-function getCategory(slug: string): string {
-    if (isTil(slug)) return 'TIL';
-    return 'Guide';
-}
 
 export function NotesSection({ fallbackPosts }: NotesSectionProps) {
     const [posts, setPosts] = useState<TinaPost[] | null>(null);
@@ -57,8 +21,8 @@ export function NotesSection({ fallbackPosts }: NotesSectionProps) {
                     const data = await res.json();
                     setPosts(data);
                 }
-            } catch {
-                // Fallback to static posts
+            } catch (error) {
+                console.error('Failed to fetch notes:', error);
             }
         }
 
@@ -117,7 +81,9 @@ export function NotesSection({ fallbackPosts }: NotesSectionProps) {
                             <div className="card-body">
                                 <div className="flex items-center gap-2 mb-2">
                                     <span className="badge badge-ghost text-xs">
-                                        {getCategory(post.slug)}
+                                        {getCategoryLabel(
+                                            getCategory(post.slug),
+                                        )}
                                     </span>
                                     {post.frontmatter.tag
                                         ?.slice(0, 2)
@@ -137,7 +103,7 @@ export function NotesSection({ fallbackPosts }: NotesSectionProps) {
                                     {post.frontmatter.description}
                                 </p>
                                 <p className="text-sm text-base-content/60">
-                                    {reformatDate(post.frontmatter.date)}
+                                    {reformatDateShort(post.frontmatter.date)}
                                 </p>
                             </div>
                         </a>

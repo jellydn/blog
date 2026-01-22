@@ -11,6 +11,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import Layout from 'components/Layout';
+import { reformatDateLong } from 'lib/utils/date';
 
 type VideoFrontmatter = {
     title: string;
@@ -29,15 +30,6 @@ type VideoTemplateProps = {
     siteTitle: string;
     slug: string;
 };
-
-function reformatDate(fullDate: string | number | Date): string {
-    const date = new Date(fullDate);
-    return date.toLocaleDateString('en-US', {
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric',
-    });
-}
 
 export default function VideoTemplate({
     frontmatter,
@@ -132,7 +124,7 @@ export default function VideoTemplate({
                                     {frontmatter.author ?? 'Dung Huynh'}
                                 </p>
                                 <p className="text-sm text-base-content/70">
-                                    {reformatDate(frontmatter.date)}
+                                    {reformatDateLong(frontmatter.date)}
                                 </p>
                             </div>
                             <a

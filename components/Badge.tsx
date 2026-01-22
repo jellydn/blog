@@ -33,10 +33,13 @@ export function Badge({ children, variant, className = '' }: BadgeProps) {
     );
 }
 
-export function getCategory(slug: string, hasYoutubeId?: boolean): Category {
-    if (hasYoutubeId) return 'video';
+export function getCategory(slug: string): Category {
     if (slug.startsWith('til-')) return 'til';
     return 'guide';
+}
+
+export function isTil(slug: string): boolean {
+    return slug.startsWith('til-');
 }
 
 export function getCategoryLabel(category: Category): string {

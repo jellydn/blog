@@ -9,6 +9,25 @@ type YouTubeVideo = {
     publishedAt: string;
 };
 
+interface YouTubePlaylistItem {
+    snippet: {
+        title: string;
+        description: string;
+        publishedAt: string;
+        thumbnails: {
+            medium?: { url: string };
+            default?: { url: string };
+        };
+        resourceId: {
+            videoId: string;
+        };
+    };
+}
+
+interface YouTubeApiResponse {
+    items: YouTubePlaylistItem[];
+}
+
 const YOUTUBE_API_KEY = process.env.YOUTUBE_API_KEY;
 const CHANNEL_ID = process.env.CHANNEL_ID || 'UC5zpZbIHT3S2J9_6-SdG4vg';
 
@@ -27,13 +46,12 @@ export default async function handler(
     }
 
     const maxResults = 6;
-    const url = new URL('https://www.googleapis.com/youtube/v3/search');
+    const uploadsPlaylistId = `UU${CHANNEL_ID.replace(/^UC/, '')}`;
+    const url = new URL('https://www.googleapis.com/youtube/v3/playlistItems');
     url.searchParams.set('key', YOUTUBE_API_KEY);
-    url.searchParams.set('channelId', CHANNEL_ID);
+    url.searchParams.set('playlistId', uploadsPlaylistId);
     url.searchParams.set('part', 'snippet');
-    url.searchParams.set('order', 'date');
     url.searchParams.set('maxResults', maxResults.toString());
-    url.searchParams.set('type', 'video');
 
     try {
         const response = await fetch(url.toString());
@@ -42,15 +60,17 @@ export default async function handler(
         }
         const data = await response.json();
 
-        const videos: YouTubeVideo[] = data.items.map((item: any) => ({
-            id: item.id.videoId,
-            title: item.snippet.title,
-            description: item.snippet.description,
-            thumbnailUrl:
-                item.snippet.thumbnails.medium?.url ||
-                item.snippet.thumbnails.default?.url,
-            publishedAt: item.snippet.publishedAt,
-        }));
+        const videos: YouTubeVideo[] = (data as YouTubeApiResponse).items.map(
+            (item: YouTubePlaylistItem) => ({
+                id: item.snippet.resourceId.videoId,
+                title: item.snippet.title,
+                description: item.snippet.description,
+                thumbnailUrl:
+                    item.snippet.thumbnails.medium?.url ||
+                    item.snippet.thumbnails.default?.url,
+                publishedAt: item.snippet.publishedAt,
+            }),
+        );
 
         // Cache for 1 hour
         res.setHeader(

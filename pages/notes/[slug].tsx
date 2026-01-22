@@ -9,8 +9,9 @@ import gfm from 'remark-gfm';
 
 import Link from 'next/link';
 
-import { Badge } from 'components/Badge';
+import { Badge, isTil } from 'components/Badge';
 import Layout from 'components/Layout';
+import { reformatDateShort } from 'lib/utils/date';
 
 type BlogFrontmatter = {
     title: string;
@@ -28,19 +29,6 @@ type BlogTemplateProps = {
     siteTitle: string;
     slug: string;
 };
-
-function reformatDate(fullDate: string | number | Date): string {
-    const date = new Date(fullDate);
-    return date.toLocaleDateString('en-US', {
-        year: 'numeric',
-        month: 'short',
-        day: 'numeric',
-    });
-}
-
-function isTil(slug: string): boolean {
-    return slug.startsWith('til-');
-}
 
 export default function BlogTemplate({
     frontmatter,
@@ -124,7 +112,7 @@ export default function BlogTemplate({
                         {frontmatter.title}
                     </h1>
                     <p className="text-base-content/60">
-                        {reformatDate(frontmatter.date)}
+                        {reformatDateShort(frontmatter.date)}
                         {frontmatter.author && ` · ${frontmatter.author}`}
                     </p>
                 </header>

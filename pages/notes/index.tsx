@@ -6,6 +6,7 @@ import { Badge, getCategory, getCategoryLabel } from 'components/Badge';
 import type { BlogPost } from 'components/BlogList';
 import Layout from 'components/Layout';
 import type { VideoPost } from 'components/VideoList';
+import { reformatDateShort } from 'lib/utils/date';
 
 type BlogFrontmatter = {
     title: string;
@@ -27,15 +28,6 @@ type BlogPageProps = {
     description: string;
     items: (BlogPost | VideoPost)[];
 };
-
-function reformatDate(fullDate: string): string {
-    const date = new Date(fullDate);
-    return date.toLocaleDateString('en-US', {
-        month: 'short',
-        day: 'numeric',
-        year: 'numeric',
-    });
-}
 
 function isVideoPost(post: BlogPost | VideoPost): post is VideoPost {
     return 'youtube_id' in post.frontmatter;
@@ -96,7 +88,7 @@ const BlogPage = ({ title, description, items }: BlogPageProps) => {
                                             className="flex items-center gap-4 p-4 bg-base-200 rounded-lg hover:bg-base-300 transition-colors group"
                                         >
                                             <span className="text-sm text-base-content/60 whitespace-nowrap min-w-[100px]">
-                                                {reformatDate(
+                                                {reformatDateShort(
                                                     post.frontmatter.date,
                                                 )}
                                             </span>
