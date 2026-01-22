@@ -10,11 +10,9 @@ const Layout: React.FC<{
     <>
         <Meta siteTitle={siteTitle} siteDescription={siteDescription} />
         <main className="font-sans bg-white">
-            <div>
-                <Header siteTitle={siteTitle} />
-                {children}
-                <Footer />
-            </div>
+            <Header siteTitle={siteTitle} />
+            {children}
+            <Footer />
         </main>
     </>
 );

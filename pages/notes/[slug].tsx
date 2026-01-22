@@ -95,7 +95,7 @@ export default function BlogTemplate({
                                     d="M10 19l-7-7m0 0l7-7m-7 7h18"
                                 />
                             </svg>
-                            Back to Blog
+                            Back to Notes
                         </Link>
                     </div>
                 </nav>
@@ -105,7 +105,13 @@ export default function BlogTemplate({
                     <div className="flex items-center gap-3 mb-4">
                         {til && <Badge variant="til">TIL</Badge>}
                         {frontmatter.tag?.map((tag: string) => (
-                            <Badge key={tag}>{tag}</Badge>
+                            <Link
+                                key={tag}
+                                href={`/notes/tag/${tag}`}
+                                className="badge badge-primary hover:opacity-80"
+                            >
+                                {tag}
+                            </Link>
                         ))}
                     </div>
                     <h1 className="text-3xl md:text-4xl font-bold mb-4">

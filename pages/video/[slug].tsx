@@ -100,9 +100,13 @@ export default function VideoTemplate({
                     <div className="container mx-auto px-4 py-8 max-w-6xl">
                         <div className="flex flex-wrap gap-2 mb-4">
                             {frontmatter.tag?.map((tag: string) => (
-                                <span key={tag} className="badge badge-primary">
+                                <Link
+                                    key={tag}
+                                    href={`/notes/tag/${tag}`}
+                                    className="badge badge-primary hover:opacity-80"
+                                >
                                     {tag}
-                                </span>
+                                </Link>
                             ))}
                         </div>
                         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">

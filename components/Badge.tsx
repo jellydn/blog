@@ -33,8 +33,7 @@ export function Badge({ children, variant, className = '' }: BadgeProps) {
     );
 }
 
-export function getCategory(slug: string, isVideo?: boolean): Category {
-    if (isVideo) return 'video';
+export function getCategory(slug: string, _isVideo?: boolean): Category {
     if (slug.startsWith('til-')) return 'til';
     return 'guide';
 }
