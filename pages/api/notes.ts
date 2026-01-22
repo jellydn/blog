@@ -23,12 +23,12 @@ export default async function handler(
 
     try {
         const response = await client.queries.postsConnection({
-            first: 6,
+            first: 100, // Get more posts
             sort: 'date',
         });
 
-        const posts: TinaPost[] = response.data.postsConnection.edges.map(
-            (edge: any) => ({
+        const posts: TinaPost[] = response.data.postsConnection.edges
+            .map((edge: any) => ({
                 _sys: {
                     filename: edge.node._sys.filename,
                 },
@@ -37,8 +37,8 @@ export default async function handler(
                 date: edge.node.date,
                 tag: edge.node.tag,
                 hero_image: edge.node.hero_image,
-            }),
-        );
+            }))
+            .reverse(); // Newest first
 
         // Cache for 1 hour
         res.setHeader(

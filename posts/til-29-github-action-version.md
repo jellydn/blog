@@ -1,5 +1,5 @@
 ---
-date: 07/25/2022 11:27 AM +0800
+date: "07/25/2022 11:27 AM +0800"
 tag:
   - github action
   - semver
