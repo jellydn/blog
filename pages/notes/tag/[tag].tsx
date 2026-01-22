@@ -90,17 +90,19 @@ export default function TagPage({
 }
 
 export async function getStaticPaths() {
+    const path = await import('path');
     const { globSync } = await import('glob');
-    const matter = (await import('gray-matter')).default;
+    const fs = await import('fs');
 
-    const posts = globSync('../../posts/**/*.md', { cwd: __dirname });
+    const postsDir = path.join(process.cwd(), 'posts');
+    const posts = globSync(`${postsDir}/*.md`);
     const allTags = new Set<string>();
 
     for (const file of posts) {
-        const content = await import(file);
-        const { data } = matter(content.default);
+        const content = fs.readFileSync(file, 'utf-8');
+        const { data } = matter(content);
         if (data.tag) {
-            data.tag.forEach((tag: string) => allTags.add(tag));
+            data.tag.forEach((tag: string) => allTags.add(tag.toLowerCase()));
         }
     }
 
@@ -179,10 +181,13 @@ export async function getStaticProps({ params }: { params: { tag: string } }) {
             new Date(a.frontmatter.date).getTime(),
     ) as (BlogPost | VideoPost)[];
 
-    // Filter by tag
+    // Filter by tag (case-insensitive)
     const taggedItems = allItems.filter(
         (item) =>
-            item.frontmatter.tag && item.frontmatter.tag.includes(params.tag),
+            item.frontmatter.tag &&
+            item.frontmatter.tag.some(
+                (t: string) => t.toLowerCase() === params.tag,
+            ),
     );
 
     return {
