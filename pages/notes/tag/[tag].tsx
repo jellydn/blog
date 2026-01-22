@@ -93,12 +93,11 @@ export async function getStaticPaths() {
     const { globSync } = await import('glob');
     const matter = (await import('gray-matter')).default;
 
-    const posts = globSync('posts/**/*.md', { cwd: __dirname });
+    const posts = globSync('../../posts/**/*.md', { cwd: __dirname });
     const allTags = new Set<string>();
 
     for (const file of posts) {
-        const filePath = file.replace('posts/', '../posts/');
-        const content = await import(filePath);
+        const content = await import(file);
         const { data } = matter(content.default);
         if (data.tag) {
             data.tag.forEach((tag: string) => allTags.add(tag));
