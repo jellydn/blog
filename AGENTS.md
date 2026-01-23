@@ -74,16 +74,16 @@ pnpm exec biome-check
 
 ```typescript
 // Relative imports for local files
-import Layout from '././Layout';
+import Layout from "././Layout";
 
 // Alias imports (configured in tsconfig)
-import { client } from '../tina/__generated__/client';
+import { client } from "../tina/__generated__/client";
 
 // Standard library
-import React from 'react';
+import React from "react";
 
 // Third-party (alphabetical within groups)
-import { useState } from 'react';
+import { useState } from "react";
 ```
 
 ### Formatting (Biome)

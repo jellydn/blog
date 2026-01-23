@@ -7,7 +7,7 @@ tag: ["Tip"]
 hero_image: "https://i.ytimg.com/vi/9ppxGrNvzWU/mqdefault.jpg"
 ---
 
-- Brave browser: 
-https://brave.com/
+- Brave browser:
+  https://brave.com/
 - designMode: On (live editing any websites)
 - capture node screenshot (only take screenshot an element)

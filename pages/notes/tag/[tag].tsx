@@ -30,11 +30,7 @@ type TagPageProps = {
     items: (BlogPost | VideoPost)[];
 };
 
-export default function TagPage({
-    tag,
-    title,
-    items,
-}: TagPageProps) {
+export default function TagPage({ tag, title, items }: TagPageProps) {
     return (
         <Layout siteTitle={title}>
             <NextSeo

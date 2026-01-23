@@ -16,7 +16,7 @@ Explore the latest advancements in CopilotChat.nvim v3, a game-changing update f
 00:30 - Evolution of CopilotChat.nvim
 A brief history: From the Python-based V1 to the Lua-powered V2 and the innovative V3.
 
-01:00 - My config 
+01:00 - My config
 https://github.com/jellydn/my-nvim-ide/blob/main/lua/plugins/copilot-chat.lua
 
 03:52 - Features & Agents Demonstrations

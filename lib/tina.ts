@@ -14,7 +14,16 @@ export async function fetchLatestPosts(limit = 6): Promise<TinaPost[]> {
         });
 
         return response.data.postsConnection.edges.map(
-            (edge: TinaEdge<{ _sys: { filename: string }; title?: string; description?: string; date?: string; tag?: string[]; hero_image?: string }>) => ({
+            (
+                edge: TinaEdge<{
+                    _sys: { filename: string };
+                    title?: string;
+                    description?: string;
+                    date?: string;
+                    tag?: string[];
+                    hero_image?: string;
+                }>,
+            ) => ({
                 _sys: { filename: edge.node?._sys.filename ?? '' },
                 title: edge.node?.title ?? '',
                 description: edge.node?.description ?? '',
@@ -36,7 +45,17 @@ export async function fetchLatestVideos(limit = 6): Promise<TinaVideo[]> {
         });
 
         return response.data.videosConnection.edges.map(
-            (edge: TinaEdge<{ _sys: { filename: string }; title?: string; description?: string; date?: string; youtube_id?: string; tag?: string[]; hero_image?: string }>) => ({
+            (
+                edge: TinaEdge<{
+                    _sys: { filename: string };
+                    title?: string;
+                    description?: string;
+                    date?: string;
+                    youtube_id?: string;
+                    tag?: string[];
+                    hero_image?: string;
+                }>,
+            ) => ({
                 _sys: { filename: edge.node?._sys.filename ?? '' },
                 title: edge.node?.title ?? '',
                 description: edge.node?.description ?? '',
