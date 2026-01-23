@@ -7,15 +7,26 @@ tag:
 author: Dung Huynh
 hero_image: /static/til.jpeg
 title: "#TIL 6 - Delete all users from AWS Cognito"
-description: Delete all cognito user from AWS CLI
+description: Bulk delete Cognito users via AWS CLI
 _template: post
 ---
 
+## What
+
+Delete all users from an AWS Cognito user pool using CLI.
+
+## Why
+
+Useful for clearing test data during development or testing.
+
+## How
+
 ```sh
-    #!/bin/sh
-    aws cognito-idp list-users --user-pool-id POOL_ID | jq -r '.Users | .[] | .Username' |
-    while read uname; do
-      echo "Deleting $uname";
-      aws cognito-idp admin-delete-user --user-pool-id POOL_ID --username $uname;
+aws cognito-idp list-users --user-pool-id POOL_ID \
+  | jq -r '.Users | .[] | .Username' \
+  | while read uname; do
+      aws cognito-idp admin-delete-user \
+        --user-pool-id POOL_ID \
+        --username "$uname"
     done
 ```

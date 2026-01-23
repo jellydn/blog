@@ -29,5 +29,8 @@
             "quoteStyle": "single",
             "attributePosition": "auto"
         }
+    },
+    "files": {
+        "ignore": ["tina/__generated__/**"]
     }
 }

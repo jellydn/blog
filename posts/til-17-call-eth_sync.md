@@ -6,17 +6,21 @@ tag:
 author: Dung Huynh
 hero_image: /static/til.jpeg
 title: "#TIL 17 - Call eth_sync"
-description: How to call eth_syncing with ethersjs
+description: Call unsupported ETH RPC methods with ethers.js
 _template: post
 ---
 
-Hi there,
+## What
 
-There is a case you want to call some ETH RPC API but [ethersjs](https://docs.ethers.io/v5/ "Ethers") doesn't support it. If you check their document and couldn't find some `eth_SOMETHING` then this is a solution for you.
+Call Ethereum JSON-RPC methods not directly exposed by ethers.js.
 
-Below is an example for calling `eth_syncing` with ethersjs.
+## Why
 
-    const ethersHttpProvider = new ethers.providers.JsonRpcProvider(httpProviderUrl);
-    const syncing = await ethersHttpProvider.send('eth_syncing', []);
+Ethers.js doesn't wrap every RPC method. Some like `eth_syncing` need raw calls.
 
-Enjoy and have a nice day.
+## How
+
+```typescript
+const provider = new ethers.providers.JsonRpcProvider(RPC_URL);
+const syncing = await provider.send("eth_syncing", []);
+```

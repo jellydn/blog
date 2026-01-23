@@ -6,8 +6,20 @@ tag:
 author: Dung Huynh
 hero_image: /static/til.jpeg
 title: "#TIL 25 - Yarn global upgrade all packages"
-description: How to upgrade all global packages with yarn
+description: Upgrade all global Yarn packages
 _template: post
 ---
 
-    npx yarn-upgrade-all -g
+## What
+
+Upgrade all globally installed Yarn packages to their latest versions.
+
+## Why
+
+Yarn has no built-in command to upgrade all global packages at once.
+
+## How
+
+```sh
+npx yarn-upgrade-all -g
+```

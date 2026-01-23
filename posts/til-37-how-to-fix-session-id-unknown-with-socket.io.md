@@ -6,17 +6,29 @@ tag:
 author: Dung Huynh
 hero_image: /static/til.jpeg
 title: "#TIL 37 - How to fix Session ID unknown with socket.io"
-description: >-
-  Without enabling sticky-session, you will experience HTTP 400 errors due to
-  "Session ID unknown"
+description: Fix Socket.io session errors in multi-server setups
 _template: post
 ---
 
-If you're using Socket.io in your web application, you may encounter an issue where the Session ID is unknown. The solution is disabling HTTP long-polling and using only WebSockets for communication between the client and server.
+## What
 
-    // client-side
-    const socket = io({
-      transports: ["websocket"] // HTTP long-polling is disabled
-    });
+Fix "Session ID unknown" errors in Socket.io deployments.
 
-The root cause is enabling "sticky session" if HTTP long-polling is enabled (which is the default). You can read more about why sticky sessions are required and how to implement them in the Socket.io documentation: [**https://socket.io/docs/v4/using-multiple-nodes/#why-is-sticky-session-required**](https://socket.io/docs/v4/using-multiple-nodes/#why-is-sticky-session-required "https://socket.io/docs/v4/using-multiple-nodes/#why-is-sticky-session-required")
+## Why
+
+HTTP long-polling requires sticky sessions. Without load balancer affinity, requests hit different servers causing session mismatch.
+
+## How
+
+Disable HTTP long-polling, use WebSockets only:
+
+```typescript
+// Client-side
+const socket = io({
+  transports: ["websocket"],
+});
+```
+
+WebSockets maintain persistent connection, eliminating the need for sticky sessions.
+
+[Reference](https://socket.io/docs/v4/using-multiple-nodes/)

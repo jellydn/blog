@@ -6,22 +6,29 @@ tag:
 author: Dung Huynh
 hero_image: /static/til.jpeg
 title: "#TIL 12 - Fix the SSH issue with droplet on Digital Ocean "
-description: "This issue is really annoying. Hopefully, this will help someone like me."
+description: Enable password authentication for SSH
 _template: post
 ---
 
-I have sent an email to Digital Ocean for support but not much help for me. Luckly, I found out the way after reading a comment from [the community question.](https://www.digitalocean.com/community/questions/error-permission-denied-publickey-when-i-try-to-ssh)
+## What
 
-(Ubuntu 18.04):
+Fix "Permission denied (publickey)" SSH error by enabling password authentication.
+
+## Why
+
+New droplets disable password auth. If you lose your SSH key or can't use key-based auth, you're locked out.
+
+## How
+
+Edit `/etc/ssh/sshd_config`:
 
 ```sh
-    sudo nano /etc/ssh/sshd_config
-    PermitRootLogin prohibit-password to PermitRootLogin yes
-    PasswordAuthentication no to PasswordAuthentication yes
+PermitRootLogin yes
+PasswordAuthentication yes
 ```
 
-then, restart ssh service:
+Restart SSH:
 
-```
-    sudo service ssh restart
+```sh
+sudo service ssh restart
 ```

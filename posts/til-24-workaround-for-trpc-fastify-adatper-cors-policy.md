@@ -5,41 +5,47 @@ tag:
   - trpc
 author: Dung Huynh
 hero_image: /static/til.jpeg
-title: "#TIL 24 - Workaround for tRPC Fastify adatper CORS policy"
-description: "Handling CORS and CORS preflight requests "
+title: "#TIL 24 - Workaround for tRPC Fastify adapter CORS policy"
+description: Handle CORS preflight in tRPC Fastify adapter
 _template: post
 ---
 
-    void app.register(fp(fastifyTRPCPlugin), {
-      prefix: "/trpc",
-      trpcOptions: {
-        router: appRouter,
-        createContext,
-        responseMeta(opts: any) {
-          if (
-            opts.errors?.[0]?.code === "METHOD_NOT_SUPPORTED" &&
-            String(opts.errors?.[0]?.message ?? "").includes(
-              "Unexpected request method OPTIONS"
-            )
-          ) {
-            return {
-              status: 204,
-              headers: {
-                "Access-Control-Allow-Headers": "Content-Type",
-                "access-control-allow-origin": "*",
-                vary: "Origin",
-              },
-            };
-          }
+## What
 
-          return {
-            // Enable CORS, refer https://github.com/trpc/trpc/issues/623#issuecomment-878639248
-            headers: {
-              "Access-Control-Allow-Headers": "Content-Type",
-              "access-control-allow-origin": "*",
-              vary: "Origin",
-            },
-          };
+Fix CORS preflight (OPTIONS) requests in tRPC with Fastify adapter.
+
+## Why
+
+tRPC Fastify adapter doesn't handle OPTIONS requests by default, causing browser CORS errors.
+
+## How
+
+```typescript
+app.register(fp(fastifyTRPCPlugin), {
+  prefix: "/trpc",
+  trpcOptions: {
+    router: appRouter,
+    responseMeta({ errors }) {
+      // Handle OPTIONS preflight
+      if (errors?.[0]?.code === "METHOD_NOT_SUPPORTED") {
+        return {
+          status: 204,
+          headers: {
+            "Access-Control-Allow-Headers": "Content-Type",
+            "access-control-allow-origin": "*",
+            vary: "Origin",
+          },
+        };
+      }
+      // Regular CORS headers
+      return {
+        headers: {
+          "Access-Control-Allow-Headers": "Content-Type",
+          "access-control-allow-origin": "*",
+          vary: "Origin",
         },
-      },
-    });
+      };
+    },
+  },
+});
+```

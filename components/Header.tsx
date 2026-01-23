@@ -1,133 +1,181 @@
-import { useFlags } from 'flags/client';
 import Link from 'next/link';
+import { useState } from 'react';
+
+const navLinks = [
+    { name: 'Home', href: '/' },
+    { name: 'Notes', href: '/notes' },
+    { name: 'Videos', href: '/videos' },
+    { name: 'Blog', href: 'https://blog.productsway.com/', external: true },
+];
+
+const socialLinks = [
+    {
+        name: 'GitHub',
+        href: 'https://github.com/jellydn',
+        icon: (
+            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+            </svg>
+        ),
+    },
+    {
+        name: 'Twitter',
+        href: 'https://twitter.com/jellydn',
+        icon: (
+            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+            </svg>
+        ),
+    },
+];
 
 export default function Header({ siteTitle }: { siteTitle: string }) {
-    const { flags } = useFlags();
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     return (
-        <div className="mb-2 shadow-lg navbar bg-neutral text-neutral-content">
-            <a
-                rel="me"
-                className="hidden"
-                href="https://mastodon.online/@jellydn"
-            >
-                Mastodon
-            </a>
-            <Link href="/" legacyBehavior>
-                <div className="flex-1 px-2 mx-2">
-                    <svg
-                        className="w-6 h-6 sm:w-6 sm:h-6"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                    >
-                        <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                        />
-                    </svg>
-                    <span className="ml-2 text-lg font-bold">{siteTitle}</span>
-                </div>
-            </Link>
-            <div className="flex-none px-2 mx-2">
-                <div className="hidden items-stretch lg:flex">
-                    <Link href="/" legacyBehavior>
-                        <button
-                            type="button"
-                            className="btn btn-ghost btn-sm rounded-btn"
-                        >
-                            Home
-                        </button>
-                    </Link>
-                    <a
-                        target="_blank"
-                        href="/resume.pdf"
-                        className="btn btn-ghost btn-sm rounded-btn"
-                        rel="noreferrer"
-                    >
-                        Resume
-                    </a>
-                    <a
-                        target="_blank"
-                        href="https://blog.productsway.com/"
-                        className="btn btn-ghost btn-sm rounded-btn"
-                        rel="noreferrer"
-                    >
-                        Blog
-                    </a>
-                    <a
-                        target="_blank"
-                        href="https://www.youtube.com/c/ITManVietnam"
-                        className="btn btn-ghost btn-sm rounded-btn"
-                        rel="noreferrer"
-                    >
-                        YouTube Channel
-                    </a>
-                    {flags?.it_man_shop && (
-                        <a
-                            target="_blank"
-                            href="https://bit.ly/m/itman"
-                            className="btn btn-ghost btn-sm rounded-btn"
-                            rel="noreferrer"
-                        >
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                className="w-6 h-6"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                                strokeWidth={2}
-                            >
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
-                                />
-                            </svg>
-                            ITMan Shop
-                        </a>
-                    )}
-                    <a
-                        target="_blank"
-                        href="https://www.polywork.com/dunghd"
-                        className="btn btn-ghost btn-sm rounded-btn"
-                        rel="noreferrer"
+        <header className="sticky top-0 z-50 w-full border-b border-base-300 bg-base-100/95 backdrop-blur">
+            <div className="container mx-auto px-4">
+                <div className="flex h-16 items-center justify-between">
+                    {/* Logo */}
+                    <Link
+                        href="/"
+                        className="flex items-center gap-2 font-semibold text-base-content hover:text-primary transition-colors"
                     >
                         <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="w-6 h-6"
+                            className="w-5 h-5"
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke="currentColor"
-                            strokeWidth={2}
                         >
                             <path
                                 strokeLinecap="round"
                                 strokeLinejoin="round"
-                                d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                                strokeWidth="2"
+                                d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
                             />
                         </svg>
-                    </a>
-                </div>
-            </div>
-            <div className="flex-none">
-                <a
-                    target="_blank"
-                    href="https://github.com/jellydn"
-                    className="btn btn-square btn-ghost"
-                    rel="noreferrer"
-                >
-                    <svg
-                        className="w-5 h-5 fill-current sm:w-6 sm:h-6"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 512 512"
+                        <span>{siteTitle}</span>
+                    </Link>
+
+                    {/* Desktop Navigation */}
+                    <nav className="hidden md:flex items-center gap-6">
+                        {navLinks.map((link) =>
+                            (link as { external?: boolean }).external ? (
+                                <a
+                                    key={link.href}
+                                    href={link.href}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-sm text-base-content/70 hover:text-primary transition-colors"
+                                >
+                                    {link.name}
+                                </a>
+                            ) : (
+                                <Link
+                                    key={link.href}
+                                    href={link.href}
+                                    className="text-sm text-base-content/70 hover:text-primary transition-colors"
+                                >
+                                    {link.name}
+                                </Link>
+                            ),
+                        )}
+                    </nav>
+
+                    {/* Social Links - Desktop */}
+                    <div className="hidden md:flex items-center gap-4">
+                        {socialLinks.map((social) => (
+                            <a
+                                key={social.name}
+                                href={social.href}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-base-content/70 hover:text-primary transition-colors"
+                                aria-label={social.name}
+                            >
+                                {social.icon}
+                            </a>
+                        ))}
+                    </div>
+
+                    {/* Mobile Menu Button */}
+                    <button
+                        type="button"
+                        className="md:hidden p-2 text-base-content/70 hover:text-primary transition-colors"
+                        onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                        aria-label="Toggle menu"
                     >
-                        <path d="M256,32C132.3,32,32,134.9,32,261.7c0,101.5,64.2,187.5,153.2,217.9a17.56,17.56,0,0,0,3.8.4c8.3,0,11.5-6.1,11.5-11.4,0-5.5-.2-19.9-.3-39.1a102.4,102.4,0,0,1-22.6,2.7c-43.1,0-52.9-33.5-52.9-33.5-10.2-26.5-24.9-33.6-24.9-33.6-19.5-13.7-.1-14.1,1.4-14.1h.1c22.5,2,34.3,23.8,34.3,23.8,11.2,19.6,26.2,25.1,39.6,25.1a63,63,0,0,0,25.6-6c2-14.8,7.8-24.9,14.2-30.7-49.7-5.8-102-25.5-102-113.5,0-25.1,8.7-45.6,23-61.6-2.3-5.8-10-29.2,2.2-60.8a18.64,18.64,0,0,1,5-.5c8.1,0,26.4,3.1,56.6,24.1a208.21,208.21,0,0,1,112.2,0c30.2-21,48.5-24.1,56.6-24.1a18.64,18.64,0,0,1,5,.5c12.2,31.6,4.5,55,2.2,60.8,14.3,16.1,23,36.6,23,61.6,0,88.2-52.4,107.6-102.3,113.3,8,7.1,15.2,21.1,15.2,42.5,0,30.7-.3,55.5-.3,63,0,5.4,3.1,11.5,11.4,11.5a19.35,19.35,0,0,0,4-.4C415.9,449.2,480,363.1,480,261.7,480,134.9,379.7,32,256,32Z" />
-                    </svg>
-                </a>
+                        <svg
+                            className="w-5 h-5"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                        >
+                            {mobileMenuOpen ? (
+                                <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    d="M6 18L18 6M6 6l12 12"
+                                />
+                            ) : (
+                                <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    d="M4 6h16M4 12h16M4 18h16"
+                                />
+                            )}
+                        </svg>
+                    </button>
+                </div>
+
+                {/* Mobile Menu */}
+                {mobileMenuOpen && (
+                    <div className="md:hidden py-4 border-t border-base-300">
+                        <nav className="flex flex-col space-y-4 mb-4">
+                            {navLinks.map((link) =>
+                                (link as { external?: boolean }).external ? (
+                                    <a
+                                        key={link.href}
+                                        href={link.href}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-sm text-base-content/70 hover:text-primary transition-colors"
+                                        onClick={() => setMobileMenuOpen(false)}
+                                    >
+                                        {link.name}
+                                    </a>
+                                ) : (
+                                    <Link
+                                        key={link.href}
+                                        href={link.href}
+                                        className="text-sm text-base-content/70 hover:text-primary transition-colors"
+                                        onClick={() => setMobileMenuOpen(false)}
+                                    >
+                                        {link.name}
+                                    </Link>
+                                ),
+                            )}
+                        </nav>
+                        <div className="flex gap-4 pt-4 border-t border-base-300">
+                            {socialLinks.map((social) => (
+                                <a
+                                    key={social.name}
+                                    href={social.href}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-base-content/70 hover:text-primary transition-colors"
+                                    aria-label={social.name}
+                                    onClick={() => setMobileMenuOpen(false)}
+                                >
+                                    {social.icon}
+                                </a>
+                            ))}
+                        </div>
+                    </div>
+                )}
             </div>
-        </div>
+        </header>
     );
 }

@@ -2,23 +2,12 @@ import dynamic from 'next/dynamic';
 import Image from 'next/image';
 import Link from 'next/link';
 
+import type { VideoFrontmatter, VideoPost } from 'lib/types';
+
 const YoutubeVideo = dynamic(() => import('./YoutubeVideo'), {
     loading: () => <div>Loading...</div>,
     ssr: false,
 });
-
-type VideoFrontmatter = {
-    title: string;
-    description: string;
-    date: string;
-    hero_image?: string;
-    youtube_id: string;
-};
-
-type VideoPost = {
-    slug: string;
-    frontmatter: VideoFrontmatter;
-};
 
 function reformatDate(fullDate: string): string {
     const date = new Date(fullDate);
@@ -52,7 +41,7 @@ const VideoList = ({ allVideos }: { allVideos: VideoPost[] }) => {
                         <h2 className="mb-2 text-lg font-semibold text-gray-900">
                             <Link
                                 href={`/video/${post.slug}`}
-                                className="text-gray-900 hover:text-purple-700"
+                                className="text-gray-900 hover:text-current"
                             >
                                 {post.frontmatter.title}
                             </Link>

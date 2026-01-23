@@ -8,20 +8,23 @@ hero_image: /static/til.jpeg
 title: >-
   #TIL 19 - How to fix Android Studio missing essential plugin
   org.jetbrains.android
-description: This is the issue which I got when upgraded Android Studio
+description: Fix Android Studio plugin error after upgrade
 _template: post
 ---
 
-This is an issue which people often get when upgrading Android Studio. Here are 2 steps for fixing this on Mac OSX.
+## What
 
-> Step 1:
->
-> cd \~/Library/Application\\ Support/AndroidStudio4.0
+Fix "missing essential plugin" error after Android Studio upgrade.
 
-> Step 2:
->
-> rm disabled_plugins.txt
+## Why
 
-Then restart Android Studio.
+Upgrade may disable plugins incorrectly. The `disabled_plugins.txt` file blocks required plugins.
 
-Cheers.
+## How
+
+```sh
+cd ~/Library/Application\ Support/AndroidStudio*.*
+rm disabled_plugins.txt
+```
+
+Restart Android Studio. Adjust version number in path as needed.

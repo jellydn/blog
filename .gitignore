@@ -89,3 +89,4 @@ node_modules
 .claude/settings.local.json
 .claude/skills/vercel-react-best-practices
 .claude/skills/web-design-guidelines
+tsconfig.tsbuildinfo

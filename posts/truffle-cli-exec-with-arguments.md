@@ -6,16 +6,28 @@ tag:
 author: Dung Huynh
 hero_image: ""
 title: Truffle CLI exec with arguments
-description: Workaround for Truffle CLI exec with arguments
+description: Pass arguments to Truffle exec scripts
 _template: post
 ---
 
->     const argv = require('yargs-parser')(process.argv.slice(2));
->
->     /**
->      * Usage: `truffle exec hello.js -n=Dung [--network <name>] [--compile]`,
->      */
->     module.exports = async (callback) => {
->       let name = argv?.n || 'World!';
->       callback(`Hello ${name}`);
->     };
+## Context
+
+`truffle exec` doesn't support CLI arguments natively. Use `yargs-parser` to parse `process.argv` in your script.
+
+## Usage
+
+```javascript
+const argv = require("yargs-parser")(process.argv.slice(2));
+
+module.exports = async (callback) => {
+  const name = argv?.n || "World";
+  callback(`Hello ${name}`);
+};
+```
+
+```sh
+truffle exec hello.js -n=Dung --network development
+```
+
+- `-n=Dung`: Custom argument
+- `--network`: Standard Truffle option (still works)

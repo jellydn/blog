@@ -6,20 +6,32 @@ tag:
 author: Dung Huynh
 hero_image: /static/til.jpeg
 title: "#TIL 21 - How to fix PostgreSQL duplicate key violates (out of sync)"
-description: This is quite tricky to get to this issue
+description: Fix PostgreSQL sequence out of sync
 _template: post
 ---
 
-# Why
+## What
 
-For some reason, we could have an issue with the primary key auto-generated.
+Fix "duplicate key violates unique constraint" when primary key sequence is out of sync.
 
-# How
+## Why
 
-Check the next primary key value
+Sequence may be behind actual data due to manual inserts or imports.
 
-    SELECT nextval('public.source_id_seq'), MAX(id) FROM "source";
+## How
 
-Then adjust the value
+Check current state:
 
-     SELECT SETVAL((SELECT PG_GET_SERIAL_SEQUENCE('"source"', 'id')), (SELECT (MAX("id") + 1) FROM "source"), FALSE);
+```sql
+SELECT nextval('public.source_id_seq'), MAX(id) FROM "source";
+```
+
+Reset sequence:
+
+```sql
+SELECT SETVAL(
+  (SELECT PG_GET_SERIAL_SEQUENCE('"source"', 'id')),
+  (SELECT (MAX("id") + 1) FROM "source"),
+  FALSE
+);
+```

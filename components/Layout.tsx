@@ -1,8 +1,6 @@
 import Footer from './Footer';
 import Header from './Header';
-import HeroIntro from './HeroIntro';
 import Meta from './Meta';
-import Projects from './Projects';
 
 const Layout: React.FC<{
     siteTitle: string;
@@ -12,13 +10,9 @@ const Layout: React.FC<{
     <>
         <Meta siteTitle={siteTitle} siteDescription={siteDescription} />
         <main className="font-sans bg-white">
-            <div>
-                <Header siteTitle={siteTitle} />
-                <HeroIntro />
-                {children}
-                <Projects />
-                <Footer />
-            </div>
+            <Header siteTitle={siteTitle} />
+            {children}
+            <Footer />
         </main>
     </>
 );

@@ -8,24 +8,24 @@ tag:
 author: Dung Huynh
 hero_image: /static/til.jpeg
 title: "#TIL 14 - 4 simple steps for backup/restore WordPress website"
-description: Use Updraftplus wordpress plugin and EasyEngine
+description: Migrate WordPress with UpdraftPlus and EasyEngine
 _template: post
 ---
 
-**Step 1:**
+## What
 
-Backup website to Google Driver with [https://updraftplus.com](https://updraftplus.com "https://updraftplus.com")
+Migrate WordPress site to a new server using backup plugin.
 
-**Step 2:**
+## Why
 
-Sign up a **100$ free** on [https://linode.com/syntax](https://linode.com/syntax "https://linode.com/syntax"), credit to [https://syntax.fm/show/380/potluck-moist-code-memoization-ready-for-full-time-deadlines-design-ethics-react-components-video-hosting-local-fonts-more](https://syntax.fm/show/380/potluck-moist-code-memoization-ready-for-full-time-deadlines-design-ethics-react-components-video-hosting-local-fonts-more "https://syntax.fm/show/380/potluck-moist-code-memoization-ready-for-full-time-deadlines-design-ethics-react-components-video-hosting-local-fonts-more")
+Easy migration without manual file/database exports. Works across hosts.
 
-**Step 3:**
+## How
 
-Create a new node and use [https://easyengine.io/handbook/internal/ssl/](https://easyengine.io/handbook/internal/ssl/ "https://easyengine.io/handbook/internal/ssl/") to quickly create a new website
-
-    ee site create yourwebsite.com --type=wp --ssl=le
-
-**Step 4:**
-
-Login in and install Updraftplus on the new website. Then connect with Google Driver and rescan remote storage. Finally, press **Restore** and follow the step on UI.
+1. **Backup** with UpdraftPlus plugin to Google Drive
+2. **Create new server** (e.g., Linode with $100 credit)
+3. **Install WordPress** with EasyEngine:
+   ```sh
+   ee site create yourwebsite.com --type=wp --ssl=le
+   ```
+4. **Install UpdraftPlus** on new site, connect Google Drive, then restore
