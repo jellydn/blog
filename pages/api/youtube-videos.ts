@@ -1,32 +1,7 @@
-// YouTube API route for fetching latest videos
 import type { NextApiRequest, NextApiResponse } from 'next';
 
-type YouTubeVideo = {
-    id: string;
-    title: string;
-    description: string;
-    thumbnailUrl: string;
-    publishedAt: string;
-};
-
-interface YouTubePlaylistItem {
-    snippet: {
-        title: string;
-        description: string;
-        publishedAt: string;
-        thumbnails: {
-            medium?: { url: string };
-            default?: { url: string };
-        };
-        resourceId: {
-            videoId: string;
-        };
-    };
-}
-
-interface YouTubeApiResponse {
-    items: YouTubePlaylistItem[];
-}
+import type { YouTubeVideo } from 'lib/types';
+import type { YouTubeApiItem } from 'lib/youtube';
 
 const YOUTUBE_API_KEY = process.env.YOUTUBE_API_KEY;
 const CHANNEL_ID = process.env.CHANNEL_ID;
@@ -40,9 +15,7 @@ export default async function handler(
     }
 
     if (!YOUTUBE_API_KEY) {
-        return res
-            .status(500)
-            .json({ error: 'YouTube API key not configured' });
+        return res.status(500).json({ error: 'API key not configured' });
     }
 
     const maxResults = 6;
@@ -60,8 +33,8 @@ export default async function handler(
         }
         const data = await response.json();
 
-        const videos: YouTubeVideo[] = (data as YouTubeApiResponse).items.map(
-            (item: YouTubePlaylistItem) => ({
+        const videos: YouTubeVideo[] = data.items.map(
+            (item: YouTubeApiItem) => ({
                 id: item.snippet.resourceId.videoId,
                 title: item.snippet.title,
                 description: item.snippet.description,
@@ -72,14 +45,12 @@ export default async function handler(
             }),
         );
 
-        // Cache for 1 hour
         res.setHeader(
             'Cache-Control',
             'public, s-maxage=3600, stale-while-revalidate=3600',
         );
         res.status(200).json(videos);
-    } catch (error) {
-        console.error('Failed to fetch YouTube videos:', error);
-        res.status(500).json({ error: 'Failed to fetch YouTube videos' });
+    } catch {
+        res.status(500).json({ error: 'Failed to fetch videos' });
     }
 }

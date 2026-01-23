@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 
 import { getCategory, getCategoryLabel } from 'components/Badge';
 import type { BlogPost, TinaPost } from 'lib/types';
-import { reformatDateShort } from 'lib/utils/date';
+import { formatDate } from 'lib/utils/date';
 
 type NotesSectionProps = {
     fallbackPosts: BlogPost[];
@@ -21,15 +21,14 @@ export function NotesSection({ fallbackPosts }: NotesSectionProps) {
                     const data = await res.json();
                     setPosts(data);
                 }
-            } catch (error) {
-                console.error('Failed to fetch notes:', error);
+            } catch {
+                // Silent fail, use fallback
             }
         }
 
         fetchPosts();
     }, []);
 
-    // Convert Tina posts to BlogPost format
     const displayPosts =
         posts && posts.length > 0
             ? posts.map((post) => ({
@@ -103,7 +102,7 @@ export function NotesSection({ fallbackPosts }: NotesSectionProps) {
                                     {post.frontmatter.description}
                                 </p>
                                 <p className="text-sm text-base-content/60">
-                                    {reformatDateShort(post.frontmatter.date)}
+                                    {formatDate(post.frontmatter.date)}
                                 </p>
                             </div>
                         </a>

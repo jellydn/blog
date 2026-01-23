@@ -11,7 +11,7 @@ import Link from 'next/link';
 
 import { Badge, isTil } from 'components/Badge';
 import Layout from 'components/Layout';
-import { reformatDateShort } from 'lib/utils/date';
+import { formatDate } from 'lib/utils/date';
 
 type BlogFrontmatter = {
     title: string;
@@ -118,7 +118,7 @@ export default function BlogTemplate({
                         {frontmatter.title}
                     </h1>
                     <p className="text-base-content/60">
-                        {reformatDateShort(frontmatter.date)}
+                        {formatDate(frontmatter.date)}
                         {frontmatter.author && ` · ${frontmatter.author}`}
                     </p>
                 </header>

@@ -9,6 +9,7 @@ import { YoutubeSection } from 'components/YoutubeSection';
 
 import type { BlogPost } from 'components/BlogList';
 import type { VideoPost } from 'components/VideoList';
+import { dedupeBySlug } from 'lib/utils/array';
 import reposData from '../data/repos.json';
 
 type IndexProps = {
@@ -278,7 +279,6 @@ export async function getStaticProps() {
             const document = matter(value.default);
             return {
                 frontmatter: document.data,
-                markdownBody: document.content,
                 slug,
             };
         });
@@ -300,7 +300,6 @@ export async function getStaticProps() {
             const document = matter(value.default);
             return {
                 frontmatter: document.data,
-                markdownBody: document.content,
                 slug,
             };
         });
@@ -308,19 +307,10 @@ export async function getStaticProps() {
         // @ts-expect-error require.context is a webpack function
     })(require.context('../videos', true, /\.md$/));
 
-    const dedupePosts = (items: BlogPost[]): BlogPost[] => {
-        const seen = new Set<string>();
-        return items.filter((post) => {
-            if (seen.has(post.slug)) return false;
-            seen.add(post.slug);
-            return true;
-        });
-    };
-
     return {
         props: {
-            allBlogs: dedupePosts(posts as BlogPost[]),
-            allVideos: dedupePosts(videos as VideoPost[]),
+            allBlogs: dedupeBySlug(posts as BlogPost[]).slice(0, 6),
+            allVideos: dedupeBySlug(videos as VideoPost[]).slice(0, 6),
             title: siteConfig.default.title,
             description: siteConfig.default.description,
             repos: reposData,

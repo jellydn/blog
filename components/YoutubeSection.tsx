@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 
 import type { VideoPost, YouTubeVideo } from 'lib/types';
-import { reformatDateShort } from 'lib/utils/date';
+import { formatDate } from 'lib/utils/date';
 
 type YoutubeSectionProps = {
     fallbackVideos: VideoPost[];
@@ -21,8 +21,8 @@ export function YoutubeSection({ fallbackVideos }: YoutubeSectionProps) {
                     const data = await res.json();
                     setVideos(data);
                 }
-            } catch (error) {
-                console.error('Failed to fetch YouTube videos:', error);
+            } catch {
+                // Silent fail, use fallback
             } finally {
                 setLoading(false);
             }
@@ -64,7 +64,6 @@ export function YoutubeSection({ fallbackVideos }: YoutubeSectionProps) {
         );
     }
 
-    // Use YouTube API data if available, otherwise fallback
     const displayVideos =
         videos && videos.length > 0
             ? videos.map((v) => ({
@@ -103,7 +102,7 @@ export function YoutubeSection({ fallbackVideos }: YoutubeSectionProps) {
                     </a>
                 </div>
                 <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-                    {displayVideos.map((video) => (
+                    {displayVideos.map((video: VideoPost) => (
                         <a
                             key={video.slug}
                             href={`https://www.youtube.com/watch?v=${video.frontmatter.youtube_id}`}
@@ -135,7 +134,7 @@ export function YoutubeSection({ fallbackVideos }: YoutubeSectionProps) {
                                     {video.frontmatter.title}
                                 </h3>
                                 <p className="text-sm text-base-content/70">
-                                    {reformatDateShort(video.frontmatter.date)}
+                                    {formatDate(video.frontmatter.date)}
                                 </p>
                             </div>
                         </a>

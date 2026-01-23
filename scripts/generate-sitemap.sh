@@ -1,94 +1,60 @@
 #!/bin/bash
-
-# Generate sitemap.xml for the notes
-# This script scans posts and videos directories and generates sitemap.xml
-
 set -e
 
 BASE_URL="https://productsway.com"
 OUTPUT_FILE="public/sitemap.xml"
-POSTS_DIR="posts"
-VIDEOS_DIR="videos"
-
-# Get current date for lastmod
 LASTMOD=$(date +%Y-%m-%d)
 
-# Start XML
+extract_date() {
+    local file="$1"
+    local frontmatter_date=$(grep '^date:' "$file" | head -1 | sed 's/date: *["'\'']*\([^"'\'']*\)["'\'']*/\1/' | sed 's/ *$//' | tr -d '"')
+
+    if [[ -n "$frontmatter_date" ]]; then
+        echo "$frontmatter_date" | cut -d'T' -f1
+    else
+        date -r "$file" +%Y-%m-%d 2>/dev/null || echo "$LASTMOD"
+    fi
+}
+
+add_url() {
+    local path="$1"
+    local priority="$2"
+    local changefreq="${3:-daily}"
+    local lastmod="${4:-$LASTMOD}"
+
+    cat >> "$OUTPUT_FILE" << EOF
+  <url>
+    <loc>${BASE_URL}${path}</loc>
+    <changefreq>${changefreq}</changefreq>
+    <priority>${priority}</priority>
+    <lastmod>${lastmod}</lastmod>
+  </url>
+EOF
+}
+
 cat > "$OUTPUT_FILE" << 'EOF'
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 EOF
 
-# Add homepage
-cat >> "$OUTPUT_FILE" << EOF
-  <url>
-    <loc>${BASE_URL}/</loc>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
-    <lastmod>${LASTMOD}</lastmod>
-  </url>
-EOF
+add_url "/" "1.0"
+add_url "/notes" "0.9"
+add_url "/videos" "0.9"
 
-# Add notes page
-cat >> "$OUTPUT_FILE" << EOF
-  <url>
-    <loc>${BASE_URL}/notes</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-    <lastmod>${LASTMOD}</lastmod>
-  </url>
-EOF
+for dir_path in "posts:/notes" "videos:/video"; do
+    IFS=':' read -r dir url_prefix <<< "$dir_path"
+    if [ -d "$dir" ]; then
+        for file in "$dir"/*.md; do
+            [ -f "$file" ] || continue
+            slug=$(basename "$file" .md | sed 's/ /-/g')
+            add_url "/${url_prefix}/${slug}" "0.8" "weekly" "$(extract_date "$file")"
+        done
+    fi
+done
 
-# Add notes
-if [ -d "$POSTS_DIR" ]; then
-    for file in "$POSTS_DIR"/*.md; do
-        if [ -f "$file" ]; then
-            # Extract slug from filename
-            slug=$(basename "$file" .md)
-            # Get file modification date
-            file_date=$(date -r "$file" +%Y-%m-%d 2>/dev/null || echo "$LASTMOD")
-            # Convert spaces to hyphens in URL
-            slug_url=$(echo "$slug" | sed 's/ /-/g')
-
-            cat >> "$OUTPUT_FILE" << EOF
-  <url>
-    <loc>${BASE_URL}/notes/${slug_url}</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>${file_date}</lastmod>
-  </url>
-EOF
-        fi
-    done
-fi
-
-# Add video pages
-if [ -d "$VIDEOS_DIR" ]; then
-    for file in "$VIDEOS_DIR"/*.md; do
-        if [ -f "$file" ]; then
-            # Extract slug from filename
-            slug=$(basename "$file" .md)
-            # Get file modification date
-            file_date=$(date -r "$file" +%Y-%m-%d 2>/dev/null || echo "$LASTMOD")
-            # Convert spaces to hyphens in URL
-            slug_url=$(echo "$slug" | sed 's/ /-/g')
-
-            cat >> "$OUTPUT_FILE" << EOF
-  <url>
-    <loc>${BASE_URL}/video/${slug_url}</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>${file_date}</lastmod>
-  </url>
-EOF
-        fi
-    done
-fi
-
-# Close XML
 cat >> "$OUTPUT_FILE" << 'EOF'
 </urlset>
 EOF
 
-echo "✅ Sitemap generated at $OUTPUT_FILE"
-echo "📊 Total URLs: $(grep -c '<loc>' "$OUTPUT_FILE")"
+echo "Sitemap generated at $OUTPUT_FILE"
+echo "Total URLs: $(grep -c '<loc>' "$OUTPUT_FILE")"

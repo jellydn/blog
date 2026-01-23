@@ -1,6 +1,3 @@
-// YouTube Data API utility
-// Set YOUTUBE_API_KEY in environment variables
-
 export type YouTubeVideo = {
     id: string;
     title: string;
@@ -9,6 +6,21 @@ export type YouTubeVideo = {
     publishedAt: string;
 };
 
+export interface YouTubeApiItem {
+    snippet: {
+        title: string;
+        description: string;
+        thumbnails: {
+            medium?: { url: string };
+            default?: { url: string };
+        };
+        publishedAt: string;
+        resourceId: {
+            videoId: string;
+        };
+    };
+}
+
 const YOUTUBE_API_KEY = process.env.YOUTUBE_API_KEY;
 const CHANNEL_ID = process.env.CHANNEL_ID;
 
@@ -16,7 +28,6 @@ export async function fetchLatestYouTubeVideos(
     maxResults = 6,
 ): Promise<YouTubeVideo[]> {
     if (!YOUTUBE_API_KEY) {
-        console.warn('YOUTUBE_API_KEY not set, returning empty videos');
         return [];
     }
 
@@ -35,8 +46,8 @@ export async function fetchLatestYouTubeVideos(
         }
         const data = await response.json();
 
-        return data.items.map((item: any) => ({
-            id: item.id.videoId,
+        return data.items.map((item: YouTubeApiItem) => ({
+            id: item.snippet.resourceId.videoId,
             title: item.snippet.title,
             description: item.snippet.description,
             thumbnailUrl:
@@ -44,21 +55,7 @@ export async function fetchLatestYouTubeVideos(
                 item.snippet.thumbnails.default?.url,
             publishedAt: item.snippet.publishedAt,
         }));
-    } catch (error) {
-        console.error('Failed to fetch YouTube videos:', error);
+    } catch {
         return [];
     }
-}
-
-// Fallback mock data for development without API key
-export function getMockYouTubeVideos(): YouTubeVideo[] {
-    return [
-        {
-            id: 'dQw4w9WgXcQ',
-            title: 'Sample Video Title',
-            description: 'This is a sample video description for development.',
-            thumbnailUrl: 'https://i.ytimg.com/vi/dQw4w9WgXcQ/mqdefault.jpg',
-            publishedAt: new Date().toISOString(),
-        },
-    ];
 }

@@ -1,20 +1,14 @@
 #!/bin/bash
-# Fetch GitHub repositories and save to repos.json with categories
-# Usage: ./scripts/fetch-github-repos.sh [username]
-
 set -e
 
 USERNAME="${1:-jellydn}"
 OUTPUT_FILE="data/repos.json"
-GH_API="https://api.github.com"
 
-# Fetch all repos (max 100 per page, should cover most users)
 repos_response=$(curl -s -H "Accept: application/vnd.github.v3+json" \
-    "${GH_API}/users/${USERNAME}/repos?sort=updated&per_page=100")
+    "https://api.github.com/users/${USERNAME}/repos?sort=updated&per_page=100")
 
-# Check if response is valid JSON
 if ! echo "$repos_response" | jq -e . > /dev/null 2>&1; then
-    echo "Error: Failed to fetch repositories from GitHub"
+    echo "Error: Failed to fetch repositories"
     echo "$repos_response"
     exit 1
 fi

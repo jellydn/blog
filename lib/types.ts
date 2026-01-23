@@ -5,6 +5,19 @@ export type TinaPost = {
     title: string;
     description: string;
     date: string;
+    author?: string;
+    tag?: string[];
+    hero_image?: string;
+};
+
+export type TinaVideo = {
+    _sys: {
+        filename: string;
+    };
+    title: string;
+    description: string;
+    date: string;
+    youtube_id: string;
     tag?: string[];
     hero_image?: string;
 };
@@ -15,6 +28,7 @@ export type BlogPost = {
         title: string;
         description: string;
         date: string;
+        author?: string;
         tag?: string[];
         hero_image?: string;
     };
@@ -41,4 +55,5 @@ export type YouTubeVideo = {
     description: string;
     thumbnailUrl: string;
     publishedAt: string;
+    viewCount?: number;
 };

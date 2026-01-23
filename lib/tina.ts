@@ -1,28 +1,10 @@
-// TinaCMS client for fetching posts
 import { client } from '../tina/__generated__/client';
 
-export type TinaPost = {
-    _sys: {
-        filename: string;
-    };
-    title: string;
-    description: string;
-    date: string;
-    tag?: string[];
-    hero_image?: string;
-};
+import type { TinaPost, TinaVideo } from 'lib/types';
 
-export type TinaVideo = {
-    _sys: {
-        filename: string;
-    };
-    title: string;
-    description: string;
-    date: string;
-    youtube_id: string;
-    tag?: string[];
-    hero_image?: string;
-};
+interface TinaEdge<T> {
+    node?: T;
+}
 
 export async function fetchLatestPosts(limit = 6): Promise<TinaPost[]> {
     try {
@@ -31,18 +13,17 @@ export async function fetchLatestPosts(limit = 6): Promise<TinaPost[]> {
             sort: 'date',
         });
 
-        return response.data.postsConnection.edges.map((edge: any) => ({
-            _sys: {
-                filename: edge.node._sys.filename,
-            },
-            title: edge.node.title,
-            description: edge.node.description,
-            date: edge.node.date,
-            tag: edge.node.tag,
-            hero_image: edge.node.hero_image,
-        }));
-    } catch (error) {
-        console.error('Failed to fetch posts from Tina:', error);
+        return response.data.postsConnection.edges.map(
+            (edge: TinaEdge<{ _sys: { filename: string }; title?: string; description?: string; date?: string; tag?: string[]; hero_image?: string }>) => ({
+                _sys: { filename: edge.node?._sys.filename ?? '' },
+                title: edge.node?.title ?? '',
+                description: edge.node?.description ?? '',
+                date: edge.node?.date ?? '',
+                tag: edge.node?.tag,
+                hero_image: edge.node?.hero_image,
+            }),
+        );
+    } catch {
         return [];
     }
 }
@@ -54,19 +35,18 @@ export async function fetchLatestVideos(limit = 6): Promise<TinaVideo[]> {
             sort: 'date',
         });
 
-        return response.data.videosConnection.edges.map((edge: any) => ({
-            _sys: {
-                filename: edge.node._sys.filename,
-            },
-            title: edge.node.title,
-            description: edge.node.description,
-            date: edge.node.date,
-            youtube_id: edge.node.youtube_id,
-            tag: edge.node.tag,
-            hero_image: edge.node.hero_image,
-        }));
-    } catch (error) {
-        console.error('Failed to fetch videos from Tina:', error);
+        return response.data.videosConnection.edges.map(
+            (edge: TinaEdge<{ _sys: { filename: string }; title?: string; description?: string; date?: string; youtube_id?: string; tag?: string[]; hero_image?: string }>) => ({
+                _sys: { filename: edge.node?._sys.filename ?? '' },
+                title: edge.node?.title ?? '',
+                description: edge.node?.description ?? '',
+                date: edge.node?.date ?? '',
+                youtube_id: edge.node?.youtube_id ?? '',
+                tag: edge.node?.tag,
+                hero_image: edge.node?.hero_image,
+            }),
+        );
+    } catch {
         return [];
     }
 }

@@ -1,10 +1,10 @@
 import matter from 'gray-matter';
-import unique from 'just-unique';
 import { NextSeo } from 'next-seo';
 
 import Layout from 'components/Layout';
 import { NotesList } from 'components/NotesList';
 import type { VideoPost } from 'components/VideoList';
+import { dedupeBySlug, sortByDate } from 'lib/utils/array';
 
 type VideoFrontmatter = {
     title: string;
@@ -45,17 +45,16 @@ const VideosPage = ({ title, description, items }: VideosPageProps) => {
             />
 
             <div data-theme="minimal">
-                {/* Page Header */}
                 <section className="py-20 bg-base-200">
                     <div className="container mx-auto px-4 max-w-5xl">
                         <h1 className="text-5xl font-bold mb-4">Videos</h1>
                         <p className="text-xl text-base-content/70">
-                            Web development and blockchain tutorials
+                            Tutorials on Neovim, React, AI, CLI, Blockchain, Web
+                            Development, and more
                         </p>
                     </div>
                 </section>
 
-                {/* Video List */}
                 <section className="py-16 bg-base-100">
                     <div className="container mx-auto px-4 max-w-4xl">
                         <NotesList items={items} />
@@ -71,7 +70,6 @@ export default VideosPage;
 export async function getStaticProps() {
     const config = await import('../../data/config.json');
 
-    // get videos from folder
     const videos = ((context) => {
         const keys = context.keys();
         const values = keys.map(context);
@@ -90,28 +88,16 @@ export async function getStaticProps() {
             };
         });
         return data;
-        // @ts-expect-error this is special function from webpack
+        // @ts-expect-error require.context is a webpack function
     })(require.context('../../videos', true, /\.md$/));
 
-    // Deduplicate by slug
-    const uniqueVideos = unique(
-        videos.map((video: VideoPost) => video.slug),
-    ).map((slug) =>
-        videos.find((video: VideoPost) => video.slug === slug),
-    ) as VideoPost[];
-
-    // Sort videos by date (newest first)
-    const sortedVideos = uniqueVideos.sort(
-        (a, b) =>
-            new Date(b.frontmatter.date).getTime() -
-            new Date(a.frontmatter.date).getTime(),
-    ) as VideoPost[];
+    const items = sortByDate(dedupeBySlug(videos as VideoPost[]));
 
     return {
         props: {
             title: config.default.title,
             description: config.default.description,
-            items: sortedVideos,
+            items,
         },
     };
 }

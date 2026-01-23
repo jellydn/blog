@@ -1,5 +1,4 @@
 import matter from 'gray-matter';
-import unique from 'just-unique';
 import { NextSeo } from 'next-seo';
 import Link from 'next/link';
 
@@ -7,6 +6,7 @@ import type { BlogPost } from 'components/BlogList';
 import Layout from 'components/Layout';
 import { NotesList } from 'components/NotesList';
 import type { VideoPost } from 'components/VideoList';
+import { dedupeBySlug, sortByDate } from 'lib/utils/array';
 
 type BlogFrontmatter = {
     title: string;
@@ -33,7 +33,6 @@ type TagPageProps = {
 export default function TagPage({
     tag,
     title,
-    description,
     items,
 }: TagPageProps) {
     return (
@@ -43,7 +42,6 @@ export default function TagPage({
                 description={`Blog posts tagged with "${tag}"`}
             />
             <div data-theme="minimal">
-                {/* Back Link */}
                 <nav className="bg-base-200">
                     <div className="container mx-auto px-4 py-4 max-w-5xl">
                         <Link
@@ -68,7 +66,6 @@ export default function TagPage({
                     </div>
                 </nav>
 
-                {/* Page Header */}
                 <section className="bg-base-200">
                     <div className="container mx-auto px-4 pb-12 max-w-5xl">
                         <h1 className="text-4xl font-bold">#{tag}</h1>
@@ -78,7 +75,6 @@ export default function TagPage({
                     </div>
                 </section>
 
-                {/* Simple List */}
                 <section className="py-12 bg-base-100 min-h-[70vh]">
                     <div className="container mx-auto px-4 max-w-4xl">
                         <NotesList items={items} currentTag={tag} />
@@ -90,15 +86,17 @@ export default function TagPage({
 }
 
 export async function getStaticPaths() {
-    const path = await import('path');
+    const path = await import('node:path');
     const { globSync } = await import('glob');
-    const fs = await import('fs');
+    const fs = await import('node:fs');
 
     const postsDir = path.join(process.cwd(), 'posts');
+    const videosDir = path.join(process.cwd(), 'videos');
     const posts = globSync(`${postsDir}/*.md`);
+    const videos = globSync(`${videosDir}/*.md`);
     const allTags = new Set<string>();
 
-    for (const file of posts) {
+    for (const file of [...posts, ...videos]) {
         const content = fs.readFileSync(file, 'utf-8');
         const { data } = matter(content);
         if (data.tag) {
@@ -119,7 +117,6 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }: { params: { tag: string } }) {
     const config = await import('../../../data/config.json');
 
-    // get posts from folder
     const posts = ((context) => {
         const keys = context.keys();
         const values = keys.map(context);
@@ -138,10 +135,9 @@ export async function getStaticProps({ params }: { params: { tag: string } }) {
             };
         });
         return data;
-        // @ts-expect-error this is special function from webpack
+        // @ts-expect-error require.context is a webpack function
     })(require.context('../../../posts', true, /\.md$/));
 
-    // get videos from folder
     const videos = ((context) => {
         const keys = context.keys();
         const values = keys.map(context);
@@ -160,34 +156,18 @@ export async function getStaticProps({ params }: { params: { tag: string } }) {
             };
         });
         return data;
-        // @ts-expect-error this is special function from webpack
+        // @ts-expect-error require.context is a webpack function
     })(require.context('../../../videos', true, /\.md$/));
 
-    // Deduplicate by slug
-    const uniquePosts = unique(posts.map((post: BlogPost) => post.slug)).map(
-        (slug) => posts.find((post: BlogPost) => post.slug === slug),
-    ) as BlogPost[];
+    const allItems = sortByDate([
+        ...dedupeBySlug(posts as BlogPost[]),
+        ...dedupeBySlug(videos as VideoPost[]),
+    ]) as (BlogPost | VideoPost)[];
 
-    const uniqueVideos = unique(
-        videos.map((video: VideoPost) => video.slug),
-    ).map((slug) =>
-        videos.find((video: VideoPost) => video.slug === slug),
-    ) as VideoPost[];
-
-    // Sort all items by date (newest first)
-    const allItems = [...uniquePosts, ...uniqueVideos].sort(
-        (a, b) =>
-            new Date(b.frontmatter.date).getTime() -
-            new Date(a.frontmatter.date).getTime(),
-    ) as (BlogPost | VideoPost)[];
-
-    // Filter by tag (case-insensitive)
-    const taggedItems = allItems.filter(
-        (item) =>
-            item.frontmatter.tag &&
-            item.frontmatter.tag.some(
-                (t: string) => t.toLowerCase() === params.tag,
-            ),
+    const taggedItems = allItems.filter((item) =>
+        item.frontmatter.tag?.some(
+            (t: string) => t.toLowerCase() === params.tag,
+        ),
     );
 
     return {
