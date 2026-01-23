@@ -21,6 +21,12 @@ type IndexProps = {
 
 const socialLinks = [
     {
+        name: 'Hire Me',
+        url: 'https://www.upwork.com/freelancers/~01b1a6f7c757b5ec48',
+        ariaLabel: 'Hire me on Upwork',
+        primary: true,
+    },
+    {
         name: 'Email',
         url: 'mailto:dung@productsway.com',
         ariaLabel: 'Send me an email',
@@ -34,11 +40,6 @@ const socialLinks = [
         name: 'Twitter',
         url: 'https://twitter.com/jellydn',
         ariaLabel: 'View my Twitter profile',
-    },
-    {
-        name: 'YouTube',
-        url: 'https://www.youtube.com/c/ITManVietnam',
-        ariaLabel: 'Visit IT Man Channel on YouTube',
     },
 ];
 
@@ -239,7 +240,12 @@ const Index = ({
                                     href={social.url}
                                     target="_blank"
                                     rel="noreferrer"
-                                    variant="outline"
+                                    variant={
+                                        (social as { primary?: boolean })
+                                            .primary
+                                            ? 'primary'
+                                            : 'outline'
+                                    }
                                     aria-label={social.ariaLabel}
                                 >
                                     {social.name}
