@@ -16,7 +16,7 @@ importers:
         version: 3.3.0(next@15.2.8(@babel/core@7.24.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
       '@tailwindcss/typography':
         specifier: ^0.5.19
-        version: 0.5.19(tailwindcss@3.4.14(ts-node@10.9.1(@types/node@25.0.10)(typescript@5.9.3)))
+        version: 0.5.19(tailwindcss@4.1.18)
       '@tinacms/cli':
         specifier: 1.6.11
         version: 1.6.11(@codemirror/language@6.0.0)(@types/node@25.0.10)(@types/react@18.3.12)(abstract-level@1.0.4)(encoding@0.1.13)(immer@10.1.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rollup@3.29.4)(scheduler@0.23.2)(sucrase@3.35.0)(terser@5.46.0)(ts-node@10.9.1(@types/node@25.0.10)(typescript@5.9.3))
@@ -34,7 +34,7 @@ importers:
         version: 4.2.0
       kutty:
         specifier: 0.6.0
-        version: 0.6.0(tailwindcss@3.4.14(ts-node@10.9.1(@types/node@25.0.10)(typescript@5.9.3)))
+        version: 0.6.0(tailwindcss@4.1.18)
       lite-youtube-embed:
         specifier: ^0.3.4
         version: 0.3.4
@@ -103,8 +103,8 @@ importers:
         specifier: ^3.6.0
         version: 3.6.0
       tailwindcss:
-        specifier: 3.4.14
-        version: 3.4.14(ts-node@10.9.1(@types/node@25.0.10)(typescript@5.9.3))
+        specifier: 4.1.18
+        version: 4.1.18
       typescript:
         specifier: ^5.9.3
         version: 5.9.3
@@ -493,6 +493,7 @@ packages:
 
   '@cloudflare/next-on-pages@1.13.5':
     resolution: {integrity: sha512-eKRrI14kCk6kuBIAO6WwMNSvH8fFzkMQj1G95/wLVW2xpUaU0EDxRcQJ0U9aB1tOm/sPWW76Udb92rxyrVJpBw==}
+    deprecated: 'Please use the OpenNext adapter instead: https://opennext.js.org/cloudflare'
     hasBin: true
     peerDependencies:
       '@cloudflare/workers-types': ^4.20240208.0
@@ -6158,6 +6159,7 @@ packages:
 
   oniguruma-to-js@0.4.3:
     resolution: {integrity: sha512-X0jWUcAlxORhOqqBREgPMgnshB7ZGYszBNspP+tS9hPD3l13CdaXcHbgImoHUHlrvGx/7AvFEkTRhAGYh+jzjQ==}
+    deprecated: use oniguruma-to-es instead
 
   optics-ts@2.4.1:
     resolution: {integrity: sha512-HaYzMHvC80r7U/LqAd4hQyopDezC60PO2qF5GuIwALut2cl5rK1VWHsqTp0oqoJJWjiv6uXKqsO+Q2OO0C3MmQ==}
@@ -6999,6 +7001,7 @@ packages:
 
   scmp@2.1.0:
     resolution: {integrity: sha512-o/mRQGk9Rcer/jEEw/yw4mwo3EU/NvYvp577/Btqrym9Qy5/MdWGBqipbALgd2lrdWTJ5/gqDusxfnQBxOxT2Q==}
+    deprecated: Just use Node.js's crypto.timingSafeEqual()
 
   scroll-into-view-if-needed@3.1.0:
     resolution: {integrity: sha512-49oNpRjWRvnU8NyGVmUaYG4jtTkNonFZI86MmGRDqBphEK2EXT9gdEUoQPZhuBM8yWHxCWbobltqYO5M4XrUvQ==}
@@ -7325,6 +7328,9 @@ packages:
     resolution: {integrity: sha512-IcSvOcTRcUtQQ7ILQL5quRDg7Xs93PdJEk1ZLbhhvJc7uj/OAhYOnruEiwnGgBvUtaUAJ8/mhSw1o8L2jCiENA==}
     engines: {node: '>=14.0.0'}
     hasBin: true
+
+  tailwindcss@4.1.18:
+    resolution: {integrity: sha512-4+Z+0yiYyEtUVCScyfHCxOYP06L5Ne+JiHhY2IjR2KWMIWhJOYZKLSGZaP5HkZ8+bY0cxfzwDE5uOmzFXyIwxw==}
 
   tapable@2.3.0:
     resolution: {integrity: sha512-g9ljZiwki/LfxmQADO3dEY1CbpmXT5Hm2fJ+QaGKwSXUylMybePR7/67YW7jOrrvjEgL1Fmz5kzyAjWVWLlucg==}
@@ -10331,6 +10337,11 @@ snapshots:
     dependencies:
       postcss-selector-parser: 6.0.10
       tailwindcss: 3.4.14(ts-node@10.9.1(@types/node@25.0.10)(typescript@5.9.3))
+
+  '@tailwindcss/typography@0.5.19(tailwindcss@4.1.18)':
+    dependencies:
+      postcss-selector-parser: 6.0.10
+      tailwindcss: 4.1.18
 
   '@tanstack/react-virtual@3.10.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
@@ -13637,9 +13648,9 @@ snapshots:
 
   kleur@4.1.5: {}
 
-  kutty@0.6.0(tailwindcss@3.4.14(ts-node@10.9.1(@types/node@25.0.10)(typescript@5.9.3))):
+  kutty@0.6.0(tailwindcss@4.1.18):
     dependencies:
-      tailwindcss: 3.4.14(ts-node@10.9.1(@types/node@25.0.10)(typescript@5.9.3))
+      tailwindcss: 4.1.18
 
   level-read-stream@1.1.0(abstract-level@1.0.4):
     dependencies:
@@ -16341,6 +16352,8 @@ snapshots:
       sucrase: 3.35.0
     transitivePeerDependencies:
       - ts-node
+
+  tailwindcss@4.1.18: {}
 
   tapable@2.3.0: {}
 
