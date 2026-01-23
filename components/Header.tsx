@@ -46,6 +46,7 @@ export default function Header({ siteTitle }: { siteTitle: string }) {
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke="currentColor"
+                            suppressHydrationWarning
                         >
                             <path
                                 strokeLinecap="round"
@@ -110,6 +111,7 @@ export default function Header({ siteTitle }: { siteTitle: string }) {
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke="currentColor"
+                            suppressHydrationWarning
                         >
                             {mobileMenuOpen ? (
                                 <path

@@ -1,17 +1,20 @@
-import Giscus from '@giscus/react';
 import { globSync } from 'glob';
 import matter from 'gray-matter';
 import { NextSeo } from 'next-seo';
-import Prism from 'prismjs';
+import dynamic from 'next/dynamic';
+import Link from 'next/link';
 import { useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
 import gfm from 'remark-gfm';
 
-import Link from 'next/link';
-
 import { Badge, isTil } from 'components/Badge';
 import Layout from 'components/Layout';
 import { formatDate } from 'lib/utils/date';
+
+const Giscus = dynamic(
+    () => import('@giscus/react').then((mod) => mod.default),
+    { ssr: false },
+);
 
 type BlogFrontmatter = {
     title: string;
@@ -38,7 +41,10 @@ export default function BlogTemplate({
     slug,
 }: BlogTemplateProps) {
     useEffect(() => {
-        Prism.highlightAll();
+        // Lazy load Prism.js for syntax highlighting
+        import('prismjs').then((Prism) => {
+            Prism.highlightAll();
+        });
     }, []);
 
     const canonicalUrl = `https://productsway.com/notes/${slug}`;
@@ -87,6 +93,7 @@ export default function BlogTemplate({
                                 fill="none"
                                 viewBox="0 0 24 24"
                                 stroke="currentColor"
+                                suppressHydrationWarning
                             >
                                 <path
                                     strokeLinecap="round"
@@ -125,7 +132,10 @@ export default function BlogTemplate({
 
                 {/* Article Content */}
                 <article className="container mx-auto px-4 pb-16 max-w-4xl">
-                    <div className="prose prose-slate max-w-none">
+                    <div
+                        className="prose prose-slate max-w-none"
+                        suppressHydrationWarning
+                    >
                         <ReactMarkdown remarkPlugins={[gfm]}>
                             {markdownBody}
                         </ReactMarkdown>

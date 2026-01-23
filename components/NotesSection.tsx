@@ -10,10 +10,22 @@ type NotesSectionProps = {
     fallbackPosts: BlogPost[];
 };
 
+// Extend window type for prefetched data
+declare global {
+    interface Window {
+        __PREFETCHED_NOTES__?: TinaPost[];
+    }
+}
+
 export function NotesSection({ fallbackPosts }: NotesSectionProps) {
     const [posts, setPosts] = useState<TinaPost[] | null>(null);
 
     useEffect(() => {
+        if (window.__PREFETCHED_NOTES__) {
+            setPosts(window.__PREFETCHED_NOTES__);
+            return;
+        }
+
         async function fetchPosts() {
             try {
                 const res = await fetch('/api/notes');
@@ -51,7 +63,10 @@ export function NotesSection({ fallbackPosts }: NotesSectionProps) {
                         <h2 className="text-4xl font-bold mb-2">
                             Latest Notes
                         </h2>
-                        <p className="text-xl text-base-content/70">
+                        <p
+                            className="text-xl text-base-content/70"
+                            suppressHydrationWarning
+                        >
                             {posts && posts.length > 0
                                 ? 'Fresh from the notebook'
                                 : 'Guides, TILs, and tutorials'}
@@ -62,7 +77,7 @@ export function NotesSection({ fallbackPosts }: NotesSectionProps) {
                     </a>
                 </div>
                 <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-                    {displayPosts.slice(0, 6).map((post) => (
+                    {displayPosts.slice(0, 6).map((post: BlogPost) => (
                         <a
                             key={post.slug}
                             href={`/notes/${post.slug}`}

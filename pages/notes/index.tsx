@@ -4,7 +4,6 @@ import { NextSeo } from 'next-seo';
 import type { BlogPost } from 'components/BlogList';
 import Layout from 'components/Layout';
 import { NotesList } from 'components/NotesList';
-import type { VideoPost } from 'components/VideoList';
 import { dedupeBySlug, sortByDate } from 'lib/utils/array';
 
 type BlogFrontmatter = {
@@ -14,18 +13,10 @@ type BlogFrontmatter = {
     tag?: string[];
 };
 
-type VideoFrontmatter = {
-    title: string;
-    description?: string;
-    date: string;
-    youtube_id: string;
-    tag?: string[];
-};
-
 type BlogPageProps = {
     title: string;
     description: string;
-    items: (BlogPost | VideoPost)[];
+    items: BlogPost[];
 };
 
 const BlogPage = ({ title, description, items }: BlogPageProps) => {
@@ -57,7 +48,7 @@ const BlogPage = ({ title, description, items }: BlogPageProps) => {
                     <div className="container mx-auto px-4 max-w-5xl">
                         <h1 className="text-5xl font-bold mb-4">Notes</h1>
                         <p className="text-xl text-base-content/70">
-                            Thoughts, tutorials, TILs, and videos
+                            Thoughts, tutorials, and TILs
                         </p>
                     </div>
                 </section>
@@ -98,31 +89,9 @@ export async function getStaticProps() {
         // @ts-expect-error require.context is a webpack function
     })(require.context('../../posts', true, /\.md$/));
 
-    const videos = ((context) => {
-        const keys = context.keys();
-        const values = keys.map(context);
-
-        const data = keys.map((key: string, index: number) => {
-            const slug = key
-                .replace(/^.*[\\/]/, '')
-                .split('.')
-                .slice(0, -1)
-                .join('.');
-            const value = values[index];
-            const document = matter(value.default);
-            return {
-                frontmatter: document.data as VideoFrontmatter,
-                slug,
-            };
-        });
-        return data;
-        // @ts-expect-error require.context is a webpack function
-    })(require.context('../../videos', true, /\.md$/));
-
-    const allItems = sortByDate([
-        ...dedupeBySlug(posts as BlogPost[]),
-        ...dedupeBySlug(videos as VideoPost[]),
-    ]) as (BlogPost | VideoPost)[];
+    const allItems = sortByDate(
+        dedupeBySlug(posts as BlogPost[]),
+    ) as BlogPost[];
 
     return {
         props: {

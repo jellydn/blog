@@ -1,16 +1,37 @@
 import matter from 'gray-matter';
 import { NextSeo } from 'next-seo';
+import Head from 'next/head';
 
 import { Button } from 'components/Button';
 import Layout from 'components/Layout';
-import { NotesSection } from 'components/NotesSection';
 import { RepoStars } from 'components/RepoStars';
-import { YoutubeSection } from 'components/YoutubeSection';
-
+import dynamic from 'next/dynamic';
 import type { BlogPost } from 'components/BlogList';
 import type { VideoPost } from 'components/VideoList';
 import { dedupeBySlug } from 'lib/utils/array';
 import reposData from '../data/repos.json';
+
+const YoutubeSection = dynamic(
+    () => import('components/YoutubeSection').then((mod) => mod.YoutubeSection),
+);
+const NotesSection = dynamic(
+    () => import('components/NotesSection').then((mod) => mod.NotesSection),
+);
+
+// Prefetch script that runs before React hydrates
+const PREFETCH_SCRIPT = `
+(function() {
+    try {
+        Promise.all([
+            fetch('/api/notes').then(function(r) { return r.ok ? r.json() : null; }),
+            fetch('/api/youtube-videos').then(function(r) { return r.ok ? r.json() : null; })
+        ]).then(function(results) {
+            if (results[0]) window.__PREFETCHED_NOTES__ = results[0];
+            if (results[1]) window.__PREFETCHED_VIDEOS__ = results[1];
+        });
+    } catch(e) {}
+})();
+`;
 
 type IndexProps = {
     title: string;
@@ -63,6 +84,13 @@ const Index = ({
 
     return (
         <Layout siteTitle={title} siteDescription={description}>
+            <Head>
+                {/* Prefetch API data before React hydrates for faster perceived load */}
+                <script
+                    // biome-ignore lint/security/noDangerouslySetInnerHtml: Inline script for performance, no user input
+                    dangerouslySetInnerHTML={{ __html: PREFETCH_SCRIPT }}
+                />
+            </Head>
             <NextSeo
                 title={title}
                 description={description}

@@ -9,11 +9,24 @@ type YoutubeSectionProps = {
     fallbackVideos: VideoPost[];
 };
 
+// Extend window type for prefetched data
+declare global {
+    interface Window {
+        __PREFETCHED_VIDEOS__?: YouTubeVideo[];
+    }
+}
+
 export function YoutubeSection({ fallbackVideos }: YoutubeSectionProps) {
     const [videos, setVideos] = useState<YouTubeVideo[] | null>(null);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
+        if (window.__PREFETCHED_VIDEOS__) {
+            setVideos(window.__PREFETCHED_VIDEOS__);
+            setLoading(false);
+            return;
+        }
+
         async function fetchVideos() {
             try {
                 const res = await fetch('/api/youtube-videos');
@@ -30,6 +43,20 @@ export function YoutubeSection({ fallbackVideos }: YoutubeSectionProps) {
 
         fetchVideos();
     }, []);
+
+    const displayVideos =
+        videos && videos.length > 0
+            ? videos.map((v) => ({
+                  slug: v.id,
+                  frontmatter: {
+                      title: v.title,
+                      description: v.description,
+                      date: v.publishedAt,
+                      hero_image: v.thumbnailUrl,
+                      youtube_id: v.id,
+                  },
+              }))
+            : fallbackVideos;
 
     if (loading) {
         return (
@@ -64,20 +91,6 @@ export function YoutubeSection({ fallbackVideos }: YoutubeSectionProps) {
         );
     }
 
-    const displayVideos =
-        videos && videos.length > 0
-            ? videos.map((v) => ({
-                  slug: v.id,
-                  frontmatter: {
-                      title: v.title,
-                      description: v.description,
-                      date: v.publishedAt,
-                      hero_image: v.thumbnailUrl,
-                      youtube_id: v.id,
-                  },
-              }))
-            : fallbackVideos;
-
     return (
         <section className="py-20 bg-base-100">
             <div className="container mx-auto px-4 max-w-6xl">
@@ -86,7 +99,10 @@ export function YoutubeSection({ fallbackVideos }: YoutubeSectionProps) {
                         <h2 className="text-4xl font-bold mb-2">
                             Latest Videos
                         </h2>
-                        <p className="text-xl text-base-content/70">
+                        <p
+                            className="text-xl text-base-content/70"
+                            suppressHydrationWarning
+                        >
                             {videos && videos.length > 0
                                 ? 'Fresh from IT Man Channel'
                                 : 'From IT Man Channel'}
@@ -124,6 +140,7 @@ export function YoutubeSection({ fallbackVideos }: YoutubeSectionProps) {
                                         className="w-12 h-12 text-white opacity-80"
                                         viewBox="0 0 24 24"
                                         fill="currentColor"
+                                        aria-label="Play video"
                                     >
                                         <path d="M8 5v14l11-7z" />
                                     </svg>
