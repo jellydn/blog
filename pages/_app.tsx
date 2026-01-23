@@ -8,7 +8,7 @@ import '../styles.css';
 import '../flags/config';
 
 const MyApp = ({ Component, pageProps }: AppProps) => (
-    <div data-theme="dark">
+    <div data-theme="minimal">
         <Script
             src="https://dunghd.goatcounter.com/count"
             data-goatcounter="https://dunghd.goatcounter.com/count"

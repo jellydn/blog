@@ -47,7 +47,7 @@ const BlogList = ({ allBlogs }: { allBlogs: BlogPost[] }) => {
                         <h2 className="mb-2 text-lg font-semibold text-gray-900">
                             <Link
                                 href={`/blog/${post.slug}`}
-                                className="text-gray-900 hover:text-purple-700"
+                                className="text-gray-900 hover:text-current"
                             >
                                 {post.frontmatter.title}
                             </Link>

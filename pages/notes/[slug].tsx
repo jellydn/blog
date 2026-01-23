@@ -74,7 +74,7 @@ export default function BlogTemplate({
                 }}
             />
 
-            <div data-theme="corporate" className="min-h-screen">
+            <div data-theme="minimal" className="min-h-screen">
                 {/* Navigation */}
                 <nav className="border-b border-base-300">
                     <div className="container mx-auto px-4 py-4 max-w-4xl">

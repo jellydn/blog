@@ -73,7 +73,7 @@ export default function VideoTemplate({
                 }}
             />
 
-            <div data-theme="corporate">
+            <div data-theme="minimal">
                 <div className="bg-base-200 border-b border-base-300">
                     <div className="container mx-auto px-4 py-4">
                         <Link href="/" className="btn btn-ghost btn-sm gap-2">

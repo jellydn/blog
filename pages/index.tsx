@@ -21,6 +21,11 @@ type IndexProps = {
 
 const socialLinks = [
     {
+        name: 'Email',
+        url: 'mailto:dung@productsway.com',
+        ariaLabel: 'Send me an email',
+    },
+    {
         name: 'GitHub',
         url: 'https://github.com/jellydn',
         ariaLabel: 'View my GitHub profile',
@@ -77,7 +82,7 @@ const Index = ({
                 }}
             />
 
-            <div data-theme="corporate">
+            <div data-theme="minimal">
                 <section className="hero min-h-[60vh] bg-gradient-to-r from-primary/10 to-accent/10">
                     <div className="hero-content text-center">
                         <div className="max-w-3xl">
@@ -218,14 +223,14 @@ const Index = ({
 
                 <NotesSection fallbackPosts={allBlogs} />
 
-                <section className="py-20 bg-gradient-to-r from-primary to-accent text-primary-content">
-                    <div className="container mx-auto px-4 text-center">
-                        <h2 className="text-4xl font-bold mb-6">
-                            Connect With Me
+                <section className="py-20 bg-base-200 border-t border-base-300">
+                    <div className="container mx-auto px-4 text-center max-w-3xl">
+                        <h2 className="text-4xl font-bold mb-4 text-base-content">
+                            Let&apos;s Connect
                         </h2>
-                        <p className="text-xl mb-8 opacity-90">
-                            Let&apos;s connect and build something amazing
-                            together
+                        <p className="text-lg text-base-content/70 mb-8 leading-relaxed">
+                            Interested in collaborating or have a question?
+                            Reach out through any of these platforms.
                         </p>
                         <div className="flex justify-center gap-4 flex-wrap">
                             {socialLinks.map((social) => (
@@ -234,7 +239,7 @@ const Index = ({
                                     href={social.url}
                                     target="_blank"
                                     rel="noreferrer"
-                                    size="lg"
+                                    variant="outline"
                                     aria-label={social.ariaLabel}
                                 >
                                     {social.name}

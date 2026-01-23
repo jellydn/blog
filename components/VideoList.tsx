@@ -41,7 +41,7 @@ const VideoList = ({ allVideos }: { allVideos: VideoPost[] }) => {
                         <h2 className="mb-2 text-lg font-semibold text-gray-900">
                             <Link
                                 href={`/video/${post.slug}`}
-                                className="text-gray-900 hover:text-purple-700"
+                                className="text-gray-900 hover:text-current"
                             >
                                 {post.frontmatter.title}
                             </Link>
