@@ -2,20 +2,20 @@ import matter from 'gray-matter';
 import { NextSeo } from 'next-seo';
 import Head from 'next/head';
 
+import type { BlogPost } from 'components/BlogList';
 import { Button } from 'components/Button';
 import Layout from 'components/Layout';
 import { RepoStars } from 'components/RepoStars';
-import dynamic from 'next/dynamic';
-import type { BlogPost } from 'components/BlogList';
 import type { VideoPost } from 'components/VideoList';
 import { dedupeBySlug } from 'lib/utils/array';
+import dynamic from 'next/dynamic';
 import reposData from '../data/repos.json';
 
-const YoutubeSection = dynamic(
-    () => import('components/YoutubeSection').then((mod) => mod.YoutubeSection),
+const YoutubeSection = dynamic(() =>
+    import('components/YoutubeSection').then((mod) => mod.YoutubeSection),
 );
-const NotesSection = dynamic(
-    () => import('components/NotesSection').then((mod) => mod.NotesSection),
+const NotesSection = dynamic(() =>
+    import('components/NotesSection').then((mod) => mod.NotesSection),
 );
 
 // Prefetch script that runs before React hydrates
