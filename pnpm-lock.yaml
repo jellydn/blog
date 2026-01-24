@@ -9,13 +9,13 @@ importers:
   .:
     dependencies:
       '@giscus/react':
-        specifier: ^3.1.0
+        specifier: 3.1.0
         version: 3.1.0(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       '@happykit/flags':
         specifier: 3.3.0
         version: 3.3.0(next@15.5.9(@babel/core@7.24.7)(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(react@19.2.3)
       '@tailwindcss/typography':
-        specifier: ^0.5.19
+        specifier: 0.5.19
         version: 0.5.19(tailwindcss@4.1.18)
       '@tinacms/cli':
         specifier: 2.1.1
@@ -24,7 +24,7 @@ importers:
         specifier: 5.5.14
         version: 5.5.14
       glob:
-        specifier: ^13.0.0
+        specifier: 13.0.0
         version: 13.0.0
       gray-matter:
         specifier: 4.0.3
@@ -36,7 +36,7 @@ importers:
         specifier: 0.6.0
         version: 0.6.0(tailwindcss@4.1.18)
       lite-youtube-embed:
-        specifier: ^0.3.4
+        specifier: 0.3.4
         version: 0.3.4
       next:
         specifier: 15.5.9
@@ -66,7 +66,7 @@ importers:
         specifier: ^4.0.1
         version: 4.0.1
       sharp:
-        specifier: ^0.34.5
+        specifier: 0.34.5
         version: 0.34.5
       tinacms:
         specifier: 2.10.1
@@ -79,37 +79,37 @@ importers:
         specifier: 1.13.16
         version: 1.13.16(next@15.5.9(@babel/core@7.24.7)(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(wrangler@3.72.3)
       '@fullhuman/postcss-purgecss':
-        specifier: ^7.0.2
+        specifier: 7.0.2
         version: 7.0.2(postcss@8.5.6)
       '@tailwindcss/postcss':
-        specifier: ^4.1.18
+        specifier: 4.1.18
         version: 4.1.18
       '@types/node':
-        specifier: ^25.0.10
+        specifier: 25.0.10
         version: 25.0.10
       '@types/react':
         specifier: 19.2.9
         version: 19.2.9
       autoprefixer:
-        specifier: ^10.4.23
+        specifier: 10.4.23
         version: 10.4.23(postcss@8.5.6)
       postcss:
-        specifier: ^8.5.6
+        specifier: 8.5.6
         version: 8.5.6
       postcss-flexbugs-fixes:
         specifier: 5.0.2
         version: 5.0.2(postcss@8.5.6)
       postcss-preset-env:
-        specifier: ^11.1.1
+        specifier: 11.1.1
         version: 11.1.1(postcss@8.5.6)
       sort-package-json:
-        specifier: ^3.6.0
+        specifier: 3.6.0
         version: 3.6.0
       tailwindcss:
         specifier: 4.1.18
         version: 4.1.18
       typescript:
-        specifier: ^5.9.3
+        specifier: 5.9.3
         version: 5.9.3
 
 packages:
@@ -5235,10 +5235,6 @@ packages:
     resolution: {integrity: sha512-4BhLGpssQxM/O6TZmJ10GkT3wBJK6emFkZ3V87/HyvQmVt8zMxEBvyw5uv6kdtp+7F54Nw6IKFJjPUL8rFVQrQ==}
     engines: {node: '>=16.13'}
     hasBin: true
-
-  minimatch@10.0.1:
-    resolution: {integrity: sha512-ethXTt3SGGR+95gudmqJ1eNhRO7eGEGIgYA9vnPatK4/etz2MEVDno5GMCibdMTuBMyElzIlgxMna3K94XDIDQ==}
-    engines: {node: 20 || >=22}
 
   minimatch@10.1.1:
     resolution: {integrity: sha512-enIvLvRAFZYXJzkCYG5RKmPfrFArdLv+R+lbQ53BmIMLIry74bjKzX6iHAm8WYamJkhSSEabrWN5D97XnKObjQ==}
@@ -11555,7 +11551,7 @@ snapshots:
     dependencies:
       foreground-child: 3.1.1
       jackspeak: 4.0.2
-      minimatch: 10.0.1
+      minimatch: 10.1.1
       minipass: 7.1.2
       package-json-from-dist: 1.0.0
       path-scurry: 2.0.0
@@ -12996,10 +12992,6 @@ snapshots:
       - bufferutil
       - supports-color
       - utf-8-validate
-
-  minimatch@10.0.1:
-    dependencies:
-      brace-expansion: 2.0.1
 
   minimatch@10.1.1:
     dependencies:
