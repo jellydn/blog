@@ -4,6 +4,7 @@ query videos($relativePath: String!) {
       _sys {
         filename
         basename
+        hasReferences
         breadcrumbs
         path
         relativePath
@@ -38,6 +39,7 @@ query videosConnection($before: String, $after: String, $first: Float, $last: Fl
           _sys {
             filename
             basename
+            hasReferences
             breadcrumbs
             path
             relativePath
@@ -57,6 +59,7 @@ query posts($relativePath: String!) {
       _sys {
         filename
         basename
+        hasReferences
         breadcrumbs
         path
         relativePath
@@ -91,6 +94,7 @@ query postsConnection($before: String, $after: String, $first: Float, $last: Flo
           _sys {
             filename
             basename
+            hasReferences
             breadcrumbs
             path
             relativePath

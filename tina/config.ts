@@ -3,7 +3,7 @@ import { postFields, videoFields } from './templates';
 
 // Your hosting provider likely exposes this as an environment variable
 const branch =
-    process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || 'master';
+    process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || 'main';
 const tinaClientId = process.env.NEXT_TINACMS_CLIENT_ID;
 const tinaToken = process.env.NEXT_TINACMS_TOKEN;
 
