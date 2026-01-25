@@ -45,10 +45,12 @@ const VideosPage = ({ title, description, items }: VideosPageProps) => {
             />
 
             <div data-theme="minimal">
-                <section className="py-20 bg-base-200">
+                <section className="py-12 md:py-20 bg-base-200">
                     <div className="container mx-auto px-4 max-w-5xl">
-                        <h1 className="text-5xl font-bold mb-4">Videos</h1>
-                        <p className="text-xl text-base-content/70">
+                        <h1 className="text-4xl md:text-5xl font-bold mb-4">
+                            Videos
+                        </h1>
+                        <p className="text-lg md:text-xl text-base-content/70">
                             Tutorials on Neovim, React, AI, CLI, Blockchain, Web
                             Development, and more
                         </p>

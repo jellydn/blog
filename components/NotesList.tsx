@@ -26,11 +26,11 @@ export function NotesList({ items, currentTag }: NotesListProps) {
 
                 return (
                     <li key={post.slug}>
-                        <div className="flex items-center gap-4 p-4 bg-base-200 rounded-lg hover:bg-base-300 transition-colors group">
-                            <span className="text-sm text-base-content/60 whitespace-nowrap min-w-[100px]">
+                        <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4 p-4 bg-base-200 rounded-lg hover:bg-base-300 transition-colors group">
+                            <span className="text-sm text-base-content/60 whitespace-nowrap sm:min-w-[100px]">
                                 {formatDate(post.frontmatter.date)}
                             </span>
-                            <div className="flex-1">
+                            <div className="flex-1 min-w-0">
                                 <a
                                     href={href}
                                     className={`font-semibold group-hover:text-primary transition-colors ${
@@ -40,7 +40,7 @@ export function NotesList({ items, currentTag }: NotesListProps) {
                                     {post.frontmatter.title}
                                 </a>
                             </div>
-                            <div className="flex items-center gap-2">
+                            <div className="flex items-center gap-2 flex-wrap">
                                 <Badge variant={getCategory(post.slug)}>
                                     {getCategoryLabel(getCategory(post.slug))}
                                 </Badge>
