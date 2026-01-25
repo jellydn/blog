@@ -1,6 +1,9 @@
 // next.config.js
+const path = require('node:path');
+
 module.exports = {
     reactStrictMode: true,
+    outputFileTracingRoot: path.join(__dirname),
     experimental: {},
     images: {
         remotePatterns: [
