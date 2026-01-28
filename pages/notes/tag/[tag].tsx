@@ -37,7 +37,7 @@ export default function TagPage({ tag, title, items }: TagPageProps) {
                 title={`${tag} | Blog | ${title}`}
                 description={`Blog posts tagged with "${tag}"`}
             />
-            <div data-theme="minimal">
+            <div>
                 <nav className="bg-base-200">
                     <div className="container mx-auto px-4 py-4 max-w-5xl">
                         <Link

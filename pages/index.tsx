@@ -112,7 +112,7 @@ const Index = ({
                 }}
             />
 
-            <div data-theme="minimal">
+            <div>
                 <section className="hero min-h-[60vh] bg-gradient-to-r from-primary/10 to-accent/10">
                     <div className="hero-content text-center">
                         <div className="max-w-3xl">
