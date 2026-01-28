@@ -30,6 +30,9 @@ pnpm lint
 
 # Run Biome formatter with auto-fix
 pnpm format
+
+# Fetch YouTube videos data
+pnpm fetch:videos
 ```
 
 ### Single Test
@@ -52,13 +55,13 @@ pnpm exec biome check .
 - **Target**: ES5, **JSX**: Preserve, **Module**: ESNext with Node resolution
 - Use explicit type annotations for function parameters and return types
 - Use `interface` for object types, `type` for unions/primitives
-- Define custom types in `lib/*.ts` files
+- Define custom types in `lib/types.ts`
 
 ### React Components
 
 - Use `React.FC<Props>` for component typing
 - Named exports for components: `export default ComponentName`
-- Props interfaces: inline or same file for simple components
+- Props interfaces: inline for simple components (see `components/Layout.tsx`)
 - Prefer functional components with hooks over class components
 - Handle null/undefined states explicitly
 
@@ -80,6 +83,7 @@ import { useState } from "react";
 
 ### Formatting (Biome)
 
+Configured in `biome.json`:
 - **Indent**: 4 spaces, **Line width**: 80 characters
 - **Line endings**: LF, **Quotes**: Single for JS, double for JSX
 - **Semicolons**: Always, **Trailing commas**: All
@@ -103,10 +107,10 @@ import { useState } from "react";
 
 ### CSS/Styling
 
-- Tailwind CSS v4 utility classes
-- DaisyUI themes: `corporate` and `winter`
+- Tailwind CSS v4 with CSS-first configuration (`styles.css`)
+- DaisyUI themes: `minimal` (default), `winter`, `dark`
 - Typography plugin for prose content
-- Minimal custom classes; leverage DaisyUI/Tailwind
+- Minimal custom CSS; leverage DaisyUI/Tailwind utilities
 
 ## File Organization
 
@@ -127,13 +131,17 @@ scripts/     - Build and utility scripts
 - `tsconfig.json` - TypeScript configuration
 - `package.json` - Scripts and dependencies
 - `next.config.js` - Next.js configuration
+- `styles.css` - Tailwind v4 and DaisyUI theme configuration
+- `.nvmrc` - Node.js version
 
 ## Development Notes
 
 - TinaCMS requires `tinacms build` before production build
 - Markdown files use raw-loader for direct import
 - Image domains: `gyazo.com` configured in Next.js
+- Three DaisyUI themes available: `minimal`, `winter`, `dark`
 - Webfinger redirects configured for Fediverse support
+- Node.js version specified in `.nvmrc`
 
 ## Common Tasks
 
