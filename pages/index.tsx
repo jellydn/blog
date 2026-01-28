@@ -1,5 +1,6 @@
 import { NextSeo } from 'next-seo';
 import Head from 'next/head';
+import Script from 'next/script';
 
 import { Button } from 'components/Button';
 import Layout from 'components/Layout';
@@ -84,7 +85,9 @@ const Index = ({
         <Layout siteTitle={title} siteDescription={description}>
             <Head>
                 {/* Prefetch API data before React hydrates for faster perceived load */}
-                <script
+                <Script
+                    id="prefetch-api-data"
+                    strategy="beforeInteractive"
                     // biome-ignore lint/security/noDangerouslySetInnerHtml: Inline script for performance, no user input
                     dangerouslySetInnerHTML={{ __html: PREFETCH_SCRIPT }}
                 />

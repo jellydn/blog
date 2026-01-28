@@ -1,70 +1,35 @@
-import { createContext, useContext, useEffect, useState } from 'react';
+'use client';
 
-/**
- * Theme names for the blog's dark/light mode toggle.
- *
- * Note: 'minimal' is a custom DaisyUI theme defined in styles.css, not a
- * standard DaisyUI theme. It serves as the light theme, while 'dark' is also
- * a custom theme for dark mode.
- *
- * @see styles.css - @plugin "daisyui/theme" definitions for "minimal" and "dark"
- */
+import {
+    ThemeProvider as NextThemesProvider,
+    useTheme as useNextTheme,
+} from 'next-themes';
+
 type Theme = 'minimal' | 'dark';
 
-interface ThemeContextType {
-    theme: Theme;
-    toggleTheme: () => void;
-    setTheme: (theme: Theme) => void;
-}
-
-const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
-
+// Export provider wrapper with DaisyUI-compatible configuration
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
-    const [theme, setThemeState] = useState<Theme>('minimal');
-    const [mounted, setMounted] = useState(false);
-
-    useEffect(() => {
-        setMounted(true);
-        // Get saved preference or default to 'minimal'
-        const saved = localStorage.getItem('theme') as Theme | null;
-        if (saved && (saved === 'minimal' || saved === 'dark')) {
-            setThemeState(saved);
-            document.documentElement.setAttribute('data-theme', saved);
-        } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            setThemeState('dark');
-            document.documentElement.setAttribute('data-theme', 'dark');
-        }
-    }, []);
-
-    const setTheme = (newTheme: Theme) => {
-        setThemeState(newTheme);
-        localStorage.setItem('theme', newTheme);
-        document.documentElement.setAttribute('data-theme', newTheme);
-    };
-
-    const toggleTheme = () => {
-        setTheme(theme === 'minimal' ? 'dark' : 'minimal');
-    };
-
-    // Prevent hydration mismatch by rendering children with the theme
-    // After mount, we apply the actual theme
-    useEffect(() => {
-        if (mounted) {
-            document.documentElement.setAttribute('data-theme', theme);
-        }
-    }, [theme, mounted]);
-
     return (
-        <ThemeContext.Provider value={{ theme, toggleTheme, setTheme }}>
+        <NextThemesProvider
+            themes={['minimal', 'dark']}
+            defaultTheme="minimal"
+            storageKey="theme"
+            enableSystem={false}
+            attribute="data-theme"
+        >
             {children}
-        </ThemeContext.Provider>
+        </NextThemesProvider>
     );
 }
 
+// Export custom hook that matches the existing API
 export function useTheme() {
-    const context = useContext(ThemeContext);
-    if (context === undefined) {
-        throw new Error('useTheme must be used within a ThemeProvider');
-    }
-    return context;
+    const { theme, setTheme } = useNextTheme();
+    return {
+        theme: theme as Theme,
+        setTheme: setTheme as (theme: Theme) => void,
+        toggleTheme: () => {
+            setTheme(theme === 'minimal' ? 'dark' : 'minimal');
+        },
+    };
 }

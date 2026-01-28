@@ -20,11 +20,18 @@ export function sortByDate<T extends { frontmatter: { date: string } }>(
 }
 
 export function extractSlug(filePath: string): string {
-    // Remove directory path, split by extension, remove extension, rejoin
+    // Remove directory path and extract filename
     const fileName = filePath.replace(/^.*[\\/]/, '');
-    const parts = fileName.split('.');
-    parts.pop(); // Remove extension
-    return parts.join('.');
+    const lastDotIndex = fileName.lastIndexOf('.');
+
+    // If no extension, return filename as-is
+    if (lastDotIndex === -1) {
+        return fileName;
+    }
+
+    // Remove only the last extension
+    const baseName = fileName.substring(0, lastDotIndex);
+    return baseName;
 }
 
 export type ParsedMarkdown = {

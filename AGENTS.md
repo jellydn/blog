@@ -148,12 +148,6 @@ scripts/     - Build and utility scripts
 # Create in components/ with PascalCase name
 ```
 
-## Skills
-
-For React and Next.js performance optimization, refer to:
-
-- `.agents/skills/vercel-react-best-practices/AGENTS.md`
-
 ## After Code Changes
 
 Run linting and format:
