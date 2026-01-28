@@ -1,37 +1,28 @@
 import { client } from '../tina/__generated__/client';
+import type { TinaPost, TinaVideo } from './types';
 
-import type { TinaPost, TinaVideo } from 'lib/types';
+type Edge<T> = { node?: T };
 
-interface TinaEdge<T> {
-    node?: T;
-}
+export type { Edge };
 
 export async function fetchLatestPosts(limit = 6): Promise<TinaPost[]> {
     try {
-        const response = await client.queries.postsConnection({
+        const { data } = await client.queries.postsConnection({
             first: limit,
             sort: 'date',
         });
 
-        return response.data.postsConnection.edges.map(
-            (
-                edge: TinaEdge<{
-                    _sys: { filename: string };
-                    title?: string;
-                    description?: string;
-                    date?: string;
-                    tag?: string[];
-                    hero_image?: string;
-                }>,
-            ) => ({
-                _sys: { filename: edge.node?._sys.filename ?? '' },
-                title: edge.node?.title ?? '',
-                description: edge.node?.description ?? '',
-                date: edge.node?.date ?? '',
-                tag: edge.node?.tag,
-                hero_image: edge.node?.hero_image,
-            }),
-        );
+        return data.postsConnection.edges.map((edge) => {
+            const node = edge.node;
+            return {
+                _sys: { filename: node?._sys.filename ?? '' },
+                title: node?.title ?? '',
+                description: node?.description ?? '',
+                date: node?.date ?? '',
+                tag: node?.tag,
+                hero_image: node?.hero_image,
+            } as TinaPost;
+        });
     } catch {
         return [];
     }
@@ -39,32 +30,23 @@ export async function fetchLatestPosts(limit = 6): Promise<TinaPost[]> {
 
 export async function fetchLatestVideos(limit = 6): Promise<TinaVideo[]> {
     try {
-        const response = await client.queries.videosConnection({
+        const { data } = await client.queries.videosConnection({
             first: limit,
             sort: 'date',
         });
 
-        return response.data.videosConnection.edges.map(
-            (
-                edge: TinaEdge<{
-                    _sys: { filename: string };
-                    title?: string;
-                    description?: string;
-                    date?: string;
-                    youtube_id?: string;
-                    tag?: string[];
-                    hero_image?: string;
-                }>,
-            ) => ({
-                _sys: { filename: edge.node?._sys.filename ?? '' },
-                title: edge.node?.title ?? '',
-                description: edge.node?.description ?? '',
-                date: edge.node?.date ?? '',
-                youtube_id: edge.node?.youtube_id ?? '',
-                tag: edge.node?.tag,
-                hero_image: edge.node?.hero_image,
-            }),
-        );
+        return data.videosConnection.edges.map((edge) => {
+            const node = edge.node;
+            return {
+                _sys: { filename: node?._sys.filename ?? '' },
+                title: node?.title ?? '',
+                description: node?.description ?? '',
+                date: node?.date ?? '',
+                youtube_id: node?.youtube_id ?? '',
+                tag: node?.tag,
+                hero_image: node?.hero_image,
+            } as TinaVideo;
+        });
     } catch {
         return [];
     }

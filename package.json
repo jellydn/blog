@@ -6,7 +6,8 @@
         "build": "tinacms build && next build",
         "dev": "tinacms dev -c \"next\"",
         "develop": "yarn dev",
-        "lint": "next lint",
+        "lint": "biome ci .",
+        "format": "biome format --write .",
         "start": "tinacms build && next start",
         "fetch:videos": "bun scripts/fetch-youtube-videos.ts"
     },
@@ -28,6 +29,7 @@
         "lite-youtube-embed": "0.3.4",
         "next": "15.5.10",
         "next-seo": "6.8.0",
+        "next-themes": "^0.4.6",
         "node-glob": "1.2.0",
         "prismjs": "1.30.0",
         "raw-loader": "4.0.2",

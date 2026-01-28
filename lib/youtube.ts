@@ -1,12 +1,6 @@
-export type YouTubeVideo = {
-    id: string;
-    title: string;
-    description: string;
-    thumbnailUrl: string;
-    publishedAt: string;
-};
+import type { YouTubeVideo } from './types';
 
-export interface YouTubeApiItem {
+export type YouTubeApiItem = {
     snippet: {
         title: string;
         description: string;
@@ -15,11 +9,9 @@ export interface YouTubeApiItem {
             default?: { url: string };
         };
         publishedAt: string;
-        resourceId: {
-            videoId: string;
-        };
+        resourceId: { videoId: string };
     };
-}
+};
 
 const YOUTUBE_API_KEY = process.env.YOUTUBE_API_KEY;
 const CHANNEL_ID = process.env.CHANNEL_ID;

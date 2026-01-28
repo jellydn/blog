@@ -1,13 +1,12 @@
-import matter from 'gray-matter';
 import { NextSeo } from 'next-seo';
 import Head from 'next/head';
+import Script from 'next/script';
 
-import type { BlogPost } from 'components/BlogList';
 import { Button } from 'components/Button';
 import Layout from 'components/Layout';
 import { RepoStars } from 'components/RepoStars';
-import type { VideoPost } from 'components/VideoList';
-import { dedupeBySlug } from 'lib/utils/array';
+import type { BlogPost, VideoPost } from 'lib/types';
+import { dedupeBySlug, extractSlug, parseMarkdown } from 'lib/utils/array';
 import dynamic from 'next/dynamic';
 import reposData from '../data/repos.json';
 
@@ -41,7 +40,14 @@ type IndexProps = {
     repos: typeof reposData;
 };
 
-const socialLinks = [
+type SocialLink = {
+    name: string;
+    url: string;
+    ariaLabel: string;
+    primary?: boolean;
+};
+
+const socialLinks: SocialLink[] = [
     {
         name: 'Hire Me',
         url: 'https://www.upwork.com/freelancers/~01b1a6f7c757b5ec48',
@@ -66,7 +72,7 @@ const socialLinks = [
 ];
 
 function getTopProjects(repos: typeof reposData, limit = 6) {
-    const allRepos = repos.flatMap((category) => category.repos);
+    const allRepos = repos.flatMap((category) => category.repos ?? []);
     return allRepos
         .filter((repo) => repo.stars > 0)
         .sort((a, b) => b.stars - a.stars)
@@ -86,7 +92,9 @@ const Index = ({
         <Layout siteTitle={title} siteDescription={description}>
             <Head>
                 {/* Prefetch API data before React hydrates for faster perceived load */}
-                <script
+                <Script
+                    id="prefetch-api-data"
+                    strategy="beforeInteractive"
                     // biome-ignore lint/security/noDangerouslySetInnerHtml: Inline script for performance, no user input
                     dangerouslySetInnerHTML={{ __html: PREFETCH_SCRIPT }}
                 />
@@ -112,7 +120,7 @@ const Index = ({
                 }}
             />
 
-            <div data-theme="minimal">
+            <div>
                 <section className="hero min-h-[60vh] bg-gradient-to-r from-primary/10 to-accent/10">
                     <div className="hero-content text-center">
                         <div className="max-w-3xl">
@@ -269,12 +277,7 @@ const Index = ({
                                     href={social.url}
                                     target="_blank"
                                     rel="noreferrer"
-                                    variant={
-                                        (social as { primary?: boolean })
-                                            .primary
-                                            ? 'primary'
-                                            : 'outline'
-                                    }
+                                    variant={social.primary ? 'primary' : 'outline'}
                                     aria-label={social.ariaLabel}
                                 >
                                     {social.name}
@@ -293,47 +296,19 @@ export default Index;
 export async function getStaticProps() {
     const siteConfig = await import('../data/config.json');
 
-    const posts = ((context) => {
-        const keys = context.keys();
-        const values = keys.map(context);
-
-        const data = keys.map((key: string, index: number) => {
-            const slug = key
-                .replace(/^.*[\\/]/, '')
-                .split('.')
-                .slice(0, -1)
-                .join('.');
-            const value = values[index];
-            const document = matter(value.default);
-            return {
-                frontmatter: document.data,
-                slug,
-            };
+    const loadMarkdown = (context: {
+        keys(): string[];
+        (key: string): { default: string };
+    }) =>
+        context.keys().map((key: string) => {
+            const slug = extractSlug(key);
+            return parseMarkdown(context(key).default, slug);
         });
-        return data;
-        // @ts-expect-error require.context is a webpack function
-    })(require.context('../posts', true, /\.md$/));
 
-    const videos = ((context) => {
-        const keys = context.keys();
-        const values = keys.map(context);
-
-        const data = keys.map((key: string, index: number) => {
-            const slug = key
-                .replace(/^.*[\\/]/, '')
-                .split('.')
-                .slice(0, -1)
-                .join('.');
-            const value = values[index];
-            const document = matter(value.default);
-            return {
-                frontmatter: document.data,
-                slug,
-            };
-        });
-        return data;
-        // @ts-expect-error require.context is a webpack function
-    })(require.context('../videos', true, /\.md$/));
+    // @ts-expect-error require.context is a webpack function
+    const posts = loadMarkdown(require.context('../posts', true, /\.md$/));
+    // @ts-expect-error require.context is a webpack function
+    const videos = loadMarkdown(require.context('../videos', true, /\.md$/));
 
     return {
         props: {

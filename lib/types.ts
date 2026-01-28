@@ -55,5 +55,4 @@ export type YouTubeVideo = {
     description: string;
     thumbnailUrl: string;
     publishedAt: string;
-    viewCount?: number;
 };

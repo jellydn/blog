@@ -1,5 +1,5 @@
 {
-    "$schema": "https://biomejs.dev/schemas/1.8.3/schema.json",
+    "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
     "vcs": {
         "clientKind": "git",
         "enabled": true,
@@ -15,7 +15,7 @@
         "lineWidth": 80,
         "attributePosition": "auto"
     },
-    "organizeImports": { "enabled": true },
+    "assist": { "actions": { "source": { "organizeImports": "on" } } },
     "linter": { "enabled": true, "rules": { "recommended": true } },
     "javascript": {
         "formatter": {
@@ -31,6 +31,6 @@
         }
     },
     "files": {
-        "ignore": ["tina/__generated__/**"]
+        "includes": ["**", "!**/tina/__generated__/**"]
     }
 }

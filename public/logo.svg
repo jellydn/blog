@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60">
+  <style>
+    .logo-element { fill: #000000; }
+    @media (prefers-color-scheme: dark) {
+      .logo-element { fill: #ffffff; }
+    }
+  </style>
+
+  <!-- IT Text -->
+  <text x="0" y="42" font-family="monospace" font-size="36" font-weight="bold" class="logo-element">IT</text>
+
+  <!-- Man/Coding Icon -->
+  <!-- Head -->
+  <circle cx="57" cy="16" r="8" class="logo-element"/>
+  <!-- Body -->
+  <rect x="51" y="26" width="12" height="14" rx="2" class="logo-element"/>
+  <!-- Arms with code brackets -->
+  <path d="M45 32 L49 28 L49 36 Z" class="logo-element"/>
+  <path d="M69 32 L65 28 L65 36 Z" class="logo-element"/>
+  <!-- Legs -->
+  <rect x="51" y="42" width="4" height="10" class="logo-element"/>
+  <rect x="59" y="42" width="4" height="10" class="logo-element"/>
+
+  <!-- Man Text -->
+  <text x="85" y="42" font-family="monospace" font-size="36" font-weight="bold" class="logo-element">Man</text>
+</svg>

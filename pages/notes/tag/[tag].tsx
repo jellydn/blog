@@ -2,10 +2,9 @@ import matter from 'gray-matter';
 import { NextSeo } from 'next-seo';
 import Link from 'next/link';
 
-import type { BlogPost } from 'components/BlogList';
 import Layout from 'components/Layout';
 import { NotesList } from 'components/NotesList';
-import type { VideoPost } from 'components/VideoList';
+import type { BlogPost, VideoPost } from 'lib/types';
 import { dedupeBySlug, sortByDate } from 'lib/utils/array';
 
 type BlogFrontmatter = {
@@ -37,7 +36,7 @@ export default function TagPage({ tag, title, items }: TagPageProps) {
                 title={`${tag} | Blog | ${title}`}
                 description={`Blog posts tagged with "${tag}"`}
             />
-            <div data-theme="minimal">
+            <div>
                 <nav className="bg-base-200">
                     <div className="container mx-auto px-4 py-4 max-w-5xl">
                         <Link

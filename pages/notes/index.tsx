@@ -1,9 +1,9 @@
 import matter from 'gray-matter';
 import { NextSeo } from 'next-seo';
 
-import type { BlogPost } from 'components/BlogList';
 import Layout from 'components/Layout';
 import { NotesList } from 'components/NotesList';
+import type { BlogPost } from 'lib/types';
 import { dedupeBySlug, sortByDate } from 'lib/utils/array';
 
 type BlogFrontmatter = {
@@ -43,7 +43,7 @@ const BlogPage = ({ title, description, items }: BlogPageProps) => {
                 }}
             />
 
-            <div data-theme="minimal">
+            <div>
                 <section className="py-12 md:py-20 bg-base-200">
                     <div className="container mx-auto px-4 max-w-5xl">
                         <h1 className="text-4xl md:text-5xl font-bold mb-4">

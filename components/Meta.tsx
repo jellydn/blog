@@ -21,21 +21,16 @@ export default function Meta({
             <meta property="og:type" content="website" />
             <meta property="og:title" content={siteTitle} />
             <meta property="og:description" content={siteDescription} />
-            <meta
-                property="og:image"
-                content="https://blog.productsway.com/og-image.png"
-            />
+            <meta property="og:image" content="/og-image.png" />
 
             {/* Twitter */}
             <meta name="twitter:card" content="summary_large_image" />
             <meta name="twitter:title" content={siteTitle} />
             <meta name="twitter:description" content={siteDescription} />
-            <meta
-                name="twitter:image"
-                content="https://blog.productsway.com/og-image.png"
-            />
+            <meta name="twitter:image" content="/og-image.png" />
 
             {/* Favicon */}
+            <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
             <link
                 rel="apple-touch-icon"
                 sizes="57x57"
