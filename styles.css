@@ -139,12 +139,12 @@
 }
 
 /* Inline code in dark mode */
-[data-theme='dark'] .prose code {
+[data-theme="dark"] .prose code {
   background-color: #475569;
   color: #f1f5f9;
 }
 
 /* Code block in light mode override */
-[data-theme='minimal'] .prose pre {
+[data-theme="minimal"] .prose pre {
   background-color: #1e293b !important;
 }
