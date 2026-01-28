@@ -27,11 +27,11 @@ pnpm build
 # Start production server
 pnpm start
 
-# Run Next.js linting
+# Run Biome linting (CI mode - no file modifications)
 pnpm lint
 
 # Run Biome formatter
-pnpm exec biome format --write .
+pnpm format
 
 # Run Biome linter with auto-fix
 pnpm exec biome check --apply .
@@ -166,5 +166,5 @@ Run linting and typecheck:
 
 ```bash
 pnpm lint
-pnpm exec biome ci .
+pnpm format
 ```

@@ -6,7 +6,8 @@
         "build": "tinacms build && next build",
         "dev": "tinacms dev -c \"next\"",
         "develop": "yarn dev",
-        "lint": "next lint",
+        "lint": "biome ci .",
+        "format": "biome format --write .",
         "start": "tinacms build && next start",
         "fetch:videos": "bun scripts/fetch-youtube-videos.ts"
     },
