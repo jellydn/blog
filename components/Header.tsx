@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 import { useTheme } from '../lib/useTheme';
@@ -135,20 +136,13 @@ export default function Header({ siteTitle }: { siteTitle: string }) {
                         href="/"
                         className="flex items-center gap-2 font-semibold text-base-content hover:text-primary transition-colors"
                     >
-                        <svg
-                            className="w-5 h-5"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                            suppressHydrationWarning
-                        >
-                            <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth="2"
-                                d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                            />
-                        </svg>
+                        <Image
+                            src="/logo.svg"
+                            alt="ITMan Logo"
+                            width={80}
+                            height={24}
+                            priority
+                        />
                         <span>{siteTitle}</span>
                     </Link>
 
