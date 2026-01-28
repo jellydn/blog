@@ -9,14 +9,17 @@ export async function fetchLatestPosts(limit = 6): Promise<TinaPost[]> {
             sort: 'date',
         });
 
-        return response.data.postsConnection.edges.map((edge) => ({
-            _sys: { filename: edge.node?._sys.filename ?? '' },
-            title: edge.node?.title ?? '',
-            description: edge.node?.description ?? '',
-            date: edge.node?.date ?? '',
-            tag: edge.node?.tag,
-            hero_image: edge.node?.hero_image,
-        }));
+        return response.data.postsConnection.edges.map((edge) => {
+            const node = edge.node;
+            return {
+                _sys: { filename: node?._sys.filename ?? '' },
+                title: node?.title ?? '',
+                description: node?.description ?? '',
+                date: node?.date ?? '',
+                tag: node?.tag,
+                hero_image: node?.hero_image,
+            };
+        });
     } catch {
         return [];
     }
@@ -29,15 +32,18 @@ export async function fetchLatestVideos(limit = 6): Promise<TinaVideo[]> {
             sort: 'date',
         });
 
-        return response.data.videosConnection.edges.map((edge) => ({
-            _sys: { filename: edge.node?._sys.filename ?? '' },
-            title: edge.node?.title ?? '',
-            description: edge.node?.description ?? '',
-            date: edge.node?.date ?? '',
-            youtube_id: edge.node?.youtube_id ?? '',
-            tag: edge.node?.tag,
-            hero_image: edge.node?.hero_image,
-        }));
+        return response.data.videosConnection.edges.map((edge) => {
+            const node = edge.node;
+            return {
+                _sys: { filename: node?._sys.filename ?? '' },
+                title: node?.title ?? '',
+                description: node?.description ?? '',
+                date: node?.date ?? '',
+                youtube_id: node?.youtube_id ?? '',
+                tag: node?.tag,
+                hero_image: node?.hero_image,
+            };
+        });
     } catch {
         return [];
     }

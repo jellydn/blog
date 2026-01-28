@@ -20,7 +20,11 @@ export function sortByDate<T extends { frontmatter: { date: string } }>(
 }
 
 export function extractSlug(filePath: string): string {
-    return filePath.replace(/^.*[\\/]/, '').split('.').slice(0, -1).join('.');
+    // Remove directory path, split by extension, remove extension, rejoin
+    const fileName = filePath.replace(/^.*[\\/]/, '');
+    const parts = fileName.split('.');
+    parts.pop(); // Remove extension
+    return parts.join('.');
 }
 
 export type ParsedMarkdown = {

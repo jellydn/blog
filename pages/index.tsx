@@ -64,11 +64,11 @@ const socialLinks = [
 ];
 
 function getTopProjects(repos: typeof reposData, limit = 6) {
-    const allRepos = repos.flatMap((category) => category.repos);
-    return allRepos
-        .filter((repo) => repo.stars > 0)
-        .sort((a, b) => b.stars - a.stars)
-        .slice(0, limit);
+    if (!repos?.length) return [];
+
+    const allRepos = repos.flatMap((category) => category.repos ?? []);
+    const withStars = allRepos.filter((repo) => repo.stars > 0);
+    return withStars.sort((a, b) => b.stars - a.stars).slice(0, limit);
 }
 
 const Index = ({
