@@ -84,6 +84,7 @@ import { useState } from "react";
 ### Formatting (Biome)
 
 Configured in `biome.json`:
+
 - **Indent**: 4 spaces, **Line width**: 80 characters
 - **Line endings**: LF, **Quotes**: Single for JS, double for JSX
 - **Semicolons**: Always, **Trailing commas**: All
