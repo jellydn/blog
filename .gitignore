@@ -90,3 +90,7 @@ node_modules
 .claude/skills/vercel-react-best-practices
 .claude/skills/web-design-guidelines
 tsconfig.tsbuildinfo
+tina/__generated__
+.agents/skills/agent-browser
+.claude/skills
+.opencode/skills
