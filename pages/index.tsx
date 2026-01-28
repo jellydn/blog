@@ -2,11 +2,10 @@ import matter from 'gray-matter';
 import { NextSeo } from 'next-seo';
 import Head from 'next/head';
 
-import type { BlogPost } from 'components/BlogList';
 import { Button } from 'components/Button';
 import Layout from 'components/Layout';
 import { RepoStars } from 'components/RepoStars';
-import type { VideoPost } from 'components/VideoList';
+import type { BlogPost, VideoPost } from 'lib/types';
 import { dedupeBySlug } from 'lib/utils/array';
 import dynamic from 'next/dynamic';
 import reposData from '../data/repos.json';

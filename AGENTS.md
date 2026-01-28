@@ -1,7 +1,5 @@
 # AGENTS.md - Development Guidelines for productsway-blog
 
-This document provides guidelines for agentic coding agents operating in this repository.
-
 ## Project Overview
 
 A Next.js 15 blog with TinaCMS for content management, using TypeScript, Tailwind CSS v4, and DaisyUI. The blog features posts, videos, and experimental content for developers.
@@ -30,26 +28,20 @@ pnpm start
 # Run Biome linting (CI mode - no file modifications)
 pnpm lint
 
-# Run Biome formatter
+# Run Biome formatter with auto-fix
 pnpm format
-
-# Run Biome linter with auto-fix
-pnpm exec biome check --apply .
-
-# Check Biome without modifying files
-pnpm exec biome ci .
 ```
 
-### Testing
+### Single Test
 
 No test framework is currently configured. Do not add tests unless explicitly requested.
 
 ### Pre-commit Hooks
 
-Pre-commit hooks run Biome for formatting, importing, and linting. Run manually:
+Pre-commit hooks run Biome automatically via Husky. Run manually:
 
 ```bash
-pnpm exec biome-check
+pnpm exec biome check .
 ```
 
 ## Code Style Guidelines
@@ -74,7 +66,7 @@ pnpm exec biome-check
 
 ```typescript
 // Relative imports for local files
-import Layout from "././Layout";
+import Layout from "./Layout";
 
 // Alias imports (configured in tsconfig)
 import { client } from "../tina/__generated__/client";
@@ -88,12 +80,9 @@ import { useState } from "react";
 
 ### Formatting (Biome)
 
-- **Indent**: 4 spaces
-- **Line width**: 80 characters
-- **Line endings**: LF
-- **Quotes**: Single for JS (`'`), double for JSX (`"`)
-- **Semicolons**: Always
-- **Trailing commas**: All
+- **Indent**: 4 spaces, **Line width**: 80 characters
+- **Line endings**: LF, **Quotes**: Single for JS, double for JSX
+- **Semicolons**: Always, **Trailing commas**: All
 - **Bracket spacing**: Enabled
 
 ### Naming Conventions
@@ -136,9 +125,8 @@ scripts/     - Build and utility scripts
 
 - `biome.json` - Linting and formatting rules
 - `tsconfig.json` - TypeScript configuration
-- `tailwind.config.js` - Tailwind and DaisyUI config
-- `next.config.js` - Next.js configuration
 - `package.json` - Scripts and dependencies
+- `next.config.js` - Next.js configuration
 
 ## Development Notes
 
@@ -156,15 +144,20 @@ scripts/     - Build and utility scripts
 # Create a new page
 # Add .tsx file to pages/
 
-# Add a new component
+# Create a new component
 # Create in components/ with PascalCase name
 ```
 
+## Skills
+
+For React and Next.js performance optimization, refer to:
+
+- `.agents/skills/vercel-react-best-practices/AGENTS.md`
+
 ## After Code Changes
 
-Run linting and typecheck:
+Run linting and format:
 
 ```bash
-pnpm lint
-pnpm format
+pnpm lint && pnpm format
 ```

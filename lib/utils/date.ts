@@ -5,3 +5,8 @@ export function formatDate(date: string | number | Date, long = false): string {
         year: 'numeric',
     });
 }
+
+export function reformatDate(fullDate: string): string {
+    const date = new Date(fullDate);
+    return date.toDateString().slice(4);
+}

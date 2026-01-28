@@ -1,8 +1,7 @@
 import Link from 'next/link';
 
 import { Badge, getCategory, getCategoryLabel } from 'components/Badge';
-import type { BlogPost } from 'components/BlogList';
-import type { VideoPost } from 'components/VideoList';
+import type { BlogPost, VideoPost } from 'lib/types';
 import { formatDate } from 'lib/utils/date';
 
 type NotesListProps = {

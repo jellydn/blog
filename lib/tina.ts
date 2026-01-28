@@ -6,6 +6,8 @@ interface TinaEdge<T> {
     node?: T;
 }
 
+export type { TinaEdge };
+
 export async function fetchLatestPosts(limit = 6): Promise<TinaPost[]> {
     try {
         const response = await client.queries.postsConnection({

@@ -1,9 +1,9 @@
 import matter from 'gray-matter';
 import { NextSeo } from 'next-seo';
 
-import type { BlogPost } from 'components/BlogList';
 import Layout from 'components/Layout';
 import { NotesList } from 'components/NotesList';
+import type { BlogPost } from 'lib/types';
 import { dedupeBySlug, sortByDate } from 'lib/utils/array';
 
 type BlogFrontmatter = {

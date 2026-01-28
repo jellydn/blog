@@ -2,17 +2,13 @@ import dynamic from 'next/dynamic';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import type { VideoFrontmatter, VideoPost } from 'lib/types';
+import { reformatDate } from 'lib/utils/date';
+import type { VideoPost } from 'lib/types';
 
 const YoutubeVideo = dynamic(() => import('./YoutubeVideo'), {
     loading: () => <div>Loading...</div>,
     ssr: false,
 });
-
-function reformatDate(fullDate: string): string {
-    const date = new Date(fullDate);
-    return date.toDateString().slice(4);
-}
 
 const VideoList = ({ allVideos }: { allVideos: VideoPost[] }) => {
     return (
@@ -64,4 +60,4 @@ const VideoList = ({ allVideos }: { allVideos: VideoPost[] }) => {
 };
 
 export default VideoList;
-export type { VideoPost, VideoFrontmatter };
+export type { VideoPost };

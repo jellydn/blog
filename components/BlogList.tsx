@@ -1,24 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-type BlogFrontmatter = {
-    title: string;
-    description: string;
-    date: string;
-    hero_image?: string;
-    tag?: string[];
-    author?: string;
-};
-
-type BlogPost = {
-    slug: string;
-    frontmatter: BlogFrontmatter;
-};
-
-function reformatDate(fullDate: string): string {
-    const date = new Date(fullDate);
-    return date.toDateString().slice(4);
-}
+import { reformatDate } from 'lib/utils/date';
+import type { BlogPost } from 'lib/types';
 
 const BlogList = ({ allBlogs }: { allBlogs: BlogPost[] }) => {
     return (
@@ -66,4 +50,3 @@ const BlogList = ({ allBlogs }: { allBlogs: BlogPost[] }) => {
 };
 
 export default BlogList;
-export type { BlogPost, BlogFrontmatter };
