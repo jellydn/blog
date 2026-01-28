@@ -23,10 +23,10 @@ function reformatDate(fullDate: string): string {
 const BlogList = ({ allBlogs }: { allBlogs: BlogPost[] }) => {
     return (
         <section className="py-24 px-4 mx-auto max-w-7xl">
-            <h2 className="mb-2 text-3xl font-extrabold leading-tight text-gray-900">
+            <h2 className="mb-2 text-3xl font-extrabold leading-tight text-base-content">
                 Latest Posts
             </h2>
-            <p className="mb-20 text-lg text-gray-500">
+            <p className="mb-20 text-lg text-base-content/60">
                 An experimental blog for coder
             </p>
             <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
@@ -44,18 +44,18 @@ const BlogList = ({ allBlogs }: { allBlogs: BlogPost[] }) => {
                                 />
                             </Link>
                         )}
-                        <h2 className="mb-2 text-lg font-semibold text-gray-900">
+                        <h2 className="mb-2 text-lg font-semibold text-base-content">
                             <Link
                                 href={`/blog/${post.slug}`}
-                                className="text-gray-900 hover:text-current"
+                                className="text-base-content hover:text-current"
                             >
                                 {post.frontmatter.title}
                             </Link>
                         </h2>
-                        <p className="mb-3 text-sm font-normal text-gray-500">
+                        <p className="mb-3 text-sm font-normal text-base-content/60">
                             {post.frontmatter.description}
                         </p>
-                        <p className="mb-3 text-sm font-normal text-gray-500">
+                        <p className="mb-3 text-sm font-normal text-base-content/60">
                             {reformatDate(post.frontmatter.date)}
                         </p>
                     </div>

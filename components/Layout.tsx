@@ -9,7 +9,7 @@ const Layout: React.FC<{
 }> = ({ siteTitle, siteDescription, children }) => (
     <>
         <Meta siteTitle={siteTitle} siteDescription={siteDescription} />
-        <main className="font-sans bg-white">
+        <main className="font-sans bg-base-100 text-base-content">
             <Header siteTitle={siteTitle} />
             {children}
             <Footer />
