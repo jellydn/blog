@@ -57,3 +57,8 @@ export type YouTubeVideo = {
     publishedAt: string;
     viewCount?: number;
 };
+
+export type TinaEdge<T> = {
+    cursor: string;
+    node?: T;
+};

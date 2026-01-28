@@ -1,6 +1,8 @@
 import { client } from '../tina/__generated__/client';
 
-import type { TinaPost, TinaVideo } from 'lib/types';
+import type { TinaPost, TinaVideo, TinaEdge } from 'lib/types';
+
+export type { TinaEdge };
 
 export async function fetchLatestPosts(limit = 6): Promise<TinaPost[]> {
     try {

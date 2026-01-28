@@ -19,21 +19,25 @@ export default async function handler(
         });
 
         const posts: TinaPost[] = response.data.postsConnection.edges
-            .map((edge: TinaEdge<{
-                _sys: { filename: string };
-                title?: string;
-                description?: string;
-                date?: string;
-                tag?: string[];
-                hero_image?: string;
-            }>) => ({
-                _sys: { filename: edge.node?._sys.filename ?? '' },
-                title: edge.node?.title ?? '',
-                description: edge.node?.description ?? '',
-                date: edge.node?.date ?? '',
-                tag: edge.node?.tag,
-                hero_image: edge.node?.hero_image,
-            }))
+            .map(
+                (
+                    edge: TinaEdge<{
+                        _sys: { filename: string };
+                        title?: string;
+                        description?: string;
+                        date?: string;
+                        tag?: string[];
+                        hero_image?: string;
+                    }>,
+                ) => ({
+                    _sys: { filename: edge.node?._sys.filename ?? '' },
+                    title: edge.node?.title ?? '',
+                    description: edge.node?.description ?? '',
+                    date: edge.node?.date ?? '',
+                    tag: edge.node?.tag,
+                    hero_image: edge.node?.hero_image,
+                }),
+            )
             .reverse();
 
         res.setHeader(

@@ -3,7 +3,9 @@ import Image from 'next/image';
 const Projects = () => (
     <section className="py-20 bg-neutral text-neutral-content pattern">
         <div className="px-6 mx-auto max-w-5xl text-center">
-            <h2 className="text-2xl font-semibold text-neutral-content">Side Projects</h2>
+            <h2 className="text-2xl font-semibold text-neutral-content">
+                Side Projects
+            </h2>
             <div className="flex justify-center items-center mt-10">
                 <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
                     <div className="w-full max-w-xs">

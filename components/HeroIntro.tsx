@@ -14,7 +14,9 @@ const HeroIntro = () => (
 
         <section className="py-20 bg-neutral text-neutral-content pattern">
             <div className="px-6 mx-auto max-w-5xl text-center">
-                <h2 className="text-2xl font-semibold text-neutral-content">About Me</h2>
+                <h2 className="text-2xl font-semibold text-neutral-content">
+                    About Me
+                </h2>
                 <p className="mt-4 text-neutral-content/70">
                     With over a decade of experience under my belt as a
                     full-stack developer, I&apos;ve had the opportunity to

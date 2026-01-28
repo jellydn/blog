@@ -1,5 +1,14 @@
 import { createContext, useContext, useEffect, useState } from 'react';
 
+/**
+ * Theme names for the blog's dark/light mode toggle.
+ *
+ * Note: 'minimal' is a custom DaisyUI theme defined in styles.css, not a
+ * standard DaisyUI theme. It serves as the light theme, while 'dark' is also
+ * a custom theme for dark mode.
+ *
+ * @see styles.css - @plugin "daisyui/theme" definitions for "minimal" and "dark"
+ */
 type Theme = 'minimal' | 'dark';
 
 interface ThemeContextType {

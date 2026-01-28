@@ -291,7 +291,10 @@ export default Index;
 export async function getStaticProps() {
     const siteConfig = await import('../data/config.json');
 
-    const loadMarkdown = (context: { keys(): string[]; (key: string): { default: string } }) =>
+    const loadMarkdown = (context: {
+        keys(): string[];
+        (key: string): { default: string };
+    }) =>
         context.keys().map((key: string) => {
             const slug = extractSlug(key);
             return parseMarkdown(context(key).default, slug);

@@ -124,8 +124,8 @@
 }
 
 .prose code {
-  color: #e2e8f0;
-  background-color: #334155;
+  color: var(--color-base-content);
+  background-color: var(--color-base-300);
   padding: 0.125rem 0.375rem;
   border-radius: 0.25rem;
   font-size: 0.875em;
@@ -139,12 +139,12 @@
 }
 
 /* Inline code in dark mode */
-.dark .prose code {
+[data-theme='dark'] .prose code {
   background-color: #475569;
   color: #f1f5f9;
 }
 
 /* Code block in light mode override */
-.light .prose pre {
+[data-theme='minimal'] .prose pre {
   background-color: #1e293b !important;
 }
