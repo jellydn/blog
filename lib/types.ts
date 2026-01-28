@@ -55,10 +55,4 @@ export type YouTubeVideo = {
     description: string;
     thumbnailUrl: string;
     publishedAt: string;
-    viewCount?: number;
-};
-
-export type TinaEdge<T> = {
-    cursor: string;
-    node?: T;
 };

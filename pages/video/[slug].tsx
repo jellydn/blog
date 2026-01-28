@@ -1,8 +1,6 @@
 import { globSync } from 'glob';
 import matter from 'gray-matter';
 import { NextSeo } from 'next-seo';
-import { useEffect } from 'react';
-
 import Link from 'next/link';
 
 import Layout from 'components/Layout';
@@ -30,10 +28,6 @@ export default function VideoTemplate({
     siteTitle,
     slug,
 }: VideoTemplateProps) {
-    useEffect(() => {
-        // Load syntax highlighting if needed
-    }, []);
-
     const canonicalUrl = `https://productsway.com/video/${slug}`;
     const youtubeEmbedUrl = `https://www.youtube.com/embed/${frontmatter.youtube_id}`;
     const youtubeWatchUrl = `https://www.youtube.com/watch?v=${frontmatter.youtube_id}`;

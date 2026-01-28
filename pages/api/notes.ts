@@ -1,7 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 import { client } from '../../tina/__generated__/client';
-
-import { TinaEdge } from '../../lib/tina';
+import { Edge } from '../../lib/tina';
 import type { TinaPost } from 'lib/types';
 
 export default async function handler(
@@ -21,7 +20,7 @@ export default async function handler(
         const posts: TinaPost[] = response.data.postsConnection.edges
             .map(
                 (
-                    edge: TinaEdge<{
+                    edge: Edge<{
                         _sys: { filename: string };
                         title?: string;
                         description?: string;
