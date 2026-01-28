@@ -1,4 +1,3 @@
-import Giscus from '@giscus/react';
 import { globSync } from 'glob';
 import matter from 'gray-matter';
 import { NextSeo } from 'next-seo';
@@ -67,7 +66,7 @@ export default function VideoTemplate({
                 }}
             />
 
-            <div data-theme="minimal" className="min-h-screen">
+            <div className="min-h-screen">
                 {/* Navigation */}
                 <nav className="border-b border-base-300">
                     <div className="container mx-auto px-4 py-4 max-w-5xl">
@@ -163,27 +162,6 @@ export default function VideoTemplate({
                             </svg>
                             Subscribe Channel
                         </a>
-                    </div>
-                </div>
-
-                {/* Comments */}
-                <div className="border-t border-base-300">
-                    <div className="container mx-auto px-4 py-12 max-w-4xl">
-                        <Giscus
-                            id="comments"
-                            repo="jellydn/blog"
-                            repoId="MDEwOlJlcG9zaXRvcnkyODM1MjQ3NTE="
-                            category="Ideas"
-                            categoryId="DIC_kwDOEOY-j84CQqDK"
-                            mapping="specific"
-                            term={frontmatter.title}
-                            reactionsEnabled="1"
-                            emitMetadata="0"
-                            inputPosition="top"
-                            theme="light"
-                            lang="en"
-                            loading="lazy"
-                        />
                     </div>
                 </div>
             </div>

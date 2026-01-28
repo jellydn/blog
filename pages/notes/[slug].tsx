@@ -1,7 +1,6 @@
 import { globSync } from 'glob';
 import matter from 'gray-matter';
 import { NextSeo } from 'next-seo';
-import dynamic from 'next/dynamic';
 import Link from 'next/link';
 import { useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
@@ -10,11 +9,6 @@ import gfm from 'remark-gfm';
 import { Badge, isTil } from 'components/Badge';
 import Layout from 'components/Layout';
 import { formatDate } from 'lib/utils/date';
-
-const Giscus = dynamic(
-    () => import('@giscus/react').then((mod) => mod.default),
-    { ssr: false },
-);
 
 type BlogFrontmatter = {
     title: string;
@@ -80,7 +74,7 @@ export default function BlogTemplate({
                 }}
             />
 
-            <div data-theme="minimal" className="min-h-screen">
+            <div className="min-h-screen">
                 {/* Navigation */}
                 <nav className="border-b border-base-300">
                     <div className="container mx-auto px-4 py-4 max-w-4xl">
@@ -133,7 +127,7 @@ export default function BlogTemplate({
                 {/* Article Content */}
                 <article className="container mx-auto px-4 pb-16 max-w-4xl">
                     <div
-                        className="prose prose-slate max-w-none"
+                        className="prose prose-slate dark:prose-invert max-w-none"
                         suppressHydrationWarning
                     >
                         <ReactMarkdown remarkPlugins={[gfm]}>
@@ -141,27 +135,6 @@ export default function BlogTemplate({
                         </ReactMarkdown>
                     </div>
                 </article>
-
-                {/* Comments */}
-                <div className="border-t border-base-300">
-                    <div className="container mx-auto px-4 py-12 max-w-4xl">
-                        <Giscus
-                            id="comments"
-                            repo="jellydn/blog"
-                            repoId="MDEwOlJlcG9zaXRvcnkyODM1MjQ3NTE="
-                            category="Ideas"
-                            categoryId="DIC_kwDOEOY-j84CQqDK"
-                            mapping="specific"
-                            term={frontmatter.title}
-                            reactionsEnabled="1"
-                            emitMetadata="0"
-                            inputPosition="top"
-                            theme="light"
-                            lang="en"
-                            loading="lazy"
-                        />
-                    </div>
-                </div>
             </div>
         </Layout>
     );
