@@ -40,7 +40,14 @@ type IndexProps = {
     repos: typeof reposData;
 };
 
-const socialLinks = [
+type SocialLink = {
+    name: string;
+    url: string;
+    ariaLabel: string;
+    primary?: boolean;
+};
+
+const socialLinks: SocialLink[] = [
     {
         name: 'Hire Me',
         url: 'https://www.upwork.com/freelancers/~01b1a6f7c757b5ec48',
@@ -65,11 +72,11 @@ const socialLinks = [
 ];
 
 function getTopProjects(repos: typeof reposData, limit = 6) {
-    if (!repos?.length) return [];
-
     const allRepos = repos.flatMap((category) => category.repos ?? []);
-    const withStars = allRepos.filter((repo) => repo.stars > 0);
-    return withStars.sort((a, b) => b.stars - a.stars).slice(0, limit);
+    return allRepos
+        .filter((repo) => repo.stars > 0)
+        .sort((a, b) => b.stars - a.stars)
+        .slice(0, limit);
 }
 
 const Index = ({
@@ -270,12 +277,7 @@ const Index = ({
                                     href={social.url}
                                     target="_blank"
                                     rel="noreferrer"
-                                    variant={
-                                        (social as { primary?: boolean })
-                                            .primary
-                                            ? 'primary'
-                                            : 'outline'
-                                    }
+                                    variant={social.primary ? 'primary' : 'outline'}
                                     aria-label={social.ariaLabel}
                                 >
                                     {social.name}

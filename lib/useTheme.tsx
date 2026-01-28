@@ -7,7 +7,6 @@ import {
 
 type Theme = 'minimal' | 'dark';
 
-// Export provider wrapper with DaisyUI-compatible configuration
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
     return (
         <NextThemesProvider
@@ -22,14 +21,14 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     );
 }
 
-// Export custom hook that matches the existing API
 export function useTheme() {
     const { theme, setTheme } = useNextTheme();
     return {
-        theme: theme as Theme,
+        theme: (theme ?? 'minimal') as Theme,
         setTheme: setTheme as (theme: Theme) => void,
         toggleTheme: () => {
-            setTheme(theme === 'minimal' ? 'dark' : 'minimal');
+            const current = theme ?? 'minimal';
+            setTheme(current === 'minimal' ? 'dark' : 'minimal');
         },
     };
 }

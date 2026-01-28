@@ -2,14 +2,26 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { useTheme } from '../lib/useTheme';
 
-const navLinks = [
+type NavLink = {
+    name: string;
+    href: string;
+    external?: boolean;
+};
+
+const navLinks: NavLink[] = [
     { name: 'Home', href: '/' },
     { name: 'Notes', href: '/notes' },
     { name: 'Videos', href: '/videos' },
     { name: 'Blog', href: 'https://blog.productsway.com/', external: true },
 ];
 
-const socialLinks = [
+type SocialLink = {
+    name: string;
+    href: string;
+    icon: React.ReactNode;
+};
+
+const socialLinks: SocialLink[] = [
     {
         name: 'GitHub',
         href: 'https://github.com/jellydn',
@@ -30,10 +42,89 @@ const socialLinks = [
     },
 ];
 
+const ThemeToggleButton = ({
+    isDark,
+    toggleTheme,
+}: {
+    isDark: boolean;
+    toggleTheme: () => void;
+}) => (
+    <button
+        type="button"
+        onClick={toggleTheme}
+        className="text-base-content/70 hover:text-primary transition-colors"
+        aria-label={`Switch to ${isDark ? 'light' : 'dark'} mode`}
+    >
+        {isDark ? (
+            <svg
+                className="w-5 h-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+            >
+                <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+                />
+            </svg>
+        ) : (
+            <svg
+                className="w-5 h-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+            >
+                <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+                />
+            </svg>
+        )}
+    </button>
+);
+
+const NavLinkItem = ({ link, onClick }: { link: NavLink; onClick?: () => void }) =>
+    link.external ? (
+        <a
+            href={link.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm text-base-content/70 hover:text-primary transition-colors"
+            onClick={onClick}
+        >
+            {link.name}
+        </a>
+    ) : (
+        <Link
+            href={link.href}
+            className="text-sm text-base-content/70 hover:text-primary transition-colors"
+            onClick={onClick}
+        >
+            {link.name}
+        </Link>
+    );
+
+const SocialLinkItem = ({ social }: { social: SocialLink }) => (
+    <a
+        href={social.href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-base-content/70 hover:text-primary transition-colors"
+        aria-label={social.name}
+    >
+        {social.icon}
+    </a>
+);
+
 export default function Header({ siteTitle }: { siteTitle: string }) {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const { theme, toggleTheme } = useTheme();
     const isDark = theme === 'dark';
+    const closeMenu = () => setMobileMenuOpen(false);
 
     return (
         <header className="sticky top-0 z-50 w-full border-b border-base-300 bg-base-100/95 backdrop-blur">
@@ -63,80 +154,19 @@ export default function Header({ siteTitle }: { siteTitle: string }) {
 
                     {/* Desktop Navigation */}
                     <nav className="hidden md:flex items-center gap-6">
-                        {navLinks.map((link) =>
-                            (link as { external?: boolean }).external ? (
-                                <a
-                                    key={link.href}
-                                    href={link.href}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="text-sm text-base-content/70 hover:text-primary transition-colors"
-                                >
-                                    {link.name}
-                                </a>
-                            ) : (
-                                <Link
-                                    key={link.href}
-                                    href={link.href}
-                                    className="text-sm text-base-content/70 hover:text-primary transition-colors"
-                                >
-                                    {link.name}
-                                </Link>
-                            ),
-                        )}
+                        {navLinks.map((link) => (
+                            <NavLinkItem key={link.href} link={link} />
+                        ))}
                     </nav>
 
                     {/* Social Links - Desktop */}
                     <div className="hidden md:flex items-center gap-4">
-                        {/* Theme Toggle */}
-                        <button
-                            type="button"
-                            onClick={toggleTheme}
-                            className="text-base-content/70 hover:text-primary transition-colors"
-                            aria-label={`Switch to ${isDark ? 'light' : 'dark'} mode`}
-                        >
-                            {isDark ? (
-                                <svg
-                                    className="w-5 h-5"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke="currentColor"
-                                >
-                                    <path
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        strokeWidth="2"
-                                        d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
-                                    />
-                                </svg>
-                            ) : (
-                                <svg
-                                    className="w-5 h-5"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke="currentColor"
-                                >
-                                    <path
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        strokeWidth="2"
-                                        d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
-                                    />
-                                </svg>
-                            )}
-                        </button>
-
+                        <ThemeToggleButton
+                            isDark={isDark}
+                            toggleTheme={toggleTheme}
+                        />
                         {socialLinks.map((social) => (
-                            <a
-                                key={social.name}
-                                href={social.href}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-base-content/70 hover:text-primary transition-colors"
-                                aria-label={social.name}
-                            >
-                                {social.icon}
-                            </a>
+                            <SocialLinkItem key={social.name} social={social} />
                         ))}
                     </div>
 
@@ -177,81 +207,23 @@ export default function Header({ siteTitle }: { siteTitle: string }) {
                 {mobileMenuOpen && (
                     <div className="md:hidden py-4 border-t border-base-300">
                         <nav className="flex flex-col space-y-4 mb-4">
-                            {navLinks.map((link) =>
-                                (link as { external?: boolean }).external ? (
-                                    <a
-                                        key={link.href}
-                                        href={link.href}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="text-sm text-base-content/70 hover:text-primary transition-colors"
-                                        onClick={() => setMobileMenuOpen(false)}
-                                    >
-                                        {link.name}
-                                    </a>
-                                ) : (
-                                    <Link
-                                        key={link.href}
-                                        href={link.href}
-                                        className="text-sm text-base-content/70 hover:text-primary transition-colors"
-                                        onClick={() => setMobileMenuOpen(false)}
-                                    >
-                                        {link.name}
-                                    </Link>
-                                ),
-                            )}
+                            {navLinks.map((link) => (
+                                <NavLinkItem
+                                    key={link.href}
+                                    link={link}
+                                    onClick={closeMenu}
+                                />
+                            ))}
                         </nav>
                         <div className="flex gap-4 pt-4 border-t border-base-300">
-                            {/* Theme Toggle - Mobile */}
-                            <button
-                                type="button"
-                                onClick={toggleTheme}
-                                className="text-base-content/70 hover:text-primary transition-colors"
-                                aria-label={`Switch to ${isDark ? 'light' : 'dark'} mode`}
-                            >
-                                {isDark ? (
-                                    <svg
-                                        className="w-5 h-5"
-                                        fill="none"
-                                        viewBox="0 0 24 24"
-                                        stroke="currentColor"
-                                    >
-                                        <path
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                            strokeWidth="2"
-                                            d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
-                                        />
-                                    </svg>
-                                ) : (
-                                    <svg
-                                        className="w-5 h-5"
-                                        fill="none"
-                                        viewBox="0 0 24 24"
-                                        stroke="currentColor"
-                                    >
-                                        <path
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                            strokeWidth="2"
-                                            d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
-                                        />
-                                    </svg>
-                                )}
-                            </button>
-
+                            <ThemeToggleButton
+                                isDark={isDark}
+                                toggleTheme={toggleTheme}
+                            />
                             {socialLinks.map((social) => (
-                                <a
-                                    key={social.name}
-                                    href={social.href}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="text-base-content/70 hover:text-primary transition-colors"
-                                    aria-label={social.name}
-                                    onClick={() => setMobileMenuOpen(false)}
-                                >
-                                    {social.icon}
-                                </a>
+                                <div key={social.name} onClick={closeMenu}>
+                                    <SocialLinkItem social={social} />
+                                </div>
                             ))}
                         </div>
                     </div>
