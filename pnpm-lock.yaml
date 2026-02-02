@@ -45,7 +45,7 @@ importers:
         specifier: 6.8.0
         version: 6.8.0(next@15.5.11(@babel/core@7.24.7)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       next-themes:
-        specifier: ^0.4.6
+        specifier: 0.4.6
         version: 0.4.6(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       node-glob:
         specifier: 1.2.0
