@@ -1,6 +1,4 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
-import { client } from '../../tina/__generated__/client';
-import { Edge } from '../../lib/tina';
 import type { TinaPost } from 'lib/types';
 
 export default async function handler(
@@ -11,33 +9,83 @@ export default async function handler(
         return res.status(405).json({ error: 'Method not allowed' });
     }
 
+    const publicationHost =
+        process.env.HASHNODE_PUBLICATION_HOST ?? 'dunghd.hashnode.dev';
+
+    const query = `
+        query PublicationPosts($host: String!, $first: Int!) {
+            publication(host: $host) {
+                posts(first: $first) {
+                    edges {
+                        node {
+                            title
+                            brief
+                            slug
+                            publishedAt
+                            coverImage {
+                                url
+                            }
+                            tags {
+                                name
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    `;
+
     try {
-        const response = await client.queries.postsConnection({
-            first: 100,
-            sort: 'date',
+        const response = await fetch('https://gql.hashnode.com', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                query,
+                variables: {
+                    host: publicationHost,
+                    first: 6,
+                },
+            }),
         });
 
-        const posts: TinaPost[] = response.data.postsConnection.edges
-            .map(
-                (
-                    edge: Edge<{
-                        _sys: { filename: string };
-                        title?: string;
-                        description?: string;
-                        date?: string;
-                        tag?: string[];
-                        hero_image?: string;
-                    }>,
-                ) => ({
-                    _sys: { filename: edge.node?._sys.filename ?? '' },
-                    title: edge.node?.title ?? '',
-                    description: edge.node?.description ?? '',
-                    date: edge.node?.date ?? '',
-                    tag: edge.node?.tag,
-                    hero_image: edge.node?.hero_image,
-                }),
-            )
-            .reverse();
+        if (!response.ok) {
+            res.status(200).json([]);
+            return;
+        }
+
+        const data = (await response.json()) as {
+            data?: {
+                publication?: {
+                    posts?: {
+                        edges?: Array<{
+                            node?: {
+                                title?: string;
+                                brief?: string;
+                                slug?: string;
+                                publishedAt?: string;
+                                coverImage?: { url?: string };
+                                tags?: Array<{ name?: string }>;
+                            };
+                        }>;
+                    };
+                };
+            };
+        };
+
+        const edges = data.data?.publication?.posts?.edges ?? [];
+        const posts: TinaPost[] = edges
+            .map((edge) => ({
+                _sys: { filename: edge.node?.slug ?? '' },
+                title: edge.node?.title ?? '',
+                description: edge.node?.brief ?? '',
+                date: edge.node?.publishedAt ?? '',
+                tag:
+                    edge.node?.tags
+                        ?.map((tag) => tag.name)
+                        .filter((tag): tag is string => Boolean(tag)) ?? [],
+                hero_image: edge.node?.coverImage?.url,
+            }))
+            .filter((post) => post._sys.filename);
 
         res.setHeader(
             'Cache-Control',
@@ -45,6 +93,6 @@ export default async function handler(
         );
         res.status(200).json(posts);
     } catch {
-        res.status(500).json({ error: 'Failed to fetch notes' });
+        res.status(200).json([]);
     }
 }

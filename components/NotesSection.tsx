@@ -8,6 +8,7 @@ import { formatDate } from 'lib/utils/date';
 
 type NotesSectionProps = {
     fallbackPosts: BlogPost[];
+    allPostsUrl?: string;
 };
 
 // Extend window type for prefetched data
@@ -17,7 +18,10 @@ declare global {
     }
 }
 
-export function NotesSection({ fallbackPosts }: NotesSectionProps) {
+export function NotesSection({
+    fallbackPosts,
+    allPostsUrl = 'https://blog.productsway.com',
+}: NotesSectionProps) {
     const [posts, setPosts] = useState<TinaPost[] | null>(null);
 
     useEffect(() => {
@@ -61,19 +65,24 @@ export function NotesSection({ fallbackPosts }: NotesSectionProps) {
                 <div className="flex justify-between items-center mb-12">
                     <div>
                         <h2 className="text-4xl font-bold mb-2">
-                            Latest Notes
+                            Latest Blog Posts
                         </h2>
                         <p
                             className="text-xl text-base-content/70"
                             suppressHydrationWarning
                         >
                             {posts && posts.length > 0
-                                ? 'Fresh from the notebook'
+                                ? 'Fresh from Hashnode'
                                 : 'Guides, TILs, and tutorials'}
                         </p>
                     </div>
-                    <a href="/notes" className="btn btn-primary">
-                        View All Notes
+                    <a
+                        href={allPostsUrl}
+                        className="btn btn-primary"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        View All Posts
                     </a>
                 </div>
                 <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
