@@ -88,7 +88,13 @@ const ThemeToggleButton = ({
     </button>
 );
 
-const NavLinkItem = ({ link, onClick }: { link: NavLink; onClick?: () => void }) =>
+const NavLinkItem = ({
+    link,
+    onClick,
+}: {
+    link: NavLink;
+    onClick?: () => void;
+}) =>
     link.external ? (
         <a
             href={link.href}
