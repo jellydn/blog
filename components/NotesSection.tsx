@@ -61,10 +61,10 @@ export function NotesSection({
 
     return (
         <section className="py-20 bg-base-200/50">
-            <div className="container mx-auto px-4 max-w-6xl">
+            <div className="container px-4 mx-auto max-w-6xl">
                 <div className="flex justify-between items-center mb-12">
                     <div>
-                        <h2 className="text-4xl font-bold mb-2">
+                        <h2 className="mb-2 text-4xl font-bold">
                             Latest Blog Posts
                         </h2>
                         <p
@@ -72,7 +72,7 @@ export function NotesSection({
                             suppressHydrationWarning
                         >
                             {posts && posts.length > 0
-                                ? 'Fresh from Hashnode'
+                                ? 'Fresh from ITMan\'s Blog'
                                 : 'Guides, TILs, and tutorials'}
                         </p>
                     </div>
@@ -90,20 +90,20 @@ export function NotesSection({
                         <a
                             key={post.slug}
                             href={`/notes/${post.slug}`}
-                            className="card bg-base-100 shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1 group"
+                            className="shadow-xl transition-all hover:shadow-2xl hover:-translate-y-1 card bg-base-100 group"
                         >
                             {post.frontmatter.hero_image && (
                                 <figure className="aspect-video">
                                     <img
                                         src={post.frontmatter.hero_image}
                                         alt={post.frontmatter.title}
-                                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                                        className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105"
                                     />
                                 </figure>
                             )}
                             <div className="card-body">
-                                <div className="flex items-center gap-2 mb-2">
-                                    <span className="badge badge-ghost text-xs">
+                                <div className="flex gap-2 items-center mb-2">
+                                    <span className="text-xs badge badge-ghost">
                                         {getCategoryLabel(
                                             getCategory(post.slug),
                                         )}
@@ -113,16 +113,16 @@ export function NotesSection({
                                         .map((tag: string) => (
                                             <span
                                                 key={tag}
-                                                className="badge badge-outline text-xs"
+                                                className="text-xs badge badge-outline"
                                             >
                                                 {tag}
                                             </span>
                                         ))}
                                 </div>
-                                <h3 className="card-title text-lg line-clamp-2">
+                                <h3 className="text-lg card-title line-clamp-2">
                                     {post.frontmatter.title}
                                 </h3>
-                                <p className="text-sm text-base-content/70 line-clamp-2 mb-4">
+                                <p className="mb-4 text-sm text-base-content/70 line-clamp-2">
                                     {post.frontmatter.description}
                                 </p>
                                 <p className="text-sm text-base-content/60">
