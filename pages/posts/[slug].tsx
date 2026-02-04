@@ -6,7 +6,11 @@ import ReactMarkdown from 'react-markdown';
 import gfm from 'remark-gfm';
 
 import Layout from 'components/Layout';
-import { fetchHashnodePostBySlug, fetchHashnodePosts } from 'lib/hashnode';
+import {
+    fetchHashnodePostBySlug,
+    fetchHashnodePosts,
+    normalizeHashnodeMarkdown,
+} from 'lib/hashnode';
 import type { HashnodePostDetail } from 'lib/hashnode';
 import { formatDate } from 'lib/utils/date';
 
@@ -31,7 +35,9 @@ export default function PostPage({
     const ogImage =
         post.coverImage?.url ?? 'https://productsway.com/og-image.png';
 
-    const markdownBody = post.content?.markdown ?? '';
+    const markdownBody = normalizeHashnodeMarkdown(
+        post.content?.markdown ?? '',
+    );
     const htmlBody = post.content?.html ?? '';
     const tagNames =
         post.tags

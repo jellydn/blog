@@ -133,6 +133,12 @@ const getTimestamp = (date?: string) => {
     return Number.isNaN(timestamp) ? 0 : timestamp;
 };
 
+export const normalizeHashnodeMarkdown = (markdown: string): string =>
+    markdown.replace(
+        /!\[([^\]]*)\]\(([^)\s]+)\s+align=(["'])(left|center|right)\3\)/gi,
+        '![$1]($2)',
+    );
+
 export async function fetchHashnodePosts(
     limit = 50,
 ): Promise<HashnodePostSummary[]> {
