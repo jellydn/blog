@@ -173,7 +173,9 @@ async function main() {
 
         // Filter out forked repos
         const originalRepos = allRepos.filter((repo) => !repo.fork);
-        console.log(`Filtered out ${allRepos.length - originalRepos.length} forked repos\n`);
+        console.log(
+            `Filtered out ${allRepos.length - originalRepos.length} forked repos\n`,
+        );
 
         // Categorize repos
         const categories: Record<string, ReturnType<typeof transformRepo>[]> = {
