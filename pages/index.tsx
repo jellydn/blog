@@ -1,33 +1,29 @@
-import { NextSeo } from 'next-seo';
-import Head from 'next/head';
-import Script from 'next/script';
-
 import { Button } from 'components/Button';
 import Layout from 'components/Layout';
 import { RepoStars } from 'components/RepoStars';
 import type { BlogPost, VideoPost } from 'lib/types';
 import { dedupeBySlug, extractSlug, parseMarkdown } from 'lib/utils/array';
 import dynamic from 'next/dynamic';
+import Head from 'next/head';
+import Script from 'next/script';
+import { NextSeo } from 'next-seo';
 import reposData from '../data/repos.json';
 
 const YoutubeSection = dynamic(() =>
     import('components/YoutubeSection').then((mod) => mod.YoutubeSection),
 );
-const NotesSection = dynamic(() =>
-    import('components/NotesSection').then((mod) => mod.NotesSection),
+const BlogPostsSection = dynamic(() =>
+    import('components/BlogPostsSection').then((mod) => mod.BlogPostsSection),
 );
 
 // Prefetch script that runs before React hydrates
 const PREFETCH_SCRIPT = `
 (function() {
     try {
-        Promise.all([
-            fetch('/api/notes').then(function(r) { return r.ok ? r.json() : null; }),
-            fetch('/api/youtube-videos').then(function(r) { return r.ok ? r.json() : null; })
-        ]).then(function(results) {
-            if (results[0]) window.__PREFETCHED_NOTES__ = results[0];
-            if (results[1]) window.__PREFETCHED_VIDEOS__ = results[1];
-        });
+        fetch('/api/youtube-videos').then(function(r) { return r.ok ? r.json() : null; })
+            .then(function(result) {
+                if (result) window.__PREFETCHED_VIDEOS__ = result;
+            });
     } catch(e) {}
 })();
 `;
@@ -38,6 +34,7 @@ type IndexProps = {
     allBlogs: BlogPost[];
     allVideos: VideoPost[];
     repos: typeof reposData;
+    initialHasRemotePosts: boolean;
 };
 
 type SocialLink = {
@@ -79,18 +76,133 @@ function getTopProjects(repos: typeof reposData, limit = 6) {
         .slice(0, limit);
 }
 
-function getVscodeExtensions(repos: typeof reposData, excludeNames: string[] = []) {
+function getVscodeExtensions(
+    repos: typeof reposData,
+    excludeNames: string[] = [],
+) {
     const category = repos.find((c) => c.category === 'VSCode Extensions');
     return (
-        category?.repos?.filter((repo) => !excludeNames.includes(repo.name)) ?? []
+        category?.repos?.filter((repo) => !excludeNames.includes(repo.name)) ??
+        []
     );
 }
 
-function getNeovimPlugins(repos: typeof reposData, excludeNames: string[] = []) {
+function getNeovimPlugins(
+    repos: typeof reposData,
+    excludeNames: string[] = [],
+) {
     const category = repos.find((c) => c.category === 'Neovim Plugins');
     return (
-        category?.repos?.filter((repo) => !excludeNames.includes(repo.name)) ?? []
+        category?.repos?.filter((repo) => !excludeNames.includes(repo.name)) ??
+        []
     );
+}
+
+type HashnodePost = {
+    title?: string;
+    brief?: string;
+    slug?: string;
+    publishedAt?: string;
+    coverImage?: { url?: string };
+    tags?: Array<{ name?: string }>;
+};
+
+type HashnodeResponse = {
+    data?: {
+        publication?: {
+            posts?: {
+                edges?: Array<{ node?: HashnodePost }>;
+            };
+        };
+    };
+    errors?: Array<{ message?: string }>;
+};
+
+const mapHashnodePosts = (edges?: Array<{ node?: HashnodePost }>) => {
+    const posts =
+        edges
+            ?.map((edge) => ({
+                slug: edge.node?.slug ?? '',
+                frontmatter: {
+                    title: edge.node?.title ?? '',
+                    description: edge.node?.brief ?? '',
+                    date: edge.node?.publishedAt ?? '',
+                    tag:
+                        edge.node?.tags
+                            ?.map((tag) => tag.name)
+                            .filter((tag): tag is string => Boolean(tag)) ?? [],
+                    hero_image: edge.node?.coverImage?.url,
+                },
+            }))
+            .filter((post) => post.slug) ?? [];
+
+    const getTimestamp = (date: string) => {
+        const timestamp = Date.parse(date);
+        return Number.isNaN(timestamp) ? 0 : timestamp;
+    };
+
+    return posts.sort(
+        (a, b) =>
+            getTimestamp(b.frontmatter.date) - getTimestamp(a.frontmatter.date),
+    );
+};
+
+async function fetchHashnodePosts(limit = 6): Promise<BlogPost[]> {
+    const publicationHost =
+        process.env.HASHNODE_PUBLICATION_HOST ?? 'blog.productsway.com';
+    const query = `
+        query PublicationPosts($host: String!, $first: Int!) {
+            publication(host: $host) {
+                posts(first: $first) {
+                    edges {
+                        node {
+                            title
+                            brief
+                            slug
+                            publishedAt
+                            coverImage {
+                                url
+                            }
+                            tags {
+                                name
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    `;
+
+    try {
+        const response = await fetch('https://gql.hashnode.com', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                query,
+                variables: {
+                    host: publicationHost,
+                    first: limit,
+                },
+            }),
+        });
+
+        if (!response.ok) {
+            return [];
+        }
+
+        const data = (await response.json()) as HashnodeResponse;
+
+        if (data.errors && data.errors.length > 0) {
+            console.error(
+                'Hashnode API errors:',
+                data.errors.map((error) => error.message).filter(Boolean),
+            );
+        }
+
+        return mapHashnodePosts(data.data?.publication?.posts?.edges);
+    } catch {
+        return [];
+    }
 }
 
 type ExtensionCardProps = {
@@ -124,6 +236,7 @@ function ExtensionCard({ name, description, url, stars }: ExtensionCardProps) {
                         viewBox="0 0 24 24"
                         fill="currentColor"
                     >
+                        <title>VS Code</title>
                         <path d="M8 3a3 3 0 00-3 3v2.25a3 3 0 003 3h2.25a3 3 0 003-3V6a3 3 0 00-3-3H8z" />
                         <path d="M8 21h8a3 3 0 003-3V6.75a3 3 0 00-3-3H8a3 3 0 00-3 3V18a3 3 0 003 3z" />
                     </svg>
@@ -164,6 +277,7 @@ function NvimPluginCard({
                             viewBox="0 0 24 24"
                             fill="currentColor"
                         >
+                            <title>Neovim plugin</title>
                             <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
                         </svg>
                     </div>
@@ -177,6 +291,7 @@ function NvimPluginCard({
                         viewBox="0 0 24 24"
                         fill="currentColor"
                     >
+                        <title>Stars</title>
                         <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                     </svg>
                     {stars}
@@ -208,20 +323,21 @@ const Index = ({
     allBlogs,
     allVideos,
     repos,
+    initialHasRemotePosts,
 }: IndexProps) => {
     const topProjects = getTopProjects(repos, 6);
     const featuredNames = topProjects.map((p) => p.name);
-    const vscodeExtensions = getVscodeExtensions(repos, featuredNames).slice(0, 6);
+    const vscodeExtensions = getVscodeExtensions(repos, featuredNames).slice(
+        0,
+        6,
+    );
     const neovimPlugins = getNeovimPlugins(repos, featuredNames).slice(0, 9);
 
     return (
         <Layout siteTitle={title} siteDescription={description}>
             <Head>
                 {/* Prefetch API data before React hydrates for faster perceived load */}
-                <Script
-                    id="prefetch-api-data"
-                    strategy="beforeInteractive"
-                >
+                <Script id="prefetch-api-data" strategy="beforeInteractive">
                     {PREFETCH_SCRIPT}
                 </Script>
             </Head>
@@ -460,7 +576,10 @@ const Index = ({
 
                 <YoutubeSection fallbackVideos={allVideos} />
 
-                <NotesSection fallbackPosts={allBlogs} />
+                <BlogPostsSection
+                    fallbackPosts={allBlogs}
+                    initialHasRemotePosts={initialHasRemotePosts}
+                />
 
                 <section className="py-20 bg-base-200 border-t border-base-300">
                     <div className="container mx-auto px-4 text-center max-w-3xl">
@@ -507,20 +626,25 @@ export async function getStaticProps() {
             const slug = extractSlug(key);
             return parseMarkdown(context(key).default, slug);
         });
-
     // @ts-expect-error require.context is a webpack function
     const posts = loadMarkdown(require.context('../posts', true, /\.md$/));
     // @ts-expect-error require.context is a webpack function
     const videos = loadMarkdown(require.context('../videos', true, /\.md$/));
 
+    const hashnodePosts = await fetchHashnodePosts(6);
+    const localPosts = dedupeBySlug(posts as BlogPost[]).slice(0, 6);
+    const allBlogs = hashnodePosts.length > 0 ? hashnodePosts : localPosts;
+
     return {
         props: {
-            allBlogs: dedupeBySlug(posts as BlogPost[]).slice(0, 6),
+            allBlogs,
             allVideos: dedupeBySlug(videos as VideoPost[]).slice(0, 6),
             title: siteConfig.default.title,
             description: siteConfig.default.description,
             repos: reposData,
             youtubeApiKey: !!process.env.YOUTUBE_API_KEY,
+            initialHasRemotePosts: hashnodePosts.length > 0,
         },
+        revalidate: 300,
     };
 }
