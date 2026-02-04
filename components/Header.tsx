@@ -13,7 +13,7 @@ const navLinks: NavLink[] = [
     { name: 'Home', href: '/' },
     { name: 'Notes', href: '/notes' },
     { name: 'Videos', href: '/videos' },
-    { name: 'Blog', href: 'https://blog.productsway.com/', external: true },
+    { name: 'Posts', href: '/posts' },
 ];
 
 type SocialLink = {

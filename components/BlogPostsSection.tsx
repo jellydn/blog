@@ -3,6 +3,7 @@
 import { getCategory, getCategoryLabel } from 'components/Badge';
 import type { BlogPost, TinaPost } from 'lib/types';
 import { formatDate } from 'lib/utils/date';
+import Image from 'next/image';
 import { useMemo, useState } from 'react';
 import useSWR from 'swr';
 
@@ -25,7 +26,7 @@ const sortByDateDesc = (items: TinaPost[]) => {
 
 export function BlogPostsSection({
     fallbackPosts,
-    allPostsUrl = 'https://blog.productsway.com',
+    allPostsUrl,
     initialHasRemotePosts = false,
 }: BlogPostsSectionProps) {
     const [hasRemotePosts, setHasRemotePosts] = useState(initialHasRemotePosts);
@@ -48,7 +49,7 @@ export function BlogPostsSection({
     const fetcher = async (url: string) => {
         const res = await fetch(url, { cache: 'no-store' });
         if (!res.ok) {
-            throw new Error('Failed to load notes');
+            throw new Error('Failed to load posts');
         }
         return (await res.json()) as TinaPost[];
     };
@@ -67,6 +68,10 @@ export function BlogPostsSection({
         () => sortByDateDesc(resolvedPosts ?? []),
         [resolvedPosts],
     );
+
+    const postBasePath = hasRemotePosts ? '/posts' : '/notes';
+    const resolvedAllPostsUrl =
+        allPostsUrl ?? (hasRemotePosts ? '/posts' : '/notes');
 
     const displayPosts = sortedPosts.map((post) => ({
         slug: post._sys.filename,
@@ -97,7 +102,7 @@ export function BlogPostsSection({
                         </p>
                     </div>
                     <a
-                        href={allPostsUrl}
+                        href={resolvedAllPostsUrl}
                         className="btn btn-primary"
                         target="_blank"
                         rel="noreferrer"
@@ -109,15 +114,17 @@ export function BlogPostsSection({
                     {displayPosts.slice(0, 6).map((post: BlogPost) => (
                         <a
                             key={post.slug}
-                            href={`/notes/${post.slug}`}
+                            href={`${postBasePath}/${post.slug}`}
                             className="shadow-xl transition-all hover:shadow-2xl hover:-translate-y-1 card bg-base-100 group"
                         >
                             {post.frontmatter.hero_image && (
-                                <figure className="aspect-video">
-                                    <img
+                                <figure className="relative aspect-video">
+                                    <Image
                                         src={post.frontmatter.hero_image}
                                         alt={post.frontmatter.title}
-                                        className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105"
+                                        fill
+                                        sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                                        className="object-cover transition-transform duration-300 group-hover:scale-105"
                                     />
                                 </figure>
                             )}

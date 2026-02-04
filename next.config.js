@@ -11,6 +11,14 @@ module.exports = {
                 protocol: 'https',
                 hostname: 'gyazo.com',
             },
+            {
+                protocol: 'https',
+                hostname: 'cdn.hashnode.com',
+            },
+            {
+                protocol: 'https',
+                hostname: 'hashnode.com',
+            },
         ],
     },
     webpack(config) {

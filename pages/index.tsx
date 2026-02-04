@@ -1,6 +1,7 @@
 import { Button } from 'components/Button';
 import Layout from 'components/Layout';
 import { RepoStars } from 'components/RepoStars';
+import { fetchHashnodePosts, mapHashnodeSummaryToBlogPost } from 'lib/hashnode';
 import type { BlogPost, VideoPost } from 'lib/types';
 import { dedupeBySlug, extractSlug, parseMarkdown } from 'lib/utils/array';
 import dynamic from 'next/dynamic';
@@ -96,113 +97,6 @@ function getNeovimPlugins(
         category?.repos?.filter((repo) => !excludeNames.includes(repo.name)) ??
         []
     );
-}
-
-type HashnodePost = {
-    title?: string;
-    brief?: string;
-    slug?: string;
-    publishedAt?: string;
-    coverImage?: { url?: string };
-    tags?: Array<{ name?: string }>;
-};
-
-type HashnodeResponse = {
-    data?: {
-        publication?: {
-            posts?: {
-                edges?: Array<{ node?: HashnodePost }>;
-            };
-        };
-    };
-    errors?: Array<{ message?: string }>;
-};
-
-const mapHashnodePosts = (edges?: Array<{ node?: HashnodePost }>) => {
-    const posts =
-        edges
-            ?.map((edge) => ({
-                slug: edge.node?.slug ?? '',
-                frontmatter: {
-                    title: edge.node?.title ?? '',
-                    description: edge.node?.brief ?? '',
-                    date: edge.node?.publishedAt ?? '',
-                    tag:
-                        edge.node?.tags
-                            ?.map((tag) => tag.name)
-                            .filter((tag): tag is string => Boolean(tag)) ?? [],
-                    hero_image: edge.node?.coverImage?.url,
-                },
-            }))
-            .filter((post) => post.slug) ?? [];
-
-    const getTimestamp = (date: string) => {
-        const timestamp = Date.parse(date);
-        return Number.isNaN(timestamp) ? 0 : timestamp;
-    };
-
-    return posts.sort(
-        (a, b) =>
-            getTimestamp(b.frontmatter.date) - getTimestamp(a.frontmatter.date),
-    );
-};
-
-async function fetchHashnodePosts(limit = 6): Promise<BlogPost[]> {
-    const publicationHost =
-        process.env.HASHNODE_PUBLICATION_HOST ?? 'blog.productsway.com';
-    const query = `
-        query PublicationPosts($host: String!, $first: Int!) {
-            publication(host: $host) {
-                posts(first: $first) {
-                    edges {
-                        node {
-                            title
-                            brief
-                            slug
-                            publishedAt
-                            coverImage {
-                                url
-                            }
-                            tags {
-                                name
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    `;
-
-    try {
-        const response = await fetch('https://gql.hashnode.com', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-                query,
-                variables: {
-                    host: publicationHost,
-                    first: limit,
-                },
-            }),
-        });
-
-        if (!response.ok) {
-            return [];
-        }
-
-        const data = (await response.json()) as HashnodeResponse;
-
-        if (data.errors && data.errors.length > 0) {
-            console.error(
-                'Hashnode API errors:',
-                data.errors.map((error) => error.message).filter(Boolean),
-            );
-        }
-
-        return mapHashnodePosts(data.data?.publication?.posts?.edges);
-    } catch {
-        return [];
-    }
 }
 
 type ExtensionCardProps = {
@@ -631,7 +525,10 @@ export async function getStaticProps() {
     // @ts-expect-error require.context is a webpack function
     const videos = loadMarkdown(require.context('../videos', true, /\.md$/));
 
-    const hashnodePosts = await fetchHashnodePosts(6);
+    const hashnodeSummaries = await fetchHashnodePosts(6);
+    const hashnodePosts = hashnodeSummaries.map((post) =>
+        mapHashnodeSummaryToBlogPost(post),
+    );
     const localPosts = dedupeBySlug(posts as BlogPost[]).slice(0, 6);
     const allBlogs = hashnodePosts.length > 0 ? hashnodePosts : localPosts;
 
