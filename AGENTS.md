@@ -2,164 +2,146 @@
 
 ## Project Overview
 
-A Next.js 15 blog with TinaCMS for content management, using TypeScript, Tailwind CSS v4, and DaisyUI. The blog features posts, videos, and experimental content for developers.
+A Next.js 15 blog with TinaCMS, using TypeScript, Tailwind CSS v4, and DaisyUI.
 
 ## Build, Lint, and Test Commands
 
 ### Package Manager
 
-This project uses **pnpm** as the package manager.
+This project uses **pnpm**.
 
 ### Core Commands
 
 ```bash
-# Install dependencies
-pnpm install
-
-# Development server with TinaCMS
-pnpm dev
-
-# Build for production (includes TinaCMS build)
-pnpm build
-
-# Start production server
-pnpm start
-
-# Run Biome linting (CI mode - no file modifications)
-pnpm lint
-
-# Run Biome formatter with auto-fix
-pnpm format
-
-# Fetch YouTube videos data
-pnpm fetch:videos
+pnpm install          # Install dependencies
+pnpm dev / develop    # Development server with TinaCMS
+pnpm build            # Production build (includes TinaCMS)
+pnpm start            # Start production server
+pnpm lint             # Run Biome linting (CI mode)
+pnpm format           # Run Biome formatter with auto-fix
+pnpm fetch:videos     # Fetch YouTube videos data
+pnpm fetch:repos      # Fetch GitHub repositories data
 ```
 
-### Single Test
+### Testing
 
-No test framework is currently configured. Do not add tests unless explicitly requested.
-
-### Pre-commit Hooks
-
-Pre-commit hooks run Biome automatically via Husky. Run manually:
-
-```bash
-pnpm exec biome check .
-```
+No test framework configured. Do not add tests unless explicitly requested.
 
 ## Code Style Guidelines
 
 ### TypeScript
 
-- **Strict mode**: Disabled in `tsconfig.json` (`strict: false`)
+- **Strict mode**: Disabled (`strict: false`)
 - **Target**: ES5, **JSX**: Preserve, **Module**: ESNext with Node resolution
-- Use explicit type annotations for function parameters and return types
+- Use explicit type annotations for params and return types
 - Use `interface` for object types, `type` for unions/primitives
 - Define custom types in `lib/types.ts`
 
 ### React Components
 
-- Use `React.FC<Props>` for component typing
-- Named exports for components: `export default ComponentName`
-- Props interfaces: inline for simple components (see `components/Layout.tsx`)
-- Prefer functional components with hooks over class components
+- Use `React.FC<Props>` for page/layout components
+- Named exports for reusable components: `export function Button`
+- Default exports for page/layout: `export default Layout`
+- Props interfaces: inline for simple components
+- Prefer functional components with hooks
 - Handle null/undefined states explicitly
+- Use dynamic imports: `dynamic(() => import('path'))`
 
 ### Imports
 
 ```typescript
-// Relative imports for local files
-import Layout from "./Layout";
+// baseUrl-based resolution (tsconfig baseUrl: ".")
+import { Button } from "components/Button";
+import Layout from "components/Layout";
+import { fetchLatestPosts } from "lib/tina";
 
-// Alias imports (configured in tsconfig)
-import { client } from "../tina/__generated__/client";
+// Relative imports (same directory)
+import Footer from "./Footer";
 
 // Standard library
 import React from "react";
-
-// Third-party (alphabetical within groups)
-import { useState } from "react";
 ```
 
 ### Formatting (Biome)
 
-Configured in `biome.json`:
-
 - **Indent**: 4 spaces, **Line width**: 80 characters
-- **Line endings**: LF, **Quotes**: Single for JS, double for JSX
+- **Line endings**: LF, **Quotes**: Single (JS), double (JSX)
 - **Semicolons**: Always, **Trailing commas**: All
-- **Bracket spacing**: Enabled
+- **Bracket spacing**: Enabled, Auto-organize imports on save
 
 ### Naming Conventions
 
-- **Components**: PascalCase (`Layout`, `BlogList`)
-- **Files**: camelCase for utilities, PascalCase for components
+- **Components**: PascalCase (`Layout`, `BlogList`, `Button`)
+- **Files**: camelCase (utilities), PascalCase (components)
 - **Variables/functions**: camelCase (`fetchLatestPosts`)
-- **Constants**: UPPER_SNAKE_CASE for true constants
+- **Constants**: UPPER_SNAKE_CASE (true constants), `Record<T, U>` (mappings)
 - **Interfaces**: PascalCase, optionally prefixed with `T` (`TPost`)
 
-### Error Handling
+### Common Patterns
 
-- Use try/catch for async operations
-- Log errors with descriptive messages
-- Return empty arrays/defaults on error (see `lib/tina.ts`)
-- Never expose internal errors to users
-- Never commit secrets or API keys
+```typescript
+// Type unions for variants
+type ButtonVariant = "primary" | "secondary" | "outline" | "ghost";
 
-### CSS/Styling
+// Record for style mappings
+const variantStyles: Record<ButtonVariant, string> = {
+  primary: "btn-primary",
+  secondary: "btn-secondary",
+  outline: "btn-outline",
+  ghost: "btn-ghost",
+};
 
-- Tailwind CSS v4 with CSS-first configuration (`styles.css`)
-- DaisyUI themes: `minimal` (default), `winter`, `dark`
-- Typography plugin for prose content
-- Minimal custom CSS; leverage DaisyUI/Tailwind utilities
+// Error handling pattern
+try {
+  const result = await someAsyncOperation();
+  return result;
+} catch (error) {
+  console.error("Failed to fetch:", error);
+  return []; // Return empty/default on error
+}
+```
 
 ## File Organization
 
 ```
 components/  - React components (Pages, Layout, UI)
 lib/         - Utility functions and API clients
+lib/utils/   - Helper functions (date, array utilities)
 pages/       - Next.js pages and routes
 posts/       - Blog post content (Markdown)
 tina/        - TinaCMS configuration and schema
 public/      - Static assets
 data/        - JSON data files
-scripts/     - Build and utility scripts
+scripts/     - Build and utility scripts (run with bun)
 ```
 
 ## Important Configuration Files
 
 - `biome.json` - Linting and formatting rules
-- `tsconfig.json` - TypeScript configuration
+- `tsconfig.json` - TypeScript config (baseUrl: ".")
 - `package.json` - Scripts and dependencies
 - `next.config.js` - Next.js configuration
-- `styles.css` - Tailwind v4 and DaisyUI theme configuration
-- `.nvmrc` - Node.js version
+- `styles.css` - Tailwind v4 and DaisyUI theme config
+- `.nvmrc` - Node.js version (LTS/\* pattern)
 
 ## Development Notes
 
 - TinaCMS requires `tinacms build` before production build
 - Markdown files use raw-loader for direct import
-- Image domains: `gyazo.com` configured in Next.js
-- Three DaisyUI themes available: `minimal`, `winter`, `dark`
+- Image domains: `gyazo.com`, `cdn.hashnode.com`, `hashnode.com`
+- Three DaisyUI themes: `minimal`, `winter`, `dark`
 - Webfinger redirects configured for Fediverse support
-- Node.js version specified in `.nvmrc`
+- Scripts use `bun` for execution
 
 ## Common Tasks
 
 ```bash
-# Create a new blog post
-# Add .md file to posts/ with frontmatter
-
-# Create a new page
-# Add .tsx file to pages/
-
-# Create a new component
-# Create in components/ with PascalCase name
+# Create blog post: Add .md file to posts/ with frontmatter
+# Create page: Add .tsx file to pages/ with export default
+# Create component: Create in components/ with PascalCase and named export
 ```
 
 ## After Code Changes
-
-Run linting and format:
 
 ```bash
 pnpm lint && pnpm format
