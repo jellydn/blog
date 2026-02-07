@@ -11,8 +11,12 @@
                 "stars": 103,
                 "forks": 15,
                 "language": "TypeScript",
-                "topics": ["gpt", "gpt4free", "raycast-extension"],
-                "updated_at": "2026-01-26T05:49:35Z"
+                "topics": [
+                    "gpt",
+                    "gpt4free",
+                    "raycast-extension"
+                ],
+                "updated_at": "2026-02-06T21:43:46Z"
             },
             {
                 "name": "gpt4all-cli",
@@ -23,7 +27,12 @@
                 "stars": 36,
                 "forks": 6,
                 "language": "TypeScript",
-                "topics": ["cli", "gpt4all", "gpt4all-ts", "llama"],
+                "topics": [
+                    "cli",
+                    "gpt4all",
+                    "gpt4all-ts",
+                    "llama"
+                ],
                 "updated_at": "2025-11-09T11:25:04Z"
             },
             {
@@ -42,7 +51,7 @@
                     "open-code",
                     "skills"
                 ],
-                "updated_at": "2026-02-01T18:33:23Z"
+                "updated_at": "2026-02-07T05:53:07Z"
             },
             {
                 "name": "auto-testgen-nodejs",
@@ -72,7 +81,11 @@
                 "stars": 6,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["ai", "chatbot", "llm"],
+                "topics": [
+                    "ai",
+                    "chatbot",
+                    "llm"
+                ],
                 "updated_at": "2025-11-04T10:50:38Z"
             },
             {
@@ -93,7 +106,7 @@
                     "open-code",
                     "open-source"
                 ],
-                "updated_at": "2026-02-01T05:28:08Z"
+                "updated_at": "2026-02-06T12:46:48Z"
             },
             {
                 "name": "copilot-tips",
@@ -104,7 +117,10 @@
                 "stars": 4,
                 "forks": 1,
                 "language": "JavaScript",
-                "topics": ["copilot", "sveltekit"],
+                "topics": [
+                    "copilot",
+                    "sveltekit"
+                ],
                 "updated_at": "2025-07-19T04:28:18Z"
             },
             {
@@ -134,8 +150,12 @@
                 "stars": 0,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["ai", "google-gemini-ai", "mastra"],
-                "updated_at": "2026-01-15T22:12:52Z"
+                "topics": [
+                    "ai",
+                    "google-gemini-ai",
+                    "mastra"
+                ],
+                "updated_at": "2026-02-05T18:47:59Z"
             },
             {
                 "name": "smart-resume-matcher",
@@ -146,7 +166,9 @@
                 "stars": 0,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["react-router"],
+                "topics": [
+                    "react-router"
+                ],
                 "updated_at": "2026-01-12T22:28:48Z"
             },
             {
@@ -187,8 +209,12 @@
                 "stars": 49,
                 "forks": 8,
                 "language": "TypeScript",
-                "topics": ["cli", "download-videos", "twitter"],
-                "updated_at": "2026-02-02T06:02:00Z"
+                "topics": [
+                    "cli",
+                    "download-videos",
+                    "twitter"
+                ],
+                "updated_at": "2026-02-05T22:05:59Z"
             },
             {
                 "name": "cspell-tool",
@@ -199,7 +225,11 @@
                 "stars": 13,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["cli", "cspell", "spell-check"],
+                "topics": [
+                    "cli",
+                    "cspell",
+                    "spell-check"
+                ],
                 "updated_at": "2025-10-20T14:57:39Z"
             },
             {
@@ -211,7 +241,11 @@
                 "stars": 7,
                 "forks": 0,
                 "language": "Go",
-                "topics": ["biomejs", "cli", "golang"],
+                "topics": [
+                    "biomejs",
+                    "cli",
+                    "golang"
+                ],
                 "updated_at": "2025-04-12T00:23:14Z"
             },
             {
@@ -223,8 +257,29 @@
                 "stars": 5,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["cli", "moleculerjs", "repl"],
+                "topics": [
+                    "cli",
+                    "moleculerjs",
+                    "repl"
+                ],
                 "updated_at": "2024-12-17T08:46:01Z"
+            },
+            {
+                "name": "dotenv-tui",
+                "full_name": "jellydn/dotenv-tui",
+                "description": "A terminal UI tool for managing .env files across projects and monorepos.",
+                "url": "https://github.com/jellydn/dotenv-tui",
+                "homepage": "",
+                "stars": 2,
+                "forks": 0,
+                "language": "Go",
+                "topics": [
+                    "cli",
+                    "env",
+                    "golang",
+                    "tui"
+                ],
+                "updated_at": "2026-02-07T06:22:42Z"
             },
             {
                 "name": "pkg-cli-simple-app",
@@ -247,7 +302,13 @@
                 "stars": 2,
                 "forks": 0,
                 "language": "Solidity",
-                "topics": ["cast", "dapp", "eth", "ethereum-dapp", "seth"],
+                "topics": [
+                    "cast",
+                    "dapp",
+                    "eth",
+                    "ethereum-dapp",
+                    "seth"
+                ],
                 "updated_at": "2025-04-08T09:09:48Z"
             },
             {
@@ -259,7 +320,11 @@
                 "stars": 1,
                 "forks": 0,
                 "language": "JavaScript",
-                "topics": ["cli", "eslint", "typecheck"],
+                "topics": [
+                    "cli",
+                    "eslint",
+                    "typecheck"
+                ],
                 "updated_at": "2024-07-28T07:21:24Z"
             },
             {
@@ -271,7 +336,12 @@
                 "stars": 0,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["cli", "deno", "ink", "typescript"],
+                "topics": [
+                    "cli",
+                    "deno",
+                    "ink",
+                    "typescript"
+                ],
                 "updated_at": "2025-09-16T16:42:53Z"
             }
         ]
@@ -285,11 +355,15 @@
                 "description": "Your ultimate guide to setting up Zed with Vim mode, tailored settings, and key bindings for a seamless coding experience",
                 "url": "https://github.com/jellydn/zed-101-setup",
                 "homepage": "https://itman.fyi",
-                "stars": 1181,
-                "forks": 26,
+                "stars": 1188,
+                "forks": 27,
                 "language": "TypeScript",
-                "topics": ["guide", "hacktoberfest", "zed"],
-                "updated_at": "2026-02-02T05:47:48Z"
+                "topics": [
+                    "guide",
+                    "hacktoberfest",
+                    "zed"
+                ],
+                "updated_at": "2026-02-06T01:31:59Z"
             },
             {
                 "name": "typescript-tips",
@@ -314,11 +388,16 @@
                 "description": "A curated list of awesome 🔥 TypeScript Typesafe Libraries🔥",
                 "url": "https://github.com/jellydn/awesome-typesafe",
                 "homepage": "http://typesafe.itman.fyi/",
-                "stars": 157,
+                "stars": 159,
                 "forks": 14,
                 "language": "",
-                "topics": ["awesome", "awesome-list", "typesafe", "typescript"],
-                "updated_at": "2026-01-26T21:41:08Z"
+                "topics": [
+                    "awesome",
+                    "awesome-list",
+                    "typesafe",
+                    "typescript"
+                ],
+                "updated_at": "2026-02-03T20:25:07Z"
             },
             {
                 "name": "fastify-starter",
@@ -351,7 +430,10 @@
                 "stars": 107,
                 "forks": 9,
                 "language": "TypeScript",
-                "topics": ["bun", "elysiajs"],
+                "topics": [
+                    "bun",
+                    "elysiajs"
+                ],
                 "updated_at": "2026-02-01T01:16:02Z"
             },
             {
@@ -387,11 +469,15 @@
                 "description": "Express.js v5 starter is a boilerplate for building and deploying Express.js applications to Vercel. ",
                 "url": "https://github.com/jellydn/express-vercel-starter",
                 "homepage": "https://express-starter.productsway.com/api",
-                "stars": 25,
+                "stars": 26,
                 "forks": 14,
                 "language": "TypeScript",
-                "topics": ["express", "express-js", "vercel"],
-                "updated_at": "2026-01-22T20:57:37Z"
+                "topics": [
+                    "express",
+                    "express-js",
+                    "vercel"
+                ],
+                "updated_at": "2026-02-06T07:29:16Z"
             },
             {
                 "name": "arch-linux-on-m2",
@@ -399,11 +485,15 @@
                 "description": "How to install Arch Linux on a Macbook Pro M2",
                 "url": "https://github.com/jellydn/arch-linux-on-m2",
                 "homepage": "",
-                "stars": 19,
+                "stars": 20,
                 "forks": 2,
                 "language": "Shell",
-                "topics": ["archlinux", "mac-m2", "vmware-fusion"],
-                "updated_at": "2026-01-11T13:15:02Z"
+                "topics": [
+                    "archlinux",
+                    "mac-m2",
+                    "vmware-fusion"
+                ],
+                "updated_at": "2026-02-03T22:39:34Z"
             },
             {
                 "name": "moleculer-typescript-template",
@@ -432,7 +522,9 @@
                 "stars": 16,
                 "forks": 1,
                 "language": "",
-                "topics": ["ollama"],
+                "topics": [
+                    "ollama"
+                ],
                 "updated_at": "2024-01-06T02:33:12Z"
             },
             {
@@ -463,7 +555,12 @@
                 "stars": 13,
                 "forks": 3,
                 "language": "Solidity",
-                "topics": ["dapp", "forge", "foundry", "thirdweb"],
+                "topics": [
+                    "dapp",
+                    "forge",
+                    "foundry",
+                    "thirdweb"
+                ],
                 "updated_at": "2025-08-12T05:11:50Z"
             },
             {
@@ -475,7 +572,12 @@
                 "stars": 12,
                 "forks": 2,
                 "language": "Python",
-                "topics": ["python", "ruff", "rye", "uv"],
+                "topics": [
+                    "python",
+                    "ruff",
+                    "rye",
+                    "uv"
+                ],
                 "updated_at": "2025-03-04T03:11:14Z"
             },
             {
@@ -487,8 +589,11 @@
                 "stars": 11,
                 "forks": 4,
                 "language": "Dockerfile",
-                "topics": ["crawlee", "playwright-typescript"],
-                "updated_at": "2026-02-02T04:59:44Z"
+                "topics": [
+                    "crawlee",
+                    "playwright-typescript"
+                ],
+                "updated_at": "2026-02-06T21:05:09Z"
             },
             {
                 "name": "github-action-locally",
@@ -499,7 +604,10 @@
                 "stars": 9,
                 "forks": 1,
                 "language": "TypeScript",
-                "topics": ["act", "github-actions"],
+                "topics": [
+                    "act",
+                    "github-actions"
+                ],
                 "updated_at": "2025-09-17T14:08:49Z"
             },
             {
@@ -511,8 +619,13 @@
                 "stars": 8,
                 "forks": 1,
                 "language": "TypeScript",
-                "topics": ["nodejs", "tdd", "tidy-first", "vitest"],
-                "updated_at": "2026-02-02T05:15:23Z"
+                "topics": [
+                    "nodejs",
+                    "tdd",
+                    "tidy-first",
+                    "vitest"
+                ],
+                "updated_at": "2026-02-06T00:35:58Z"
             },
             {
                 "name": "huma-demo",
@@ -523,7 +636,11 @@
                 "stars": 8,
                 "forks": 2,
                 "language": "Go",
-                "topics": ["api", "golang", "huma"],
+                "topics": [
+                    "api",
+                    "golang",
+                    "huma"
+                ],
                 "updated_at": "2025-05-10T00:17:17Z"
             },
             {
@@ -535,7 +652,11 @@
                 "stars": 7,
                 "forks": 0,
                 "language": "JavaScript",
-                "topics": ["email-template", "mailwind", "tailwindcss"],
+                "topics": [
+                    "email-template",
+                    "mailwind",
+                    "tailwindcss"
+                ],
                 "updated_at": "2026-02-02T04:44:29Z"
             },
             {
@@ -547,7 +668,12 @@
                 "stars": 7,
                 "forks": 1,
                 "language": "TypeScript",
-                "topics": ["deno", "javascript", "promise", "typescript"],
+                "topics": [
+                    "deno",
+                    "javascript",
+                    "promise",
+                    "typescript"
+                ],
                 "updated_at": "2024-07-08T07:23:36Z"
             },
             {
@@ -559,7 +685,11 @@
                 "stars": 6,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["cloudflare", "honojs", "sst"],
+                "topics": [
+                    "cloudflare",
+                    "honojs",
+                    "sst"
+                ],
                 "updated_at": "2025-04-18T21:08:55Z"
             },
             {
@@ -571,7 +701,11 @@
                 "stars": 6,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["ethereum", "ethersjs", "web3js"],
+                "topics": [
+                    "ethereum",
+                    "ethersjs",
+                    "web3js"
+                ],
                 "updated_at": "2022-07-15T10:46:24Z"
             },
             {
@@ -583,8 +717,12 @@
                 "stars": 5,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["nodejs", "websocket", "ws"],
-                "updated_at": "2026-02-02T06:07:11Z"
+                "topics": [
+                    "nodejs",
+                    "websocket",
+                    "ws"
+                ],
+                "updated_at": "2026-02-05T22:08:27Z"
             },
             {
                 "name": "monorepo-starter",
@@ -626,7 +764,11 @@
                 "stars": 5,
                 "forks": 1,
                 "language": "JavaScript",
-                "topics": ["eslint-config", "prettier-eslint", "xojs"],
+                "topics": [
+                    "eslint-config",
+                    "prettier-eslint",
+                    "xojs"
+                ],
                 "updated_at": "2025-12-08T01:58:25Z"
             },
             {
@@ -638,7 +780,12 @@
                 "stars": 5,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["biome-js", "bun", "remix", "spa"],
+                "topics": [
+                    "biome-js",
+                    "bun",
+                    "remix",
+                    "spa"
+                ],
                 "updated_at": "2025-10-06T09:43:13Z"
             },
             {
@@ -650,32 +797,11 @@
                 "stars": 5,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["deno", "denoland"],
+                "topics": [
+                    "deno",
+                    "denoland"
+                ],
                 "updated_at": "2024-10-16T16:51:32Z"
-            },
-            {
-                "name": "typescript-starter",
-                "full_name": "jellydn/typescript-starter",
-                "description": "Typescript starter project",
-                "url": "https://github.com/jellydn/typescript-starter",
-                "homepage": "",
-                "stars": 4,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": ["starter", "template", "typescript"],
-                "updated_at": "2026-02-02T06:02:00Z"
-            },
-            {
-                "name": "edge-network-demo",
-                "full_name": "jellydn/edge-network-demo",
-                "description": "Edge Network Demo",
-                "url": "https://github.com/jellydn/edge-network-demo",
-                "homepage": "https://hello.jellydn.workers.dev/",
-                "stars": 4,
-                "forks": 1,
-                "language": "TypeScript",
-                "topics": ["edge", "netlify-functions", "wrangler"],
-                "updated_at": "2026-02-02T05:32:12Z"
             },
             {
                 "name": "hono-minimal-app",
@@ -686,8 +812,44 @@
                 "stars": 4,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["cloudflare", "cloudflare-worker", "honojs"],
-                "updated_at": "2026-01-31T09:31:32Z"
+                "topics": [
+                    "cloudflare",
+                    "cloudflare-worker",
+                    "honojs"
+                ],
+                "updated_at": "2026-02-06T13:34:42Z"
+            },
+            {
+                "name": "edge-network-demo",
+                "full_name": "jellydn/edge-network-demo",
+                "description": "Edge Network Demo",
+                "url": "https://github.com/jellydn/edge-network-demo",
+                "homepage": "https://hello.jellydn.workers.dev/",
+                "stars": 4,
+                "forks": 1,
+                "language": "TypeScript",
+                "topics": [
+                    "edge",
+                    "netlify-functions",
+                    "wrangler"
+                ],
+                "updated_at": "2026-02-06T09:52:05Z"
+            },
+            {
+                "name": "typescript-starter",
+                "full_name": "jellydn/typescript-starter",
+                "description": "Typescript starter project",
+                "url": "https://github.com/jellydn/typescript-starter",
+                "homepage": "",
+                "stars": 4,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [
+                    "starter",
+                    "template",
+                    "typescript"
+                ],
+                "updated_at": "2026-02-02T06:02:00Z"
             },
             {
                 "name": "platformatic-starter",
@@ -747,7 +909,10 @@
                 "stars": 3,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["stenciljs", "web-component"],
+                "topics": [
+                    "stenciljs",
+                    "web-component"
+                ],
                 "updated_at": "2026-02-02T04:51:13Z"
             },
             {
@@ -777,7 +942,10 @@
                 "stars": 3,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["nestjs", "nodejs"],
+                "topics": [
+                    "nestjs",
+                    "nodejs"
+                ],
                 "updated_at": "2025-10-22T03:10:14Z"
             },
             {
@@ -801,7 +969,12 @@
                 "stars": 3,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["hapi", "http-requests", "hurl", "testing-tools"],
+                "topics": [
+                    "hapi",
+                    "http-requests",
+                    "hurl",
+                    "testing-tools"
+                ],
                 "updated_at": "2025-06-29T05:11:55Z"
             },
             {
@@ -813,7 +986,11 @@
                 "stars": 3,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["expo", "expo-router", "react-native"],
+                "topics": [
+                    "expo",
+                    "expo-router",
+                    "react-native"
+                ],
                 "updated_at": "2025-06-03T18:30:45Z"
             },
             {
@@ -855,7 +1032,12 @@
                 "stars": 3,
                 "forks": 2,
                 "language": "TypeScript",
-                "topics": ["deno", "fresh", "twind", "typescript"],
+                "topics": [
+                    "deno",
+                    "fresh",
+                    "twind",
+                    "typescript"
+                ],
                 "updated_at": "2023-08-29T21:26:08Z"
             },
             {
@@ -867,8 +1049,12 @@
                 "stars": 2,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["encore-app", "encoredev", "typescript"],
-                "updated_at": "2026-02-02T05:50:57Z"
+                "topics": [
+                    "encore-app",
+                    "encoredev",
+                    "typescript"
+                ],
+                "updated_at": "2026-02-05T22:45:39Z"
             },
             {
                 "name": "typescript-mini-starter",
@@ -879,7 +1065,12 @@
                 "stars": 2,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["cjs", "esm", "starter", "typescript"],
+                "topics": [
+                    "cjs",
+                    "esm",
+                    "starter",
+                    "typescript"
+                ],
                 "updated_at": "2026-02-02T05:37:24Z"
             },
             {
@@ -891,7 +1082,9 @@
                 "stars": 2,
                 "forks": 0,
                 "language": "",
-                "topics": ["nodejs"],
+                "topics": [
+                    "nodejs"
+                ],
                 "updated_at": "2026-02-02T05:24:32Z"
             },
             {
@@ -903,7 +1096,11 @@
                 "stars": 2,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["async-await", "js", "typescript"],
+                "topics": [
+                    "async-await",
+                    "js",
+                    "typescript"
+                ],
                 "updated_at": "2026-01-29T18:13:54Z"
             },
             {
@@ -915,7 +1112,11 @@
                 "stars": 2,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["floating-promises", "javascript", "promise"],
+                "topics": [
+                    "floating-promises",
+                    "javascript",
+                    "promise"
+                ],
                 "updated_at": "2026-01-29T17:26:59Z"
             },
             {
@@ -947,7 +1148,11 @@
                 "stars": 2,
                 "forks": 0,
                 "language": "Rust",
-                "topics": ["gui", "skhd", "tauri-app"],
+                "topics": [
+                    "gui",
+                    "skhd",
+                    "tauri-app"
+                ],
                 "updated_at": "2026-01-18T03:04:17Z"
             },
             {
@@ -959,7 +1164,10 @@
                 "stars": 2,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["ts-pattern", "ts-pattern-demo"],
+                "topics": [
+                    "ts-pattern",
+                    "ts-pattern-demo"
+                ],
                 "updated_at": "2025-11-04T16:57:31Z"
             },
             {
@@ -971,7 +1179,12 @@
                 "stars": 2,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["bunjs", "e2e-testing", "fastifyjs", "stepci"],
+                "topics": [
+                    "bunjs",
+                    "e2e-testing",
+                    "fastifyjs",
+                    "stepci"
+                ],
                 "updated_at": "2025-09-19T16:55:16Z"
             },
             {
@@ -983,7 +1196,11 @@
                 "stars": 2,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["bignumber", "ethersjs", "web3"],
+                "topics": [
+                    "bignumber",
+                    "ethersjs",
+                    "web3"
+                ],
                 "updated_at": "2023-11-21T07:05:44Z"
             },
             {
@@ -995,7 +1212,10 @@
                 "stars": 2,
                 "forks": 3,
                 "language": "JavaScript",
-                "topics": ["js", "justext"],
+                "topics": [
+                    "js",
+                    "justext"
+                ],
                 "updated_at": "2022-12-07T11:25:47Z"
             },
             {
@@ -1007,44 +1227,27 @@
                 "stars": 2,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["remix", "remix-stack"],
+                "topics": [
+                    "remix",
+                    "remix-stack"
+                ],
                 "updated_at": "2022-06-22T10:27:12Z"
             },
             {
-                "name": "practicepython",
-                "full_name": "jellydn/practicepython",
-                "description": "Learn how to code by practicing Python exercises.",
-                "url": "https://github.com/jellydn/practicepython",
-                "homepage": "",
+                "name": "server-timing-demo",
+                "full_name": "jellydn/server-timing-demo",
+                "description": "How to use Server-Timing provides performance metrics in the response headers.",
+                "url": "https://github.com/jellydn/server-timing-demo",
+                "homepage": "https://server-timing-hono.deno.dev/",
                 "stars": 1,
                 "forks": 0,
-                "language": "",
-                "topics": ["python"],
-                "updated_at": "2026-02-02T06:09:05Z"
-            },
-            {
-                "name": "remix-app-demo",
-                "full_name": "jellydn/remix-app-demo",
-                "description": "Remix Demo App with Vercel for deployment",
-                "url": "https://github.com/jellydn/remix-app-demo",
-                "homepage": "https://remix-app-demo.vercel.app/",
-                "stars": 1,
-                "forks": 1,
                 "language": "TypeScript",
-                "topics": ["remix", "vercel"],
-                "updated_at": "2026-02-02T05:00:26Z"
-            },
-            {
-                "name": "preview-url",
-                "full_name": "jellydn/preview-url",
-                "description": "",
-                "url": "https://github.com/jellydn/preview-url",
-                "homepage": "",
-                "stars": 1,
-                "forks": 0,
-                "language": "Svelte",
-                "topics": [],
-                "updated_at": "2026-02-02T04:37:44Z"
+                "topics": [
+                    "bun",
+                    "honojs",
+                    "server-timing"
+                ],
+                "updated_at": "2026-02-06T13:57:16Z"
             },
             {
                 "name": "tech-short-videos",
@@ -1056,19 +1259,22 @@
                 "forks": 0,
                 "language": "TypeScript",
                 "topics": [],
-                "updated_at": "2026-01-31T01:32:59Z"
+                "updated_at": "2026-02-05T20:58:20Z"
             },
             {
-                "name": "db-management-demo",
-                "full_name": "jellydn/db-management-demo",
-                "description": "This is simple demo of how to manage database using prisma and tbls for documentation.",
-                "url": "https://github.com/jellydn/db-management-demo",
-                "homepage": "",
+                "name": "remix-app-demo",
+                "full_name": "jellydn/remix-app-demo",
+                "description": "Remix Demo App with Vercel for deployment",
+                "url": "https://github.com/jellydn/remix-app-demo",
+                "homepage": "https://remix-app-demo.vercel.app/",
                 "stars": 1,
-                "forks": 0,
+                "forks": 1,
                 "language": "TypeScript",
-                "topics": ["bunjs", "db", "prisma", "tbls"],
-                "updated_at": "2026-01-31T01:10:49Z"
+                "topics": [
+                    "remix",
+                    "vercel"
+                ],
+                "updated_at": "2026-02-05T17:55:49Z"
             },
             {
                 "name": "nextjs15-react19-demo",
@@ -1080,19 +1286,50 @@
                 "forks": 0,
                 "language": "TypeScript",
                 "topics": [],
-                "updated_at": "2026-01-29T05:36:17Z"
+                "updated_at": "2026-02-05T17:53:44Z"
             },
             {
-                "name": "server-timing-demo",
-                "full_name": "jellydn/server-timing-demo",
-                "description": "How to use Server-Timing provides performance metrics in the response headers.",
-                "url": "https://github.com/jellydn/server-timing-demo",
-                "homepage": "https://server-timing-hono.deno.dev/",
+                "name": "practicepython",
+                "full_name": "jellydn/practicepython",
+                "description": "Learn how to code by practicing Python exercises.",
+                "url": "https://github.com/jellydn/practicepython",
+                "homepage": "",
+                "stars": 1,
+                "forks": 0,
+                "language": "",
+                "topics": [
+                    "python"
+                ],
+                "updated_at": "2026-02-05T04:38:01Z"
+            },
+            {
+                "name": "preview-url",
+                "full_name": "jellydn/preview-url",
+                "description": "",
+                "url": "https://github.com/jellydn/preview-url",
+                "homepage": "",
+                "stars": 1,
+                "forks": 0,
+                "language": "Svelte",
+                "topics": [],
+                "updated_at": "2026-02-04T15:14:18Z"
+            },
+            {
+                "name": "db-management-demo",
+                "full_name": "jellydn/db-management-demo",
+                "description": "This is simple demo of how to manage database using prisma and tbls for documentation.",
+                "url": "https://github.com/jellydn/db-management-demo",
+                "homepage": "",
                 "stars": 1,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["bun", "honojs", "server-timing"],
-                "updated_at": "2026-01-27T19:05:53Z"
+                "topics": [
+                    "bunjs",
+                    "db",
+                    "prisma",
+                    "tbls"
+                ],
+                "updated_at": "2026-01-31T01:10:49Z"
             },
             {
                 "name": "reflex-demo",
@@ -1103,7 +1340,11 @@
                 "stars": 1,
                 "forks": 0,
                 "language": "Python",
-                "topics": ["python", "reflex", "webapp"],
+                "topics": [
+                    "python",
+                    "reflex",
+                    "webapp"
+                ],
                 "updated_at": "2026-01-21T06:24:27Z"
             },
             {
@@ -1135,7 +1376,11 @@
                 "stars": 1,
                 "forks": 0,
                 "language": "PHP",
-                "topics": ["laravel", "macosx", "php"],
+                "topics": [
+                    "laravel",
+                    "macosx",
+                    "php"
+                ],
                 "updated_at": "2025-11-10T05:48:09Z"
             },
             {
@@ -1159,7 +1404,11 @@
                 "stars": 1,
                 "forks": 0,
                 "language": "",
-                "topics": ["delta", "ios", "simulator"],
+                "topics": [
+                    "delta",
+                    "ios",
+                    "simulator"
+                ],
                 "updated_at": "2025-07-18T19:01:48Z"
             },
             {
@@ -1183,7 +1432,10 @@
                 "stars": 1,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["fastapi", "moon"],
+                "topics": [
+                    "fastapi",
+                    "moon"
+                ],
                 "updated_at": "2024-10-07T03:33:59Z"
             },
             {
@@ -1195,7 +1447,9 @@
                 "stars": 1,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["bolt"],
+                "topics": [
+                    "bolt"
+                ],
                 "updated_at": "2024-10-06T14:21:28Z"
             },
             {
@@ -1207,7 +1461,9 @@
                 "stars": 1,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["solidjs"],
+                "topics": [
+                    "solidjs"
+                ],
                 "updated_at": "2023-12-06T15:42:02Z"
             },
             {
@@ -1219,7 +1475,11 @@
                 "stars": 1,
                 "forks": 1,
                 "language": "JavaScript",
-                "topics": ["angularjs", "express-js", "mean-stack"],
+                "topics": [
+                    "angularjs",
+                    "express-js",
+                    "mean-stack"
+                ],
                 "updated_at": "2023-01-28T09:19:26Z"
             },
             {
@@ -1249,7 +1509,12 @@
                 "stars": 1,
                 "forks": 1,
                 "language": "TypeScript",
-                "topics": ["api", "deno", "hono", "typescript"],
+                "topics": [
+                    "api",
+                    "deno",
+                    "hono",
+                    "typescript"
+                ],
                 "updated_at": "2022-12-18T05:16:42Z"
             },
             {
@@ -1261,20 +1526,83 @@
                 "stars": 1,
                 "forks": 0,
                 "language": "Go",
-                "topics": ["encore", "encore-app", "golang"],
+                "topics": [
+                    "encore",
+                    "encore-app",
+                    "golang"
+                ],
                 "updated_at": "2022-05-29T07:50:37Z"
             },
             {
-                "name": "ioc-demo",
-                "full_name": "jellydn/ioc-demo",
-                "description": "Demo app with inversion of control container",
-                "url": "https://github.com/jellydn/ioc-demo",
+                "name": "playwright-mock-api",
+                "full_name": "jellydn/playwright-mock-api",
+                "description": "Mocking API with Playwright",
+                "url": "https://github.com/jellydn/playwright-mock-api",
                 "homepage": "",
                 "stars": 0,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["inverifyjs", "inversion-of-control"],
-                "updated_at": "2026-02-02T05:10:18Z"
+                "topics": [],
+                "updated_at": "2026-02-06T21:11:58Z"
+            },
+            {
+                "name": "daily-exercism-quad",
+                "full_name": "jellydn/daily-exercism-quad",
+                "description": "Daily coding practice on Exercism — 4 languages, every day.",
+                "url": "https://github.com/jellydn/daily-exercism-quad",
+                "homepage": "",
+                "stars": 0,
+                "forks": 0,
+                "language": "Python",
+                "topics": [],
+                "updated_at": "2026-02-06T14:01:48Z"
+            },
+            {
+                "name": "pulumi-kubernetes-typescript",
+                "full_name": "jellydn/pulumi-kubernetes-typescript",
+                "description": "Simple Kubernetes cluster with TypeScript for Pulumi.",
+                "url": "https://github.com/jellydn/pulumi-kubernetes-typescript",
+                "homepage": "",
+                "stars": 0,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [
+                    "pulumi",
+                    "typescript"
+                ],
+                "updated_at": "2026-02-05T22:42:49Z"
+            },
+            {
+                "name": "rabbitmq-demo",
+                "full_name": "jellydn/rabbitmq-demo",
+                "description": "Receiving messages based on a pattern (topics) & RPC call",
+                "url": "https://github.com/jellydn/rabbitmq-demo",
+                "homepage": "",
+                "stars": 0,
+                "forks": 0,
+                "language": "Go",
+                "topics": [
+                    "patterns",
+                    "rabbitmq",
+                    "rpc",
+                    "typescript"
+                ],
+                "updated_at": "2026-02-05T21:25:55Z"
+            },
+            {
+                "name": "remix-spa",
+                "full_name": "jellydn/remix-spa",
+                "description": "Remix SPA Starter",
+                "url": "https://github.com/jellydn/remix-spa",
+                "homepage": "",
+                "stars": 0,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [
+                    "remix",
+                    "spa"
+                ],
+                "updated_at": "2026-02-05T12:39:43Z"
             },
             {
                 "name": "spin-demo-apps",
@@ -1286,31 +1614,22 @@
                 "forks": 0,
                 "language": "Makefile",
                 "topics": [],
-                "updated_at": "2026-02-02T04:52:32Z"
+                "updated_at": "2026-02-04T20:48:04Z"
             },
             {
-                "name": "pulumi-kubernetes-typescript",
-                "full_name": "jellydn/pulumi-kubernetes-typescript",
-                "description": "Simple Kubernetes cluster with TypeScript for Pulumi.",
-                "url": "https://github.com/jellydn/pulumi-kubernetes-typescript",
+                "name": "ioc-demo",
+                "full_name": "jellydn/ioc-demo",
+                "description": "Demo app with inversion of control container",
+                "url": "https://github.com/jellydn/ioc-demo",
                 "homepage": "",
                 "stars": 0,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["pulumi", "typescript"],
-                "updated_at": "2026-02-02T04:32:34Z"
-            },
-            {
-                "name": "rabbitmq-demo",
-                "full_name": "jellydn/rabbitmq-demo",
-                "description": "Receiving messages based on a pattern (topics) & RPC call",
-                "url": "https://github.com/jellydn/rabbitmq-demo",
-                "homepage": "",
-                "stars": 0,
-                "forks": 0,
-                "language": "Go",
-                "topics": ["patterns", "rabbitmq", "rpc", "typescript"],
-                "updated_at": "2026-02-02T04:30:47Z"
+                "topics": [
+                    "inverifyjs",
+                    "inversion-of-control"
+                ],
+                "updated_at": "2026-02-02T05:10:18Z"
             },
             {
                 "name": "homebrew-tap",
@@ -1325,30 +1644,6 @@
                 "updated_at": "2026-02-01T04:05:50Z"
             },
             {
-                "name": "playwright-mock-api",
-                "full_name": "jellydn/playwright-mock-api",
-                "description": "Mocking API with Playwright",
-                "url": "https://github.com/jellydn/playwright-mock-api",
-                "homepage": "",
-                "stars": 0,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [],
-                "updated_at": "2026-01-31T01:30:24Z"
-            },
-            {
-                "name": "remix-spa",
-                "full_name": "jellydn/remix-spa",
-                "description": "Remix SPA Starter",
-                "url": "https://github.com/jellydn/remix-spa",
-                "homepage": "",
-                "stars": 0,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": ["remix", "spa"],
-                "updated_at": "2026-01-31T01:28:39Z"
-            },
-            {
                 "name": "resume-latex",
                 "full_name": "jellydn/resume-latex",
                 "description": "A professional LaTeX CV template ",
@@ -1357,7 +1652,11 @@
                 "stars": 0,
                 "forks": 0,
                 "language": "TeX",
-                "topics": ["cv", "latex", "latex-template"],
+                "topics": [
+                    "cv",
+                    "latex",
+                    "latex-template"
+                ],
                 "updated_at": "2026-01-22T15:09:44Z"
             },
             {
@@ -1369,7 +1668,11 @@
                 "stars": 0,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["expo", "pomodoro", "react-native"],
+                "topics": [
+                    "expo",
+                    "pomodoro",
+                    "react-native"
+                ],
                 "updated_at": "2026-01-18T07:28:57Z"
             },
             {
@@ -1393,7 +1696,10 @@
                 "stars": 0,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["shadcn-ui", "tanstack-router"],
+                "topics": [
+                    "shadcn-ui",
+                    "tanstack-router"
+                ],
                 "updated_at": "2025-12-11T04:09:45Z"
             },
             {
@@ -1513,7 +1819,10 @@
                 "stars": 0,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["tailwindcss-v4", "tanstack-start"],
+                "topics": [
+                    "tailwindcss-v4",
+                    "tanstack-start"
+                ],
                 "updated_at": "2025-01-31T10:41:49Z"
             },
             {
@@ -1525,7 +1834,10 @@
                 "stars": 0,
                 "forks": 0,
                 "language": "Go",
-                "topics": ["hypermode", "modus"],
+                "topics": [
+                    "hypermode",
+                    "modus"
+                ],
                 "updated_at": "2024-11-07T13:03:40Z"
             },
             {
@@ -1549,7 +1861,10 @@
                 "stars": 0,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["hono", "honox"],
+                "topics": [
+                    "hono",
+                    "honox"
+                ],
                 "updated_at": "2024-08-29T15:09:16Z"
             },
             {
@@ -1585,7 +1900,10 @@
                 "stars": 0,
                 "forks": 0,
                 "language": "Makefile",
-                "topics": ["tsp", "typespec"],
+                "topics": [
+                    "tsp",
+                    "typespec"
+                ],
                 "updated_at": "2024-06-06T14:47:50Z"
             },
             {
@@ -1609,7 +1927,12 @@
                 "stars": 0,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["runner", "tsx", "typescript", "typescript-runtime"],
+                "topics": [
+                    "runner",
+                    "tsx",
+                    "typescript",
+                    "typescript-runtime"
+                ],
                 "updated_at": "2024-04-10T03:10:45Z"
             },
             {
@@ -1638,7 +1961,9 @@
                 "stars": 0,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["remix"],
+                "topics": [
+                    "remix"
+                ],
                 "updated_at": "2023-07-25T00:42:50Z"
             },
             {
@@ -1650,7 +1975,12 @@
                 "stars": 0,
                 "forks": 0,
                 "language": "HTML",
-                "topics": ["documentation", "markdown", "mkdocs", "typeorm"],
+                "topics": [
+                    "documentation",
+                    "markdown",
+                    "mkdocs",
+                    "typeorm"
+                ],
                 "updated_at": "2023-07-15T15:54:25Z"
             },
             {
@@ -1662,7 +1992,10 @@
                 "stars": 0,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["deno", "shortened-links"],
+                "topics": [
+                    "deno",
+                    "shortened-links"
+                ],
                 "updated_at": "2023-03-25T05:18:25Z"
             },
             {
@@ -1674,7 +2007,10 @@
                 "stars": 0,
                 "forks": 0,
                 "language": "Rust",
-                "topics": ["wasmtime", "webassembly"],
+                "topics": [
+                    "wasmtime",
+                    "webassembly"
+                ],
                 "updated_at": "2022-09-25T07:07:24Z"
             },
             {
@@ -1686,7 +2022,12 @@
                 "stars": 0,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["db", "migration", "nodejs", "typescript"],
+                "topics": [
+                    "db",
+                    "migration",
+                    "nodejs",
+                    "typescript"
+                ],
                 "updated_at": "2022-04-13T04:41:43Z"
             },
             {
@@ -1698,7 +2039,9 @@
                 "stars": 0,
                 "forks": 0,
                 "language": "Solidity",
-                "topics": ["foundry"],
+                "topics": [
+                    "foundry"
+                ],
                 "updated_at": "2022-03-09T00:41:13Z"
             },
             {
@@ -1734,7 +2077,9 @@
                 "stars": 0,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["denoland"],
+                "topics": [
+                    "denoland"
+                ],
                 "updated_at": "2020-12-01T06:55:43Z"
             },
             {
@@ -1746,7 +2091,12 @@
                 "stars": 0,
                 "forks": 0,
                 "language": "JavaScript",
-                "topics": ["array", "big-number-multiplication", "js", "sets"],
+                "topics": [
+                    "array",
+                    "big-number-multiplication",
+                    "js",
+                    "sets"
+                ],
                 "updated_at": "2020-08-10T15:30:28Z"
             },
             {
@@ -1856,11 +2206,16 @@
                 "description": "Hurl.nvim is a Neovim plugin designed to run HTTP requests directly from `.hurl` files. Elevate your API development workflow by executing and viewing responses without leaving your editor.",
                 "url": "https://github.com/jellydn/hurl.nvim",
                 "homepage": "https://gyazo.com/19492e8b5366cec3f22d5fd97a63f37a",
-                "stars": 248,
+                "stars": 250,
                 "forks": 21,
                 "language": "Lua",
-                "topics": ["hacktoberfest", "hurl", "neovim", "neovim-plugin"],
-                "updated_at": "2026-01-27T09:37:52Z"
+                "topics": [
+                    "hacktoberfest",
+                    "hurl",
+                    "neovim",
+                    "neovim-plugin"
+                ],
+                "updated_at": "2026-02-04T03:35:41Z"
             },
             {
                 "name": "lazy-nvim-ide",
@@ -1871,7 +2226,11 @@
                 "stars": 142,
                 "forks": 15,
                 "language": "Lua",
-                "topics": ["ide", "neovim", "nvim"],
+                "topics": [
+                    "ide",
+                    "neovim",
+                    "nvim"
+                ],
                 "updated_at": "2026-01-07T11:37:44Z"
             },
             {
@@ -1883,8 +2242,12 @@
                 "stars": 53,
                 "forks": 6,
                 "language": "Lua",
-                "topics": ["dotfiles", "neovim", "nvim-config"],
-                "updated_at": "2026-01-29T04:35:24Z"
+                "topics": [
+                    "dotfiles",
+                    "neovim",
+                    "nvim-config"
+                ],
+                "updated_at": "2026-02-06T13:42:52Z"
             },
             {
                 "name": "ts-inlay-hints",
@@ -1895,8 +2258,13 @@
                 "stars": 46,
                 "forks": 1,
                 "language": "TypeScript",
-                "topics": ["inlay-hints", "neovim", "typescript", "vscode"],
-                "updated_at": "2026-01-27T15:31:29Z"
+                "topics": [
+                    "inlay-hints",
+                    "neovim",
+                    "typescript",
+                    "vscode"
+                ],
+                "updated_at": "2026-02-03T00:32:30Z"
             },
             {
                 "name": "my-nvim-ide",
@@ -1907,7 +2275,9 @@
                 "stars": 46,
                 "forks": 6,
                 "language": "Lua",
-                "topics": ["neovim"],
+                "topics": [
+                    "neovim"
+                ],
                 "updated_at": "2026-01-07T09:51:50Z"
             },
             {
@@ -1916,11 +2286,15 @@
                 "description": "A Neovim plugin for seamless TypeScript type checking.",
                 "url": "https://github.com/jellydn/typecheck.nvim",
                 "homepage": "",
-                "stars": 34,
+                "stars": 35,
                 "forks": 1,
                 "language": "Lua",
-                "topics": ["neovim-plugin", "tsc", "typescript"],
-                "updated_at": "2025-09-11T09:33:31Z"
+                "topics": [
+                    "neovim-plugin",
+                    "tsc",
+                    "typescript"
+                ],
+                "updated_at": "2026-02-05T10:04:00Z"
             },
             {
                 "name": "nvim-for-webdev",
@@ -1931,7 +2305,11 @@
                 "stars": 32,
                 "forks": 2,
                 "language": "Lua",
-                "topics": ["lazyvim", "nvim", "web-development"],
+                "topics": [
+                    "lazyvim",
+                    "nvim",
+                    "web-development"
+                ],
                 "updated_at": "2025-06-16T08:10:16Z"
             },
             {
@@ -1943,7 +2321,12 @@
                 "stars": 25,
                 "forks": 0,
                 "language": "Lua",
-                "topics": ["code-runner", "lua", "neovim", "neovim-plugin"],
+                "topics": [
+                    "code-runner",
+                    "lua",
+                    "neovim",
+                    "neovim-plugin"
+                ],
                 "updated_at": "2026-01-15T06:02:57Z"
             },
             {
@@ -1955,7 +2338,12 @@
                 "stars": 20,
                 "forks": 0,
                 "language": "Lua",
-                "topics": ["lua", "neovim", "neovim-plugin", "spinner"],
+                "topics": [
+                    "lua",
+                    "neovim",
+                    "neovim-plugin",
+                    "spinner"
+                ],
                 "updated_at": "2025-11-10T09:02:40Z"
             },
             {
@@ -1967,7 +2355,12 @@
                 "stars": 16,
                 "forks": 1,
                 "language": "Lua",
-                "topics": ["lazyvim", "nvim", "vim", "vscode"],
+                "topics": [
+                    "lazyvim",
+                    "nvim",
+                    "vim",
+                    "vscode"
+                ],
                 "updated_at": "2025-07-17T14:47:03Z"
             },
             {
@@ -1994,7 +2387,7 @@
                     "zellij",
                     "zsh"
                 ],
-                "updated_at": "2026-01-27T15:47:16Z"
+                "updated_at": "2026-02-03T23:47:08Z"
             },
             {
                 "name": "my-note.nvim",
@@ -2005,8 +2398,28 @@
                 "stars": 15,
                 "forks": 0,
                 "language": "Lua",
-                "topics": ["neovim-plugin", "note-taking", "nvim-plugin"],
+                "topics": [
+                    "neovim-plugin",
+                    "note-taking",
+                    "nvim-plugin"
+                ],
                 "updated_at": "2025-08-16T11:34:57Z"
+            },
+            {
+                "name": "tiny-cloak.nvim",
+                "full_name": "jellydn/tiny-cloak.nvim",
+                "description": "A lightweight Neovim plugin that masks sensitive data (API keys, secrets, tokens) in .env, JSON, and YAML files",
+                "url": "https://github.com/jellydn/tiny-cloak.nvim",
+                "homepage": "",
+                "stars": 5,
+                "forks": 0,
+                "language": "Lua",
+                "topics": [
+                    "neovim-plugin",
+                    "nvim",
+                    "nvim-plugin"
+                ],
+                "updated_at": "2026-02-04T09:30:28Z"
             },
             {
                 "name": "nvim-ide",
@@ -2017,20 +2430,27 @@
                 "stars": 5,
                 "forks": 2,
                 "language": "Lua",
-                "topics": ["ide", "nvim"],
+                "topics": [
+                    "ide",
+                    "nvim"
+                ],
                 "updated_at": "2024-08-08T06:28:45Z"
             },
             {
-                "name": "tiny-cloak.nvim",
-                "full_name": "jellydn/tiny-cloak.nvim",
-                "description": "A lightweight Neovim plugin that masks sensitive data (API keys, secrets, tokens) in .env, JSON, and YAML files",
-                "url": "https://github.com/jellydn/tiny-cloak.nvim",
+                "name": "tiny-term.nvim",
+                "full_name": "jellydn/tiny-term.nvim",
+                "description": "A minimal, standalone Neovim 0.11+ terminal",
+                "url": "https://github.com/jellydn/tiny-term.nvim",
                 "homepage": "",
-                "stars": 3,
+                "stars": 1,
                 "forks": 0,
                 "language": "Lua",
-                "topics": ["nvim", "nvim-plugin"],
-                "updated_at": "2026-01-21T05:23:41Z"
+                "topics": [
+                    "neovim-plugin",
+                    "nvim-plugin",
+                    "terminal"
+                ],
+                "updated_at": "2026-02-07T06:19:41Z"
             }
         ]
     },
@@ -2046,8 +2466,12 @@
                 "stars": 14,
                 "forks": 2,
                 "language": "TypeScript",
-                "topics": ["hacktoberfest", "hurl", "vscode-extension"],
-                "updated_at": "2026-02-02T06:05:19Z"
+                "topics": [
+                    "hacktoberfest",
+                    "hurl",
+                    "vscode-extension"
+                ],
+                "updated_at": "2026-02-05T20:34:19Z"
             },
             {
                 "name": "vscode-like-pro",
@@ -2058,7 +2482,10 @@
                 "stars": 11,
                 "forks": 1,
                 "language": "Lua",
-                "topics": ["minimalist", "vscode"],
+                "topics": [
+                    "minimalist",
+                    "vscode"
+                ],
                 "updated_at": "2025-07-02T11:16:35Z"
             },
             {
@@ -2070,8 +2497,10 @@
                 "stars": 3,
                 "forks": 1,
                 "language": "TypeScript",
-                "topics": ["vscode-extension"],
-                "updated_at": "2026-02-02T04:57:39Z"
+                "topics": [
+                    "vscode-extension"
+                ],
+                "updated_at": "2026-02-05T20:50:51Z"
             },
             {
                 "name": "vscode-seal-code",
@@ -2102,7 +2531,11 @@
                 "stars": 1,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["tmux", "vscode-extension", "zellij"],
+                "topics": [
+                    "tmux",
+                    "vscode-extension",
+                    "zellij"
+                ],
                 "updated_at": "2026-02-01T01:46:26Z"
             },
             {
@@ -2114,7 +2547,12 @@
                 "stars": 0,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["cli", "deno", "vscode", "vscode-extension"],
+                "topics": [
+                    "cli",
+                    "deno",
+                    "vscode",
+                    "vscode-extension"
+                ],
                 "updated_at": "2021-04-18T16:50:51Z"
             }
         ]
@@ -2128,7 +2566,7 @@
                 "description": "This package reads your JSDoc-annotated source code on NextJS API route and generates an OpenAPI (Swagger) specification.",
                 "url": "https://github.com/jellydn/next-swagger-doc",
                 "homepage": "https://next-swagger-doc-demo.productsway.com/api-doc",
-                "stars": 517,
+                "stars": 518,
                 "forks": 37,
                 "language": "TypeScript",
                 "topics": [
@@ -2138,7 +2576,7 @@
                     "nextjs",
                     "swagger"
                 ],
-                "updated_at": "2026-01-29T15:26:02Z"
+                "updated_at": "2026-02-06T19:32:01Z"
             },
             {
                 "name": "dapp-starter",
@@ -2171,7 +2609,7 @@
                 "description": "Another awesome starter for your app base on nextjs + tailwind + react-query + zod + react-hook-form + next-auth +  jotai",
                 "url": "https://github.com/jellydn/next-app-starter",
                 "homepage": "https://next-app-starter.productsway.com",
-                "stars": 282,
+                "stars": 283,
                 "forks": 34,
                 "language": "TypeScript",
                 "topics": [
@@ -2186,7 +2624,7 @@
                     "storybook",
                     "tailwindcss"
                 ],
-                "updated_at": "2026-01-29T01:04:40Z"
+                "updated_at": "2026-02-06T07:10:18Z"
             },
             {
                 "name": "nft-app",
@@ -2253,7 +2691,7 @@
                     "protobuf-es",
                     "typescript"
                 ],
-                "updated_at": "2026-02-02T05:01:43Z"
+                "updated_at": "2026-02-05T21:51:07Z"
             },
             {
                 "name": "next-validations",
@@ -2324,7 +2762,12 @@
                 "stars": 23,
                 "forks": 2,
                 "language": "TypeScript",
-                "topics": ["fastify", "nextjs", "trpc", "turborepo"],
+                "topics": [
+                    "fastify",
+                    "nextjs",
+                    "trpc",
+                    "turborepo"
+                ],
                 "updated_at": "2025-10-28T05:04:19Z"
             },
             {
@@ -2336,7 +2779,10 @@
                 "stars": 14,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["nextjs", "nextjs-14"],
+                "topics": [
+                    "nextjs",
+                    "nextjs-14"
+                ],
                 "updated_at": "2025-08-10T16:56:43Z"
             },
             {
@@ -2384,7 +2830,12 @@
                 "stars": 6,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["chatbot", "react", "telegram", "typescript"],
+                "topics": [
+                    "chatbot",
+                    "react",
+                    "telegram",
+                    "typescript"
+                ],
                 "updated_at": "2025-11-04T19:50:04Z"
             },
             {
@@ -2396,8 +2847,13 @@
                 "stars": 5,
                 "forks": 1,
                 "language": "TypeScript",
-                "topics": ["react", "recoil-example", "recoiljs", "vitejs"],
-                "updated_at": "2026-02-02T04:36:39Z"
+                "topics": [
+                    "react",
+                    "recoil-example",
+                    "recoiljs",
+                    "vitejs"
+                ],
+                "updated_at": "2026-02-05T18:57:20Z"
             },
             {
                 "name": "next-demo-app",
@@ -2464,7 +2920,12 @@
                 "stars": 4,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["email", "nextjs", "react", "react-email"],
+                "topics": [
+                    "email",
+                    "nextjs",
+                    "react",
+                    "react-email"
+                ],
                 "updated_at": "2026-02-02T05:50:51Z"
             },
             {
@@ -2488,7 +2949,11 @@
                 "stars": 4,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["react", "rsc", "waku"],
+                "topics": [
+                    "react",
+                    "rsc",
+                    "waku"
+                ],
                 "updated_at": "2025-10-09T12:38:46Z"
             },
             {
@@ -2500,20 +2965,13 @@
                 "stars": 3,
                 "forks": 1,
                 "language": "TypeScript",
-                "topics": ["chatbot", "react", "starter", "typescript"],
-                "updated_at": "2026-02-02T04:41:36Z"
-            },
-            {
-                "name": "wattpm-express-demo",
-                "full_name": "jellydn/wattpm-express-demo",
-                "description": "Watt Quick Start",
-                "url": "https://github.com/jellydn/wattpm-express-demo",
-                "homepage": "https://wattpm-demo.fly.dev/web",
-                "stars": 3,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": ["expressjs", "nextjs", "nodejs", "wattpm"],
-                "updated_at": "2025-11-21T09:50:00Z"
+                "topics": [
+                    "chatbot",
+                    "react",
+                    "starter",
+                    "typescript"
+                ],
+                "updated_at": "2026-02-05T18:14:40Z"
             },
             {
                 "name": "untypeable-wretch-demo",
@@ -2532,7 +2990,24 @@
                     "untypeable",
                     "wretch"
                 ],
-                "updated_at": "2025-10-21T20:34:55Z"
+                "updated_at": "2026-02-05T13:09:51Z"
+            },
+            {
+                "name": "wattpm-express-demo",
+                "full_name": "jellydn/wattpm-express-demo",
+                "description": "Watt Quick Start",
+                "url": "https://github.com/jellydn/wattpm-express-demo",
+                "homepage": "https://wattpm-demo.fly.dev/web",
+                "stars": 3,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [
+                    "expressjs",
+                    "nextjs",
+                    "nodejs",
+                    "wattpm"
+                ],
+                "updated_at": "2025-11-21T09:50:00Z"
             },
             {
                 "name": "go-react-blog-app",
@@ -2573,7 +3048,12 @@
                 "stars": 3,
                 "forks": 1,
                 "language": "TypeScript",
-                "topics": ["migration", "raectjs", "react-18", "vitejs"],
+                "topics": [
+                    "migration",
+                    "raectjs",
+                    "react-18",
+                    "vitejs"
+                ],
                 "updated_at": "2023-03-12T09:36:46Z"
             },
             {
@@ -2592,7 +3072,7 @@
                     "shadcn-ui",
                     "tailwindcss"
                 ],
-                "updated_at": "2026-01-31T05:21:32Z"
+                "updated_at": "2026-02-05T17:15:33Z"
             },
             {
                 "name": "react-router-v7-tailwinds-v4-app",
@@ -2603,7 +3083,10 @@
                 "stars": 2,
                 "forks": 1,
                 "language": "TypeScript",
-                "topics": ["react-router-v7", "tailwindcss-v4"],
+                "topics": [
+                    "react-router-v7",
+                    "tailwindcss-v4"
+                ],
                 "updated_at": "2025-12-15T02:48:07Z"
             },
             {
@@ -2615,7 +3098,10 @@
                 "stars": 2,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["react", "typescript"],
+                "topics": [
+                    "react",
+                    "typescript"
+                ],
                 "updated_at": "2025-11-04T17:01:44Z"
             },
             {
@@ -2639,7 +3125,10 @@
                 "stars": 1,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["react", "signals"],
+                "topics": [
+                    "react",
+                    "signals"
+                ],
                 "updated_at": "2025-11-19T01:39:20Z"
             },
             {
@@ -2672,7 +3161,11 @@
                 "stars": 1,
                 "forks": 1,
                 "language": "Astro",
-                "topics": ["astro", "bun", "xata"],
+                "topics": [
+                    "astro",
+                    "bun",
+                    "xata"
+                ],
                 "updated_at": "2025-06-27T17:38:25Z"
             },
             {
@@ -2696,7 +3189,9 @@
                 "stars": 1,
                 "forks": 0,
                 "language": "Astro",
-                "topics": ["astro"],
+                "topics": [
+                    "astro"
+                ],
                 "updated_at": "2025-04-15T02:57:37Z"
             },
             {
@@ -2738,7 +3233,11 @@
                 "stars": 1,
                 "forks": 0,
                 "language": "JavaScript",
-                "topics": ["react-snapshot", "reactjs", "rebass"],
+                "topics": [
+                    "react-snapshot",
+                    "reactjs",
+                    "rebass"
+                ],
                 "updated_at": "2021-07-01T07:11:50Z"
             },
             {
@@ -2750,8 +3249,11 @@
                 "stars": 0,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["blog", "nextjs"],
-                "updated_at": "2026-02-02T05:54:34Z"
+                "topics": [
+                    "blog",
+                    "nextjs"
+                ],
+                "updated_at": "2026-02-06T13:53:35Z"
             },
             {
                 "name": "vite-react-demo",
@@ -2769,7 +3271,7 @@
                     "shadcn-ui",
                     "tailwindcss"
                 ],
-                "updated_at": "2026-01-31T05:56:41Z"
+                "updated_at": "2026-02-05T21:06:33Z"
             },
             {
                 "name": "zod-tutorial-kit",
@@ -2780,7 +3282,12 @@
                 "stars": 0,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["kit", "react", "tutorial", "zod"],
+                "topics": [
+                    "kit",
+                    "react",
+                    "tutorial",
+                    "zod"
+                ],
                 "updated_at": "2024-10-31T04:01:51Z"
             },
             {
@@ -2792,7 +3299,11 @@
                 "stars": 0,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["nextjs", "nextjs-typescript", "nhost"],
+                "topics": [
+                    "nextjs",
+                    "nextjs-typescript",
+                    "nhost"
+                ],
                 "updated_at": "2022-09-25T07:06:53Z"
             },
             {
@@ -2804,7 +3315,11 @@
                 "stars": 0,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["create-react-app", "nextjs", "redux-toolkit"],
+                "topics": [
+                    "create-react-app",
+                    "nextjs",
+                    "redux-toolkit"
+                ],
                 "updated_at": "2022-06-06T15:49:33Z"
             },
             {
@@ -2828,7 +3343,11 @@
                 "stars": 0,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["gridjs", "react-query", "vitejs"],
+                "topics": [
+                    "gridjs",
+                    "react-query",
+                    "vitejs"
+                ],
                 "updated_at": "2021-05-24T10:01:05Z"
             },
             {
@@ -2840,7 +3359,10 @@
                 "stars": 0,
                 "forks": 0,
                 "language": "Svelte",
-                "topics": ["svelte", "tailwindcss"],
+                "topics": [
+                    "svelte",
+                    "tailwindcss"
+                ],
                 "updated_at": "2021-05-24T09:56:54Z"
             },
             {
