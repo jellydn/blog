@@ -52,7 +52,7 @@
         "autoprefixer": "10.4.24",
         "postcss": "8.5.6",
         "postcss-flexbugs-fixes": "5.0.2",
-        "postcss-preset-env": "11.1.3",
+        "postcss-preset-env": "11.2.0",
         "sort-package-json": "3.6.1",
         "tailwindcss": "4.2.0",
         "typescript": "5.9.3"
