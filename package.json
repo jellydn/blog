@@ -47,7 +47,7 @@
         "@cloudflare/next-on-pages": "1.13.16",
         "@fullhuman/postcss-purgecss": "8.0.0",
         "@tailwindcss/postcss": "4.2.1",
-        "@types/node": "25.3.2",
+        "@types/node": "25.3.3",
         "@types/react": "19.2.14",
         "autoprefixer": "10.4.27",
         "postcss": "8.5.6",
