@@ -142,6 +142,7 @@ export function YoutubeSection({ fallbackVideos }: YoutubeSectionProps) {
                                         fill="currentColor"
                                         aria-label="Play video"
                                     >
+                                        <title>Play video</title>
                                         <path d="M8 5v14l11-7z" />
                                     </svg>
                                 </div>

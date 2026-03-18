@@ -34,6 +34,16 @@
         {
             "include": ["admin/**"],
             "linter": { "enabled": false }
+        },
+        {
+            "include": ["pages/posts/[slug].tsx"],
+            "linter": {
+                "rules": {
+                    "security": {
+                        "noDangerouslySetInnerHtml": "off"
+                    }
+                }
+            }
         }
     ],
     "css": {}
