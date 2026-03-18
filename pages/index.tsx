@@ -67,6 +67,11 @@ const socialLinks: SocialLink[] = [
         url: 'https://twitter.com/jellydn',
         ariaLabel: 'View my Twitter profile',
     },
+    {
+        name: 'LinkedIn',
+        url: 'https://www.linkedin.com/in/dung-huynh-duc',
+        ariaLabel: 'View my LinkedIn profile',
+    },
 ];
 
 function getTopProjects(repos: typeof reposData, limit = 6) {
