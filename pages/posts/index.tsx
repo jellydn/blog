@@ -2,9 +2,9 @@ import Layout from 'components/Layout';
 import type { HashnodePostSummary } from 'lib/hashnode';
 import { fetchHashnodePosts } from 'lib/hashnode';
 import { formatDate } from 'lib/utils/date';
+import { NextSeo } from 'next-seo';
 import Image from 'next/image';
 import Link from 'next/link';
-import { NextSeo } from 'next-seo';
 import { useMemo, useState } from 'react';
 
 type PostsPageProps = {

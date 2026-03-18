@@ -4,10 +4,10 @@ import { RepoStars } from 'components/RepoStars';
 import { fetchHashnodePosts, mapHashnodeSummaryToBlogPost } from 'lib/hashnode';
 import type { BlogPost, VideoPost } from 'lib/types';
 import { dedupeBySlug, extractSlug, parseMarkdown } from 'lib/utils/array';
+import { NextSeo } from 'next-seo';
 import dynamic from 'next/dynamic';
 import Head from 'next/head';
 import Script from 'next/script';
-import { NextSeo } from 'next-seo';
 import reposData from '../data/repos.json';
 
 const YoutubeSection = dynamic(() =>

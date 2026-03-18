@@ -2,8 +2,8 @@ import dynamic from 'next/dynamic';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import { reformatDate } from 'lib/utils/date';
 import type { VideoPost } from 'lib/types';
+import { reformatDate } from 'lib/utils/date';
 
 const YoutubeVideo = dynamic(() => import('./YoutubeVideo'), {
     loading: () => <div>Loading...</div>,

@@ -226,7 +226,7 @@ async function main() {
         const outputPath = join(process.cwd(), 'data', 'repos.json');
         await writeFile(outputPath, JSON.stringify(output, null, 4));
         console.log(`\n✓ Saved to ${outputPath}`);
-        console.log(`\n=== Summary ===`);
+        console.log('\n=== Summary ===');
         let total = 0;
         for (const cat of output) {
             total += cat.repos.length;

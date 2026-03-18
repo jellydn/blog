@@ -15,7 +15,7 @@
         "lineWidth": 80,
         "attributePosition": "auto"
     },
-    "assist": { "actions": { "source": { "organizeImports": "on" } } },
+    "organizeImports": { "enabled": true },
     "linter": { "enabled": true, "rules": { "recommended": true } },
     "javascript": {
         "formatter": {
@@ -30,12 +30,11 @@
             "attributePosition": "auto"
         }
     },
-    "files": {
-        "includes": ["**", "!**/tina/__generated__"]
-    },
-    "css": {
-        "parser": {
-            "tailwindDirectives": true
+    "overrides": [
+        {
+            "include": ["admin/**"],
+            "linter": { "enabled": false }
         }
-    }
+    ],
+    "css": {}
 }

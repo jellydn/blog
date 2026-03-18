@@ -48,6 +48,7 @@ export default function TagPage({ tag, title, items }: TagPageProps) {
                                 fill="none"
                                 viewBox="0 0 24 24"
                                 stroke="currentColor"
+                                aria-hidden="true"
                             >
                                 <path
                                     strokeLinecap="round"
@@ -95,7 +96,9 @@ export async function getStaticPaths() {
         const content = fs.readFileSync(file, 'utf-8');
         const { data } = matter(content);
         if (data.tag) {
-            data.tag.forEach((tag: string) => allTags.add(tag.toLowerCase()));
+            for (const tag of data.tag) {
+                allTags.add(tag.toLowerCase());
+            }
         }
     }
 

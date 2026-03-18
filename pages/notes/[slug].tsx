@@ -87,7 +87,7 @@ export default function BlogTemplate({
                                 fill="none"
                                 viewBox="0 0 24 24"
                                 stroke="currentColor"
-                                suppressHydrationWarning
+                                aria-hidden="true"
                             >
                                 <path
                                     strokeLinecap="round"

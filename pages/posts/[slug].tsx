@@ -86,7 +86,7 @@ export default function PostPage({
                                 fill="none"
                                 viewBox="0 0 24 24"
                                 stroke="currentColor"
-                                suppressHydrationWarning
+                                aria-hidden="true"
                             >
                                 <path
                                     strokeLinecap="round"
@@ -141,10 +141,9 @@ export default function PostPage({
                                 {markdownBody}
                             </ReactMarkdown>
                         ) : (
-                            <div
-                                // Hashnode content already sanitized; keep KISS fallback.
-                                dangerouslySetInnerHTML={{ __html: htmlBody }}
-                            />
+                            // Hashnode content already sanitized; keep KISS fallback.
+                            // eslint-disable-next-line react/no-danger
+                            <div dangerouslySetInnerHTML={{ __html: htmlBody }} />
                         )}
                     </div>
                 </article>

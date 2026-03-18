@@ -146,7 +146,7 @@ async function fetchPaginated<T>(
     extractor: (data: unknown) => T[],
 ): Promise<T[]> {
     const results: T[] = [];
-    let nextPageToken: string | undefined = undefined;
+    let nextPageToken: string | undefined;
 
     do {
         if (nextPageToken) {
