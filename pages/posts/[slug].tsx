@@ -143,7 +143,9 @@ export default function PostPage({
                         ) : (
                             // Hashnode content already sanitized; keep KISS fallback.
                             // eslint-disable-next-line react/no-danger
-                            <div dangerouslySetInnerHTML={{ __html: htmlBody }} />
+                            <div
+                                dangerouslySetInnerHTML={{ __html: htmlBody }}
+                            />
                         )}
                     </div>
                 </article>
