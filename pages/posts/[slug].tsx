@@ -1,18 +1,17 @@
-import { NextSeo } from 'next-seo';
-import Image from 'next/image';
-import Link from 'next/link';
-import { useEffect } from 'react';
-import ReactMarkdown from 'react-markdown';
-import gfm from 'remark-gfm';
-
 import Layout from 'components/Layout';
+import type { HashnodePostDetail } from 'lib/hashnode';
 import {
     fetchHashnodePostBySlug,
     fetchHashnodePosts,
     normalizeHashnodeMarkdown,
 } from 'lib/hashnode';
-import type { HashnodePostDetail } from 'lib/hashnode';
 import { formatDate } from 'lib/utils/date';
+import Image from 'next/image';
+import Link from 'next/link';
+import { NextSeo } from 'next-seo';
+import { useEffect } from 'react';
+import ReactMarkdown from 'react-markdown';
+import gfm from 'remark-gfm';
 
 type PostPageProps = {
     siteTitle: string;

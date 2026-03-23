@@ -1,14 +1,13 @@
+import { Badge, isTil } from 'components/Badge';
+import Layout from 'components/Layout';
 import { globSync } from 'glob';
 import matter from 'gray-matter';
-import { NextSeo } from 'next-seo';
+import { formatDate } from 'lib/utils/date';
 import Link from 'next/link';
+import { NextSeo } from 'next-seo';
 import { useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
 import gfm from 'remark-gfm';
-
-import { Badge, isTil } from 'components/Badge';
-import Layout from 'components/Layout';
-import { formatDate } from 'lib/utils/date';
 
 type BlogFrontmatter = {
     title: string;

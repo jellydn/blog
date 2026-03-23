@@ -15,7 +15,7 @@
         "lineWidth": 80,
         "attributePosition": "auto"
     },
-    "organizeImports": { "enabled": true },
+    "assist": { "actions": { "source": { "organizeImports": "on" } } },
     "linter": { "enabled": true, "rules": { "recommended": true } },
     "javascript": {
         "formatter": {
@@ -32,11 +32,11 @@
     },
     "overrides": [
         {
-            "include": ["admin/**"],
+            "includes": ["admin/**"],
             "linter": { "enabled": false }
         },
         {
-            "include": ["pages/posts/[slug].tsx"],
+            "includes": ["pages/posts/\\[slug\\].tsx"],
             "linter": {
                 "rules": {
                     "security": {
@@ -44,7 +44,16 @@
                     }
                 }
             }
+        },
+        {
+            "includes": ["styles.css"],
+            "linter": { "enabled": false },
+            "formatter": { "enabled": false }
         }
     ],
-    "css": {}
+    "css": {
+        "parser": {
+            "tailwindDirectives": true
+        }
+    }
 }

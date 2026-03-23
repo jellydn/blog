@@ -1,10 +1,9 @@
-import matter from 'gray-matter';
-import { NextSeo } from 'next-seo';
-
 import Layout from 'components/Layout';
 import { NotesList } from 'components/NotesList';
+import matter from 'gray-matter';
 import type { BlogPost } from 'lib/types';
 import { dedupeBySlug, sortByDate } from 'lib/utils/array';
+import { NextSeo } from 'next-seo';
 
 type BlogFrontmatter = {
     title: string;

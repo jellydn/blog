@@ -1,7 +1,6 @@
-import type { NextApiRequest, NextApiResponse } from 'next';
-
 import type { YouTubeVideo } from 'lib/types';
 import type { YouTubeApiItem } from 'lib/youtube';
+import type { NextApiRequest, NextApiResponse } from 'next';
 
 const YOUTUBE_API_KEY = process.env.YOUTUBE_API_KEY;
 const CHANNEL_ID = process.env.CHANNEL_ID;

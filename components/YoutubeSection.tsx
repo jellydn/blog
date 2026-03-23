@@ -1,9 +1,8 @@
 'use client';
 
-import { useEffect, useState } from 'react';
-
 import type { VideoPost, YouTubeVideo } from 'lib/types';
 import { formatDate } from 'lib/utils/date';
+import { useEffect, useState } from 'react';
 
 type YoutubeSectionProps = {
     fallbackVideos: VideoPost[];

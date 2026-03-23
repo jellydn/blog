@@ -1,10 +1,9 @@
+import Layout from 'components/Layout';
 import { globSync } from 'glob';
 import matter from 'gray-matter';
-import { NextSeo } from 'next-seo';
-import Link from 'next/link';
-
-import Layout from 'components/Layout';
 import { formatDate } from 'lib/utils/date';
+import Link from 'next/link';
+import { NextSeo } from 'next-seo';
 
 type VideoFrontmatter = {
     title: string;

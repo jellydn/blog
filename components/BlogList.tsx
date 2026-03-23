@@ -1,8 +1,7 @@
-import Image from 'next/image';
-import Link from 'next/link';
-
 import type { BlogPost } from 'lib/types';
 import { reformatDate } from 'lib/utils/date';
+import Image from 'next/image';
+import Link from 'next/link';
 
 const BlogList = ({ allBlogs }: { allBlogs: BlogPost[] }) => {
     return (
