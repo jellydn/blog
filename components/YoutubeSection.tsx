@@ -2,6 +2,7 @@
 
 import type { VideoPost, YouTubeVideo } from 'lib/types';
 import { formatDate } from 'lib/utils/date';
+import Image from 'next/image';
 import { useEffect, useState } from 'react';
 
 type YoutubeSectionProps = {
@@ -126,13 +127,14 @@ export function YoutubeSection({ fallbackVideos }: YoutubeSectionProps) {
                             className="card bg-base-200 shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1 group"
                         >
                             <figure className="aspect-video relative">
-                                <img
+                                <Image
                                     src={
                                         video.frontmatter.hero_image ||
                                         `https://i.ytimg.com/vi/${video.frontmatter.youtube_id}/mqdefault.jpg`
                                     }
                                     alt={video.frontmatter.title}
-                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                                    fill
+                                    className="object-cover group-hover:scale-105 transition-transform duration-300"
                                 />
                                 <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/30 transition-colors">
                                     <svg

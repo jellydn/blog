@@ -19,6 +19,10 @@ module.exports = {
                 protocol: 'https',
                 hostname: 'hashnode.com',
             },
+            {
+                protocol: 'https',
+                hostname: 'i.ytimg.com',
+            },
         ],
     },
     webpack(config) {

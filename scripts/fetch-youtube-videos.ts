@@ -135,12 +135,6 @@ interface VideoWithTags extends YouTubeVideo {
     tags: string[];
 }
 
-interface CategorizedVideos {
-    category: VideoCategory;
-    displayName: string;
-    videos: YouTubeVideo[];
-}
-
 async function fetchPaginated<T>(
     url: URL,
     extractor: (data: unknown) => T[],

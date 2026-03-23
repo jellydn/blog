@@ -6,6 +6,7 @@ import type { BlogPost, VideoPost } from 'lib/types';
 import { dedupeBySlug, extractSlug, parseMarkdown } from 'lib/utils/array';
 import dynamic from 'next/dynamic';
 import Head from 'next/head';
+import Image from 'next/image';
 import Script from 'next/script';
 import { NextSeo } from 'next-seo';
 import reposData from '../data/repos.json';
@@ -336,9 +337,11 @@ const Index = ({
                         <div className="max-w-3xl">
                             <div className="avatar mb-6">
                                 <div className="w-32 rounded-full ring ring-primary ring-offset-base-100 ring-offset-4">
-                                    <img
+                                    <Image
                                         src="/avatar.jpg"
                                         alt="Dung Huynh Duc"
+                                        width={128}
+                                        height={128}
                                     />
                                 </div>
                             </div>
