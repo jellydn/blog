@@ -378,14 +378,14 @@ const Index = ({
                                     About Me
                                 </h2>
                                 <p className="text-lg leading-relaxed">
-                                    With over 14 years of experience as a
-                                    full-stack developer, I&apos;ve had the
-                                    opportunity to spearhead project teams at
-                                    tech startups in Vietnam, Thailand, Japan,
-                                    and Singapore. Additionally, I have worked
-                                    as a freelance engineer for various
-                                    companies based in Asia Pacific, Europe, and
-                                    North America.
+                                    With over {new Date().getFullYear() - 2011}{' '}
+                                    years of experience as a full-stack
+                                    developer, I&apos;ve had the opportunity to
+                                    spearhead project teams at tech startups in
+                                    Vietnam, Thailand, Japan, and Singapore.
+                                    Additionally, I have worked as a freelance
+                                    engineer for various companies based in Asia
+                                    Pacific, Europe, and North America.
                                 </p>
                                 <p className="text-lg leading-relaxed mt-4">
                                     Currently, I serve as a Senior Full Stack
