@@ -21,7 +21,7 @@
         "@giscus/react": "3.1.0",
         "@happykit/flags": "3.3.0",
         "@tailwindcss/typography": "0.5.19",
-        "@tinacms/cli": "2.2.0",
+        "@tinacms/cli": "2.2.1",
         "daisyui": "5.5.19",
         "glob": "13.0.6",
         "gray-matter": "4.0.3",
@@ -40,7 +40,7 @@
         "remark-gfm": "^4.0.1",
         "sharp": "0.34.5",
         "swr": "2.4.1",
-        "tinacms": "3.7.0"
+        "tinacms": "3.7.1"
     },
     "devDependencies": {
         "@biomejs/biome": "2.4.9",
