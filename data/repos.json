@@ -8,11 +8,29 @@
                 "description": "A slow guide on setting up a free OpenAI GPT-4 API on your local machine.",
                 "url": "https://github.com/jellydn/gpt4free-demo",
                 "homepage": "",
-                "stars": 103,
+                "stars": 102,
                 "forks": 15,
                 "language": "TypeScript",
                 "topics": ["gpt", "gpt4free", "raycast-extension"],
-                "updated_at": "2026-02-06T21:43:46Z"
+                "updated_at": "2026-04-27T06:07:07Z"
+            },
+            {
+                "name": "my-ai-tools",
+                "full_name": "jellydn/my-ai-tools",
+                "description": "Comprehensive configuration management for AI coding tools - Replicate my complete setup for Claude Code, OpenCode, Amp, Codex and Claude Code Switch with custom configurations, MCP servers, plugins, and commands.",
+                "url": "https://github.com/jellydn/my-ai-tools",
+                "homepage": "http://ai-tools.itman.fyi/",
+                "stars": 67,
+                "forks": 9,
+                "language": "Shell",
+                "topics": [
+                    "amp",
+                    "claude-code",
+                    "codex",
+                    "open-code",
+                    "skills"
+                ],
+                "updated_at": "2026-04-26T22:51:18Z"
             },
             {
                 "name": "gpt4all-cli",
@@ -24,25 +42,7 @@
                 "forks": 6,
                 "language": "TypeScript",
                 "topics": ["cli", "gpt4all", "gpt4all-ts", "llama"],
-                "updated_at": "2025-11-09T11:25:04Z"
-            },
-            {
-                "name": "my-ai-tools",
-                "full_name": "jellydn/my-ai-tools",
-                "description": "      Comprehensive configuration management for AI coding tools - Replicate my complete setup for Claude Code, OpenCode, Amp, Codex and CCS with custom configurations, MCP servers, plugins, and commands.",
-                "url": "https://github.com/jellydn/my-ai-tools",
-                "homepage": "http://ai-tools.itman.fyi/",
-                "stars": 20,
-                "forks": 6,
-                "language": "Shell",
-                "topics": [
-                    "amp",
-                    "claude-code",
-                    "codex",
-                    "open-code",
-                    "skills"
-                ],
-                "updated_at": "2026-02-07T05:53:07Z"
+                "updated_at": "2026-04-08T16:52:45Z"
             },
             {
                 "name": "auto-testgen-nodejs",
@@ -50,8 +50,8 @@
                 "description": "How to use AI to generate unit tests",
                 "url": "https://github.com/jellydn/auto-testgen-nodejs",
                 "homepage": "",
-                "stars": 16,
-                "forks": 1,
+                "stars": 17,
+                "forks": 0,
                 "language": "TypeScript",
                 "topics": [
                     "ai",
@@ -61,7 +61,45 @@
                     "pythagora",
                     "turso"
                 ],
-                "updated_at": "2026-02-02T05:04:00Z"
+                "updated_at": "2026-04-27T06:35:53Z"
+            },
+            {
+                "name": "tiny-coding-agent",
+                "full_name": "jellydn/tiny-coding-agent",
+                "description": "A lightweight, extensible coding agent built in TypeScript that helps developers with coding tasks across TypeScript, React, JavaScript, Node.js, Bash, and markdown/JSON.",
+                "url": "https://github.com/jellydn/tiny-coding-agent",
+                "homepage": "",
+                "stars": 10,
+                "forks": 1,
+                "language": "TypeScript",
+                "topics": [
+                    "agentic-ai",
+                    "agents",
+                    "ai",
+                    "cli",
+                    "coding-assistant"
+                ],
+                "updated_at": "2026-04-27T02:08:26Z"
+            },
+            {
+                "name": "ai-launcher",
+                "full_name": "jellydn/ai-launcher",
+                "description": "A fast, secure launcher CLI tool that lets you switch between different AI coding assistants using fuzzy search.",
+                "url": "https://github.com/jellydn/ai-launcher",
+                "homepage": "http://ai-cli.itman.fyi/",
+                "stars": 8,
+                "forks": 1,
+                "language": "TypeScript",
+                "topics": [
+                    "amp",
+                    "ccs",
+                    "claude-code",
+                    "cli",
+                    "fuzzy-search",
+                    "open-code",
+                    "open-source"
+                ],
+                "updated_at": "2026-04-05T06:56:56Z"
             },
             {
                 "name": "summary-chatbot-demo",
@@ -73,27 +111,7 @@
                 "forks": 0,
                 "language": "TypeScript",
                 "topics": ["ai", "chatbot", "llm"],
-                "updated_at": "2025-11-04T10:50:38Z"
-            },
-            {
-                "name": "ai-launcher",
-                "full_name": "jellydn/ai-launcher",
-                "description": "A fast, secure launcher CLI tool that lets you switch between different AI coding assistants using fuzzy search.",
-                "url": "https://github.com/jellydn/ai-launcher",
-                "homepage": "http://ai-cli.itman.fyi/",
-                "stars": 4,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [
-                    "amp",
-                    "ccs",
-                    "claude-code",
-                    "cli",
-                    "fuzzy-search",
-                    "open-code",
-                    "open-source"
-                ],
-                "updated_at": "2026-02-06T12:46:48Z"
+                "updated_at": "2026-03-12T19:07:10Z"
             },
             {
                 "name": "copilot-tips",
@@ -108,22 +126,16 @@
                 "updated_at": "2025-07-19T04:28:18Z"
             },
             {
-                "name": "tiny-coding-agent",
-                "full_name": "jellydn/tiny-coding-agent",
-                "description": "A lightweight, extensible coding agent built in TypeScript that helps developers with coding tasks across TypeScript, React, JavaScript, Node.js, Bash, and markdown/JSON.",
-                "url": "https://github.com/jellydn/tiny-coding-agent",
+                "name": "logpilot",
+                "full_name": "jellydn/logpilot",
+                "description": "AI-Native tmux Log Copilot for Support Incident Tracking",
+                "url": "https://github.com/jellydn/logpilot",
                 "homepage": "",
                 "stars": 2,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [
-                    "agentic-ai",
-                    "agents",
-                    "ai",
-                    "cli",
-                    "coding-assistant"
-                ],
-                "updated_at": "2026-01-25T23:23:11Z"
+                "forks": 1,
+                "language": "Rust",
+                "topics": ["ai-tools", "mcp", "mcp-server", "tmux"],
+                "updated_at": "2026-04-20T04:56:57Z"
             },
             {
                 "name": "hello-mastra",
@@ -135,7 +147,7 @@
                 "forks": 0,
                 "language": "TypeScript",
                 "topics": ["ai", "google-gemini-ai", "mastra"],
-                "updated_at": "2026-02-05T18:47:59Z"
+                "updated_at": "2026-04-14T22:58:39Z"
             },
             {
                 "name": "smart-resume-matcher",
@@ -184,11 +196,11 @@
                 "description": "The easiest way to download any Twitter video from CLI",
                 "url": "https://github.com/jellydn/twt-dl-cli",
                 "homepage": "",
-                "stars": 49,
+                "stars": 48,
                 "forks": 8,
                 "language": "TypeScript",
                 "topics": ["cli", "download-videos", "twitter"],
-                "updated_at": "2026-02-05T22:05:59Z"
+                "updated_at": "2026-04-12T04:09:56Z"
             },
             {
                 "name": "cspell-tool",
@@ -200,7 +212,7 @@
                 "forks": 0,
                 "language": "TypeScript",
                 "topics": ["cli", "cspell", "spell-check"],
-                "updated_at": "2025-10-20T14:57:39Z"
+                "updated_at": "2026-04-06T17:24:48Z"
             },
             {
                 "name": "biome-interactive",
@@ -227,18 +239,6 @@
                 "updated_at": "2024-12-17T08:46:01Z"
             },
             {
-                "name": "dotenv-tui",
-                "full_name": "jellydn/dotenv-tui",
-                "description": "A terminal UI tool for managing .env files across projects and monorepos.",
-                "url": "https://github.com/jellydn/dotenv-tui",
-                "homepage": "",
-                "stars": 2,
-                "forks": 0,
-                "language": "Go",
-                "topics": ["cli", "env", "golang", "tui"],
-                "updated_at": "2026-02-07T06:22:42Z"
-            },
-            {
                 "name": "pkg-cli-simple-app",
                 "full_name": "jellydn/pkg-cli-simple-app",
                 "description": "Demo pkg app",
@@ -248,7 +248,19 @@
                 "forks": 0,
                 "language": "TypeScript",
                 "topics": [],
-                "updated_at": "2025-11-20T22:03:54Z"
+                "updated_at": "2026-04-27T20:57:36Z"
+            },
+            {
+                "name": "dotenv-tui",
+                "full_name": "jellydn/dotenv-tui",
+                "description": "A terminal UI tool for managing .env files across projects and monorepos.",
+                "url": "https://github.com/jellydn/dotenv-tui",
+                "homepage": "",
+                "stars": 2,
+                "forks": 0,
+                "language": "Go",
+                "topics": ["cli", "env", "golang", "tui"],
+                "updated_at": "2026-02-17T06:11:32Z"
             },
             {
                 "name": "eth-cli",
@@ -284,7 +296,19 @@
                 "forks": 0,
                 "language": "TypeScript",
                 "topics": ["cli", "deno", "ink", "typescript"],
-                "updated_at": "2025-09-16T16:42:53Z"
+                "updated_at": "2026-04-28T06:13:21Z"
+            },
+            {
+                "name": "devlog",
+                "full_name": "jellydn/devlog",
+                "description": "Zero-code log capture for local development. Captures server logs via tmux and browser console logs via a native messaging host — all controlled by a single YAML config.",
+                "url": "https://github.com/jellydn/devlog",
+                "homepage": "",
+                "stars": 0,
+                "forks": 0,
+                "language": "Go",
+                "topics": ["cli", "logging", "tmux"],
+                "updated_at": "2026-02-23T14:55:07Z"
             }
         ]
     },
@@ -297,11 +321,11 @@
                 "description": "Your ultimate guide to setting up Zed with Vim mode, tailored settings, and key bindings for a seamless coding experience",
                 "url": "https://github.com/jellydn/zed-101-setup",
                 "homepage": "https://itman.fyi",
-                "stars": 1188,
+                "stars": 1285,
                 "forks": 27,
                 "language": "TypeScript",
                 "topics": ["guide", "hacktoberfest", "zed"],
-                "updated_at": "2026-02-06T01:31:59Z"
+                "updated_at": "2026-04-27T20:28:58Z"
             },
             {
                 "name": "typescript-tips",
@@ -318,7 +342,7 @@
                     "tips-and-tricks",
                     "typescript"
                 ],
-                "updated_at": "2026-02-02T05:02:47Z"
+                "updated_at": "2026-04-27T06:46:07Z"
             },
             {
                 "name": "awesome-typesafe",
@@ -326,19 +350,19 @@
                 "description": "A curated list of awesome 🔥 TypeScript Typesafe Libraries🔥",
                 "url": "https://github.com/jellydn/awesome-typesafe",
                 "homepage": "http://typesafe.itman.fyi/",
-                "stars": 159,
-                "forks": 14,
+                "stars": 169,
+                "forks": 17,
                 "language": "",
                 "topics": ["awesome", "awesome-list", "typesafe", "typescript"],
-                "updated_at": "2026-02-03T20:25:07Z"
+                "updated_at": "2026-04-27T19:03:57Z"
             },
             {
                 "name": "fastify-starter",
                 "full_name": "jellydn/fastify-starter",
                 "description": "Fastify starter template support RestAPI with Swagger and Graphql",
                 "url": "https://github.com/jellydn/fastify-starter",
-                "homepage": "https://fastify-starter.fly.dev/documentation/static/index.html",
-                "stars": 126,
+                "homepage": "https://fastify.itman.fyi/documentation/static/index.html",
+                "stars": 128,
                 "forks": 11,
                 "language": "TypeScript",
                 "topics": [
@@ -352,7 +376,7 @@
                     "swagger",
                     "typescript"
                 ],
-                "updated_at": "2026-02-02T04:57:52Z"
+                "updated_at": "2026-04-27T04:33:23Z"
             },
             {
                 "name": "elysia-demo-app",
@@ -360,11 +384,11 @@
                 "description": "A Real-World Example Using Bun, Docker, and Fly.io 🚀",
                 "url": "https://github.com/jellydn/elysia-demo-app",
                 "homepage": "https://elysia-demo-app.fly.dev/swagger",
-                "stars": 107,
+                "stars": 112,
                 "forks": 9,
                 "language": "TypeScript",
                 "topics": ["bun", "elysiajs"],
-                "updated_at": "2026-02-01T01:16:02Z"
+                "updated_at": "2026-04-19T05:11:55Z"
             },
             {
                 "name": "new-web-app",
@@ -399,11 +423,11 @@
                 "description": "Express.js v5 starter is a boilerplate for building and deploying Express.js applications to Vercel. ",
                 "url": "https://github.com/jellydn/express-vercel-starter",
                 "homepage": "https://express-starter.productsway.com/api",
-                "stars": 26,
-                "forks": 14,
+                "stars": 25,
+                "forks": 13,
                 "language": "TypeScript",
                 "topics": ["express", "express-js", "vercel"],
-                "updated_at": "2026-02-06T07:29:16Z"
+                "updated_at": "2026-04-22T02:43:14Z"
             },
             {
                 "name": "arch-linux-on-m2",
@@ -411,18 +435,37 @@
                 "description": "How to install Arch Linux on a Macbook Pro M2",
                 "url": "https://github.com/jellydn/arch-linux-on-m2",
                 "homepage": "",
-                "stars": 20,
-                "forks": 2,
+                "stars": 21,
+                "forks": 3,
                 "language": "Shell",
                 "topics": ["archlinux", "mac-m2", "vmware-fusion"],
-                "updated_at": "2026-02-03T22:39:34Z"
+                "updated_at": "2026-04-05T20:57:27Z"
+            },
+            {
+                "name": "miryoku-silakka54-layout",
+                "full_name": "jellydn/miryoku-silakka54-layout",
+                "description": "Interactive visualization and educational resource for adapting the Miryoku keyboard layout system to the Silakka54 split keyboard",
+                "url": "https://github.com/jellydn/miryoku-silakka54-layout",
+                "homepage": "https://kb.itman.fyi/",
+                "stars": 17,
+                "forks": 6,
+                "language": "HTML",
+                "topics": [
+                    "colemak-dh",
+                    "corne46",
+                    "enthium",
+                    "gallium",
+                    "miryoku",
+                    "silakka54"
+                ],
+                "updated_at": "2026-04-16T08:36:05Z"
             },
             {
                 "name": "moleculer-typescript-template",
                 "full_name": "jellydn/moleculer-typescript-template",
                 "description": "This is a Moleculer-based microservices project",
                 "url": "https://github.com/jellydn/moleculer-typescript-template",
-                "homepage": "https://moleculer-typescript-template.fly.dev/",
+                "homepage": "https://moleculer.itman.fyi/",
                 "stars": 17,
                 "forks": 4,
                 "language": "TypeScript",
@@ -433,7 +476,7 @@
                     "moleculerjs",
                     "typescript"
                 ],
-                "updated_at": "2025-07-12T13:01:34Z"
+                "updated_at": "2026-03-10T23:44:46Z"
             },
             {
                 "name": "llama2-personal-ai",
@@ -446,25 +489,6 @@
                 "language": "",
                 "topics": ["ollama"],
                 "updated_at": "2024-01-06T02:33:12Z"
-            },
-            {
-                "name": "miryoku-silakka54-layout",
-                "full_name": "jellydn/miryoku-silakka54-layout",
-                "description": "Interactive visualization and educational resource for adapting the Miryoku keyboard layout system to the Silakka54 split keyboard",
-                "url": "https://github.com/jellydn/miryoku-silakka54-layout",
-                "homepage": "https://jellydn.github.io/miryoku-silakka54-layout/",
-                "stars": 13,
-                "forks": 4,
-                "language": "HTML",
-                "topics": [
-                    "colemak-dh",
-                    "corne46",
-                    "enthium",
-                    "gallium",
-                    "miryoku",
-                    "silakka54"
-                ],
-                "updated_at": "2026-01-31T04:47:24Z"
             },
             {
                 "name": "thirdweb-foundry-starter",
@@ -497,10 +521,28 @@
                 "url": "https://github.com/jellydn/playwright-crawler-demo",
                 "homepage": "",
                 "stars": 11,
-                "forks": 4,
+                "forks": 5,
                 "language": "Dockerfile",
                 "topics": ["crawlee", "playwright-typescript"],
-                "updated_at": "2026-02-06T21:05:09Z"
+                "updated_at": "2026-04-27T05:44:43Z"
+            },
+            {
+                "name": "oak",
+                "full_name": "jellydn/oak",
+                "description": "Oak is a lightweight macOS focus companion app with notch-based Pomodoro-style focus sessions and ambient audio.",
+                "url": "https://github.com/jellydn/oak",
+                "homepage": "https://jellydn.github.io/oak/",
+                "stars": 10,
+                "forks": 0,
+                "language": "Swift",
+                "topics": [
+                    "macos",
+                    "pomodoro",
+                    "pomodoro-clock",
+                    "pomodoro-timer",
+                    "swift"
+                ],
+                "updated_at": "2026-04-18T14:55:27Z"
             },
             {
                 "name": "github-action-locally",
@@ -524,7 +566,7 @@
                 "forks": 1,
                 "language": "TypeScript",
                 "topics": ["nodejs", "tdd", "tidy-first", "vitest"],
-                "updated_at": "2026-02-06T00:35:58Z"
+                "updated_at": "2026-04-14T08:48:48Z"
             },
             {
                 "name": "huma-demo",
@@ -548,7 +590,7 @@
                 "forks": 0,
                 "language": "JavaScript",
                 "topics": ["email-template", "mailwind", "tailwindcss"],
-                "updated_at": "2026-02-02T04:44:29Z"
+                "updated_at": "2026-04-27T05:20:39Z"
             },
             {
                 "name": "promise-should-be-fun",
@@ -596,7 +638,7 @@
                 "forks": 0,
                 "language": "TypeScript",
                 "topics": ["nodejs", "websocket", "ws"],
-                "updated_at": "2026-02-05T22:08:27Z"
+                "updated_at": "2026-04-27T05:07:48Z"
             },
             {
                 "name": "monorepo-starter",
@@ -615,7 +657,19 @@
                     "starter-template",
                     "turborepo"
                 ],
-                "updated_at": "2026-01-31T05:21:41Z"
+                "updated_at": "2026-04-14T05:45:53Z"
+            },
+            {
+                "name": "eslint-config-productsway",
+                "full_name": "jellydn/eslint-config-productsway",
+                "description": "Enhance your code quality with XO's ESLint config, further augmented with TypeScript and Prettier support.",
+                "url": "https://github.com/jellydn/eslint-config-productsway",
+                "homepage": "https://github.com/jellydn/eslint-config-productsway",
+                "stars": 5,
+                "forks": 1,
+                "language": "JavaScript",
+                "topics": ["eslint-config", "prettier-eslint", "xojs"],
+                "updated_at": "2026-03-15T01:56:52Z"
             },
             {
                 "name": "itman-channel",
@@ -628,18 +682,6 @@
                 "language": "TypeScript",
                 "topics": [],
                 "updated_at": "2026-01-18T14:33:29Z"
-            },
-            {
-                "name": "eslint-config-productsway",
-                "full_name": "jellydn/eslint-config-productsway",
-                "description": "Enhance your code quality with XO's ESLint config, further augmented with TypeScript and Prettier support.",
-                "url": "https://github.com/jellydn/eslint-config-productsway",
-                "homepage": "https://github.com/jellydn/eslint-config-productsway",
-                "stars": 5,
-                "forks": 1,
-                "language": "JavaScript",
-                "topics": ["eslint-config", "prettier-eslint", "xojs"],
-                "updated_at": "2025-12-08T01:58:25Z"
             },
             {
                 "name": "remix-spa-demo",
@@ -666,6 +708,18 @@
                 "updated_at": "2024-10-16T16:51:32Z"
             },
             {
+                "name": "typescript-starter",
+                "full_name": "jellydn/typescript-starter",
+                "description": "Typescript starter project",
+                "url": "https://github.com/jellydn/typescript-starter",
+                "homepage": "",
+                "stars": 4,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": ["starter", "template", "typescript"],
+                "updated_at": "2026-04-27T04:55:01Z"
+            },
+            {
                 "name": "hono-minimal-app",
                 "full_name": "jellydn/hono-minimal-app",
                 "description": "This is a minimal project with honojs",
@@ -675,7 +729,7 @@
                 "forks": 0,
                 "language": "TypeScript",
                 "topics": ["cloudflare", "cloudflare-worker", "honojs"],
-                "updated_at": "2026-02-06T13:34:42Z"
+                "updated_at": "2026-04-26T10:00:51Z"
             },
             {
                 "name": "edge-network-demo",
@@ -687,19 +741,19 @@
                 "forks": 1,
                 "language": "TypeScript",
                 "topics": ["edge", "netlify-functions", "wrangler"],
-                "updated_at": "2026-02-06T09:52:05Z"
+                "updated_at": "2026-04-26T05:33:27Z"
             },
             {
-                "name": "typescript-starter",
-                "full_name": "jellydn/typescript-starter",
-                "description": "Typescript starter project",
-                "url": "https://github.com/jellydn/typescript-starter",
-                "homepage": "",
+                "name": "docklight",
+                "full_name": "jellydn/docklight",
+                "description": "A minimal, self-hosted web UI for managing a single-node Dokku server.",
+                "url": "https://github.com/jellydn/docklight",
+                "homepage": "https://docklight.itman.fyi/",
                 "stars": 4,
-                "forks": 0,
+                "forks": 2,
                 "language": "TypeScript",
-                "topics": ["starter", "template", "typescript"],
-                "updated_at": "2026-02-02T06:02:00Z"
+                "topics": ["dokku", "dokku-ui", "dokku-web"],
+                "updated_at": "2026-03-29T14:39:48Z"
             },
             {
                 "name": "platformatic-starter",
@@ -718,7 +772,7 @@
                     "starter",
                     "starter-template"
                 ],
-                "updated_at": "2025-11-21T10:49:49Z"
+                "updated_at": "2026-03-06T09:09:07Z"
             },
             {
                 "name": "typechain-demo-app",
@@ -760,7 +814,19 @@
                 "forks": 0,
                 "language": "TypeScript",
                 "topics": ["stenciljs", "web-component"],
-                "updated_at": "2026-02-02T04:51:13Z"
+                "updated_at": "2026-04-20T05:10:04Z"
+            },
+            {
+                "name": "sky-alert",
+                "full_name": "jellydn/sky-alert",
+                "description": "Real-time flight monitoring Telegram bot. Track flights, get instant alerts on delays, gate changes, boarding, and more.",
+                "url": "https://github.com/jellydn/sky-alert",
+                "homepage": "",
+                "stars": 3,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": ["bot", "flight", "telegrambot"],
+                "updated_at": "2026-03-21T18:24:49Z"
             },
             {
                 "name": "tempora-saga-demo",
@@ -865,10 +931,22 @@
                 "url": "https://github.com/jellydn/fresh-deno-app",
                 "homepage": "https://fresh-deno.productsway.com/",
                 "stars": 3,
-                "forks": 2,
+                "forks": 1,
                 "language": "TypeScript",
                 "topics": ["deno", "fresh", "twind", "typescript"],
                 "updated_at": "2023-08-29T21:26:08Z"
+            },
+            {
+                "name": "ts-pattern-demo-app",
+                "full_name": "jellydn/ts-pattern-demo-app",
+                "description": "A state reducer example with ts-pattern with React App",
+                "url": "https://github.com/jellydn/ts-pattern-demo-app",
+                "homepage": "https://ts-pattern-demo-app.vercel.app",
+                "stars": 2,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": ["ts-pattern", "ts-pattern-demo"],
+                "updated_at": "2026-04-27T22:31:24Z"
             },
             {
                 "name": "encore-uptime-demo",
@@ -880,31 +958,7 @@
                 "forks": 0,
                 "language": "TypeScript",
                 "topics": ["encore-app", "encoredev", "typescript"],
-                "updated_at": "2026-02-05T22:45:39Z"
-            },
-            {
-                "name": "typescript-mini-starter",
-                "full_name": "jellydn/typescript-mini-starter",
-                "description": "A streamlined and efficient TypeScript starter kit, supporting both ESM and CJS, for quick and versatile project setups.",
-                "url": "https://github.com/jellydn/typescript-mini-starter",
-                "homepage": "",
-                "stars": 2,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": ["cjs", "esm", "starter", "typescript"],
-                "updated_at": "2026-02-02T05:37:24Z"
-            },
-            {
-                "name": "modern-nodejs-2024",
-                "full_name": "jellydn/modern-nodejs-2024",
-                "description": "Master the 2024 Node.js Development: Key Updates & Features from 18 to 22",
-                "url": "https://github.com/jellydn/modern-nodejs-2024",
-                "homepage": "",
-                "stars": 2,
-                "forks": 0,
-                "language": "",
-                "topics": ["nodejs"],
-                "updated_at": "2026-02-02T05:24:32Z"
+                "updated_at": "2026-04-27T06:33:52Z"
             },
             {
                 "name": "better-async-demo",
@@ -916,7 +970,7 @@
                 "forks": 0,
                 "language": "TypeScript",
                 "topics": ["async-await", "js", "typescript"],
-                "updated_at": "2026-01-29T18:13:54Z"
+                "updated_at": "2026-04-20T14:40:07Z"
             },
             {
                 "name": "floating-promise-demo",
@@ -928,7 +982,7 @@
                 "forks": 0,
                 "language": "TypeScript",
                 "topics": ["floating-promises", "javascript", "promise"],
-                "updated_at": "2026-01-29T17:26:59Z"
+                "updated_at": "2026-04-20T12:36:38Z"
             },
             {
                 "name": "deno-pkg-starter",
@@ -948,7 +1002,31 @@
                     "typescript",
                     "wasm"
                 ],
-                "updated_at": "2026-01-26T04:55:15Z"
+                "updated_at": "2026-04-11T01:04:58Z"
+            },
+            {
+                "name": "typescript-mini-starter",
+                "full_name": "jellydn/typescript-mini-starter",
+                "description": "A streamlined and efficient TypeScript starter kit, supporting both ESM and CJS, for quick and versatile project setups.",
+                "url": "https://github.com/jellydn/typescript-mini-starter",
+                "homepage": "",
+                "stars": 2,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": ["cjs", "esm", "starter", "typescript"],
+                "updated_at": "2026-04-06T04:50:09Z"
+            },
+            {
+                "name": "modern-nodejs-2024",
+                "full_name": "jellydn/modern-nodejs-2024",
+                "description": "Master the 2024 Node.js Development: Key Updates & Features from 18 to 22",
+                "url": "https://github.com/jellydn/modern-nodejs-2024",
+                "homepage": "",
+                "stars": 2,
+                "forks": 0,
+                "language": "",
+                "topics": ["nodejs"],
+                "updated_at": "2026-02-02T05:24:32Z"
             },
             {
                 "name": "keybinder",
@@ -961,18 +1039,6 @@
                 "language": "Rust",
                 "topics": ["gui", "skhd", "tauri-app"],
                 "updated_at": "2026-01-18T03:04:17Z"
-            },
-            {
-                "name": "ts-pattern-demo-app",
-                "full_name": "jellydn/ts-pattern-demo-app",
-                "description": "A state reducer example with ts-pattern with React App",
-                "url": "https://github.com/jellydn/ts-pattern-demo-app",
-                "homepage": "https://ts-pattern-demo-app.vercel.app",
-                "stars": 2,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": ["ts-pattern", "ts-pattern-demo"],
-                "updated_at": "2025-11-04T16:57:31Z"
             },
             {
                 "name": "stepci-demo",
@@ -1023,28 +1089,16 @@
                 "updated_at": "2022-06-22T10:27:12Z"
             },
             {
-                "name": "server-timing-demo",
-                "full_name": "jellydn/server-timing-demo",
-                "description": "How to use Server-Timing provides performance metrics in the response headers.",
-                "url": "https://github.com/jellydn/server-timing-demo",
-                "homepage": "https://server-timing-hono.deno.dev/",
+                "name": "reflex-demo",
+                "full_name": "jellydn/reflex-demo",
+                "description": "This is a demonstration project using reflex: Web apps in pure Python 🐍.",
+                "url": "https://github.com/jellydn/reflex-demo",
+                "homepage": "https://reflex-hello-world.reflex.run",
                 "stars": 1,
                 "forks": 0,
-                "language": "TypeScript",
-                "topics": ["bun", "honojs", "server-timing"],
-                "updated_at": "2026-02-06T13:57:16Z"
-            },
-            {
-                "name": "tech-short-videos",
-                "full_name": "jellydn/tech-short-videos",
-                "description": "TBD",
-                "url": "https://github.com/jellydn/tech-short-videos",
-                "homepage": "",
-                "stars": 1,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [],
-                "updated_at": "2026-02-05T20:58:20Z"
+                "language": "Python",
+                "topics": ["python", "reflex", "webapp"],
+                "updated_at": "2026-04-28T05:11:56Z"
             },
             {
                 "name": "remix-app-demo",
@@ -1056,31 +1110,7 @@
                 "forks": 1,
                 "language": "TypeScript",
                 "topics": ["remix", "vercel"],
-                "updated_at": "2026-02-05T17:55:49Z"
-            },
-            {
-                "name": "nextjs15-react19-demo",
-                "full_name": "jellydn/nextjs15-react19-demo",
-                "description": "",
-                "url": "https://github.com/jellydn/nextjs15-react19-demo",
-                "homepage": "",
-                "stars": 1,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [],
-                "updated_at": "2026-02-05T17:53:44Z"
-            },
-            {
-                "name": "practicepython",
-                "full_name": "jellydn/practicepython",
-                "description": "Learn how to code by practicing Python exercises.",
-                "url": "https://github.com/jellydn/practicepython",
-                "homepage": "",
-                "stars": 1,
-                "forks": 0,
-                "language": "",
-                "topics": ["python"],
-                "updated_at": "2026-02-05T04:38:01Z"
+                "updated_at": "2026-04-27T06:13:07Z"
             },
             {
                 "name": "preview-url",
@@ -1092,7 +1122,103 @@
                 "forks": 0,
                 "language": "Svelte",
                 "topics": [],
-                "updated_at": "2026-02-04T15:14:18Z"
+                "updated_at": "2026-04-27T05:19:10Z"
+            },
+            {
+                "name": "practicepython",
+                "full_name": "jellydn/practicepython",
+                "description": "Learn how to code by practicing Python exercises.",
+                "url": "https://github.com/jellydn/practicepython",
+                "homepage": "",
+                "stars": 1,
+                "forks": 0,
+                "language": "",
+                "topics": ["python"],
+                "updated_at": "2026-04-27T04:53:36Z"
+            },
+            {
+                "name": "nextjs15-react19-demo",
+                "full_name": "jellydn/nextjs15-react19-demo",
+                "description": "",
+                "url": "https://github.com/jellydn/nextjs15-react19-demo",
+                "homepage": "",
+                "stars": 1,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [],
+                "updated_at": "2026-04-26T18:47:29Z"
+            },
+            {
+                "name": "server-timing-demo",
+                "full_name": "jellydn/server-timing-demo",
+                "description": "How to use Server-Timing provides performance metrics in the response headers.",
+                "url": "https://github.com/jellydn/server-timing-demo",
+                "homepage": "https://server-timing-hono.deno.dev/",
+                "stars": 1,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": ["bun", "honojs", "server-timing"],
+                "updated_at": "2026-04-24T14:55:22Z"
+            },
+            {
+                "name": "tech-short-videos",
+                "full_name": "jellydn/tech-short-videos",
+                "description": "TBD",
+                "url": "https://github.com/jellydn/tech-short-videos",
+                "homepage": "",
+                "stars": 1,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [],
+                "updated_at": "2026-03-23T21:44:34Z"
+            },
+            {
+                "name": "little-writing",
+                "full_name": "jellydn/little-writing",
+                "description": "A handwriting tracing app for kids built with React, react-konva, and Capacitor.",
+                "url": "https://github.com/jellydn/little-writing",
+                "homepage": "https://jellydn.github.io/little-writing/",
+                "stars": 1,
+                "forks": 1,
+                "language": "TypeScript",
+                "topics": ["app", "capacitor", "ios", "writting"],
+                "updated_at": "2026-03-21T16:29:09Z"
+            },
+            {
+                "name": "prosody",
+                "full_name": "jellydn/prosody",
+                "description": "English Rhythm Coach",
+                "url": "https://github.com/jellydn/prosody",
+                "homepage": "",
+                "stars": 1,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [],
+                "updated_at": "2026-03-21T06:52:30Z"
+            },
+            {
+                "name": "resume-latex",
+                "full_name": "jellydn/resume-latex",
+                "description": "A professional LaTeX CV template ",
+                "url": "https://github.com/jellydn/resume-latex",
+                "homepage": "http://cv.itman.fyi/Dung_Huynh/cv_2026.pdf",
+                "stars": 1,
+                "forks": 0,
+                "language": "TeX",
+                "topics": ["cv", "latex", "latex-template"],
+                "updated_at": "2026-03-21T02:31:06Z"
+            },
+            {
+                "name": "tweet-print",
+                "full_name": "jellydn/tweet-print",
+                "description": "Paste a Twitter/X link → preview → download as a clean PDF.",
+                "url": "https://github.com/jellydn/tweet-print",
+                "homepage": "https://twt-print.itman.fyi",
+                "stars": 1,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": ["pdf-generation", "twitter"],
+                "updated_at": "2026-03-18T13:30:11Z"
             },
             {
                 "name": "db-management-demo",
@@ -1104,19 +1230,7 @@
                 "forks": 0,
                 "language": "TypeScript",
                 "topics": ["bunjs", "db", "prisma", "tbls"],
-                "updated_at": "2026-01-31T01:10:49Z"
-            },
-            {
-                "name": "reflex-demo",
-                "full_name": "jellydn/reflex-demo",
-                "description": "This is a demonstration project using reflex: Web apps in pure Python 🐍.",
-                "url": "https://github.com/jellydn/reflex-demo",
-                "homepage": "https://reflex-hello-world.reflex.run",
-                "stars": 1,
-                "forks": 0,
-                "language": "Python",
-                "topics": ["python", "reflex", "webapp"],
-                "updated_at": "2026-01-21T06:24:27Z"
+                "updated_at": "2026-03-05T04:56:19Z"
             },
             {
                 "name": "bun-dx-tips",
@@ -1136,7 +1250,7 @@
                     "traefik",
                     "typescript"
                 ],
-                "updated_at": "2025-12-30T17:52:00Z"
+                "updated_at": "2026-02-22T01:43:46Z"
             },
             {
                 "name": "laravel-demo-app",
@@ -1277,28 +1391,16 @@
                 "updated_at": "2022-05-29T07:50:37Z"
             },
             {
-                "name": "playwright-mock-api",
-                "full_name": "jellydn/playwright-mock-api",
-                "description": "Mocking API with Playwright",
-                "url": "https://github.com/jellydn/playwright-mock-api",
+                "name": "spin-demo-apps",
+                "full_name": "jellydn/spin-demo-apps",
+                "description": "This repository contains three demo applications for Spin, written in Typescript, Go, and Rust. Each demo has its own README file with detailed instructions on how to run and use the application.",
+                "url": "https://github.com/jellydn/spin-demo-apps",
                 "homepage": "",
                 "stars": 0,
                 "forks": 0,
-                "language": "TypeScript",
+                "language": "Makefile",
                 "topics": [],
-                "updated_at": "2026-02-06T21:11:58Z"
-            },
-            {
-                "name": "daily-exercism-quad",
-                "full_name": "jellydn/daily-exercism-quad",
-                "description": "Daily coding practice on Exercism — 4 languages, every day.",
-                "url": "https://github.com/jellydn/daily-exercism-quad",
-                "homepage": "",
-                "stars": 0,
-                "forks": 0,
-                "language": "Python",
-                "topics": [],
-                "updated_at": "2026-02-06T14:01:48Z"
+                "updated_at": "2026-04-27T05:36:40Z"
             },
             {
                 "name": "pulumi-kubernetes-typescript",
@@ -1310,43 +1412,7 @@
                 "forks": 0,
                 "language": "TypeScript",
                 "topics": ["pulumi", "typescript"],
-                "updated_at": "2026-02-05T22:42:49Z"
-            },
-            {
-                "name": "rabbitmq-demo",
-                "full_name": "jellydn/rabbitmq-demo",
-                "description": "Receiving messages based on a pattern (topics) & RPC call",
-                "url": "https://github.com/jellydn/rabbitmq-demo",
-                "homepage": "",
-                "stars": 0,
-                "forks": 0,
-                "language": "Go",
-                "topics": ["patterns", "rabbitmq", "rpc", "typescript"],
-                "updated_at": "2026-02-05T21:25:55Z"
-            },
-            {
-                "name": "remix-spa",
-                "full_name": "jellydn/remix-spa",
-                "description": "Remix SPA Starter",
-                "url": "https://github.com/jellydn/remix-spa",
-                "homepage": "",
-                "stars": 0,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": ["remix", "spa"],
-                "updated_at": "2026-02-05T12:39:43Z"
-            },
-            {
-                "name": "spin-demo-apps",
-                "full_name": "jellydn/spin-demo-apps",
-                "description": "This repository contains three demo applications for Spin, written in Typescript, Go, and Rust. Each demo has its own README file with detailed instructions on how to run and use the application.",
-                "url": "https://github.com/jellydn/spin-demo-apps",
-                "homepage": "",
-                "stars": 0,
-                "forks": 0,
-                "language": "Makefile",
-                "topics": [],
-                "updated_at": "2026-02-04T20:48:04Z"
+                "updated_at": "2026-04-27T05:23:45Z"
             },
             {
                 "name": "ioc-demo",
@@ -1358,7 +1424,115 @@
                 "forks": 0,
                 "language": "TypeScript",
                 "topics": ["inverifyjs", "inversion-of-control"],
-                "updated_at": "2026-02-02T05:10:18Z"
+                "updated_at": "2026-04-27T04:42:58Z"
+            },
+            {
+                "name": "rabbitmq-demo",
+                "full_name": "jellydn/rabbitmq-demo",
+                "description": "Receiving messages based on a pattern (topics) & RPC call",
+                "url": "https://github.com/jellydn/rabbitmq-demo",
+                "homepage": "",
+                "stars": 0,
+                "forks": 0,
+                "language": "Go",
+                "topics": ["patterns", "rabbitmq", "rpc", "typescript"],
+                "updated_at": "2026-04-27T04:35:07Z"
+            },
+            {
+                "name": "remix-spa",
+                "full_name": "jellydn/remix-spa",
+                "description": "Remix SPA Starter",
+                "url": "https://github.com/jellydn/remix-spa",
+                "homepage": "",
+                "stars": 0,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": ["remix", "spa"],
+                "updated_at": "2026-04-26T22:10:56Z"
+            },
+            {
+                "name": "echo-note",
+                "full_name": "jellydn/echo-note",
+                "description": "Privacy-first meeting transcription and summarization app",
+                "url": "https://github.com/jellydn/echo-note",
+                "homepage": "",
+                "stars": 0,
+                "forks": 0,
+                "language": "Rust",
+                "topics": [],
+                "updated_at": "2026-04-25T09:18:29Z"
+            },
+            {
+                "name": "playwright-mock-api",
+                "full_name": "jellydn/playwright-mock-api",
+                "description": "Mocking API with Playwright",
+                "url": "https://github.com/jellydn/playwright-mock-api",
+                "homepage": "",
+                "stars": 0,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [],
+                "updated_at": "2026-04-03T16:39:13Z"
+            },
+            {
+                "name": "wordpress-dokku",
+                "full_name": "jellydn/wordpress-dokku",
+                "description": "This guide documents how to deploy WordPress to Dokku with MySQL database support.",
+                "url": "https://github.com/jellydn/wordpress-dokku",
+                "homepage": "https://wp.itman.fyi",
+                "stars": 0,
+                "forks": 0,
+                "language": "PHP",
+                "topics": ["dokku", "wordpress"],
+                "updated_at": "2026-03-22T05:04:16Z"
+            },
+            {
+                "name": "router-demo-app",
+                "full_name": "jellydn/router-demo-app",
+                "description": "TanStack Router Demo",
+                "url": "https://github.com/jellydn/router-demo-app",
+                "homepage": "https://tanstack-router.productsway.com",
+                "stars": 0,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": ["shadcn-ui", "tanstack-router"],
+                "updated_at": "2026-03-12T20:55:39Z"
+            },
+            {
+                "name": "sellsnap",
+                "full_name": "jellydn/sellsnap",
+                "description": "Sell in a snap — the fastest way for creators to sell digital products online.",
+                "url": "https://github.com/jellydn/sellsnap",
+                "homepage": "https://store.itman.fyi",
+                "stars": 0,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [],
+                "updated_at": "2026-03-08T11:25:57Z"
+            },
+            {
+                "name": "tiny-local-ai",
+                "full_name": "jellydn/tiny-local-ai",
+                "description": "Run local LLM on MacBook A, access from MacBook B over LAN",
+                "url": "https://github.com/jellydn/tiny-local-ai",
+                "homepage": "",
+                "stars": 0,
+                "forks": 0,
+                "language": "Python",
+                "topics": [],
+                "updated_at": "2026-03-06T02:23:59Z"
+            },
+            {
+                "name": "daily-exercism-quad",
+                "full_name": "jellydn/daily-exercism-quad",
+                "description": "Daily coding practice on Exercism — 4 languages, every day.",
+                "url": "https://github.com/jellydn/daily-exercism-quad",
+                "homepage": "",
+                "stars": 0,
+                "forks": 0,
+                "language": "Python",
+                "topics": [],
+                "updated_at": "2026-02-11T15:39:23Z"
             },
             {
                 "name": "homebrew-tap",
@@ -1371,18 +1545,6 @@
                 "language": "Ruby",
                 "topics": [],
                 "updated_at": "2026-02-01T04:05:50Z"
-            },
-            {
-                "name": "resume-latex",
-                "full_name": "jellydn/resume-latex",
-                "description": "A professional LaTeX CV template ",
-                "url": "https://github.com/jellydn/resume-latex",
-                "homepage": "http://cv.itman.fyi/Dung_Huynh/cv_2026.pdf",
-                "stars": 0,
-                "forks": 0,
-                "language": "TeX",
-                "topics": ["cv", "latex", "latex-template"],
-                "updated_at": "2026-01-22T15:09:44Z"
             },
             {
                 "name": "tiny-pomodoro",
@@ -1407,18 +1569,6 @@
                 "language": "TypeScript",
                 "topics": [],
                 "updated_at": "2025-12-18T07:56:40Z"
-            },
-            {
-                "name": "router-demo-app",
-                "full_name": "jellydn/router-demo-app",
-                "description": "TanStack Router Demo",
-                "url": "https://github.com/jellydn/router-demo-app",
-                "homepage": "https://tanstack-router.productsway.com",
-                "stars": 0,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": ["shadcn-ui", "tanstack-router"],
-                "updated_at": "2025-12-11T04:09:45Z"
             },
             {
                 "name": "knulli-input-tester",
@@ -1880,11 +2030,11 @@
                 "description": "Hurl.nvim is a Neovim plugin designed to run HTTP requests directly from `.hurl` files. Elevate your API development workflow by executing and viewing responses without leaving your editor.",
                 "url": "https://github.com/jellydn/hurl.nvim",
                 "homepage": "https://gyazo.com/19492e8b5366cec3f22d5fd97a63f37a",
-                "stars": 250,
+                "stars": 255,
                 "forks": 21,
                 "language": "Lua",
                 "topics": ["hacktoberfest", "hurl", "neovim", "neovim-plugin"],
-                "updated_at": "2026-02-04T03:35:41Z"
+                "updated_at": "2026-04-18T17:40:03Z"
             },
             {
                 "name": "lazy-nvim-ide",
@@ -1904,11 +2054,11 @@
                 "description": "Slim Neovim config for 0.11+ with minimal plugins.",
                 "url": "https://github.com/jellydn/tiny-nvim",
                 "homepage": "https://itman.fyi",
-                "stars": 53,
+                "stars": 54,
                 "forks": 6,
                 "language": "Lua",
                 "topics": ["dotfiles", "neovim", "nvim-config"],
-                "updated_at": "2026-02-06T13:42:52Z"
+                "updated_at": "2026-04-26T15:37:15Z"
             },
             {
                 "name": "ts-inlay-hints",
@@ -1916,11 +2066,11 @@
                 "description": "A guide on how to utilize TypeScript inlay hints in VS Code / Neovim with the TypeScript Language Server",
                 "url": "https://github.com/jellydn/ts-inlay-hints",
                 "homepage": "https://jellydn.github.io/ts-inlay-hints/",
-                "stars": 46,
+                "stars": 48,
                 "forks": 1,
                 "language": "TypeScript",
                 "topics": ["inlay-hints", "neovim", "typescript", "vscode"],
-                "updated_at": "2026-02-03T00:32:30Z"
+                "updated_at": "2026-04-25T22:36:02Z"
             },
             {
                 "name": "my-nvim-ide",
@@ -1928,11 +2078,11 @@
                 "description": "My personal neovim configuration.",
                 "url": "https://github.com/jellydn/my-nvim-ide",
                 "homepage": "",
-                "stars": 46,
+                "stars": 45,
                 "forks": 6,
                 "language": "Lua",
                 "topics": ["neovim"],
-                "updated_at": "2026-01-07T09:51:50Z"
+                "updated_at": "2026-04-07T03:04:42Z"
             },
             {
                 "name": "typecheck.nvim",
@@ -1952,11 +2102,11 @@
                 "description": "Starter Template for Web Developers",
                 "url": "https://github.com/jellydn/nvim-for-webdev",
                 "homepage": "",
-                "stars": 32,
+                "stars": 33,
                 "forks": 2,
                 "language": "Lua",
                 "topics": ["lazyvim", "nvim", "web-development"],
-                "updated_at": "2025-06-16T08:10:16Z"
+                "updated_at": "2026-02-21T10:16:49Z"
             },
             {
                 "name": "quick-code-runner.nvim",
@@ -1976,23 +2126,11 @@
                 "description": "spinner.nvim is a single file, no-dependency plugin for Neovim",
                 "url": "https://github.com/jellydn/spinner.nvim",
                 "homepage": "",
-                "stars": 20,
+                "stars": 23,
                 "forks": 0,
                 "language": "Lua",
                 "topics": ["lua", "neovim", "neovim-plugin", "spinner"],
-                "updated_at": "2025-11-10T09:02:40Z"
-            },
-            {
-                "name": "learn-vim-with-vscode",
-                "full_name": "jellydn/learn-vim-with-vscode",
-                "description": "This project aims to guide you through setting up and learning Vim within Visual Studio Code using the VSCodeVim and VSCode-Neovim extensions.",
-                "url": "https://github.com/jellydn/learn-vim-with-vscode",
-                "homepage": "",
-                "stars": 16,
-                "forks": 1,
-                "language": "Lua",
-                "topics": ["lazyvim", "nvim", "vim", "vscode"],
-                "updated_at": "2025-07-17T14:47:03Z"
+                "updated_at": "2026-04-27T12:53:55Z"
             },
             {
                 "name": "dotfiles",
@@ -2000,7 +2138,7 @@
                 "description": "A set of vim, zsh, fish, tmux, zeliij, git configuration files and tools.",
                 "url": "https://github.com/jellydn/dotfiles",
                 "homepage": "",
-                "stars": 15,
+                "stars": 17,
                 "forks": 3,
                 "language": "Shell",
                 "topics": [
@@ -2018,7 +2156,19 @@
                     "zellij",
                     "zsh"
                 ],
-                "updated_at": "2026-02-03T23:47:08Z"
+                "updated_at": "2026-04-19T09:50:17Z"
+            },
+            {
+                "name": "learn-vim-with-vscode",
+                "full_name": "jellydn/learn-vim-with-vscode",
+                "description": "This project aims to guide you through setting up and learning Vim within Visual Studio Code using the VSCodeVim and VSCode-Neovim extensions.",
+                "url": "https://github.com/jellydn/learn-vim-with-vscode",
+                "homepage": "",
+                "stars": 16,
+                "forks": 1,
+                "language": "Lua",
+                "topics": ["lazyvim", "nvim", "vim", "vscode"],
+                "updated_at": "2025-07-17T14:47:03Z"
             },
             {
                 "name": "my-note.nvim",
@@ -2038,11 +2188,23 @@
                 "description": "A lightweight Neovim plugin that masks sensitive data (API keys, secrets, tokens) in .env, JSON, and YAML files",
                 "url": "https://github.com/jellydn/tiny-cloak.nvim",
                 "homepage": "",
-                "stars": 5,
+                "stars": 9,
                 "forks": 0,
                 "language": "Lua",
                 "topics": ["neovim-plugin", "nvim", "nvim-plugin"],
-                "updated_at": "2026-02-04T09:30:28Z"
+                "updated_at": "2026-04-24T18:54:59Z"
+            },
+            {
+                "name": "tiny-term.nvim",
+                "full_name": "jellydn/tiny-term.nvim",
+                "description": "A minimal, standalone Neovim 0.11+ terminal",
+                "url": "https://github.com/jellydn/tiny-term.nvim",
+                "homepage": "",
+                "stars": 6,
+                "forks": 0,
+                "language": "Lua",
+                "topics": ["neovim-plugin", "nvim-plugin", "terminal"],
+                "updated_at": "2026-04-19T01:48:30Z"
             },
             {
                 "name": "nvim-ide",
@@ -2055,18 +2217,6 @@
                 "language": "Lua",
                 "topics": ["ide", "nvim"],
                 "updated_at": "2024-08-08T06:28:45Z"
-            },
-            {
-                "name": "tiny-term.nvim",
-                "full_name": "jellydn/tiny-term.nvim",
-                "description": "A minimal, standalone Neovim 0.11+ terminal",
-                "url": "https://github.com/jellydn/tiny-term.nvim",
-                "homepage": "",
-                "stars": 1,
-                "forks": 0,
-                "language": "Lua",
-                "topics": ["neovim-plugin", "nvim-plugin", "terminal"],
-                "updated_at": "2026-02-07T06:19:41Z"
             }
         ]
     },
@@ -2079,11 +2229,11 @@
                 "description": "Hurl Runner is a VS Code extension designed to run HTTP requests directly from `.hurl` files.",
                 "url": "https://github.com/jellydn/vscode-hurl-runner",
                 "homepage": "https://marketplace.visualstudio.com/items?itemName=jellydn.vscode-hurl-runner",
-                "stars": 14,
-                "forks": 2,
+                "stars": 17,
+                "forks": 3,
                 "language": "TypeScript",
                 "topics": ["hacktoberfest", "hurl", "vscode-extension"],
-                "updated_at": "2026-02-05T20:34:19Z"
+                "updated_at": "2026-04-11T01:24:34Z"
             },
             {
                 "name": "vscode-like-pro",
@@ -2095,19 +2245,7 @@
                 "forks": 1,
                 "language": "Lua",
                 "topics": ["minimalist", "vscode"],
-                "updated_at": "2025-07-02T11:16:35Z"
-            },
-            {
-                "name": "vscode-settings-cycler",
-                "full_name": "jellydn/vscode-settings-cycler",
-                "description": "VSCode Settings Cycler",
-                "url": "https://github.com/jellydn/vscode-settings-cycler",
-                "homepage": "https://open-vsx.org/extension/jellydn/vscode-settings-cycler",
-                "stars": 3,
-                "forks": 1,
-                "language": "TypeScript",
-                "topics": ["vscode-extension"],
-                "updated_at": "2026-02-05T20:50:51Z"
+                "updated_at": "2026-04-07T02:22:08Z"
             },
             {
                 "name": "vscode-seal-code",
@@ -2115,7 +2253,7 @@
                 "description": "Smart Code Review with AI-Powered Insights",
                 "url": "https://github.com/jellydn/vscode-seal-code",
                 "homepage": "https://jellydn.github.io/vscode-seal-code/",
-                "stars": 3,
+                "stars": 4,
                 "forks": 0,
                 "language": "TypeScript",
                 "topics": [
@@ -2127,7 +2265,19 @@
                     "review-tools",
                     "vscode-extension"
                 ],
-                "updated_at": "2026-01-13T06:34:03Z"
+                "updated_at": "2026-03-03T09:46:58Z"
+            },
+            {
+                "name": "vscode-settings-cycler",
+                "full_name": "jellydn/vscode-settings-cycler",
+                "description": "VSCode Settings Cycler",
+                "url": "https://github.com/jellydn/vscode-settings-cycler",
+                "homepage": "https://open-vsx.org/extension/jellydn/vscode-settings-cycler",
+                "stars": 3,
+                "forks": 2,
+                "language": "TypeScript",
+                "topics": ["vscode-extension"],
+                "updated_at": "2026-04-27T06:10:53Z"
             },
             {
                 "name": "vscode-mux",
@@ -2164,7 +2314,7 @@
                 "description": "This package reads your JSDoc-annotated source code on NextJS API route and generates an OpenAPI (Swagger) specification.",
                 "url": "https://github.com/jellydn/next-swagger-doc",
                 "homepage": "https://next-swagger-doc-demo.productsway.com/api-doc",
-                "stars": 518,
+                "stars": 522,
                 "forks": 37,
                 "language": "TypeScript",
                 "topics": [
@@ -2174,7 +2324,7 @@
                     "nextjs",
                     "swagger"
                 ],
-                "updated_at": "2026-02-06T19:32:01Z"
+                "updated_at": "2026-04-24T03:12:33Z"
             },
             {
                 "name": "dapp-starter",
@@ -2199,7 +2349,7 @@
                     "web3",
                     "web3-react"
                 ],
-                "updated_at": "2025-12-09T13:47:15Z"
+                "updated_at": "2026-04-21T10:08:48Z"
             },
             {
                 "name": "next-app-starter",
@@ -2207,7 +2357,7 @@
                 "description": "Another awesome starter for your app base on nextjs + tailwind + react-query + zod + react-hook-form + next-auth +  jotai",
                 "url": "https://github.com/jellydn/next-app-starter",
                 "homepage": "https://next-app-starter.productsway.com",
-                "stars": 283,
+                "stars": 284,
                 "forks": 34,
                 "language": "TypeScript",
                 "topics": [
@@ -2222,7 +2372,7 @@
                     "storybook",
                     "tailwindcss"
                 ],
-                "updated_at": "2026-02-06T07:10:18Z"
+                "updated_at": "2026-04-11T01:00:32Z"
             },
             {
                 "name": "nft-app",
@@ -2230,7 +2380,7 @@
                 "description": "How to create your own NFT and mint NFT token",
                 "url": "https://github.com/jellydn/nft-app",
                 "homepage": "https://nft-app.productsway.com/",
-                "stars": 224,
+                "stars": 223,
                 "forks": 104,
                 "language": "TypeScript",
                 "topics": [
@@ -2244,7 +2394,7 @@
                     "vitejs",
                     "web3"
                 ],
-                "updated_at": "2026-01-07T09:09:12Z"
+                "updated_at": "2026-04-10T14:29:46Z"
             },
             {
                 "name": "dapp-token-ico",
@@ -2289,7 +2439,7 @@
                     "protobuf-es",
                     "typescript"
                 ],
-                "updated_at": "2026-02-05T21:51:07Z"
+                "updated_at": "2026-04-14T04:29:49Z"
             },
             {
                 "name": "next-validations",
@@ -2310,7 +2460,7 @@
                     "yup-validation",
                     "zod"
                 ],
-                "updated_at": "2025-11-20T21:56:47Z"
+                "updated_at": "2026-03-12T18:38:38Z"
             },
             {
                 "name": "react-dapp",
@@ -2330,7 +2480,7 @@
                     "typescript",
                     "vitejs"
                 ],
-                "updated_at": "2025-05-06T15:09:27Z"
+                "updated_at": "2026-02-13T18:43:18Z"
             },
             {
                 "name": "vite-react-seo-demo",
@@ -2361,7 +2511,7 @@
                 "forks": 2,
                 "language": "TypeScript",
                 "topics": ["fastify", "nextjs", "trpc", "turborepo"],
-                "updated_at": "2025-10-28T05:04:19Z"
+                "updated_at": "2026-03-12T21:54:28Z"
             },
             {
                 "name": "learn-nextjs14-dashboard",
@@ -2391,7 +2541,7 @@
                     "tailwindcss",
                     "vercel"
                 ],
-                "updated_at": "2025-12-11T06:14:09Z"
+                "updated_at": "2026-03-23T21:26:24Z"
             },
             {
                 "name": "react-tips-2022-demo",
@@ -2421,7 +2571,7 @@
                 "forks": 0,
                 "language": "TypeScript",
                 "topics": ["chatbot", "react", "telegram", "typescript"],
-                "updated_at": "2025-11-04T19:50:04Z"
+                "updated_at": "2026-03-12T20:51:20Z"
             },
             {
                 "name": "vite-react-recoil",
@@ -2433,7 +2583,25 @@
                 "forks": 1,
                 "language": "TypeScript",
                 "topics": ["react", "recoil-example", "recoiljs", "vitejs"],
-                "updated_at": "2026-02-05T18:57:20Z"
+                "updated_at": "2026-04-27T05:39:02Z"
+            },
+            {
+                "name": "use-wait-for-transaction-hash",
+                "full_name": "jellydn/use-wait-for-transaction-hash",
+                "description": "Simple hook for getting transaction status from the ETH network.",
+                "url": "https://github.com/jellydn/use-wait-for-transaction-hash",
+                "homepage": "https://use-wait-for-transaction-hash.productsway.com/",
+                "stars": 5,
+                "forks": 1,
+                "language": "TypeScript",
+                "topics": [
+                    "binance-smart-chain",
+                    "ethereum",
+                    "hacktoberfest",
+                    "hooks-api",
+                    "react"
+                ],
+                "updated_at": "2026-02-25T12:56:52Z"
             },
             {
                 "name": "next-demo-app",
@@ -2455,24 +2623,6 @@
                 "updated_at": "2025-11-20T00:47:27Z"
             },
             {
-                "name": "use-wait-for-transaction-hash",
-                "full_name": "jellydn/use-wait-for-transaction-hash",
-                "description": "Simple hook for getting transaction status from the ETH network.",
-                "url": "https://github.com/jellydn/use-wait-for-transaction-hash",
-                "homepage": "https://use-wait-for-transaction-hash.productsway.com/",
-                "stars": 5,
-                "forks": 1,
-                "language": "TypeScript",
-                "topics": [
-                    "binance-smart-chain",
-                    "ethereum",
-                    "hacktoberfest",
-                    "hooks-api",
-                    "react"
-                ],
-                "updated_at": "2025-11-04T16:05:59Z"
-            },
-            {
                 "name": "wallet-connect-app",
                 "full_name": "jellydn/wallet-connect-app",
                 "description": "The best way to connect a wallet",
@@ -2492,6 +2642,18 @@
                 "updated_at": "2025-08-13T18:05:03Z"
             },
             {
+                "name": "waku-rsc-async-demo",
+                "full_name": "jellydn/waku-rsc-async-demo",
+                "description": "",
+                "url": "https://github.com/jellydn/waku-rsc-async-demo",
+                "homepage": "https://waku-rsc.deno.dev/",
+                "stars": 4,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": ["react", "rsc", "waku"],
+                "updated_at": "2026-04-22T03:31:35Z"
+            },
+            {
                 "name": "react-email-starter",
                 "full_name": "jellydn/react-email-starter",
                 "description": "React Email Starter",
@@ -2501,7 +2663,7 @@
                 "forks": 0,
                 "language": "TypeScript",
                 "topics": ["email", "nextjs", "react", "react-email"],
-                "updated_at": "2026-02-02T05:50:51Z"
+                "updated_at": "2026-04-20T04:31:11Z"
             },
             {
                 "name": "react-18-demo",
@@ -2513,19 +2675,7 @@
                 "forks": 1,
                 "language": "TypeScript",
                 "topics": [],
-                "updated_at": "2025-11-04T20:11:25Z"
-            },
-            {
-                "name": "waku-rsc-async-demo",
-                "full_name": "jellydn/waku-rsc-async-demo",
-                "description": "",
-                "url": "https://github.com/jellydn/waku-rsc-async-demo",
-                "homepage": "https://waku-rsc.deno.dev/",
-                "stars": 4,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": ["react", "rsc", "waku"],
-                "updated_at": "2025-10-09T12:38:46Z"
+                "updated_at": "2026-03-12T22:02:56Z"
             },
             {
                 "name": "chatbot-starter-app",
@@ -2537,7 +2687,7 @@
                 "forks": 1,
                 "language": "TypeScript",
                 "topics": ["chatbot", "react", "starter", "typescript"],
-                "updated_at": "2026-02-05T18:14:40Z"
+                "updated_at": "2026-03-23T04:50:50Z"
             },
             {
                 "name": "untypeable-wretch-demo",
@@ -2556,7 +2706,7 @@
                     "untypeable",
                     "wretch"
                 ],
-                "updated_at": "2026-02-05T13:09:51Z"
+                "updated_at": "2026-03-23T01:57:45Z"
             },
             {
                 "name": "wattpm-express-demo",
@@ -2628,19 +2778,7 @@
                     "shadcn-ui",
                     "tailwindcss"
                 ],
-                "updated_at": "2026-02-05T17:15:33Z"
-            },
-            {
-                "name": "react-router-v7-tailwinds-v4-app",
-                "full_name": "jellydn/react-router-v7-tailwinds-v4-app",
-                "description": "A modern, production-ready template for building full-stack React applications using React Router.",
-                "url": "https://github.com/jellydn/react-router-v7-tailwinds-v4-app",
-                "homepage": "https://react-router-v7-tailwinds-v4-app.vercel.app",
-                "stars": 2,
-                "forks": 1,
-                "language": "TypeScript",
-                "topics": ["react-router-v7", "tailwindcss-v4"],
-                "updated_at": "2025-12-15T02:48:07Z"
+                "updated_at": "2026-04-26T20:55:57Z"
             },
             {
                 "name": "react-lib-starter",
@@ -2652,7 +2790,19 @@
                 "forks": 0,
                 "language": "TypeScript",
                 "topics": ["react", "typescript"],
-                "updated_at": "2025-11-04T17:01:44Z"
+                "updated_at": "2026-03-12T22:51:55Z"
+            },
+            {
+                "name": "react-router-v7-tailwinds-v4-app",
+                "full_name": "jellydn/react-router-v7-tailwinds-v4-app",
+                "description": "A modern, production-ready template for building full-stack React applications using React Router.",
+                "url": "https://github.com/jellydn/react-router-v7-tailwinds-v4-app",
+                "homepage": "https://react-router-v7-tailwinds-v4-app.vercel.app",
+                "stars": 2,
+                "forks": 1,
+                "language": "TypeScript",
+                "topics": ["react-router-v7", "tailwindcss-v4"],
+                "updated_at": "2026-03-12T21:33:24Z"
             },
             {
                 "name": "i18n-react-app",
@@ -2676,7 +2826,7 @@
                 "forks": 0,
                 "language": "TypeScript",
                 "topics": ["react", "signals"],
-                "updated_at": "2025-11-19T01:39:20Z"
+                "updated_at": "2026-04-27T22:35:00Z"
             },
             {
                 "name": "react-state-management-apps",
@@ -2787,7 +2937,7 @@
                 "forks": 0,
                 "language": "TypeScript",
                 "topics": ["blog", "nextjs"],
-                "updated_at": "2026-02-06T13:53:35Z"
+                "updated_at": "2026-04-28T06:36:50Z"
             },
             {
                 "name": "vite-react-demo",
@@ -2805,7 +2955,7 @@
                     "shadcn-ui",
                     "tailwindcss"
                 ],
-                "updated_at": "2026-02-05T21:06:33Z"
+                "updated_at": "2026-04-27T23:28:46Z"
             },
             {
                 "name": "zod-tutorial-kit",
