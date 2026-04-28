@@ -1,0 +1,155 @@
+import type { NextApiRequest, NextApiResponse } from 'next';
+
+/**
+ * Machine Payment Protocol (MPP) Discovery
+ *
+ * Returns MPP payment protocol metadata at /.well-known/mpp
+ * for agent-native HTTP payments.
+ *
+ * Note: This blog currently does not implement MPP payment processing.
+ * This endpoint serves as discovery for future MPP integration.
+ *
+ * @see https://mpp.dev
+ * @see https://paymentauth.org/draft-payment-discovery-00.txt
+ */
+
+interface MPPPaymentInfo {
+    intent: 'charge' | 'session';
+    method: 'tempo' | 'stripe' | 'lightning' | 'card';
+    amount: number;
+    currency: string;
+    description?: string;
+}
+
+interface MPPPathItem {
+    path: string;
+    methods: string[];
+    'x-payment-info'?: MPPPaymentInfo;
+}
+
+interface MPPPaths {
+    [key: string]: MPPPathItem;
+}
+
+interface MPPConfiguration {
+    openapi: string;
+    info: {
+        title: string;
+        version: string;
+        description: string;
+        contact: {
+            name: string;
+            email: string;
+        };
+    };
+    servers: Array<{ url: string }>;
+    paths: MPPPaths;
+    'x-mpp-enabled': boolean;
+    'x-mpp-status': 'disabled' | 'enabled' | 'test';
+    'x-mpp-version': string;
+    'x-mpp-spec': string;
+    components?: {
+        schemas: {
+            PaymentRequest: {
+                type: 'object';
+                properties: {
+                    intent: { type: 'string'; enum: string[] };
+                    method: { type: 'string'; enum: string[] };
+                    amount: { type: 'number' };
+                    currency: { type: 'string' };
+                };
+            };
+        };
+    };
+}
+
+export default function handler(
+    req: NextApiRequest,
+    res: NextApiResponse<MPPConfiguration | { error: string }>,
+) {
+    if (req.method !== 'GET') {
+        return res.status(405).json({ error: 'Method not allowed' });
+    }
+
+    const baseUrl = 'https://productsway.com';
+
+    const mppConfig: MPPConfiguration = {
+        openapi: '3.0.3',
+        info: {
+            title: 'Productsway Blog API',
+            version: '0.1.0',
+            description:
+                'Blog and content API with optional MPP payment support',
+            contact: {
+                name: 'Dung Huynh Duc',
+                email: 'dung@productsway.com',
+            },
+        },
+        servers: [{ url: baseUrl }],
+        paths: {
+            '/api/premium-posts': {
+                path: '/api/premium-posts',
+                methods: ['GET'],
+                'x-payment-info': {
+                    intent: 'charge',
+                    method: 'stripe',
+                    amount: 0.5,
+                    currency: 'USD',
+                    description: 'Access premium blog content',
+                },
+            },
+            '/api/consulting-booking': {
+                path: '/api/consulting-booking',
+                methods: ['POST'],
+                'x-payment-info': {
+                    intent: 'session',
+                    method: 'stripe',
+                    amount: 100.0,
+                    currency: 'USD',
+                    description: 'Book a consulting session',
+                },
+            },
+            '/api/content-download': {
+                path: '/api/content-download',
+                methods: ['GET'],
+                'x-payment-info': {
+                    intent: 'charge',
+                    method: 'lightning',
+                    amount: 0.001,
+                    currency: 'BTC',
+                    description: 'Download content package',
+                },
+            },
+        },
+
+        // MPP extensions
+        'x-mpp-enabled': false,
+        'x-mpp-status': 'disabled',
+        'x-mpp-version': '0.1.0',
+        'x-mpp-spec': 'https://mpp.dev/spec',
+
+        components: {
+            schemas: {
+                PaymentRequest: {
+                    type: 'object',
+                    properties: {
+                        intent: { type: 'string', enum: ['charge', 'session'] },
+                        method: {
+                            type: 'string',
+                            enum: ['tempo', 'stripe', 'lightning', 'card'],
+                        },
+                        amount: { type: 'number' },
+                        currency: { type: 'string' },
+                    },
+                },
+            },
+        },
+    };
+
+    res.setHeader('Content-Type', 'application/json');
+    res.setHeader(
+        'Cache-Control',
+        'public, s-maxage=3600, stale-while-revalidate=86400',
+    );
+    res.status(200).json(mppConfig);
+}

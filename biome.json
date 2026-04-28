@@ -36,7 +36,7 @@
             "linter": { "enabled": false }
         },
         {
-            "includes": ["pages/posts/\\[slug\\].tsx"],
+            "includes": ["pages/posts/\\[slug\\].tsx", "pages/_document.tsx"],
             "linter": {
                 "rules": {
                     "security": {
