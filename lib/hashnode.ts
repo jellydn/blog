@@ -219,7 +219,7 @@ export const mapHashnodeSummaryToBlogPost = (
             post.tags
                 ?.map((tag) => tag.name)
                 .filter((tag): tag is string => Boolean(tag)) ?? [],
-        hero_image: post.coverImage?.url,
+        hero_image: post.coverImage?.url ?? null,
     },
 });
 
@@ -234,5 +234,5 @@ export const mapHashnodeSummaryToTinaPost = (
         post.tags
             ?.map((tag) => tag.name)
             .filter((tag): tag is string => Boolean(tag)) ?? [],
-    hero_image: post.coverImage?.url,
+    hero_image: post.coverImage?.url ?? null,
 });

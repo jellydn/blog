@@ -7,7 +7,7 @@ export type TinaPost = {
     date: string;
     author?: string;
     tag?: string[];
-    hero_image?: string;
+    hero_image?: string | null;
 };
 
 export type TinaVideo = {
@@ -19,7 +19,7 @@ export type TinaVideo = {
     date: string;
     youtube_id: string;
     tag?: string[];
-    hero_image?: string;
+    hero_image?: string | null;
 };
 
 export type BlogPost = {
@@ -30,7 +30,7 @@ export type BlogPost = {
         date: string;
         author?: string;
         tag?: string[];
-        hero_image?: string;
+        hero_image?: string | null;
     };
 };
 
@@ -38,7 +38,7 @@ export type VideoFrontmatter = {
     title: string;
     description: string;
     date: string;
-    hero_image?: string;
+    hero_image?: string | null;
     youtube_id: string;
     tag?: string[];
     author?: string;
