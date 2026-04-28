@@ -8,7 +8,7 @@ import {
 import { formatDate } from 'lib/utils/date';
 import Image from 'next/image';
 import Link from 'next/link';
-import { NextSeo } from 'next-seo';
+import { generateNextSeo } from 'next-seo/pages';
 import { useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
 import gfm from 'remark-gfm';
@@ -45,11 +45,11 @@ export default function PostPage({
 
     return (
         <Layout siteTitle={siteTitle}>
-            <NextSeo
-                title={`${post.title} | ${siteTitle}`}
-                description={post.brief ?? siteDescription}
-                canonical={canonicalUrl}
-                openGraph={{
+            {generateNextSeo({
+                title: `${post.title} | ${siteTitle}`,
+                description: post.brief ?? siteDescription,
+                canonical: canonicalUrl,
+                openGraph: {
                     type: 'article',
                     url: canonicalUrl,
                     title: post.title,
@@ -67,11 +67,11 @@ export default function PostPage({
                             post.tags?.map((tag) => tag.name).filter(Boolean) ??
                             [],
                     },
-                }}
-                twitter={{
+                },
+                twitter: {
                     cardType: 'summary_large_image',
-                }}
-            />
+                },
+            })}
 
             <div className="min-h-screen">
                 <nav className="border-b border-base-300">

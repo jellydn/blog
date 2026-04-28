@@ -3,7 +3,7 @@ import { globSync } from 'glob';
 import matter from 'gray-matter';
 import { formatDate } from 'lib/utils/date';
 import Link from 'next/link';
-import { NextSeo } from 'next-seo';
+import { generateNextSeo } from 'next-seo/pages';
 
 type VideoFrontmatter = {
     title: string;
@@ -33,11 +33,11 @@ export default function VideoTemplate({
 
     return (
         <Layout siteTitle={siteTitle}>
-            <NextSeo
-                title={`${frontmatter.title} | ${siteTitle}`}
-                description={frontmatter.description}
-                canonical={canonicalUrl}
-                openGraph={{
+            {generateNextSeo({
+                title: `${frontmatter.title} | ${siteTitle}`,
+                description: frontmatter.description,
+                canonical: canonicalUrl,
+                openGraph: {
                     type: 'article',
                     url: canonicalUrl,
                     title: frontmatter.title,
@@ -53,11 +53,11 @@ export default function VideoTemplate({
                         authors: [frontmatter.author ?? 'Dung Huynh Duc'],
                         tags: frontmatter.tag ?? [],
                     },
-                }}
-                twitter={{
+                },
+                twitter: {
                     cardType: 'player',
-                }}
-            />
+                },
+            })}
 
             <div className="min-h-screen">
                 {/* Navigation */}

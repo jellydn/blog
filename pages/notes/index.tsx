@@ -3,7 +3,7 @@ import { NotesList } from 'components/NotesList';
 import matter from 'gray-matter';
 import type { BlogPost } from 'lib/types';
 import { dedupeBySlug, sortByDate } from 'lib/utils/array';
-import { NextSeo } from 'next-seo';
+import { generateNextSeo } from 'next-seo/pages';
 
 type BlogFrontmatter = {
     title: string;
@@ -21,11 +21,11 @@ type BlogPageProps = {
 const BlogPage = ({ title, description, items }: BlogPageProps) => {
     return (
         <Layout siteTitle={title} siteDescription={description}>
-            <NextSeo
-                title={title}
-                description={description}
-                canonical="https://productsway.com/notes"
-                openGraph={{
+            {generateNextSeo({
+                title,
+                description,
+                canonical: 'https://productsway.com/notes',
+                openGraph: {
                     type: 'website',
                     url: 'https://productsway.com/notes',
                     title,
@@ -36,11 +36,11 @@ const BlogPage = ({ title, description, items }: BlogPageProps) => {
                             alt: title,
                         },
                     ],
-                }}
-                twitter={{
+                },
+                twitter: {
                     cardType: 'summary_large_image',
-                }}
-            />
+                },
+            })}
 
             <div>
                 <section className="py-12 md:py-20 bg-base-200">

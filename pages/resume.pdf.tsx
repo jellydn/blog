@@ -1,5 +1,5 @@
 import Layout from 'components/Layout';
-import { NextSeo } from 'next-seo';
+import { generateNextSeo } from 'next-seo/pages';
 
 type ResumePageProps = {
     siteTitle: string;
@@ -13,11 +13,11 @@ const ResumePage = ({ siteTitle }: ResumePageProps) => {
 
     return (
         <Layout siteTitle={siteTitle} siteDescription={description}>
-            <NextSeo
-                title={seoTitle}
-                description={description}
-                canonical="https://productsway.com/resume.pdf"
-                openGraph={{
+            {generateNextSeo({
+                title: seoTitle,
+                description,
+                canonical: 'https://productsway.com/resume.pdf',
+                openGraph: {
                     type: 'website',
                     url: 'https://productsway.com/resume.pdf',
                     title: seoTitle,
@@ -28,11 +28,11 @@ const ResumePage = ({ siteTitle }: ResumePageProps) => {
                             alt: seoTitle,
                         },
                     ],
-                }}
-                twitter={{
+                },
+                twitter: {
                     cardType: 'summary_large_image',
-                }}
-            />
+                },
+            })}
 
             <div>
                 <section className="py-12 md:py-20 bg-base-200">

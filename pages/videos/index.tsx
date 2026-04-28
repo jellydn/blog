@@ -3,7 +3,7 @@ import { NotesList } from 'components/NotesList';
 import type { VideoPost } from 'components/VideoList';
 import matter from 'gray-matter';
 import { dedupeBySlug, sortByDate } from 'lib/utils/array';
-import { NextSeo } from 'next-seo';
+import { generateNextSeo } from 'next-seo/pages';
 
 type VideoFrontmatter = {
     title: string;
@@ -22,11 +22,11 @@ type VideosPageProps = {
 const VideosPage = ({ title, description, items }: VideosPageProps) => {
     return (
         <Layout siteTitle={title} siteDescription={description}>
-            <NextSeo
-                title={title}
-                description={description}
-                canonical="https://productsway.com/videos"
-                openGraph={{
+            {generateNextSeo({
+                title,
+                description,
+                canonical: 'https://productsway.com/videos',
+                openGraph: {
                     type: 'website',
                     url: 'https://productsway.com/videos',
                     title,
@@ -37,11 +37,11 @@ const VideosPage = ({ title, description, items }: VideosPageProps) => {
                             alt: title,
                         },
                     ],
-                }}
-                twitter={{
+                },
+                twitter: {
                     cardType: 'summary_large_image',
-                }}
-            />
+                },
+            })}
 
             <div>
                 <section className="py-12 md:py-20 bg-base-200">

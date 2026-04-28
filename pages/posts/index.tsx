@@ -4,7 +4,7 @@ import { fetchHashnodePosts } from 'lib/hashnode';
 import { formatDate } from 'lib/utils/date';
 import Image from 'next/image';
 import Link from 'next/link';
-import { NextSeo } from 'next-seo';
+import { generateNextSeo } from 'next-seo/pages';
 import { useMemo, useState } from 'react';
 
 type PostsPageProps = {
@@ -27,11 +27,11 @@ const PostsPage = ({ title, description, items }: PostsPageProps) => {
 
     return (
         <Layout siteTitle={title} siteDescription={description}>
-            <NextSeo
-                title="Posts"
-                description="Articles from ITMan blog.productsway.com"
-                canonical="https://productsway.com/posts"
-                openGraph={{
+            {generateNextSeo({
+                title: 'Posts',
+                description: 'Articles from ITMan blog.productsway.com',
+                canonical: 'https://productsway.com/posts',
+                openGraph: {
                     type: 'website',
                     url: 'https://productsway.com/posts',
                     title: 'Posts',
@@ -42,11 +42,11 @@ const PostsPage = ({ title, description, items }: PostsPageProps) => {
                             alt: title,
                         },
                     ],
-                }}
-                twitter={{
+                },
+                twitter: {
                     cardType: 'summary_large_image',
-                }}
-            />
+                },
+            })}
 
             <div>
                 <section className="py-12 md:py-20 bg-base-200">

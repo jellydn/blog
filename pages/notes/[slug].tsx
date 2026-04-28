@@ -4,7 +4,7 @@ import { globSync } from 'glob';
 import matter from 'gray-matter';
 import { formatDate } from 'lib/utils/date';
 import Link from 'next/link';
-import { NextSeo } from 'next-seo';
+import { generateNextSeo } from 'next-seo/pages';
 import { useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
 import gfm from 'remark-gfm';
@@ -47,11 +47,11 @@ export default function BlogTemplate({
 
     return (
         <Layout siteTitle={siteTitle}>
-            <NextSeo
-                title={`${frontmatter.title} | ${siteTitle}`}
-                description={frontmatter.description ?? siteDescription}
-                canonical={canonicalUrl}
-                openGraph={{
+            {generateNextSeo({
+                title: `${frontmatter.title} | ${siteTitle}`,
+                description: frontmatter.description ?? siteDescription,
+                canonical: canonicalUrl,
+                openGraph: {
                     type: 'article',
                     url: canonicalUrl,
                     title: frontmatter.title,
@@ -67,11 +67,11 @@ export default function BlogTemplate({
                         authors: [frontmatter.author ?? 'Dung Huynh Duc'],
                         tags: frontmatter.tag ?? [],
                     },
-                }}
-                twitter={{
+                },
+                twitter: {
                     cardType: 'summary_large_image',
-                }}
-            />
+                },
+            })}
 
             <div className="min-h-screen">
                 {/* Navigation */}

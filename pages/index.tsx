@@ -8,7 +8,7 @@ import dynamic from 'next/dynamic';
 import Head from 'next/head';
 import Image from 'next/image';
 import Script from 'next/script';
-import { NextSeo } from 'next-seo';
+import { generateNextSeo } from 'next-seo/pages';
 import reposData from '../data/repos.json';
 
 const YoutubeSection = dynamic(() =>
@@ -310,11 +310,11 @@ const Index = ({
                     {PREFETCH_SCRIPT}
                 </Script>
             </Head>
-            <NextSeo
-                title={title}
-                description={description}
-                canonical="https://productsway.com"
-                openGraph={{
+            {generateNextSeo({
+                title,
+                description,
+                canonical: 'https://productsway.com',
+                openGraph: {
                     type: 'website',
                     url: 'https://productsway.com',
                     title,
@@ -325,11 +325,11 @@ const Index = ({
                             alt: title,
                         },
                     ],
-                }}
-                twitter={{
+                },
+                twitter: {
                     cardType: 'summary_large_image',
-                }}
-            />
+                },
+            })}
 
             <div>
                 <section className="hero min-h-[60vh] bg-gradient-to-r from-primary/10 to-accent/10">
