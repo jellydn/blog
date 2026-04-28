@@ -3,6 +3,14 @@ const path = require('node:path');
 
 module.exports = {
     reactStrictMode: true,
+    turbopack: {
+        rules: {
+            '*.md': {
+                loaders: ['raw-loader'],
+                as: '*.js',
+            },
+        },
+    },
     outputFileTracingRoot: path.join(__dirname),
     experimental: {},
     images: {
