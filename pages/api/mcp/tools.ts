@@ -1,3 +1,4 @@
+import { ensureGet, handleOptions, setCorsHeaders } from 'lib/api-helpers';
 import type { NextApiRequest, NextApiResponse } from 'next';
 
 /**
@@ -36,10 +37,9 @@ interface MCPToolsResponse {
 export default function handler(
     req: NextApiRequest,
     res: NextApiResponse<MCPToolsResponse | { error: string }>,
-) {
-    if (req.method !== 'GET') {
-        return res.status(405).json({ error: 'Method not allowed' });
-    }
+): void {
+    if (handleOptions(req, res)) return;
+    if (!ensureGet(req, res)) return;
 
     const tools: MCPToolsResponse = {
         tools: [
@@ -149,7 +149,7 @@ export default function handler(
         ],
     };
 
-    res.setHeader('Content-Type', 'application/json');
+    setCorsHeaders(res);
     res.setHeader(
         'Cache-Control',
         'public, s-maxage=300, stale-while-revalidate=900',

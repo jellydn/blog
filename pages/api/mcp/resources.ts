@@ -1,3 +1,5 @@
+import { ensureGet, handleOptions, setCorsHeaders } from 'lib/api-helpers';
+import { SITE_URL } from 'lib/constants';
 import type { NextApiRequest, NextApiResponse } from 'next';
 
 /**
@@ -25,12 +27,11 @@ interface MCPResourcesResponse {
 export default function handler(
     req: NextApiRequest,
     res: NextApiResponse<MCPResourcesResponse | { error: string }>,
-) {
-    if (req.method !== 'GET') {
-        return res.status(405).json({ error: 'Method not allowed' });
-    }
+): void {
+    if (handleOptions(req, res)) return;
+    if (!ensureGet(req, res)) return;
 
-    const baseUrl = 'https://productsway.com';
+    const baseUrl = SITE_URL;
 
     const resources: MCPResourcesResponse = {
         resources: [
@@ -97,7 +98,7 @@ export default function handler(
         ],
     };
 
-    res.setHeader('Content-Type', 'application/json');
+    setCorsHeaders(res);
     res.setHeader(
         'Cache-Control',
         'public, s-maxage=300, stale-while-revalidate=900',

@@ -1,3 +1,9 @@
+import {
+    ensureGet,
+    handleOptions,
+    sendDiscoveryResponse,
+} from 'lib/api-helpers';
+import { SITE_URL } from 'lib/constants';
 import type { NextApiRequest, NextApiResponse } from 'next';
 
 /**
@@ -41,40 +47,27 @@ interface OAuthAuthorizationServer {
 export default function handler(
     req: NextApiRequest,
     res: NextApiResponse<OAuthAuthorizationServer | { error: string }>,
-) {
-    if (req.method !== 'GET') {
-        return res.status(405).json({ error: 'Method not allowed' });
-    }
+): void {
+    if (handleOptions(req, res)) return;
+    if (!ensureGet(req, res)) return;
 
-    const baseUrl = 'https://productsway.com';
+    const baseUrl = SITE_URL;
 
     // OAuth 2.0 Authorization Server Metadata
     // Currently, APIs are public - this is a placeholder for future OAuth integration
     const metadata: OAuthAuthorizationServer = {
         issuer: baseUrl,
 
-        // Optional endpoints (not currently implemented)
+        // OAuth endpoints not implemented - APIs are public
+        // When OAuth is added, uncomment and implement:
         // authorization_endpoint: `${baseUrl}/oauth/authorize`,
         // token_endpoint: `${baseUrl}/oauth/token`,
         // jwks_uri: `${baseUrl}/.well-known/jwks.json`,
-        // registration_endpoint: `${baseUrl}/oauth/register`,
-        // revocation_endpoint: `${baseUrl}/oauth/revoke`,
-        // introspection_endpoint: `${baseUrl}/oauth/introspect`,
 
-        scopes_supported: [
-            'api:read',
-            'api:write',
-            'posts:read',
-            'videos:read',
-            'notes:read',
-        ],
-        response_types_supported: ['code', 'token', 'code token'],
-        response_modes_supported: ['query', 'fragment', 'form_post'],
-        grant_types_supported: [
-            'authorization_code',
-            'client_credentials',
-            'refresh_token',
-        ],
+        // Only advertise implicit grant (token response type) since we have
+        // no authorization/token endpoints. Other grants require those.
+        response_types_supported: ['token'],
+        grant_types_supported: ['implicit'],
         token_endpoint_auth_methods_supported: [
             'client_secret_basic',
             'client_secret_post',
@@ -106,10 +99,7 @@ export default function handler(
         ],
     };
 
-    res.setHeader('Content-Type', 'application/json');
-    res.setHeader(
-        'Cache-Control',
-        'public, s-maxage=3600, stale-while-revalidate=86400',
-    );
-    res.status(200).json(metadata);
+    sendDiscoveryResponse(res, metadata, {
+        contentType: 'application/json',
+    });
 }

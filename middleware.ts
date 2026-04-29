@@ -42,7 +42,10 @@ export function middleware(request: NextRequest) {
     ) {
         response.headers.set('Link', WELL_KNOWN_LINKS.join(', '));
         // Vary header for content negotiation (markdown support)
-        response.headers.set('Vary', 'Accept');
+        // Append to existing Vary values if present
+        const existingVary = response.headers.get('Vary') || '';
+        const varyValue = existingVary ? `${existingVary}, Accept` : 'Accept';
+        response.headers.set('Vary', varyValue);
     }
 
     // Content negotiation: Check for markdown request
@@ -55,7 +58,9 @@ export function middleware(request: NextRequest) {
         !pathname.startsWith('/.well-known/')
     ) {
         // Set Vary header for content negotiation
-        response.headers.set('Vary', 'Accept');
+        const existingVary = response.headers.get('Vary') || '';
+        const varyValue = existingVary ? `${existingVary}, Accept` : 'Accept';
+        response.headers.set('Vary', varyValue);
         response.headers.set('X-Markdown-Available', 'true');
     }
 

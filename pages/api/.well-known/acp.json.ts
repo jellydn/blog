@@ -1,3 +1,9 @@
+import {
+    ensureGet,
+    handleOptions,
+    sendDiscoveryResponse,
+} from 'lib/api-helpers';
+import { SITE_URL } from 'lib/constants';
 import type { NextApiRequest, NextApiResponse } from 'next';
 
 /**
@@ -73,12 +79,11 @@ interface ACPMetadata {
 export default function handler(
     req: NextApiRequest,
     res: NextApiResponse<ACPMetadata | { error: string }>,
-) {
-    if (req.method !== 'GET') {
-        return res.status(405).json({ error: 'Method not allowed' });
-    }
+): void {
+    if (handleOptions(req, res)) return;
+    if (!ensureGet(req, res)) return;
 
-    const baseUrl = 'https://productsway.com';
+    const baseUrl = SITE_URL;
 
     const acpMetadata: ACPMetadata = {
         protocol: {
@@ -99,41 +104,21 @@ export default function handler(
             },
         ],
         capabilities: {
-            services: [
-                {
-                    id: 'content-premium',
-                    name: 'Premium Content Access',
-                    description:
-                        'Access to premium articles and exclusive content',
-                    type: 'digital-goods',
-                    pricing_model: 'subscription',
-                    currency: ['USD'],
-                    payment_methods: ['card', 'crypto'],
-                    enabled: false,
-                },
-                {
-                    id: 'consulting',
-                    name: 'Development Consulting',
-                    description: 'One-on-one software development consulting',
-                    type: 'service',
-                    pricing_model: 'variable',
-                    currency: ['USD'],
-                    payment_methods: ['card', 'wire', 'crypto'],
-                    enabled: false,
-                },
-            ],
-            payment_flows: ['immediate', 'escrow'],
-            authentication: ['api-key', 'oauth2'],
+            // Services hidden until ACP is enabled
+            services: [],
+            payment_flows: [],
+            authentication: [],
             receipts: false,
             refunds: false,
             webhooks: false,
         },
+        // Only discovery endpoint visible - others hidden until enabled
         endpoints: {
             discovery: `${baseUrl}/.well-known/acp.json`,
-            quote: `${baseUrl}/acp/quote`,
-            checkout: `${baseUrl}/acp/checkout`,
-            receipt: `${baseUrl}/acp/receipt`,
-            webhook: `${baseUrl}/acp/webhook`,
+            quote: '',
+            checkout: '',
+            receipt: '',
+            webhook: '',
         },
         documentation: `${baseUrl}/docs/acp`,
         support: 'dung@productsway.com',
@@ -143,10 +128,7 @@ export default function handler(
         'x-acp-status': 'disabled',
     };
 
-    res.setHeader('Content-Type', 'application/json');
-    res.setHeader(
-        'Cache-Control',
-        'public, s-maxage=3600, stale-while-revalidate=86400',
-    );
-    res.status(200).json(acpMetadata);
+    sendDiscoveryResponse(res, acpMetadata, {
+        contentType: 'application/json',
+    });
 }

@@ -1,3 +1,5 @@
+import { ensureGet, handleOptions, setCorsHeaders } from 'lib/api-helpers';
+import { SITE_URL } from 'lib/constants';
 import type { NextApiRequest, NextApiResponse } from 'next';
 
 /**
@@ -25,12 +27,11 @@ interface ApiCatalog {
 export default function handler(
     req: NextApiRequest,
     res: NextApiResponse<ApiCatalog | { error: string }>,
-) {
-    if (req.method !== 'GET') {
-        return res.status(405).json({ error: 'Method not allowed' });
-    }
+): void {
+    if (handleOptions(req, res)) return;
+    if (!ensureGet(req, res)) return;
 
-    const baseUrl = 'https://productsway.com';
+    const baseUrl = SITE_URL;
 
     const catalog: ApiCatalog = {
         linkset: [
@@ -117,10 +118,14 @@ export default function handler(
         ],
     };
 
-    res.setHeader('Content-Type', 'application/linkset+json');
+    setCorsHeaders(res);
+    res.setHeader(
+        'Content-Type',
+        'application/linkset+json; profile="https://www.rfc-editor.org/info/rfc9727"',
+    );
     res.setHeader(
         'Cache-Control',
         'public, s-maxage=3600, stale-while-revalidate=86400',
     );
-    res.status(200).json(catalog);
+    res.status(200).send(JSON.stringify(catalog));
 }

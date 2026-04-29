@@ -1,3 +1,9 @@
+import {
+    ensureGet,
+    handleOptions,
+    sendDiscoveryResponse,
+} from 'lib/api-helpers';
+import { SITE_URL } from 'lib/constants';
 import type { NextApiRequest, NextApiResponse } from 'next';
 
 /**
@@ -46,12 +52,11 @@ interface MCPServerCard {
 export default function handler(
     req: NextApiRequest,
     res: NextApiResponse<MCPServerCard | { error: string }>,
-) {
-    if (req.method !== 'GET') {
-        return res.status(405).json({ error: 'Method not allowed' });
-    }
+): void {
+    if (handleOptions(req, res)) return;
+    if (!ensureGet(req, res)) return;
 
-    const baseUrl = 'https://productsway.com';
+    const baseUrl = SITE_URL;
 
     const serverCard: MCPServerCard = {
         $schema: 'https://modelcontextprotocol.io/schemas/server-card.json',
@@ -82,10 +87,7 @@ export default function handler(
         },
     };
 
-    res.setHeader('Content-Type', 'application/json');
-    res.setHeader(
-        'Cache-Control',
-        'public, s-maxage=3600, stale-while-revalidate=86400',
-    );
-    res.status(200).json(serverCard);
+    sendDiscoveryResponse(res, serverCard, {
+        contentType: 'application/json',
+    });
 }

@@ -1,3 +1,8 @@
+import {
+    ensureGet,
+    handleOptions,
+    sendDiscoveryResponse,
+} from 'lib/api-helpers';
 import type { NextApiRequest, NextApiResponse } from 'next';
 
 /**
@@ -14,7 +19,7 @@ import type { NextApiRequest, NextApiResponse } from 'next';
  * @see https://docs.x402.org
  */
 
-interface x402Resource {
+interface X402Resource {
     path: string;
     methods: string[];
     price?: {
@@ -24,7 +29,7 @@ interface x402Resource {
     description: string;
 }
 
-interface x402Configuration {
+interface X402Configuration {
     version: string;
     spec_url: string;
     enabled: boolean;
@@ -35,7 +40,7 @@ interface x402Configuration {
     wallet_address?: string;
     network_id?: number;
     accepted_tokens?: string[];
-    resources: x402Resource[];
+    resources: X402Resource[];
     middleware?: {
         nextjs: boolean;
         express: boolean;
@@ -48,13 +53,12 @@ interface x402Configuration {
 
 export default function handler(
     req: NextApiRequest,
-    res: NextApiResponse<x402Configuration | { error: string }>,
-) {
-    if (req.method !== 'GET') {
-        return res.status(405).json({ error: 'Method not allowed' });
-    }
+    res: NextApiResponse<X402Configuration | { error: string }>,
+): void {
+    if (handleOptions(req, res)) return;
+    if (!ensureGet(req, res)) return;
 
-    const x402Config: x402Configuration = {
+    const x402Config: X402Configuration = {
         version: '0.1.0',
         spec_url: 'https://x402.org/spec',
         enabled: false,
@@ -74,35 +78,8 @@ export default function handler(
         // Accepted tokens (e.g., USDC)
         accepted_tokens: ['USDC', 'ETH'],
 
-        resources: [
-            {
-                path: '/api/premium-posts',
-                methods: ['GET'],
-                price: {
-                    amount: '0.10',
-                    currency: 'USDC',
-                },
-                description: 'Access to premium blog posts',
-            },
-            {
-                path: '/api/consulting-booking',
-                methods: ['POST'],
-                price: {
-                    amount: '50.00',
-                    currency: 'USDC',
-                },
-                description: 'Book a consulting session',
-            },
-            {
-                path: '/api/content-download',
-                methods: ['GET'],
-                price: {
-                    amount: '5.00',
-                    currency: 'USDC',
-                },
-                description: 'Download premium content packages',
-            },
-        ],
+        // Resources disabled until payment processing is implemented
+        resources: [],
 
         middleware: {
             nextjs: false,
@@ -115,12 +92,7 @@ export default function handler(
         'x-x402-enabled-resources': [],
     };
 
-    res.setHeader('Content-Type', 'application/json');
-    res.setHeader(
-        'Cache-Control',
-        'public, s-maxage=3600, stale-while-revalidate=86400',
-    );
-
-    // x402 uses 402 status for payment required - but this is discovery
-    res.status(200).json(x402Config);
+    sendDiscoveryResponse(res, x402Config, {
+        contentType: 'application/json',
+    });
 }

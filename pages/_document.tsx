@@ -40,6 +40,9 @@ const WEBMCP_SCRIPT = `
                 const url = new URL('/api/posts', baseUrl);
                 if (args?.limit) url.searchParams.set('limit', args.limit);
                 const response = await fetch(url);
+                if (!response.ok) {
+                    throw new Error('Failed to fetch posts: ' + response.status + ' ' + response.statusText);
+                }
                 return response.json();
             }
         },
@@ -54,7 +57,11 @@ const WEBMCP_SCRIPT = `
             },
             execute: async (args) => {
                 const url = new URL('/api/youtube-videos', baseUrl);
+                if (args?.limit) url.searchParams.set('limit', args.limit);
                 const response = await fetch(url);
+                if (!response.ok) {
+                    throw new Error('Failed to fetch videos: ' + response.status + ' ' + response.statusText);
+                }
                 return response.json();
             }
         },
@@ -70,6 +77,9 @@ const WEBMCP_SCRIPT = `
             },
             execute: async () => {
                 const response = await fetch('/data/repos.json');
+                if (!response.ok) {
+                    throw new Error('Failed to fetch repos: ' + response.status + ' ' + response.statusText);
+                }
                 return response.json();
             }
         },

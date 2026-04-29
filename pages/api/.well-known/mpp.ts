@@ -1,3 +1,9 @@
+import {
+    ensureGet,
+    handleOptions,
+    sendDiscoveryResponse,
+} from 'lib/api-helpers';
+import { SITE_URL } from 'lib/constants';
 import type { NextApiRequest, NextApiResponse } from 'next';
 
 /**
@@ -66,12 +72,11 @@ interface MPPConfiguration {
 export default function handler(
     req: NextApiRequest,
     res: NextApiResponse<MPPConfiguration | { error: string }>,
-) {
-    if (req.method !== 'GET') {
-        return res.status(405).json({ error: 'Method not allowed' });
-    }
+): void {
+    if (handleOptions(req, res)) return;
+    if (!ensureGet(req, res)) return;
 
-    const baseUrl = 'https://productsway.com';
+    const baseUrl = SITE_URL;
 
     const mppConfig: MPPConfiguration = {
         openapi: '3.0.3',
@@ -86,41 +91,8 @@ export default function handler(
             },
         },
         servers: [{ url: baseUrl }],
-        paths: {
-            '/api/premium-posts': {
-                path: '/api/premium-posts',
-                methods: ['GET'],
-                'x-payment-info': {
-                    intent: 'charge',
-                    method: 'stripe',
-                    amount: 0.5,
-                    currency: 'USD',
-                    description: 'Access premium blog content',
-                },
-            },
-            '/api/consulting-booking': {
-                path: '/api/consulting-booking',
-                methods: ['POST'],
-                'x-payment-info': {
-                    intent: 'session',
-                    method: 'stripe',
-                    amount: 100.0,
-                    currency: 'USD',
-                    description: 'Book a consulting session',
-                },
-            },
-            '/api/content-download': {
-                path: '/api/content-download',
-                methods: ['GET'],
-                'x-payment-info': {
-                    intent: 'charge',
-                    method: 'lightning',
-                    amount: 0.001,
-                    currency: 'BTC',
-                    description: 'Download content package',
-                },
-            },
-        },
+        // Paths disabled until MPP is implemented
+        paths: {},
 
         // MPP extensions
         'x-mpp-enabled': false,
@@ -146,10 +118,7 @@ export default function handler(
         },
     };
 
-    res.setHeader('Content-Type', 'application/json');
-    res.setHeader(
-        'Cache-Control',
-        'public, s-maxage=3600, stale-while-revalidate=86400',
-    );
-    res.status(200).json(mppConfig);
+    sendDiscoveryResponse(res, mppConfig, {
+        contentType: 'application/json',
+    });
 }

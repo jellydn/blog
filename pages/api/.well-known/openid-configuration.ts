@@ -1,3 +1,9 @@
+import {
+    ensureGet,
+    handleOptions,
+    sendDiscoveryResponse,
+} from 'lib/api-helpers';
+import { SITE_URL } from 'lib/constants';
 import type { NextApiRequest, NextApiResponse } from 'next';
 
 /**
@@ -39,45 +45,25 @@ interface OpenIDConfiguration {
 export default function handler(
     req: NextApiRequest,
     res: NextApiResponse<OpenIDConfiguration | { error: string }>,
-) {
-    if (req.method !== 'GET') {
-        return res.status(405).json({ error: 'Method not allowed' });
-    }
+): void {
+    if (handleOptions(req, res)) return;
+    if (!ensureGet(req, res)) return;
 
-    const baseUrl = 'https://productsway.com';
+    const baseUrl = SITE_URL;
 
     // Currently, this blog has public APIs with no authentication
     // This configuration documents that state and provides discovery for future auth
     const config: OpenIDConfiguration = {
         issuer: baseUrl,
-        // Endpoints are optional placeholders for future implementation
-        // authorization_endpoint: `${baseUrl}/oauth/authorize`,
-        // token_endpoint: `${baseUrl}/oauth/token`,
-        // userinfo_endpoint: `${baseUrl}/oauth/userinfo`,
-        // jwks_uri: `${baseUrl}/.well-known/jwks.json`,
+        // OIDC endpoints not implemented - APIs are public
+        // When OIDC is added, implement authorization_endpoint, token_endpoint,
+        // userinfo_endpoint, and jwks_uri, then restore full grant/response support.
 
-        scopes_supported: [
-            'openid',
-            'profile',
-            'email',
-            'api:read',
-            'api:write',
-        ],
-        response_types_supported: [
-            'code',
-            'token',
-            'id_token',
-            'code id_token',
-            'code token',
-            'id_token token',
-            'code id_token token',
-        ],
-        grant_types_supported: [
-            'authorization_code',
-            'implicit',
-            'client_credentials',
-            'refresh_token',
-        ],
+        // Minimal scopes and flows for public API status
+        scopes_supported: ['openid'],
+        // Only implicit flow since we lack token/authorization endpoints
+        response_types_supported: ['id_token'],
+        grant_types_supported: ['implicit'],
         subject_types_supported: ['public', 'pairwise'],
         id_token_signing_alg_values_supported: ['RS256', 'ES256', 'HS256'],
         token_endpoint_auth_methods_supported: [
@@ -112,10 +98,7 @@ export default function handler(
         ],
     };
 
-    res.setHeader('Content-Type', 'application/json');
-    res.setHeader(
-        'Cache-Control',
-        'public, s-maxage=3600, stale-while-revalidate=86400',
-    );
-    res.status(200).json(config);
+    sendDiscoveryResponse(res, config, {
+        contentType: 'application/json',
+    });
 }

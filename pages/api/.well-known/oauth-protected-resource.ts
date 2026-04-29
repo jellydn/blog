@@ -1,3 +1,9 @@
+import {
+    ensureGet,
+    handleOptions,
+    sendDiscoveryResponse,
+} from 'lib/api-helpers';
+import { SITE_URL } from 'lib/constants';
 import type { NextApiRequest, NextApiResponse } from 'next';
 
 /**
@@ -12,14 +18,10 @@ import type { NextApiRequest, NextApiResponse } from 'next';
  * @see https://www.rfc-editor.org/rfc/rfc9728
  */
 
-interface BearerMethods {
-    supported: string[];
-}
-
 interface OAuthProtectedResource {
     resource: string;
     authorization_servers?: string[];
-    bearer_methods?: BearerMethods;
+    bearer_methods_supported?: string[];
     scopes_supported?: string[];
     resource_documentation?: string;
     resource_signature?: string;
@@ -35,12 +37,11 @@ interface OAuthProtectedResource {
 export default function handler(
     req: NextApiRequest,
     res: NextApiResponse<OAuthProtectedResource | { error: string }>,
-) {
-    if (req.method !== 'GET') {
-        return res.status(405).json({ error: 'Method not allowed' });
-    }
+): void {
+    if (handleOptions(req, res)) return;
+    if (!ensureGet(req, res)) return;
 
-    const baseUrl = 'https://productsway.com';
+    const baseUrl = SITE_URL;
 
     // OAuth Protected Resource Metadata
     // Currently all resources are public - this documents that state
@@ -51,9 +52,7 @@ export default function handler(
         // Currently empty as no auth is required
         authorization_servers: [],
 
-        bearer_methods: {
-            supported: ['header', 'body', 'query'],
-        },
+        bearer_methods_supported: ['header', 'body', 'query'],
 
         scopes_supported: [
             'api:read',
@@ -87,10 +86,7 @@ export default function handler(
         'x-protected-endpoints': [],
     };
 
-    res.setHeader('Content-Type', 'application/json');
-    res.setHeader(
-        'Cache-Control',
-        'public, s-maxage=3600, stale-while-revalidate=86400',
-    );
-    res.status(200).json(metadata);
+    sendDiscoveryResponse(res, metadata, {
+        contentType: 'application/json',
+    });
 }

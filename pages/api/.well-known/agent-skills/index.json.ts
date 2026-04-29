@@ -1,3 +1,9 @@
+import {
+    ensureGet,
+    handleOptions,
+    sendDiscoveryResponse,
+} from 'lib/api-helpers';
+import { SITE_URL } from 'lib/constants';
 import type { NextApiRequest, NextApiResponse } from 'next';
 
 /**
@@ -26,12 +32,11 @@ interface AgentSkillsIndex {
 export default function handler(
     req: NextApiRequest,
     res: NextApiResponse<AgentSkillsIndex | { error: string }>,
-) {
-    if (req.method !== 'GET') {
-        return res.status(405).json({ error: 'Method not allowed' });
-    }
+): void {
+    if (handleOptions(req, res)) return;
+    if (!ensureGet(req, res)) return;
 
-    const baseUrl = 'https://productsway.com';
+    const baseUrl = SITE_URL;
 
     const skillsIndex: AgentSkillsIndex = {
         $schema: 'https://agentskills.io/schemas/index.json',
@@ -73,10 +78,8 @@ export default function handler(
         ],
     };
 
-    res.setHeader('Content-Type', 'application/json');
-    res.setHeader(
-        'Cache-Control',
-        'public, s-maxage=300, stale-while-revalidate=900',
-    );
-    res.status(200).json(skillsIndex);
+    sendDiscoveryResponse(res, skillsIndex, {
+        contentType: 'application/json',
+        cacheControl: 'public, s-maxage=300, stale-while-revalidate=900',
+    });
 }

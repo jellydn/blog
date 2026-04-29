@@ -1,3 +1,9 @@
+import {
+    ensureGet,
+    handleOptions,
+    sendDiscoveryResponse,
+} from 'lib/api-helpers';
+import { SITE_URL } from 'lib/constants';
 import type { NextApiRequest, NextApiResponse } from 'next';
 
 /**
@@ -60,12 +66,11 @@ interface UCPMetadata {
 export default function handler(
     req: NextApiRequest,
     res: NextApiResponse<UCPMetadata | { error: string }>,
-) {
-    if (req.method !== 'GET') {
-        return res.status(405).json({ error: 'Method not allowed' });
-    }
+): void {
+    if (handleOptions(req, res)) return;
+    if (!ensureGet(req, res)) return;
 
-    const baseUrl = 'https://productsway.com';
+    const baseUrl = SITE_URL;
 
     const ucpMetadata: UCPMetadata = {
         protocol: {
@@ -115,23 +120,8 @@ export default function handler(
                 enabled: false,
             },
         ],
-        endpoints: [
-            {
-                path: '/.well-known/ucp',
-                methods: ['GET'],
-                content_types: ['application/json'],
-            },
-            {
-                path: '/ucp/payment',
-                methods: ['POST'],
-                content_types: ['application/json'],
-            },
-            {
-                path: '/ucp/receipt/:id',
-                methods: ['GET'],
-                content_types: ['application/json'],
-            },
-        ],
+        // Endpoints hidden until UCP is enabled
+        endpoints: [],
         schemas: {
             discovery: 'https://ucp.dev/schemas/discovery.json',
             payment: 'https://ucp.dev/schemas/payment.json',
@@ -143,10 +133,7 @@ export default function handler(
         'x-ucp-status': 'disabled',
     };
 
-    res.setHeader('Content-Type', 'application/json');
-    res.setHeader(
-        'Cache-Control',
-        'public, s-maxage=3600, stale-while-revalidate=86400',
-    );
-    res.status(200).json(ucpMetadata);
+    sendDiscoveryResponse(res, ucpMetadata, {
+        contentType: 'application/json',
+    });
 }
