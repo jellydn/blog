@@ -1,9 +1,9 @@
 import {
     ensureGet,
+    getBaseUrlFromRequest,
     handleOptions,
     sendDiscoveryResponse,
 } from 'lib/api-helpers';
-import { SITE_URL } from 'lib/constants';
 import type { NextApiRequest, NextApiResponse } from 'next';
 
 /**
@@ -49,7 +49,7 @@ export default function handler(
     if (handleOptions(req, res)) return;
     if (!ensureGet(req, res)) return;
 
-    const baseUrl = SITE_URL;
+    const baseUrl = getBaseUrlFromRequest(req);
 
     // Currently, this blog has public APIs with no authentication
     // This configuration documents that state and provides discovery for future auth

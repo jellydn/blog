@@ -8,6 +8,20 @@ import type { NextApiRequest, NextApiResponse } from 'next';
  */
 
 /**
+ * Derive the base URL from request headers.
+ * Supports x-forwarded-proto for proxy environments (Vercel, etc.)
+ * Falls back to https if no forwarded protocol is present.
+ */
+export function getBaseUrlFromRequest(req: NextApiRequest): string {
+    const protocol =
+        (req.headers['x-forwarded-proto'] as string) ||
+        (req.headers['x-forwarded-protocol'] as string) ||
+        'https';
+    const host = req.headers['x-forwarded-host'] || req.headers.host || '';
+    return `${protocol}://${host}`;
+}
+
+/**
  * Ensure the request method is GET. Returns 405 if not.
  * Also sets the Allow header per HTTP spec.
  */
