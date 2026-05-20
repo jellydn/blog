@@ -2,4 +2,11 @@
 User-agent: *
 Disallow:
 
+# Content Signals - AI Content Usage Preferences
+# https://contentsignals.org/
+# ai-train: Whether content can be used for AI training
+# ai-input: Whether content can be used as input to AI systems
+# search: Whether content can be indexed for search
+Content-Signal: ai-train=yes, ai-input=yes, search=yes
+
 Sitemap: https://productsway.com/sitemap.xml
