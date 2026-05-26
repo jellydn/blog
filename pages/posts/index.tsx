@@ -208,30 +208,38 @@ export async function getStaticProps() {
 
     if (!items || items.length === 0) {
         // Fall back to local markdown posts when Hashnode API is unavailable
+        const { globSync } = await import('glob');
         const matter = (await import('gray-matter')).default;
-        const localPosts = ((context) => {
-            const keys = context.keys();
-            return keys.map((key: string) => {
-                const slug = key
-                    .replace(/^.*[\\/]/, '')
-                    .split('.')
-                    .slice(0, -1)
-                    .join('.');
-                const doc = matter(context(key).default);
+        const fs = await import('fs');
+        const path = await import('path');
+
+        const postsDir = path.join(process.cwd(), 'posts');
+        const files = globSync('**/*.md', { cwd: postsDir });
+
+        const localPosts = files
+            .filter((file: string) =>
+                fs.statSync(path.join(postsDir, file)).isFile(),
+            )
+            .map((file: string) => {
+                const slug = file.replace(/\.[^/.]+$/, '');
+                const content = fs.readFileSync(
+                    path.join(postsDir, file),
+                    'utf-8',
+                );
+                const doc = matter(content);
                 return {
-                    title: doc.data.title as string,
-                    brief: doc.data.description as string,
+                    title: (doc.data.title as string) ?? slug,
+                    brief: (doc.data.description as string) ?? '',
                     slug,
-                    publishedAt: doc.data.date as string,
+                    publishedAt: (doc.data.date as string) ?? '',
                     tags: ((doc.data.tag ?? []) as string[]).map(
                         (t: string) => ({ name: t }),
                     ),
                     coverImage: doc.data.hero_image
                         ? { url: doc.data.hero_image as string }
-                        : undefined,
+                        : null,
                 };
             });
-        })(require.context('../../posts', true, /\.md$/));
 
         items = localPosts.sort(
             (a, b) =>
