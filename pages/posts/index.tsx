@@ -160,35 +160,170 @@ const PostsPage = ({ title, description, items }: PostsPageProps) => {
 
 export default PostsPage;
 
+// Fetch posts from hashnode.com/@dunghd RSC stream
+async function fetchPostsFromHashnode(): Promise<LocalPost[]> {
+    try {
+        const res = await fetch('https://hashnode.com/@dunghd', {
+            headers: { 'User-Agent': 'ProductswayBlog/1.0' },
+            signal: AbortSignal.timeout(10000),
+        });
+        if (!res.ok) return [];
+        const html = await res.text();
+
+        // Concatenate all __next_f.push chunk contents
+        const MARKER = '__next_f.push([1,';
+        let data = '';
+        let pos = 0;
+        while (true) {
+            const chunkStart = html.indexOf(MARKER, pos);
+            if (chunkStart < 0) break;
+            const quoteStart = html.indexOf('"', chunkStart + MARKER.length);
+            if (quoteStart < 0) break;
+            let chunkEnd = -1;
+            for (let i = quoteStart + 1; i < html.length; i++) {
+                if (html[i] === '\\' && html[i + 1] === '"') {
+                    i++;
+                    continue;
+                }
+                if (html[i] === '"') {
+                    chunkEnd = i;
+                    break;
+                }
+            }
+            if (chunkEnd < 0) break;
+            try {
+                data += JSON.parse(
+                    '"' + html.slice(quoteStart + 1, chunkEnd) + '"',
+                );
+            } catch {
+                /* skip malformed */
+            }
+            pos = chunkEnd + 1;
+        }
+
+        if (!data) return [];
+
+        // Find initialPosts — track only array [] depth, not object {} depth
+        const ARRAY_MARKER = '"initialPosts":[';
+        const arrIdx = data.indexOf(ARRAY_MARKER);
+        if (arrIdx < 0) return [];
+
+        const arrStart = arrIdx + ARRAY_MARKER.length;
+        let depth = 0;
+        let arrEnd = -1;
+        for (let i = arrStart; i < data.length; i++) {
+            if (data[i] === '[') depth++;
+            else if (data[i] === ']') {
+                if (depth === 0) {
+                    arrEnd = i;
+                    break;
+                }
+                depth--;
+            }
+        }
+        if (arrEnd < 0) return [];
+
+        // Clean RSC formatting: replace $D dates
+        const cleaned = data
+            .slice(arrStart, arrEnd)
+            .replace(/"\$D(\d{4}-\d{2}-\d{2}T[^"]+)"/g, '"$1"');
+
+        let posts: Array<{
+            slug: string;
+            title: string;
+            brief: string;
+            publishedAt: string;
+            coverImage?: { url: string };
+        }> = [];
+
+        try {
+            posts = JSON.parse('[' + cleaned + ']');
+        } catch {
+            // Fallback: extract slugs/titles via regex if JSON fails
+            const slugRe = /"slug":"([^"]+)"/g;
+            const titleRe = /"title":"([^"]+)"/g;
+            const briefRe = /"brief":"([^"]+)"/g;
+            const dateRe =
+                /(?:"\$D|"publishedAt":")(\d{4}-\d{2}-\d{2}T[^"]+)"/g;
+            const coverRe = /"coverImage":\{"url":"([^"]+)"/g;
+
+            const slugs = [...cleaned.matchAll(slugRe)].map((m) => m[1]);
+            const titles = [...cleaned.matchAll(titleRe)].map((m) => m[1]);
+            const briefs = [...cleaned.matchAll(briefRe)].map((m) => m[1]);
+            const dates = [...cleaned.matchAll(dateRe)].map((m) => m[1]);
+            const covers = [...cleaned.matchAll(coverRe)].map((m) => m[1]);
+
+            const len = Math.max(slugs.length, titles.length);
+            for (let i = 0; i < len; i++) {
+                posts.push({
+                    slug: slugs[i] ?? '',
+                    title: titles[i] ?? '',
+                    brief: briefs[i] ?? '',
+                    publishedAt: dates[i] ?? '',
+                    coverImage: covers[i] ? { url: covers[i] } : undefined,
+                });
+            }
+        }
+
+        return posts
+            .filter((p) => p.slug && p.title)
+            .map((p) => ({
+                slug: p.slug,
+                title: p.title,
+                description: p.brief ?? '',
+                date: p.publishedAt ?? '',
+                tags: [],
+                hero_image: p.coverImage?.url ?? null,
+            }))
+            .sort(
+                (a, b) =>
+                    new Date(b.date).getTime() - new Date(a.date).getTime(),
+            );
+    } catch {
+        return [];
+    }
+}
+
 export async function getStaticProps() {
     const config = await import('../../data/config.json');
-    const { globSync } = await import('glob');
-    const fs = await import('node:fs');
-    const path = await import('node:path');
 
-    const postsDir = path.join(process.cwd(), 'posts');
-    const files = globSync('**/*.md', { cwd: postsDir });
+    // Try hashnode.com/@dunghd RSC stream first
+    let items = await fetchPostsFromHashnode();
 
-    const items = files
-        .filter((file: string) =>
-            fs.statSync(path.join(postsDir, file)).isFile(),
-        )
-        .map((file: string) => {
-            const slug = file.replace(/\.[^/.]+$/, '');
-            const content = fs.readFileSync(path.join(postsDir, file), 'utf-8');
-            const doc = matter(content);
-            return {
-                slug,
-                title: (doc.data.title as string) ?? slug,
-                description: (doc.data.description as string) ?? '',
-                date: (doc.data.date as string) ?? '',
-                tags: (doc.data.tag ?? []) as string[],
-                hero_image: (doc.data.hero_image as string | null) ?? null,
-            };
-        })
-        .sort(
-            (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
-        );
+    // Fall back to local markdown if remote fails
+    if (items.length === 0) {
+        const { globSync } = await import('glob');
+        const fs = await import('node:fs');
+        const path = await import('node:path');
+
+        const postsDir = path.join(process.cwd(), 'posts');
+        const files = globSync('**/*.md', { cwd: postsDir });
+
+        items = files
+            .filter((file: string) =>
+                fs.statSync(path.join(postsDir, file)).isFile(),
+            )
+            .map((file: string) => {
+                const slug = file.replace(/\.[^/.]+$/, '');
+                const content = fs.readFileSync(
+                    path.join(postsDir, file),
+                    'utf-8',
+                );
+                const doc = matter(content);
+                return {
+                    slug,
+                    title: (doc.data.title as string) ?? slug,
+                    description: (doc.data.description as string) ?? '',
+                    date: (doc.data.date as string) ?? '',
+                    tags: (doc.data.tag ?? []) as string[],
+                    hero_image: (doc.data.hero_image as string | null) ?? null,
+                };
+            })
+            .sort(
+                (a, b) =>
+                    new Date(b.date).getTime() - new Date(a.date).getTime(),
+            );
+    }
 
     return {
         props: {
