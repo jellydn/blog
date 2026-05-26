@@ -3,12 +3,12 @@
     "version": "0.1.0",
     "private": true,
     "scripts": {
-        "build": "tinacms build && next build",
-        "dev": "tinacms dev -c \"next\"",
+        "build": "next build",
+        "dev": "next",
         "develop": "yarn dev",
         "lint": "biome ci .",
         "format": "biome format --write .",
-        "start": "tinacms build && next start",
+        "start": "next start",
         "fetch:videos": "bun scripts/fetch-youtube-videos.ts",
         "fetch:repos": "bun scripts/fetch-repos.ts"
     },
@@ -21,7 +21,7 @@
         "@giscus/react": "3.1.0",
         "@happykit/flags": "3.3.0",
         "@tailwindcss/typography": "0.5.19",
-        "@tinacms/cli": "2.3.1",
+
         "daisyui": "5.5.20",
         "glob": "13.0.6",
         "gray-matter": "4.0.3",
@@ -39,8 +39,7 @@
         "react-markdown": "10.1.0",
         "remark-gfm": "^4.0.1",
         "sharp": "0.34.5",
-        "swr": "2.4.1",
-        "tinacms": "3.8.1"
+        "swr": "2.4.1"
     },
     "devDependencies": {
         "@biomejs/biome": "2.4.15",
