@@ -2,8 +2,8 @@ import type { GetServerSideProps } from 'next';
 
 const BLOG_URL = 'https://blog.productsway.com';
 
-export default function PostRedirect() {
-    // This page always redirects server-side, never rendered
+export default function RootSlugRedirect() {
+    // This page always redirects server-side
     return null;
 }
 

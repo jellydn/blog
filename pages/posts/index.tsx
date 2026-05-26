@@ -1,30 +1,14 @@
 import Layout from 'components/Layout';
-import type { HashnodePostSummary } from 'lib/hashnode';
-import { fetchHashnodePosts } from 'lib/hashnode';
-import { formatDate } from 'lib/utils/date';
-import Image from 'next/image';
-import Link from 'next/link';
 import { generateNextSeo } from 'next-seo/pages';
-import { useMemo, useState } from 'react';
 
 type PostsPageProps = {
     title: string;
     description: string;
-    items: HashnodePostSummary[];
 };
 
-const PAGE_SIZE = 12;
+const BLOG_URL = 'https://blog.productsway.com';
 
-const PostsPage = ({ title, description, items }: PostsPageProps) => {
-    const [page, setPage] = useState(1);
-    const totalPages = Math.max(1, Math.ceil(items.length / PAGE_SIZE));
-    const currentPage = Math.min(page, totalPages);
-    const pageItems = useMemo(
-        () =>
-            items.slice((currentPage - 1) * PAGE_SIZE, currentPage * PAGE_SIZE),
-        [currentPage, items],
-    );
-
+const PostsPage = ({ title, description }: PostsPageProps) => {
     return (
         <Layout siteTitle={title} siteDescription={description}>
             {generateNextSeo({
@@ -55,7 +39,7 @@ const PostsPage = ({ title, description, items }: PostsPageProps) => {
                             Posts
                         </h1>
                         <p className="text-lg md:text-xl text-base-content/70">
-                            Articles from ITMan{' '}
+                            Articles from{' '}
                             <a
                                 href="https://blog.productsway.com"
                                 target="_blank"
@@ -68,127 +52,20 @@ const PostsPage = ({ title, description, items }: PostsPageProps) => {
                     </div>
                 </section>
 
-                <section className="py-16 bg-base-100">
-                    <div className="container mx-auto px-4 max-w-5xl">
-                        {items.length === 0 ? (
-                            <p className="text-base-content/60">
-                                No posts yet. Check back soon.
-                            </p>
-                        ) : (
-                            <>
-                                <div className="grid gap-8 md:grid-cols-2">
-                                    {pageItems.map((post) => {
-                                        const tagNames =
-                                            post.tags
-                                                ?.map((tag) => tag.name)
-                                                .filter((tag): tag is string =>
-                                                    Boolean(tag),
-                                                ) ?? [];
-
-                                        return (
-                                            <article
-                                                key={post.slug}
-                                                className="card bg-base-200/50 border border-base-300"
-                                            >
-                                                {post.coverImage?.url && (
-                                                    <figure className="relative aspect-video">
-                                                        <Image
-                                                            src={
-                                                                post.coverImage
-                                                                    .url
-                                                            }
-                                                            alt={
-                                                                post.title ??
-                                                                'Post'
-                                                            }
-                                                            fill
-                                                            sizes="(min-width: 768px) 50vw, 100vw"
-                                                            className="object-cover"
-                                                        />
-                                                    </figure>
-                                                )}
-                                                <div className="card-body">
-                                                    <p className="text-sm text-base-content/60">
-                                                        {formatDate(
-                                                            post.publishedAt ??
-                                                                '',
-                                                        )}
-                                                    </p>
-                                                    <h2 className="card-title text-2xl">
-                                                        <Link
-                                                            href={`/posts/${post.slug}`}
-                                                            className="hover:text-primary transition-colors"
-                                                        >
-                                                            {post.title}
-                                                        </Link>
-                                                    </h2>
-                                                    {post.brief && (
-                                                        <p className="text-base-content/70 line-clamp-3">
-                                                            {post.brief}
-                                                        </p>
-                                                    )}
-                                                    {tagNames.length > 0 && (
-                                                        <div className="flex flex-wrap gap-2">
-                                                            {tagNames
-                                                                .slice(0, 3)
-                                                                .map((tag) => (
-                                                                    <span
-                                                                        key={
-                                                                            tag
-                                                                        }
-                                                                        className="badge badge-outline text-xs"
-                                                                    >
-                                                                        {tag}
-                                                                    </span>
-                                                                ))}
-                                                        </div>
-                                                    )}
-                                                </div>
-                                            </article>
-                                        );
-                                    })}
-                                </div>
-                                {totalPages > 1 && (
-                                    <div className="flex items-center justify-between mt-10">
-                                        <button
-                                            type="button"
-                                            className="btn btn-outline"
-                                            onClick={() =>
-                                                setPage(
-                                                    Math.max(
-                                                        1,
-                                                        currentPage - 1,
-                                                    ),
-                                                )
-                                            }
-                                            disabled={currentPage === 1}
-                                        >
-                                            Previous
-                                        </button>
-                                        <span className="text-sm text-base-content/70">
-                                            Page {currentPage} of {totalPages}
-                                        </span>
-                                        <button
-                                            type="button"
-                                            className="btn btn-outline"
-                                            onClick={() =>
-                                                setPage(
-                                                    Math.min(
-                                                        totalPages,
-                                                        currentPage + 1,
-                                                    ),
-                                                )
-                                            }
-                                            disabled={
-                                                currentPage === totalPages
-                                            }
-                                        >
-                                            Next
-                                        </button>
-                                    </div>
-                                )}
-                            </>
-                        )}
+                <section className="py-8 bg-base-100">
+                    <div className="container mx-auto px-4 max-w-6xl">
+                        <iframe
+                            src={BLOG_URL}
+                            className="w-full border-0 rounded-lg"
+                            style={{
+                                height: 'calc(100vh - 250px)',
+                                minHeight: '600px',
+                            }}
+                            title="Blog Posts"
+                            sandbox="allow-scripts allow-same-origin allow-popups allow-top-navigation"
+                            loading="lazy"
+                            referrerPolicy="no-referrer-when-downgrade"
+                        />
                     </div>
                 </section>
             </div>
@@ -201,58 +78,10 @@ export default PostsPage;
 export async function getStaticProps() {
     const config = await import('../../data/config.json');
 
-    // Try fetching from Hashnode API, fall back to local posts
-    const hashnodeItems = await fetchHashnodePosts(50);
-
-    let items = hashnodeItems;
-
-    if (!items || items.length === 0) {
-        // Fall back to local markdown posts when Hashnode API is unavailable
-        const { globSync } = await import('glob');
-        const matter = (await import('gray-matter')).default;
-        const fs = await import('fs');
-        const path = await import('path');
-
-        const postsDir = path.join(process.cwd(), 'posts');
-        const files = globSync('**/*.md', { cwd: postsDir });
-
-        const localPosts = files
-            .filter((file: string) =>
-                fs.statSync(path.join(postsDir, file)).isFile(),
-            )
-            .map((file: string) => {
-                const slug = file.replace(/\.[^/.]+$/, '');
-                const content = fs.readFileSync(
-                    path.join(postsDir, file),
-                    'utf-8',
-                );
-                const doc = matter(content);
-                return {
-                    title: (doc.data.title as string) ?? slug,
-                    brief: (doc.data.description as string) ?? '',
-                    slug,
-                    publishedAt: (doc.data.date as string) ?? '',
-                    tags: ((doc.data.tag ?? []) as string[]).map(
-                        (t: string) => ({ name: t }),
-                    ),
-                    coverImage: doc.data.hero_image
-                        ? { url: doc.data.hero_image as string }
-                        : null,
-                };
-            });
-
-        items = localPosts.sort(
-            (a, b) =>
-                new Date(b.publishedAt).getTime() -
-                new Date(a.publishedAt).getTime(),
-        );
-    }
-
     return {
         props: {
             title: config.default.title,
             description: config.default.description,
-            items,
         },
         revalidate: 300,
     };
