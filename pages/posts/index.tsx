@@ -160,8 +160,72 @@ const PostsPage = ({ title, description, items }: PostsPageProps) => {
 
 export default PostsPage;
 
-// Fetch posts from hashnode.com/@dunghd RSC stream
+// Fetch posts from blog.productsway.com RSS feed (primary) or hashnode.com profile RSC (fallback)
 async function fetchPostsFromHashnode(): Promise<LocalPost[]> {
+    // Try RSS feed first
+    try {
+        const rss = await fetch('https://blog.productsway.com/rss.xml', {
+            headers: { 'User-Agent': 'ProductswayBlog/1.0' },
+            signal: AbortSignal.timeout(10000),
+        });
+        if (rss.ok) {
+            const xml = await rss.text();
+            // Parse RSS XML items
+            const items = xml.match(/<item>([\s\S]*?)<\/item>/g) ?? [];
+            const posts = items.map((item: string) => {
+                var slug =
+                    item.match(
+                        /<link>https:\/\/blog\.productsway\.com\/([^<]+)<\/link>/,
+                    )?.[1] ??
+                    item.match(
+                        /<guid[^>]*>https:\/\/blog\.productsway\.com\/([^<]+)<\/guid>/,
+                    )?.[1] ??
+                    '';
+                var title =
+                    item.match(
+                        /<title><!\[CDATA\[([^\]]+)\]\]><\/title>/,
+                    )?.[1] ??
+                    item.match(/<title>([^<]+)<\/title>/)?.[1] ??
+                    '';
+                var description =
+                    item.match(
+                        /<description><!\[CDATA\[([^\]]+)\]\]><\/description>/,
+                    )?.[1] ??
+                    item.match(/<description>([^<]+)<\/description>/)?.[1] ??
+                    '';
+                var date = item.match(/<pubDate>([^<]+)<\/pubDate>/)?.[1] ?? '';
+                var cover =
+                    item.match(/<media:content[^>]*url="([^"]+)"/)?.[1] ??
+                    item.match(/<enclosure[^>]*url="([^"]+)"/)?.[1] ??
+                    null;
+                return {
+                    slug: slug.replace(/\/$/, ''),
+                    title: title.trim(),
+                    description: description.trim(),
+                    date: new Date(date).toISOString(),
+                    cover,
+                };
+            });
+            return posts
+                .filter((p) => p.slug && p.title)
+                .map((p) => ({
+                    slug: p.slug,
+                    title: p.title,
+                    description: p.description,
+                    date: p.date,
+                    tags: [],
+                    hero_image: p.cover,
+                }))
+                .sort(
+                    (a, b) =>
+                        new Date(b.date).getTime() - new Date(a.date).getTime(),
+                );
+        }
+    } catch {
+        /* fall through to RSC */
+    }
+
+    // Fall back to RSC stream from hashnode.com profile page
     try {
         const res = await fetch('https://hashnode.com/@dunghd', {
             headers: { 'User-Agent': 'ProductswayBlog/1.0' },
@@ -192,9 +256,7 @@ async function fetchPostsFromHashnode(): Promise<LocalPost[]> {
             }
             if (chunkEnd < 0) break;
             try {
-                data += JSON.parse(
-                    '"' + html.slice(quoteStart + 1, chunkEnd) + '"',
-                );
+                data += JSON.parse(`"${html.slice(quoteStart + 1, chunkEnd)}"`);
             } catch {
                 /* skip malformed */
             }
@@ -237,7 +299,7 @@ async function fetchPostsFromHashnode(): Promise<LocalPost[]> {
         }> = [];
 
         try {
-            posts = JSON.parse('[' + cleaned + ']');
+            posts = JSON.parse(`[${cleaned}]`);
         } catch {
             // Fallback: extract slugs/titles via regex if JSON fails
             const slugRe = /"slug":"([^"]+)"/g;
