@@ -94,3 +94,4 @@ tina/__generated__
 .agents/skills/agent-browser
 .claude/skills
 .opencode/skills
+.vercel

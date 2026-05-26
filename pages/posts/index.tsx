@@ -200,7 +200,47 @@ export default PostsPage;
 
 export async function getStaticProps() {
     const config = await import('../../data/config.json');
-    const items = await fetchHashnodePosts(50);
+
+    // Try fetching from Hashnode API, fall back to local posts
+    const hashnodeItems = await fetchHashnodePosts(50);
+
+    let items = hashnodeItems;
+
+    if (!items || items.length === 0) {
+        // Fall back to local markdown posts when Hashnode API is unavailable
+        const matter = (await import('gray-matter')).default;
+        // @ts-expect-error require.context is a webpack function
+        const localPosts = ((context) => {
+            const keys = context.keys();
+            return keys.map((key: string) => {
+                const slug = key
+                    .replace(/^.*[\\/]/, '')
+                    .split('.')
+                    .slice(0, -1)
+                    .join('.');
+                const doc = matter(context(key).default);
+                return {
+                    title: doc.data.title as string,
+                    brief: doc.data.description as string,
+                    slug,
+                    publishedAt: doc.data.date as string,
+                    tags: ((doc.data.tag ?? []) as string[]).map(
+                        (t: string) => ({ name: t }),
+                    ),
+                    coverImage: doc.data.hero_image
+                        ? { url: doc.data.hero_image as string }
+                        : undefined,
+                };
+            });
+            // @ts-expect-error require.context is a webpack function
+        })(require.context('../../posts', true, /\.md$/));
+
+        items = localPosts.sort(
+            (a, b) =>
+                new Date(b.publishedAt).getTime() -
+                new Date(a.publishedAt).getTime(),
+        );
+    }
 
     return {
         props: {

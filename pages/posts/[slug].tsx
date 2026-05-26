@@ -1,4 +1,5 @@
 import Layout from 'components/Layout';
+import matter from 'gray-matter';
 import type { HashnodePostDetail } from 'lib/hashnode';
 import {
     fetchHashnodePostBySlug,
@@ -162,20 +163,56 @@ type StaticPropsContext = {
 export async function getStaticProps({ params }: StaticPropsContext) {
     const { slug } = params;
     const config = await import('../../data/config.json');
+
+    // Try Hashnode API first
     const post = await fetchHashnodePostBySlug(slug);
 
-    if (!post) {
-        return { notFound: true, revalidate: 60 };
+    if (post) {
+        return {
+            props: {
+                siteTitle: config.default.title,
+                siteDescription: config.default.description,
+                post,
+            },
+            revalidate: 300,
+        };
     }
 
-    return {
-        props: {
-            siteTitle: config.default.title,
-            siteDescription: config.default.description,
-            post,
-        },
-        revalidate: 300,
-    };
+    // Fall back to local markdown file
+    try {
+        const content = await import(`../../posts/${slug}.md`);
+        const data = matter(content.default);
+
+        const localPost: HashnodePostDetail = {
+            title: data.data.title ?? slug,
+            brief: data.data.description ?? '',
+            slug,
+            publishedAt: data.data.date ?? '',
+            tags: ((data.data.tag ?? []) as string[]).map((t: string) => ({
+                name: t,
+            })),
+            content: {
+                markdown: data.content,
+            },
+            coverImage: data.data.hero_image
+                ? { url: data.data.hero_image as string }
+                : undefined,
+            author: {
+                name: (data.data.author as string) ?? 'Dung Huynh Duc',
+            },
+        };
+
+        return {
+            props: {
+                siteTitle: config.default.title,
+                siteDescription: config.default.description,
+                post: localPost,
+            },
+            revalidate: 300,
+        };
+    } catch {
+        return { notFound: true, revalidate: 60 };
+    }
 }
 
 export async function getStaticPaths() {
