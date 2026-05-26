@@ -1,11 +1,12 @@
 'use client';
 
 import { getCategory, getCategoryLabel } from 'components/Badge';
-import type { BlogPost, TinaPost } from 'lib/types';
+import type { BlogPost } from 'lib/types';
 import { formatDate } from 'lib/utils/date';
 import Image from 'next/image';
-import { useMemo, useState } from 'react';
-import useSWR from 'swr';
+import { useMemo } from 'react';
+
+const BLOG_URL = 'https://blog.productsway.com';
 
 type BlogPostsSectionProps = {
     fallbackPosts: BlogPost[];
@@ -13,14 +14,15 @@ type BlogPostsSectionProps = {
     initialHasRemotePosts?: boolean;
 };
 
-const sortByDateDesc = (items: TinaPost[]) => {
+const sortByDateDesc = (items: BlogPost[]) => {
     const getTimestamp = (date?: string) => {
         const timestamp = Date.parse(date ?? '');
         return Number.isNaN(timestamp) ? 0 : timestamp;
     };
 
     return [...items].sort(
-        (a, b) => getTimestamp(b.date) - getTimestamp(a.date),
+        (a, b) =>
+            getTimestamp(b.frontmatter.date) - getTimestamp(a.frontmatter.date),
     );
 };
 
@@ -29,60 +31,12 @@ export function BlogPostsSection({
     allPostsUrl,
     initialHasRemotePosts = false,
 }: BlogPostsSectionProps) {
-    const [hasRemotePosts, setHasRemotePosts] = useState(initialHasRemotePosts);
-
-    const fallbackTinaPosts = useMemo<TinaPost[]>(
-        () =>
-            sortByDateDesc(
-                fallbackPosts.map((post) => ({
-                    _sys: { filename: post.slug },
-                    title: post.frontmatter.title,
-                    description: post.frontmatter.description,
-                    date: post.frontmatter.date,
-                    tag: post.frontmatter.tag,
-                    hero_image: post.frontmatter.hero_image,
-                })),
-            ),
+    const sortedPosts = useMemo(
+        () => sortByDateDesc(fallbackPosts),
         [fallbackPosts],
     );
 
-    const fetcher = async (url: string) => {
-        const res = await fetch(url, { cache: 'no-store' });
-        if (!res.ok) {
-            throw new Error('Failed to load posts');
-        }
-        return (await res.json()) as TinaPost[];
-    };
-
-    const { data: posts } = useSWR<TinaPost[]>('/api/posts', fetcher, {
-        fallbackData: fallbackTinaPosts,
-        refreshInterval: 5 * 60 * 1000,
-        dedupingInterval: 60 * 1000,
-        revalidateOnFocus: true,
-        onSuccess: (data) => setHasRemotePosts(data.length > 0),
-    });
-
-    const resolvedPosts = posts && posts.length > 0 ? posts : fallbackTinaPosts;
-
-    const sortedPosts = useMemo(
-        () => sortByDateDesc(resolvedPosts ?? []),
-        [resolvedPosts],
-    );
-
-    const postBasePath = hasRemotePosts ? '/posts' : '/notes';
-    const resolvedAllPostsUrl =
-        allPostsUrl ?? (hasRemotePosts ? '/posts' : '/notes');
-
-    const displayPosts = sortedPosts.map((post) => ({
-        slug: post._sys.filename,
-        frontmatter: {
-            title: post.title,
-            description: post.description,
-            date: post.date,
-            tag: post.tag,
-            hero_image: post.hero_image,
-        },
-    }));
+    const resolvedAllPostsUrl = allPostsUrl ?? '/posts';
 
     return (
         <section className="py-20 bg-base-200/50">
@@ -96,25 +50,22 @@ export function BlogPostsSection({
                             className="text-xl text-base-content/70"
                             suppressHydrationWarning
                         >
-                            {hasRemotePosts
+                            {initialHasRemotePosts
                                 ? "Fresh from ITMan's Blog"
                                 : 'Guides, TILs, and tutorials'}
                         </p>
                     </div>
-                    <a
-                        href={resolvedAllPostsUrl}
-                        className="btn btn-primary"
-                        target="_blank"
-                        rel="noreferrer"
-                    >
+                    <a href={resolvedAllPostsUrl} className="btn btn-primary">
                         View All Posts
                     </a>
                 </div>
                 <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-                    {displayPosts.slice(0, 6).map((post: BlogPost) => (
+                    {sortedPosts.slice(0, 6).map((post: BlogPost) => (
                         <a
                             key={post.slug}
-                            href={`${postBasePath}/${post.slug}`}
+                            href={`${BLOG_URL}/${post.slug}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="shadow-xl transition-all hover:shadow-2xl hover:-translate-y-1 card bg-base-100 group"
                         >
                             {post.frontmatter.hero_image && (

@@ -1,7 +1,7 @@
 import { Button } from 'components/Button';
 import Layout from 'components/Layout';
 import { RepoStars } from 'components/RepoStars';
-import { fetchHashnodePosts, mapHashnodeSummaryToBlogPost } from 'lib/hashnode';
+
 import type { BlogPost, VideoPost } from 'lib/types';
 import { dedupeBySlug, extractSlug, parseMarkdown } from 'lib/utils/array';
 import dynamic from 'next/dynamic';
@@ -625,6 +625,110 @@ const Index = ({
 
 export default Index;
 
+// Shared RSC parser for hashnode.com/@dunghd profile page
+async function fetchRemotePosts(): Promise<
+    Array<{
+        slug: string;
+        title: string;
+        description: string;
+        date: string;
+        hero_image: string | null;
+    }>
+> {
+    try {
+        const res = await fetch('https://hashnode.com/@dunghd', {
+            headers: { 'User-Agent': 'ProductswayBlog/1.0' },
+            signal: AbortSignal.timeout(10000),
+        });
+        if (!res.ok) return [];
+        const html = await res.text();
+
+        const MARKER = '__next_f.push([1,';
+        let data = '';
+        let pos = 0;
+        while (true) {
+            const chunkStart = html.indexOf(MARKER, pos);
+            if (chunkStart < 0) break;
+            const quoteStart = html.indexOf('"', chunkStart + MARKER.length);
+            if (quoteStart < 0) break;
+            let chunkEnd = -1;
+            for (let i = quoteStart + 1; i < html.length; i++) {
+                if (html[i] === '\\' && html[i + 1] === '"') {
+                    i++;
+                    continue;
+                }
+                if (html[i] === '"') {
+                    chunkEnd = i;
+                    break;
+                }
+            }
+            if (chunkEnd < 0) break;
+            try {
+                data += JSON.parse(`"${html.slice(quoteStart + 1, chunkEnd)}"`);
+            } catch {
+                /* skip */
+            }
+            pos = chunkEnd + 1;
+        }
+
+        if (!data) return [];
+
+        const ARRAY_MARKER = '"initialPosts":[';
+        const arrIdx = data.indexOf(ARRAY_MARKER);
+        if (arrIdx < 0) return [];
+
+        const arrStart = arrIdx + ARRAY_MARKER.length;
+        let depth = 0;
+        let arrEnd = -1;
+        for (let i = arrStart; i < data.length; i++) {
+            if (data[i] === '[') depth++;
+            else if (data[i] === ']') {
+                if (depth === 0) {
+                    arrEnd = i;
+                    break;
+                }
+                depth--;
+            }
+        }
+        if (arrEnd < 0) return [];
+
+        const cleaned = data
+            .slice(arrStart, arrEnd)
+            .replace(/"\$D(\d{4}-\d{2}-\d{2}T[^"]+)"/g, '"$1"');
+
+        let posts: Array<{
+            slug: string;
+            title: string;
+            brief: string;
+            publishedAt: string;
+            coverImage?: { url: string };
+        }> = [];
+
+        try {
+            posts = JSON.parse(`[${cleaned}]`);
+        } catch {
+            const _slugs = [...cleaned.matchAll(/"/g)];
+            return [];
+        }
+
+        return posts
+            .filter((p) => p.slug && p.title)
+            .map((p) => ({
+                slug: p.slug,
+                title: p.title,
+                description: p.brief ?? '',
+                date: p.publishedAt ?? '',
+                hero_image: p.coverImage?.url ?? null,
+            }))
+            .sort(
+                (a, b) =>
+                    new Date(b.date).getTime() - new Date(a.date).getTime(),
+            );
+    } catch {
+        return [];
+    }
+}
+
 export async function getStaticProps() {
     const siteConfig = await import('../data/config.json');
 
@@ -641,12 +745,28 @@ export async function getStaticProps() {
     // @ts-expect-error require.context is a webpack function
     const videos = loadMarkdown(require.context('../videos', true, /\.md$/));
 
-    const hashnodeSummaries = await fetchHashnodePosts(6);
-    const hashnodePosts = hashnodeSummaries.map((post) =>
-        mapHashnodeSummaryToBlogPost(post),
-    );
-    const localPosts = dedupeBySlug(posts as BlogPost[]).slice(0, 6);
-    const allBlogs = hashnodePosts.length > 0 ? hashnodePosts : localPosts;
+    // Try fetching from hashnode.com/@dunghd RSC stream
+    const remotePosts = await fetchRemotePosts();
+
+    let allBlogs: BlogPost[];
+    let initialHasRemotePosts = false;
+
+    if (remotePosts.length > 0) {
+        allBlogs = remotePosts.map((p) => ({
+            slug: p.slug,
+            frontmatter: {
+                title: p.title,
+                description: p.description,
+                date: p.date,
+                tag: [],
+                hero_image: p.hero_image,
+            },
+        }));
+        initialHasRemotePosts = true;
+    } else {
+        const localPosts = dedupeBySlug(posts as BlogPost[]).slice(0, 6);
+        allBlogs = localPosts;
+    }
 
     return {
         props: {
@@ -656,7 +776,7 @@ export async function getStaticProps() {
             description: siteConfig.default.description,
             repos: reposData,
             youtubeApiKey: !!process.env.YOUTUBE_API_KEY,
-            initialHasRemotePosts: hashnodePosts.length > 0,
+            initialHasRemotePosts,
         },
         revalidate: 300,
     };
