@@ -1,6 +1,5 @@
 'use client';
 
-import { getCategory, getCategoryLabel } from 'components/Badge';
 import type { BlogPost } from 'lib/types';
 import { formatDate } from 'lib/utils/date';
 import Image from 'next/image';
@@ -81,11 +80,6 @@ export function BlogPostsSection({
                             )}
                             <div className="card-body">
                                 <div className="flex gap-2 items-center mb-2">
-                                    <span className="text-xs badge badge-ghost">
-                                        {getCategoryLabel(
-                                            getCategory(post.slug),
-                                        )}
-                                    </span>
                                     {post.frontmatter.tag
                                         ?.slice(0, 2)
                                         .map((tag: string) => (

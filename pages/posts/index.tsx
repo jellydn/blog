@@ -173,7 +173,7 @@ async function fetchPostsFromHashnode(): Promise<LocalPost[]> {
             // Parse RSS XML items
             const items = xml.match(/<item>([\s\S]*?)<\/item>/g) ?? [];
             const posts = items.map((item: string) => {
-                var slug =
+                const slug =
                     item.match(
                         /<link>https:\/\/blog\.productsway\.com\/([^<]+)<\/link>/,
                     )?.[1] ??
@@ -181,28 +181,33 @@ async function fetchPostsFromHashnode(): Promise<LocalPost[]> {
                         /<guid[^>]*>https:\/\/blog\.productsway\.com\/([^<]+)<\/guid>/,
                     )?.[1] ??
                     '';
-                var title =
+                const title =
                     item.match(
                         /<title><!\[CDATA\[([^\]]+)\]\]><\/title>/,
                     )?.[1] ??
                     item.match(/<title>([^<]+)<\/title>/)?.[1] ??
                     '';
-                var description =
+                const description =
                     item.match(
                         /<description><!\[CDATA\[([^\]]+)\]\]><\/description>/,
                     )?.[1] ??
                     item.match(/<description>([^<]+)<\/description>/)?.[1] ??
                     '';
-                var date = item.match(/<pubDate>([^<]+)<\/pubDate>/)?.[1] ?? '';
-                var cover =
+                const date =
+                    item.match(/<pubDate>([^<]+)<\/pubDate>/)?.[1] ?? '';
+                const cover =
                     item.match(/<media:content[^>]*url="([^"]+)"/)?.[1] ??
                     item.match(/<enclosure[^>]*url="([^"]+)"/)?.[1] ??
                     null;
+                const tags = (
+                    item.match(/<category>([^<]+)<\/category>/g) ?? []
+                ).map((t) => t.replace(/<\/?category>/g, ''));
                 return {
                     slug: slug.replace(/\/$/, ''),
                     title: title.trim(),
                     description: description.trim(),
                     date: new Date(date).toISOString(),
+                    tags: tags,
                     cover,
                 };
             });
