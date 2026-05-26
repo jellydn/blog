@@ -162,17 +162,10 @@ export default PostsPage;
 
 // Fetch posts from blog.productsway.com RSS feed (primary) or hashnode.com profile RSC (fallback)
 async function fetchPostsFromHashnode(): Promise<LocalPost[]> {
-    // Try RSS feed first
-    try {
-        const rss = await fetch('https://blog.productsway.com/rss.xml', {
-            headers: { 'User-Agent': 'ProductswayBlog/1.0' },
-            signal: AbortSignal.timeout(10000),
-        });
-        if (rss.ok) {
-            const xml = await rss.text();
-            // Parse RSS XML items
-            const items = xml.match(/<item>([\s\S]*?)<\/item>/g) ?? [];
-            const posts = items.map((item: string) => {
+    // Helper to parse an RSS XML string into items
+    function parseRSSItems(xml: string) {
+        return (xml.match(/<item>([\s\S]*?)<\/item>/g) ?? []).map(
+            (item: string) => {
                 const slug =
                     item.match(
                         /<link>https:\/\/blog\.productsway\.com\/([^<]+)<\/link>/,
@@ -201,24 +194,95 @@ async function fetchPostsFromHashnode(): Promise<LocalPost[]> {
                     null;
                 const tags = (
                     item.match(/<category>([^<]+)<\/category>/g) ?? []
-                ).map((t) => t.replace(/<\/?category>/g, ''));
+                ).map((t: string) => t.replace(/<\/?category>/g, ''));
                 return {
                     slug: slug.replace(/\/$/, ''),
                     title: title.trim(),
                     description: description.trim(),
                     date: new Date(date).toISOString(),
-                    tags: tags,
+                    tags,
                     cover,
                 };
+            },
+        );
+    }
+
+    // Try RSS feed first, with fallback to sitemap.xml for all posts
+    const BASE_URL = 'https://blog.productsway.com';
+    const FEED_URLS = [`${BASE_URL}/rss.xml`, `${BASE_URL}/sitemap.xml`];
+    const allPosts: Array<{
+        slug: string;
+        title: string;
+        description: string;
+        date: string;
+        tags: string[];
+        cover: string | null;
+    }> = [];
+
+    try {
+        // Try RSS first
+        for (const url of FEED_URLS) {
+            const res = await fetch(url, {
+                headers: { 'User-Agent': 'ProductswayBlog/1.0' },
+                signal: AbortSignal.timeout(10000),
             });
-            return posts
+            if (!res.ok) continue;
+
+            const xml = await res.text();
+
+            if (url.includes('sitemap')) {
+                // Parse sitemap URLs: <url><loc>https://blog.productsway.com/SLUG</loc>...</url>
+                const urls =
+                    xml.match(/<url><loc>[^<]+<\/loc>[\s\S]*?<\/url>/g) ?? [];
+                for (const entry of urls) {
+                    const href = entry.match(/<loc>([^<]+)<\/loc>/)?.[1] ?? '';
+                    const slug = href
+                        .replace(`${BASE_URL}/`, '')
+                        .replace(/\/$/, '');
+                    if (
+                        slug &&
+                        !slug.includes('tag/') &&
+                        !slug.includes('archive/') &&
+                        !slug.includes('page/')
+                    ) {
+                        allPosts.push({
+                            slug,
+                            title: slug
+                                .replace(/[-]/g, ' ')
+                                .replace(/-/g, ' ')
+                                .replace(/\b\w/g, (c: string) =>
+                                    c.toUpperCase(),
+                                ),
+                            description: '',
+                            date:
+                                entry.match(
+                                    /<lastmod>([^<]+)<\/lastmod>/,
+                                )?.[1] ?? '',
+                            tags: [],
+                            cover: null,
+                        });
+                    }
+                }
+                // Sitemap found all, no need for RSS
+                break;
+            } else {
+                // Parse RSS items
+                const items = parseRSSItems(xml);
+                for (const item of items) {
+                    allPosts.push(item);
+                }
+            }
+        }
+
+        if (allPosts.length > 0) {
+            return allPosts
                 .filter((p) => p.slug && p.title)
                 .map((p) => ({
                     slug: p.slug,
                     title: p.title,
                     description: p.description,
                     date: p.date,
-                    tags: [],
+                    tags: p.tags,
                     hero_image: p.cover,
                 }))
                 .sort(
@@ -354,43 +418,44 @@ async function fetchPostsFromHashnode(): Promise<LocalPost[]> {
 export async function getStaticProps() {
     const config = await import('../../data/config.json');
 
-    // Try hashnode.com/@dunghd RSC stream first
-    let items = await fetchPostsFromHashnode();
+    // Get remote posts from RSS/RSC
+    const remotePosts = await fetchPostsFromHashnode();
 
-    // Fall back to local markdown if remote fails
-    if (items.length === 0) {
-        const { globSync } = await import('glob');
-        const fs = await import('node:fs');
-        const path = await import('node:path');
+    // Always include local posts too (merge, dedupe by slug)
+    const { globSync } = await import('glob');
+    const fs = await import('node:fs');
+    const path = await import('node:path');
 
-        const postsDir = path.join(process.cwd(), 'posts');
-        const files = globSync('**/*.md', { cwd: postsDir });
+    const postsDir = path.join(process.cwd(), 'posts');
+    const files = globSync('**/*.md', { cwd: postsDir });
 
-        items = files
-            .filter((file: string) =>
-                fs.statSync(path.join(postsDir, file)).isFile(),
-            )
-            .map((file: string) => {
-                const slug = file.replace(/\.[^/.]+$/, '');
-                const content = fs.readFileSync(
-                    path.join(postsDir, file),
-                    'utf-8',
-                );
-                const doc = matter(content);
-                return {
-                    slug,
-                    title: (doc.data.title as string) ?? slug,
-                    description: (doc.data.description as string) ?? '',
-                    date: (doc.data.date as string) ?? '',
-                    tags: (doc.data.tag ?? []) as string[],
-                    hero_image: (doc.data.hero_image as string | null) ?? null,
-                };
-            })
-            .sort(
-                (a, b) =>
-                    new Date(b.date).getTime() - new Date(a.date).getTime(),
-            );
-    }
+    const localPosts = files
+        .filter((file) => fs.statSync(path.join(postsDir, file)).isFile())
+        .map((file) => {
+            const slug = file.replace(/\.[^/.]+$/, '');
+            const content = fs.readFileSync(path.join(postsDir, file), 'utf-8');
+            const doc = matter(content);
+            return {
+                slug,
+                title: doc.data.title ?? slug,
+                description: doc.data.description ?? '',
+                date: doc.data.date ?? '',
+                tags: doc.data.tag ?? [],
+                hero_image: doc.data.hero_image ?? null,
+            };
+        });
+
+    // Merge, deduplicate, sort
+    const seen = new Set();
+    const items = [...remotePosts, ...localPosts]
+        .filter((p) => {
+            if (seen.has(p.slug)) return false;
+            seen.add(p.slug);
+            return true;
+        })
+        .sort(
+            (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
+        );
 
     return {
         props: {
