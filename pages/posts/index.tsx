@@ -209,7 +209,6 @@ export async function getStaticProps() {
     if (!items || items.length === 0) {
         // Fall back to local markdown posts when Hashnode API is unavailable
         const matter = (await import('gray-matter')).default;
-        // @ts-expect-error require.context is a webpack function
         const localPosts = ((context) => {
             const keys = context.keys();
             return keys.map((key: string) => {
@@ -232,7 +231,6 @@ export async function getStaticProps() {
                         : undefined,
                 };
             });
-            // @ts-expect-error require.context is a webpack function
         })(require.context('../../posts', true, /\.md$/));
 
         items = localPosts.sort(
