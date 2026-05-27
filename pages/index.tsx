@@ -625,7 +625,7 @@ const Index = ({
 
 export default Index;
 
-// Shared RSC parser for hashnode.com/@dunghd profile page
+// Fetch posts from blog.productsway.com RSS feed (primary) or hashnode.com profile RSC (fallback)
 async function fetchRemotePosts(): Promise<
     Array<{
         slug: string;
@@ -635,6 +635,72 @@ async function fetchRemotePosts(): Promise<
         hero_image: string | null;
     }>
 > {
+    // Try RSS first
+    try {
+        const rss = await fetch('https://blog.productsway.com/rss.xml', {
+            headers: { 'User-Agent': 'ProductswayBlog/1.0' },
+            signal: AbortSignal.timeout(10000),
+        });
+        if (rss.ok) {
+            const xml = await rss.text();
+            const items = xml.match(/<item>([\s\S]*?)<\/item>/g) ?? [];
+            const posts = items.map((item: string) => {
+                const slug =
+                    item.match(
+                        /<link>https:\/\/blog\.productsway\.com\/([^<]+)<\/link>/,
+                    )?.[1] ??
+                    item.match(
+                        /<guid[^>]*>https:\/\/blog\.productsway\.com\/([^<]+)<\/guid>/,
+                    )?.[1] ??
+                    '';
+                const title =
+                    item.match(
+                        /<title><!\[CDATA\[([^\]]+)\]\]><\/title>/,
+                    )?.[1] ??
+                    item.match(/<title>([^<]+)<\/title>/)?.[1] ??
+                    '';
+                const description =
+                    item.match(
+                        /<description><!\[CDATA\[([^\]]+)\]\]><\/description>/,
+                    )?.[1] ??
+                    item.match(/<description>([^<]+)<\/description>/)?.[1] ??
+                    '';
+                const date =
+                    item.match(/<pubDate>([^<]+)<\/pubDate>/)?.[1] ?? '';
+                const cover =
+                    item.match(/<media:content[^>]*url="([^"]+)"/)?.[1] ??
+                    item.match(/<enclosure[^>]*url="([^"]+)"/)?.[1] ??
+                    null;
+                return {
+                    slug: slug.replace(/\/$/, ''),
+                    title: title.trim(),
+                    description: description.trim(),
+                    date: new Date(date).toISOString(),
+                    cover,
+                };
+            });
+            if (posts.length > 0) {
+                return posts
+                    .filter((p) => p.slug && p.title)
+                    .map((p) => ({
+                        slug: p.slug,
+                        title: p.title,
+                        description: p.description,
+                        date: p.date,
+                        hero_image: p.cover,
+                    }))
+                    .sort(
+                        (a, b) =>
+                            new Date(b.date).getTime() -
+                            new Date(a.date).getTime(),
+                    );
+            }
+        }
+    } catch {
+        /* fall through */
+    }
+
+    // Fall back to RSC
     try {
         const res = await fetch('https://hashnode.com/@dunghd', {
             headers: { 'User-Agent': 'ProductswayBlog/1.0' },
@@ -642,78 +708,61 @@ async function fetchRemotePosts(): Promise<
         });
         if (!res.ok) return [];
         const html = await res.text();
-
         const MARKER = '__next_f.push([1,';
         let data = '';
         let pos = 0;
         while (true) {
-            const chunkStart = html.indexOf(MARKER, pos);
-            if (chunkStart < 0) break;
-            const quoteStart = html.indexOf('"', chunkStart + MARKER.length);
-            if (quoteStart < 0) break;
-            let chunkEnd = -1;
-            for (let i = quoteStart + 1; i < html.length; i++) {
+            const cs = html.indexOf(MARKER, pos);
+            if (cs < 0) break;
+            const qs = html.indexOf('"', cs + MARKER.length);
+            if (qs < 0) break;
+            let ce = -1;
+            for (let i = qs + 1; i < html.length; i++) {
                 if (html[i] === '\\' && html[i + 1] === '"') {
                     i++;
                     continue;
                 }
                 if (html[i] === '"') {
-                    chunkEnd = i;
+                    ce = i;
                     break;
                 }
             }
-            if (chunkEnd < 0) break;
+            if (ce < 0) break;
             try {
-                data += JSON.parse(`"${html.slice(quoteStart + 1, chunkEnd)}"`);
-            } catch {
-                /* skip */
-            }
-            pos = chunkEnd + 1;
+                data += JSON.parse('"' + html.slice(qs + 1, ce) + '"');
+            } catch {}
+            pos = ce + 1;
         }
-
         if (!data) return [];
-
-        const ARRAY_MARKER = '"initialPosts":[';
-        const arrIdx = data.indexOf(ARRAY_MARKER);
-        if (arrIdx < 0) return [];
-
-        const arrStart = arrIdx + ARRAY_MARKER.length;
-        let depth = 0;
-        let arrEnd = -1;
-        for (let i = arrStart; i < data.length; i++) {
-            if (data[i] === '[') depth++;
+        const am = '"initialPosts":[';
+        const ai = data.indexOf(am);
+        if (ai < 0) return [];
+        const as = ai + am.length;
+        let d = 0;
+        let ae = -1;
+        for (let i = as; i < data.length; i++) {
+            if (data[i] === '[') d++;
             else if (data[i] === ']') {
-                if (depth === 0) {
-                    arrEnd = i;
+                if (d === 0) {
+                    ae = i;
                     break;
                 }
-                depth--;
+                d--;
             }
         }
-        if (arrEnd < 0) return [];
-
-        const cleaned = data
-            .slice(arrStart, arrEnd)
+        if (ae < 0) return [];
+        const cl = data
+            .slice(as, ae)
             .replace(/"\$D(\d{4}-\d{2}-\d{2}T[^"]+)"/g, '"$1"');
-
-        let posts: Array<{
-            slug: string;
-            title: string;
-            brief: string;
-            publishedAt: string;
-            coverImage?: { url: string };
-        }> = [];
-
+        let posts: any[] = [];
         try {
-            posts = JSON.parse(`[${cleaned}]`);
+            posts = JSON.parse('[' + cl + ']');
         } catch {
-            const _slugs = [...cleaned.matchAll(/"/g)];
             return [];
         }
-
         return posts
-            .filter((p) => p.slug && p.title)
-            .map((p) => ({
+            .filter((p: any) => p.slug && p.title)
+            .map((p: any) => ({
                 slug: p.slug,
                 title: p.title,
                 description: p.brief ?? '',
@@ -721,7 +770,7 @@ async function fetchRemotePosts(): Promise<
                 hero_image: p.coverImage?.url ?? null,
             }))
             .sort(
-                (a, b) =>
+                (a: any, b: any) =>
                     new Date(b.date).getTime() - new Date(a.date).getTime(),
             );
     } catch {
@@ -745,14 +794,14 @@ export async function getStaticProps() {
     // @ts-expect-error require.context is a webpack function
     const videos = loadMarkdown(require.context('../videos', true, /\.md$/));
 
-    // Try fetching from hashnode.com/@dunghd RSC stream
+    // Fetch from blog.productsway.com RSS feed, fall back to RSC
     const remotePosts = await fetchRemotePosts();
 
     let allBlogs: BlogPost[];
     let initialHasRemotePosts = false;
 
     if (remotePosts.length > 0) {
-        allBlogs = remotePosts.map((p) => ({
+        allBlogs = remotePosts.slice(0, 6).map((p) => ({
             slug: p.slug,
             frontmatter: {
                 title: p.title,
@@ -764,8 +813,8 @@ export async function getStaticProps() {
         }));
         initialHasRemotePosts = true;
     } else {
-        const localPosts = dedupeBySlug(posts as BlogPost[]).slice(0, 6);
-        allBlogs = localPosts;
+        // No remote posts — use the View All Posts button to go to blog.productsway.com
+        allBlogs = [];
     }
 
     return {

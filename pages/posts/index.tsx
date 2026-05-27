@@ -418,44 +418,8 @@ async function fetchPostsFromHashnode(): Promise<LocalPost[]> {
 export async function getStaticProps() {
     const config = await import('../../data/config.json');
 
-    // Get remote posts from RSS/RSC
-    const remotePosts = await fetchPostsFromHashnode();
-
-    // Always include local posts too (merge, dedupe by slug)
-    const { globSync } = await import('glob');
-    const fs = await import('node:fs');
-    const path = await import('node:path');
-
-    const postsDir = path.join(process.cwd(), 'posts');
-    const files = globSync('**/*.md', { cwd: postsDir });
-
-    const localPosts = files
-        .filter((file) => fs.statSync(path.join(postsDir, file)).isFile())
-        .map((file) => {
-            const slug = file.replace(/\.[^/.]+$/, '');
-            const content = fs.readFileSync(path.join(postsDir, file), 'utf-8');
-            const doc = matter(content);
-            return {
-                slug,
-                title: doc.data.title ?? slug,
-                description: doc.data.description ?? '',
-                date: doc.data.date ?? '',
-                tags: doc.data.tag ?? [],
-                hero_image: doc.data.hero_image ?? null,
-            };
-        });
-
-    // Merge, deduplicate, sort
-    const seen = new Set();
-    const items = [...remotePosts, ...localPosts]
-        .filter((p) => {
-            if (seen.has(p.slug)) return false;
-            seen.add(p.slug);
-            return true;
-        })
-        .sort(
-            (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
-        );
+    // Only show posts from blog.productsway.com (RSS/RSC), no local notes
+    const items = await fetchPostsFromHashnode();
 
     return {
         props: {
