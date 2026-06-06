@@ -5,6 +5,42 @@ const MIN_DESCRIPTION_LEN = 20;
 const MAX_ENRICH_PER_RUN = 29;
 /** Matches typical sitemap-only enrich count (~9); single wave when ≤9 fetches. */
 const PAGE_ENRICH_CONCURRENCY = 9;
+const PAGE_FETCH_ATTEMPTS = 3;
+const RETRYABLE_PAGE_STATUS = new Set([429, 502, 503, 504]);
+
+async function fetchArticleHtmlWithRetry(
+    slug: string,
+): Promise<{ html: string; retries: number }> {
+    let retries = 0;
+    for (let attempt = 0; attempt < PAGE_FETCH_ATTEMPTS; attempt++) {
+        try {
+            const res = await fetch(`${BASE_URL}/${slug}`, {
+                headers: defaultBlogFetchHeaders(),
+                signal: AbortSignal.timeout(12000),
+            });
+            if (res.ok) {
+                return { html: await res.text(), retries };
+            }
+            if (
+                RETRYABLE_PAGE_STATUS.has(res.status) &&
+                attempt < PAGE_FETCH_ATTEMPTS - 1
+            ) {
+                retries += 1;
+                await new Promise((r) => setTimeout(r, 400 * (attempt + 1)));
+                continue;
+            }
+            return { html: '', retries };
+        } catch {
+            if (attempt < PAGE_FETCH_ATTEMPTS - 1) {
+                retries += 1;
+                await new Promise((r) => setTimeout(r, 400 * (attempt + 1)));
+                continue;
+            }
+            return { html: '', retries };
+        }
+    }
+    return { html: '', retries };
+}
 
 function decodeHtmlEntities(text: string): string {
     return text
@@ -158,23 +194,28 @@ function needsPageEnrich(post: EnrichableSummary): boolean {
 /** Fill title, brief, and cover from article HTML meta (one fetch per post). */
 export async function enrichArticleSummariesFromPages<
     T extends EnrichableSummary,
->(posts: T[]): Promise<{ posts: T[]; pageFetches: number }> {
+>(
+    posts: T[],
+): Promise<{
+    posts: T[];
+    pageFetches: number;
+    pageEnrichRetries: number;
+}> {
     const toFetch = posts.filter(needsPageEnrich).slice(0, MAX_ENRICH_PER_RUN);
     if (toFetch.length === 0) {
-        return { posts, pageFetches: 0 };
+        return { posts, pageFetches: 0, pageEnrichRetries: 0 };
     }
 
     const metaBySlug = new Map<string, PageMeta>();
+    let pageEnrichRetries = 0;
 
     const fetchOne = async (post: EnrichableSummary) => {
         const slug = post.slug ?? '';
         try {
-            const res = await fetch(`${BASE_URL}/${slug}`, {
-                headers: defaultBlogFetchHeaders(),
-                signal: AbortSignal.timeout(12000),
-            });
-            if (!res.ok) return;
-            const meta = parsePageMeta(await res.text());
+            const { html, retries } = await fetchArticleHtmlWithRetry(slug);
+            pageEnrichRetries += retries;
+            if (!html) return;
+            const meta = parsePageMeta(html);
             if (
                 meta.title ||
                 meta.description ||
@@ -195,7 +236,11 @@ export async function enrichArticleSummariesFromPages<
     }
 
     if (metaBySlug.size === 0) {
-        return { posts, pageFetches: toFetch.length };
+        return {
+            posts,
+            pageFetches: toFetch.length,
+            pageEnrichRetries,
+        };
     }
 
     const enriched = posts.map((post) => {
@@ -234,7 +279,11 @@ export async function enrichArticleSummariesFromPages<
         };
     });
 
-    return { posts: enriched, pageFetches: toFetch.length };
+    return {
+        posts: enriched,
+        pageFetches: toFetch.length,
+        pageEnrichRetries,
+    };
 }
 
 /** @deprecated Use enrichArticleSummariesFromPages */

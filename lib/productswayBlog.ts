@@ -25,6 +25,11 @@ let publicationLoadInFlight: ReturnType<typeof loadArticleListItems> | null =
 
 let publicationLoadInvocationCount = 0;
 
+const getPublishedTimestamp = (date?: string) => {
+    const timestamp = Date.parse(date ?? '');
+    return Number.isNaN(timestamp) ? 0 : timestamp;
+};
+
 const toListItem = (post: BlogPost): ProductswayBlogListItem => ({
     slug: post.slug,
     title: post.frontmatter.title,
@@ -91,6 +96,7 @@ async function loadArticleListItems(): Promise<{
     pageEnrichMs: number;
     publicationLoadInvocations: number;
     feedRetries: number;
+    pageEnrichRetries: number;
 }> {
     publicationLoadInvocationCount += 1;
     const {
@@ -103,11 +109,21 @@ async function loadArticleListItems(): Promise<{
     } = await loadPublicationSummaries();
     const articles = raw.filter((s) => isBlogArticleSlug(s.slug ?? ''));
     const enrichStart = Date.now();
-    const { posts: enriched, pageFetches } =
-        await enrichArticleSummariesFromPages(articles);
+    const {
+        posts: enriched,
+        pageFetches,
+        pageEnrichRetries,
+    } = await enrichArticleSummariesFromPages(articles);
     const pageEnrichMs = Date.now() - enrichStart;
+    const sortedEnriched = [...enriched].sort(
+        (a, b) =>
+            getPublishedTimestamp(b.publishedAt) -
+            getPublishedTimestamp(a.publishedAt),
+    );
     return {
-        items: enriched.map((s) => toListItem(mapHashnodeSummaryToBlogPost(s))),
+        items: sortedEnriched.map((s) =>
+            toListItem(mapHashnodeSummaryToBlogPost(s)),
+        ),
         graphqlCount,
         graphqlAvailable,
         pageEnrichFetches: pageFetches,
@@ -116,6 +132,7 @@ async function loadArticleListItems(): Promise<{
         pageEnrichMs,
         publicationLoadInvocations: publicationLoadInvocationCount,
         feedRetries,
+        pageEnrichRetries,
     };
 }
 
@@ -173,6 +190,7 @@ export async function fetchProductswayBlogBundle(): Promise<{
     pageEnrichMs: number;
     publicationLoadInvocations: number;
     feedRetries: number;
+    pageEnrichRetries: number;
 }> {
     const {
         items: all,
@@ -184,6 +202,7 @@ export async function fetchProductswayBlogBundle(): Promise<{
         pageEnrichMs,
         publicationLoadInvocations,
         feedRetries,
+        pageEnrichRetries,
     } = await loadArticleListItemsShared();
     return {
         all,
@@ -196,5 +215,6 @@ export async function fetchProductswayBlogBundle(): Promise<{
         pageEnrichMs,
         publicationLoadInvocations,
         feedRetries,
+        pageEnrichRetries,
     };
 }

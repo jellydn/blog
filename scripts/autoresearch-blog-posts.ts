@@ -21,6 +21,7 @@ const main = async () => {
         pageEnrichMs,
         publicationLoadInvocations,
         feedRetries,
+        pageEnrichRetries,
     } = bundleA;
     if (bundleB.all.length !== all.length) {
         throw new Error('deduped bundle length mismatch');
@@ -51,6 +52,17 @@ const main = async () => {
         (p) => p.frontmatter.hero_image,
     ).length;
     const usesShared = 1;
+    const dateTs = (d: string) => Date.parse(d) || 0;
+    const latestSixSlugs = [...all]
+        .sort((a, b) => dateTs(b.date) - dateTs(a.date))
+        .slice(0, HOMEPAGE_BLOG_POST_LIMIT)
+        .map((p) => p.slug);
+    const homepageSlugs = homepage.map((p) => p.slug);
+    const homepageMatchesLatestSix =
+        latestSixSlugs.length === homepageSlugs.length &&
+        latestSixSlugs.every((slug, i) => slug === homepageSlugs[i])
+            ? 1
+            : 0;
 
     console.log(`METRIC total_posts_count=${total}`);
     console.log(`METRIC homepage_posts_count=${homeCount}`);
@@ -73,6 +85,10 @@ const main = async () => {
         `METRIC publication_load_invocations=${publicationLoadInvocations}`,
     );
     console.log(`METRIC feed_fetch_retries=${feedRetries}`);
+    console.log(`METRIC page_enrich_retries=${pageEnrichRetries}`);
+    console.log(
+        `METRIC homepage_matches_latest_six=${homepageMatchesLatestSix}`,
+    );
 
     if (total > 0 && total <= 5) {
         console.log(

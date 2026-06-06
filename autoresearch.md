@@ -58,3 +58,5 @@ Ensure **productsway.com** shows Hashnode posts from **blog.productsway.com**:
 - **keep #15**: Overlap feed + gql probe; `graphqlAvailable` on bundle; cover quality metrics (29/6).
 - **keep #16**: In-flight dedup for concurrent `fetchProductswayBlogBundle` → `publication_load_invocations=1` under parallel callers.
 - **keep #17**: Retry sitemap/RSS on 429/502/503/504; `feed_fetch_retries` metric (prod resilience).
+- **keep #18**: Retry article page enrich on 429/gateway errors; `page_enrich_retries` metric.
+- **keep #19**: Re-sort articles by `publishedAt` after page enrich; `homepage_matches_latest_six` guard.
