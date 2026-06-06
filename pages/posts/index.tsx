@@ -161,16 +161,15 @@ const PostsPage = ({ title, description, items }: PostsPageProps) => {
 export default PostsPage;
 
 export async function getStaticProps() {
-    const [configModule, { all: items }] = await Promise.all([
+    const [config, { all: items }] = await Promise.all([
         import('../../data/config.json'),
         fetchProductswayBlogBundle(),
     ]);
-    const config = configModule.default ?? configModule;
 
     return {
         props: {
-            title: config.default.title,
-            description: config.default.description,
+            title: config.title,
+            description: config.description,
             items,
         },
         revalidate: 300,
