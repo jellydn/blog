@@ -4,6 +4,7 @@ import { enrichArticleSummariesFromPages } from './blogPageMeta';
 import {
     fetchAllHashnodePosts,
     type HashnodePostSummary,
+    isHashnodeGraphqlAvailable,
     mapHashnodeSummaryToBlogPost,
 } from './hashnode';
 import { fetchHashnodePostsViaFeed } from './hashnodeFeedFallback';
@@ -31,32 +32,65 @@ const toListItem = (post: BlogPost): ProductswayBlogListItem => ({
 async function loadPublicationSummaries(): Promise<{
     summaries: HashnodePostSummary[];
     graphqlCount: number;
+    feedFetchMs: number;
+    graphqlFetchMs: number;
 }> {
-    const [fromGraphql, fromFeed] = await Promise.all([
-        fetchAllHashnodePosts(),
-        fetchHashnodePostsViaFeed(),
-    ]);
+    const feedStart = Date.now();
+    const fromFeed = await fetchHashnodePostsViaFeed();
+    const feedFetchMs = Date.now() - feedStart;
+
+    let fromGraphql: HashnodePostSummary[] = [];
+    let graphqlFetchMs = 0;
+
+    if (await isHashnodeGraphqlAvailable()) {
+        const gqlStart = Date.now();
+        fromGraphql = await fetchAllHashnodePosts();
+        graphqlFetchMs = Date.now() - gqlStart;
+    }
 
     if (fromGraphql.length === 0) {
-        return { summaries: fromFeed, graphqlCount: 0 };
+        return {
+            summaries: fromFeed,
+            graphqlCount: 0,
+            feedFetchMs,
+            graphqlFetchMs,
+        };
     }
 
     return {
         summaries: mergeHashnodePostSummaries(fromFeed, fromGraphql),
         graphqlCount: fromGraphql.length,
+        feedFetchMs,
+        graphqlFetchMs,
     };
 }
 
 async function loadArticleListItems(): Promise<{
     items: ProductswayBlogListItem[];
     graphqlCount: number;
+    pageEnrichFetches: number;
+    feedFetchMs: number;
+    graphqlFetchMs: number;
+    pageEnrichMs: number;
 }> {
-    const { summaries: raw, graphqlCount } = await loadPublicationSummaries();
+    const {
+        summaries: raw,
+        graphqlCount,
+        feedFetchMs,
+        graphqlFetchMs,
+    } = await loadPublicationSummaries();
     const articles = raw.filter((s) => isBlogArticleSlug(s.slug ?? ''));
-    const enriched = await enrichArticleSummariesFromPages(articles);
+    const enrichStart = Date.now();
+    const { posts: enriched, pageFetches } =
+        await enrichArticleSummariesFromPages(articles);
+    const pageEnrichMs = Date.now() - enrichStart;
     return {
         items: enriched.map((s) => toListItem(mapHashnodeSummaryToBlogPost(s))),
         graphqlCount,
+        pageEnrichFetches: pageFetches,
+        feedFetchMs,
+        graphqlFetchMs,
+        pageEnrichMs,
     };
 }
 
@@ -95,11 +129,26 @@ export async function fetchProductswayBlogBundle(): Promise<{
     all: ProductswayBlogListItem[];
     homepage: BlogPost[];
     graphqlPostCount: number;
+    pageEnrichFetches: number;
+    feedFetchMs: number;
+    graphqlFetchMs: number;
+    pageEnrichMs: number;
 }> {
-    const { items: all, graphqlCount } = await loadArticleListItems();
+    const {
+        items: all,
+        graphqlCount,
+        pageEnrichFetches,
+        feedFetchMs,
+        graphqlFetchMs,
+        pageEnrichMs,
+    } = await loadArticleListItems();
     return {
         all,
         homepage: listItemsToHomepageBlogs(all),
         graphqlPostCount: graphqlCount,
+        pageEnrichFetches,
+        feedFetchMs,
+        graphqlFetchMs,
+        pageEnrichMs,
     };
 }

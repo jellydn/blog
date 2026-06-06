@@ -51,3 +51,6 @@ Ensure **productsway.com** shows Hashnode posts from **blog.productsway.com**:
 - **keep #8**: JSON-LD `keywords` + `datePublished` on page enrich → `articles_with_tags` **29**; fetch when tags/date missing.
 - **keep #9**: Parallel feed+GraphQL merge (`mergeHashnodePostSummaries`); `MAX_ENRICH=29`; `graphql_posts_fetched` metric (0 locally).
 - **keep #10**: GraphQL JSON probe cache — skip cursor/offset pagination when gql returns HTML; `listing_fetch_ms` ~2115.
+- **keep #11**: Skip HTML enrich for slug-title-only when RSS has desc/cover/tags/date → `page_enrich_fetches` **9** (was ~11).
+- **keep #12**: Feed-first + conditional GraphQL; page enrich batches of 5; `feed_fetch_ms` / `page_enrich_ms` phase metrics.
+- **keep #13**: Parallel sitemap + RSS fetch in `fetchHashnodePostsViaFeed` → lower `feed_fetch_ms` (~87ms).

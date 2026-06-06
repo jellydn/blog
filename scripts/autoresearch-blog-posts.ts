@@ -6,8 +6,15 @@ const MIN_DESCRIPTION_LEN = 20;
 
 const main = async () => {
     const fetchStarted = Date.now();
-    const { all, homepage, graphqlPostCount } =
-        await fetchProductswayBlogBundle();
+    const {
+        all,
+        homepage,
+        graphqlPostCount,
+        pageEnrichFetches,
+        feedFetchMs,
+        graphqlFetchMs,
+        pageEnrichMs,
+    } = await fetchProductswayBlogBundle();
     const listingFetchMs = Date.now() - fetchStarted;
 
     const total = all.length;
@@ -40,6 +47,10 @@ const main = async () => {
     console.log(`METRIC articles_with_tags=${articlesWithTags}`);
     console.log(`METRIC graphql_posts_fetched=${graphqlPostCount}`);
     console.log(`METRIC listing_fetch_ms=${listingFetchMs}`);
+    console.log(`METRIC page_enrich_fetches=${pageEnrichFetches}`);
+    console.log(`METRIC feed_fetch_ms=${feedFetchMs}`);
+    console.log(`METRIC graphql_fetch_ms=${graphqlFetchMs}`);
+    console.log(`METRIC page_enrich_ms=${pageEnrichMs}`);
 
     if (total > 0 && total <= 5) {
         console.log(

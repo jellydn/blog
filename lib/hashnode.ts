@@ -55,7 +55,8 @@ const HASHNODE_ENDPOINT = 'https://gql.hashnode.com';
 
 let hashnodeGraphqlJsonAvailable: boolean | null = null;
 
-async function isHashnodeGraphqlJsonAvailable(): Promise<boolean> {
+/** Cached probe: true when gql.hashnode.com returns JSON (not HTML checkpoint). */
+export async function isHashnodeGraphqlAvailable(): Promise<boolean> {
     if (hashnodeGraphqlJsonAvailable !== null) {
         return hashnodeGraphqlJsonAvailable;
     }
@@ -351,7 +352,7 @@ async function fetchAllHashnodePostsViaOffset(): Promise<
 /** Fetch every post from the configured Hashnode publication (paginated). */
 export async function fetchAllHashnodePosts(): Promise<HashnodePostSummary[]> {
     try {
-        if (!(await isHashnodeGraphqlJsonAvailable())) {
+        if (!(await isHashnodeGraphqlAvailable())) {
             return [];
         }
 

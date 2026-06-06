@@ -3,6 +3,7 @@ import { defaultBlogFetchHeaders } from './fetchHeaders';
 const BASE_URL = 'https://blog.productsway.com';
 const MIN_DESCRIPTION_LEN = 20;
 const MAX_ENRICH_PER_RUN = 29;
+const PAGE_ENRICH_CONCURRENCY = 5;
 
 function decodeHtmlEntities(text: string): string {
     return text
@@ -144,61 +145,59 @@ function needsPageEnrich(post: EnrichableSummary): boolean {
     const slug = post.slug ?? '';
     if (!slug) return false;
     const briefShort = (post.brief ?? '').trim().length < MIN_DESCRIPTION_LEN;
-    const titleFromSlug = isTitleDerivedFromSlug(slug, post.title);
     const missingCover = !post.coverImage?.url;
     const missingTags = (post.tags?.length ?? 0) === 0;
     const missingDate =
         !post.publishedAt || Number.isNaN(Date.parse(post.publishedAt));
-    return (
-        briefShort ||
-        titleFromSlug ||
-        missingCover ||
-        missingTags ||
-        missingDate
-    );
+    // Do not fetch HTML only for slug-shaped titles when RSS already filled
+    // other fields (live blog often uses the same words as the slug).
+    return briefShort || missingCover || missingTags || missingDate;
 }
 
 /** Fill title, brief, and cover from article HTML meta (one fetch per post). */
 export async function enrichArticleSummariesFromPages<
     T extends EnrichableSummary,
->(posts: T[]): Promise<T[]> {
+>(posts: T[]): Promise<{ posts: T[]; pageFetches: number }> {
     const toFetch = posts.filter(needsPageEnrich).slice(0, MAX_ENRICH_PER_RUN);
     if (toFetch.length === 0) {
-        return posts;
+        return { posts, pageFetches: 0 };
     }
 
     const metaBySlug = new Map<string, PageMeta>();
 
-    await Promise.all(
-        toFetch.map(async (post) => {
-            const slug = post.slug ?? '';
-            try {
-                const res = await fetch(`${BASE_URL}/${slug}`, {
-                    headers: defaultBlogFetchHeaders(),
-                    signal: AbortSignal.timeout(12000),
-                });
-                if (!res.ok) return;
-                const meta = parsePageMeta(await res.text());
-                if (
-                    meta.title ||
-                    meta.description ||
-                    meta.image ||
-                    meta.tags?.length ||
-                    meta.publishedAt
-                ) {
-                    metaBySlug.set(slug, meta);
-                }
-            } catch {
-                /* skip */
+    const fetchOne = async (post: EnrichableSummary) => {
+        const slug = post.slug ?? '';
+        try {
+            const res = await fetch(`${BASE_URL}/${slug}`, {
+                headers: defaultBlogFetchHeaders(),
+                signal: AbortSignal.timeout(12000),
+            });
+            if (!res.ok) return;
+            const meta = parsePageMeta(await res.text());
+            if (
+                meta.title ||
+                meta.description ||
+                meta.image ||
+                meta.tags?.length ||
+                meta.publishedAt
+            ) {
+                metaBySlug.set(slug, meta);
             }
-        }),
-    );
+        } catch {
+            /* skip */
+        }
+    };
 
-    if (metaBySlug.size === 0) {
-        return posts;
+    for (let i = 0; i < toFetch.length; i += PAGE_ENRICH_CONCURRENCY) {
+        const batch = toFetch.slice(i, i + PAGE_ENRICH_CONCURRENCY);
+        await Promise.all(batch.map((post) => fetchOne(post)));
     }
 
-    return posts.map((post) => {
+    if (metaBySlug.size === 0) {
+        return { posts, pageFetches: toFetch.length };
+    }
+
+    const enriched = posts.map((post) => {
         const slug = post.slug ?? '';
         const meta = metaBySlug.get(slug);
         if (!meta) return post;
@@ -233,13 +232,16 @@ export async function enrichArticleSummariesFromPages<
             publishedAt,
         };
     });
+
+    return { posts: enriched, pageFetches: toFetch.length };
 }
 
 /** @deprecated Use enrichArticleSummariesFromPages */
 export async function enrichMissingBriefs<
     T extends { slug?: string; brief?: string },
 >(posts: T[]): Promise<T[]> {
-    return enrichArticleSummariesFromPages(
+    const result = await enrichArticleSummariesFromPages(
         posts as EnrichableSummary[],
-    ) as Promise<T[]>;
+    );
+    return result.posts as T[];
 }

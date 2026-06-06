@@ -106,30 +106,34 @@ const getTimestamp = (date?: string) => {
 export async function fetchHashnodePostsViaFeed(): Promise<
     HashnodePostSummary[]
 > {
-    const rssPosts: HashnodePostSummary[] = [];
-    let sitemapPosts: HashnodePostSummary[] = [];
     const fetchOpts = {
         headers: defaultBlogFetchHeaders(),
         signal: AbortSignal.timeout(15000),
     };
 
-    try {
-        const sitemapRes = await fetch(`${BASE_URL}/sitemap.xml`, fetchOpts);
-        if (sitemapRes.ok) {
-            sitemapPosts = parseSitemap(await sitemapRes.text());
-        }
-    } catch {
-        /* try RSS */
-    }
-
-    try {
-        const rssRes = await fetch(`${BASE_URL}/rss.xml`, fetchOpts);
-        if (rssRes.ok) {
-            rssPosts.push(...parseRSSItems(await rssRes.text()));
-        }
-    } catch {
-        /* merge what we have */
-    }
+    const [sitemapPosts, rssPosts] = await Promise.all([
+        (async () => {
+            try {
+                const sitemapRes = await fetch(
+                    `${BASE_URL}/sitemap.xml`,
+                    fetchOpts,
+                );
+                if (!sitemapRes.ok) return [];
+                return parseSitemap(await sitemapRes.text());
+            } catch {
+                return [];
+            }
+        })(),
+        (async () => {
+            try {
+                const rssRes = await fetch(`${BASE_URL}/rss.xml`, fetchOpts);
+                if (!rssRes.ok) return [];
+                return parseRSSItems(await rssRes.text());
+            } catch {
+                return [];
+            }
+        })(),
+    ]);
 
     const bySlug = new Map<string, HashnodePostSummary>();
     for (const p of sitemapPosts) {
