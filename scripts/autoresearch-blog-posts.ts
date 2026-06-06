@@ -1,22 +1,22 @@
 import { HOMEPAGE_BLOG_POST_LIMIT } from '../lib/blogConstants';
 import { isTitleDerivedFromSlug } from '../lib/blogPageMeta';
-import { isHashnodeGraphqlAvailable } from '../lib/hashnode';
 import { fetchProductswayBlogBundle } from '../lib/productswayBlog';
 
 const MIN_DESCRIPTION_LEN = 20;
 
 const main = async () => {
-    const graphqlAvailable = (await isHashnodeGraphqlAvailable()) ? 1 : 0;
     const fetchStarted = Date.now();
     const {
         all,
         homepage,
         graphqlPostCount,
+        graphqlAvailable,
         pageEnrichFetches,
         feedFetchMs,
         graphqlFetchMs,
         pageEnrichMs,
     } = await fetchProductswayBlogBundle();
+    const graphqlAvailableMetric = graphqlAvailable ? 1 : 0;
     const listingFetchMs = Date.now() - fetchStarted;
 
     const total = all.length;
@@ -37,6 +37,10 @@ const main = async () => {
     const articlesWithTags = all.filter(
         (p) => (p.tags?.length ?? 0) > 0,
     ).length;
+    const articlesWithCover = all.filter((p) => p.hero_image).length;
+    const homepageWithCover = homepage.filter(
+        (p) => p.frontmatter.hero_image,
+    ).length;
     const usesShared = 1;
 
     console.log(`METRIC total_posts_count=${total}`);
@@ -53,7 +57,9 @@ const main = async () => {
     console.log(`METRIC feed_fetch_ms=${feedFetchMs}`);
     console.log(`METRIC graphql_fetch_ms=${graphqlFetchMs}`);
     console.log(`METRIC page_enrich_ms=${pageEnrichMs}`);
-    console.log(`METRIC graphql_available=${graphqlAvailable}`);
+    console.log(`METRIC graphql_available=${graphqlAvailableMetric}`);
+    console.log(`METRIC articles_with_cover=${articlesWithCover}`);
+    console.log(`METRIC homepage_with_cover=${homepageWithCover}`);
 
     if (total > 0 && total <= 5) {
         console.log(

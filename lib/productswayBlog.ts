@@ -32,17 +32,21 @@ const toListItem = (post: BlogPost): ProductswayBlogListItem => ({
 async function loadPublicationSummaries(): Promise<{
     summaries: HashnodePostSummary[];
     graphqlCount: number;
+    graphqlAvailable: boolean;
     feedFetchMs: number;
     graphqlFetchMs: number;
 }> {
     const feedStart = Date.now();
-    const fromFeed = await fetchHashnodePostsViaFeed();
+    const [fromFeed, graphqlAvailable] = await Promise.all([
+        fetchHashnodePostsViaFeed(),
+        isHashnodeGraphqlAvailable(),
+    ]);
     const feedFetchMs = Date.now() - feedStart;
 
     let fromGraphql: HashnodePostSummary[] = [];
     let graphqlFetchMs = 0;
 
-    if (await isHashnodeGraphqlAvailable()) {
+    if (graphqlAvailable) {
         const gqlStart = Date.now();
         fromGraphql = await fetchAllHashnodePosts();
         graphqlFetchMs = Date.now() - gqlStart;
@@ -52,6 +56,7 @@ async function loadPublicationSummaries(): Promise<{
         return {
             summaries: fromFeed,
             graphqlCount: 0,
+            graphqlAvailable,
             feedFetchMs,
             graphqlFetchMs,
         };
@@ -60,6 +65,7 @@ async function loadPublicationSummaries(): Promise<{
     return {
         summaries: mergeHashnodePostSummaries(fromFeed, fromGraphql),
         graphqlCount: fromGraphql.length,
+        graphqlAvailable,
         feedFetchMs,
         graphqlFetchMs,
     };
@@ -68,6 +74,7 @@ async function loadPublicationSummaries(): Promise<{
 async function loadArticleListItems(): Promise<{
     items: ProductswayBlogListItem[];
     graphqlCount: number;
+    graphqlAvailable: boolean;
     pageEnrichFetches: number;
     feedFetchMs: number;
     graphqlFetchMs: number;
@@ -76,6 +83,7 @@ async function loadArticleListItems(): Promise<{
     const {
         summaries: raw,
         graphqlCount,
+        graphqlAvailable,
         feedFetchMs,
         graphqlFetchMs,
     } = await loadPublicationSummaries();
@@ -87,6 +95,7 @@ async function loadArticleListItems(): Promise<{
     return {
         items: enriched.map((s) => toListItem(mapHashnodeSummaryToBlogPost(s))),
         graphqlCount,
+        graphqlAvailable,
         pageEnrichFetches: pageFetches,
         feedFetchMs,
         graphqlFetchMs,
@@ -129,6 +138,7 @@ export async function fetchProductswayBlogBundle(): Promise<{
     all: ProductswayBlogListItem[];
     homepage: BlogPost[];
     graphqlPostCount: number;
+    graphqlAvailable: boolean;
     pageEnrichFetches: number;
     feedFetchMs: number;
     graphqlFetchMs: number;
@@ -137,6 +147,7 @@ export async function fetchProductswayBlogBundle(): Promise<{
     const {
         items: all,
         graphqlCount,
+        graphqlAvailable,
         pageEnrichFetches,
         feedFetchMs,
         graphqlFetchMs,
@@ -146,6 +157,7 @@ export async function fetchProductswayBlogBundle(): Promise<{
         all,
         homepage: listItemsToHomepageBlogs(all),
         graphqlPostCount: graphqlCount,
+        graphqlAvailable,
         pageEnrichFetches,
         feedFetchMs,
         graphqlFetchMs,

@@ -55,3 +55,4 @@ Ensure **productsway.com** shows Hashnode posts from **blog.productsway.com**:
 - **keep #12**: Feed-first + conditional GraphQL; page enrich batches of 5; `feed_fetch_ms` / `page_enrich_ms` phase metrics.
 - **keep #13**: Parallel sitemap + RSS fetch in `fetchHashnodePostsViaFeed` → lower `feed_fetch_ms` (~87ms).
 - **keep #14**: Page enrich concurrency **9** (one wave for 9 fetches); `graphql_available` metric for prod.
+- **keep #15**: Overlap feed + gql probe; `graphqlAvailable` on bundle; cover quality metrics (29/6).
