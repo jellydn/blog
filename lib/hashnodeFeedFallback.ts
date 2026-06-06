@@ -1,5 +1,5 @@
 import { isBlogArticleSlug } from './blogArticleFilter';
-import { BROWSER_USER_AGENT, defaultBlogFetchHeaders } from './fetchHeaders';
+import { defaultBlogFetchHeaders } from './fetchHeaders';
 import type { HashnodePostSummary } from './hashnode';
 
 const BASE_URL = 'https://blog.productsway.com';
@@ -205,7 +205,9 @@ export async function fetchHashnodePostsViaFeedWithStats(): Promise<HashnodeFeed
         (a, b) => getTimestamp(b.publishedAt) - getTimestamp(a.publishedAt),
     );
 
-    if (merged.length > 5) {
+    // Sitemap gives the full index; RSS alone is ~5. Prefer merged when sitemap contributed.
+    const hasFullIndex = sitemapPosts.length > 0 || merged.length > 5;
+    if (hasFullIndex) {
         return { posts: merged, feedRetries };
     }
 

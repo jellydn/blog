@@ -4,6 +4,8 @@ export const BROWSER_USER_AGENT =
 
 export const defaultBlogFetchHeaders = (): HeadersInit => ({
     'User-Agent': BROWSER_USER_AGENT,
+    Accept: 'application/rss+xml, application/xml, text/xml, */*;q=0.8',
+    Referer: 'https://blog.productsway.com/',
 });
 
 export const hashnodeGraphqlHeaders = (): HeadersInit => ({
