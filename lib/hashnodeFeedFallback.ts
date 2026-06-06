@@ -53,7 +53,7 @@ function parseRSSItems(xml: string): HashnodePostSummary[] {
                 return null;
             }
 
-            return {
+            const summary: HashnodePostSummary = {
                 slug: cleanSlug,
                 title: title.trim(),
                 brief: brief.trim(),
@@ -63,6 +63,7 @@ function parseRSSItems(xml: string): HashnodePostSummary[] {
                 coverImage: cover ? { url: cover } : undefined,
                 tags,
             };
+            return summary;
         })
         .filter((p): p is HashnodePostSummary => p !== null);
 }
