@@ -12,16 +12,24 @@
 
 ### 🏠 [Homepage](productsway.com)
 
+The site homepage shows the latest articles from [blog.productsway.com](https://blog.productsway.com). The full list is on [/posts](https://productsway.com/posts). Local markdown in `posts/` is separate (TIL-style pages).
+
 ## Install
 
 ```sh
-yarn install
+pnpm install
 ```
 
 ## Usage
 
 ```sh
-yarn run start
+pnpm dev
+```
+
+Production build (includes TinaCMS):
+
+```sh
+pnpm build && pnpm start
 ```
 
 ## Author
