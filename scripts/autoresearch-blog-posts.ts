@@ -63,6 +63,19 @@ const main = async () => {
         latestSixSlugs.every((slug, i) => slug === homepageSlugs[i])
             ? 1
             : 0;
+    const articlesWithValidDate = all.filter(
+        (p) => p.date && !Number.isNaN(Date.parse(p.date)),
+    ).length;
+    let homepageDatesDescending = 1;
+    for (let i = 0; i < homepage.length - 1; i++) {
+        if (
+            dateTs(homepage[i].frontmatter.date) <
+            dateTs(homepage[i + 1].frontmatter.date)
+        ) {
+            homepageDatesDescending = 0;
+            break;
+        }
+    }
 
     console.log(`METRIC total_posts_count=${total}`);
     console.log(`METRIC homepage_posts_count=${homeCount}`);
@@ -89,6 +102,9 @@ const main = async () => {
     console.log(
         `METRIC homepage_matches_latest_six=${homepageMatchesLatestSix}`,
     );
+    console.log(`METRIC feed_path_rsc_fallback_used=${total <= 5 ? 1 : 0}`);
+    console.log(`METRIC articles_with_valid_date=${articlesWithValidDate}`);
+    console.log(`METRIC homepage_dates_descending=${homepageDatesDescending}`);
 
     if (total > 0 && total <= 5) {
         console.log(

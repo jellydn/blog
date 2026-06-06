@@ -208,7 +208,9 @@ export async function fetchHashnodePostsViaFeedWithStats(): Promise<HashnodeFeed
         return { posts: merged, feedRetries };
     }
 
-    const fromProfile = await fetchHashnodePostsViaProfileRSC();
+    const { posts: fromProfile, retries: profileRetries } =
+        await fetchHashnodePostsViaProfileRSCWithStats();
+    feedRetries += profileRetries;
     if (fromProfile.length > merged.length) {
         return { posts: fromProfile, feedRetries };
     }
@@ -216,16 +218,10 @@ export async function fetchHashnodePostsViaFeedWithStats(): Promise<HashnodeFeed
     return { posts: merged, feedRetries };
 }
 
-async function fetchHashnodePostsViaProfileRSC(): Promise<
-    HashnodePostSummary[]
-> {
+async function parseProfileRscHtml(
+    html: string,
+): Promise<HashnodePostSummary[]> {
     try {
-        const res = await fetch('https://hashnode.com/@dunghd', {
-            headers: { 'User-Agent': BROWSER_USER_AGENT },
-            signal: AbortSignal.timeout(15000),
-        });
-        if (!res.ok) return [];
-        const html = await res.text();
         const MARKER = '__next_f.push([1,';
         let data = '';
         let pos = 0;
@@ -295,7 +291,12 @@ async function fetchHashnodePostsViaProfileRSC(): Promise<
         }
 
         return posts
-            .filter((p) => p.slug && p.title)
+            .filter(
+                (p) =>
+                    p.slug &&
+                    p.title &&
+                    isBlogArticleSlug(p.slug.replace(/\/$/, '')),
+            )
             .map((p) => ({
                 slug: p.slug,
                 title: p.title,
@@ -309,5 +310,23 @@ async function fetchHashnodePostsViaProfileRSC(): Promise<
             );
     } catch {
         return [];
+    }
+}
+
+async function fetchHashnodePostsViaProfileRSCWithStats(): Promise<{
+    posts: HashnodePostSummary[];
+    retries: number;
+}> {
+    try {
+        const { text, retries } = await fetchFeedTextWithRetry(
+            'https://hashnode.com/@dunghd',
+        );
+        if (!text) {
+            return { posts: [], retries };
+        }
+        const posts = await parseProfileRscHtml(text);
+        return { posts, retries };
+    } catch {
+        return { posts: [], retries: 0 };
     }
 }

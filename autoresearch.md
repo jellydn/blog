@@ -60,3 +60,6 @@ Ensure **productsway.com** shows Hashnode posts from **blog.productsway.com**:
 - **keep #17**: Retry sitemap/RSS on 429/502/503/504; `feed_fetch_retries` metric (prod resilience).
 - **keep #18**: Retry article page enrich on 429/gateway errors; `page_enrich_retries` metric.
 - **keep #19**: Re-sort articles by `publishedAt` after page enrich; `homepage_matches_latest_six` guard.
+- **discard #20**: Benchmark-only `articles_with_valid_date` / `homepage_dates_descending` (no fetch path change).
+- **keep #21**: Hashnode profile RSC fallback uses shared feed retry + headers; `feed_path_rsc_fallback_used` when listing ≤5.
+- **keep #22**: `isBlogArticleSlug` on RSC `initialPosts` (failure path only; no change at 29).
