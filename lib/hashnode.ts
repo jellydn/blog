@@ -1,3 +1,5 @@
+import { HASHNODE_POSTS_PAGE_SIZE } from './blogConstants';
+import { hashnodeGraphqlHeaders } from './fetchHeaders';
 import type { BlogPost, TinaPost } from './types';
 
 export type HashnodePostSummary = {
@@ -28,6 +30,10 @@ type HashnodePostsResponse = {
     data?: {
         publication?: {
             posts?: {
+                pageInfo?: {
+                    hasNextPage?: boolean;
+                    endCursor?: string | null;
+                };
                 edges?: Array<{ node?: HashnodePostSummary }>;
             };
         };
@@ -47,10 +53,70 @@ type HashnodePostResponse = {
 
 const HASHNODE_ENDPOINT = 'https://gql.hashnode.com';
 
-const POSTS_QUERY = `
-    query PublicationPosts($host: String!, $first: Int!) {
+let hashnodeGraphqlJsonAvailable: boolean | null = null;
+
+async function isHashnodeGraphqlJsonAvailable(): Promise<boolean> {
+    if (hashnodeGraphqlJsonAvailable !== null) {
+        return hashnodeGraphqlJsonAvailable;
+    }
+
+    try {
+        const response = await fetch(HASHNODE_ENDPOINT, {
+            method: 'POST',
+            headers: hashnodeGraphqlHeaders(),
+            body: JSON.stringify({
+                query: POSTS_QUERY,
+                variables: {
+                    host: getPublicationHost(),
+                    first: 1,
+                    after: null,
+                },
+            }),
+        });
+
+        const contentType = response.headers.get('content-type') ?? '';
+        hashnodeGraphqlJsonAvailable =
+            response.ok && contentType.includes('json');
+    } catch {
+        hashnodeGraphqlJsonAvailable = false;
+    }
+
+    return hashnodeGraphqlJsonAvailable;
+}
+
+const POSTS_VIA_PAGE_QUERY = `
+    query PublicationPostsViaPage($host: String!, $page: Int!, $pageSize: Int!) {
         publication(host: $host) {
-            posts(first: $first) {
+            postsViaPage(page: $page, pageSize: $pageSize) {
+                pageInfo {
+                    hasNextPage
+                    nextPage
+                }
+                nodes {
+                    title
+                    brief
+                    slug
+                    publishedAt
+                    coverImage {
+                        url
+                    }
+                    tags {
+                        name
+                    }
+                }
+            }
+        }
+    }
+`;
+
+const POSTS_QUERY = `
+    query PublicationPosts($host: String!, $first: Int!, $after: String) {
+        publication(host: $host) {
+            posts(first: $first, after: $after) {
+                pageInfo {
+                    hasNextPage
+                    endCursor
+                }
                 edges {
                     node {
                         title
@@ -139,40 +205,189 @@ export const normalizeHashnodeMarkdown = (markdown: string): string =>
         '![$1]($2)',
     );
 
+async function fetchHashnodePostsPage(
+    first: number,
+    after?: string | null,
+): Promise<{
+    posts: HashnodePostSummary[];
+    hasNextPage: boolean;
+    endCursor: string | null;
+}> {
+    const response = await fetch(HASHNODE_ENDPOINT, {
+        method: 'POST',
+        headers: hashnodeGraphqlHeaders(),
+        body: JSON.stringify({
+            query: POSTS_QUERY,
+            variables: {
+                host: getPublicationHost(),
+                first,
+                after: after ?? null,
+            },
+        }),
+    });
+
+    if (!response.ok) {
+        return { posts: [], hasNextPage: false, endCursor: null };
+    }
+
+    const contentType = response.headers.get('content-type') ?? '';
+    const raw = await response.text();
+    if (!contentType.includes('json')) {
+        return { posts: [], hasNextPage: false, endCursor: null };
+    }
+
+    let data: HashnodePostsResponse;
+    try {
+        data = JSON.parse(raw) as HashnodePostsResponse;
+    } catch {
+        return { posts: [], hasNextPage: false, endCursor: null };
+    }
+    logErrors(data.errors);
+
+    const connection = data.data?.publication?.posts;
+    const edges = connection?.edges ?? [];
+    const posts = edges
+        .map((edge) => edge.node)
+        .filter(
+            (node): node is HashnodePostSummary =>
+                Boolean(node?.slug) && Boolean(node?.title),
+        );
+
+    return {
+        posts,
+        hasNextPage: Boolean(connection?.pageInfo?.hasNextPage),
+        endCursor: connection?.pageInfo?.endCursor ?? null,
+    };
+}
+
 export async function fetchHashnodePosts(
     limit = 50,
 ): Promise<HashnodePostSummary[]> {
     try {
+        const page = await fetchHashnodePostsPage(limit);
+        return page.posts
+            .slice(0, limit)
+            .sort(
+                (a, b) =>
+                    getTimestamp(b.publishedAt) - getTimestamp(a.publishedAt),
+            );
+    } catch {
+        return [];
+    }
+}
+
+async function fetchAllHashnodePostsViaOffset(): Promise<
+    HashnodePostSummary[]
+> {
+    const all: HashnodePostSummary[] = [];
+    let page = 1;
+    const pageSize = HASHNODE_POSTS_PAGE_SIZE;
+
+    for (let guard = 0; guard < 50; guard++) {
         const response = await fetch(HASHNODE_ENDPOINT, {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
+            headers: hashnodeGraphqlHeaders(),
             body: JSON.stringify({
-                query: POSTS_QUERY,
+                query: POSTS_VIA_PAGE_QUERY,
                 variables: {
                     host: getPublicationHost(),
-                    first: limit,
+                    page,
+                    pageSize,
                 },
             }),
         });
 
-        if (!response.ok) {
+        if (!response.ok) break;
+
+        const contentType = response.headers.get('content-type') ?? '';
+        const raw = await response.text();
+        if (!contentType.includes('json')) break;
+
+        type OffsetResponse = {
+            data?: {
+                publication?: {
+                    postsViaPage?: {
+                        pageInfo?: {
+                            hasNextPage?: boolean;
+                            nextPage?: number | null;
+                        };
+                        nodes?: HashnodePostSummary[];
+                    };
+                };
+            };
+            errors?: HashnodeGraphqlError[];
+        };
+
+        let data: OffsetResponse;
+        try {
+            data = JSON.parse(raw) as OffsetResponse;
+        } catch {
+            break;
+        }
+        logErrors(data.errors);
+
+        const connection = data.data?.publication?.postsViaPage;
+        const nodes = connection?.nodes ?? [];
+        all.push(
+            ...nodes.filter(
+                (node): node is HashnodePostSummary =>
+                    Boolean(node?.slug) && Boolean(node?.title),
+            ),
+        );
+
+        if (!connection?.pageInfo?.hasNextPage) {
+            break;
+        }
+        const next = connection.pageInfo.nextPage;
+        if (next == null || next <= page) {
+            break;
+        }
+        page = next;
+    }
+
+    return all;
+}
+
+/** Fetch every post from the configured Hashnode publication (paginated). */
+export async function fetchAllHashnodePosts(): Promise<HashnodePostSummary[]> {
+    try {
+        if (!(await isHashnodeGraphqlJsonAvailable())) {
             return [];
         }
 
-        const data = (await response.json()) as HashnodePostsResponse;
-        logErrors(data.errors);
+        const all: HashnodePostSummary[] = [];
+        let after: string | null = null;
+        let guard = 0;
 
-        const edges = data.data?.publication?.posts?.edges ?? [];
-        const posts = edges
-            .map((edge) => edge.node)
-            .filter(
-                (node): node is HashnodePostSummary =>
-                    Boolean(node?.slug) && Boolean(node?.title),
+        while (guard < 50) {
+            guard++;
+            const page = await fetchHashnodePostsPage(
+                HASHNODE_POSTS_PAGE_SIZE,
+                after,
             );
+            all.push(...page.posts);
+            if (!page.hasNextPage || !page.endCursor) {
+                break;
+            }
+            after = page.endCursor;
+        }
 
-        return posts.sort(
-            (a, b) => getTimestamp(b.publishedAt) - getTimestamp(a.publishedAt),
-        );
+        if (all.length > 0) {
+            return all.sort(
+                (a, b) =>
+                    getTimestamp(b.publishedAt) - getTimestamp(a.publishedAt),
+            );
+        }
+
+        const viaOffset = await fetchAllHashnodePostsViaOffset();
+        if (viaOffset.length > 0) {
+            return viaOffset.sort(
+                (a, b) =>
+                    getTimestamp(b.publishedAt) - getTimestamp(a.publishedAt),
+            );
+        }
+
+        return [];
     } catch {
         return [];
     }
@@ -184,7 +399,7 @@ export async function fetchHashnodePostBySlug(
     try {
         const response = await fetch(HASHNODE_ENDPOINT, {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
+            headers: hashnodeGraphqlHeaders(),
             body: JSON.stringify({
                 query: POST_QUERY,
                 variables: {

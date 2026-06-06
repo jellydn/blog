@@ -1,5 +1,5 @@
-import { fetchHashnodePosts, mapHashnodeSummaryToTinaPost } from 'lib/hashnode';
-import type { TinaPost } from 'lib/types';
+import { fetchProductswayBlogBundle } from 'lib/productswayBlog';
+import type { BlogPost, TinaPost } from 'lib/types';
 import type { NextApiRequest, NextApiResponse } from 'next';
 
 export default async function handler(
@@ -11,9 +11,16 @@ export default async function handler(
     }
 
     try {
-        const summaries = await fetchHashnodePosts(6);
-        const sortedPosts: TinaPost[] = summaries
-            .map((post) => mapHashnodeSummaryToTinaPost(post))
+        const { homepage: blogs } = await fetchProductswayBlogBundle();
+        const sortedPosts: TinaPost[] = blogs
+            .map((post: BlogPost) => ({
+                _sys: { filename: post.slug },
+                title: post.frontmatter.title,
+                description: post.frontmatter.description,
+                date: post.frontmatter.date,
+                tag: post.frontmatter.tag ?? [],
+                hero_image: post.frontmatter.hero_image,
+            }))
             .filter((post) => post._sys.filename);
 
         res.setHeader(
