@@ -7,7 +7,7 @@ import {
     isHashnodeGraphqlAvailable,
     mapHashnodeSummaryToBlogPost,
 } from './hashnode';
-import { fetchHashnodePostsViaFeed } from './hashnodeFeedFallback';
+import { fetchHashnodePostsViaFeedWithStats } from './hashnodeFeedFallback';
 import { mergeHashnodePostSummaries } from './mergePostSummaries';
 import type { BlogPost } from './types';
 
@@ -19,6 +19,11 @@ export type ProductswayBlogListItem = {
     tags: string[];
     hero_image: string | null;
 };
+
+let publicationLoadInFlight: ReturnType<typeof loadArticleListItems> | null =
+    null;
+
+let publicationLoadInvocationCount = 0;
 
 const toListItem = (post: BlogPost): ProductswayBlogListItem => ({
     slug: post.slug,
@@ -35,12 +40,15 @@ async function loadPublicationSummaries(): Promise<{
     graphqlAvailable: boolean;
     feedFetchMs: number;
     graphqlFetchMs: number;
+    feedRetries: number;
 }> {
     const feedStart = Date.now();
-    const [fromFeed, graphqlAvailable] = await Promise.all([
-        fetchHashnodePostsViaFeed(),
+    const [feedResult, graphqlAvailable] = await Promise.all([
+        fetchHashnodePostsViaFeedWithStats(),
         isHashnodeGraphqlAvailable(),
     ]);
+    const fromFeed = feedResult.posts;
+    const feedRetries = feedResult.feedRetries;
     const feedFetchMs = Date.now() - feedStart;
 
     let fromGraphql: HashnodePostSummary[] = [];
@@ -59,6 +67,7 @@ async function loadPublicationSummaries(): Promise<{
             graphqlAvailable,
             feedFetchMs,
             graphqlFetchMs,
+            feedRetries,
         };
     }
 
@@ -68,6 +77,7 @@ async function loadPublicationSummaries(): Promise<{
         graphqlAvailable,
         feedFetchMs,
         graphqlFetchMs,
+        feedRetries,
     };
 }
 
@@ -79,13 +89,17 @@ async function loadArticleListItems(): Promise<{
     feedFetchMs: number;
     graphqlFetchMs: number;
     pageEnrichMs: number;
+    publicationLoadInvocations: number;
+    feedRetries: number;
 }> {
+    publicationLoadInvocationCount += 1;
     const {
         summaries: raw,
         graphqlCount,
         graphqlAvailable,
         feedFetchMs,
         graphqlFetchMs,
+        feedRetries,
     } = await loadPublicationSummaries();
     const articles = raw.filter((s) => isBlogArticleSlug(s.slug ?? ''));
     const enrichStart = Date.now();
@@ -100,7 +114,21 @@ async function loadArticleListItems(): Promise<{
         feedFetchMs,
         graphqlFetchMs,
         pageEnrichMs,
+        publicationLoadInvocations: publicationLoadInvocationCount,
+        feedRetries,
     };
+}
+
+async function loadArticleListItemsShared(): Promise<
+    Awaited<ReturnType<typeof loadArticleListItems>>
+> {
+    if (publicationLoadInFlight) {
+        return publicationLoadInFlight;
+    }
+    publicationLoadInFlight = loadArticleListItems().finally(() => {
+        publicationLoadInFlight = null;
+    });
+    return publicationLoadInFlight;
 }
 
 const listItemsToHomepageBlogs = (
@@ -121,7 +149,7 @@ const listItemsToHomepageBlogs = (
 export async function fetchProductswayBlogPosts(): Promise<
     ProductswayBlogListItem[]
 > {
-    const { items } = await loadArticleListItems();
+    const { items } = await loadArticleListItemsShared();
     return items;
 }
 
@@ -129,7 +157,7 @@ export async function fetchProductswayBlogPosts(): Promise<
 export async function fetchProductswayBlogPostsForHomepage(): Promise<
     BlogPost[]
 > {
-    const { items } = await loadArticleListItems();
+    const { items } = await loadArticleListItemsShared();
     return listItemsToHomepageBlogs(items);
 }
 
@@ -143,6 +171,8 @@ export async function fetchProductswayBlogBundle(): Promise<{
     feedFetchMs: number;
     graphqlFetchMs: number;
     pageEnrichMs: number;
+    publicationLoadInvocations: number;
+    feedRetries: number;
 }> {
     const {
         items: all,
@@ -152,7 +182,9 @@ export async function fetchProductswayBlogBundle(): Promise<{
         feedFetchMs,
         graphqlFetchMs,
         pageEnrichMs,
-    } = await loadArticleListItems();
+        publicationLoadInvocations,
+        feedRetries,
+    } = await loadArticleListItemsShared();
     return {
         all,
         homepage: listItemsToHomepageBlogs(all),
@@ -162,5 +194,7 @@ export async function fetchProductswayBlogBundle(): Promise<{
         feedFetchMs,
         graphqlFetchMs,
         pageEnrichMs,
+        publicationLoadInvocations,
+        feedRetries,
     };
 }

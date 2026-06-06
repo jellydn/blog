@@ -6,6 +6,10 @@ const MIN_DESCRIPTION_LEN = 20;
 
 const main = async () => {
     const fetchStarted = Date.now();
+    const [bundleA, bundleB] = await Promise.all([
+        fetchProductswayBlogBundle(),
+        fetchProductswayBlogBundle(),
+    ]);
     const {
         all,
         homepage,
@@ -15,7 +19,12 @@ const main = async () => {
         feedFetchMs,
         graphqlFetchMs,
         pageEnrichMs,
-    } = await fetchProductswayBlogBundle();
+        publicationLoadInvocations,
+        feedRetries,
+    } = bundleA;
+    if (bundleB.all.length !== all.length) {
+        throw new Error('deduped bundle length mismatch');
+    }
     const graphqlAvailableMetric = graphqlAvailable ? 1 : 0;
     const listingFetchMs = Date.now() - fetchStarted;
 
@@ -60,6 +69,10 @@ const main = async () => {
     console.log(`METRIC graphql_available=${graphqlAvailableMetric}`);
     console.log(`METRIC articles_with_cover=${articlesWithCover}`);
     console.log(`METRIC homepage_with_cover=${homepageWithCover}`);
+    console.log(
+        `METRIC publication_load_invocations=${publicationLoadInvocations}`,
+    );
+    console.log(`METRIC feed_fetch_retries=${feedRetries}`);
 
     if (total > 0 && total <= 5) {
         console.log(

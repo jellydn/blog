@@ -56,3 +56,5 @@ Ensure **productsway.com** shows Hashnode posts from **blog.productsway.com**:
 - **keep #13**: Parallel sitemap + RSS fetch in `fetchHashnodePostsViaFeed` → lower `feed_fetch_ms` (~87ms).
 - **keep #14**: Page enrich concurrency **9** (one wave for 9 fetches); `graphql_available` metric for prod.
 - **keep #15**: Overlap feed + gql probe; `graphqlAvailable` on bundle; cover quality metrics (29/6).
+- **keep #16**: In-flight dedup for concurrent `fetchProductswayBlogBundle` → `publication_load_invocations=1` under parallel callers.
+- **keep #17**: Retry sitemap/RSS on 429/502/503/504; `feed_fetch_retries` metric (prod resilience).

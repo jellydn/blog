@@ -102,33 +102,80 @@ const getTimestamp = (date?: string) => {
     return Number.isNaN(timestamp) ? 0 : timestamp;
 };
 
+const FEED_FETCH_ATTEMPTS = 3;
+const RETRYABLE_FEED_STATUS = new Set([429, 502, 503, 504]);
+
+async function fetchFeedTextWithRetry(
+    url: string,
+): Promise<{ text: string; retries: number }> {
+    let retries = 0;
+    for (let attempt = 0; attempt < FEED_FETCH_ATTEMPTS; attempt++) {
+        try {
+            const res = await fetch(url, {
+                headers: defaultBlogFetchHeaders(),
+                signal: AbortSignal.timeout(15000),
+            });
+            if (res.ok) {
+                return { text: await res.text(), retries };
+            }
+            if (
+                RETRYABLE_FEED_STATUS.has(res.status) &&
+                attempt < FEED_FETCH_ATTEMPTS - 1
+            ) {
+                retries += 1;
+                await new Promise((r) => setTimeout(r, 400 * (attempt + 1)));
+                continue;
+            }
+            return { text: '', retries };
+        } catch {
+            if (attempt < FEED_FETCH_ATTEMPTS - 1) {
+                retries += 1;
+                await new Promise((r) => setTimeout(r, 400 * (attempt + 1)));
+                continue;
+            }
+            return { text: '', retries };
+        }
+    }
+    return { text: '', retries };
+}
+
+export type HashnodeFeedFetchResult = {
+    posts: HashnodePostSummary[];
+    feedRetries: number;
+};
+
 /** RSS (recent) then sitemap (full index) when GraphQL is unavailable. */
 export async function fetchHashnodePostsViaFeed(): Promise<
     HashnodePostSummary[]
 > {
-    const fetchOpts = {
-        headers: defaultBlogFetchHeaders(),
-        signal: AbortSignal.timeout(15000),
-    };
+    const { posts } = await fetchHashnodePostsViaFeedWithStats();
+    return posts;
+}
+
+export async function fetchHashnodePostsViaFeedWithStats(): Promise<HashnodeFeedFetchResult> {
+    let feedRetries = 0;
 
     const [sitemapPosts, rssPosts] = await Promise.all([
         (async () => {
             try {
-                const sitemapRes = await fetch(
+                const { text, retries } = await fetchFeedTextWithRetry(
                     `${BASE_URL}/sitemap.xml`,
-                    fetchOpts,
                 );
-                if (!sitemapRes.ok) return [];
-                return parseSitemap(await sitemapRes.text());
+                feedRetries += retries;
+                if (!text) return [];
+                return parseSitemap(text);
             } catch {
                 return [];
             }
         })(),
         (async () => {
             try {
-                const rssRes = await fetch(`${BASE_URL}/rss.xml`, fetchOpts);
-                if (!rssRes.ok) return [];
-                return parseRSSItems(await rssRes.text());
+                const { text, retries } = await fetchFeedTextWithRetry(
+                    `${BASE_URL}/rss.xml`,
+                );
+                feedRetries += retries;
+                if (!text) return [];
+                return parseRSSItems(text);
             } catch {
                 return [];
             }
@@ -158,15 +205,15 @@ export async function fetchHashnodePostsViaFeed(): Promise<
     );
 
     if (merged.length > 5) {
-        return merged;
+        return { posts: merged, feedRetries };
     }
 
     const fromProfile = await fetchHashnodePostsViaProfileRSC();
     if (fromProfile.length > merged.length) {
-        return fromProfile;
+        return { posts: fromProfile, feedRetries };
     }
 
-    return merged;
+    return { posts: merged, feedRetries };
 }
 
 async function fetchHashnodePostsViaProfileRSC(): Promise<
