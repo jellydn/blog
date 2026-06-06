@@ -3,7 +3,8 @@ import { defaultBlogFetchHeaders } from './fetchHeaders';
 const BASE_URL = 'https://blog.productsway.com';
 const MIN_DESCRIPTION_LEN = 20;
 const MAX_ENRICH_PER_RUN = 29;
-const PAGE_ENRICH_CONCURRENCY = 5;
+/** Matches typical sitemap-only enrich count (~9); single wave when ≤9 fetches. */
+const PAGE_ENRICH_CONCURRENCY = 9;
 
 function decodeHtmlEntities(text: string): string {
     return text
