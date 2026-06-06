@@ -10,7 +10,8 @@
         "format": "biome format --write .",
         "start": "next start",
         "fetch:videos": "bun scripts/fetch-youtube-videos.ts",
-        "fetch:repos": "bun scripts/fetch-repos.ts"
+        "fetch:repos": "bun scripts/fetch-repos.ts",
+        "doctor": "npx react-doctor@latest"
     },
     "config": {
         "commitizen": {
@@ -21,7 +22,6 @@
         "@giscus/react": "3.1.0",
         "@happykit/flags": "3.3.0",
         "@tailwindcss/typography": "0.5.19",
-
         "daisyui": "5.5.20",
         "glob": "13.0.6",
         "gray-matter": "4.0.3",
