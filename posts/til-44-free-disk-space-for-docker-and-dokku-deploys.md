@@ -25,41 +25,33 @@ docker system df
 
 If free space is under 1 GB, deployment failures are almost guaranteed.
 
+`docker system df` on my box pointed at the best targets: **build cache** (~6.9 GB reclaimable), **unused volumes** (~4.7 GB reclaimable), and **images** (~another 6 GB).
+
+Run the steps below **as root**, **in order**. Stop when `df -h /` shows at least **5–10 GB** free.
+
 ---
 
-## 1. Remove Docker build cache
-
-This is usually the safest and most effective cleanup.
+## 1. Build cache first (safest, biggest quick win)
 
 ```sh
 docker builder prune -af
 ```
 
-On my server, Docker build cache was consuming nearly **7 GB**.
-
-This command removes cached build layers while keeping running containers untouched.
+That should reclaim most of the **6.9 GB** build cache with no impact on running containers.
 
 ---
 
-## 2. Run Dokku cleanup
-
-Dokku keeps old containers and images around for rollback purposes.
+## 2. Dokku cleanup (containers + dangling images)
 
 ```sh
 dokku cleanup
-```
-
-Or clean every application individually:
-
-```sh
+# Per app if you want to be thorough:
 dokku apps:list | tail -n +2 | xargs -I{} dokku cleanup {}
 ```
 
 ---
 
-## 3. Purge Dokku build cache
-
-Each Dokku application can accumulate build cache over time.
+## 3. Purge Dokku build caches (per app)
 
 ```sh
 dokku apps:list | tail -n +2 | while read app; do
@@ -68,27 +60,19 @@ dokku apps:list | tail -n +2 | while read app; do
 done
 ```
 
-This often recovers several additional gigabytes.
-
 ---
 
-## 4. Remove unused Docker images
-
-Docker images pile up quickly after multiple deployments.
+## 4. Unused Docker images
 
 ```sh
 docker image prune -af
 ```
 
-Running applications are unaffected because Docker only removes images that are no longer referenced.
+Running apps keep their active images; this removes unused layers only.
 
 ---
 
-## 5. Clean Git objects stored by Dokku
-
-Each Dokku application stores a Git repository.
-
-Over time, these repositories accumulate unnecessary objects.
+## 5. Git object cleanup (per app)
 
 ```sh
 dokku apps:list | tail -n +2 | while read app; do
@@ -99,30 +83,28 @@ done
 
 ---
 
-## 6. Remove unused Docker volumes
+## 6. Unused volumes (careful — can delete data)
 
-Volumes can silently consume large amounts of storage.
+I had **23 volumes**, only **1 active** — about **4.7 GB** reclaimable. These are often leftover from destroyed Postgres/Redis/RabbitMQ services.
 
-First inspect them:
+Inspect before pruning:
 
 ```sh
 docker volume ls
 docker volume ls -f dangling=true
 ```
 
-If the volumes belong to services you already removed:
+If you recognize orphans from apps/services you already destroyed:
 
 ```sh
 docker volume prune -f
 ```
 
-⚠️ Be careful. Volumes often contain database data. Verify before deleting.
+Do **not** run `docker system prune -af --volumes` unless you accept losing data from any unused volume.
 
 ---
 
-## 7. Remove stale deploy locks
-
-Sometimes a failed deployment leaves lock files behind.
+## 7. Clear deploy locks (if deploys still fail)
 
 Find them:
 
@@ -139,9 +121,9 @@ rm -f /home/dokku/docklight-staging/LOCK
 
 ---
 
-## 8. Verify recovery
+## 8. Verify
 
-After cleanup:
+After cleanup (aim for ≥ 5 GB free before pushing again):
 
 ```sh
 df -h /
