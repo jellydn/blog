@@ -161,8 +161,11 @@ const PostsPage = ({ title, description, items }: PostsPageProps) => {
 export default PostsPage;
 
 export async function getStaticProps() {
-    const config = await import('../../data/config.json');
-    const { all: items } = await fetchProductswayBlogBundle();
+    const [configModule, { all: items }] = await Promise.all([
+        import('../../data/config.json'),
+        fetchProductswayBlogBundle(),
+    ]);
+    const config = configModule.default ?? configModule;
 
     return {
         props: {
