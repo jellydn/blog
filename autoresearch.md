@@ -16,6 +16,8 @@ Ensure **productsway.com** shows Hashnode posts from **blog.productsway.com**:
 
 `./autoresearch.sh` — outputs `METRIC name=number` lines.
 
+**Vercel regression:** `AUTORESEARCH_SIMULATE_VERCEL=1 ./autoresearch.sh` skips sitemap (models 429 on Vercel). Watch `feed_sitemap_url_count`, `feed_rss_item_count`, `feed_source_code`, and `total_posts_count` (must stay ≥6; target 29).
+
 ## Files in Scope
 
 - `lib/hashnode.ts` — GraphQL fetch, pagination for all posts.
