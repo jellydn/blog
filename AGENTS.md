@@ -4,6 +4,8 @@
 
 A Next.js 15 blog with TinaCMS, using TypeScript, Tailwind CSS v4, and DaisyUI.
 
+**Remote blog listings:** The homepage blog section and `/posts` load articles from [blog.productsway.com](https://blog.productsway.com) (Hashnode), not from local `posts/*.md` TIL files. Local markdown under `posts/` is used for legacy `/posts/[slug]` routes only.
+
 ## Build, Lint, and Test Commands
 
 ### Package Manager
@@ -21,6 +23,7 @@ pnpm lint             # Run Biome linting (CI mode)
 pnpm format           # Run Biome formatter with auto-fix
 pnpm fetch:videos     # Fetch YouTube videos data
 pnpm fetch:repos      # Fetch GitHub repositories data
+./autoresearch.sh     # Benchmark Hashnode listing fetch (see autoresearch.md)
 ```
 
 ### Testing
@@ -106,6 +109,9 @@ try {
 ```
 components/  - React components (Pages, Layout, UI)
 lib/         - Utility functions and API clients
+lib/productswayBlog.ts - Shared fetch for homepage + /posts + /api/posts
+lib/hashnode.ts, lib/hashnodeFeedFallback.ts - Hashnode GraphQL and sitemap/RSS
+lib/blogPageMeta.ts - Article HTML meta enrichment for listing cards
 lib/utils/   - Helper functions (date, array utilities)
 pages/       - Next.js pages and routes
 posts/       - Blog post content (Markdown)
@@ -132,11 +138,14 @@ scripts/     - Build and utility scripts (run with bun)
 - Three DaisyUI themes: `minimal`, `winter`, `dark`
 - Webfinger redirects configured for Fediverse support
 - Scripts use `bun` for execution
+- **Hashnode listings:** `fetchProductswayBlogBundle()` in `lib/productswayBlog.ts` returns the full article list and a homepage slice (latest 6, `HOMEPAGE_BLOG_POST_LIMIT` in `lib/blogConstants.ts`). Pages use ISR `revalidate: 300`. Optional env: `HASHNODE_PUBLICATION_HOST` (default `blog.productsway.com`).
+- **Listing regression check:** `./autoresearch.sh` runs `scripts/autoresearch-blog-posts.ts` and prints `METRIC` lines (primary: `total_posts_count`). Details in `autoresearch.md`.
 
 ## Common Tasks
 
 ```bash
-# Create blog post: Add .md file to posts/ with frontmatter
+# Remote ITMan articles: Published on blog.productsway.com; productsway.com pulls via lib/productswayBlog (no local file)
+# Local TIL post: Add .md file to posts/ with frontmatter
 # Create page: Add .tsx file to pages/ with export default
 # Create component: Create in components/ with PascalCase and named export
 ```
