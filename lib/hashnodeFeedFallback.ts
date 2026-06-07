@@ -143,6 +143,14 @@ async function fetchFeedTextWithRetry(
 export type HashnodeFeedFetchResult = {
     posts: HashnodePostSummary[];
     feedRetries: number;
+    sitemapUrlCount: number;
+    rssItemCount: number;
+    feedSource: 'sitemap_rss' | 'publication_rsc' | 'profile_rsc' | 'rss_only';
+};
+
+export type FeedFetchOptions = {
+    /** Simulate Vercel/datacenter: do not use sitemap (429). */
+    skipSitemap?: boolean;
 };
 
 /** RSS (recent) then sitemap (full index) when GraphQL is unavailable. */
@@ -153,11 +161,15 @@ export async function fetchHashnodePostsViaFeed(): Promise<
     return posts;
 }
 
-export async function fetchHashnodePostsViaFeedWithStats(): Promise<HashnodeFeedFetchResult> {
+export async function fetchHashnodePostsViaFeedWithStats(
+    options: FeedFetchOptions = {},
+): Promise<HashnodeFeedFetchResult> {
     let feedRetries = 0;
+    const skipSitemap = options.skipSitemap === true;
 
     const [sitemapPosts, rssPosts] = await Promise.all([
         (async () => {
+            if (skipSitemap) return [];
             try {
                 const { text, retries } = await fetchFeedTextWithRetry(
                     `${BASE_URL}/sitemap.xml`,
@@ -208,17 +220,48 @@ export async function fetchHashnodePostsViaFeedWithStats(): Promise<HashnodeFeed
     // Sitemap gives the full index; RSS alone is ~5. Prefer merged when sitemap contributed.
     const hasFullIndex = sitemapPosts.length > 0 || merged.length > 5;
     if (hasFullIndex) {
-        return { posts: merged, feedRetries };
+        return {
+            posts: merged,
+            feedRetries,
+            sitemapUrlCount: sitemapPosts.length,
+            rssItemCount: rssPosts.length,
+            feedSource: 'sitemap_rss',
+        };
+    }
+
+    const { posts: fromPublication, retries: pubRetries } =
+        await fetchHashnodePostsViaPublicationRSCWithStats();
+    feedRetries += pubRetries;
+    if (fromPublication.length > merged.length) {
+        return {
+            posts: fromPublication,
+            feedRetries,
+            sitemapUrlCount: sitemapPosts.length,
+            rssItemCount: rssPosts.length,
+            feedSource: 'publication_rsc',
+        };
     }
 
     const { posts: fromProfile, retries: profileRetries } =
         await fetchHashnodePostsViaProfileRSCWithStats();
     feedRetries += profileRetries;
     if (fromProfile.length > merged.length) {
-        return { posts: fromProfile, feedRetries };
+        return {
+            posts: fromProfile,
+            feedRetries,
+            sitemapUrlCount: sitemapPosts.length,
+            rssItemCount: rssPosts.length,
+            feedSource: 'profile_rsc',
+        };
     }
 
-    return { posts: merged, feedRetries };
+    return {
+        posts: merged,
+        feedRetries,
+        sitemapUrlCount: sitemapPosts.length,
+        rssItemCount: rssPosts.length,
+        feedSource: 'rss_only',
+    };
 }
 
 async function parseProfileRscHtml(
@@ -313,6 +356,22 @@ async function parseProfileRscHtml(
             );
     } catch {
         return [];
+    }
+}
+
+async function fetchHashnodePostsViaPublicationRSCWithStats(): Promise<{
+    posts: HashnodePostSummary[];
+    retries: number;
+}> {
+    try {
+        const { text, retries } = await fetchFeedTextWithRetry(`${BASE_URL}/`);
+        if (!text) {
+            return { posts: [], retries };
+        }
+        const posts = await parseProfileRscHtml(text);
+        return { posts, retries };
+    } catch {
+        return { posts: [], retries: 0 };
     }
 }
 

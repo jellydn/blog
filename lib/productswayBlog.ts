@@ -7,7 +7,10 @@ import {
     isHashnodeGraphqlAvailable,
     mapHashnodeSummaryToBlogPost,
 } from './hashnode';
-import { fetchHashnodePostsViaFeedWithStats } from './hashnodeFeedFallback';
+import {
+    type FeedFetchOptions,
+    fetchHashnodePostsViaFeedWithStats,
+} from './hashnodeFeedFallback';
 import { mergeHashnodePostSummaries } from './mergePostSummaries';
 import type { BlogPost } from './types';
 
@@ -39,21 +42,29 @@ const toListItem = (post: BlogPost): ProductswayBlogListItem => ({
     hero_image: post.frontmatter.hero_image,
 });
 
-async function loadPublicationSummaries(): Promise<{
+async function loadPublicationSummaries(
+    feedOptions: FeedFetchOptions = {},
+): Promise<{
     summaries: HashnodePostSummary[];
     graphqlCount: number;
     graphqlAvailable: boolean;
     feedFetchMs: number;
     graphqlFetchMs: number;
     feedRetries: number;
+    sitemapUrlCount: number;
+    rssItemCount: number;
+    feedSource: string;
 }> {
     const feedStart = Date.now();
     const [feedResult, graphqlAvailable] = await Promise.all([
-        fetchHashnodePostsViaFeedWithStats(),
+        fetchHashnodePostsViaFeedWithStats(feedOptions),
         isHashnodeGraphqlAvailable(),
     ]);
     const fromFeed = feedResult.posts;
     const feedRetries = feedResult.feedRetries;
+    const sitemapUrlCount = feedResult.sitemapUrlCount;
+    const rssItemCount = feedResult.rssItemCount;
+    const feedSource = feedResult.feedSource;
     const feedFetchMs = Date.now() - feedStart;
 
     let fromGraphql: HashnodePostSummary[] = [];
@@ -73,6 +84,9 @@ async function loadPublicationSummaries(): Promise<{
             feedFetchMs,
             graphqlFetchMs,
             feedRetries,
+            sitemapUrlCount,
+            rssItemCount,
+            feedSource,
         };
     }
 
@@ -83,10 +97,15 @@ async function loadPublicationSummaries(): Promise<{
         feedFetchMs,
         graphqlFetchMs,
         feedRetries,
+        sitemapUrlCount,
+        rssItemCount,
+        feedSource,
     };
 }
 
-async function loadArticleListItems(): Promise<{
+async function loadArticleListItems(
+    feedOptions: FeedFetchOptions = {},
+): Promise<{
     items: ProductswayBlogListItem[];
     graphqlCount: number;
     graphqlAvailable: boolean;
@@ -97,6 +116,9 @@ async function loadArticleListItems(): Promise<{
     publicationLoadInvocations: number;
     feedRetries: number;
     pageEnrichRetries: number;
+    sitemapUrlCount: number;
+    rssItemCount: number;
+    feedSource: string;
 }> {
     publicationLoadInvocationCount += 1;
     const {
@@ -106,7 +128,10 @@ async function loadArticleListItems(): Promise<{
         feedFetchMs,
         graphqlFetchMs,
         feedRetries,
-    } = await loadPublicationSummaries();
+        sitemapUrlCount,
+        rssItemCount,
+        feedSource,
+    } = await loadPublicationSummaries(feedOptions);
     const articles = raw.filter((s) => isBlogArticleSlug(s.slug ?? ''));
     const enrichStart = Date.now();
     const {
@@ -133,19 +158,30 @@ async function loadArticleListItems(): Promise<{
         publicationLoadInvocations: publicationLoadInvocationCount,
         feedRetries,
         pageEnrichRetries,
+        sitemapUrlCount,
+        rssItemCount,
+        feedSource,
     };
 }
 
-async function loadArticleListItemsShared(): Promise<
-    Awaited<ReturnType<typeof loadArticleListItems>>
-> {
+let sharedFeedOptions: FeedFetchOptions = {};
+
+async function loadArticleListItemsShared(
+    feedOptions?: FeedFetchOptions,
+): Promise<Awaited<ReturnType<typeof loadArticleListItems>>> {
+    const opts = feedOptions ?? sharedFeedOptions;
     if (publicationLoadInFlight) {
         return publicationLoadInFlight;
     }
-    publicationLoadInFlight = loadArticleListItems().finally(() => {
+    publicationLoadInFlight = loadArticleListItems(opts).finally(() => {
         publicationLoadInFlight = null;
     });
     return publicationLoadInFlight;
+}
+
+/** Benchmark: simulate Vercel when sitemap returns 429. */
+export function setProductswayBlogFeedOptions(options: FeedFetchOptions): void {
+    sharedFeedOptions = options;
 }
 
 const listItemsToHomepageBlogs = (
@@ -191,6 +227,9 @@ export async function fetchProductswayBlogBundle(): Promise<{
     publicationLoadInvocations: number;
     feedRetries: number;
     pageEnrichRetries: number;
+    sitemapUrlCount: number;
+    rssItemCount: number;
+    feedSource: string;
 }> {
     const {
         items: all,
@@ -203,6 +242,9 @@ export async function fetchProductswayBlogBundle(): Promise<{
         publicationLoadInvocations,
         feedRetries,
         pageEnrichRetries,
+        sitemapUrlCount,
+        rssItemCount,
+        feedSource,
     } = await loadArticleListItemsShared();
     return {
         all,
@@ -216,5 +258,8 @@ export async function fetchProductswayBlogBundle(): Promise<{
         publicationLoadInvocations,
         feedRetries,
         pageEnrichRetries,
+        sitemapUrlCount,
+        rssItemCount,
+        feedSource,
     };
 }

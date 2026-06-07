@@ -1,10 +1,27 @@
 import { HOMEPAGE_BLOG_POST_LIMIT } from '../lib/blogConstants';
 import { isTitleDerivedFromSlug } from '../lib/blogPageMeta';
-import { fetchProductswayBlogBundle } from '../lib/productswayBlog';
+import {
+    fetchProductswayBlogBundle,
+    setProductswayBlogFeedOptions,
+} from '../lib/productswayBlog';
 
 const MIN_DESCRIPTION_LEN = 20;
 
+const FEED_SOURCE_METRIC: Record<string, number> = {
+    sitemap_rss: 0,
+    publication_rsc: 1,
+    profile_rsc: 2,
+    rss_only: 3,
+};
+
 const main = async () => {
+    const simulateVercel =
+        process.env.AUTORESEARCH_SIMULATE_VERCEL === '1' ||
+        process.env.AUTORESEARCH_SIMULATE_VERCEL === 'true';
+    if (simulateVercel) {
+        setProductswayBlogFeedOptions({ skipSitemap: true });
+    }
+
     const fetchStarted = Date.now();
     const [bundleA, bundleB] = await Promise.all([
         fetchProductswayBlogBundle(),
@@ -22,6 +39,9 @@ const main = async () => {
         publicationLoadInvocations,
         feedRetries,
         pageEnrichRetries,
+        sitemapUrlCount,
+        rssItemCount,
+        feedSource,
     } = bundleA;
     if (bundleB.all.length !== all.length) {
         throw new Error('deduped bundle length mismatch');
@@ -105,6 +125,14 @@ const main = async () => {
     console.log(`METRIC feed_path_rsc_fallback_used=${total <= 5 ? 1 : 0}`);
     console.log(`METRIC articles_with_valid_date=${articlesWithValidDate}`);
     console.log(`METRIC homepage_dates_descending=${homepageDatesDescending}`);
+    console.log(`METRIC feed_sitemap_url_count=${sitemapUrlCount}`);
+    console.log(`METRIC feed_rss_item_count=${rssItemCount}`);
+    console.log(
+        `METRIC feed_source_code=${FEED_SOURCE_METRIC[feedSource] ?? -1}`,
+    );
+    console.log(
+        `METRIC simulate_vercel_sitemap_blocked=${simulateVercel ? 1 : 0}`,
+    );
 
     if (total > 0 && total <= 5) {
         console.log(
