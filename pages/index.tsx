@@ -627,7 +627,10 @@ const Index = ({
 export default Index;
 
 export async function getStaticProps() {
-    const siteConfig = await import('../data/config.json');
+    const [siteConfig, { homepage: allBlogs }] = await Promise.all([
+        import('../data/config.json'),
+        fetchProductswayBlogBundle(),
+    ]);
 
     const loadMarkdown = (context: {
         keys(): string[];
@@ -642,7 +645,6 @@ export async function getStaticProps() {
     // @ts-expect-error require.context is a webpack function
     const videos = loadMarkdown(require.context('../videos', true, /\.md$/));
 
-    const { homepage: allBlogs } = await fetchProductswayBlogBundle();
     const initialHasRemotePosts = allBlogs.length > 0;
 
     return {
