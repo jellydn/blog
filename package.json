@@ -52,7 +52,7 @@
         "postcss": "8.5.15",
         "postcss-flexbugs-fixes": "5.0.2",
         "postcss-preset-env": "11.3.1",
-        "sort-package-json": "3.7.1",
+        "sort-package-json": "4.0.0",
         "tailwindcss": "4.3.1",
         "typescript": "6.0.3"
     },
