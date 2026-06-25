@@ -2,13 +2,14 @@ import { Button } from 'components/Button';
 import Layout from 'components/Layout';
 import { RepoStars } from 'components/RepoStars';
 
-import type { BlogPost, VideoPost } from 'lib/types';
+import type { BlogPost, BlogPostSummary, VideoPost } from 'lib/types';
 import { dedupeBySlug, extractSlug, parseMarkdown } from 'lib/utils/array';
 import dynamic from 'next/dynamic';
 import Head from 'next/head';
 import Image from 'next/image';
 import Script from 'next/script';
 import { generateNextSeo } from 'next-seo/pages';
+import blogPostsData from '../data/blog-posts.json';
 import reposData from '../data/repos.json';
 
 const YoutubeSection = dynamic(() =>
@@ -729,7 +730,7 @@ async function fetchRemotePosts(): Promise<
             }
             if (ce < 0) break;
             try {
-                data += JSON.parse('"' + html.slice(qs + 1, ce) + '"');
+                data += JSON.parse(`"${html.slice(qs + 1, ce)}"`);
             } catch {}
             pos = ce + 1;
         }
@@ -754,15 +755,22 @@ async function fetchRemotePosts(): Promise<
         const cl = data
             .slice(as, ae)
             .replace(/"\$D(\d{4}-\d{2}-\d{2}T[^"]+)"/g, '"$1"');
-        let posts: any[] = [];
+        type RSCPost = {
+            slug: string;
+            title: string;
+            brief?: string;
+            publishedAt?: string;
+            coverImage?: { url?: string };
+        };
+        let posts: RSCPost[] = [];
         try {
-            posts = JSON.parse('[' + cl + ']');
+            posts = JSON.parse(`[${cl}]`);
         } catch {
             return [];
         }
         return posts
-            .filter((p: any) => p.slug && p.title)
-            .map((p: any) => ({
+            .filter((p) => p.slug && p.title)
+            .map((p) => ({
                 slug: p.slug,
                 title: p.title,
                 description: p.brief ?? '',
@@ -770,7 +778,7 @@ async function fetchRemotePosts(): Promise<
                 hero_image: p.coverImage?.url ?? null,
             }))
             .sort(
-                (a: any, b: any) =>
+                (a, b) =>
                     new Date(b.date).getTime() - new Date(a.date).getTime(),
             );
     } catch {
@@ -790,18 +798,33 @@ export async function getStaticProps() {
             return parseMarkdown(context(key).default, slug);
         });
     // @ts-expect-error require.context is a webpack function
-    const posts = loadMarkdown(require.context('../posts', true, /\.md$/));
+    const _posts = loadMarkdown(require.context('../posts', true, /\.md$/));
     // @ts-expect-error require.context is a webpack function
     const videos = loadMarkdown(require.context('../videos', true, /\.md$/));
 
-    // Fetch from blog.productsway.com RSS feed, fall back to RSC
+    // Use cached blog posts as primary source, try live RSS for freshness
+    const cachedPosts = (blogPostsData as BlogPostSummary[]).map((p) => ({
+        slug: p.slug,
+        title: p.title,
+        description: p.description,
+        date: p.date,
+        hero_image: p.hero_image,
+    }));
+
     const remotePosts = await fetchRemotePosts();
+
+    // Merge: start with cached, add any live posts not in cache
+    const cachedSlugs = new Set(cachedPosts.map((p) => p.slug));
+    const newFromLive = remotePosts.filter((p) => !cachedSlugs.has(p.slug));
+    const mergedPosts = [...cachedPosts, ...newFromLive].sort(
+        (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
+    );
 
     let allBlogs: BlogPost[];
     let initialHasRemotePosts = false;
 
-    if (remotePosts.length > 0) {
-        allBlogs = remotePosts.slice(0, 6).map((p) => ({
+    if (mergedPosts.length > 0) {
+        allBlogs = mergedPosts.slice(0, 6).map((p) => ({
             slug: p.slug,
             frontmatter: {
                 title: p.title,
@@ -813,7 +836,7 @@ export async function getStaticProps() {
         }));
         initialHasRemotePosts = true;
     } else {
-        // No remote posts — use the View All Posts button to go to blog.productsway.com
+        // No posts — use the View All Posts button to go to blog.productsway.com
         allBlogs = [];
     }
 

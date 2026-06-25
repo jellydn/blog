@@ -1,24 +1,16 @@
 import Layout from 'components/Layout';
-import matter from 'gray-matter';
+import type { BlogPostSummary } from 'lib/types';
 import { formatDate } from 'lib/utils/date';
 import Image from 'next/image';
 import { generateNextSeo } from 'next-seo/pages';
+import blogPostsData from '../../data/blog-posts.json';
 
 const BLOG_URL = 'https://blog.productsway.com';
-
-type LocalPost = {
-    slug: string;
-    title: string;
-    description: string;
-    date: string;
-    tags: string[];
-    hero_image: string | null;
-};
 
 type PostsPageProps = {
     title: string;
     description: string;
-    items: LocalPost[];
+    items: BlogPostSummary[];
 };
 
 const PostsPage = ({ title, description, items }: PostsPageProps) => {
@@ -161,7 +153,7 @@ const PostsPage = ({ title, description, items }: PostsPageProps) => {
 export default PostsPage;
 
 // Fetch posts from blog.productsway.com RSS feed (primary) or hashnode.com profile RSC (fallback)
-async function fetchPostsFromHashnode(): Promise<LocalPost[]> {
+async function fetchPostsFromHashnode(): Promise<BlogPostSummary[]> {
     // Helper to parse an RSS XML string into items
     function parseRSSItems(xml: string) {
         return (xml.match(/<item>([\s\S]*?)<\/item>/g) ?? []).map(
@@ -418,8 +410,24 @@ async function fetchPostsFromHashnode(): Promise<LocalPost[]> {
 export async function getStaticProps() {
     const config = await import('../../data/config.json');
 
-    // Only show posts from blog.productsway.com (RSS/RSC), no local notes
-    const items = await fetchPostsFromHashnode();
+    // Use cached blog posts as primary source, try live RSS for freshness
+    const cachedPosts = (blogPostsData as BlogPostSummary[]).map((p) => ({
+        slug: p.slug,
+        title: p.title,
+        description: p.description,
+        date: p.date,
+        tags: p.tags,
+        hero_image: p.hero_image,
+    }));
+
+    const livePosts = await fetchPostsFromHashnode();
+
+    // Merge: start with cached, add any live posts not in cache
+    const cachedSlugs = new Set(cachedPosts.map((p) => p.slug));
+    const newFromLive = livePosts.filter((p) => !cachedSlugs.has(p.slug));
+    const items = [...cachedPosts, ...newFromLive].sort(
+        (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
+    );
 
     return {
         props: {
