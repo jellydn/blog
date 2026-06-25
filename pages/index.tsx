@@ -626,166 +626,6 @@ const Index = ({
 
 export default Index;
 
-// Fetch posts from blog.productsway.com RSS feed (primary) or hashnode.com profile RSC (fallback)
-async function fetchRemotePosts(): Promise<
-    Array<{
-        slug: string;
-        title: string;
-        description: string;
-        date: string;
-        hero_image: string | null;
-    }>
-> {
-    // Try RSS first
-    try {
-        const rss = await fetch('https://blog.productsway.com/rss.xml', {
-            headers: { 'User-Agent': 'ProductswayBlog/1.0' },
-            signal: AbortSignal.timeout(10000),
-        });
-        if (rss.ok) {
-            const xml = await rss.text();
-            const items = xml.match(/<item>([\s\S]*?)<\/item>/g) ?? [];
-            const posts = items.map((item: string) => {
-                const slug =
-                    item.match(
-                        /<link>https:\/\/blog\.productsway\.com\/([^<]+)<\/link>/,
-                    )?.[1] ??
-                    item.match(
-                        /<guid[^>]*>https:\/\/blog\.productsway\.com\/([^<]+)<\/guid>/,
-                    )?.[1] ??
-                    '';
-                const title =
-                    item.match(
-                        /<title><!\[CDATA\[([^\]]+)\]\]><\/title>/,
-                    )?.[1] ??
-                    item.match(/<title>([^<]+)<\/title>/)?.[1] ??
-                    '';
-                const description =
-                    item.match(
-                        /<description><!\[CDATA\[([^\]]+)\]\]><\/description>/,
-                    )?.[1] ??
-                    item.match(/<description>([^<]+)<\/description>/)?.[1] ??
-                    '';
-                const date =
-                    item.match(/<pubDate>([^<]+)<\/pubDate>/)?.[1] ?? '';
-                const cover =
-                    item.match(/<media:content[^>]*url="([^"]+)"/)?.[1] ??
-                    item.match(/<enclosure[^>]*url="([^"]+)"/)?.[1] ??
-                    null;
-                return {
-                    slug: slug.replace(/\/$/, ''),
-                    title: title.trim(),
-                    description: description.trim(),
-                    date: new Date(date).toISOString(),
-                    cover,
-                };
-            });
-            if (posts.length > 0) {
-                return posts
-                    .filter((p) => p.slug && p.title)
-                    .map((p) => ({
-                        slug: p.slug,
-                        title: p.title,
-                        description: p.description,
-                        date: p.date,
-                        hero_image: p.cover,
-                    }))
-                    .sort(
-                        (a, b) =>
-                            new Date(b.date).getTime() -
-                            new Date(a.date).getTime(),
-                    );
-            }
-        }
-    } catch {
-        /* fall through */
-    }
-
-    // Fall back to RSC
-    try {
-        const res = await fetch('https://hashnode.com/@dunghd', {
-            headers: { 'User-Agent': 'ProductswayBlog/1.0' },
-            signal: AbortSignal.timeout(10000),
-        });
-        if (!res.ok) return [];
-        const html = await res.text();
-        const MARKER = '__next_f.push([1,';
-        let data = '';
-        let pos = 0;
-        while (true) {
-            const cs = html.indexOf(MARKER, pos);
-            if (cs < 0) break;
-            const qs = html.indexOf('"', cs + MARKER.length);
-            if (qs < 0) break;
-            let ce = -1;
-            for (let i = qs + 1; i < html.length; i++) {
-                if (html[i] === '\\' && html[i + 1] === '"') {
-                    i++;
-                    continue;
-                }
-                if (html[i] === '"') {
-                    ce = i;
-                    break;
-                }
-            }
-            if (ce < 0) break;
-            try {
-                data += JSON.parse(`"${html.slice(qs + 1, ce)}"`);
-            } catch {}
-            pos = ce + 1;
-        }
-        if (!data) return [];
-        const am = '"initialPosts":[';
-        const ai = data.indexOf(am);
-        if (ai < 0) return [];
-        const as = ai + am.length;
-        let d = 0;
-        let ae = -1;
-        for (let i = as; i < data.length; i++) {
-            if (data[i] === '[') d++;
-            else if (data[i] === ']') {
-                if (d === 0) {
-                    ae = i;
-                    break;
-                }
-                d--;
-            }
-        }
-        if (ae < 0) return [];
-        const cl = data
-            .slice(as, ae)
-            .replace(/"\$D(\d{4}-\d{2}-\d{2}T[^"]+)"/g, '"$1"');
-        type RSCPost = {
-            slug: string;
-            title: string;
-            brief?: string;
-            publishedAt?: string;
-            coverImage?: { url?: string };
-        };
-        let posts: RSCPost[] = [];
-        try {
-            posts = JSON.parse(`[${cl}]`);
-        } catch {
-            return [];
-        }
-        return posts
-            .filter((p) => p.slug && p.title)
-            .map((p) => ({
-                slug: p.slug,
-                title: p.title,
-                description: p.brief ?? '',
-                date: p.publishedAt ?? '',
-                hero_image: p.coverImage?.url ?? null,
-            }))
-            .sort(
-                (a, b) =>
-                    new Date(b.date).getTime() - new Date(a.date).getTime(),
-            );
-    } catch {
-        return [];
-    }
-}
-
 export async function getStaticProps() {
     const siteConfig = await import('../data/config.json');
 
@@ -802,43 +642,20 @@ export async function getStaticProps() {
     // @ts-expect-error require.context is a webpack function
     const videos = loadMarkdown(require.context('../videos', true, /\.md$/));
 
-    // Use cached blog posts as primary source, try live RSS for freshness
-    const cachedPosts = (blogPostsData as BlogPostSummary[]).map((p) => ({
-        slug: p.slug,
-        title: p.title,
-        description: p.description,
-        date: p.date,
-        hero_image: p.hero_image,
-    }));
-
-    const remotePosts = await fetchRemotePosts();
-
-    // Merge: start with cached, add any live posts not in cache
-    const cachedSlugs = new Set(cachedPosts.map((p) => p.slug));
-    const newFromLive = remotePosts.filter((p) => !cachedSlugs.has(p.slug));
-    const mergedPosts = [...cachedPosts, ...newFromLive].sort(
-        (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
-    );
-
-    let allBlogs: BlogPost[];
-    let initialHasRemotePosts = false;
-
-    if (mergedPosts.length > 0) {
-        allBlogs = mergedPosts.slice(0, 6).map((p) => ({
+    // Blog posts come from data/blog-posts.json, kept fresh by CI
+    // (see .github/workflows/fetch-blog-posts.yml)
+    const allBlogs: BlogPost[] = (blogPostsData as BlogPostSummary[])
+        .slice(0, 6)
+        .map((p) => ({
             slug: p.slug,
             frontmatter: {
                 title: p.title,
                 description: p.description,
                 date: p.date,
-                tag: [],
+                tag: p.tags ?? [],
                 hero_image: p.hero_image,
             },
         }));
-        initialHasRemotePosts = true;
-    } else {
-        // No posts — use the View All Posts button to go to blog.productsway.com
-        allBlogs = [];
-    }
 
     return {
         props: {
@@ -848,7 +665,7 @@ export async function getStaticProps() {
             description: siteConfig.default.description,
             repos: reposData,
             youtubeApiKey: !!process.env.YOUTUBE_API_KEY,
-            initialHasRemotePosts,
+            initialHasRemotePosts: allBlogs.length > 0,
         },
         revalidate: 300,
     };
