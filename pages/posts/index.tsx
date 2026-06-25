@@ -165,6 +165,6 @@ export async function getStaticProps() {
             description: config.default.description,
             items,
         },
-        revalidate: 300,
+        revalidate: 86400, // Daily — matches CI fetch-blog-posts schedule
     };
 }
