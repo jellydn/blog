@@ -7,8 +7,8 @@ repos:
         types_or: [html, css, markdown]
         description: "Prettify files for the files which Biomejs doesn't support yet"
   - repo: https://github.com/biomejs/pre-commit
-    rev: "v2.4.7"
+    rev: "v2.5.1"
     hooks:
       - id: biome-check
-        additional_dependencies: ["@biomejs/biome@2.4.8"]
+        additional_dependencies: ["@biomejs/biome@2.5.1"]
         description: "Format, organize imports, lint, and apply safe fixes to the committed files"

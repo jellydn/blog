@@ -1,0 +1,242 @@
+[
+    {
+        "slug": "power-up-7-let-ai-research-your-code-while-you-sleep",
+        "title": "Power-Up #7: Let AI Research Your Code While You Sleep",
+        "description": "In the previous Power-Up posts, I've explored AI coding assistants, AI workflows, agent-based development, and AI launchers.\nThis week, I want to talk about something that feels like the next step: au",
+        "date": "2026-06-10T05:51:08.728Z",
+        "tags": [],
+        "hero_image": "https://cdn.hashnode.com/uploads/og-images/56ee654dbcca2d711e191e2a/20fbb481-d596-41c4-bf20-b5f8e3c02a7a.png"
+    },
+    {
+        "slug": "power-up-6-my-ai-launcher",
+        "title": "Power-Up #6: My AI Launcher",
+        "description": "AI coding tools are everywhere now: Claude Code, Codex, OpenCode, Amp, Pi, etc.\nThe problem is not “which AI is best” anymore. The real problem is: How do you actually integrate them into your daily w",
+        "date": "2026-05-26T01:03:03.991Z",
+        "tags": [],
+        "hero_image": "https://cdn.hashnode.com/uploads/og-images/56ee654dbcca2d711e191e2a/95034ee2-cfb8-42e3-97f8-628d10cd5c1e.jpg"
+    },
+    {
+        "slug": "power-up-5-my-ai-builder-workflow-in-2026",
+        "title": "Power-Up #5: My AI Builder Workflow in 2026",
+        "description": "This is my current AI builder system. Instead of relying on one tool for everything, I now use different AI tools for different stages of product development. This creates a workflow that feels like h",
+        "date": "2026-04-19T10:21:29.355Z",
+        "tags": [],
+        "hero_image": "https://cdn.hashnode.com/uploads/og-images/56ee654dbcca2d711e191e2a/0a28582d-bb18-4d63-ab22-846f1b0a3168.png"
+    },
+    {
+        "slug": "power-up-4-my-ai-workflow",
+        "title": "Power-Up #4: My AI Workflow",
+        "description": "In the previous post, I shared about OpenCode works. Now, let’s go one level deeper. This is the exact workflow I use daily to ship code faster, combining GitHub issue, Copilot Agent, and multiple AI",
+        "date": "2026-04-07T02:30:00.000Z",
+        "tags": [],
+        "hero_image": "https://cdn.hashnode.com/uploads/og-images/56ee654dbcca2d711e191e2a/78b879a4-6d1a-44d8-bd88-6a2610307a2f.png"
+    },
+    {
+        "slug": "amp-hack-night-singapore",
+        "title": "Amp Hack Night Singapore!",
+        "description": "I just returned from the meetup and wanted to share a few thoughts while they’re still fresh.\nTo be honest, I came in expecting to see something new, maybe a beta feature, an experimental workflow, or",
+        "date": "2026-02-26T14:11:43.669Z",
+        "tags": [],
+        "hero_image": "https://cdn.hashnode.com/uploads/covers/56ee654dbcca2d711e191e2a/8ddff3a9-9222-41a8-8e0a-9994c4bee3b4.jpg"
+    },
+    {
+        "slug": "keep-your-global-dev-tools-fresh",
+        "title": "Keep Your Global Dev Tools Fresh",
+        "description": "One habit that quietly saves me hours every month: regularly updating global developer tools. Here’s my simple routine.\nGo: Update Installed Binaries\ngo install github.com/Gelio/go-global-update@latest\ngo-global-update\n\nThis re-installs Go tools at t...",
+        "date": "2026-02-03T01:48:26.018Z",
+        "tags": [],
+        "hero_image": "https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/mY9NpmCwwKE/upload/a7752fb3a08bc0d64b85649be457bbf0.jpeg"
+    },
+    {
+        "slug": "power-up-3-opencode-composable-ai-agents-for-real-coding-workflows",
+        "title": "Power-Up #3: OpenCode — Composable AI Agents for Real Coding Workflows",
+        "description": "After experimenting with Amp and Plannotator, I’ve been spending more time with OpenCode, and it’s quickly becoming one of the most thoughtfully designed AI coding agents I’ve used.\nThis post focuses on why OpenCode feels different, and when you migh...",
+        "date": "2026-01-22T02:18:12.002Z",
+        "tags": [],
+        "hero_image": "https://cdn.hashnode.com/res/hashnode/image/upload/v1769048358793/b6ac629e-23fb-45da-b12f-672073702d15.png"
+    },
+    {
+        "slug": "power-up-2-plannotator-visual-plan-review-for-coding-agents",
+        "title": "Power-Up #2: Plannotator — Visual Plan Review for Coding Agents",
+        "description": "In the first entry of this series, I discussed Amp: an opinionated AI that integrates naturally into real developer workflows. This time, I want to highlight a tool that solves a specific but painful problem when working with AI coding agents: review...",
+        "date": "2026-01-06T05:30:55.035Z",
+        "tags": [],
+        "hero_image": "https://cdn.hashnode.com/res/hashnode/image/upload/v1770029871305/76965cf1-e3bc-44dd-a0e3-fbd02d3aa113.png"
+    },
+    {
+        "slug": "power-up-1-amp-opinionated-ai-that-fits-real-developer-workflows",
+        "title": "Power-Up #1: Amp — Opinionated AI That Fits Real Developer Workflows",
+        "description": "In this entry of my AI DX/Tools series, I want to discuss Amp: an AI coding agent designed for developers who spend most of their time in the terminal and editor, rather than in chat windows.\n\nAmp is free to try, works locally, and integrates directl...",
+        "date": "2026-01-05T01:21:47.826Z",
+        "tags": [],
+        "hero_image": "https://cdn.hashnode.com/res/hashnode/image/upload/v1770029911005/7a284f41-4329-4043-ba1b-4b5bc2ed813d.png"
+    },
+    {
+        "slug": "reflections-on-2025-key-learnings-and-whats-ahead",
+        "title": "Key Insights and Future Outlook 2025",
+        "description": "Reflections on 2025 reveal personal growth, AI transformative experiences, and insights on future productivity trends and keyboard ergonomics",
+        "date": "2025-12-31T14:41:24.593Z",
+        "tags": [],
+        "hero_image": "https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/r2qsJ-T9_jg/upload/1149341397c311324b47beab92f7cce5.jpeg"
+    },
+    {
+        "slug": "4-levels-of-ai-assistant-customization-with-claude-code",
+        "title": "4 Levels of AI Assistant Customization with Claude Code",
+        "description": "Tired of re-explaining project standards or copy-pasting documentation links to your AI coding assistant? I’ve been exploring Claude Code’s customization layers, and they offer a powerful progression from simple prompts to a fully automated developme...",
+        "date": "2025-12-23T16:00:16.667Z",
+        "tags": [],
+        "hero_image": "https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/FHgWFzDDAOs/upload/0e31e736760887b500f840c03fc44ed4.jpeg"
+    },
+    {
+        "slug": "3-practical-enhancements-for-claude-code-to-maximize-productivity",
+        "title": "Boost Productivity: 3 Enhancements for Claude Code",
+        "description": "Boost productivity with shell aliases, hooks, real-time monitoring. Effortlessly integrate these tweaks into your workflow",
+        "date": "2025-07-31T02:00:36.858Z",
+        "tags": [],
+        "hero_image": "https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/db2y7AD7s7M/upload/06e5029164211fb7c4a3df0b9fa82351.jpeg"
+    },
+    {
+        "slug": "must-have-tool-for-your-javascript-monorepo-sherif",
+        "title": "Must-Have tool for your JavaScript monorepo — Sherif",
+        "description": "Managing monorepos at scale? Don’t miss Sherif — an opinionated, zero-config linter for JavaScript monorepos that enforces consistency, improves DevX, and prevents regressions.\n💡 Why Sherif?\n\n⚡ Fast — Written in Rust, no need for node_modules\n\n🔧 Ze...",
+        "date": "2025-07-21T12:29:36.257Z",
+        "tags": [],
+        "hero_image": "https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/g6YO_FyafLc/upload/fc6d67c6664b4c6a4400946261ee529d.jpeg"
+    },
+    {
+        "slug": "label-your-ai-vs-human-code-in-commit",
+        "title": "Label Your AI vs Human Code in Commit",
+        "description": "Quick Tip for Better Team Collaboration\nSince many teams already have their git commit practices, here’s a simple addition that makes a big difference:\nAI-Generated Code:\nThore are good examples from my https://github.com/jellydn/moleculer-typescript...",
+        "date": "2025-07-16T02:10:14.914Z",
+        "tags": [],
+        "hero_image": "https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/505eectW54k/upload/cd7691d4eb7e9a4cb6baf98335b2337c.jpeg"
+    },
+    {
+        "slug": "my-top-3-mcp-servers-for-2025",
+        "title": "Best 3 MCP Servers for 2025",
+        "description": "Discover the top 3 MCP servers enhancing AI-agent interactions with tools like GitHub and SQL for secure, context-aware solutions in 2025",
+        "date": "2025-05-15T01:36:37.138Z",
+        "tags": [],
+        "hero_image": "https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/WhAQMsdRKMI/upload/d65303f6a85d36b3da5fba70477cef76.jpeg"
+    },
+    {
+        "slug": "tdd-test-driven-nope-tab-driven-development",
+        "title": "Revolutionizing Coding with Tab Driven Development",
+        "description": "Explore Tab-Driven Development: a new way to code with efficiency and ease, enhancing your workflow in modern IDEs",
+        "date": "2025-02-18T13:10:22.189Z",
+        "tags": [],
+        "hero_image": "https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/_0iV9LmPDn0/upload/1ef52a2014c206ddba0555517ec58459.jpeg"
+    },
+    {
+        "slug": "a-curated-list-of-awesome-typescript-typesafe-libraries",
+        "title": "Awesome 🔥 TypeScript Typesafe Libraries🔥",
+        "description": "TypeScript typesafe libraries improve code quality, promote best practices, and enhance development with early error detection",
+        "date": "2025-01-02T12:32:58.856Z",
+        "tags": [],
+        "hero_image": "https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/UVMPVIRCF5w/upload/cfcfe4e0c1b647264034e19bd4f7f9de.jpeg"
+    },
+    {
+        "slug": "better-naming-with-ai-copilot-chat",
+        "title": "Better naming with AI (Copilot Chat)",
+        "description": "Simple prompt to improve your coding experience",
+        "date": "2024-08-14T01:00:32.847Z",
+        "tags": [],
+        "hero_image": "https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/DEci5GH0r0k/upload/af3c41a08fcf6420352ef2db8df3fbe7.jpeg"
+    },
+    {
+        "slug": "simplifying-tmux",
+        "title": "Simplifying Tmux",
+        "description": "Simple Guide to Tmux Setup and Personalization using .tmux",
+        "date": "2024-08-12T15:28:10.423Z",
+        "tags": [],
+        "hero_image": "https://cdn.hashnode.com/res/hashnode/image/upload/v1723473188202/08a428b6-9beb-47f0-a207-5a113e3d5628.png"
+    },
+    {
+        "slug": "reassigning-the-caps-lock-key-a-small-change-with-big-impact",
+        "title": "Reassign Caps Lock: Small Change, Big Impact",
+        "description": "Reassign Caps Lock to boost typing efficiency and enhance your keyboard productivity. Discover how a small change can make a big impact",
+        "date": "2024-08-05T14:06:16.481Z",
+        "tags": [],
+        "hero_image": "https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/uKceWpLNWcI/upload/cfb10b8aca7e81c4e4f01cda07576913.jpeg"
+    },
+    {
+        "slug": "c-spell-setup-in-neovim-a-comprehensive-guide",
+        "title": "C-Spell setup in Neovim: A comprehensive guide",
+        "description": "A detailed tutorial for implementing spell check in your Neovim workflow",
+        "date": "2024-07-16T02:00:48.076Z",
+        "tags": [],
+        "hero_image": "https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/R4ruOu3fH-s/upload/140311bfe9bc849e890b4afc22bbdc2a.jpeg"
+    },
+    {
+        "slug": "master-vscode-like-a-pro",
+        "title": "Mastering VSCode Efficiently",
+        "description": "Optimize VSCode with essential extensions and themes for a clean, efficient, personalized coding environment to boost productivity and enjoy coding",
+        "date": "2024-07-09T01:25:28.123Z",
+        "tags": [],
+        "hero_image": "https://cdn.hashnode.com/res/hashnode/image/upload/v1720486261207/d1eec38d-833d-4164-81b5-5df144a89e6c.png"
+    },
+    {
+        "slug": "the-latest-in-nodejs-development-for-2024",
+        "title": "The Latest in Node.js Development for 2024",
+        "description": "Discover the latest Node.js features for 2024, including built-in fetch, native .env support, and more",
+        "date": "2024-05-14T01:56:19.175Z",
+        "tags": [],
+        "hero_image": "https://cdn.hashnode.com/res/hashnode/image/upload/v1715606265374/a71eaf7e-76df-423f-ac80-4cbe38c4e771.png"
+    },
+    {
+        "slug": "biome-interactive-for-seamless-eslint-and-prettier-migration",
+        "title": "Biome-Interactive for Seamless ESLint and Prettier Migration",
+        "description": "A Simple Interactive CLI to Install Biome and Migrate from ESLint and Prettier",
+        "date": "2024-04-29T13:23:03.525Z",
+        "tags": [],
+        "hero_image": "https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/oqStl2L5oxI/upload/a568a6bb278b750d15a47231f2cc70ce.jpeg"
+    },
+    {
+        "slug": "discover-how-grit-makes-software-maintenance-a-breeze",
+        "title": "Discover How Grit Makes Software Maintenance a Breeze",
+        "description": "Make Software Maintenance Fun Again with Grit!",
+        "date": "2024-03-28T02:13:00.713Z",
+        "tags": [],
+        "hero_image": "https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/m_HRfLhgABo/upload/339255ef67fa37870caa9fdf1ae9d1ce.jpeg"
+    },
+    {
+        "slug": "enhancing-neovim-with-copilot-chat-a-new-era-of-coding-efficiency",
+        "title": "Bridging Gaps and Building Futures: The Evolution of Copilot Chat for",
+        "description": "The introduction of the CopilotChatInPlace command has marked a significant milestone, narrowing the functionality gap with its VSCode extension.",
+        "date": "2024-02-04T19:53:38.296Z",
+        "tags": [],
+        "hero_image": "https://cdn.hashnode.com/res/hashnode/image/upload/v1707072213284/2cb58a45-de84-4077-a8dd-44ee221c1645.png"
+    },
+    {
+        "slug": "looking-back-moving-forward-2023-reflections-and-2024-visions",
+        "title": "Looking Back, Moving Forward: 2023 Reflections and 2024 Visions",
+        "description": "My goals in 2018\n\nThis was my target six years ago. It didn't go as planned. Now, I'm ready to revive this habit again :)\nWhat about 2023?\nThere are a few things for which I am grateful:\n\nRelocating from Japan to Singapore has been a pivotal change f...",
+        "date": "2024-01-01T15:37:04.697Z",
+        "tags": [],
+        "hero_image": "https://cdn.hashnode.com/res/hashnode/image/upload/v1704123405189/bcae00de-0a7a-4225-a94f-1f51a0cbcefd.png"
+    },
+    {
+        "slug": "how-to-use-copilot-chat-with-neovim",
+        "title": "How to use Copilot Chat with Neovim!",
+        "description": "Integrating Copilot Chat with Neovim",
+        "date": "2023-12-26T16:28:45.495Z",
+        "tags": [],
+        "hero_image": "https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/hGV2TfOh0ns/upload/80e813597ae1cce5f089140144a56eb0.png"
+    },
+    {
+        "slug": "simplify-your-typescript-workflow-with-typechecknvim",
+        "title": "Simplify Your TypeScript workflow with typecheck.nvim",
+        "description": "typecheck.nvim is a Neovim plugin specifically designed to streamline TypeScript development. It provides real-time type checking, integrating effortlessly",
+        "date": "2023-12-12T12:04:14.471Z",
+        "tags": [],
+        "hero_image": "https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/npxXWgQ33ZQ/upload/7024a3e720d6f534c58b980f5694e548.jpeg"
+    },
+    {
+        "slug": "introducing-hurlnvim-a-new-neovim-plugin-for-http-requests",
+        "title": "hurl.nvim - A New Neovim Plugin for HTTP Requests",
+        "description": "Hurl.nvim is a Neovim plugin designed to run HTTP requests directly from `.hurl` files. Elevate your API development workflow by executing and viewing respo",
+        "date": "2023-11-09T14:08:38.807Z",
+        "tags": [],
+        "hero_image": "https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/f77Bh3inUpE/upload/c0ecc400d8c1c25bf15f55f8d1d4ecae.jpeg"
+    }
+]

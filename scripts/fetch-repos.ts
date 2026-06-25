@@ -3,6 +3,7 @@ import { join } from 'node:path';
 
 const GITHUB_API = 'https://api.github.com';
 const USERNAME = 'jellydn';
+const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
 
 interface GitHubRepo {
     id: number;
@@ -62,12 +63,18 @@ const CATEGORIES: Record<string, { topics: string[]; keywords: string[] }> = {
 async function fetchRepos(page = 1, perPage = 100): Promise<GitHubRepo[]> {
     const url = `${GITHUB_API}/users/${USERNAME}/repos?sort=updated&direction=desc&page=${page}&per_page=${perPage}`;
 
-    const response = await fetch(url, {
-        headers: {
-            Accept: 'application/vnd.github.v3+json',
-            'User-Agent': 'fetch-repos-script',
-        },
-    });
+    const headers: Record<string, string> = {
+        Accept: 'application/vnd.github.v3+json',
+        'User-Agent': 'fetch-repos-script',
+    };
+
+    // Use authenticated requests when GITHUB_TOKEN is available
+    // (5000 req/hr vs 60 req/hr unauthenticated)
+    if (GITHUB_TOKEN) {
+        headers.Authorization = `Bearer ${GITHUB_TOKEN}`;
+    }
+
+    const response = await fetch(url, { headers });
 
     if (!response.ok) {
         throw new Error(
@@ -146,7 +153,9 @@ async function fetchAllRepos(): Promise<GitHubRepo[]> {
     let page = 1;
     let hasMore = true;
 
-    console.log('Fetching repos from GitHub...\n');
+    console.log(
+        `Fetching repos from GitHub... (${GITHUB_TOKEN ? 'authenticated' : 'unauthenticated'})\n`,
+    );
 
     while (hasMore) {
         const repos = await fetchRepos(page);

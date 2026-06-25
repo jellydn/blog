@@ -1,4 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="92" height="32">
+  <title>Deploy to Vercel</title>
   <g fill="none" fill-rule="evenodd">
     <path fill="#1374EF" fill-rule="nonzero" d="M0 4c0-2.21 1.75-4 3.9-4h84.2C90.25 0 92 1.79 92 4v24c0 2.21-1.75 4-3.9 4H3.9A3.95 3.95 0 0 1 0 28V4z"/>
     <path fill="#1269D3" d="M32 32V0h1v32z"/>
