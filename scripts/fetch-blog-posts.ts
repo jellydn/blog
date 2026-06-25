@@ -53,7 +53,14 @@ function decodeHtmlEntities(str: string): string {
         .replace(/&quot;/g, '"')
         .replace(/&#x27;/g, "'")
         .replace(/&#39;/g, "'")
-        .replace(/&apos;/g, "'");
+        .replace(/&apos;/g, "'")
+        .replace(/&nbsp;/g, ' ')
+        .replace(/&ndash;/g, '–')
+        .replace(/&mdash;/g, '—')
+        .replace(/&ldquo;/g, '“')
+        .replace(/&rdquo;/g, '”')
+        .replace(/&lsquo;/g, '‘')
+        .replace(/&rsquo;/g, '’');
 }
 
 /** Fetch a URL with retries and timeout. */
@@ -166,10 +173,11 @@ async function scrapePost(url: string): Promise<BlogPostSummary | null> {
             );
         }
         // Also try og:article:tag (multiple meta tags)
+        // Handles both attribute orders: property before OR after content
         const tagRe =
-            /<meta[^>]*property=["']article:tag["'][^>]*content=["']([^"']*)["']/gi;
+            /<meta[^>]*(?:property=["']article:tag["'][^>]*content=["']([^"']*)["']|content=["']([^"']*)["'][^>]*property=["']article:tag["'])/gi;
         for (const tagMatch of html.matchAll(tagRe)) {
-            const tag = tagMatch[1].trim();
+            const tag = (tagMatch[1] ?? tagMatch[2] ?? '').trim();
             if (tag && !tags.includes(tag)) tags.push(tag);
         }
 
