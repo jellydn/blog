@@ -10,7 +10,8 @@
         "format": "biome format --write .",
         "start": "next start",
         "fetch:videos": "bun scripts/fetch-youtube-videos.ts",
-        "fetch:repos": "bun scripts/fetch-repos.ts"
+        "fetch:repos": "bun scripts/fetch-repos.ts",
+        "fetch:blog": "bun scripts/fetch-blog-posts.ts"
     },
     "config": {
         "commitizen": {

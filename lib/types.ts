@@ -49,6 +49,15 @@ export type VideoPost = {
     frontmatter: VideoFrontmatter;
 };
 
+export type BlogPostSummary = {
+    slug: string;
+    title: string;
+    description: string;
+    date: string;
+    tags: string[];
+    hero_image: string | null;
+};
+
 export type YouTubeVideo = {
     id: string;
     title: string;
