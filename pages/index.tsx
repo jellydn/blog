@@ -3,7 +3,12 @@ import Layout from 'components/Layout';
 import { RepoStars } from 'components/RepoStars';
 
 import type { BlogPost, BlogPostSummary, VideoPost } from 'lib/types';
-import { dedupeBySlug, extractSlug, parseMarkdown } from 'lib/utils/array';
+import {
+    dedupeBySlug,
+    extractSlug,
+    parseMarkdown,
+    sortByDate,
+} from 'lib/utils/array';
 import dynamic from 'next/dynamic';
 import Head from 'next/head';
 import Image from 'next/image';
@@ -638,8 +643,6 @@ export async function getStaticProps() {
             return parseMarkdown(context(key).default, slug);
         });
     // @ts-expect-error require.context is a webpack function
-    const _posts = loadMarkdown(require.context('../posts', true, /\.md$/));
-    // @ts-expect-error require.context is a webpack function
     const videos = loadMarkdown(require.context('../videos', true, /\.md$/));
 
     // Blog posts come from data/blog-posts.json, kept fresh by CI
@@ -660,13 +663,16 @@ export async function getStaticProps() {
     return {
         props: {
             allBlogs,
-            allVideos: dedupeBySlug(videos as VideoPost[]).slice(0, 6),
+            allVideos: sortByDate(dedupeBySlug(videos as VideoPost[])).slice(
+                0,
+                6,
+            ),
             title: siteConfig.default.title,
             description: siteConfig.default.description,
             repos: reposData,
             youtubeApiKey: !!process.env.YOUTUBE_API_KEY,
             initialHasRemotePosts: allBlogs.length > 0,
         },
-        revalidate: 300,
+        revalidate: 86400, // Daily — matches CI fetch-blog-posts schedule
     };
 }

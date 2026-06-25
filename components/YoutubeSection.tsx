@@ -5,6 +5,10 @@ import { formatDate } from 'lib/utils/date';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 
+// Sort by date descending (newest first)
+const sortByPublishedAt = (a: YouTubeVideo, b: YouTubeVideo) =>
+    new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime();
+
 type YoutubeSectionProps = {
     fallbackVideos: VideoPost[];
 };
@@ -46,16 +50,19 @@ export function YoutubeSection({ fallbackVideos }: YoutubeSectionProps) {
 
     const displayVideos =
         videos && videos.length > 0
-            ? videos.map((v) => ({
-                  slug: v.id,
-                  frontmatter: {
-                      title: v.title,
-                      description: v.description,
-                      date: v.publishedAt,
-                      hero_image: v.thumbnailUrl,
-                      youtube_id: v.id,
-                  },
-              }))
+            ? [...videos]
+                  .sort(sortByPublishedAt)
+                  .slice(0, 6)
+                  .map((v) => ({
+                      slug: v.id,
+                      frontmatter: {
+                          title: v.title,
+                          description: v.description,
+                          date: v.publishedAt,
+                          hero_image: v.thumbnailUrl,
+                          youtube_id: v.id,
+                      },
+                  }))
             : fallbackVideos;
 
     if (loading) {
