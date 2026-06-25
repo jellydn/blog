@@ -22,7 +22,6 @@
         "@giscus/react": "3.1.0",
         "@happykit/flags": "3.3.0",
         "@tailwindcss/typography": "0.5.20",
-
         "daisyui": "5.5.23",
         "glob": "13.0.6",
         "gray-matter": "4.0.3",
@@ -44,7 +43,6 @@
     },
     "devDependencies": {
         "@biomejs/biome": "2.5.0",
-        "@cloudflare/next-on-pages": "1.13.16",
         "@fullhuman/postcss-purgecss": "8.0.0",
         "@tailwindcss/postcss": "4.3.1",
         "@types/node": "25.9.4",
