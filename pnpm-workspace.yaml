@@ -1,4 +1,8 @@
 packages: []
+allowBuilds:
+  esbuild: true
+  sharp: true
+  workerd: true
 onlyBuiltDependencies:
   - '@biomejs/biome'
   - better-sqlite3
