@@ -16,7 +16,7 @@
         "attributePosition": "auto"
     },
     "assist": { "actions": { "source": { "organizeImports": "on" } } },
-    "linter": { "enabled": true, "rules": { "preset": "recommended" } },
+    "linter": { "enabled": true, "rules": { "recommended": true } },
     "javascript": {
         "formatter": {
             "jsxQuoteStyle": "double",
