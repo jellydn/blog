@@ -4,8 +4,9 @@
     "private": true,
     "scripts": {
         "build": "next build",
-        "dev": "next",
-        "develop": "yarn dev",
+        "dev": "portless run next",
+        "dev:local": "PORTLESS=0 next",
+        "develop": "pnpm dev",
         "lint": "biome ci .",
         "format": "biome format --write .",
         "start": "next start",
