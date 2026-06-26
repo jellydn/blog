@@ -1,9 +1,9 @@
 import Layout from 'components/Layout';
 import { globSync } from 'glob';
 import matter from 'gray-matter';
+import { articleSeo, generateNextSeo } from 'lib/seo';
 import { formatDate } from 'lib/utils/date';
 import Link from 'next/link';
-import { generateNextSeo } from 'next-seo/pages';
 
 type VideoFrontmatter = {
     title: string;
@@ -27,37 +27,23 @@ export default function VideoTemplate({
     siteTitle,
     slug,
 }: VideoTemplateProps) {
-    const canonicalUrl = `https://productsway.com/video/${slug}`;
     const youtubeEmbedUrl = `https://www.youtube.com/embed/${frontmatter.youtube_id}`;
     const youtubeWatchUrl = `https://www.youtube.com/watch?v=${frontmatter.youtube_id}`;
 
     return (
         <Layout siteTitle={siteTitle}>
-            {generateNextSeo({
-                title: `${frontmatter.title} | ${siteTitle}`,
-                description: frontmatter.description,
-                canonical: canonicalUrl,
-                openGraph: {
-                    type: 'article',
-                    url: canonicalUrl,
-                    title: frontmatter.title,
+            {generateNextSeo(
+                articleSeo({
+                    title: `${frontmatter.title} | ${siteTitle}`,
                     description: frontmatter.description,
-                    images: [
-                        {
-                            url: `https://i.ytimg.com/vi/${frontmatter.youtube_id}/maxresdefault.jpg`,
-                            alt: frontmatter.title,
-                        },
-                    ],
-                    article: {
-                        publishedTime: frontmatter.date,
-                        authors: [frontmatter.author ?? 'Dung Huynh Duc'],
-                        tags: frontmatter.tag ?? [],
-                    },
-                },
-                twitter: {
-                    cardType: 'player',
-                },
-            })}
+                    path: `/video/${slug}`,
+                    publishedTime: frontmatter.date,
+                    author: frontmatter.author,
+                    tags: frontmatter.tag,
+                    image: `https://i.ytimg.com/vi/${frontmatter.youtube_id}/maxresdefault.jpg`,
+                    twitterCardType: 'player',
+                }),
+            )}
 
             <div className="min-h-screen">
                 {/* Navigation */}

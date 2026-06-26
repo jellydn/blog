@@ -14,12 +14,12 @@ import {
     getTopProjects,
     getVscodeExtensions,
 } from 'lib/repos';
+import { generateNextSeo, pageSeo } from 'lib/seo';
 import type { BlogPost, BlogPostSummary, VideoPost } from 'lib/types';
 import { dedupeBySlug, sortByDate } from 'lib/utils/array';
 import dynamic from 'next/dynamic';
 import Head from 'next/head';
 import Script from 'next/script';
-import { generateNextSeo } from 'next-seo/pages';
 import blogPostsData from '../data/blog-posts.json';
 import reposData from '../data/repos.json';
 
@@ -81,26 +81,7 @@ const Index = ({
                     {PREFETCH_SCRIPT}
                 </Script>
             </Head>
-            {generateNextSeo({
-                title,
-                description,
-                canonical: 'https://productsway.com',
-                openGraph: {
-                    type: 'website',
-                    url: 'https://productsway.com',
-                    title,
-                    description,
-                    images: [
-                        {
-                            url: 'https://productsway.com/og-image.png',
-                            alt: title,
-                        },
-                    ],
-                },
-                twitter: {
-                    cardType: 'summary_large_image',
-                },
-            })}
+            {generateNextSeo(pageSeo({ title, description, path: '' }))}
 
             <div>
                 <HeroSection />

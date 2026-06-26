@@ -1,9 +1,9 @@
 import Layout from 'components/Layout';
 import { REVALIDATE_DAILY } from 'lib/constants';
+import { generateNextSeo, pageSeo } from 'lib/seo';
 import type { BlogPostSummary } from 'lib/types';
 import { formatDate } from 'lib/utils/date';
 import Image from 'next/image';
-import { generateNextSeo } from 'next-seo/pages';
 import blogPostsData from '../../data/blog-posts.json';
 
 const BLOG_URL = 'https://blog.productsway.com';
@@ -17,26 +17,9 @@ type PostsPageProps = {
 const PostsPage = ({ title, description, items }: PostsPageProps) => {
     return (
         <Layout siteTitle={title} siteDescription={description}>
-            {generateNextSeo({
-                title: 'Posts',
-                description: 'Articles from ITMan blog.productsway.com',
-                canonical: 'https://productsway.com/posts',
-                openGraph: {
-                    type: 'website',
-                    url: 'https://productsway.com/posts',
-                    title: 'Posts',
-                    description,
-                    images: [
-                        {
-                            url: 'https://productsway.com/og-image.png',
-                            alt: title,
-                        },
-                    ],
-                },
-                twitter: {
-                    cardType: 'summary_large_image',
-                },
-            })}
+            {generateNextSeo(
+                pageSeo({ title: 'Posts', description, path: '/posts' }),
+            )}
 
             <div>
                 <section className="py-12 md:py-20 bg-base-200">

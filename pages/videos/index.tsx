@@ -2,8 +2,8 @@ import Layout from 'components/Layout';
 import { NotesList } from 'components/NotesList';
 import type { VideoPost } from 'components/VideoList';
 import { loadMarkdownEntries } from 'lib/markdown';
+import { generateNextSeo, pageSeo } from 'lib/seo';
 import { dedupeBySlug, sortByDate } from 'lib/utils/array';
-import { generateNextSeo } from 'next-seo/pages';
 
 type VideosPageProps = {
     title: string;
@@ -14,26 +14,7 @@ type VideosPageProps = {
 const VideosPage = ({ title, description, items }: VideosPageProps) => {
     return (
         <Layout siteTitle={title} siteDescription={description}>
-            {generateNextSeo({
-                title,
-                description,
-                canonical: 'https://productsway.com/videos',
-                openGraph: {
-                    type: 'website',
-                    url: 'https://productsway.com/videos',
-                    title,
-                    description,
-                    images: [
-                        {
-                            url: 'https://productsway.com/og-image.png',
-                            alt: title,
-                        },
-                    ],
-                },
-                twitter: {
-                    cardType: 'summary_large_image',
-                },
-            })}
+            {generateNextSeo(pageSeo({ title, description, path: '/videos' }))}
 
             <div>
                 <section className="py-12 md:py-20 bg-base-200">

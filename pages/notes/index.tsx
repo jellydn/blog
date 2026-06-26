@@ -1,9 +1,9 @@
 import Layout from 'components/Layout';
 import { NotesList } from 'components/NotesList';
 import { loadMarkdownEntries } from 'lib/markdown';
+import { generateNextSeo, pageSeo } from 'lib/seo';
 import type { BlogPost } from 'lib/types';
 import { dedupeBySlug, sortByDate } from 'lib/utils/array';
-import { generateNextSeo } from 'next-seo/pages';
 
 type BlogPageProps = {
     title: string;
@@ -14,26 +14,7 @@ type BlogPageProps = {
 const BlogPage = ({ title, description, items }: BlogPageProps) => {
     return (
         <Layout siteTitle={title} siteDescription={description}>
-            {generateNextSeo({
-                title,
-                description,
-                canonical: 'https://productsway.com/notes',
-                openGraph: {
-                    type: 'website',
-                    url: 'https://productsway.com/notes',
-                    title,
-                    description,
-                    images: [
-                        {
-                            url: 'https://productsway.com/og-image.png',
-                            alt: title,
-                        },
-                    ],
-                },
-                twitter: {
-                    cardType: 'summary_large_image',
-                },
-            })}
+            {generateNextSeo(pageSeo({ title, description, path: '/notes' }))}
 
             <div>
                 <section className="py-12 md:py-20 bg-base-200">
