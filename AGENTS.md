@@ -25,7 +25,12 @@ pnpm fetch:repos      # Fetch GitHub repositories data
 
 ### Testing
 
-No test framework configured. Do not add tests unless explicitly requested.
+```bash
+pnpm test              # Run Vitest (single run)
+pnpm test:watch        # Run Vitest in watch mode
+```
+
+Uses **Vitest 4** with **@testing-library/react** and **jsdom**. Tests live in `tests/` mirroring the `components/` and `lib/` structure.
 
 ## Code Style Guidelines
 
