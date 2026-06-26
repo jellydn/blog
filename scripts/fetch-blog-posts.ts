@@ -91,6 +91,9 @@ async function fetchWithRetry(
             );
         }
     }
+
+    // The loop always returns or throws, but TypeScript needs a return statement
+    throw new Error(`Failed to fetch ${url} after ${retries + 1} attempts`);
 }
 
 /** Extract post URLs from sitemap.xml, filtering out non-article pages. */

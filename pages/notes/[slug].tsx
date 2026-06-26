@@ -1,10 +1,11 @@
 import { Badge, isTil } from 'components/Badge';
 import Layout from 'components/Layout';
-import { globSync } from 'glob';
 import matter from 'gray-matter';
+import { getSiteConfig } from 'lib/config';
+import { getMarkdownSlugs } from 'lib/content';
+import { articleSeo, generateNextSeo } from 'lib/seo';
 import { formatDate } from 'lib/utils/date';
 import Link from 'next/link';
-import { generateNextSeo } from 'next-seo/pages';
 import { useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
 import gfm from 'remark-gfm';
@@ -40,38 +41,21 @@ export default function BlogTemplate({
         });
     }, []);
 
-    const canonicalUrl = `https://productsway.com/notes/${slug}`;
-    const ogImage =
-        frontmatter.hero_image ?? 'https://productsway.com/og-image.png';
     const til = isTil(slug);
 
     return (
         <Layout siteTitle={siteTitle}>
-            {generateNextSeo({
-                title: `${frontmatter.title} | ${siteTitle}`,
-                description: frontmatter.description ?? siteDescription,
-                canonical: canonicalUrl,
-                openGraph: {
-                    type: 'article',
-                    url: canonicalUrl,
-                    title: frontmatter.title,
+            {generateNextSeo(
+                articleSeo({
+                    title: `${frontmatter.title} | ${siteTitle}`,
                     description: frontmatter.description ?? siteDescription,
-                    images: [
-                        {
-                            url: ogImage,
-                            alt: frontmatter.title,
-                        },
-                    ],
-                    article: {
-                        publishedTime: frontmatter.date,
-                        authors: [frontmatter.author ?? 'Dung Huynh Duc'],
-                        tags: frontmatter.tag ?? [],
-                    },
-                },
-                twitter: {
-                    cardType: 'summary_large_image',
-                },
-            })}
+                    path: `/notes/${slug}`,
+                    publishedTime: frontmatter.date,
+                    author: frontmatter.author,
+                    tags: frontmatter.tag,
+                    image: frontmatter.hero_image,
+                }),
+            )}
 
             <div className="min-h-screen">
                 {/* Navigation */}
@@ -148,13 +132,13 @@ type StaticPropsContext = {
 export async function getStaticProps({ params }: StaticPropsContext) {
     const { slug } = params;
     const content = await import(`../../posts/${slug}.md`);
-    const config = await import('../../data/config.json');
+    const config = getSiteConfig();
     const data = matter(content.default);
 
     return {
         props: {
-            siteTitle: config.default.title,
-            siteDescription: config.default.description,
+            siteTitle: config.title,
+            siteDescription: config.description,
             frontmatter: data.data,
             markdownBody: data.content,
             slug,
@@ -163,13 +147,9 @@ export async function getStaticProps({ params }: StaticPropsContext) {
 }
 
 export async function getStaticPaths() {
-    const blogs = globSync('posts/**/*.md');
+    const slugs = getMarkdownSlugs('posts/**/*.md');
 
-    const blogSlugs = blogs.map((file: string) =>
-        file.split('/')[1].replace(/ /g, '-').slice(0, -3).trim(),
-    );
-
-    const paths = blogSlugs.map((slug: string) => ({
+    const paths = slugs.map((slug: string) => ({
         params: { slug },
     }));
 

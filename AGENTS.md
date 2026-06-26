@@ -2,7 +2,12 @@
 
 ## Project Overview
 
-A Next.js 15 blog with TinaCMS, using TypeScript, Tailwind CSS v4, and DaisyUI.
+A Next.js 16 blog using the Pages Router, TypeScript, Tailwind CSS v4, and DaisyUI.
+
+Content sources:
+- Local markdown files (`posts/`, `videos/`) via gray-matter + webpack require.context
+- Hashnode blog (`blog.productsway.com`) fetched daily by CI into `data/blog-posts.json`
+- YouTube videos fetched client-side via `/api/youtube-videos`
 
 ## Build, Lint, and Test Commands
 
@@ -14,18 +19,24 @@ This project uses **pnpm**.
 
 ```bash
 pnpm install          # Install dependencies
-pnpm dev / develop    # Development server with TinaCMS
-pnpm build            # Production build (includes TinaCMS)
+pnpm dev / develop    # Development server
+pnpm build            # Production build
 pnpm start            # Start production server
 pnpm lint             # Run Biome linting (CI mode)
 pnpm format           # Run Biome formatter with auto-fix
 pnpm fetch:videos     # Fetch YouTube videos data
 pnpm fetch:repos      # Fetch GitHub repositories data
+pnpm fetch:blog       # Fetch Hashnode blog posts data
 ```
 
 ### Testing
 
-No test framework configured. Do not add tests unless explicitly requested.
+```bash
+pnpm test              # Run Vitest (single run)
+pnpm test:watch        # Run Vitest in watch mode
+```
+
+Uses **Vitest 4** with **@testing-library/react** and **jsdom**. Tests live in `tests/` mirroring the `components/` and `lib/` structure.
 
 ## Code Style Guidelines
 
@@ -104,15 +115,18 @@ try {
 ## File Organization
 
 ```
-components/  - React components (Pages, Layout, UI)
+components/  - React components
+components/sections/ - Homepage section components
+components/cards/   - Card sub-components (ExtensionCard, NvimPluginCard, CliToolCard)
 lib/         - Utility functions and API clients
 lib/utils/   - Helper functions (date, array utilities)
-pages/       - Next.js pages and routes
-posts/       - Blog post content (Markdown)
-tina/        - TinaCMS configuration and schema
-public/      - Static assets
-data/        - JSON data files
+pages/       - Next.js pages and routes (Pages Router)
+posts/       - Markdown notes and TILs
+videos/      - Markdown video post metadata
+data/        - JSON data files (config, repos, blog posts)
 scripts/     - Build and utility scripts (run with bun)
+tests/       - Vitest test files (mirrors source structure)
+.planning/   - Architecture planning and codebase documentation
 ```
 
 ## Important Configuration Files
@@ -126,12 +140,13 @@ scripts/     - Build and utility scripts (run with bun)
 
 ## Development Notes
 
-- TinaCMS requires `tinacms build` before production build
-- Markdown files use raw-loader for direct import
-- Image domains: `gyazo.com`, `cdn.hashnode.com`, `hashnode.com`
-- Three DaisyUI themes: `minimal`, `winter`, `dark`
+- Markdown files use raw-loader for direct import via webpack `require.context`
+- Image domains: `gyazo.com`, `cdn.hashnode.com`, `hashnode.com`, `i.ytimg.com`
+- Two active DaisyUI themes: `minimal` (light) and `dark` (with an unused `winter` theme)
 - Webfinger redirects configured for Fediverse support
 - Scripts use `bun` for execution
+- Tests use Vitest with React Testing Library + jsdom
+- ISR revalidation constants in `lib/constants.ts`
 
 ## Common Tasks
 

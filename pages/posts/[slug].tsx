@@ -1,5 +1,8 @@
 import Layout from 'components/Layout';
-import { generateNextSeo } from 'next-seo/pages';
+import { getSiteConfig } from 'lib/config';
+import { REVALIDATE_SHORT } from 'lib/constants';
+import { getMarkdownSlugs } from 'lib/content';
+import { generateNextSeo, pageSeo } from 'lib/seo';
 
 const BLOG_URL = 'https://blog.productsway.com';
 
@@ -18,16 +21,14 @@ export default function PostPage({
 
     return (
         <Layout siteTitle={siteTitle}>
-            {generateNextSeo({
-                title: `${slug} | ${siteTitle}`,
-                description: siteDescription,
-                canonical: postUrl,
-                openGraph: {
-                    type: 'article',
-                    url: postUrl,
+            {generateNextSeo(
+                pageSeo({
+                    title: `${slug} | ${siteTitle}`,
                     description: siteDescription,
-                },
-            })}
+                    path: `/posts/${slug}`,
+                    canonical: postUrl,
+                }),
+            )}
 
             <div className="min-h-[60vh] flex items-center justify-center">
                 <div className="text-center p-8 max-w-lg">
@@ -78,33 +79,24 @@ type StaticPropsContext = {
 
 export async function getStaticProps({ params }: StaticPropsContext) {
     const { slug } = params;
-    const config = await import('../../data/config.json');
+    const config = getSiteConfig();
 
     return {
         props: {
-            siteTitle: config.default.title,
-            siteDescription: config.default.description,
+            siteTitle: config.title,
+            siteDescription: config.description,
             slug,
         },
-        revalidate: 300,
+        revalidate: REVALIDATE_SHORT,
     };
 }
 
 export async function getStaticPaths() {
-    const { globSync } = await import('glob');
-    const fs = await import('node:fs');
-    const path = await import('node:path');
+    const slugs = getMarkdownSlugs('posts/**/*.md');
 
-    const postsDir = path.join(process.cwd(), 'posts');
-    const files = globSync('**/*.md', { cwd: postsDir });
-
-    const paths = files
-        .filter((file: string) =>
-            fs.statSync(path.join(postsDir, file)).isFile(),
-        )
-        .map((file: string) => ({
-            params: { slug: file.replace(/\.[^/.]+$/, '') },
-        }));
+    const paths = slugs.map((slug: string) => ({
+        params: { slug },
+    }));
 
     return {
         paths,

@@ -1,17 +1,9 @@
 import Layout from 'components/Layout';
 import { NotesList } from 'components/NotesList';
-import type { VideoPost } from 'components/VideoList';
-import matter from 'gray-matter';
-import { dedupeBySlug, sortByDate } from 'lib/utils/array';
-import { generateNextSeo } from 'next-seo/pages';
-
-type VideoFrontmatter = {
-    title: string;
-    description?: string;
-    date: string;
-    youtube_id: string;
-    tag?: string[];
-};
+import { getSiteConfig } from 'lib/config';
+import { fromMarkdown } from 'lib/content';
+import { generateNextSeo, pageSeo } from 'lib/seo';
+import type { VideoPost } from 'lib/types';
 
 type VideosPageProps = {
     title: string;
@@ -22,26 +14,7 @@ type VideosPageProps = {
 const VideosPage = ({ title, description, items }: VideosPageProps) => {
     return (
         <Layout siteTitle={title} siteDescription={description}>
-            {generateNextSeo({
-                title,
-                description,
-                canonical: 'https://productsway.com/videos',
-                openGraph: {
-                    type: 'website',
-                    url: 'https://productsway.com/videos',
-                    title,
-                    description,
-                    images: [
-                        {
-                            url: 'https://productsway.com/og-image.png',
-                            alt: title,
-                        },
-                    ],
-                },
-                twitter: {
-                    cardType: 'summary_large_image',
-                },
-            })}
+            {generateNextSeo(pageSeo({ title, description, path: '/videos' }))}
 
             <div>
                 <section className="py-12 md:py-20 bg-base-200">
@@ -69,35 +42,19 @@ const VideosPage = ({ title, description, items }: VideosPageProps) => {
 export default VideosPage;
 
 export async function getStaticProps() {
-    const config = await import('../../data/config.json');
+    const config = getSiteConfig();
 
-    const videos = ((context) => {
-        const keys = context.keys();
-        const values = keys.map(context);
+    const source = fromMarkdown<VideoPost>(
+        // @ts-expect-error require.context is a webpack-only build-time function
+        require.context('../../videos', true, /\.md$/),
+    );
 
-        const data = keys.map((key: string, index: number) => {
-            const slug = key
-                .replace(/^.*[\\/]/, '')
-                .split('.')
-                .slice(0, -1)
-                .join('.');
-            const value = values[index];
-            const document = matter(value.default);
-            return {
-                frontmatter: document.data as VideoFrontmatter,
-                slug,
-            };
-        });
-        return data;
-        // @ts-expect-error require.context is a webpack function
-    })(require.context('../../videos', true, /\.md$/));
-
-    const items = sortByDate(dedupeBySlug(videos as VideoPost[]));
+    const items = source.getAll();
 
     return {
         props: {
-            title: config.default.title,
-            description: config.default.description,
+            title: config.title,
+            description: config.description,
             items,
         },
     };

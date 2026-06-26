@@ -5,7 +5,7 @@ export type AppFlags = {
 };
 
 export const config: Configuration<AppFlags> = {
-    envKey: process.env.NEXT_PUBLIC_FLAGS_ENVIRONMENT_KEY,
+    envKey: process.env.NEXT_PUBLIC_FLAGS_ENVIRONMENT_KEY ?? '',
     defaultFlags: {
         it_man_shop: false,
     },

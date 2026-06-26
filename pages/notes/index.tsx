@@ -1,16 +1,9 @@
 import Layout from 'components/Layout';
 import { NotesList } from 'components/NotesList';
-import matter from 'gray-matter';
+import { getSiteConfig } from 'lib/config';
+import { fromMarkdown } from 'lib/content';
+import { generateNextSeo, pageSeo } from 'lib/seo';
 import type { BlogPost } from 'lib/types';
-import { dedupeBySlug, sortByDate } from 'lib/utils/array';
-import { generateNextSeo } from 'next-seo/pages';
-
-type BlogFrontmatter = {
-    title: string;
-    description?: string;
-    date: string;
-    tag?: string[];
-};
 
 type BlogPageProps = {
     title: string;
@@ -21,26 +14,7 @@ type BlogPageProps = {
 const BlogPage = ({ title, description, items }: BlogPageProps) => {
     return (
         <Layout siteTitle={title} siteDescription={description}>
-            {generateNextSeo({
-                title,
-                description,
-                canonical: 'https://productsway.com/notes',
-                openGraph: {
-                    type: 'website',
-                    url: 'https://productsway.com/notes',
-                    title,
-                    description,
-                    images: [
-                        {
-                            url: 'https://productsway.com/og-image.png',
-                            alt: title,
-                        },
-                    ],
-                },
-                twitter: {
-                    cardType: 'summary_large_image',
-                },
-            })}
+            {generateNextSeo(pageSeo({ title, description, path: '/notes' }))}
 
             <div>
                 <section className="py-12 md:py-20 bg-base-200">
@@ -67,37 +41,19 @@ const BlogPage = ({ title, description, items }: BlogPageProps) => {
 export default BlogPage;
 
 export async function getStaticProps() {
-    const config = await import('../../data/config.json');
+    const config = getSiteConfig();
 
-    const posts = ((context) => {
-        const keys = context.keys();
-        const values = keys.map(context);
+    const source = fromMarkdown<BlogPost>(
+        // @ts-expect-error require.context is a webpack-only build-time function
+        require.context('../../posts', true, /\.md$/),
+    );
 
-        const data = keys.map((key: string, index: number) => {
-            const slug = key
-                .replace(/^.*[\\/]/, '')
-                .split('.')
-                .slice(0, -1)
-                .join('.');
-            const value = values[index];
-            const document = matter(value.default);
-            return {
-                frontmatter: document.data as BlogFrontmatter,
-                slug,
-            };
-        });
-        return data;
-        // @ts-expect-error require.context is a webpack function
-    })(require.context('../../posts', true, /\.md$/));
-
-    const allItems = sortByDate(
-        dedupeBySlug(posts as BlogPost[]),
-    ) as BlogPost[];
+    const allItems = source.getAll();
 
     return {
         props: {
-            title: config.default.title,
-            description: config.default.description,
+            title: config.title,
+            description: config.description,
             items: allItems,
         },
     };

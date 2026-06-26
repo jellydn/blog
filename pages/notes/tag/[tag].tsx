@@ -1,25 +1,10 @@
 import Layout from 'components/Layout';
 import { NotesList } from 'components/NotesList';
-import matter from 'gray-matter';
+import { getSiteConfig } from 'lib/config';
+import { combine, fromMarkdown, getUniqueTags } from 'lib/content';
+import { generateNextSeo, pageSeo } from 'lib/seo';
 import type { BlogPost, VideoPost } from 'lib/types';
-import { dedupeBySlug, sortByDate } from 'lib/utils/array';
 import Link from 'next/link';
-import { generateNextSeo } from 'next-seo/pages';
-
-type BlogFrontmatter = {
-    title: string;
-    description?: string;
-    date: string;
-    tag?: string[];
-};
-
-type VideoFrontmatter = {
-    title: string;
-    description?: string;
-    date: string;
-    youtube_id: string;
-    tag?: string[];
-};
 
 type TagPageProps = {
     tag: string;
@@ -31,10 +16,13 @@ type TagPageProps = {
 export default function TagPage({ tag, title, items }: TagPageProps) {
     return (
         <Layout siteTitle={title}>
-            {generateNextSeo({
-                title: `${tag} | Blog | ${title}`,
-                description: `Blog posts tagged with "${tag}"`,
-            })}
+            {generateNextSeo(
+                pageSeo({
+                    title: `${tag} | Notes | ${title}`,
+                    description: `Blog posts tagged with "${tag}"`,
+                    path: `/notes/tag/${tag}`,
+                }),
+            )}
             <div>
                 <nav className="bg-base-200">
                     <div className="container mx-auto px-4 py-4 max-w-5xl">
@@ -81,27 +69,9 @@ export default function TagPage({ tag, title, items }: TagPageProps) {
 }
 
 export async function getStaticPaths() {
-    const path = await import('node:path');
-    const { globSync } = await import('glob');
-    const fs = await import('node:fs');
+    const allTags = getUniqueTags(['posts', 'videos']);
 
-    const postsDir = path.join(process.cwd(), 'posts');
-    const videosDir = path.join(process.cwd(), 'videos');
-    const posts = globSync(`${postsDir}/*.md`);
-    const videos = globSync(`${videosDir}/*.md`);
-    const allTags = new Set<string>();
-
-    for (const file of [...posts, ...videos]) {
-        const content = fs.readFileSync(file, 'utf-8');
-        const { data } = matter(content);
-        if (data.tag) {
-            for (const tag of data.tag) {
-                allTags.add(tag.toLowerCase());
-            }
-        }
-    }
-
-    const paths = Array.from(allTags).map((tag) => ({
+    const paths = allTags.map((tag) => ({
         params: { tag },
     }));
 
@@ -112,54 +82,20 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }: { params: { tag: string } }) {
-    const config = await import('../../../data/config.json');
+    const config = getSiteConfig();
 
-    const posts = ((context) => {
-        const keys = context.keys();
-        const values = keys.map(context);
+    const postsSource = fromMarkdown<BlogPost>(
+        // @ts-expect-error require.context is a webpack-only build-time function
+        require.context('../../../posts', true, /\.md$/),
+    );
 
-        const data = keys.map((key: string, index: number) => {
-            const slug = key
-                .replace(/^.*[\\/]/, '')
-                .split('.')
-                .slice(0, -1)
-                .join('.');
-            const value = values[index];
-            const document = matter(value.default);
-            return {
-                frontmatter: document.data as BlogFrontmatter,
-                slug,
-            };
-        });
-        return data;
-        // @ts-expect-error require.context is a webpack function
-    })(require.context('../../../posts', true, /\.md$/));
+    const videosSource = fromMarkdown<VideoPost>(
+        // @ts-expect-error require.context is a webpack-only build-time function
+        require.context('../../../videos', true, /\.md$/),
+    );
 
-    const videos = ((context) => {
-        const keys = context.keys();
-        const values = keys.map(context);
-
-        const data = keys.map((key: string, index: number) => {
-            const slug = key
-                .replace(/^.*[\\/]/, '')
-                .split('.')
-                .slice(0, -1)
-                .join('.');
-            const value = values[index];
-            const document = matter(value.default);
-            return {
-                frontmatter: document.data as VideoFrontmatter,
-                slug,
-            };
-        });
-        return data;
-        // @ts-expect-error require.context is a webpack function
-    })(require.context('../../../videos', true, /\.md$/));
-
-    const allItems = sortByDate([
-        ...dedupeBySlug(posts as BlogPost[]),
-        ...dedupeBySlug(videos as VideoPost[]),
-    ]) as (BlogPost | VideoPost)[];
+    const combined = combine(postsSource, videosSource);
+    const allItems = combined.getAll() as (BlogPost | VideoPost)[];
 
     const taggedItems = allItems.filter((item) =>
         item.frontmatter.tag?.some(
@@ -170,8 +106,8 @@ export async function getStaticProps({ params }: { params: { tag: string } }) {
     return {
         props: {
             tag: params.tag,
-            title: config.default.title,
-            description: config.default.description,
+            title: config.title,
+            description: config.description,
             items: taggedItems,
         },
     };

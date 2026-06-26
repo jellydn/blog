@@ -170,8 +170,8 @@ async function fetchChannelPlaylists(): Promise<
     }
 
     const url = new URL('https://www.googleapis.com/youtube/v3/playlists');
-    url.searchParams.set('key', YOUTUBE_API_KEY);
-    url.searchParams.set('channelId', CHANNEL_ID);
+    url.searchParams.set('key', YOUTUBE_API_KEY as string);
+    url.searchParams.set('channelId', CHANNEL_ID ?? '');
     url.searchParams.set('part', 'snippet,contentDetails');
     url.searchParams.set('maxResults', '50');
 
@@ -197,7 +197,7 @@ async function fetchViewCounts(
     if (videoIds.length === 0) return new Map();
 
     const statsUrl = new URL('https://www.googleapis.com/youtube/v3/videos');
-    statsUrl.searchParams.set('key', YOUTUBE_API_KEY);
+    statsUrl.searchParams.set('key', YOUTUBE_API_KEY as string);
     statsUrl.searchParams.set('part', 'statistics');
     statsUrl.searchParams.set('id', videoIds.join(','));
 
@@ -251,7 +251,7 @@ async function fetchVideosFromPlaylist(
     playlistId: string,
 ): Promise<YouTubeVideo[]> {
     const url = new URL('https://www.googleapis.com/youtube/v3/playlistItems');
-    url.searchParams.set('key', YOUTUBE_API_KEY);
+    url.searchParams.set('key', YOUTUBE_API_KEY as string);
     url.searchParams.set('playlistId', playlistId);
     url.searchParams.set('part', 'snippet');
     url.searchParams.set('maxResults', '50');
@@ -280,7 +280,7 @@ async function fetchVideosFromPlaylist(
 }
 
 async function fetchAllVideosFromChannel(): Promise<YouTubeVideo[]> {
-    const playlistId = `UU${CHANNEL_ID?.replace(/^UC/, '')}`;
+    const playlistId = `UU${(CHANNEL_ID ?? '').replace(/^UC/, '')}`;
     console.log('Fetching all videos from channel uploads...\n');
 
     const videos = await fetchVideosFromPlaylist(playlistId);
@@ -468,6 +468,13 @@ ${video.description}
 
 async function main() {
     try {
+        if (!YOUTUBE_API_KEY) {
+            throw new Error('YOUTUBE_API_KEY environment variable is required');
+        }
+        if (!CHANNEL_ID) {
+            throw new Error('CHANNEL_ID environment variable is required');
+        }
+
         console.log('=== YouTube Video Fetcher ===\n');
         console.log(
             `Sort by: ${SORT_BY === 'views' ? 'View Count' : 'Recent'}\n`,

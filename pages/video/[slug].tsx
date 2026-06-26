@@ -1,9 +1,10 @@
 import Layout from 'components/Layout';
-import { globSync } from 'glob';
 import matter from 'gray-matter';
+import { getSiteConfig } from 'lib/config';
+import { getMarkdownSlugs } from 'lib/content';
+import { articleSeo, generateNextSeo } from 'lib/seo';
 import { formatDate } from 'lib/utils/date';
 import Link from 'next/link';
-import { generateNextSeo } from 'next-seo/pages';
 
 type VideoFrontmatter = {
     title: string;
@@ -27,37 +28,23 @@ export default function VideoTemplate({
     siteTitle,
     slug,
 }: VideoTemplateProps) {
-    const canonicalUrl = `https://productsway.com/video/${slug}`;
     const youtubeEmbedUrl = `https://www.youtube.com/embed/${frontmatter.youtube_id}`;
     const youtubeWatchUrl = `https://www.youtube.com/watch?v=${frontmatter.youtube_id}`;
 
     return (
         <Layout siteTitle={siteTitle}>
-            {generateNextSeo({
-                title: `${frontmatter.title} | ${siteTitle}`,
-                description: frontmatter.description,
-                canonical: canonicalUrl,
-                openGraph: {
-                    type: 'article',
-                    url: canonicalUrl,
-                    title: frontmatter.title,
+            {generateNextSeo(
+                articleSeo({
+                    title: `${frontmatter.title} | ${siteTitle}`,
                     description: frontmatter.description,
-                    images: [
-                        {
-                            url: `https://i.ytimg.com/vi/${frontmatter.youtube_id}/maxresdefault.jpg`,
-                            alt: frontmatter.title,
-                        },
-                    ],
-                    article: {
-                        publishedTime: frontmatter.date,
-                        authors: [frontmatter.author ?? 'Dung Huynh Duc'],
-                        tags: frontmatter.tag ?? [],
-                    },
-                },
-                twitter: {
-                    cardType: 'player',
-                },
-            })}
+                    path: `/video/${slug}`,
+                    publishedTime: frontmatter.date,
+                    author: frontmatter.author,
+                    tags: frontmatter.tag,
+                    image: `https://i.ytimg.com/vi/${frontmatter.youtube_id}/maxresdefault.jpg`,
+                    twitterCardType: 'player',
+                }),
+            )}
 
             <div className="min-h-screen">
                 {/* Navigation */}
@@ -172,13 +159,13 @@ type StaticPropsContext = {
 export async function getStaticProps({ params }: StaticPropsContext) {
     const { slug } = params;
     const content = await import(`../../videos/${slug}.md`);
-    const config = await import('../../data/config.json');
+    const config = getSiteConfig();
     const data = matter(content.default);
 
     return {
         props: {
-            siteTitle: config.default.title,
-            siteDescription: config.default.description,
+            siteTitle: config.title,
+            siteDescription: config.description,
             frontmatter: data.data,
             slug,
         },
@@ -186,13 +173,9 @@ export async function getStaticProps({ params }: StaticPropsContext) {
 }
 
 export async function getStaticPaths() {
-    const videos = globSync('videos/**/*.md');
+    const slugs = getMarkdownSlugs('videos/**/*.md');
 
-    const videoSlugs = videos.map((file: string) =>
-        file.split('/')[1].replace(/ /g, '-').slice(0, -3).trim(),
-    );
-
-    const paths = videoSlugs.map((slug: string) => ({
+    const paths = slugs.map((slug: string) => ({
         params: { slug },
     }));
 
