@@ -11,7 +11,11 @@
                 "stars": 101,
                 "forks": 15,
                 "language": "TypeScript",
-                "topics": ["gpt", "gpt4free", "raycast-extension"],
+                "topics": [
+                    "gpt",
+                    "gpt4free",
+                    "raycast-extension"
+                ],
                 "updated_at": "2026-06-22T21:28:31Z"
             },
             {
@@ -41,7 +45,12 @@
                 "stars": 36,
                 "forks": 6,
                 "language": "TypeScript",
-                "topics": ["cli", "gpt4all", "gpt4all-ts", "llama"],
+                "topics": [
+                    "cli",
+                    "gpt4all",
+                    "gpt4all-ts",
+                    "llama"
+                ],
                 "updated_at": "2026-04-08T16:52:45Z"
             },
             {
@@ -110,7 +119,11 @@
                 "stars": 6,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["ai", "chatbot", "llm"],
+                "topics": [
+                    "ai",
+                    "chatbot",
+                    "llm"
+                ],
                 "updated_at": "2026-03-12T19:07:10Z"
             },
             {
@@ -122,7 +135,10 @@
                 "stars": 4,
                 "forks": 1,
                 "language": "JavaScript",
-                "topics": ["copilot", "sveltekit"],
+                "topics": [
+                    "copilot",
+                    "sveltekit"
+                ],
                 "updated_at": "2025-07-19T04:28:18Z"
             },
             {
@@ -134,7 +150,9 @@
                 "stars": 3,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["hermes-agent"],
+                "topics": [
+                    "hermes-agent"
+                ],
                 "updated_at": "2026-06-20T05:53:14Z"
             },
             {
@@ -146,7 +164,12 @@
                 "stars": 2,
                 "forks": 1,
                 "language": "Rust",
-                "topics": ["ai-tools", "mcp", "mcp-server", "tmux"],
+                "topics": [
+                    "ai-tools",
+                    "mcp",
+                    "mcp-server",
+                    "tmux"
+                ],
                 "updated_at": "2026-05-03T08:23:04Z"
             },
             {
@@ -158,7 +181,9 @@
                 "stars": 0,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["react-native"],
+                "topics": [
+                    "react-native"
+                ],
                 "updated_at": "2026-05-02T14:51:29Z"
             },
             {
@@ -170,7 +195,11 @@
                 "stars": 0,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["ai", "google-gemini-ai", "mastra"],
+                "topics": [
+                    "ai",
+                    "google-gemini-ai",
+                    "mastra"
+                ],
                 "updated_at": "2026-04-14T22:58:39Z"
             },
             {
@@ -182,7 +211,9 @@
                 "stars": 0,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["react-router"],
+                "topics": [
+                    "react-router"
+                ],
                 "updated_at": "2026-01-12T22:28:48Z"
             },
             {
@@ -223,7 +254,11 @@
                 "stars": 51,
                 "forks": 8,
                 "language": "TypeScript",
-                "topics": ["cli", "download-videos", "twitter"],
+                "topics": [
+                    "cli",
+                    "download-videos",
+                    "twitter"
+                ],
                 "updated_at": "2026-06-08T21:32:24Z"
             },
             {
@@ -235,7 +270,11 @@
                 "stars": 13,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["cli", "cspell", "spell-check"],
+                "topics": [
+                    "cli",
+                    "cspell",
+                    "spell-check"
+                ],
                 "updated_at": "2026-06-02T22:07:52Z"
             },
             {
@@ -247,7 +286,11 @@
                 "stars": 7,
                 "forks": 0,
                 "language": "Go",
-                "topics": ["biomejs", "cli", "golang"],
+                "topics": [
+                    "biomejs",
+                    "cli",
+                    "golang"
+                ],
                 "updated_at": "2025-04-12T00:23:14Z"
             },
             {
@@ -259,7 +302,11 @@
                 "stars": 5,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["cli", "moleculerjs", "repl"],
+                "topics": [
+                    "cli",
+                    "moleculerjs",
+                    "repl"
+                ],
                 "updated_at": "2024-12-17T08:46:01Z"
             },
             {
@@ -283,7 +330,12 @@
                 "stars": 2,
                 "forks": 0,
                 "language": "Go",
-                "topics": ["cli", "env", "golang", "tui"],
+                "topics": [
+                    "cli",
+                    "env",
+                    "golang",
+                    "tui"
+                ],
                 "updated_at": "2026-02-17T06:11:32Z"
             },
             {
@@ -295,7 +347,13 @@
                 "stars": 2,
                 "forks": 0,
                 "language": "Solidity",
-                "topics": ["cast", "dapp", "eth", "ethereum-dapp", "seth"],
+                "topics": [
+                    "cast",
+                    "dapp",
+                    "eth",
+                    "ethereum-dapp",
+                    "seth"
+                ],
                 "updated_at": "2025-04-08T09:09:48Z"
             },
             {
@@ -307,7 +365,11 @@
                 "stars": 1,
                 "forks": 0,
                 "language": "JavaScript",
-                "topics": ["cli", "eslint", "typecheck"],
+                "topics": [
+                    "cli",
+                    "eslint",
+                    "typecheck"
+                ],
                 "updated_at": "2024-07-28T07:21:24Z"
             },
             {
@@ -319,7 +381,12 @@
                 "stars": 0,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["cli", "deno", "ink", "typescript"],
+                "topics": [
+                    "cli",
+                    "deno",
+                    "ink",
+                    "typescript"
+                ],
                 "updated_at": "2026-06-17T05:45:18Z"
             },
             {
@@ -331,7 +398,11 @@
                 "stars": 0,
                 "forks": 0,
                 "language": "Go",
-                "topics": ["cli", "logging", "tmux"],
+                "topics": [
+                    "cli",
+                    "logging",
+                    "tmux"
+                ],
                 "updated_at": "2026-02-23T14:55:07Z"
             }
         ]
@@ -348,7 +419,11 @@
                 "stars": 1373,
                 "forks": 29,
                 "language": "TypeScript",
-                "topics": ["guide", "hacktoberfest", "zed"],
+                "topics": [
+                    "guide",
+                    "hacktoberfest",
+                    "zed"
+                ],
                 "updated_at": "2026-06-25T09:36:55Z"
             },
             {
@@ -377,7 +452,12 @@
                 "stars": 174,
                 "forks": 20,
                 "language": "",
-                "topics": ["awesome", "awesome-list", "typesafe", "typescript"],
+                "topics": [
+                    "awesome",
+                    "awesome-list",
+                    "typesafe",
+                    "typescript"
+                ],
                 "updated_at": "2026-06-19T23:26:18Z"
             },
             {
@@ -411,7 +491,10 @@
                 "stars": 112,
                 "forks": 10,
                 "language": "TypeScript",
-                "topics": ["bun", "elysiajs"],
+                "topics": [
+                    "bun",
+                    "elysiajs"
+                ],
                 "updated_at": "2026-06-06T12:07:53Z"
             },
             {
@@ -447,11 +530,15 @@
                 "description": "Express.js v5 starter is a boilerplate for building and deploying Express.js applications to Vercel. ",
                 "url": "https://github.com/jellydn/express-vercel-starter",
                 "homepage": "https://express-starter.productsway.com/api",
-                "stars": 25,
-                "forks": 13,
+                "stars": 26,
+                "forks": 14,
                 "language": "TypeScript",
-                "topics": ["express", "express-js", "vercel"],
-                "updated_at": "2026-05-31T18:29:57Z"
+                "topics": [
+                    "express",
+                    "express-js",
+                    "vercel"
+                ],
+                "updated_at": "2026-06-26T01:55:51Z"
             },
             {
                 "name": "arch-linux-on-m2",
@@ -462,7 +549,11 @@
                 "stars": 21,
                 "forks": 3,
                 "language": "Shell",
-                "topics": ["archlinux", "mac-m2", "vmware-fusion"],
+                "topics": [
+                    "archlinux",
+                    "mac-m2",
+                    "vmware-fusion"
+                ],
                 "updated_at": "2026-04-05T20:57:27Z"
             },
             {
@@ -511,7 +602,9 @@
                 "stars": 16,
                 "forks": 1,
                 "language": "",
-                "topics": ["ollama"],
+                "topics": [
+                    "ollama"
+                ],
                 "updated_at": "2024-01-06T02:33:12Z"
             },
             {
@@ -523,7 +616,12 @@
                 "stars": 13,
                 "forks": 3,
                 "language": "Solidity",
-                "topics": ["dapp", "forge", "foundry", "thirdweb"],
+                "topics": [
+                    "dapp",
+                    "forge",
+                    "foundry",
+                    "thirdweb"
+                ],
                 "updated_at": "2026-06-02T22:32:40Z"
             },
             {
@@ -553,7 +651,12 @@
                 "stars": 12,
                 "forks": 2,
                 "language": "Python",
-                "topics": ["python", "ruff", "rye", "uv"],
+                "topics": [
+                    "python",
+                    "ruff",
+                    "rye",
+                    "uv"
+                ],
                 "updated_at": "2025-03-04T03:11:14Z"
             },
             {
@@ -565,7 +668,10 @@
                 "stars": 11,
                 "forks": 5,
                 "language": "Dockerfile",
-                "topics": ["crawlee", "playwright-typescript"],
+                "topics": [
+                    "crawlee",
+                    "playwright-typescript"
+                ],
                 "updated_at": "2026-06-24T00:52:47Z"
             },
             {
@@ -577,7 +683,10 @@
                 "stars": 9,
                 "forks": 1,
                 "language": "TypeScript",
-                "topics": ["act", "github-actions"],
+                "topics": [
+                    "act",
+                    "github-actions"
+                ],
                 "updated_at": "2025-09-17T14:08:49Z"
             },
             {
@@ -589,7 +698,12 @@
                 "stars": 8,
                 "forks": 1,
                 "language": "TypeScript",
-                "topics": ["nodejs", "tdd", "tidy-first", "vitest"],
+                "topics": [
+                    "nodejs",
+                    "tdd",
+                    "tidy-first",
+                    "vitest"
+                ],
                 "updated_at": "2026-06-25T02:57:21Z"
             },
             {
@@ -601,7 +715,12 @@
                 "stars": 8,
                 "forks": 0,
                 "language": "Rust",
-                "topics": ["tmux", "zed", "zed-extension", "zellij"],
+                "topics": [
+                    "tmux",
+                    "zed",
+                    "zed-extension",
+                    "zellij"
+                ],
                 "updated_at": "2026-06-09T16:56:57Z"
             },
             {
@@ -613,7 +732,11 @@
                 "stars": 8,
                 "forks": 2,
                 "language": "Go",
-                "topics": ["api", "golang", "huma"],
+                "topics": [
+                    "api",
+                    "golang",
+                    "huma"
+                ],
                 "updated_at": "2026-06-02T18:35:12Z"
             },
             {
@@ -625,7 +748,11 @@
                 "stars": 7,
                 "forks": 0,
                 "language": "JavaScript",
-                "topics": ["email-template", "mailwind", "tailwindcss"],
+                "topics": [
+                    "email-template",
+                    "mailwind",
+                    "tailwindcss"
+                ],
                 "updated_at": "2026-06-25T01:57:59Z"
             },
             {
@@ -637,7 +764,12 @@
                 "stars": 7,
                 "forks": 1,
                 "language": "TypeScript",
-                "topics": ["deno", "javascript", "promise", "typescript"],
+                "topics": [
+                    "deno",
+                    "javascript",
+                    "promise",
+                    "typescript"
+                ],
                 "updated_at": "2026-05-13T06:24:19Z"
             },
             {
@@ -649,7 +781,11 @@
                 "stars": 6,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["cloudflare", "honojs", "sst"],
+                "topics": [
+                    "cloudflare",
+                    "honojs",
+                    "sst"
+                ],
                 "updated_at": "2025-04-18T21:08:55Z"
             },
             {
@@ -661,7 +797,11 @@
                 "stars": 6,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["ethereum", "ethersjs", "web3js"],
+                "topics": [
+                    "ethereum",
+                    "ethersjs",
+                    "web3js"
+                ],
                 "updated_at": "2022-07-15T10:46:24Z"
             },
             {
@@ -673,7 +813,11 @@
                 "stars": 5,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["nodejs", "websocket", "ws"],
+                "topics": [
+                    "nodejs",
+                    "websocket",
+                    "ws"
+                ],
                 "updated_at": "2026-06-22T04:39:43Z"
             },
             {
@@ -685,7 +829,11 @@
                 "stars": 5,
                 "forks": 1,
                 "language": "JavaScript",
-                "topics": ["eslint-config", "prettier-eslint", "xojs"],
+                "topics": [
+                    "eslint-config",
+                    "prettier-eslint",
+                    "xojs"
+                ],
                 "updated_at": "2026-06-19T05:00:55Z"
             },
             {
@@ -728,7 +876,12 @@
                 "stars": 5,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["biome-js", "bun", "remix", "spa"],
+                "topics": [
+                    "biome-js",
+                    "bun",
+                    "remix",
+                    "spa"
+                ],
                 "updated_at": "2025-10-06T09:43:13Z"
             },
             {
@@ -740,7 +893,10 @@
                 "stars": 5,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["deno", "denoland"],
+                "topics": [
+                    "deno",
+                    "denoland"
+                ],
                 "updated_at": "2024-10-16T16:51:32Z"
             },
             {
@@ -752,7 +908,11 @@
                 "stars": 4,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["cloudflare", "cloudflare-worker", "honojs"],
+                "topics": [
+                    "cloudflare",
+                    "cloudflare-worker",
+                    "honojs"
+                ],
                 "updated_at": "2026-06-25T17:16:16Z"
             },
             {
@@ -764,7 +924,11 @@
                 "stars": 4,
                 "forks": 1,
                 "language": "TypeScript",
-                "topics": ["edge", "netlify-functions", "wrangler"],
+                "topics": [
+                    "edge",
+                    "netlify-functions",
+                    "wrangler"
+                ],
                 "updated_at": "2026-06-25T06:49:11Z"
             },
             {
@@ -795,7 +959,11 @@
                 "stars": 4,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["starter", "template", "typescript"],
+                "topics": [
+                    "starter",
+                    "template",
+                    "typescript"
+                ],
                 "updated_at": "2026-06-22T04:52:21Z"
             },
             {
@@ -807,7 +975,11 @@
                 "stars": 4,
                 "forks": 2,
                 "language": "TypeScript",
-                "topics": ["dokku", "dokku-ui", "dokku-web"],
+                "topics": [
+                    "dokku",
+                    "dokku-ui",
+                    "dokku-web"
+                ],
                 "updated_at": "2026-06-16T00:30:54Z"
             },
             {
@@ -849,7 +1021,10 @@
                 "stars": 3,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["stenciljs", "web-component"],
+                "topics": [
+                    "stenciljs",
+                    "web-component"
+                ],
                 "updated_at": "2026-06-22T04:59:50Z"
             },
             {
@@ -879,7 +1054,11 @@
                 "stars": 3,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["bot", "flight", "telegrambot"],
+                "topics": [
+                    "bot",
+                    "flight",
+                    "telegrambot"
+                ],
                 "updated_at": "2026-03-21T18:24:49Z"
             },
             {
@@ -891,7 +1070,10 @@
                 "stars": 3,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["nestjs", "nodejs"],
+                "topics": [
+                    "nestjs",
+                    "nodejs"
+                ],
                 "updated_at": "2025-10-22T03:10:14Z"
             },
             {
@@ -915,7 +1097,12 @@
                 "stars": 3,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["hapi", "http-requests", "hurl", "testing-tools"],
+                "topics": [
+                    "hapi",
+                    "http-requests",
+                    "hurl",
+                    "testing-tools"
+                ],
                 "updated_at": "2025-06-29T05:11:55Z"
             },
             {
@@ -927,7 +1114,11 @@
                 "stars": 3,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["expo", "expo-router", "react-native"],
+                "topics": [
+                    "expo",
+                    "expo-router",
+                    "react-native"
+                ],
                 "updated_at": "2025-06-03T18:30:45Z"
             },
             {
@@ -969,7 +1160,12 @@
                 "stars": 3,
                 "forks": 1,
                 "language": "TypeScript",
-                "topics": ["deno", "fresh", "twind", "typescript"],
+                "topics": [
+                    "deno",
+                    "fresh",
+                    "twind",
+                    "typescript"
+                ],
                 "updated_at": "2023-08-29T21:26:08Z"
             },
             {
@@ -1013,7 +1209,11 @@
                 "stars": 2,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["encore-app", "encoredev", "typescript"],
+                "topics": [
+                    "encore-app",
+                    "encoredev",
+                    "typescript"
+                ],
                 "updated_at": "2026-06-16T00:03:02Z"
             },
             {
@@ -1025,7 +1225,12 @@
                 "stars": 2,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["bunjs", "e2e-testing", "fastifyjs", "stepci"],
+                "topics": [
+                    "bunjs",
+                    "e2e-testing",
+                    "fastifyjs",
+                    "stepci"
+                ],
                 "updated_at": "2026-06-09T18:59:52Z"
             },
             {
@@ -1037,7 +1242,12 @@
                 "stars": 2,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["cjs", "esm", "starter", "typescript"],
+                "topics": [
+                    "cjs",
+                    "esm",
+                    "starter",
+                    "typescript"
+                ],
                 "updated_at": "2026-06-04T05:59:07Z"
             },
             {
@@ -1049,7 +1259,9 @@
                 "stars": 2,
                 "forks": 0,
                 "language": "",
-                "topics": ["nodejs"],
+                "topics": [
+                    "nodejs"
+                ],
                 "updated_at": "2026-06-02T21:50:09Z"
             },
             {
@@ -1061,7 +1273,11 @@
                 "stars": 2,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["async-await", "js", "typescript"],
+                "topics": [
+                    "async-await",
+                    "js",
+                    "typescript"
+                ],
                 "updated_at": "2026-05-31T17:03:23Z"
             },
             {
@@ -1073,7 +1289,11 @@
                 "stars": 2,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["floating-promises", "javascript", "promise"],
+                "topics": [
+                    "floating-promises",
+                    "javascript",
+                    "promise"
+                ],
                 "updated_at": "2026-05-13T09:46:03Z"
             },
             {
@@ -1085,7 +1305,10 @@
                 "stars": 2,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["ts-pattern", "ts-pattern-demo"],
+                "topics": [
+                    "ts-pattern",
+                    "ts-pattern-demo"
+                ],
                 "updated_at": "2026-04-27T22:31:24Z"
             },
             {
@@ -1097,7 +1320,11 @@
                 "stars": 2,
                 "forks": 0,
                 "language": "Rust",
-                "topics": ["gui", "skhd", "tauri-app"],
+                "topics": [
+                    "gui",
+                    "skhd",
+                    "tauri-app"
+                ],
                 "updated_at": "2026-01-18T03:04:17Z"
             },
             {
@@ -1109,7 +1336,11 @@
                 "stars": 2,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["bignumber", "ethersjs", "web3"],
+                "topics": [
+                    "bignumber",
+                    "ethersjs",
+                    "web3"
+                ],
                 "updated_at": "2023-11-21T07:05:44Z"
             },
             {
@@ -1121,7 +1352,10 @@
                 "stars": 2,
                 "forks": 3,
                 "language": "JavaScript",
-                "topics": ["js", "justext"],
+                "topics": [
+                    "js",
+                    "justext"
+                ],
                 "updated_at": "2022-12-07T11:25:47Z"
             },
             {
@@ -1133,7 +1367,10 @@
                 "stars": 2,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["remix", "remix-stack"],
+                "topics": [
+                    "remix",
+                    "remix-stack"
+                ],
                 "updated_at": "2022-06-22T10:27:12Z"
             },
             {
@@ -1145,7 +1382,11 @@
                 "stars": 1,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["bun", "honojs", "server-timing"],
+                "topics": [
+                    "bun",
+                    "honojs",
+                    "server-timing"
+                ],
                 "updated_at": "2026-06-23T12:57:15Z"
             },
             {
@@ -1157,7 +1398,10 @@
                 "stars": 1,
                 "forks": 1,
                 "language": "TypeScript",
-                "topics": ["remix", "vercel"],
+                "topics": [
+                    "remix",
+                    "vercel"
+                ],
                 "updated_at": "2026-06-22T07:07:37Z"
             },
             {
@@ -1193,7 +1437,12 @@
                 "stars": 1,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["bunjs", "db", "prisma", "tbls"],
+                "topics": [
+                    "bunjs",
+                    "db",
+                    "prisma",
+                    "tbls"
+                ],
                 "updated_at": "2026-06-19T10:06:47Z"
             },
             {
@@ -1217,7 +1466,11 @@
                 "stars": 1,
                 "forks": 0,
                 "language": "Python",
-                "topics": ["python", "reflex", "webapp"],
+                "topics": [
+                    "python",
+                    "reflex",
+                    "webapp"
+                ],
                 "updated_at": "2026-06-11T06:56:51Z"
             },
             {
@@ -1229,7 +1482,9 @@
                 "stars": 1,
                 "forks": 0,
                 "language": "",
-                "topics": ["python"],
+                "topics": [
+                    "python"
+                ],
                 "updated_at": "2026-06-11T06:04:12Z"
             },
             {
@@ -1285,7 +1540,12 @@
                 "stars": 1,
                 "forks": 1,
                 "language": "TypeScript",
-                "topics": ["api", "deno", "hono", "typescript"],
+                "topics": [
+                    "api",
+                    "deno",
+                    "hono",
+                    "typescript"
+                ],
                 "updated_at": "2026-05-02T15:42:59Z"
             },
             {
@@ -1309,7 +1569,12 @@
                 "stars": 1,
                 "forks": 1,
                 "language": "TypeScript",
-                "topics": ["app", "capacitor", "ios", "writting"],
+                "topics": [
+                    "app",
+                    "capacitor",
+                    "ios",
+                    "writting"
+                ],
                 "updated_at": "2026-03-21T16:29:09Z"
             },
             {
@@ -1333,7 +1598,11 @@
                 "stars": 1,
                 "forks": 0,
                 "language": "TeX",
-                "topics": ["cv", "latex", "latex-template"],
+                "topics": [
+                    "cv",
+                    "latex",
+                    "latex-template"
+                ],
                 "updated_at": "2026-03-21T02:31:06Z"
             },
             {
@@ -1345,7 +1614,10 @@
                 "stars": 1,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["pdf-generation", "twitter"],
+                "topics": [
+                    "pdf-generation",
+                    "twitter"
+                ],
                 "updated_at": "2026-03-18T13:30:11Z"
             },
             {
@@ -1357,7 +1629,11 @@
                 "stars": 1,
                 "forks": 0,
                 "language": "PHP",
-                "topics": ["laravel", "macosx", "php"],
+                "topics": [
+                    "laravel",
+                    "macosx",
+                    "php"
+                ],
                 "updated_at": "2025-11-10T05:48:09Z"
             },
             {
@@ -1369,7 +1645,11 @@
                 "stars": 1,
                 "forks": 0,
                 "language": "",
-                "topics": ["delta", "ios", "simulator"],
+                "topics": [
+                    "delta",
+                    "ios",
+                    "simulator"
+                ],
                 "updated_at": "2025-07-18T19:01:48Z"
             },
             {
@@ -1393,7 +1673,10 @@
                 "stars": 1,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["fastapi", "moon"],
+                "topics": [
+                    "fastapi",
+                    "moon"
+                ],
                 "updated_at": "2024-10-07T03:33:59Z"
             },
             {
@@ -1405,7 +1688,9 @@
                 "stars": 1,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["bolt"],
+                "topics": [
+                    "bolt"
+                ],
                 "updated_at": "2024-10-06T14:21:28Z"
             },
             {
@@ -1417,7 +1702,9 @@
                 "stars": 1,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["solidjs"],
+                "topics": [
+                    "solidjs"
+                ],
                 "updated_at": "2023-12-06T15:42:02Z"
             },
             {
@@ -1429,7 +1716,11 @@
                 "stars": 1,
                 "forks": 1,
                 "language": "JavaScript",
-                "topics": ["angularjs", "express-js", "mean-stack"],
+                "topics": [
+                    "angularjs",
+                    "express-js",
+                    "mean-stack"
+                ],
                 "updated_at": "2023-01-28T09:19:26Z"
             },
             {
@@ -1459,7 +1750,11 @@
                 "stars": 1,
                 "forks": 0,
                 "language": "Go",
-                "topics": ["encore", "encore-app", "golang"],
+                "topics": [
+                    "encore",
+                    "encore-app",
+                    "golang"
+                ],
                 "updated_at": "2022-05-29T07:50:37Z"
             },
             {
@@ -1471,7 +1766,12 @@
                 "stars": 0,
                 "forks": 0,
                 "language": "Go",
-                "topics": ["patterns", "rabbitmq", "rpc", "typescript"],
+                "topics": [
+                    "patterns",
+                    "rabbitmq",
+                    "rpc",
+                    "typescript"
+                ],
                 "updated_at": "2026-06-25T06:09:53Z"
             },
             {
@@ -1483,7 +1783,10 @@
                 "stars": 0,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["remix", "spa"],
+                "topics": [
+                    "remix",
+                    "spa"
+                ],
                 "updated_at": "2026-06-25T01:30:44Z"
             },
             {
@@ -1495,7 +1798,10 @@
                 "stars": 0,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["pulumi", "typescript"],
+                "topics": [
+                    "pulumi",
+                    "typescript"
+                ],
                 "updated_at": "2026-06-24T20:38:08Z"
             },
             {
@@ -1519,7 +1825,10 @@
                 "stars": 0,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["inverifyjs", "inversion-of-control"],
+                "topics": [
+                    "inverifyjs",
+                    "inversion-of-control"
+                ],
                 "updated_at": "2026-06-22T07:07:32Z"
             },
             {
@@ -1555,7 +1864,10 @@
                 "stars": 0,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["shadcn-ui", "tanstack-router"],
+                "topics": [
+                    "shadcn-ui",
+                    "tanstack-router"
+                ],
                 "updated_at": "2026-06-19T12:56:18Z"
             },
             {
@@ -1615,7 +1927,10 @@
                 "stars": 0,
                 "forks": 0,
                 "language": "PHP",
-                "topics": ["dokku", "wordpress"],
+                "topics": [
+                    "dokku",
+                    "wordpress"
+                ],
                 "updated_at": "2026-06-04T15:47:12Z"
             },
             {
@@ -1627,7 +1942,10 @@
                 "stars": 0,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["tailwindcss-v4", "tanstack-start"],
+                "topics": [
+                    "tailwindcss-v4",
+                    "tanstack-start"
+                ],
                 "updated_at": "2026-06-02T18:53:42Z"
             },
             {
@@ -1651,7 +1969,10 @@
                 "stars": 0,
                 "forks": 0,
                 "language": "Swift",
-                "topics": ["keyboard", "swift"],
+                "topics": [
+                    "keyboard",
+                    "swift"
+                ],
                 "updated_at": "2026-05-03T16:17:31Z"
             },
             {
@@ -1687,7 +2008,11 @@
                 "stars": 0,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["expo", "pomodoro", "react-native"],
+                "topics": [
+                    "expo",
+                    "pomodoro",
+                    "react-native"
+                ],
                 "updated_at": "2026-01-18T07:28:57Z"
             },
             {
@@ -1819,7 +2144,10 @@
                 "stars": 0,
                 "forks": 0,
                 "language": "Go",
-                "topics": ["hypermode", "modus"],
+                "topics": [
+                    "hypermode",
+                    "modus"
+                ],
                 "updated_at": "2024-11-07T13:03:40Z"
             },
             {
@@ -1843,7 +2171,10 @@
                 "stars": 0,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["hono", "honox"],
+                "topics": [
+                    "hono",
+                    "honox"
+                ],
                 "updated_at": "2024-08-29T15:09:16Z"
             },
             {
@@ -1879,7 +2210,10 @@
                 "stars": 0,
                 "forks": 0,
                 "language": "Makefile",
-                "topics": ["tsp", "typespec"],
+                "topics": [
+                    "tsp",
+                    "typespec"
+                ],
                 "updated_at": "2024-06-06T14:47:50Z"
             },
             {
@@ -1903,7 +2237,12 @@
                 "stars": 0,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["runner", "tsx", "typescript", "typescript-runtime"],
+                "topics": [
+                    "runner",
+                    "tsx",
+                    "typescript",
+                    "typescript-runtime"
+                ],
                 "updated_at": "2024-04-10T03:10:45Z"
             },
             {
@@ -1932,7 +2271,9 @@
                 "stars": 0,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["remix"],
+                "topics": [
+                    "remix"
+                ],
                 "updated_at": "2023-07-25T00:42:50Z"
             },
             {
@@ -1944,7 +2285,12 @@
                 "stars": 0,
                 "forks": 0,
                 "language": "HTML",
-                "topics": ["documentation", "markdown", "mkdocs", "typeorm"],
+                "topics": [
+                    "documentation",
+                    "markdown",
+                    "mkdocs",
+                    "typeorm"
+                ],
                 "updated_at": "2023-07-15T15:54:25Z"
             },
             {
@@ -1956,7 +2302,10 @@
                 "stars": 0,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["deno", "shortened-links"],
+                "topics": [
+                    "deno",
+                    "shortened-links"
+                ],
                 "updated_at": "2023-03-25T05:18:25Z"
             },
             {
@@ -1968,7 +2317,10 @@
                 "stars": 0,
                 "forks": 0,
                 "language": "Rust",
-                "topics": ["wasmtime", "webassembly"],
+                "topics": [
+                    "wasmtime",
+                    "webassembly"
+                ],
                 "updated_at": "2022-09-25T07:07:24Z"
             },
             {
@@ -1980,7 +2332,12 @@
                 "stars": 0,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["db", "migration", "nodejs", "typescript"],
+                "topics": [
+                    "db",
+                    "migration",
+                    "nodejs",
+                    "typescript"
+                ],
                 "updated_at": "2022-04-13T04:41:43Z"
             },
             {
@@ -1992,7 +2349,9 @@
                 "stars": 0,
                 "forks": 0,
                 "language": "Solidity",
-                "topics": ["foundry"],
+                "topics": [
+                    "foundry"
+                ],
                 "updated_at": "2022-03-09T00:41:13Z"
             },
             {
@@ -2028,7 +2387,9 @@
                 "stars": 0,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["denoland"],
+                "topics": [
+                    "denoland"
+                ],
                 "updated_at": "2020-12-01T06:55:43Z"
             },
             {
@@ -2040,7 +2401,12 @@
                 "stars": 0,
                 "forks": 0,
                 "language": "JavaScript",
-                "topics": ["array", "big-number-multiplication", "js", "sets"],
+                "topics": [
+                    "array",
+                    "big-number-multiplication",
+                    "js",
+                    "sets"
+                ],
                 "updated_at": "2020-08-10T15:30:28Z"
             },
             {
@@ -2153,7 +2519,12 @@
                 "stars": 256,
                 "forks": 20,
                 "language": "Lua",
-                "topics": ["hacktoberfest", "hurl", "neovim", "neovim-plugin"],
+                "topics": [
+                    "hacktoberfest",
+                    "hurl",
+                    "neovim",
+                    "neovim-plugin"
+                ],
                 "updated_at": "2026-06-01T15:47:18Z"
             },
             {
@@ -2165,7 +2536,11 @@
                 "stars": 142,
                 "forks": 15,
                 "language": "Lua",
-                "topics": ["ide", "neovim", "nvim"],
+                "topics": [
+                    "ide",
+                    "neovim",
+                    "nvim"
+                ],
                 "updated_at": "2026-05-07T17:45:08Z"
             },
             {
@@ -2177,7 +2552,11 @@
                 "stars": 53,
                 "forks": 6,
                 "language": "Lua",
-                "topics": ["dotfiles", "neovim", "nvim-config"],
+                "topics": [
+                    "dotfiles",
+                    "neovim",
+                    "nvim-config"
+                ],
                 "updated_at": "2026-06-23T04:31:35Z"
             },
             {
@@ -2189,7 +2568,12 @@
                 "stars": 48,
                 "forks": 1,
                 "language": "TypeScript",
-                "topics": ["inlay-hints", "neovim", "typescript", "vscode"],
+                "topics": [
+                    "inlay-hints",
+                    "neovim",
+                    "typescript",
+                    "vscode"
+                ],
                 "updated_at": "2026-04-25T22:36:02Z"
             },
             {
@@ -2201,7 +2585,9 @@
                 "stars": 45,
                 "forks": 6,
                 "language": "Lua",
-                "topics": ["neovim"],
+                "topics": [
+                    "neovim"
+                ],
                 "updated_at": "2026-04-07T03:04:42Z"
             },
             {
@@ -2213,7 +2599,11 @@
                 "stars": 35,
                 "forks": 1,
                 "language": "Lua",
-                "topics": ["neovim-plugin", "tsc", "typescript"],
+                "topics": [
+                    "neovim-plugin",
+                    "tsc",
+                    "typescript"
+                ],
                 "updated_at": "2026-02-05T10:04:00Z"
             },
             {
@@ -2225,7 +2615,11 @@
                 "stars": 33,
                 "forks": 2,
                 "language": "Lua",
-                "topics": ["lazyvim", "nvim", "web-development"],
+                "topics": [
+                    "lazyvim",
+                    "nvim",
+                    "web-development"
+                ],
                 "updated_at": "2026-02-21T10:16:49Z"
             },
             {
@@ -2237,7 +2631,12 @@
                 "stars": 25,
                 "forks": 0,
                 "language": "Lua",
-                "topics": ["code-runner", "lua", "neovim", "neovim-plugin"],
+                "topics": [
+                    "code-runner",
+                    "lua",
+                    "neovim",
+                    "neovim-plugin"
+                ],
                 "updated_at": "2026-01-15T06:02:57Z"
             },
             {
@@ -2249,7 +2648,12 @@
                 "stars": 23,
                 "forks": 0,
                 "language": "Lua",
-                "topics": ["lua", "neovim", "neovim-plugin", "spinner"],
+                "topics": [
+                    "lua",
+                    "neovim",
+                    "neovim-plugin",
+                    "spinner"
+                ],
                 "updated_at": "2026-04-27T12:53:55Z"
             },
             {
@@ -2287,7 +2691,12 @@
                 "stars": 16,
                 "forks": 1,
                 "language": "Lua",
-                "topics": ["lazyvim", "nvim", "vim", "vscode"],
+                "topics": [
+                    "lazyvim",
+                    "nvim",
+                    "vim",
+                    "vscode"
+                ],
                 "updated_at": "2025-07-17T14:47:03Z"
             },
             {
@@ -2299,7 +2708,11 @@
                 "stars": 15,
                 "forks": 0,
                 "language": "Lua",
-                "topics": ["neovim-plugin", "note-taking", "nvim-plugin"],
+                "topics": [
+                    "neovim-plugin",
+                    "note-taking",
+                    "nvim-plugin"
+                ],
                 "updated_at": "2025-08-16T11:34:57Z"
             },
             {
@@ -2311,7 +2724,11 @@
                 "stars": 9,
                 "forks": 0,
                 "language": "Lua",
-                "topics": ["neovim-plugin", "nvim", "nvim-plugin"],
+                "topics": [
+                    "neovim-plugin",
+                    "nvim",
+                    "nvim-plugin"
+                ],
                 "updated_at": "2026-04-24T18:54:59Z"
             },
             {
@@ -2323,7 +2740,11 @@
                 "stars": 7,
                 "forks": 0,
                 "language": "Lua",
-                "topics": ["neovim-plugin", "nvim-plugin", "terminal"],
+                "topics": [
+                    "neovim-plugin",
+                    "nvim-plugin",
+                    "terminal"
+                ],
                 "updated_at": "2026-05-16T12:25:36Z"
             },
             {
@@ -2335,7 +2756,10 @@
                 "stars": 5,
                 "forks": 2,
                 "language": "Lua",
-                "topics": ["ide", "nvim"],
+                "topics": [
+                    "ide",
+                    "nvim"
+                ],
                 "updated_at": "2024-08-08T06:28:45Z"
             }
         ]
@@ -2352,7 +2776,11 @@
                 "stars": 20,
                 "forks": 3,
                 "language": "TypeScript",
-                "topics": ["hacktoberfest", "hurl", "vscode-extension"],
+                "topics": [
+                    "hacktoberfest",
+                    "hurl",
+                    "vscode-extension"
+                ],
                 "updated_at": "2026-06-10T09:07:47Z"
             },
             {
@@ -2364,7 +2792,10 @@
                 "stars": 11,
                 "forks": 1,
                 "language": "Lua",
-                "topics": ["minimalist", "vscode"],
+                "topics": [
+                    "minimalist",
+                    "vscode"
+                ],
                 "updated_at": "2026-06-03T04:05:42Z"
             },
             {
@@ -2396,7 +2827,9 @@
                 "stars": 3,
                 "forks": 2,
                 "language": "TypeScript",
-                "topics": ["vscode-extension"],
+                "topics": [
+                    "vscode-extension"
+                ],
                 "updated_at": "2026-06-22T04:42:58Z"
             },
             {
@@ -2408,7 +2841,10 @@
                 "stars": 1,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["fff", "vscode-extension"],
+                "topics": [
+                    "fff",
+                    "vscode-extension"
+                ],
                 "updated_at": "2026-06-24T12:29:49Z"
             },
             {
@@ -2420,7 +2856,11 @@
                 "stars": 1,
                 "forks": 1,
                 "language": "TypeScript",
-                "topics": ["tmux", "vscode-extension", "zellij"],
+                "topics": [
+                    "tmux",
+                    "vscode-extension",
+                    "zellij"
+                ],
                 "updated_at": "2026-02-01T01:46:26Z"
             },
             {
@@ -2432,7 +2872,12 @@
                 "stars": 0,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["cli", "deno", "vscode", "vscode-extension"],
+                "topics": [
+                    "cli",
+                    "deno",
+                    "vscode",
+                    "vscode-extension"
+                ],
                 "updated_at": "2026-04-28T14:57:35Z"
             }
         ]
@@ -2642,7 +3087,12 @@
                 "stars": 23,
                 "forks": 2,
                 "language": "TypeScript",
-                "topics": ["fastify", "nextjs", "trpc", "turborepo"],
+                "topics": [
+                    "fastify",
+                    "nextjs",
+                    "trpc",
+                    "turborepo"
+                ],
                 "updated_at": "2026-05-06T16:46:47Z"
             },
             {
@@ -2654,7 +3104,10 @@
                 "stars": 14,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["nextjs", "nextjs-14"],
+                "topics": [
+                    "nextjs",
+                    "nextjs-14"
+                ],
                 "updated_at": "2026-06-18T23:02:45Z"
             },
             {
@@ -2702,7 +3155,12 @@
                 "stars": 6,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["chatbot", "react", "telegram", "typescript"],
+                "topics": [
+                    "chatbot",
+                    "react",
+                    "telegram",
+                    "typescript"
+                ],
                 "updated_at": "2026-03-12T20:51:20Z"
             },
             {
@@ -2733,7 +3191,12 @@
                 "stars": 5,
                 "forks": 1,
                 "language": "TypeScript",
-                "topics": ["react", "recoil-example", "recoiljs", "vitejs"],
+                "topics": [
+                    "react",
+                    "recoil-example",
+                    "recoiljs",
+                    "vitejs"
+                ],
                 "updated_at": "2026-06-22T05:13:00Z"
             },
             {
@@ -2782,7 +3245,12 @@
                 "stars": 4,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["email", "nextjs", "react", "react-email"],
+                "topics": [
+                    "email",
+                    "nextjs",
+                    "react",
+                    "react-email"
+                ],
                 "updated_at": "2026-06-22T04:47:33Z"
             },
             {
@@ -2794,7 +3262,11 @@
                 "stars": 4,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["react", "rsc", "waku"],
+                "topics": [
+                    "react",
+                    "rsc",
+                    "waku"
+                ],
                 "updated_at": "2026-06-19T05:30:58Z"
             },
             {
@@ -2837,7 +3309,12 @@
                 "stars": 3,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["expressjs", "nextjs", "nodejs", "wattpm"],
+                "topics": [
+                    "expressjs",
+                    "nextjs",
+                    "nodejs",
+                    "wattpm"
+                ],
                 "updated_at": "2026-06-19T22:38:37Z"
             },
             {
@@ -2849,7 +3326,12 @@
                 "stars": 3,
                 "forks": 1,
                 "language": "TypeScript",
-                "topics": ["chatbot", "react", "starter", "typescript"],
+                "topics": [
+                    "chatbot",
+                    "react",
+                    "starter",
+                    "typescript"
+                ],
                 "updated_at": "2026-03-23T04:50:50Z"
             },
             {
@@ -2891,7 +3373,12 @@
                 "stars": 3,
                 "forks": 1,
                 "language": "TypeScript",
-                "topics": ["migration", "raectjs", "react-18", "vitejs"],
+                "topics": [
+                    "migration",
+                    "raectjs",
+                    "react-18",
+                    "vitejs"
+                ],
                 "updated_at": "2023-03-12T09:36:46Z"
             },
             {
@@ -2921,7 +3408,10 @@
                 "stars": 2,
                 "forks": 1,
                 "language": "TypeScript",
-                "topics": ["react-router-v7", "tailwindcss-v4"],
+                "topics": [
+                    "react-router-v7",
+                    "tailwindcss-v4"
+                ],
                 "updated_at": "2026-06-19T07:08:51Z"
             },
             {
@@ -2933,7 +3423,10 @@
                 "stars": 2,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["react", "typescript"],
+                "topics": [
+                    "react",
+                    "typescript"
+                ],
                 "updated_at": "2026-06-04T02:34:28Z"
             },
             {
@@ -2957,7 +3450,10 @@
                 "stars": 1,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["react", "signals"],
+                "topics": [
+                    "react",
+                    "signals"
+                ],
                 "updated_at": "2026-04-27T22:35:00Z"
             },
             {
@@ -2990,7 +3486,11 @@
                 "stars": 1,
                 "forks": 1,
                 "language": "Astro",
-                "topics": ["astro", "bun", "xata"],
+                "topics": [
+                    "astro",
+                    "bun",
+                    "xata"
+                ],
                 "updated_at": "2025-06-27T17:38:25Z"
             },
             {
@@ -3014,7 +3514,9 @@
                 "stars": 1,
                 "forks": 0,
                 "language": "Astro",
-                "topics": ["astro"],
+                "topics": [
+                    "astro"
+                ],
                 "updated_at": "2025-04-15T02:57:37Z"
             },
             {
@@ -3056,7 +3558,11 @@
                 "stars": 1,
                 "forks": 0,
                 "language": "JavaScript",
-                "topics": ["react-snapshot", "reactjs", "rebass"],
+                "topics": [
+                    "react-snapshot",
+                    "reactjs",
+                    "rebass"
+                ],
                 "updated_at": "2021-07-01T07:11:50Z"
             },
             {
@@ -3068,8 +3574,11 @@
                 "stars": 0,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["blog", "nextjs"],
-                "updated_at": "2026-06-25T23:37:52Z"
+                "topics": [
+                    "blog",
+                    "nextjs"
+                ],
+                "updated_at": "2026-06-26T04:16:49Z"
             },
             {
                 "name": "vite-react-demo",
@@ -3098,7 +3607,12 @@
                 "stars": 0,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["kit", "react", "tutorial", "zod"],
+                "topics": [
+                    "kit",
+                    "react",
+                    "tutorial",
+                    "zod"
+                ],
                 "updated_at": "2024-10-31T04:01:51Z"
             },
             {
@@ -3110,7 +3624,11 @@
                 "stars": 0,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["nextjs", "nextjs-typescript", "nhost"],
+                "topics": [
+                    "nextjs",
+                    "nextjs-typescript",
+                    "nhost"
+                ],
                 "updated_at": "2022-09-25T07:06:53Z"
             },
             {
@@ -3122,7 +3640,11 @@
                 "stars": 0,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["create-react-app", "nextjs", "redux-toolkit"],
+                "topics": [
+                    "create-react-app",
+                    "nextjs",
+                    "redux-toolkit"
+                ],
                 "updated_at": "2022-06-06T15:49:33Z"
             },
             {
@@ -3146,7 +3668,11 @@
                 "stars": 0,
                 "forks": 0,
                 "language": "TypeScript",
-                "topics": ["gridjs", "react-query", "vitejs"],
+                "topics": [
+                    "gridjs",
+                    "react-query",
+                    "vitejs"
+                ],
                 "updated_at": "2021-05-24T10:01:05Z"
             },
             {
@@ -3158,7 +3684,10 @@
                 "stars": 0,
                 "forks": 0,
                 "language": "Svelte",
-                "topics": ["svelte", "tailwindcss"],
+                "topics": [
+                    "svelte",
+                    "tailwindcss"
+                ],
                 "updated_at": "2021-05-24T09:56:54Z"
             },
             {
