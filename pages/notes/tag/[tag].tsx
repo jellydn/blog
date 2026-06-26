@@ -2,9 +2,9 @@ import Layout from 'components/Layout';
 import { NotesList } from 'components/NotesList';
 import matter from 'gray-matter';
 import { combine, fromMarkdown } from 'lib/content';
+import { generateNextSeo, pageSeo } from 'lib/seo';
 import type { BlogPost, VideoPost } from 'lib/types';
 import Link from 'next/link';
-import { generateNextSeo } from 'next-seo/pages';
 
 type TagPageProps = {
     tag: string;
@@ -16,10 +16,13 @@ type TagPageProps = {
 export default function TagPage({ tag, title, items }: TagPageProps) {
     return (
         <Layout siteTitle={title}>
-            {generateNextSeo({
-                title: `${tag} | Blog | ${title}`,
-                description: `Blog posts tagged with "${tag}"`,
-            })}
+            {generateNextSeo(
+                pageSeo({
+                    title: `${tag} | Notes | ${title}`,
+                    description: `Blog posts tagged with "${tag}"`,
+                    path: `/notes/tag/${tag}`,
+                }),
+            )}
             <div>
                 <nav className="bg-base-200">
                     <div className="container mx-auto px-4 py-4 max-w-5xl">

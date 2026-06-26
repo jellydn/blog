@@ -1,6 +1,6 @@
 import Layout from 'components/Layout';
 import { REVALIDATE_SHORT } from 'lib/constants';
-import { generateNextSeo } from 'next-seo/pages';
+import { generateNextSeo, pageSeo } from 'lib/seo';
 
 const BLOG_URL = 'https://blog.productsway.com';
 
@@ -19,16 +19,14 @@ export default function PostPage({
 
     return (
         <Layout siteTitle={siteTitle}>
-            {generateNextSeo({
-                title: `${slug} | ${siteTitle}`,
-                description: siteDescription,
-                canonical: postUrl,
-                openGraph: {
-                    type: 'article',
-                    url: postUrl,
+            {generateNextSeo(
+                pageSeo({
+                    title: `${slug} | ${siteTitle}`,
                     description: siteDescription,
-                },
-            })}
+                    path: `/posts/${slug}`,
+                    canonical: postUrl,
+                }),
+            )}
 
             <div className="min-h-[60vh] flex items-center justify-center">
                 <div className="text-center p-8 max-w-lg">

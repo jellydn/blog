@@ -1,5 +1,5 @@
 import Layout from 'components/Layout';
-import { generateNextSeo } from 'next-seo/pages';
+import { generateNextSeo, pageSeo } from 'lib/seo';
 
 type ResumePageProps = {
     siteTitle: string;
@@ -8,31 +8,19 @@ type ResumePageProps = {
 const ResumePage = ({ siteTitle }: ResumePageProps) => {
     const description =
         'Download the resume of Dung Huynh Duc, Senior Full Stack Software Engineer.';
-    const seoTitle = `Resume | ${siteTitle}`;
     const resumeUrl = '/files/resume.pdf';
 
     return (
         <Layout siteTitle={siteTitle} siteDescription={description}>
-            {generateNextSeo({
-                title: seoTitle,
-                description,
-                canonical: 'https://productsway.com/resume.pdf',
-                openGraph: {
-                    type: 'website',
-                    url: 'https://productsway.com/resume.pdf',
-                    title: seoTitle,
-                    description,
-                    images: [
-                        {
-                            url: 'https://productsway.com/uploads/productsway.jpeg',
-                            alt: seoTitle,
-                        },
-                    ],
-                },
-                twitter: {
-                    cardType: 'summary_large_image',
-                },
-            })}
+            {generateNextSeo(
+                pageSeo({
+                    title: `Resume | ${siteTitle}`,
+                    description:
+                        'Download the resume of Dung Huynh Duc, Senior Full Stack Software Engineer.',
+                    path: '/resume.pdf',
+                    image: 'https://productsway.com/uploads/productsway.jpeg',
+                }),
+            )}
 
             <div>
                 <section className="py-12 md:py-20 bg-base-200">

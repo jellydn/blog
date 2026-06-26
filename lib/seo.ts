@@ -8,6 +8,10 @@ export type PageSeoOptions = {
     title: string;
     description?: string;
     path: string;
+    /** Override the canonical URL (defaults to SITE_URL + path) */
+    canonical?: string;
+    /** Override the OpenGraph image URL (defaults to OG_IMAGE) */
+    image?: string;
 };
 
 export type ArticleSeoOptions = PageSeoOptions & {
@@ -22,8 +26,14 @@ export type ArticleSeoOptions = PageSeoOptions & {
  * SEO config for a standard page (e.g., listing pages like /notes, /videos, /).
  * Generates canonical URL, OpenGraph website tags, and twitter summary card.
  */
-export function pageSeo({ title, description, path }: PageSeoOptions) {
-    const url = `${SITE_URL}${path}`;
+export function pageSeo({
+    title,
+    description,
+    path,
+    canonical: canonicalOverride,
+    image = OG_IMAGE,
+}: PageSeoOptions) {
+    const url = canonicalOverride ?? `${SITE_URL}${path}`;
     return {
         title,
         description,
@@ -33,7 +43,7 @@ export function pageSeo({ title, description, path }: PageSeoOptions) {
             url,
             title,
             description,
-            images: [{ url: OG_IMAGE, alt: title }],
+            images: [{ url: image, alt: title }],
         },
         twitter: {
             cardType: 'summary_large_image' as const,
