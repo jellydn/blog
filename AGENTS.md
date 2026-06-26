@@ -5,6 +5,7 @@
 A Next.js 16 blog using the Pages Router, TypeScript, Tailwind CSS v4, and DaisyUI.
 
 Content sources:
+
 - Local markdown files (`posts/`, `videos/`) via gray-matter + webpack require.context
 - Hashnode blog (`blog.productsway.com`) fetched daily by CI into `data/blog-posts.json`
 - YouTube videos fetched client-side via `/api/youtube-videos`
