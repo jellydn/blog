@@ -11,7 +11,7 @@ const cspDirectives: Record<string, string[]> = {
         "'self'",
         `'nonce-%nonce%'`,
         'https://dunghd.goatcounter.com',
-        'https://analytics.umami.is',
+        'https://cloud.umami.is',
     ],
     'style-src': ["'self'", "'unsafe-inline'"],
     'img-src': [
@@ -26,7 +26,7 @@ const cspDirectives: Record<string, string[]> = {
     'connect-src': [
         "'self'",
         'https://dunghd.goatcounter.com',
-        'https://analytics.umami.is',
+        'https://cloud.umami.is',
     ],
     'font-src': ["'self'"],
     'form-action': ["'self'"],
@@ -45,7 +45,7 @@ function buildCsp(nonce: string): string {
         .join('; ');
 }
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
     const nonce = generateNonce();
 
     const requestHeaders = new Headers(request.headers);
@@ -55,7 +55,6 @@ export function middleware(request: NextRequest) {
         request: { headers: requestHeaders },
     });
 
-    response.headers.set('x-middleware-request-nonce', nonce);
     response.headers.set('Content-Security-Policy', buildCsp(nonce));
     response.headers.set('X-Content-Type-Options', 'nosniff');
     response.headers.set('Referrer-Policy', 'strict-origin-when-cross-origin');

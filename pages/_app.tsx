@@ -17,7 +17,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => (
                 strategy="afterInteractive"
             />
             <Script
-                src="https://analytics.umami.is/script.js"
+                src="https://cloud.umami.is/script.js"
                 data-website-id="94f78c78-3384-4c3b-9a26-a9cde3b9075f"
                 strategy="afterInteractive"
             />
