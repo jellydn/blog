@@ -49,7 +49,7 @@ module.exports = {
                         key: 'Content-Security-Policy',
                         value: [
                             "default-src 'self'",
-                            "script-src 'self' 'unsafe-inline' https://dunghd.goatcounter.com https://cloud.umami.is",
+                            "script-src 'self' 'unsafe-inline' https://gc.zgo.at https://dunghd.goatcounter.com https://cloud.umami.is",
                             "style-src 'self' 'unsafe-inline'",
                             "img-src 'self' https://gyazo.com https://cdn.hashnode.com https://hashnode.com https://i.ytimg.com data:",
                             'frame-src https://www.youtube.com',

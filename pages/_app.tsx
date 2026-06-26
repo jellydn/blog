@@ -12,7 +12,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => (
     <ThemeProvider>
         <div>
             <Script
-                src="https://dunghd.goatcounter.com/count"
+                src="https://gc.zgo.at/count.js"
                 data-goatcounter="https://dunghd.goatcounter.com/count"
                 strategy="afterInteractive"
             />

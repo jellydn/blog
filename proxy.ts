@@ -10,6 +10,7 @@ const cspDirectives: Record<string, string[]> = {
     'script-src': [
         "'self'",
         `'nonce-%nonce%'`,
+        'https://gc.zgo.at',
         'https://dunghd.goatcounter.com',
         'https://cloud.umami.is',
     ],
