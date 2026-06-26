@@ -44,7 +44,7 @@ export async function getStaticProps() {
     const config = getSiteConfig();
 
     const source = fromMarkdown<BlogPost>(
-        // @ts-expect-error require.context is a webpack function
+        // @ts-expect-error require.context is a webpack-only build-time function
         require.context('../../posts', true, /\.md$/),
     );
 

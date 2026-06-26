@@ -85,12 +85,12 @@ export async function getStaticProps({ params }: { params: { tag: string } }) {
     const config = getSiteConfig();
 
     const postsSource = fromMarkdown<BlogPost>(
-        // @ts-expect-error require.context is a webpack function
+        // @ts-expect-error require.context is a webpack-only build-time function
         require.context('../../../posts', true, /\.md$/),
     );
 
     const videosSource = fromMarkdown<VideoPost>(
-        // @ts-expect-error require.context is a webpack function
+        // @ts-expect-error require.context is a webpack-only build-time function
         require.context('../../../videos', true, /\.md$/),
     );
 
