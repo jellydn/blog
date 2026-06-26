@@ -49,6 +49,11 @@
             "includes": ["styles.css"],
             "linter": { "enabled": false },
             "formatter": { "enabled": false }
+        },
+        {
+            "includes": ["next-env.d.ts"],
+            "linter": { "enabled": false },
+            "formatter": { "enabled": false }
         }
     ],
     "css": {

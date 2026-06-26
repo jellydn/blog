@@ -4,7 +4,8 @@
         "lib": ["dom", "dom.iterable", "esnext"],
         "allowJs": true,
         "skipLibCheck": true,
-        "strict": false,
+        "strict": true,
+        "ignoreDeprecations": "6.0",
         "forceConsistentCasingInFileNames": true,
         "noEmit": true,
         "esModuleInterop": true,
@@ -13,6 +14,7 @@
         "resolveJsonModule": true,
         "isolatedModules": true,
         "jsx": "react-jsx",
+        "downlevelIteration": true,
         "incremental": true,
         "baseUrl": "."
     },

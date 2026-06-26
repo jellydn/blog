@@ -24,8 +24,8 @@ export async function fetchLatestYouTubeVideos(
     }
 
     const url = new URL('https://www.googleapis.com/youtube/v3/search');
-    url.searchParams.set('key', YOUTUBE_API_KEY);
-    url.searchParams.set('channelId', CHANNEL_ID);
+    url.searchParams.set('key', YOUTUBE_API_KEY as string);
+    url.searchParams.set('channelId', CHANNEL_ID ?? '');
     url.searchParams.set('part', 'snippet');
     url.searchParams.set('order', 'date');
     url.searchParams.set('maxResults', maxResults.toString());

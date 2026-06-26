@@ -8,7 +8,6 @@ const YoutubeVideo = ({
     videoId: string;
     title: string;
 }) => (
-    // @ts-expect-error Property  does not exist on type 'JSX.IntrinsicElements'
     <lite-youtube
         videoid={videoId}
         style={{
@@ -18,7 +17,6 @@ const YoutubeVideo = ({
         <button type="button" className="lty-playbtn">
             <span className="lyt-visually-hidden">{title}</span>
         </button>
-        {/* @ts-expect-error Property  does not exist on type 'JSX.IntrinsicElements' */}
     </lite-youtube>
 );
 

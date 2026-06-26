@@ -18,7 +18,7 @@ export default async function handler(
     }
 
     const maxResults = 6;
-    const uploadsPlaylistId = `UU${CHANNEL_ID.replace(/^UC/, '')}`;
+    const uploadsPlaylistId = `UU${(CHANNEL_ID ?? '').replace(/^UC/, '')}`;
     const url = new URL('https://www.googleapis.com/youtube/v3/playlistItems');
     url.searchParams.set('key', YOUTUBE_API_KEY);
     url.searchParams.set('playlistId', uploadsPlaylistId);
