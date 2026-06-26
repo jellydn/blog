@@ -1,9 +1,8 @@
 import Layout from 'components/Layout';
 import { NotesList } from 'components/NotesList';
 import matter from 'gray-matter';
-import { loadMarkdownEntries } from 'lib/markdown';
+import { combine, fromMarkdown } from 'lib/content';
 import type { BlogPost, VideoPost } from 'lib/types';
-import { dedupeBySlug, sortByDate } from 'lib/utils/array';
 import Link from 'next/link';
 import { generateNextSeo } from 'next-seo/pages';
 
@@ -100,20 +99,18 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }: { params: { tag: string } }) {
     const config = await import('../../../data/config.json');
 
-    const posts = loadMarkdownEntries(
+    const postsSource = fromMarkdown<BlogPost>(
         // @ts-expect-error require.context is a webpack function
         require.context('../../../posts', true, /\.md$/),
     );
 
-    const videos = loadMarkdownEntries(
+    const videosSource = fromMarkdown<VideoPost>(
         // @ts-expect-error require.context is a webpack function
         require.context('../../../videos', true, /\.md$/),
     );
 
-    const allItems = sortByDate([
-        ...dedupeBySlug(posts as BlogPost[]),
-        ...dedupeBySlug(videos as VideoPost[]),
-    ]) as (BlogPost | VideoPost)[];
+    const combined = combine(postsSource, videosSource);
+    const allItems = combined.getAll() as (BlogPost | VideoPost)[];
 
     const taggedItems = allItems.filter((item) =>
         item.frontmatter.tag?.some(

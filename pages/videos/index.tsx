@@ -1,9 +1,8 @@
 import Layout from 'components/Layout';
 import { NotesList } from 'components/NotesList';
 import type { VideoPost } from 'components/VideoList';
-import { loadMarkdownEntries } from 'lib/markdown';
+import { fromMarkdown } from 'lib/content';
 import { generateNextSeo, pageSeo } from 'lib/seo';
-import { dedupeBySlug, sortByDate } from 'lib/utils/array';
 
 type VideosPageProps = {
     title: string;
@@ -44,12 +43,12 @@ export default VideosPage;
 export async function getStaticProps() {
     const config = await import('../../data/config.json');
 
-    const videos = loadMarkdownEntries(
+    const source = fromMarkdown<VideoPost>(
         // @ts-expect-error require.context is a webpack function
         require.context('../../videos', true, /\.md$/),
     );
 
-    const items = sortByDate(dedupeBySlug(videos as VideoPost[]));
+    const items = source.getAll();
 
     return {
         props: {

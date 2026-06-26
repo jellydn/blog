@@ -7,7 +7,7 @@ import { NeovimSection } from 'components/sections/NeovimSection';
 import { ProjectsSection } from 'components/sections/ProjectsSection';
 import { VscodeSection } from 'components/sections/VscodeSection';
 import { REVALIDATE_DAILY } from 'lib/constants';
-import { loadMarkdownEntries } from 'lib/markdown';
+import { fromMarkdown } from 'lib/content';
 import {
     getCliTuiTools,
     getNeovimPlugins,
@@ -16,7 +16,6 @@ import {
 } from 'lib/repos';
 import { generateNextSeo, pageSeo } from 'lib/seo';
 import type { BlogPost, BlogPostSummary, VideoPost } from 'lib/types';
-import { dedupeBySlug, sortByDate } from 'lib/utils/array';
 import dynamic from 'next/dynamic';
 import Head from 'next/head';
 import Script from 'next/script';
@@ -109,7 +108,7 @@ export default Index;
 export async function getStaticProps() {
     const siteConfig = await import('../data/config.json');
 
-    const videos = loadMarkdownEntries(
+    const videosSource = fromMarkdown<VideoPost>(
         // @ts-expect-error require.context is a webpack function
         require.context('../videos', true, /\.md$/),
     );
@@ -132,10 +131,7 @@ export async function getStaticProps() {
     return {
         props: {
             allBlogs,
-            allVideos: sortByDate(dedupeBySlug(videos as VideoPost[])).slice(
-                0,
-                6,
-            ),
+            allVideos: videosSource.getAll().slice(0, 6),
             title: siteConfig.default.title,
             description: siteConfig.default.description,
             repos: reposData,

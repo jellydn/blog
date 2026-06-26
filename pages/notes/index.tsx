@@ -1,9 +1,8 @@
 import Layout from 'components/Layout';
 import { NotesList } from 'components/NotesList';
-import { loadMarkdownEntries } from 'lib/markdown';
+import { fromMarkdown } from 'lib/content';
 import { generateNextSeo, pageSeo } from 'lib/seo';
 import type { BlogPost } from 'lib/types';
-import { dedupeBySlug, sortByDate } from 'lib/utils/array';
 
 type BlogPageProps = {
     title: string;
@@ -43,14 +42,12 @@ export default BlogPage;
 export async function getStaticProps() {
     const config = await import('../../data/config.json');
 
-    const posts = loadMarkdownEntries(
+    const source = fromMarkdown<BlogPost>(
         // @ts-expect-error require.context is a webpack function
         require.context('../../posts', true, /\.md$/),
     );
 
-    const allItems = sortByDate(
-        dedupeBySlug(posts as BlogPost[]),
-    ) as BlogPost[];
+    const allItems = source.getAll();
 
     return {
         props: {
