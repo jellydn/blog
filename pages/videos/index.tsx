@@ -1,6 +1,7 @@
 import Layout from 'components/Layout';
 import { NotesList } from 'components/NotesList';
 import type { VideoPost } from 'components/VideoList';
+import { getSiteConfig } from 'lib/config';
 import { fromMarkdown } from 'lib/content';
 import { generateNextSeo, pageSeo } from 'lib/seo';
 
@@ -41,7 +42,7 @@ const VideosPage = ({ title, description, items }: VideosPageProps) => {
 export default VideosPage;
 
 export async function getStaticProps() {
-    const config = await import('../../data/config.json');
+    const config = getSiteConfig();
 
     const source = fromMarkdown<VideoPost>(
         // @ts-expect-error require.context is a webpack function
@@ -52,8 +53,8 @@ export async function getStaticProps() {
 
     return {
         props: {
-            title: config.default.title,
-            description: config.default.description,
+            title: config.title,
+            description: config.description,
             items,
         },
     };

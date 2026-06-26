@@ -6,6 +6,7 @@ import { HeroSection } from 'components/sections/HeroSection';
 import { NeovimSection } from 'components/sections/NeovimSection';
 import { ProjectsSection } from 'components/sections/ProjectsSection';
 import { VscodeSection } from 'components/sections/VscodeSection';
+import { getSiteConfig } from 'lib/config';
 import { REVALIDATE_DAILY } from 'lib/constants';
 import { fromMarkdown } from 'lib/content';
 import {
@@ -106,7 +107,7 @@ const Index = ({
 export default Index;
 
 export async function getStaticProps() {
-    const siteConfig = await import('../data/config.json');
+    const siteConfig = getSiteConfig();
 
     const videosSource = fromMarkdown<VideoPost>(
         // @ts-expect-error require.context is a webpack function
@@ -132,8 +133,8 @@ export async function getStaticProps() {
         props: {
             allBlogs,
             allVideos: videosSource.getAll().slice(0, 6),
-            title: siteConfig.default.title,
-            description: siteConfig.default.description,
+            title: siteConfig.title,
+            description: siteConfig.description,
             repos: reposData,
             youtubeApiKey: !!process.env.YOUTUBE_API_KEY,
             initialHasRemotePosts: allBlogs.length > 0,

@@ -1,4 +1,5 @@
 import Layout from 'components/Layout';
+import { getSiteConfig } from 'lib/config';
 import { REVALIDATE_SHORT } from 'lib/constants';
 import { generateNextSeo, pageSeo } from 'lib/seo';
 
@@ -77,12 +78,12 @@ type StaticPropsContext = {
 
 export async function getStaticProps({ params }: StaticPropsContext) {
     const { slug } = params;
-    const config = await import('../../data/config.json');
+    const config = getSiteConfig();
 
     return {
         props: {
-            siteTitle: config.default.title,
-            siteDescription: config.default.description,
+            siteTitle: config.title,
+            siteDescription: config.description,
             slug,
         },
         revalidate: REVALIDATE_SHORT,

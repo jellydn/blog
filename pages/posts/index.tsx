@@ -1,4 +1,5 @@
 import Layout from 'components/Layout';
+import { getSiteConfig } from 'lib/config';
 import { REVALIDATE_DAILY } from 'lib/constants';
 import { generateNextSeo, pageSeo } from 'lib/seo';
 import type { BlogPostSummary } from 'lib/types';
@@ -137,7 +138,7 @@ const PostsPage = ({ title, description, items }: PostsPageProps) => {
 export default PostsPage;
 
 export async function getStaticProps() {
-    const config = await import('../../data/config.json');
+    const config = getSiteConfig();
 
     // Blog posts come from data/blog-posts.json, kept fresh by CI
     // (see .github/workflows/fetch-blog-posts.yml)
@@ -145,8 +146,8 @@ export async function getStaticProps() {
 
     return {
         props: {
-            title: config.default.title,
-            description: config.default.description,
+            title: config.title,
+            description: config.description,
             items,
         },
         revalidate: REVALIDATE_DAILY,

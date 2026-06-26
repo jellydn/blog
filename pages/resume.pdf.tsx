@@ -1,4 +1,5 @@
 import Layout from 'components/Layout';
+import { getSiteConfig } from 'lib/config';
 import { generateNextSeo, pageSeo } from 'lib/seo';
 
 type ResumePageProps = {
@@ -72,11 +73,11 @@ const ResumePage = ({ siteTitle }: ResumePageProps) => {
 export default ResumePage;
 
 export async function getStaticProps() {
-    const config = await import('../data/config.json');
+    const config = getSiteConfig();
 
     return {
         props: {
-            siteTitle: config.default.title,
+            siteTitle: config.title,
         },
     };
 }

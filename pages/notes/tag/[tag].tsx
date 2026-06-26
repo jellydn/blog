@@ -1,6 +1,7 @@
 import Layout from 'components/Layout';
 import { NotesList } from 'components/NotesList';
 import matter from 'gray-matter';
+import { getSiteConfig } from 'lib/config';
 import { combine, fromMarkdown } from 'lib/content';
 import { generateNextSeo, pageSeo } from 'lib/seo';
 import type { BlogPost, VideoPost } from 'lib/types';
@@ -100,7 +101,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }: { params: { tag: string } }) {
-    const config = await import('../../../data/config.json');
+    const config = getSiteConfig();
 
     const postsSource = fromMarkdown<BlogPost>(
         // @ts-expect-error require.context is a webpack function
@@ -124,8 +125,8 @@ export async function getStaticProps({ params }: { params: { tag: string } }) {
     return {
         props: {
             tag: params.tag,
-            title: config.default.title,
-            description: config.default.description,
+            title: config.title,
+            description: config.description,
             items: taggedItems,
         },
     };

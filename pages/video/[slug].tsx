@@ -1,6 +1,7 @@
 import Layout from 'components/Layout';
 import { globSync } from 'glob';
 import matter from 'gray-matter';
+import { getSiteConfig } from 'lib/config';
 import { articleSeo, generateNextSeo } from 'lib/seo';
 import { formatDate } from 'lib/utils/date';
 import Link from 'next/link';
@@ -158,13 +159,13 @@ type StaticPropsContext = {
 export async function getStaticProps({ params }: StaticPropsContext) {
     const { slug } = params;
     const content = await import(`../../videos/${slug}.md`);
-    const config = await import('../../data/config.json');
+    const config = getSiteConfig();
     const data = matter(content.default);
 
     return {
         props: {
-            siteTitle: config.default.title,
-            siteDescription: config.default.description,
+            siteTitle: config.title,
+            siteDescription: config.description,
             frontmatter: data.data,
             slug,
         },

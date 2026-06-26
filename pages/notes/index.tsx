@@ -1,5 +1,6 @@
 import Layout from 'components/Layout';
 import { NotesList } from 'components/NotesList';
+import { getSiteConfig } from 'lib/config';
 import { fromMarkdown } from 'lib/content';
 import { generateNextSeo, pageSeo } from 'lib/seo';
 import type { BlogPost } from 'lib/types';
@@ -40,7 +41,7 @@ const BlogPage = ({ title, description, items }: BlogPageProps) => {
 export default BlogPage;
 
 export async function getStaticProps() {
-    const config = await import('../../data/config.json');
+    const config = getSiteConfig();
 
     const source = fromMarkdown<BlogPost>(
         // @ts-expect-error require.context is a webpack function
@@ -51,8 +52,8 @@ export async function getStaticProps() {
 
     return {
         props: {
-            title: config.default.title,
-            description: config.default.description,
+            title: config.title,
+            description: config.description,
             items: allItems,
         },
     };
