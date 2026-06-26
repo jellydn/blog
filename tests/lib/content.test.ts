@@ -175,6 +175,10 @@ describe('combine', () => {
 
 describe('fromMarkdown', () => {
     it('creates content target from a mock webpack context', () => {
+        type MockContext = {
+            keys(): string[];
+            (key: string): { default: string };
+        };
         const contextFn = (key: string) => {
             const contents: Record<string, { default: string }> = {
                 'posts/first.md': {
@@ -189,9 +193,9 @@ describe('fromMarkdown', () => {
         };
         const mockContext = Object.assign(contextFn, {
             keys: () => ['posts/first.md', 'posts/second.md'],
-        });
+        }) as MockContext;
 
-        const source = fromMarkdown(mockContext as any);
+        const source = fromMarkdown(mockContext);
         const result = source.getAll();
         expect(result).toHaveLength(2);
         expect(result[0].slug).toBe('first');
@@ -199,14 +203,18 @@ describe('fromMarkdown', () => {
     });
 
     it('applies an optional transform function', () => {
+        type MockContext = {
+            keys(): string[];
+            (key: string): { default: string };
+        };
         const contextFn = () => ({
             default: '---\ntitle: Original\n---\nBody',
         });
         const mockContext = Object.assign(contextFn, {
             keys: () => ['posts/post.md'],
-        });
+        }) as MockContext;
 
-        const source = fromMarkdown(mockContext as any, (entry) => ({
+        const source = fromMarkdown(mockContext, (entry) => ({
             ...entry,
             frontmatter: { ...entry.frontmatter, transformed: true },
         }));
@@ -214,12 +222,15 @@ describe('fromMarkdown', () => {
 
         expect(result).toHaveLength(1);
         expect(result[0].slug).toBe('post');
-        expect((result[0].frontmatter as any).transformed).toBe(true);
+        expect(
+            (result[0].frontmatter as { transformed: boolean }).transformed,
+        ).toBe(true);
     });
 
     it('handles empty context', () => {
         const mockContext = {
             keys: () => [],
+            // biome-ignore lint/suspicious/noExplicitAny: type-safe callable mock
         } as any;
 
         const source = fromMarkdown(mockContext);

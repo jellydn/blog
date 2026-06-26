@@ -41,7 +41,42 @@ module.exports = {
         return config;
     },
     async headers() {
-        return [];
+        return [
+            {
+                source: '/(.*)',
+                headers: [
+                    {
+                        key: 'Content-Security-Policy',
+                        value: [
+                            "default-src 'self'",
+                            "script-src 'self' 'unsafe-inline' https://dunghd.goatcounter.com https://cloud.umami.is",
+                            "style-src 'self' 'unsafe-inline'",
+                            "img-src 'self' https://gyazo.com https://cdn.hashnode.com https://hashnode.com https://i.ytimg.com data:",
+                            'frame-src https://www.youtube.com',
+                            "connect-src 'self' https://dunghd.goatcounter.com https://cloud.umami.is",
+                            "font-src 'self'",
+                            "form-action 'self'",
+                            "base-uri 'self'",
+                            "frame-ancestors 'none'",
+                            "object-src 'none'",
+                            'upgrade-insecure-requests',
+                        ].join('; '),
+                    },
+                    {
+                        key: 'X-Content-Type-Options',
+                        value: 'nosniff',
+                    },
+                    {
+                        key: 'Referrer-Policy',
+                        value: 'strict-origin-when-cross-origin',
+                    },
+                    {
+                        key: 'Permissions-Policy',
+                        value: 'camera=(), microphone=(), geolocation=(), interest-cohort=()',
+                    },
+                ],
+            },
+        ];
     },
     async redirects() {
         return [
