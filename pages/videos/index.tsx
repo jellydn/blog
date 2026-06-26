@@ -1,9 +1,9 @@
 import Layout from 'components/Layout';
 import { NotesList } from 'components/NotesList';
-import type { VideoPost } from 'components/VideoList';
 import { getSiteConfig } from 'lib/config';
 import { fromMarkdown } from 'lib/content';
 import { generateNextSeo, pageSeo } from 'lib/seo';
+import type { VideoPost } from 'lib/types';
 
 type VideosPageProps = {
     title: string;
