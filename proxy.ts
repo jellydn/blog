@@ -28,6 +28,7 @@ const cspDirectives: Record<string, string[]> = {
         "'self'",
         'https://dunghd.goatcounter.com',
         'https://cloud.umami.is',
+        'https://gateway.umami.is',
     ],
     'font-src': ["'self'"],
     'form-action': ["'self'"],

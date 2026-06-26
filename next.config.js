@@ -53,7 +53,7 @@ module.exports = {
                             "style-src 'self' 'unsafe-inline'",
                             "img-src 'self' https://gyazo.com https://cdn.hashnode.com https://hashnode.com https://i.ytimg.com data:",
                             'frame-src https://www.youtube.com',
-                            "connect-src 'self' https://dunghd.goatcounter.com https://cloud.umami.is",
+                            "connect-src 'self' https://dunghd.goatcounter.com https://cloud.umami.is https://gateway.umami.is",
                             "font-src 'self'",
                             "form-action 'self'",
                             "base-uri 'self'",
