@@ -468,6 +468,13 @@ ${video.description}
 
 async function main() {
     try {
+        if (!YOUTUBE_API_KEY) {
+            throw new Error('YOUTUBE_API_KEY environment variable is required');
+        }
+        if (!CHANNEL_ID) {
+            throw new Error('CHANNEL_ID environment variable is required');
+        }
+
         console.log('=== YouTube Video Fetcher ===\n');
         console.log(
             `Sort by: ${SORT_BY === 'views' ? 'View Count' : 'Recent'}\n`,

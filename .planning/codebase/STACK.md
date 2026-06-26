@@ -4,7 +4,7 @@
 
 | Attribute       | Value                                          |
 | --------------- | ---------------------------------------------- |
-| Language        | TypeScript 6.0.3 (strict mode disabled)        |
+| Language        | TypeScript 6.0.3 (strict mode enabled)         |
 | Runtime         | Node.js (LTS via `.nvmrc`: `lts/*`, local v24) |
 | Package Manager | pnpm 11.9.0 (workspace mode, single package)   |
 | Module System   | ESNext (`moduleResolution: bundler`)           |
@@ -82,7 +82,7 @@
 | File                      | Purpose                                            |
 | ------------------------- | -------------------------------------------------- |
 | `next.config.js`          | Next.js config (image domains, webpack, redirects) |
-| `tsconfig.json`           | TypeScript config (strict: false, baseUrl: ".")    |
+| `tsconfig.json`           | TypeScript config (strict: true, baseUrl: ".")     |
 | `biome.json`              | Linting & formatting rules                         |
 | `postcss.config.js`       | PostCSS plugins                                    |
 | `styles.css`              | Tailwind v4 + DaisyUI theme definitions            |

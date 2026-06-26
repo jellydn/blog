@@ -4,7 +4,7 @@
 
 ### Configuration
 
-- **strict mode**: Disabled (`"strict": false` in tsconfig.json)
+- **strict mode**: Enabled (`"strict": true` with `"ignoreDeprecations": "6.0"` for TS 6.0 compat)
 - **target**: ES5 (limitation for broader browser support)
 - **module resolution**: `bundler` (modern, fast resolution)
 - **baseUrl**: `"."` (enables absolute imports like `components/Button`)
@@ -97,6 +97,14 @@ export async function getStaticProps() {
 - Custom scrollbar styling in `styles.css`
 - Background pattern SVG in `.pattern` class
 - Markdown prose styling with dark code blocks
+
+## Testing
+
+- **Vitest 4** with `@testing-library/react` and `jsdom`
+- **Test location**: `tests/` mirroring `components/` and `lib/` structure
+- **Run**: `pnpm test` (single run) or `pnpm test:watch`
+- **Setup**: `tests/setup.tsx` with mocks for `next/image`, `next/head`, `next/script`
+- **Current coverage**: 62 tests across 4 files (data utilities, card components, section components)
 
 ## Code Formatting (Biome)
 

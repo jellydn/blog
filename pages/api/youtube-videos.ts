@@ -17,6 +17,10 @@ export default async function handler(
         return res.status(500).json({ error: 'API key not configured' });
     }
 
+    if (!CHANNEL_ID) {
+        return res.status(500).json({ error: 'Channel ID not configured' });
+    }
+
     const maxResults = 6;
     const uploadsPlaylistId = `UU${(CHANNEL_ID ?? '').replace(/^UC/, '')}`;
     const url = new URL('https://www.googleapis.com/youtube/v3/playlistItems');

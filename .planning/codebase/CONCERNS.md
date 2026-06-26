@@ -25,31 +25,19 @@
 
 ### 1. `@ts-expect-error` Suppressions
 
-- **Files**: 4 remaining suppressions in `pages/index.tsx`, `pages/notes/index.tsx`, `pages/notes/tag/[tag].tsx` (×2), `pages/videos/index.tsx`
+- **Files**: 5 remaining suppressions in `pages/index.tsx`, `pages/notes/index.tsx`, `pages/notes/tag/[tag].tsx` (×2), `pages/videos/index.tsx`
 - **Context**: All related to `require.context` (Webpack-specific function)
 - **Issue**: Webpack-specific APIs not typed in TypeScript
 - **Risk**: Low — these are known, platform-specific API limitations
-- **Note**: 2 suppressions were removed (`components/YoutubeVideo.tsx` — fixed via custom element type declaration). The remaining 4 require.context suppressions are harder to fix without a workaround or migration to Turbopack.
+- **Note**: 2 suppressions were removed (`components/YoutubeVideo.tsx` — fixed via custom element type declaration; `pages/notes/index.tsx` — unused directive removed during markdown refactor)
 
-### 2. No Test Coverage
-
-- **Issue**: No automated tests anywhere in the project
-- **Risk**: Medium — data scripts (scraping, API fetching) could break without detection
-- **Mitigation**: CI validation catches build/lint failures
-
-### 3. Hardcoded `revalidate: 86400`
-
-- **Files**: `pages/index.tsx`, `pages/notes/index.tsx`, `pages/notes/tag/[tag].tsx`, `pages/posts/index.tsx`, `pages/videos/index.tsx`
-- **Issue**: ISR revalidation interval (24 hours) is hardcoded rather than configured
-- **Risk**: Low — but changing interval requires editing multiple files
-
-### 4. Sitemap Generation
+### 2. Sitemap Generation
 
 - **File**: `public/sitemap.xml`
 - **Issue**: Static XML file with mixed date formats (ISO 8601 + custom `+0800` format) and inconsistency — some paths use `//` (double slash) in URLs
 - **Risk**: Low — search engines still index the pages, but may not parse all dates correctly
 
-### 5. `scripts/fetch-github-repos.sh` — Duplicate
+### 3. `scripts/fetch-github-repos.sh` — Duplicate
 
 - **File**: `scripts/fetch-github-repos.sh`
 - **Issue**: Redundant bash alternative to `scripts/fetch-repos.ts`

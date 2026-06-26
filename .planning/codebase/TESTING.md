@@ -1,14 +1,25 @@
 # TESTING.md - Testing Overview
 
-## Status: No Test Framework
+## Status: Vitest Configured
 
-This project currently has **no test framework configured**. Per `AGENTS.md`:
+This project uses **Vitest 4** with `@testing-library/react` and `jsdom` for unit testing.
 
-> No test framework configured. Do not add tests unless explicitly requested.
+- **Test location**: `tests/` mirroring `components/` and `lib/` structure
+- **Run**: `pnpm test` (single run) or `pnpm test:watch` (watch mode)
+- **Setup**: `tests/setup.tsx` with mocks for `next/image`, `next/head`, `next/script`
+- **Configuration**: `vitest.config.ts` (react plugin, path aliases, jsdom environment)
+- **Coverage**: 62 tests across 4 test files
 
-## Quality Assurance Without Tests
+## Test Files
 
-Despite the absence of automated unit/integration tests, the project maintains quality through:
+| Test File                                | Tests | Coverage              |
+| ---------------------------------------- | ----- | --------------------- |
+| `tests/lib/repos.test.ts`                | 15    | Data utility functions|
+| `tests/components/RepoStars.test.tsx`    | 7     | Star formatting       |
+| `tests/components/Cards.test.tsx`        | 11    | 3 card components    |
+| `tests/components/Sections.test.tsx`     | 29    | 7 section components |
+
+## Quality Assurance
 
 ### 1. Static Analysis
 
@@ -18,7 +29,7 @@ Despite the absence of automated unit/integration tests, the project maintains q
 
 ### 2. TypeScript Compilation
 
-- TypeScript `strict: false` but still provides basic type checking
+- TypeScript `strict: true` with full strict mode enabled
 - Build process (`pnpm build`) catches type errors via Next.js compilation
 
 ### 3. Pre-commit Hooks
@@ -28,31 +39,11 @@ Despite the absence of automated unit/integration tests, the project maintains q
 
 ### 4. CI Pipeline
 
-- `deploy-verify.yml` — Runs lint + build on every push
+- `deploy-verify.yml` — Runs lint, test, and build on every push
 - `fetch-blog-posts.yml`, `fetch-data.yml` — Scheduled data validation
 
-### 5. Manual Testing Patterns
+## Suggested Improvements
 
-- Preview deployments on Vercel for PR review
-- `bun scripts/fetch-*.ts` — Manual execution to verify data scripts work
-
-## Project Fit
-
-The lack of tests is acceptable given the project profile:
-
-- **Static site** — No user interaction, no forms, no API mutations
-- **Personal blog** — Low risk, single contributor
-- **File-based data** — No database to mock
-- **Simple data flow** — Data → SSG → HTML (no complex state management)
-
-## When Tests Would Add Value
-
-- If dynamic features are added (e.g., contact form, search)
-- If multiple contributors join
-- If a database is introduced
-- If the scraping scripts need reliability guarantees
-
-## Suggested Test Framework (if needed)
-
-- **Vitest** — Fast, TypeScript-native, compatible with Next.js
-- **Playwright** — For end-to-end testing if interactive features are added
+- Add tests for: API routes (`pages/api/*`), page `getStaticProps` logic, data scripts
+- Add Playwright for E2E testing of the full site
+- Add CI step to run `pnpm test` in the deploy-verify workflow
