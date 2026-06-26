@@ -1,16 +1,9 @@
 import Layout from 'components/Layout';
 import { NotesList } from 'components/NotesList';
-import matter from 'gray-matter';
+import { loadMarkdownEntries } from 'lib/markdown';
 import type { BlogPost } from 'lib/types';
 import { dedupeBySlug, sortByDate } from 'lib/utils/array';
 import { generateNextSeo } from 'next-seo/pages';
-
-type BlogFrontmatter = {
-    title: string;
-    description?: string;
-    date: string;
-    tag?: string[];
-};
 
 type BlogPageProps = {
     title: string;
@@ -69,26 +62,10 @@ export default BlogPage;
 export async function getStaticProps() {
     const config = await import('../../data/config.json');
 
-    const posts = ((context) => {
-        const keys = context.keys();
-        const values = keys.map(context);
-
-        const data = keys.map((key: string, index: number) => {
-            const slug = key
-                .replace(/^.*[\\/]/, '')
-                .split('.')
-                .slice(0, -1)
-                .join('.');
-            const value = values[index];
-            const document = matter(value.default);
-            return {
-                frontmatter: document.data as BlogFrontmatter,
-                slug,
-            };
-        });
-        return data;
+    const posts = loadMarkdownEntries(
         // @ts-expect-error require.context is a webpack function
-    })(require.context('../../posts', true, /\.md$/));
+        require.context('../../posts', true, /\.md$/),
+    );
 
     const allItems = sortByDate(
         dedupeBySlug(posts as BlogPost[]),

@@ -1,17 +1,9 @@
 import Layout from 'components/Layout';
 import { NotesList } from 'components/NotesList';
 import type { VideoPost } from 'components/VideoList';
-import matter from 'gray-matter';
+import { loadMarkdownEntries } from 'lib/markdown';
 import { dedupeBySlug, sortByDate } from 'lib/utils/array';
 import { generateNextSeo } from 'next-seo/pages';
-
-type VideoFrontmatter = {
-    title: string;
-    description?: string;
-    date: string;
-    youtube_id: string;
-    tag?: string[];
-};
 
 type VideosPageProps = {
     title: string;
@@ -71,26 +63,10 @@ export default VideosPage;
 export async function getStaticProps() {
     const config = await import('../../data/config.json');
 
-    const videos = ((context) => {
-        const keys = context.keys();
-        const values = keys.map(context);
-
-        const data = keys.map((key: string, index: number) => {
-            const slug = key
-                .replace(/^.*[\\/]/, '')
-                .split('.')
-                .slice(0, -1)
-                .join('.');
-            const value = values[index];
-            const document = matter(value.default);
-            return {
-                frontmatter: document.data as VideoFrontmatter,
-                slug,
-            };
-        });
-        return data;
+    const videos = loadMarkdownEntries(
         // @ts-expect-error require.context is a webpack function
-    })(require.context('../../videos', true, /\.md$/));
+        require.context('../../videos', true, /\.md$/),
+    );
 
     const items = sortByDate(dedupeBySlug(videos as VideoPost[]));
 

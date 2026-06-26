@@ -7,6 +7,7 @@ import { NeovimSection } from 'components/sections/NeovimSection';
 import { ProjectsSection } from 'components/sections/ProjectsSection';
 import { VscodeSection } from 'components/sections/VscodeSection';
 import { REVALIDATE_DAILY } from 'lib/constants';
+import { loadMarkdownEntries } from 'lib/markdown';
 import {
     getCliTuiTools,
     getNeovimPlugins,
@@ -14,12 +15,7 @@ import {
     getVscodeExtensions,
 } from 'lib/repos';
 import type { BlogPost, BlogPostSummary, VideoPost } from 'lib/types';
-import {
-    dedupeBySlug,
-    extractSlug,
-    parseMarkdown,
-    sortByDate,
-} from 'lib/utils/array';
+import { dedupeBySlug, sortByDate } from 'lib/utils/array';
 import dynamic from 'next/dynamic';
 import Head from 'next/head';
 import Script from 'next/script';
@@ -132,16 +128,10 @@ export default Index;
 export async function getStaticProps() {
     const siteConfig = await import('../data/config.json');
 
-    const loadMarkdown = (context: {
-        keys(): string[];
-        (key: string): { default: string };
-    }) =>
-        context.keys().map((key: string) => {
-            const slug = extractSlug(key);
-            return parseMarkdown(context(key).default, slug);
-        });
-    // @ts-expect-error require.context is a webpack function
-    const videos = loadMarkdown(require.context('../videos', true, /\.md$/));
+    const videos = loadMarkdownEntries(
+        // @ts-expect-error require.context is a webpack function
+        require.context('../videos', true, /\.md$/),
+    );
 
     // Blog posts come from data/blog-posts.json, kept fresh by CI
     // (see .github/workflows/fetch-blog-posts.yml)
