@@ -1,41 +1,55 @@
 # CONCERNS.md - Technical Debt & Areas of Concern
 
-## 🟡 Known Tech Debt
+## ✅ Resolved
 
-### 1. TypeScript Strict Mode Disabled
+### 1. TypeScript Strict Mode Enabled
 
 - **File**: `tsconfig.json`
-- **Issue**: `"strict": false` disables all strict type checks (strictNullChecks, strictFunctionTypes, etc.)
-- **Risk**: Allows potential null reference errors and type safety gaps
-- **Effort**: Medium — would require adding null checks across many components
-- **Note**: TS 6.0.3 is installed, which is very modern, making the lack of strict mode notable
+- **Status**: `Resolved` — `"strict": true` enabled with `"ignoreDeprecations": "6.0"` (for TS 6.0 compat on `target: ES5` and `baseUrl`) and `"downlevelIteration": true` (for `matchAll()` support)
+- **Fix**: All 12 strict mode type errors fixed across 8 source files (commit `d12248b`)
+  - `as string` assertions after guard checks (YouTube API keys)
+  - `?? ''` fallbacks for optional env vars
+  - `@types/prismjs` 1.26.6 added for dynamic import type resolution
+  - Custom `<lite-youtube>` type declaration → 2 `@ts-expect-error` removed
+  - Fallback throw in retry loop
+- **Validation**: Typecheck, lint, and build all pass
 
-### 2. `@ts-expect-error` Suppressions
+### 2. Pre-commit Hook Fixed
 
-- **Files**: Various (`pages/index.tsx`, `pages/notes/index.tsx`, `pages/notes/tag/[tag].tsx`, `pages/videos/index.tsx`, `components/YoutubeVideo.tsx`)
-- **Context**: All related to `require.context` (webpack function) and `YoutubeVideo` JSX intrinsic type
-- **Issue**: Webpack-specific APIs not typed, and custom YouTube embed has type issues
+- **Status**: `Resolved` — Pre-commit reinstalled via pip under Python 3.14
+- **Fix**: `pip install --user pre-commit` installed v4.6.0 under the working Python 3.14 env
+- **Hook versions**: All hooks confirmed up to date via `pre-commit autoupdate` (biome v2.5.1, prettier v4.0.0-alpha.8)
+- **Note**: The Homebrew-installed pre-commit binary at `/opt/homebrew/bin/pre-commit` still points to a missing Python 3.11 interpreter. The pip-installed version at `~/.local/bin/pre-commit` should be used instead. Running `pre-commit` commands via `~/.local/bin/pre-commit` works correctly.
+
+## 🟡 Known Tech Debt
+
+### 1. `@ts-expect-error` Suppressions
+
+- **Files**: 4 remaining suppressions in `pages/index.tsx`, `pages/notes/index.tsx`, `pages/notes/tag/[tag].tsx` (×2), `pages/videos/index.tsx`
+- **Context**: All related to `require.context` (Webpack-specific function)
+- **Issue**: Webpack-specific APIs not typed in TypeScript
 - **Risk**: Low — these are known, platform-specific API limitations
+- **Note**: 2 suppressions were removed (`components/YoutubeVideo.tsx` — fixed via custom element type declaration). The remaining 4 require.context suppressions are harder to fix without a workaround or migration to Turbopack.
 
-### 3. No Test Coverage
+### 2. No Test Coverage
 
 - **Issue**: No automated tests anywhere in the project
 - **Risk**: Medium — data scripts (scraping, API fetching) could break without detection
 - **Mitigation**: CI validation catches build/lint failures
 
-### 4. Hardcoded `revalidate: 86400`
+### 3. Hardcoded `revalidate: 86400`
 
 - **Files**: `pages/index.tsx`, `pages/notes/index.tsx`, `pages/notes/tag/[tag].tsx`, `pages/posts/index.tsx`, `pages/videos/index.tsx`
 - **Issue**: ISR revalidation interval (24 hours) is hardcoded rather than configured
 - **Risk**: Low — but changing interval requires editing multiple files
 
-### 5. Sitemap Generation
+### 4. Sitemap Generation
 
 - **File**: `public/sitemap.xml`
 - **Issue**: Static XML file with mixed date formats (ISO 8601 + custom `+0800` format) and inconsistency — some paths use `//` (double slash) in URLs
 - **Risk**: Low — search engines still index the pages, but may not parse all dates correctly
 
-### 6. `scripts/fetch-github-repos.sh` — Duplicate
+### 5. `scripts/fetch-github-repos.sh` — Duplicate
 
 - **File**: `scripts/fetch-github-repos.sh`
 - **Issue**: Redundant bash alternative to `scripts/fetch-repos.ts`
@@ -43,20 +57,13 @@
 
 ## 🟠 Potential Issues
 
-### 1. Pre-commit Hook Discrepancy
-
-- **Issue**: Local pre-commit hook uses cached Biome 2.4.x (doesn't support `preset` key), while `package.json` installs 2.5.1
-- **Root cause**: The `pre-commit` tool's Python environment is broken (`Python 3.11` missing), preventing `pre-commit autoupdate`
-- **Current workaround**: The project uses the old `"recommended": true` format (deprecated but functional)
-- **Fix needed**: Fix Python environment to allow pre-commit updates, or migrate away from pre-commit tool
-
-### 2. `pnpm-workspace.yaml` Single Package
+### 1. `pnpm-workspace.yaml` Single Package
 
 - **File**: `pnpm-workspace.yaml`
 - **Issue**: `packages: []` means the workspace has no sub-packages — essentially a single package project
 - **Note**: This works but is unusual. The workspace is used primarily for the `pnpm.onlyBuiltDependencies` and `allowBuilds` features
 
-### 3. Multiple Analytics Services
+### 2. Multiple Analytics Services
 
 - **Files**: `pages/_app.tsx`
 - **Issue**: Two analytics services loaded (GoatCounter + Umami)
