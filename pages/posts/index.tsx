@@ -1,4 +1,5 @@
 import Layout from 'components/Layout';
+import { REVALIDATE_DAILY } from 'lib/constants';
 import type { BlogPostSummary } from 'lib/types';
 import { formatDate } from 'lib/utils/date';
 import Image from 'next/image';
@@ -165,6 +166,6 @@ export async function getStaticProps() {
             description: config.default.description,
             items,
         },
-        revalidate: 86400, // Daily — matches CI fetch-blog-posts schedule
+        revalidate: REVALIDATE_DAILY,
     };
 }

@@ -1,4 +1,5 @@
 import Layout from 'components/Layout';
+import { REVALIDATE_SHORT } from 'lib/constants';
 import { generateNextSeo } from 'next-seo/pages';
 
 const BLOG_URL = 'https://blog.productsway.com';
@@ -86,7 +87,7 @@ export async function getStaticProps({ params }: StaticPropsContext) {
             siteDescription: config.default.description,
             slug,
         },
-        revalidate: 300,
+        revalidate: REVALIDATE_SHORT,
     };
 }
 

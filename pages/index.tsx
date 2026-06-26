@@ -1,7 +1,7 @@
 import { Button } from 'components/Button';
 import Layout from 'components/Layout';
 import { RepoStars } from 'components/RepoStars';
-
+import { REVALIDATE_DAILY } from 'lib/constants';
 import type { BlogPost, BlogPostSummary, VideoPost } from 'lib/types';
 import {
     dedupeBySlug,
@@ -673,6 +673,6 @@ export async function getStaticProps() {
             youtubeApiKey: !!process.env.YOUTUBE_API_KEY,
             initialHasRemotePosts: allBlogs.length > 0,
         },
-        revalidate: 86400, // Daily — matches CI fetch-blog-posts schedule
+        revalidate: REVALIDATE_DAILY,
     };
 }
