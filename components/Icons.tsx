@@ -1,6 +1,6 @@
 import type { SVGProps } from 'react';
 
-type IconProps = SVGProps<SVGSVGElement> & {
+export type IconProps = SVGProps<SVGSVGElement> & {
     className?: string;
 };
 
@@ -105,6 +105,128 @@ export function CloseIcon({ className = 'w-5 h-5', ...props }: IconProps) {
                 strokeWidth="2"
                 d="M6 18L18 6M6 6l12 12"
             />
+        </svg>
+    );
+}
+
+export function StarIcon({ className = 'w-4 h-4', ...props }: IconProps) {
+    return (
+        <svg
+            className={className}
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            aria-label="Star"
+            {...props}
+        >
+            <title>Star</title>
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+        </svg>
+    );
+}
+
+export function PlayIcon({ className = 'w-12 h-12', ...props }: IconProps) {
+    return (
+        <svg
+            className={className}
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            aria-label="Play"
+            {...props}
+        >
+            <title>Play</title>
+            <path d="M8 5v14l11-7z" />
+        </svg>
+    );
+}
+
+export function CheckCircleIcon({
+    className = 'w-5 h-5',
+    ...props
+}: IconProps) {
+    return (
+        <svg
+            className={className}
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            aria-label="Check"
+            {...props}
+        >
+            <title>Check</title>
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+        </svg>
+    );
+}
+
+export function VSCodeIcon({ className = 'w-5 h-5', ...props }: IconProps) {
+    return (
+        <svg
+            className={className}
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            aria-label="VS Code"
+            {...props}
+        >
+            <title>VS Code</title>
+            <path d="M8 3a3 3 0 00-3 3v2.25a3 3 0 003 3h2.25a3 3 0 003-3V6a3 3 0 00-3-3H8z" />
+            <path d="M8 21h8a3 3 0 003-3V6.75a3 3 0 00-3-3H8a3 3 0 00-3 3V18a3 3 0 003 3z" />
+        </svg>
+    );
+}
+
+export function ArrowLeftIcon({ className = 'w-4 h-4', ...props }: IconProps) {
+    return (
+        <svg
+            className={className}
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            aria-hidden="true"
+            {...props}
+        >
+            <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M10 19l-7-7m0 0l7-7m-7 7h18"
+            />
+        </svg>
+    );
+}
+
+export function ExternalLinkIcon({
+    className = 'w-4 h-4',
+    ...props
+}: IconProps) {
+    return (
+        <svg
+            className={className}
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            aria-hidden="true"
+            {...props}
+        >
+            <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+            />
+        </svg>
+    );
+}
+
+export function YouTubeIcon({ className = 'w-5 h-5', ...props }: IconProps) {
+    return (
+        <svg
+            className={className}
+            fill="currentColor"
+            viewBox="0 0 24 24"
+            aria-label="YouTube"
+            {...props}
+        >
+            <title>YouTube</title>
+            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
         </svg>
     );
 }

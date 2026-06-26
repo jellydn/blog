@@ -1,3 +1,4 @@
+import { ArrowLeftIcon } from 'components/Icons';
 import Layout from 'components/Layout';
 import { NotesList } from 'components/NotesList';
 import { getSiteConfig } from 'lib/config';
@@ -30,20 +31,7 @@ export default function TagPage({ tag, title, items }: TagPageProps) {
                             href="/notes"
                             className="inline-flex items-center gap-2 text-sm text-base-content/70 hover:text-primary transition-colors"
                         >
-                            <svg
-                                className="w-4 h-4"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                                aria-hidden="true"
-                            >
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth="2"
-                                    d="M10 19l-7-7m0 0l7-7m-7 7h18"
-                                />
-                            </svg>
+                            <ArrowLeftIcon className="w-4 h-4" />
                             Back to Notes
                         </Link>
                     </div>

@@ -1,3 +1,4 @@
+import { VSCodeIcon } from 'components/Icons';
 import { RepoStars } from 'components/RepoStars';
 
 export type ExtensionCardProps = {
@@ -31,15 +32,7 @@ export function ExtensionCard({
                     {description}
                 </p>
                 <div className="flex items-center gap-2">
-                    <svg
-                        className="w-5 h-5 text-blue-500"
-                        viewBox="0 0 24 24"
-                        fill="currentColor"
-                    >
-                        <title>VS Code</title>
-                        <path d="M8 3a3 3 0 00-3 3v2.25a3 3 0 003 3h2.25a3 3 0 003-3V6a3 3 0 00-3-3H8z" />
-                        <path d="M8 21h8a3 3 0 003-3V6.75a3 3 0 00-3-3H8a3 3 0 00-3 3V18a3 3 0 003 3z" />
-                    </svg>
+                    <VSCodeIcon className="w-5 h-5 text-blue-500" />
                     <span className="badge badge-outline text-xs">VS Code</span>
                 </div>
             </div>

@@ -1,3 +1,4 @@
+import { ExternalLinkIcon } from 'components/Icons';
 import Layout from 'components/Layout';
 import { getSiteConfig } from 'lib/config';
 import { REVALIDATE_DAILY } from 'lib/constants';
@@ -107,20 +108,7 @@ const PostsPage = ({ title, description, items }: PostsPageProps) => {
                                                     className="btn btn-primary btn-sm"
                                                 >
                                                     Read on blog.productsway.com
-                                                    <svg
-                                                        className="w-4 h-4 ml-1"
-                                                        fill="none"
-                                                        viewBox="0 0 24 24"
-                                                        stroke="currentColor"
-                                                        aria-hidden="true"
-                                                    >
-                                                        <path
-                                                            strokeLinecap="round"
-                                                            strokeLinejoin="round"
-                                                            strokeWidth={2}
-                                                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                                                        />
-                                                    </svg>
+                                                    <ExternalLinkIcon className="w-4 h-4 ml-1" />
                                                 </a>
                                             </div>
                                         </div>

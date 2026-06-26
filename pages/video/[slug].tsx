@@ -1,3 +1,4 @@
+import { ArrowLeftIcon, YouTubeIcon } from 'components/Icons';
 import Layout from 'components/Layout';
 import matter from 'gray-matter';
 import { getSiteConfig } from 'lib/config';
@@ -54,20 +55,7 @@ export default function VideoTemplate({
                             href="/videos"
                             className="inline-flex items-center gap-2 text-sm text-base-content/70 hover:text-primary transition-colors"
                         >
-                            <svg
-                                className="w-4 h-4"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                                aria-hidden="true"
-                            >
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth={2}
-                                    d="M10 19l-7-7m0 0l7-7m-7 7h18"
-                                />
-                            </svg>
+                            <ArrowLeftIcon className="w-4 h-4" />
                             Back to Videos
                         </Link>
                     </div>
@@ -117,14 +105,7 @@ export default function VideoTemplate({
                             rel="noreferrer"
                             className="btn btn-primary gap-2"
                         >
-                            <svg
-                                className="w-5 h-5"
-                                fill="currentColor"
-                                viewBox="0 0 24 24"
-                                aria-hidden="true"
-                            >
-                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
-                            </svg>
+                            <YouTubeIcon className="w-5 h-5" />
                             Watch on YouTube
                         </a>
                         <a
@@ -133,14 +114,7 @@ export default function VideoTemplate({
                             rel="noreferrer"
                             className="btn btn-outline gap-2"
                         >
-                            <svg
-                                className="w-5 h-5"
-                                fill="currentColor"
-                                viewBox="0 0 24 24"
-                                aria-hidden="true"
-                            >
-                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
-                            </svg>
+                            <YouTubeIcon className="w-5 h-5" />
                             Subscribe Channel
                         </a>
                     </div>

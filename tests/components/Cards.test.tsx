@@ -85,8 +85,8 @@ describe('NvimPluginCard', () => {
     it('renders star icon via title', () => {
         render(<NvimPluginCard {...defaultProps} />);
 
-        expect(screen.getByTitle('Stars')).toBeInTheDocument();
-        expect(screen.getByTitle('Neovim plugin')).toBeInTheDocument();
+        expect(screen.getByTitle('Star')).toBeInTheDocument();
+        expect(screen.getByTitle('Check')).toBeInTheDocument();
     });
 });
 
