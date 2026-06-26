@@ -181,26 +181,31 @@ The site uses flat design with no card shadows. Depth is communicated through:
 ## Components
 
 ### Header
+
 - Sticky top bar with the site logo, navigation links, theme toggle, and social icons.
 - Mobile: hamburger menu that expands into a full navigation drawer.
 - Theme toggle: sun/moon icon switching between "minimal" and "dark" themes.
 
 ### Cards
+
 - Used for project listings, video thumbnails, and blog post previews.
 - Background: `base-200` at 50% opacity, bordered with `base-300`.
 - No shadow — depth through border separation only.
 
 ### Badges
+
 - Inline tags for categories (TIL, React, Neovim, etc.).
 - Small pill shapes with `badge` DaisyUI component.
 - Interactive: linked to the tag filtering page.
 
 ### Buttons
+
 - Primary: solid black background, white text, sharp 2px radius.
 - Ghost: transparent with hover underline effect.
 - No shadow, minimal radius — utilitarian and clean.
 
 ### Code Blocks
+
 - Dark code blocks (`#1e293b` background) in both light and dark themes.
 - Prism.js Okaidia theme for syntax highlighting.
 - Inline code: tinted background from `base-300` in light mode, `#475569` in dark mode.
@@ -208,12 +213,14 @@ The site uses flat design with no card shadows. Depth is communicated through:
 ## Do's and Don'ts
 
 ### Do
+
 - Use `base-content` for all body text to maintain AAA contrast.
 - Apply `primary` sparingly — only for the most important interactive elements.
 - Keep code blocks dark in both themes for visual consistency.
 - Use `text-base-content/70` for secondary text to establish visual hierarchy.
 
 ### Don't
+
 - Don't add shadows — the design uses borders, not elevation.
 - Don't use custom fonts — the system stack is faster and more reliable.
 - Don't mix multiple accent colors — primary is the sole interactive color.
