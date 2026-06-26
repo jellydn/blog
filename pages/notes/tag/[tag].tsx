@@ -1,8 +1,7 @@
 import Layout from 'components/Layout';
 import { NotesList } from 'components/NotesList';
-import matter from 'gray-matter';
 import { getSiteConfig } from 'lib/config';
-import { combine, fromMarkdown } from 'lib/content';
+import { combine, fromMarkdown, getUniqueTags } from 'lib/content';
 import { generateNextSeo, pageSeo } from 'lib/seo';
 import type { BlogPost, VideoPost } from 'lib/types';
 import Link from 'next/link';
@@ -70,27 +69,9 @@ export default function TagPage({ tag, title, items }: TagPageProps) {
 }
 
 export async function getStaticPaths() {
-    const path = await import('node:path');
-    const { globSync } = await import('glob');
-    const fs = await import('node:fs');
+    const allTags = getUniqueTags(['posts', 'videos']);
 
-    const postsDir = path.join(process.cwd(), 'posts');
-    const videosDir = path.join(process.cwd(), 'videos');
-    const posts = globSync(`${postsDir}/*.md`);
-    const videos = globSync(`${videosDir}/*.md`);
-    const allTags = new Set<string>();
-
-    for (const file of [...posts, ...videos]) {
-        const content = fs.readFileSync(file, 'utf-8');
-        const { data } = matter(content);
-        if (data.tag) {
-            for (const tag of data.tag) {
-                allTags.add(tag.toLowerCase());
-            }
-        }
-    }
-
-    const paths = Array.from(allTags).map((tag) => ({
+    const paths = allTags.map((tag) => ({
         params: { tag },
     }));
 

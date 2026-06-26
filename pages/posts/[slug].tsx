@@ -1,6 +1,7 @@
 import Layout from 'components/Layout';
 import { getSiteConfig } from 'lib/config';
 import { REVALIDATE_SHORT } from 'lib/constants';
+import { getMarkdownSlugs } from 'lib/content';
 import { generateNextSeo, pageSeo } from 'lib/seo';
 
 const BLOG_URL = 'https://blog.productsway.com';
@@ -91,20 +92,11 @@ export async function getStaticProps({ params }: StaticPropsContext) {
 }
 
 export async function getStaticPaths() {
-    const { globSync } = await import('glob');
-    const fs = await import('node:fs');
-    const path = await import('node:path');
+    const slugs = getMarkdownSlugs('posts/**/*.md');
 
-    const postsDir = path.join(process.cwd(), 'posts');
-    const files = globSync('**/*.md', { cwd: postsDir });
-
-    const paths = files
-        .filter((file: string) =>
-            fs.statSync(path.join(postsDir, file)).isFile(),
-        )
-        .map((file: string) => ({
-            params: { slug: file.replace(/\.[^/.]+$/, '') },
-        }));
+    const paths = slugs.map((slug: string) => ({
+        params: { slug },
+    }));
 
     return {
         paths,

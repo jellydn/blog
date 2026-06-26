@@ -1,3 +1,6 @@
+import { readFileSync } from 'node:fs';
+import { globSync } from 'glob';
+import matter from 'gray-matter';
 import { extractSlug, parseMarkdown, sortByDate } from 'lib/utils/array';
 
 type RequireContext = {
@@ -16,6 +19,41 @@ export interface ContentTarget<T extends ContentEntry> {
     /** Get a single entry by slug */
     getBySlug(slug: string): T | undefined;
 }
+
+// ─── getStaticPaths helpers ─────────────────────────────
+
+/**
+ * Get all slugs for .md files matching a glob pattern.
+ * Used in getStaticPaths for detail pages.
+ *
+ * @example
+ * getMarkdownSlugs('posts/**\/*.md')  // ['til-44-docker', 'tech-15-react', ...]
+ */
+export function getMarkdownSlugs(globPattern: string): string[] {
+    return globSync(globPattern).map(extractSlug);
+}
+
+/**
+ * Collect all unique, lowercased tag names from .md frontmatter
+ * across one or more directories. Reads each file to extract tags.
+ * Used in getStaticPaths for tag pages.
+ */
+export function getUniqueTags(dirs: string[]): string[] {
+    const tags = new Set<string>();
+    for (const dir of dirs) {
+        for (const file of globSync(`${dir}/*.md`)) {
+            const { data } = matter(readFileSync(file, 'utf-8'));
+            if (data.tag) {
+                for (const tag of data.tag as string[]) {
+                    tags.add(tag.toLowerCase());
+                }
+            }
+        }
+    }
+    return Array.from(tags);
+}
+
+// ─── Content source factories ────────────────────────────
 
 /**
  * Create a content source from webpack `require.context` (markdown files).

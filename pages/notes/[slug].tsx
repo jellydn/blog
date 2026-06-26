@@ -1,8 +1,8 @@
 import { Badge, isTil } from 'components/Badge';
 import Layout from 'components/Layout';
-import { globSync } from 'glob';
 import matter from 'gray-matter';
 import { getSiteConfig } from 'lib/config';
+import { getMarkdownSlugs } from 'lib/content';
 import { articleSeo, generateNextSeo } from 'lib/seo';
 import { formatDate } from 'lib/utils/date';
 import Link from 'next/link';
@@ -147,13 +147,9 @@ export async function getStaticProps({ params }: StaticPropsContext) {
 }
 
 export async function getStaticPaths() {
-    const blogs = globSync('posts/**/*.md');
+    const slugs = getMarkdownSlugs('posts/**/*.md');
 
-    const blogSlugs = blogs.map((file: string) =>
-        file.split('/')[1].replace(/ /g, '-').slice(0, -3).trim(),
-    );
-
-    const paths = blogSlugs.map((slug: string) => ({
+    const paths = slugs.map((slug: string) => ({
         params: { slug },
     }));
 
