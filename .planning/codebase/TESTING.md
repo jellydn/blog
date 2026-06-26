@@ -12,12 +12,12 @@ This project uses **Vitest 4** with `@testing-library/react` and `jsdom` for uni
 
 ## Test Files
 
-| Test File                                | Tests | Coverage              |
-| ---------------------------------------- | ----- | --------------------- |
-| `tests/lib/repos.test.ts`                | 15    | Data utility functions|
-| `tests/components/RepoStars.test.tsx`    | 7     | Star formatting       |
-| `tests/components/Cards.test.tsx`        | 11    | 3 card components    |
-| `tests/components/Sections.test.tsx`     | 29    | 7 section components |
+| Test File                             | Tests | Coverage               |
+| ------------------------------------- | ----- | ---------------------- |
+| `tests/lib/repos.test.ts`             | 15    | Data utility functions |
+| `tests/components/RepoStars.test.tsx` | 7     | Star formatting        |
+| `tests/components/Cards.test.tsx`     | 11    | 3 card components      |
+| `tests/components/Sections.test.tsx`  | 29    | 7 section components   |
 
 ## Quality Assurance
 
