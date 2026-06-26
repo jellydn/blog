@@ -42,15 +42,7 @@ const siteLinks = [
     { name: 'Blog', href: 'https://blog.productsway.com/', external: true },
 ];
 
-const extraLinks = [
-    { name: 'Resume', href: '/resume.pdf' },
-    {
-        name: 'Upwork',
-        href: 'https://www.upwork.com/freelancers/~01b1a6f7c757b5ec48',
-    },
-    { name: 'ITMan Shop', href: 'https://bit.ly/m/itman' },
-    { name: 'YouTube', href: 'https://www.youtube.com/c/ITManVietnam' },
-];
+const extraLinks = [{ name: 'Resume', href: '/resume.pdf' }];
 
 function Footer() {
     return (
