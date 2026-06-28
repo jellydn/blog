@@ -7,7 +7,7 @@ tag: ["Neovim"]
 hero_image: "https://i.ytimg.com/vi/By_CCai62JE/mqdefault.jpg"
 ---
 
-Join us in this detailed tutorial where we explore the integration of #Copilot Chat, a community-driven plugin, with #Neovim. This guide is tailored for both new and experienced Neovim users eager to enhance their coding experience with the power of AI-assisted coding. 
+Join us in this detailed tutorial where we explore the integration of #Copilot Chat, a community-driven plugin, with #Neovim. This guide is tailored for both new and experienced Neovim users eager to enhance their coding experience with the power of AI-assisted coding.
 
 Timestamps:
 0:15 - Introduction
@@ -16,6 +16,7 @@ Timestamps:
 04:50 - Demo
 
 Links and Resources:
+
 - https://github.com/orgs/community/discussions/50939
 - https://github.com/jellydn/nvim-for-webdev
 - https://github.com/jellydn/CopilotChat.nvim
