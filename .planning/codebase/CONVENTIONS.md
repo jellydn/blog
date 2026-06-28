@@ -78,9 +78,7 @@ const YoutubeSection = dynamic(() =>
 ```typescript
 export async function getStaticProps() {
   return {
-    props: {
-      /* data */
-    },
+    props: {/* data */},
     revalidate: 86400, // ISR: daily
   };
 }
