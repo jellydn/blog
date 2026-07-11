@@ -16,7 +16,7 @@
                     "gpt4free",
                     "raycast-extension"
                 ],
-                "updated_at": "2026-07-09T21:11:03Z"
+                "updated_at": "2026-07-11T02:40:27Z"
             },
             {
                 "name": "my-ai-tools",
@@ -34,7 +34,7 @@
                     "open-code",
                     "skills"
                 ],
-                "updated_at": "2026-07-09T16:44:48Z"
+                "updated_at": "2026-07-11T00:49:42Z"
             },
             {
                 "name": "gpt4all-cli",
@@ -284,7 +284,7 @@
                 "url": "https://github.com/jellydn/pi-clinepass-provider",
                 "homepage": "",
                 "stars": 9,
-                "forks": 2,
+                "forks": 3,
                 "language": "TypeScript",
                 "topics": [
                     "pi",
@@ -431,7 +431,7 @@
                 "description": "Your ultimate guide to setting up Zed with Vim mode, tailored settings, and key bindings for a seamless coding experience",
                 "url": "https://github.com/jellydn/zed-101-setup",
                 "homepage": "https://itman.fyi",
-                "stars": 1384,
+                "stars": 1385,
                 "forks": 29,
                 "language": "TypeScript",
                 "topics": [
@@ -439,7 +439,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-07-10T01:10:47Z"
+                "updated_at": "2026-07-11T02:14:08Z"
             },
             {
                 "name": "typescript-tips",
@@ -820,6 +820,25 @@
                 "updated_at": "2022-07-15T10:46:24Z"
             },
             {
+                "name": "monorepo-starter",
+                "full_name": "jellydn/monorepo-starter",
+                "description": "A feature-rich monorepo starter with full Kubernetes support base on with-docker turbo example",
+                "url": "https://github.com/jellydn/monorepo-starter",
+                "homepage": "",
+                "stars": 5,
+                "forks": 0,
+                "language": "Shell",
+                "topics": [
+                    "docker",
+                    "docker-compose",
+                    "k8s",
+                    "monorepo",
+                    "starter-template",
+                    "turborepo"
+                ],
+                "updated_at": "2026-07-11T01:59:25Z"
+            },
+            {
                 "name": "ws-sockette",
                 "full_name": "jellydn/ws-sockette",
                 "description": "The little WebSocket wrapper for nodejs",
@@ -850,25 +869,6 @@
                     "xojs"
                 ],
                 "updated_at": "2026-06-19T05:00:55Z"
-            },
-            {
-                "name": "monorepo-starter",
-                "full_name": "jellydn/monorepo-starter",
-                "description": "A feature-rich monorepo starter with full Kubernetes support base on with-docker turbo example",
-                "url": "https://github.com/jellydn/monorepo-starter",
-                "homepage": "",
-                "stars": 5,
-                "forks": 0,
-                "language": "Shell",
-                "topics": [
-                    "docker",
-                    "docker-compose",
-                    "k8s",
-                    "monorepo",
-                    "starter-template",
-                    "turborepo"
-                ],
-                "updated_at": "2026-05-29T01:16:14Z"
             },
             {
                 "name": "itman-channel",
@@ -915,6 +915,22 @@
                 "updated_at": "2024-10-16T16:51:32Z"
             },
             {
+                "name": "hono-minimal-app",
+                "full_name": "jellydn/hono-minimal-app",
+                "description": "This is a minimal project with honojs",
+                "url": "https://github.com/jellydn/hono-minimal-app",
+                "homepage": "https://hono-demo-app.jellydn.workers.dev/",
+                "stars": 4,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [
+                    "cloudflare",
+                    "cloudflare-worker",
+                    "honojs"
+                ],
+                "updated_at": "2026-07-10T16:40:06Z"
+            },
+            {
                 "name": "typescript-starter",
                 "full_name": "jellydn/typescript-starter",
                 "description": "Typescript starter project",
@@ -929,22 +945,6 @@
                     "typescript"
                 ],
                 "updated_at": "2026-07-09T22:59:51Z"
-            },
-            {
-                "name": "hono-minimal-app",
-                "full_name": "jellydn/hono-minimal-app",
-                "description": "This is a minimal project with honojs",
-                "url": "https://github.com/jellydn/hono-minimal-app",
-                "homepage": "https://hono-demo-app.jellydn.workers.dev/",
-                "stars": 4,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [
-                    "cloudflare",
-                    "cloudflare-worker",
-                    "honojs"
-                ],
-                "updated_at": "2026-07-09T21:45:23Z"
             },
             {
                 "name": "edge-network-demo",
@@ -1184,6 +1184,18 @@
                 "updated_at": "2023-08-29T21:26:08Z"
             },
             {
+                "name": "minui-easy-installer",
+                "full_name": "jellydn/minui-easy-installer",
+                "description": "The easiest way to install and manage MinUI on retro handheld devices.",
+                "url": "https://github.com/jellydn/minui-easy-installer",
+                "homepage": "",
+                "stars": 2,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [],
+                "updated_at": "2026-07-10T09:09:14Z"
+            },
+            {
                 "name": "typescript-mini-starter",
                 "full_name": "jellydn/typescript-mini-starter",
                 "description": "A streamlined and efficient TypeScript starter kit, supporting both ESM and CJS, for quick and versatile project setups.",
@@ -1199,18 +1211,6 @@
                     "typescript"
                 ],
                 "updated_at": "2026-07-09T02:08:49Z"
-            },
-            {
-                "name": "minui-easy-installer",
-                "full_name": "jellydn/minui-easy-installer",
-                "description": "The easiest way to install and manage MinUI on retro handheld devices.",
-                "url": "https://github.com/jellydn/minui-easy-installer",
-                "homepage": "",
-                "stars": 2,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [],
-                "updated_at": "2026-07-07T23:55:51Z"
             },
             {
                 "name": ".dotfiles",
@@ -1794,7 +1794,7 @@
                 "forks": 0,
                 "language": "TypeScript",
                 "topics": [],
-                "updated_at": "2026-07-10T03:09:22Z"
+                "updated_at": "2026-07-10T14:35:57Z"
             },
             {
                 "name": "pulumi-kubernetes-typescript",
@@ -2575,7 +2575,7 @@
                 "description": "My 💤 LazyVim IDE config for Neovim",
                 "url": "https://github.com/jellydn/lazy-nvim-ide",
                 "homepage": "",
-                "stars": 143,
+                "stars": 142,
                 "forks": 15,
                 "language": "Lua",
                 "topics": [
@@ -2583,7 +2583,7 @@
                     "neovim",
                     "nvim"
                 ],
-                "updated_at": "2026-06-30T10:23:26Z"
+                "updated_at": "2026-07-10T08:36:58Z"
             },
             {
                 "name": "tiny-nvim",
@@ -2591,7 +2591,7 @@
                 "description": "Slim Neovim config for 0.11+ with minimal plugins.",
                 "url": "https://github.com/jellydn/tiny-nvim",
                 "homepage": "https://itman.fyi",
-                "stars": 53,
+                "stars": 52,
                 "forks": 6,
                 "language": "Lua",
                 "topics": [
@@ -2599,7 +2599,7 @@
                     "neovim",
                     "nvim-config"
                 ],
-                "updated_at": "2026-06-23T04:31:35Z"
+                "updated_at": "2026-07-10T08:35:29Z"
             },
             {
                 "name": "ts-inlay-hints",
@@ -3620,7 +3620,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-07-10T05:58:12Z"
+                "updated_at": "2026-07-10T06:36:28Z"
             },
             {
                 "name": "vite-react-demo",
