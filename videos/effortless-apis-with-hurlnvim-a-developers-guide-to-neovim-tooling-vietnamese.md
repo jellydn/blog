@@ -16,7 +16,6 @@ In today’s video, we're unveiling the power of `Hurl.nvim`, a #Neovim plugin I
 
 **Live Demo**
 💡 See `Hurl.nvim` in action as we walk through:
-
 - Enabling debugging mode for detailed insights.
 - Customizing key bindings for your convenience.
 - Using the plugin in visual mode for selective API calls.
