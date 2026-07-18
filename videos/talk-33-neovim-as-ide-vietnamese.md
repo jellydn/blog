@@ -20,7 +20,7 @@ https://github.com/jellydn/nvim-ide
 https://github.com/jellydn/lazy-nvim-ide
 
 00:42 Intro #NeoVim
-02:04 Basic #VIM 
+02:04 Basic #VIM
 05:26 Lazy VIM
 
 Support IT Man Channel https://bitly.com/m/itman
