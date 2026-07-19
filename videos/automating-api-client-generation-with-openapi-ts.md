@@ -17,7 +17,7 @@ Welcome to IT Man Channel, where we dive into the latest tech trends and tools t
 🔗 Useful Links:
 
 - Openapi-ts https://heyapi.vercel.app/openapi-ts/get-started.html
-- Demo  https://github.com/jellydn/moleculer-typescript-template
+- Demo https://github.com/jellydn/moleculer-typescript-template
 - OpenAPI Tools https://openapi.tools/
 - QuickType https://app.quicktype.io/
 
