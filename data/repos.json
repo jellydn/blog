@@ -34,7 +34,7 @@
                     "gpt4free",
                     "raycast-extension"
                 ],
-                "updated_at": "2026-07-15T17:31:12Z"
+                "updated_at": "2026-07-21T12:53:35Z"
             },
             {
                 "name": "gpt4all-cli",
@@ -111,6 +111,21 @@
                 "updated_at": "2026-07-18T09:24:33Z"
             },
             {
+                "name": "pi-qwencloud-provider",
+                "full_name": "jellydn/pi-qwencloud-provider",
+                "description": "QwenCloud provider for pi — Qwen3.8, DeepSeek V4, GLM-5.2, Wan image, HappyHorse video via OpenAI-compatible API",
+                "url": "https://github.com/jellydn/pi-qwencloud-provider",
+                "homepage": "https://jellydn.github.io/pi-qwencloud-provider/",
+                "stars": 7,
+                "forks": 1,
+                "language": "TypeScript",
+                "topics": [
+                    "pi",
+                    "pi-plugins"
+                ],
+                "updated_at": "2026-07-22T00:02:19Z"
+            },
+            {
                 "name": "summary-chatbot-demo",
                 "full_name": "jellydn/summary-chatbot-demo",
                 "description": "🤖 Build an intelligent Summary ChatBot with AI technologies. Simplify content extraction and make summarisation easy.",
@@ -125,21 +140,6 @@
                     "llm"
                 ],
                 "updated_at": "2026-03-12T19:07:10Z"
-            },
-            {
-                "name": "pi-qwencloud-provider",
-                "full_name": "jellydn/pi-qwencloud-provider",
-                "description": "QwenCloud provider for pi — Qwen3.8, DeepSeek V4, GLM-5.2, Wan image, HappyHorse video via OpenAI-compatible API",
-                "url": "https://github.com/jellydn/pi-qwencloud-provider",
-                "homepage": "https://jellydn.github.io/pi-qwencloud-provider/",
-                "stars": 4,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [
-                    "pi",
-                    "pi-plugins"
-                ],
-                "updated_at": "2026-07-20T15:11:04Z"
             },
             {
                 "name": "copilot-tips",
@@ -197,7 +197,19 @@
                 "forks": 0,
                 "language": "PHP",
                 "topics": [],
-                "updated_at": "2026-07-21T04:20:42Z"
+                "updated_at": "2026-07-22T00:01:21Z"
+            },
+            {
+                "name": "opencode-qwencloud-provider",
+                "full_name": "jellydn/opencode-qwencloud-provider",
+                "description": "QwenCloud provider config for opencode — Qwen3.8, Qwen3.7, Qwen3.6, DeepSeek V4, and GLM-5.2 via QwenCloud's OpenAI-compatible API.",
+                "url": "https://github.com/jellydn/opencode-qwencloud-provider",
+                "homepage": "https://jellydn.github.io/opencode-qwencloud-provider/",
+                "stars": 1,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [],
+                "updated_at": "2026-07-21T23:59:08Z"
             },
             {
                 "name": "flue-repo-assistant",
@@ -486,7 +498,7 @@
                 "description": "Your ultimate guide to setting up Zed with Vim mode, tailored settings, and key bindings for a seamless coding experience",
                 "url": "https://github.com/jellydn/zed-101-setup",
                 "homepage": "https://itman.fyi",
-                "stars": 1396,
+                "stars": 1400,
                 "forks": 29,
                 "language": "TypeScript",
                 "topics": [
@@ -494,7 +506,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-07-21T04:47:58Z"
+                "updated_at": "2026-07-22T01:56:34Z"
             },
             {
                 "name": "typescript-tips",
@@ -709,7 +721,7 @@
                     "zed-extension",
                     "zellij"
                 ],
-                "updated_at": "2026-07-21T01:13:37Z"
+                "updated_at": "2026-07-21T13:03:05Z"
             },
             {
                 "name": "modern-python-2024-demo",
@@ -823,7 +835,7 @@
                     "mailwind",
                     "tailwindcss"
                 ],
-                "updated_at": "2026-07-19T14:54:05Z"
+                "updated_at": "2026-07-21T18:35:34Z"
             },
             {
                 "name": "promise-should-be-fun",
@@ -891,7 +903,23 @@
                     "starter-template",
                     "turborepo"
                 ],
-                "updated_at": "2026-07-21T05:37:24Z"
+                "updated_at": "2026-07-21T23:37:32Z"
+            },
+            {
+                "name": "ws-sockette",
+                "full_name": "jellydn/ws-sockette",
+                "description": "The little WebSocket wrapper for nodejs",
+                "url": "https://github.com/jellydn/ws-sockette",
+                "homepage": "",
+                "stars": 5,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [
+                    "nodejs",
+                    "websocket",
+                    "ws"
+                ],
+                "updated_at": "2026-07-21T21:32:50Z"
             },
             {
                 "name": "eslint-config-productsway",
@@ -908,22 +936,6 @@
                     "xojs"
                 ],
                 "updated_at": "2026-07-17T08:41:48Z"
-            },
-            {
-                "name": "ws-sockette",
-                "full_name": "jellydn/ws-sockette",
-                "description": "The little WebSocket wrapper for nodejs",
-                "url": "https://github.com/jellydn/ws-sockette",
-                "homepage": "",
-                "stars": 5,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [
-                    "nodejs",
-                    "websocket",
-                    "ws"
-                ],
-                "updated_at": "2026-07-14T21:52:21Z"
             },
             {
                 "name": "itman-channel",
@@ -983,7 +995,23 @@
                     "cloudflare-worker",
                     "honojs"
                 ],
-                "updated_at": "2026-07-19T05:12:45Z"
+                "updated_at": "2026-07-22T01:07:43Z"
+            },
+            {
+                "name": "typescript-starter",
+                "full_name": "jellydn/typescript-starter",
+                "description": "Typescript starter project",
+                "url": "https://github.com/jellydn/typescript-starter",
+                "homepage": "",
+                "stars": 4,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [
+                    "starter",
+                    "template",
+                    "typescript"
+                ],
+                "updated_at": "2026-07-21T09:17:14Z"
             },
             {
                 "name": "docklight",
@@ -1019,22 +1047,6 @@
                     "starter-template"
                 ],
                 "updated_at": "2026-07-14T17:08:21Z"
-            },
-            {
-                "name": "typescript-starter",
-                "full_name": "jellydn/typescript-starter",
-                "description": "Typescript starter project",
-                "url": "https://github.com/jellydn/typescript-starter",
-                "homepage": "",
-                "stars": 4,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [
-                    "starter",
-                    "template",
-                    "typescript"
-                ],
-                "updated_at": "2026-07-13T18:16:29Z"
             },
             {
                 "name": "edge-network-demo",
@@ -1482,7 +1494,24 @@
                 "forks": 0,
                 "language": "TypeScript",
                 "topics": [],
-                "updated_at": "2026-07-21T05:25:25Z"
+                "updated_at": "2026-07-21T23:28:48Z"
+            },
+            {
+                "name": "db-management-demo",
+                "full_name": "jellydn/db-management-demo",
+                "description": "This is simple demo of how to manage database using prisma and tbls for documentation.",
+                "url": "https://github.com/jellydn/db-management-demo",
+                "homepage": "",
+                "stars": 1,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [
+                    "bunjs",
+                    "db",
+                    "prisma",
+                    "tbls"
+                ],
+                "updated_at": "2026-07-21T06:01:27Z"
             },
             {
                 "name": "server-timing-demo",
@@ -1515,23 +1544,6 @@
                     "webapp"
                 ],
                 "updated_at": "2026-07-16T04:31:42Z"
-            },
-            {
-                "name": "db-management-demo",
-                "full_name": "jellydn/db-management-demo",
-                "description": "This is simple demo of how to manage database using prisma and tbls for documentation.",
-                "url": "https://github.com/jellydn/db-management-demo",
-                "homepage": "",
-                "stars": 1,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [
-                    "bunjs",
-                    "db",
-                    "prisma",
-                    "tbls"
-                ],
-                "updated_at": "2026-07-14T02:55:29Z"
             },
             {
                 "name": "remix-app-demo",
@@ -1840,6 +1852,33 @@
                 "updated_at": "2022-05-29T07:50:37Z"
             },
             {
+                "name": "remix-spa",
+                "full_name": "jellydn/remix-spa",
+                "description": "Remix SPA Starter",
+                "url": "https://github.com/jellydn/remix-spa",
+                "homepage": "",
+                "stars": 0,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [
+                    "remix",
+                    "spa"
+                ],
+                "updated_at": "2026-07-21T16:38:09Z"
+            },
+            {
+                "name": "homebrew-tap",
+                "full_name": "jellydn/homebrew-tap",
+                "description": "Homebrew tap for jellydn packages",
+                "url": "https://github.com/jellydn/homebrew-tap",
+                "homepage": "",
+                "stars": 0,
+                "forks": 0,
+                "language": "Ruby",
+                "topics": [],
+                "updated_at": "2026-07-21T15:08:52Z"
+            },
+            {
                 "name": "playwright-mock-api",
                 "full_name": "jellydn/playwright-mock-api",
                 "description": "Mocking API with Playwright",
@@ -1862,18 +1901,6 @@
                 "language": "HTML",
                 "topics": [],
                 "updated_at": "2026-07-21T04:23:09Z"
-            },
-            {
-                "name": "homebrew-tap",
-                "full_name": "jellydn/homebrew-tap",
-                "description": "Homebrew tap for jellydn packages",
-                "url": "https://github.com/jellydn/homebrew-tap",
-                "homepage": "",
-                "stars": 0,
-                "forks": 0,
-                "language": "Ruby",
-                "topics": [],
-                "updated_at": "2026-07-21T03:52:39Z"
             },
             {
                 "name": "rabbitmq-demo",
@@ -1918,21 +1945,6 @@
                     "inversion-of-control"
                 ],
                 "updated_at": "2026-07-20T07:46:36Z"
-            },
-            {
-                "name": "remix-spa",
-                "full_name": "jellydn/remix-spa",
-                "description": "Remix SPA Starter",
-                "url": "https://github.com/jellydn/remix-spa",
-                "homepage": "",
-                "stars": 0,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [
-                    "remix",
-                    "spa"
-                ],
-                "updated_at": "2026-07-19T14:30:27Z"
             },
             {
                 "name": "pulumi-kubernetes-typescript",
@@ -3070,7 +3082,7 @@
                     "storybook",
                     "tailwindcss"
                 ],
-                "updated_at": "2026-07-17T15:14:38Z"
+                "updated_at": "2026-07-21T23:03:03Z"
             },
             {
                 "name": "nft-app",
@@ -3100,7 +3112,7 @@
                 "description": "How to do your first ICO smart contract",
                 "url": "https://github.com/jellydn/dapp-token-ico",
                 "homepage": "https://dapp-token-ico.productsway.com/",
-                "stars": 126,
+                "stars": 125,
                 "forks": 62,
                 "language": "TypeScript",
                 "topics": [
@@ -3116,7 +3128,7 @@
                     "vitejs",
                     "web3-react"
                 ],
-                "updated_at": "2026-05-29T19:42:54Z"
+                "updated_at": "2026-07-22T01:09:41Z"
             },
             {
                 "name": "grpc-demo-monorepo",
@@ -3499,7 +3511,22 @@
                     "shadcn-ui",
                     "tailwindcss"
                 ],
-                "updated_at": "2026-07-21T05:39:56Z"
+                "updated_at": "2026-07-21T23:14:55Z"
+            },
+            {
+                "name": "react-router-v7-tailwinds-v4-app",
+                "full_name": "jellydn/react-router-v7-tailwinds-v4-app",
+                "description": "A modern, production-ready template for building full-stack React applications using React Router.",
+                "url": "https://github.com/jellydn/react-router-v7-tailwinds-v4-app",
+                "homepage": "https://react-router-v7-tailwinds-v4-app.vercel.app",
+                "stars": 2,
+                "forks": 1,
+                "language": "TypeScript",
+                "topics": [
+                    "react-router-v7",
+                    "tailwindcss-v4"
+                ],
+                "updated_at": "2026-07-21T06:12:24Z"
             },
             {
                 "name": "react-lib-starter",
@@ -3534,21 +3561,6 @@
                     "wretch"
                 ],
                 "updated_at": "2026-07-09T00:50:39Z"
-            },
-            {
-                "name": "react-router-v7-tailwinds-v4-app",
-                "full_name": "jellydn/react-router-v7-tailwinds-v4-app",
-                "description": "A modern, production-ready template for building full-stack React applications using React Router.",
-                "url": "https://github.com/jellydn/react-router-v7-tailwinds-v4-app",
-                "homepage": "https://react-router-v7-tailwinds-v4-app.vercel.app",
-                "stars": 2,
-                "forks": 1,
-                "language": "TypeScript",
-                "topics": [
-                    "react-router-v7",
-                    "tailwindcss-v4"
-                ],
-                "updated_at": "2026-06-19T07:08:51Z"
             },
             {
                 "name": "i18n-react-app",
@@ -3699,7 +3711,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-07-21T05:15:53Z"
+                "updated_at": "2026-07-21T05:42:45Z"
             },
             {
                 "name": "vite-react-demo",
