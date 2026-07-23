@@ -18,7 +18,7 @@
                     "open-code",
                     "skills"
                 ],
-                "updated_at": "2026-07-20T08:16:01Z"
+                "updated_at": "2026-07-22T15:53:57Z"
             },
             {
                 "name": "gpt4free-demo",
@@ -91,6 +91,21 @@
                 "updated_at": "2026-06-14T02:17:37Z"
             },
             {
+                "name": "pi-qwencloud-provider",
+                "full_name": "jellydn/pi-qwencloud-provider",
+                "description": "QwenCloud provider for pi — Qwen3.8, DeepSeek V4, GLM-5.2, Wan image, HappyHorse video via OpenAI-compatible API",
+                "url": "https://github.com/jellydn/pi-qwencloud-provider",
+                "homepage": "https://jellydn.github.io/pi-qwencloud-provider/",
+                "stars": 9,
+                "forks": 1,
+                "language": "TypeScript",
+                "topics": [
+                    "pi",
+                    "pi-plugins"
+                ],
+                "updated_at": "2026-07-23T03:16:45Z"
+            },
+            {
                 "name": "ai-launcher",
                 "full_name": "jellydn/ai-launcher",
                 "description": "A fast, secure launcher CLI tool that lets you switch between different AI coding assistants using fuzzy search.",
@@ -109,21 +124,6 @@
                     "open-source"
                 ],
                 "updated_at": "2026-07-18T09:24:33Z"
-            },
-            {
-                "name": "pi-qwencloud-provider",
-                "full_name": "jellydn/pi-qwencloud-provider",
-                "description": "QwenCloud provider for pi — Qwen3.8, DeepSeek V4, GLM-5.2, Wan image, HappyHorse video via OpenAI-compatible API",
-                "url": "https://github.com/jellydn/pi-qwencloud-provider",
-                "homepage": "https://jellydn.github.io/pi-qwencloud-provider/",
-                "stars": 7,
-                "forks": 1,
-                "language": "TypeScript",
-                "topics": [
-                    "pi",
-                    "pi-plugins"
-                ],
-                "updated_at": "2026-07-22T00:02:19Z"
             },
             {
                 "name": "summary-chatbot-demo",
@@ -498,7 +498,7 @@
                 "description": "Your ultimate guide to setting up Zed with Vim mode, tailored settings, and key bindings for a seamless coding experience",
                 "url": "https://github.com/jellydn/zed-101-setup",
                 "homepage": "https://itman.fyi",
-                "stars": 1400,
+                "stars": 1405,
                 "forks": 29,
                 "language": "TypeScript",
                 "topics": [
@@ -506,7 +506,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-07-22T01:56:34Z"
+                "updated_at": "2026-07-23T04:29:12Z"
             },
             {
                 "name": "typescript-tips",
@@ -835,7 +835,7 @@
                     "mailwind",
                     "tailwindcss"
                 ],
-                "updated_at": "2026-07-21T18:35:34Z"
+                "updated_at": "2026-07-22T17:57:29Z"
             },
             {
                 "name": "promise-should-be-fun",
@@ -1494,7 +1494,7 @@
                 "forks": 0,
                 "language": "TypeScript",
                 "topics": [],
-                "updated_at": "2026-07-21T23:28:48Z"
+                "updated_at": "2026-07-22T17:42:26Z"
             },
             {
                 "name": "db-management-demo",
@@ -3067,7 +3067,7 @@
                 "description": "Another awesome starter for your app base on nextjs + tailwind + react-query + zod + react-hook-form + next-auth +  jotai",
                 "url": "https://github.com/jellydn/next-app-starter",
                 "homepage": "https://next-app-starter.productsway.com",
-                "stars": 283,
+                "stars": 282,
                 "forks": 34,
                 "language": "TypeScript",
                 "topics": [
@@ -3082,7 +3082,7 @@
                     "storybook",
                     "tailwindcss"
                 ],
-                "updated_at": "2026-07-21T23:03:03Z"
+                "updated_at": "2026-07-22T20:33:50Z"
             },
             {
                 "name": "nft-app",
@@ -3511,7 +3511,7 @@
                     "shadcn-ui",
                     "tailwindcss"
                 ],
-                "updated_at": "2026-07-21T23:14:55Z"
+                "updated_at": "2026-07-22T15:56:41Z"
             },
             {
                 "name": "react-router-v7-tailwinds-v4-app",
@@ -3711,7 +3711,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-07-21T05:42:45Z"
+                "updated_at": "2026-07-22T05:41:46Z"
             },
             {
                 "name": "vite-react-demo",
