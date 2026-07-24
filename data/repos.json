@@ -96,14 +96,14 @@
                 "description": "QwenCloud provider for pi — Qwen3.8, DeepSeek V4, GLM-5.2, Wan image, HappyHorse video via OpenAI-compatible API",
                 "url": "https://github.com/jellydn/pi-qwencloud-provider",
                 "homepage": "https://jellydn.github.io/pi-qwencloud-provider/",
-                "stars": 9,
+                "stars": 10,
                 "forks": 1,
                 "language": "TypeScript",
                 "topics": [
                     "pi",
                     "pi-plugins"
                 ],
-                "updated_at": "2026-07-23T03:16:45Z"
+                "updated_at": "2026-07-24T04:33:49Z"
             },
             {
                 "name": "ai-launcher",
@@ -498,7 +498,7 @@
                 "description": "Your ultimate guide to setting up Zed with Vim mode, tailored settings, and key bindings for a seamless coding experience",
                 "url": "https://github.com/jellydn/zed-101-setup",
                 "homepage": "https://itman.fyi",
-                "stars": 1405,
+                "stars": 1404,
                 "forks": 29,
                 "language": "TypeScript",
                 "topics": [
@@ -506,7 +506,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-07-23T04:29:12Z"
+                "updated_at": "2026-07-23T23:41:04Z"
             },
             {
                 "name": "typescript-tips",
@@ -548,7 +548,7 @@
                 "description": "Fastify starter template support RestAPI with Swagger and Graphql",
                 "url": "https://github.com/jellydn/fastify-starter",
                 "homepage": "https://fastify.itman.fyi/documentation/static/index.html",
-                "stars": 129,
+                "stars": 128,
                 "forks": 11,
                 "language": "TypeScript",
                 "topics": [
@@ -562,7 +562,7 @@
                     "swagger",
                     "typescript"
                 ],
-                "updated_at": "2026-07-09T17:01:54Z"
+                "updated_at": "2026-07-23T23:49:51Z"
             },
             {
                 "name": "elysia-demo-app",
@@ -995,7 +995,7 @@
                     "cloudflare-worker",
                     "honojs"
                 ],
-                "updated_at": "2026-07-22T01:07:43Z"
+                "updated_at": "2026-07-23T20:49:33Z"
             },
             {
                 "name": "typescript-starter",
@@ -1852,6 +1852,21 @@
                 "updated_at": "2022-05-29T07:50:37Z"
             },
             {
+                "name": "pulumi-kubernetes-typescript",
+                "full_name": "jellydn/pulumi-kubernetes-typescript",
+                "description": "Simple Kubernetes cluster with TypeScript for Pulumi.",
+                "url": "https://github.com/jellydn/pulumi-kubernetes-typescript",
+                "homepage": "",
+                "stars": 0,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [
+                    "pulumi",
+                    "typescript"
+                ],
+                "updated_at": "2026-07-23T20:54:38Z"
+            },
+            {
                 "name": "remix-spa",
                 "full_name": "jellydn/remix-spa",
                 "description": "Remix SPA Starter",
@@ -1945,21 +1960,6 @@
                     "inversion-of-control"
                 ],
                 "updated_at": "2026-07-20T07:46:36Z"
-            },
-            {
-                "name": "pulumi-kubernetes-typescript",
-                "full_name": "jellydn/pulumi-kubernetes-typescript",
-                "description": "Simple Kubernetes cluster with TypeScript for Pulumi.",
-                "url": "https://github.com/jellydn/pulumi-kubernetes-typescript",
-                "homepage": "",
-                "stars": 0,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [
-                    "pulumi",
-                    "typescript"
-                ],
-                "updated_at": "2026-07-14T21:06:23Z"
             },
             {
                 "name": "mac-cleaner",
@@ -3511,7 +3511,7 @@
                     "shadcn-ui",
                     "tailwindcss"
                 ],
-                "updated_at": "2026-07-22T15:56:41Z"
+                "updated_at": "2026-07-23T06:03:45Z"
             },
             {
                 "name": "react-router-v7-tailwinds-v4-app",
@@ -3711,7 +3711,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-07-22T05:41:46Z"
+                "updated_at": "2026-07-23T05:47:04Z"
             },
             {
                 "name": "vite-react-demo",
