@@ -17,15 +17,15 @@ A slim #Neovim configuration tailored for version 0.11+ with minimal plugins, fa
 This setup is a refined migration from https://github.com/jellydn/my-nvim-ide, focusing on:
 
 🚀 Leveraging Neovim 0.11+ Built-in Features
- • No more lspconfig – use native LSP support
- • Ditch mason.nvim – install tools via shell scripts
- • Faster startup and reduced complexity
- • Embrace the latest improvements in Neovim
+• No more lspconfig – use native LSP support
+• Ditch mason.nvim – install tools via shell scripts
+• Faster startup and reduced complexity
+• Embrace the latest improvements in Neovim
 
 🔌 Minimal Yet Powerful Plugin Set
- • Only essential plugins for daily development
- • Replaces built-in completion with blink.cmp for a smoother UX
- • Focus on maintainability and performance
+• Only essential plugins for daily development
+• Replaces built-in completion with blink.cmp for a smoother UX
+• Focus on maintainability and performance
 
 📺 More from the IT Man Channel
 
