@@ -18,7 +18,7 @@ GitHub → https://github.com/jellydn/my-ai-tools
 01:28 - Learning Notes
 02:24 - AI Tips
 
-Resources: 
+Resources:
 #amp https://blog.productsway.com/power-up-1-amp-opinionated-ai-that-fits-real-developer-workflows
 #plannotator https://blog.productsway.com/power-up-2-plannotator-visual-plan-review-for-coding-agents
 
