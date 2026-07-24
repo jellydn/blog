@@ -20,9 +20,9 @@ Timestamps:
 
 Subscribe to IT Man Channel for more tech tutorials, reviews, and insights. New content every Sunday!
 
- • Visit our website: https://productsway.com
- • Join our community: https://bit.ly/m/itman
+• Visit our website: https://productsway.com
+• Join our community: https://bit.ly/m/itman
 
 Thank you for watching! If you found this video helpful, please like, share, and leave a comment below with your thoughts and questions.
 
-#itman  #neovim #DeveloperTools #ITManChannel #TechTutorial
+#itman #neovim #DeveloperTools #ITManChannel #TechTutorial
