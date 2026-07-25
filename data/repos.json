@@ -8,7 +8,7 @@
                 "description": "Comprehensive configuration management for AI coding tools - Replicate my complete setup for Claude Code, OpenCode, Amp, Li, Codex and Claude Code Switch with custom configurations, MCP servers, plugins, and commands.",
                 "url": "https://github.com/jellydn/my-ai-tools",
                 "homepage": "http://ai-tools.itman.fyi/",
-                "stars": 105,
+                "stars": 106,
                 "forks": 13,
                 "language": "Shell",
                 "topics": [
@@ -18,7 +18,7 @@
                     "open-code",
                     "skills"
                 ],
-                "updated_at": "2026-07-22T15:53:57Z"
+                "updated_at": "2026-07-24T20:27:12Z"
             },
             {
                 "name": "gpt4free-demo",
@@ -88,7 +88,7 @@
                     "cli",
                     "coding-assistant"
                 ],
-                "updated_at": "2026-06-14T02:17:37Z"
+                "updated_at": "2026-07-25T02:45:26Z"
             },
             {
                 "name": "pi-qwencloud-provider",
@@ -103,7 +103,7 @@
                     "pi",
                     "pi-plugins"
                 ],
-                "updated_at": "2026-07-24T04:33:49Z"
+                "updated_at": "2026-07-24T11:25:25Z"
             },
             {
                 "name": "ai-launcher",
@@ -171,6 +171,22 @@
                 "updated_at": "2026-07-05T02:58:59Z"
             },
             {
+                "name": "flue-repo-assistant",
+                "full_name": "jellydn/flue-repo-assistant",
+                "description": "Repository Analysis Agent with Flue",
+                "url": "https://github.com/jellydn/flue-repo-assistant",
+                "homepage": "https://jellydn.github.io/flue-repo-assistant/",
+                "stars": 2,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [
+                    "agent",
+                    "flue",
+                    "flueframework"
+                ],
+                "updated_at": "2026-07-24T11:59:17Z"
+            },
+            {
                 "name": "logpilot",
                 "full_name": "jellydn/logpilot",
                 "description": "AI-Native tmux Log Copilot for Support Incident Tracking",
@@ -197,7 +213,7 @@
                 "forks": 0,
                 "language": "PHP",
                 "topics": [],
-                "updated_at": "2026-07-22T00:01:21Z"
+                "updated_at": "2026-07-25T02:22:32Z"
             },
             {
                 "name": "opencode-qwencloud-provider",
@@ -210,22 +226,6 @@
                 "language": "TypeScript",
                 "topics": [],
                 "updated_at": "2026-07-21T23:59:08Z"
-            },
-            {
-                "name": "flue-repo-assistant",
-                "full_name": "jellydn/flue-repo-assistant",
-                "description": "Repository Analysis Agent with Flue",
-                "url": "https://github.com/jellydn/flue-repo-assistant",
-                "homepage": "https://jellydn.github.io/flue-repo-assistant/",
-                "stars": 1,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [
-                    "agent",
-                    "flue",
-                    "flueframework"
-                ],
-                "updated_at": "2026-07-20T14:37:41Z"
             },
             {
                 "name": "ai-smart-gmail",
@@ -329,6 +329,21 @@
                 "updated_at": "2026-07-08T22:33:46Z"
             },
             {
+                "name": "pi-clinepass-provider",
+                "full_name": "jellydn/pi-clinepass-provider",
+                "description": "ClinePass provider for pi — 11 curated open-weight coding models (GLM-5.2, Kimi K2.7 Code, Kimi K3, DeepSeek V4, Qwen3.7, and more)",
+                "url": "https://github.com/jellydn/pi-clinepass-provider",
+                "homepage": "https://jellydn.github.io/pi-clinepass-provider/",
+                "stars": 13,
+                "forks": 4,
+                "language": "TypeScript",
+                "topics": [
+                    "pi",
+                    "pi-plugins"
+                ],
+                "updated_at": "2026-07-24T11:57:39Z"
+            },
+            {
                 "name": "cspell-tool",
                 "full_name": "jellydn/cspell-tool",
                 "description": "Keep your project's spelling in check with cspell-tool.",
@@ -343,21 +358,6 @@
                     "spell-check"
                 ],
                 "updated_at": "2026-07-21T04:37:35Z"
-            },
-            {
-                "name": "pi-clinepass-provider",
-                "full_name": "jellydn/pi-clinepass-provider",
-                "description": "ClinePass provider for pi — 11 curated open-weight coding models (GLM-5.2, Kimi K2.7 Code, Kimi K3, DeepSeek V4, Qwen3.7, and more)",
-                "url": "https://github.com/jellydn/pi-clinepass-provider",
-                "homepage": "https://jellydn.github.io/pi-clinepass-provider/",
-                "stars": 12,
-                "forks": 4,
-                "language": "TypeScript",
-                "topics": [
-                    "pi",
-                    "pi-plugins"
-                ],
-                "updated_at": "2026-07-20T09:35:47Z"
             },
             {
                 "name": "biome-interactive",
@@ -498,7 +498,7 @@
                 "description": "Your ultimate guide to setting up Zed with Vim mode, tailored settings, and key bindings for a seamless coding experience",
                 "url": "https://github.com/jellydn/zed-101-setup",
                 "homepage": "https://itman.fyi",
-                "stars": 1404,
+                "stars": 1405,
                 "forks": 29,
                 "language": "TypeScript",
                 "topics": [
@@ -506,7 +506,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-07-23T23:41:04Z"
+                "updated_at": "2026-07-25T00:49:37Z"
             },
             {
                 "name": "typescript-tips",
@@ -741,6 +741,21 @@
                 "updated_at": "2025-03-04T03:11:14Z"
             },
             {
+                "name": "playwright-crawler-demo",
+                "full_name": "jellydn/playwright-crawler-demo",
+                "description": "This template is a production ready boilerplate for developing with `PlaywrightCrawler`. Use this to bootstrap your projects using the most up-to-date code.",
+                "url": "https://github.com/jellydn/playwright-crawler-demo",
+                "homepage": "",
+                "stars": 11,
+                "forks": 5,
+                "language": "Dockerfile",
+                "topics": [
+                    "crawlee",
+                    "playwright-typescript"
+                ],
+                "updated_at": "2026-07-25T01:25:57Z"
+            },
+            {
                 "name": "oak",
                 "full_name": "jellydn/oak",
                 "description": "Oak is a lightweight macOS focus companion app with notch-based Pomodoro-style focus sessions and ambient audio.",
@@ -756,22 +771,7 @@
                     "pomodoro-timer",
                     "swift"
                 ],
-                "updated_at": "2026-07-20T13:53:24Z"
-            },
-            {
-                "name": "playwright-crawler-demo",
-                "full_name": "jellydn/playwright-crawler-demo",
-                "description": "This template is a production ready boilerplate for developing with `PlaywrightCrawler`. Use this to bootstrap your projects using the most up-to-date code.",
-                "url": "https://github.com/jellydn/playwright-crawler-demo",
-                "homepage": "",
-                "stars": 11,
-                "forks": 5,
-                "language": "Dockerfile",
-                "topics": [
-                    "crawlee",
-                    "playwright-typescript"
-                ],
-                "updated_at": "2026-07-20T10:51:35Z"
+                "updated_at": "2026-07-24T09:25:13Z"
             },
             {
                 "name": "github-action-locally",
@@ -835,7 +835,7 @@
                     "mailwind",
                     "tailwindcss"
                 ],
-                "updated_at": "2026-07-22T17:57:29Z"
+                "updated_at": "2026-07-25T02:14:29Z"
             },
             {
                 "name": "promise-should-be-fun",
@@ -995,7 +995,7 @@
                     "cloudflare-worker",
                     "honojs"
                 ],
-                "updated_at": "2026-07-23T20:49:33Z"
+                "updated_at": "2026-07-24T20:37:01Z"
             },
             {
                 "name": "typescript-starter",
@@ -1494,7 +1494,7 @@
                 "forks": 0,
                 "language": "TypeScript",
                 "topics": [],
-                "updated_at": "2026-07-22T17:42:26Z"
+                "updated_at": "2026-07-24T23:52:40Z"
             },
             {
                 "name": "db-management-demo",
@@ -1852,6 +1852,48 @@
                 "updated_at": "2022-05-29T07:50:37Z"
             },
             {
+                "name": "router-demo-app",
+                "full_name": "jellydn/router-demo-app",
+                "description": "TanStack Router Demo",
+                "url": "https://github.com/jellydn/router-demo-app",
+                "homepage": "https://tanstack-router.productsway.com",
+                "stars": 0,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [
+                    "shadcn-ui",
+                    "tanstack-router"
+                ],
+                "updated_at": "2026-07-25T04:51:07Z"
+            },
+            {
+                "name": "playwright-mock-api",
+                "full_name": "jellydn/playwright-mock-api",
+                "description": "Mocking API with Playwright",
+                "url": "https://github.com/jellydn/playwright-mock-api",
+                "homepage": "",
+                "stars": 0,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [],
+                "updated_at": "2026-07-25T02:26:33Z"
+            },
+            {
+                "name": "remix-spa",
+                "full_name": "jellydn/remix-spa",
+                "description": "Remix SPA Starter",
+                "url": "https://github.com/jellydn/remix-spa",
+                "homepage": "",
+                "stars": 0,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [
+                    "remix",
+                    "spa"
+                ],
+                "updated_at": "2026-07-25T01:48:15Z"
+            },
+            {
                 "name": "pulumi-kubernetes-typescript",
                 "full_name": "jellydn/pulumi-kubernetes-typescript",
                 "description": "Simple Kubernetes cluster with TypeScript for Pulumi.",
@@ -1867,21 +1909,6 @@
                 "updated_at": "2026-07-23T20:54:38Z"
             },
             {
-                "name": "remix-spa",
-                "full_name": "jellydn/remix-spa",
-                "description": "Remix SPA Starter",
-                "url": "https://github.com/jellydn/remix-spa",
-                "homepage": "",
-                "stars": 0,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [
-                    "remix",
-                    "spa"
-                ],
-                "updated_at": "2026-07-21T16:38:09Z"
-            },
-            {
                 "name": "homebrew-tap",
                 "full_name": "jellydn/homebrew-tap",
                 "description": "Homebrew tap for jellydn packages",
@@ -1892,18 +1919,6 @@
                 "language": "Ruby",
                 "topics": [],
                 "updated_at": "2026-07-21T15:08:52Z"
-            },
-            {
-                "name": "playwright-mock-api",
-                "full_name": "jellydn/playwright-mock-api",
-                "description": "Mocking API with Playwright",
-                "url": "https://github.com/jellydn/playwright-mock-api",
-                "homepage": "",
-                "stars": 0,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [],
-                "updated_at": "2026-07-21T05:03:32Z"
             },
             {
                 "name": "personal-ai",
@@ -1999,21 +2014,6 @@
                     "pi-plugins"
                 ],
                 "updated_at": "2026-07-03T02:17:37Z"
-            },
-            {
-                "name": "router-demo-app",
-                "full_name": "jellydn/router-demo-app",
-                "description": "TanStack Router Demo",
-                "url": "https://github.com/jellydn/router-demo-app",
-                "homepage": "https://tanstack-router.productsway.com",
-                "stars": 0,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [
-                    "shadcn-ui",
-                    "tanstack-router"
-                ],
-                "updated_at": "2026-06-19T12:56:18Z"
             },
             {
                 "name": "git-mirror",
@@ -2729,7 +2729,7 @@
                 "description": "A Neovim plugin for seamless TypeScript type checking.",
                 "url": "https://github.com/jellydn/typecheck.nvim",
                 "homepage": "",
-                "stars": 35,
+                "stars": 34,
                 "forks": 1,
                 "language": "Lua",
                 "topics": [
@@ -2737,7 +2737,7 @@
                     "tsc",
                     "typescript"
                 ],
-                "updated_at": "2026-02-05T10:04:00Z"
+                "updated_at": "2026-07-24T22:04:31Z"
             },
             {
                 "name": "nvim-for-webdev",
@@ -2838,7 +2838,7 @@
                 "description": "MyNote is a Neovim plugin that allows you to take notes in a floating window",
                 "url": "https://github.com/jellydn/my-note.nvim",
                 "homepage": "",
-                "stars": 15,
+                "stars": 14,
                 "forks": 0,
                 "language": "Lua",
                 "topics": [
@@ -2846,7 +2846,7 @@
                     "note-taking",
                     "nvim-plugin"
                 ],
-                "updated_at": "2025-08-16T11:34:57Z"
+                "updated_at": "2026-07-24T22:04:29Z"
             },
             {
                 "name": "tiny-cloak.nvim",
@@ -3511,7 +3511,7 @@
                     "shadcn-ui",
                     "tailwindcss"
                 ],
-                "updated_at": "2026-07-23T06:03:45Z"
+                "updated_at": "2026-07-25T04:55:31Z"
             },
             {
                 "name": "react-router-v7-tailwinds-v4-app",
@@ -3711,7 +3711,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-07-23T05:47:04Z"
+                "updated_at": "2026-07-24T05:42:56Z"
             },
             {
                 "name": "vite-react-demo",
