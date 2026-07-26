@@ -88,7 +88,7 @@
                     "cli",
                     "coding-assistant"
                 ],
-                "updated_at": "2026-07-25T02:45:26Z"
+                "updated_at": "2026-07-26T01:04:06Z"
             },
             {
                 "name": "pi-qwencloud-provider",
@@ -103,7 +103,7 @@
                     "pi",
                     "pi-plugins"
                 ],
-                "updated_at": "2026-07-24T11:25:25Z"
+                "updated_at": "2026-07-26T01:02:52Z"
             },
             {
                 "name": "ai-launcher",
@@ -498,7 +498,7 @@
                 "description": "Your ultimate guide to setting up Zed with Vim mode, tailored settings, and key bindings for a seamless coding experience",
                 "url": "https://github.com/jellydn/zed-101-setup",
                 "homepage": "https://itman.fyi",
-                "stars": 1405,
+                "stars": 1408,
                 "forks": 29,
                 "language": "TypeScript",
                 "topics": [
@@ -506,7 +506,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-07-25T00:49:37Z"
+                "updated_at": "2026-07-25T19:54:15Z"
             },
             {
                 "name": "typescript-tips",
@@ -514,8 +514,8 @@
                 "description": "A curated list of awesome 🔥 TypeScript Tips 🔥",
                 "url": "https://github.com/jellydn/typescript-tips",
                 "homepage": "https://jellydn.github.io/typescript-tips/",
-                "stars": 439,
-                "forks": 87,
+                "stars": 440,
+                "forks": 86,
                 "language": "",
                 "topics": [
                     "awesome-list",
@@ -523,7 +523,7 @@
                     "tips-and-tricks",
                     "typescript"
                 ],
-                "updated_at": "2026-07-13T10:50:05Z"
+                "updated_at": "2026-07-26T04:55:45Z"
             },
             {
                 "name": "awesome-typesafe",
@@ -741,21 +741,6 @@
                 "updated_at": "2025-03-04T03:11:14Z"
             },
             {
-                "name": "playwright-crawler-demo",
-                "full_name": "jellydn/playwright-crawler-demo",
-                "description": "This template is a production ready boilerplate for developing with `PlaywrightCrawler`. Use this to bootstrap your projects using the most up-to-date code.",
-                "url": "https://github.com/jellydn/playwright-crawler-demo",
-                "homepage": "",
-                "stars": 11,
-                "forks": 5,
-                "language": "Dockerfile",
-                "topics": [
-                    "crawlee",
-                    "playwright-typescript"
-                ],
-                "updated_at": "2026-07-25T01:25:57Z"
-            },
-            {
                 "name": "oak",
                 "full_name": "jellydn/oak",
                 "description": "Oak is a lightweight macOS focus companion app with notch-based Pomodoro-style focus sessions and ambient audio.",
@@ -771,7 +756,22 @@
                     "pomodoro-timer",
                     "swift"
                 ],
-                "updated_at": "2026-07-24T09:25:13Z"
+                "updated_at": "2026-07-25T16:26:30Z"
+            },
+            {
+                "name": "playwright-crawler-demo",
+                "full_name": "jellydn/playwright-crawler-demo",
+                "description": "This template is a production ready boilerplate for developing with `PlaywrightCrawler`. Use this to bootstrap your projects using the most up-to-date code.",
+                "url": "https://github.com/jellydn/playwright-crawler-demo",
+                "homepage": "",
+                "stars": 11,
+                "forks": 5,
+                "language": "Dockerfile",
+                "topics": [
+                    "crawlee",
+                    "playwright-typescript"
+                ],
+                "updated_at": "2026-07-25T01:25:57Z"
             },
             {
                 "name": "github-action-locally",
@@ -1485,6 +1485,30 @@
                 "updated_at": "2022-06-22T10:27:12Z"
             },
             {
+                "name": "tech-short-videos",
+                "full_name": "jellydn/tech-short-videos",
+                "description": "TBD",
+                "url": "https://github.com/jellydn/tech-short-videos",
+                "homepage": "",
+                "stars": 1,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [],
+                "updated_at": "2026-07-26T05:35:01Z"
+            },
+            {
+                "name": "foal-simple-todo-app",
+                "full_name": "jellydn/foal-simple-todo-app",
+                "description": "",
+                "url": "https://github.com/jellydn/foal-simple-todo-app",
+                "homepage": "",
+                "stars": 1,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [],
+                "updated_at": "2026-07-26T05:02:47Z"
+            },
+            {
                 "name": "nextjs15-react19-demo",
                 "full_name": "jellydn/nextjs15-react19-demo",
                 "description": "",
@@ -1494,7 +1518,7 @@
                 "forks": 0,
                 "language": "TypeScript",
                 "topics": [],
-                "updated_at": "2026-07-24T23:52:40Z"
+                "updated_at": "2026-07-26T00:48:35Z"
             },
             {
                 "name": "db-management-demo",
@@ -1611,18 +1635,6 @@
                 "updated_at": "2026-06-01T03:28:06Z"
             },
             {
-                "name": "foal-simple-todo-app",
-                "full_name": "jellydn/foal-simple-todo-app",
-                "description": "",
-                "url": "https://github.com/jellydn/foal-simple-todo-app",
-                "homepage": "",
-                "stars": 1,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [],
-                "updated_at": "2026-05-30T21:54:25Z"
-            },
-            {
                 "name": "bun-dx-tips",
                 "full_name": "jellydn/bun-dx-tips",
                 "description": "Embark on a streamlined journey with Bun, unraveling a collection of simple yet impactful tips to elevate your development experience",
@@ -1658,18 +1670,6 @@
                     "typescript"
                 ],
                 "updated_at": "2026-05-02T15:42:59Z"
-            },
-            {
-                "name": "tech-short-videos",
-                "full_name": "jellydn/tech-short-videos",
-                "description": "TBD",
-                "url": "https://github.com/jellydn/tech-short-videos",
-                "homepage": "",
-                "stars": 1,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [],
-                "updated_at": "2026-03-23T21:44:34Z"
             },
             {
                 "name": "prosody",
@@ -1850,6 +1850,18 @@
                     "golang"
                 ],
                 "updated_at": "2022-05-29T07:50:37Z"
+            },
+            {
+                "name": "prompt-bench",
+                "full_name": "jellydn/prompt-bench",
+                "description": "PromptBench - A tool for benchmarking LLM prompts",
+                "url": "https://github.com/jellydn/prompt-bench",
+                "homepage": "",
+                "stars": 0,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [],
+                "updated_at": "2026-07-26T02:10:28Z"
             },
             {
                 "name": "router-demo-app",
@@ -3311,7 +3323,7 @@
                     "recoiljs",
                     "vitejs"
                 ],
-                "updated_at": "2026-07-20T09:56:54Z"
+                "updated_at": "2026-07-25T06:04:13Z"
             },
             {
                 "name": "use-wait-for-transaction-hash",
@@ -3711,7 +3723,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-07-24T05:42:56Z"
+                "updated_at": "2026-07-25T05:37:00Z"
             },
             {
                 "name": "vite-react-demo",
