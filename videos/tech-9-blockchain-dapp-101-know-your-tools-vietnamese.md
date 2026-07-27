@@ -26,7 +26,7 @@ Referees who sign up or upgrade to growth tier will earn you both $100 in credit
 https://hardhat.org/
 
 - Hello World Smart Contract
-This is a step-by-step introductory tutorial that will teach you how to create and deploy a smart contract on Ethereum.
+  This is a step-by-step introductory tutorial that will teach you how to create and deploy a smart contract on Ethereum.
 
 https://docs.alchemy.com/alchemy/tutorials/hello-world-smart-contract
 
