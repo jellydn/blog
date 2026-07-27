@@ -34,7 +34,7 @@
                     "gpt4free",
                     "raycast-extension"
                 ],
-                "updated_at": "2026-07-21T12:53:35Z"
+                "updated_at": "2026-07-27T06:07:05Z"
             },
             {
                 "name": "gpt4all-cli",
@@ -70,7 +70,7 @@
                     "pythagora",
                     "turso"
                 ],
-                "updated_at": "2026-07-13T19:46:07Z"
+                "updated_at": "2026-07-27T05:57:27Z"
             },
             {
                 "name": "tiny-coding-agent",
@@ -78,7 +78,7 @@
                 "description": "A lightweight, extensible coding agent built in TypeScript that helps developers with coding tasks across TypeScript, React, JavaScript, Node.js, Bash, and markdown/JSON.",
                 "url": "https://github.com/jellydn/tiny-coding-agent",
                 "homepage": "",
-                "stars": 13,
+                "stars": 14,
                 "forks": 2,
                 "language": "TypeScript",
                 "topics": [
@@ -88,7 +88,7 @@
                     "cli",
                     "coding-assistant"
                 ],
-                "updated_at": "2026-07-26T01:04:06Z"
+                "updated_at": "2026-07-27T02:25:51Z"
             },
             {
                 "name": "pi-qwencloud-provider",
@@ -213,7 +213,7 @@
                 "forks": 0,
                 "language": "PHP",
                 "topics": [],
-                "updated_at": "2026-07-25T02:22:32Z"
+                "updated_at": "2026-07-26T16:16:04Z"
             },
             {
                 "name": "opencode-qwencloud-provider",
@@ -226,6 +226,21 @@
                 "language": "TypeScript",
                 "topics": [],
                 "updated_at": "2026-07-21T23:59:08Z"
+            },
+            {
+                "name": "prompt-bench",
+                "full_name": "jellydn/prompt-bench",
+                "description": "PromptBench - A tool for benchmarking LLM prompts",
+                "url": "https://github.com/jellydn/prompt-bench",
+                "homepage": "https://prompt-bench.fly.dev/",
+                "stars": 0,
+                "forks": 0,
+                "language": "Python",
+                "topics": [
+                    "ai",
+                    "llm"
+                ],
+                "updated_at": "2026-07-26T16:03:51Z"
             },
             {
                 "name": "ai-smart-gmail",
@@ -506,7 +521,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-07-25T19:54:15Z"
+                "updated_at": "2026-07-27T00:33:04Z"
             },
             {
                 "name": "typescript-tips",
@@ -523,7 +538,7 @@
                     "tips-and-tricks",
                     "typescript"
                 ],
-                "updated_at": "2026-07-26T04:55:45Z"
+                "updated_at": "2026-07-27T05:50:45Z"
             },
             {
                 "name": "awesome-typesafe",
@@ -741,6 +756,21 @@
                 "updated_at": "2025-03-04T03:11:14Z"
             },
             {
+                "name": "playwright-crawler-demo",
+                "full_name": "jellydn/playwright-crawler-demo",
+                "description": "This template is a production ready boilerplate for developing with `PlaywrightCrawler`. Use this to bootstrap your projects using the most up-to-date code.",
+                "url": "https://github.com/jellydn/playwright-crawler-demo",
+                "homepage": "",
+                "stars": 11,
+                "forks": 5,
+                "language": "Dockerfile",
+                "topics": [
+                    "crawlee",
+                    "playwright-typescript"
+                ],
+                "updated_at": "2026-07-27T04:37:31Z"
+            },
+            {
                 "name": "oak",
                 "full_name": "jellydn/oak",
                 "description": "Oak is a lightweight macOS focus companion app with notch-based Pomodoro-style focus sessions and ambient audio.",
@@ -756,22 +786,7 @@
                     "pomodoro-timer",
                     "swift"
                 ],
-                "updated_at": "2026-07-25T16:26:30Z"
-            },
-            {
-                "name": "playwright-crawler-demo",
-                "full_name": "jellydn/playwright-crawler-demo",
-                "description": "This template is a production ready boilerplate for developing with `PlaywrightCrawler`. Use this to bootstrap your projects using the most up-to-date code.",
-                "url": "https://github.com/jellydn/playwright-crawler-demo",
-                "homepage": "",
-                "stars": 11,
-                "forks": 5,
-                "language": "Dockerfile",
-                "topics": [
-                    "crawlee",
-                    "playwright-typescript"
-                ],
-                "updated_at": "2026-07-25T01:25:57Z"
+                "updated_at": "2026-07-27T01:12:27Z"
             },
             {
                 "name": "github-action-locally",
@@ -835,7 +850,7 @@
                     "mailwind",
                     "tailwindcss"
                 ],
-                "updated_at": "2026-07-25T02:14:29Z"
+                "updated_at": "2026-07-27T06:11:06Z"
             },
             {
                 "name": "promise-should-be-fun",
@@ -887,6 +902,22 @@
                 "updated_at": "2022-07-15T10:46:24Z"
             },
             {
+                "name": "ws-sockette",
+                "full_name": "jellydn/ws-sockette",
+                "description": "The little WebSocket wrapper for nodejs",
+                "url": "https://github.com/jellydn/ws-sockette",
+                "homepage": "",
+                "stars": 5,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [
+                    "nodejs",
+                    "websocket",
+                    "ws"
+                ],
+                "updated_at": "2026-07-27T04:51:58Z"
+            },
+            {
                 "name": "monorepo-starter",
                 "full_name": "jellydn/monorepo-starter",
                 "description": "A feature-rich monorepo starter with full Kubernetes support base on with-docker turbo example",
@@ -904,22 +935,6 @@
                     "turborepo"
                 ],
                 "updated_at": "2026-07-21T23:37:32Z"
-            },
-            {
-                "name": "ws-sockette",
-                "full_name": "jellydn/ws-sockette",
-                "description": "The little WebSocket wrapper for nodejs",
-                "url": "https://github.com/jellydn/ws-sockette",
-                "homepage": "",
-                "stars": 5,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [
-                    "nodejs",
-                    "websocket",
-                    "ws"
-                ],
-                "updated_at": "2026-07-21T21:32:50Z"
             },
             {
                 "name": "eslint-config-productsway",
@@ -982,6 +997,22 @@
                 "updated_at": "2024-10-16T16:51:32Z"
             },
             {
+                "name": "typescript-starter",
+                "full_name": "jellydn/typescript-starter",
+                "description": "Typescript starter project",
+                "url": "https://github.com/jellydn/typescript-starter",
+                "homepage": "",
+                "stars": 4,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [
+                    "starter",
+                    "template",
+                    "typescript"
+                ],
+                "updated_at": "2026-07-27T04:48:29Z"
+            },
+            {
                 "name": "hono-minimal-app",
                 "full_name": "jellydn/hono-minimal-app",
                 "description": "This is a minimal project with honojs",
@@ -996,22 +1027,6 @@
                     "honojs"
                 ],
                 "updated_at": "2026-07-24T20:37:01Z"
-            },
-            {
-                "name": "typescript-starter",
-                "full_name": "jellydn/typescript-starter",
-                "description": "Typescript starter project",
-                "url": "https://github.com/jellydn/typescript-starter",
-                "homepage": "",
-                "stars": 4,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [
-                    "starter",
-                    "template",
-                    "typescript"
-                ],
-                "updated_at": "2026-07-21T09:17:14Z"
             },
             {
                 "name": "docklight",
@@ -1095,6 +1110,21 @@
                 "updated_at": "2024-11-14T11:34:49Z"
             },
             {
+                "name": "sharing-btn",
+                "full_name": "jellydn/sharing-btn",
+                "description": "Sharing Button - Web Component using Stencil",
+                "url": "https://github.com/jellydn/sharing-btn",
+                "homepage": "",
+                "stars": 3,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [
+                    "stenciljs",
+                    "web-component"
+                ],
+                "updated_at": "2026-07-27T05:42:24Z"
+            },
+            {
                 "name": "tempora-saga-demo",
                 "full_name": "jellydn/tempora-saga-demo",
                 "description": "Saga pattern demo",
@@ -1111,21 +1141,6 @@
                     "typescript"
                 ],
                 "updated_at": "2026-07-20T08:41:46Z"
-            },
-            {
-                "name": "sharing-btn",
-                "full_name": "jellydn/sharing-btn",
-                "description": "Sharing Button - Web Component using Stencil",
-                "url": "https://github.com/jellydn/sharing-btn",
-                "homepage": "",
-                "stars": 3,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [
-                    "stenciljs",
-                    "web-component"
-                ],
-                "updated_at": "2026-07-20T07:07:00Z"
             },
             {
                 "name": "fresh-deno-app",
@@ -1251,6 +1266,26 @@
                 "updated_at": "2024-10-19T17:02:45Z"
             },
             {
+                "name": "deno-pkg-starter",
+                "full_name": "jellydn/deno-pkg-starter",
+                "description": "Publish your Typescript library to NPM and Deno",
+                "url": "https://github.com/jellydn/deno-pkg-starter",
+                "homepage": "",
+                "stars": 2,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [
+                    "deno",
+                    "deno-starter",
+                    "esm",
+                    "npm",
+                    "rust",
+                    "typescript",
+                    "wasm"
+                ],
+                "updated_at": "2026-07-27T05:12:48Z"
+            },
+            {
                 "name": "modern-nodejs-2024",
                 "full_name": "jellydn/modern-nodejs-2024",
                 "description": "Master the 2024 Node.js Development: Key Updates & Features from 18 to 22",
@@ -1324,26 +1359,6 @@
                     "typescript"
                 ],
                 "updated_at": "2026-07-13T18:50:20Z"
-            },
-            {
-                "name": "deno-pkg-starter",
-                "full_name": "jellydn/deno-pkg-starter",
-                "description": "Publish your Typescript library to NPM and Deno",
-                "url": "https://github.com/jellydn/deno-pkg-starter",
-                "homepage": "",
-                "stars": 2,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [
-                    "deno",
-                    "deno-starter",
-                    "esm",
-                    "npm",
-                    "rust",
-                    "typescript",
-                    "wasm"
-                ],
-                "updated_at": "2026-07-13T08:10:35Z"
             },
             {
                 "name": ".dotfiles",
@@ -1485,6 +1500,35 @@
                 "updated_at": "2022-06-22T10:27:12Z"
             },
             {
+                "name": "remix-app-demo",
+                "full_name": "jellydn/remix-app-demo",
+                "description": "Remix Demo App with Vercel for deployment",
+                "url": "https://github.com/jellydn/remix-app-demo",
+                "homepage": "https://remix-app-demo.vercel.app/",
+                "stars": 1,
+                "forks": 1,
+                "language": "TypeScript",
+                "topics": [
+                    "remix",
+                    "vercel"
+                ],
+                "updated_at": "2026-07-27T06:00:28Z"
+            },
+            {
+                "name": "practicepython",
+                "full_name": "jellydn/practicepython",
+                "description": "Learn how to code by practicing Python exercises.",
+                "url": "https://github.com/jellydn/practicepython",
+                "homepage": "",
+                "stars": 1,
+                "forks": 0,
+                "language": "",
+                "topics": [
+                    "python"
+                ],
+                "updated_at": "2026-07-27T05:04:45Z"
+            },
+            {
                 "name": "tech-short-videos",
                 "full_name": "jellydn/tech-short-videos",
                 "description": "TBD",
@@ -1494,7 +1538,7 @@
                 "forks": 0,
                 "language": "TypeScript",
                 "topics": [],
-                "updated_at": "2026-07-26T05:35:01Z"
+                "updated_at": "2026-07-26T10:04:38Z"
             },
             {
                 "name": "foal-simple-todo-app",
@@ -1568,35 +1612,6 @@
                     "webapp"
                 ],
                 "updated_at": "2026-07-16T04:31:42Z"
-            },
-            {
-                "name": "remix-app-demo",
-                "full_name": "jellydn/remix-app-demo",
-                "description": "Remix Demo App with Vercel for deployment",
-                "url": "https://github.com/jellydn/remix-app-demo",
-                "homepage": "https://remix-app-demo.vercel.app/",
-                "stars": 1,
-                "forks": 1,
-                "language": "TypeScript",
-                "topics": [
-                    "remix",
-                    "vercel"
-                ],
-                "updated_at": "2026-07-13T11:34:19Z"
-            },
-            {
-                "name": "practicepython",
-                "full_name": "jellydn/practicepython",
-                "description": "Learn how to code by practicing Python exercises.",
-                "url": "https://github.com/jellydn/practicepython",
-                "homepage": "",
-                "stars": 1,
-                "forks": 0,
-                "language": "",
-                "topics": [
-                    "python"
-                ],
-                "updated_at": "2026-06-29T04:52:24Z"
             },
             {
                 "name": "mole-tui",
@@ -1852,16 +1867,63 @@
                 "updated_at": "2022-05-29T07:50:37Z"
             },
             {
-                "name": "prompt-bench",
-                "full_name": "jellydn/prompt-bench",
-                "description": "PromptBench - A tool for benchmarking LLM prompts",
-                "url": "https://github.com/jellydn/prompt-bench",
+                "name": "pulumi-kubernetes-typescript",
+                "full_name": "jellydn/pulumi-kubernetes-typescript",
+                "description": "Simple Kubernetes cluster with TypeScript for Pulumi.",
+                "url": "https://github.com/jellydn/pulumi-kubernetes-typescript",
                 "homepage": "",
                 "stars": 0,
                 "forks": 0,
                 "language": "TypeScript",
+                "topics": [
+                    "pulumi",
+                    "typescript"
+                ],
+                "updated_at": "2026-07-27T05:28:42Z"
+            },
+            {
+                "name": "ioc-demo",
+                "full_name": "jellydn/ioc-demo",
+                "description": "Demo app with inversion of control container",
+                "url": "https://github.com/jellydn/ioc-demo",
+                "homepage": "",
+                "stars": 0,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [
+                    "inverifyjs",
+                    "inversion-of-control"
+                ],
+                "updated_at": "2026-07-27T05:27:52Z"
+            },
+            {
+                "name": "spin-demo-apps",
+                "full_name": "jellydn/spin-demo-apps",
+                "description": "This repository contains three demo applications for Spin, written in Typescript, Go, and Rust. Each demo has its own README file with detailed instructions on how to run and use the application.",
+                "url": "https://github.com/jellydn/spin-demo-apps",
+                "homepage": "",
+                "stars": 0,
+                "forks": 0,
+                "language": "Makefile",
                 "topics": [],
-                "updated_at": "2026-07-26T02:10:28Z"
+                "updated_at": "2026-07-27T05:00:50Z"
+            },
+            {
+                "name": "rabbitmq-demo",
+                "full_name": "jellydn/rabbitmq-demo",
+                "description": "Receiving messages based on a pattern (topics) & RPC call",
+                "url": "https://github.com/jellydn/rabbitmq-demo",
+                "homepage": "",
+                "stars": 0,
+                "forks": 0,
+                "language": "Go",
+                "topics": [
+                    "patterns",
+                    "rabbitmq",
+                    "rpc",
+                    "typescript"
+                ],
+                "updated_at": "2026-07-27T05:00:08Z"
             },
             {
                 "name": "router-demo-app",
@@ -1906,21 +1968,6 @@
                 "updated_at": "2026-07-25T01:48:15Z"
             },
             {
-                "name": "pulumi-kubernetes-typescript",
-                "full_name": "jellydn/pulumi-kubernetes-typescript",
-                "description": "Simple Kubernetes cluster with TypeScript for Pulumi.",
-                "url": "https://github.com/jellydn/pulumi-kubernetes-typescript",
-                "homepage": "",
-                "stars": 0,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [
-                    "pulumi",
-                    "typescript"
-                ],
-                "updated_at": "2026-07-23T20:54:38Z"
-            },
-            {
                 "name": "homebrew-tap",
                 "full_name": "jellydn/homebrew-tap",
                 "description": "Homebrew tap for jellydn packages",
@@ -1943,50 +1990,6 @@
                 "language": "HTML",
                 "topics": [],
                 "updated_at": "2026-07-21T04:23:09Z"
-            },
-            {
-                "name": "rabbitmq-demo",
-                "full_name": "jellydn/rabbitmq-demo",
-                "description": "Receiving messages based on a pattern (topics) & RPC call",
-                "url": "https://github.com/jellydn/rabbitmq-demo",
-                "homepage": "",
-                "stars": 0,
-                "forks": 0,
-                "language": "Go",
-                "topics": [
-                    "patterns",
-                    "rabbitmq",
-                    "rpc",
-                    "typescript"
-                ],
-                "updated_at": "2026-07-20T11:03:28Z"
-            },
-            {
-                "name": "spin-demo-apps",
-                "full_name": "jellydn/spin-demo-apps",
-                "description": "This repository contains three demo applications for Spin, written in Typescript, Go, and Rust. Each demo has its own README file with detailed instructions on how to run and use the application.",
-                "url": "https://github.com/jellydn/spin-demo-apps",
-                "homepage": "",
-                "stars": 0,
-                "forks": 0,
-                "language": "Makefile",
-                "topics": [],
-                "updated_at": "2026-07-20T09:53:42Z"
-            },
-            {
-                "name": "ioc-demo",
-                "full_name": "jellydn/ioc-demo",
-                "description": "Demo app with inversion of control container",
-                "url": "https://github.com/jellydn/ioc-demo",
-                "homepage": "",
-                "stars": 0,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [
-                    "inverifyjs",
-                    "inversion-of-control"
-                ],
-                "updated_at": "2026-07-20T07:46:36Z"
             },
             {
                 "name": "mac-cleaner",
@@ -2964,6 +2967,22 @@
                 "updated_at": "2026-05-25T06:09:18Z"
             },
             {
+                "name": "vscode-mux",
+                "full_name": "jellydn/vscode-mux",
+                "description": "Open VS Code terminals inside tmux or zellij",
+                "url": "https://github.com/jellydn/vscode-mux",
+                "homepage": "",
+                "stars": 4,
+                "forks": 2,
+                "language": "TypeScript",
+                "topics": [
+                    "tmux",
+                    "vscode-extension",
+                    "zellij"
+                ],
+                "updated_at": "2026-07-26T13:24:33Z"
+            },
+            {
                 "name": "vscode-settings-cycler",
                 "full_name": "jellydn/vscode-settings-cycler",
                 "description": "VSCode Settings Cycler",
@@ -2975,23 +2994,7 @@
                 "topics": [
                     "vscode-extension"
                 ],
-                "updated_at": "2026-07-13T10:45:42Z"
-            },
-            {
-                "name": "vscode-mux",
-                "full_name": "jellydn/vscode-mux",
-                "description": "Open VS Code terminals inside tmux or zellij",
-                "url": "https://github.com/jellydn/vscode-mux",
-                "homepage": "",
-                "stars": 3,
-                "forks": 2,
-                "language": "TypeScript",
-                "topics": [
-                    "tmux",
-                    "vscode-extension",
-                    "zellij"
-                ],
-                "updated_at": "2026-07-03T12:43:09Z"
+                "updated_at": "2026-07-27T04:29:04Z"
             },
             {
                 "name": "vscode-fff-gpui",
@@ -3323,7 +3326,7 @@
                     "recoiljs",
                     "vitejs"
                 ],
-                "updated_at": "2026-07-25T06:04:13Z"
+                "updated_at": "2026-07-27T04:59:17Z"
             },
             {
                 "name": "use-wait-for-transaction-hash",
@@ -3396,7 +3399,7 @@
                     "react",
                     "react-email"
                 ],
-                "updated_at": "2026-07-20T10:54:28Z"
+                "updated_at": "2026-07-27T06:11:09Z"
             },
             {
                 "name": "react-18-demo",
@@ -3723,7 +3726,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-07-25T05:37:00Z"
+                "updated_at": "2026-07-26T05:53:17Z"
             },
             {
                 "name": "vite-react-demo",
