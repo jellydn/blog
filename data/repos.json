@@ -88,7 +88,7 @@
                     "cli",
                     "coding-assistant"
                 ],
-                "updated_at": "2026-07-27T02:25:51Z"
+                "updated_at": "2026-07-28T04:10:52Z"
             },
             {
                 "name": "pi-qwencloud-provider",
@@ -204,6 +204,21 @@
                 "updated_at": "2026-05-03T08:23:04Z"
             },
             {
+                "name": "prompt-bench",
+                "full_name": "jellydn/prompt-bench",
+                "description": "PromptBench - A tool for benchmarking LLM prompts",
+                "url": "https://github.com/jellydn/prompt-bench",
+                "homepage": "https://prompt-bench.fly.dev/",
+                "stars": 1,
+                "forks": 0,
+                "language": "Python",
+                "topics": [
+                    "ai",
+                    "llm"
+                ],
+                "updated_at": "2026-07-28T05:01:19Z"
+            },
+            {
                 "name": "ai-flow",
                 "full_name": "jellydn/ai-flow",
                 "description": "Turn GitHub URLs into structured AI workflows.",
@@ -213,7 +228,7 @@
                 "forks": 0,
                 "language": "PHP",
                 "topics": [],
-                "updated_at": "2026-07-26T16:16:04Z"
+                "updated_at": "2026-07-27T15:48:33Z"
             },
             {
                 "name": "opencode-qwencloud-provider",
@@ -226,21 +241,6 @@
                 "language": "TypeScript",
                 "topics": [],
                 "updated_at": "2026-07-21T23:59:08Z"
-            },
-            {
-                "name": "prompt-bench",
-                "full_name": "jellydn/prompt-bench",
-                "description": "PromptBench - A tool for benchmarking LLM prompts",
-                "url": "https://github.com/jellydn/prompt-bench",
-                "homepage": "https://prompt-bench.fly.dev/",
-                "stars": 0,
-                "forks": 0,
-                "language": "Python",
-                "topics": [
-                    "ai",
-                    "llm"
-                ],
-                "updated_at": "2026-07-26T16:03:51Z"
             },
             {
                 "name": "ai-smart-gmail",
@@ -513,7 +513,7 @@
                 "description": "Your ultimate guide to setting up Zed with Vim mode, tailored settings, and key bindings for a seamless coding experience",
                 "url": "https://github.com/jellydn/zed-101-setup",
                 "homepage": "https://itman.fyi",
-                "stars": 1408,
+                "stars": 1409,
                 "forks": 29,
                 "language": "TypeScript",
                 "topics": [
@@ -521,7 +521,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-07-27T00:33:04Z"
+                "updated_at": "2026-07-28T03:21:07Z"
             },
             {
                 "name": "typescript-tips",
@@ -818,7 +818,7 @@
                     "tidy-first",
                     "vitest"
                 ],
-                "updated_at": "2026-07-17T13:52:57Z"
+                "updated_at": "2026-07-27T09:39:59Z"
             },
             {
                 "name": "huma-demo",
@@ -997,6 +997,22 @@
                 "updated_at": "2024-10-16T16:51:32Z"
             },
             {
+                "name": "edge-network-demo",
+                "full_name": "jellydn/edge-network-demo",
+                "description": "Edge Network Demo",
+                "url": "https://github.com/jellydn/edge-network-demo",
+                "homepage": "https://hello.jellydn.workers.dev/",
+                "stars": 4,
+                "forks": 1,
+                "language": "TypeScript",
+                "topics": [
+                    "edge",
+                    "netlify-functions",
+                    "wrangler"
+                ],
+                "updated_at": "2026-07-27T06:31:25Z"
+            },
+            {
                 "name": "typescript-starter",
                 "full_name": "jellydn/typescript-starter",
                 "description": "Typescript starter project",
@@ -1062,22 +1078,6 @@
                     "starter-template"
                 ],
                 "updated_at": "2026-07-14T17:08:21Z"
-            },
-            {
-                "name": "edge-network-demo",
-                "full_name": "jellydn/edge-network-demo",
-                "description": "Edge Network Demo",
-                "url": "https://github.com/jellydn/edge-network-demo",
-                "homepage": "https://hello.jellydn.workers.dev/",
-                "stars": 4,
-                "forks": 1,
-                "language": "TypeScript",
-                "topics": [
-                    "edge",
-                    "netlify-functions",
-                    "wrangler"
-                ],
-                "updated_at": "2026-07-06T07:56:53Z"
             },
             {
                 "name": "typechain-demo-app",
@@ -1500,6 +1500,18 @@
                 "updated_at": "2022-06-22T10:27:12Z"
             },
             {
+                "name": "preview-url",
+                "full_name": "jellydn/preview-url",
+                "description": "",
+                "url": "https://github.com/jellydn/preview-url",
+                "homepage": "",
+                "stars": 1,
+                "forks": 0,
+                "language": "Svelte",
+                "topics": [],
+                "updated_at": "2026-07-27T17:55:54Z"
+            },
+            {
                 "name": "remix-app-demo",
                 "full_name": "jellydn/remix-app-demo",
                 "description": "Remix Demo App with Vercel for deployment",
@@ -1636,18 +1648,6 @@
                 "language": "Python",
                 "topics": [],
                 "updated_at": "2026-06-16T14:58:53Z"
-            },
-            {
-                "name": "preview-url",
-                "full_name": "jellydn/preview-url",
-                "description": "",
-                "url": "https://github.com/jellydn/preview-url",
-                "homepage": "",
-                "stars": 1,
-                "forks": 0,
-                "language": "Svelte",
-                "topics": [],
-                "updated_at": "2026-06-01T03:28:06Z"
             },
             {
                 "name": "bun-dx-tips",
@@ -3058,7 +3058,7 @@
                 "url": "https://github.com/jellydn/dapp-starter",
                 "homepage": "https://dapp-starter.productsway.com/",
                 "stars": 327,
-                "forks": 79,
+                "forks": 78,
                 "language": "TypeScript",
                 "topics": [
                     "dapp-starter",
@@ -3097,7 +3097,7 @@
                     "storybook",
                     "tailwindcss"
                 ],
-                "updated_at": "2026-07-22T20:33:50Z"
+                "updated_at": "2026-07-27T12:56:00Z"
             },
             {
                 "name": "nft-app",
@@ -3164,7 +3164,7 @@
                     "protobuf-es",
                     "typescript"
                 ],
-                "updated_at": "2026-07-19T12:34:21Z"
+                "updated_at": "2026-07-27T08:41:19Z"
             },
             {
                 "name": "next-validations",
@@ -3726,7 +3726,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-07-26T05:53:17Z"
+                "updated_at": "2026-07-27T06:20:59Z"
             },
             {
                 "name": "vite-react-demo",
