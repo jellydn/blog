@@ -88,7 +88,7 @@
                     "cli",
                     "coding-assistant"
                 ],
-                "updated_at": "2026-07-28T04:10:52Z"
+                "updated_at": "2026-07-28T12:48:08Z"
             },
             {
                 "name": "pi-qwencloud-provider",
@@ -171,6 +171,21 @@
                 "updated_at": "2026-07-05T02:58:59Z"
             },
             {
+                "name": "prompt-bench",
+                "full_name": "jellydn/prompt-bench",
+                "description": "PromptBench - A tool for benchmarking LLM prompts",
+                "url": "https://github.com/jellydn/prompt-bench",
+                "homepage": "https://prompt-bench.itman.fyi/",
+                "stars": 2,
+                "forks": 0,
+                "language": "Python",
+                "topics": [
+                    "ai",
+                    "llm"
+                ],
+                "updated_at": "2026-07-29T03:00:57Z"
+            },
+            {
                 "name": "flue-repo-assistant",
                 "full_name": "jellydn/flue-repo-assistant",
                 "description": "Repository Analysis Agent with Flue",
@@ -202,21 +217,6 @@
                     "tmux"
                 ],
                 "updated_at": "2026-05-03T08:23:04Z"
-            },
-            {
-                "name": "prompt-bench",
-                "full_name": "jellydn/prompt-bench",
-                "description": "PromptBench - A tool for benchmarking LLM prompts",
-                "url": "https://github.com/jellydn/prompt-bench",
-                "homepage": "https://prompt-bench.fly.dev/",
-                "stars": 1,
-                "forks": 0,
-                "language": "Python",
-                "topics": [
-                    "ai",
-                    "llm"
-                ],
-                "updated_at": "2026-07-28T05:01:19Z"
             },
             {
                 "name": "ai-flow",
@@ -521,7 +521,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-07-28T03:21:07Z"
+                "updated_at": "2026-07-29T04:43:15Z"
             },
             {
                 "name": "typescript-tips",
@@ -719,7 +719,7 @@
                     "foundry",
                     "thirdweb"
                 ],
-                "updated_at": "2026-07-21T05:12:39Z"
+                "updated_at": "2026-07-29T05:37:33Z"
             },
             {
                 "name": "zed-codemux",
@@ -850,7 +850,7 @@
                     "mailwind",
                     "tailwindcss"
                 ],
-                "updated_at": "2026-07-27T06:11:06Z"
+                "updated_at": "2026-07-28T18:46:50Z"
             },
             {
                 "name": "promise-should-be-fun",
@@ -997,6 +997,22 @@
                 "updated_at": "2024-10-16T16:51:32Z"
             },
             {
+                "name": "hono-minimal-app",
+                "full_name": "jellydn/hono-minimal-app",
+                "description": "This is a minimal project with honojs",
+                "url": "https://github.com/jellydn/hono-minimal-app",
+                "homepage": "https://hono-demo-app.jellydn.workers.dev/",
+                "stars": 4,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [
+                    "cloudflare",
+                    "cloudflare-worker",
+                    "honojs"
+                ],
+                "updated_at": "2026-07-29T01:09:30Z"
+            },
+            {
                 "name": "edge-network-demo",
                 "full_name": "jellydn/edge-network-demo",
                 "description": "Edge Network Demo",
@@ -1027,22 +1043,6 @@
                     "typescript"
                 ],
                 "updated_at": "2026-07-27T04:48:29Z"
-            },
-            {
-                "name": "hono-minimal-app",
-                "full_name": "jellydn/hono-minimal-app",
-                "description": "This is a minimal project with honojs",
-                "url": "https://github.com/jellydn/hono-minimal-app",
-                "homepage": "https://hono-demo-app.jellydn.workers.dev/",
-                "stars": 4,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [
-                    "cloudflare",
-                    "cloudflare-worker",
-                    "honojs"
-                ],
-                "updated_at": "2026-07-24T20:37:01Z"
             },
             {
                 "name": "docklight",
@@ -1500,6 +1500,18 @@
                 "updated_at": "2022-06-22T10:27:12Z"
             },
             {
+                "name": "nextjs15-react19-demo",
+                "full_name": "jellydn/nextjs15-react19-demo",
+                "description": "",
+                "url": "https://github.com/jellydn/nextjs15-react19-demo",
+                "homepage": "",
+                "stars": 1,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [],
+                "updated_at": "2026-07-28T19:49:32Z"
+            },
+            {
                 "name": "preview-url",
                 "full_name": "jellydn/preview-url",
                 "description": "",
@@ -1563,18 +1575,6 @@
                 "language": "TypeScript",
                 "topics": [],
                 "updated_at": "2026-07-26T05:02:47Z"
-            },
-            {
-                "name": "nextjs15-react19-demo",
-                "full_name": "jellydn/nextjs15-react19-demo",
-                "description": "",
-                "url": "https://github.com/jellydn/nextjs15-react19-demo",
-                "homepage": "",
-                "stars": 1,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [],
-                "updated_at": "2026-07-26T00:48:35Z"
             },
             {
                 "name": "db-management-demo",
@@ -1879,7 +1879,22 @@
                     "pulumi",
                     "typescript"
                 ],
-                "updated_at": "2026-07-27T05:28:42Z"
+                "updated_at": "2026-07-28T22:51:38Z"
+            },
+            {
+                "name": "remix-spa",
+                "full_name": "jellydn/remix-spa",
+                "description": "Remix SPA Starter",
+                "url": "https://github.com/jellydn/remix-spa",
+                "homepage": "",
+                "stars": 0,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [
+                    "remix",
+                    "spa"
+                ],
+                "updated_at": "2026-07-28T17:43:16Z"
             },
             {
                 "name": "ioc-demo",
@@ -1951,21 +1966,6 @@
                 "language": "TypeScript",
                 "topics": [],
                 "updated_at": "2026-07-25T02:26:33Z"
-            },
-            {
-                "name": "remix-spa",
-                "full_name": "jellydn/remix-spa",
-                "description": "Remix SPA Starter",
-                "url": "https://github.com/jellydn/remix-spa",
-                "homepage": "",
-                "stars": 0,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [
-                    "remix",
-                    "spa"
-                ],
-                "updated_at": "2026-07-25T01:48:15Z"
             },
             {
                 "name": "homebrew-tap",
@@ -2760,15 +2760,15 @@
                 "description": "Starter Template for Web Developers",
                 "url": "https://github.com/jellydn/nvim-for-webdev",
                 "homepage": "",
-                "stars": 32,
-                "forks": 1,
+                "stars": 33,
+                "forks": 2,
                 "language": "Lua",
                 "topics": [
                     "lazyvim",
                     "nvim",
                     "web-development"
                 ],
-                "updated_at": "2026-06-30T12:17:18Z"
+                "updated_at": "2026-07-28T15:54:48Z"
             },
             {
                 "name": "quick-code-runner.nvim",
@@ -3430,6 +3430,25 @@
                 "updated_at": "2026-06-19T05:30:58Z"
             },
             {
+                "name": "untypeable-wretch-demo",
+                "full_name": "jellydn/untypeable-wretch-demo",
+                "description": "This is a demo project that showcases how to use the Untypeable library with Wretch to make API requests to JsonPlaceholder and display the data on a webpage.",
+                "url": "https://github.com/jellydn/untypeable-wretch-demo",
+                "homepage": "https://untypeable-demo.productsway.com/",
+                "stars": 3,
+                "forks": 2,
+                "language": "TypeScript",
+                "topics": [
+                    "react",
+                    "signals",
+                    "typesafe",
+                    "typescript",
+                    "untypeable",
+                    "wretch"
+                ],
+                "updated_at": "2026-07-28T15:54:47Z"
+            },
+            {
                 "name": "wattpm-express-demo",
                 "full_name": "jellydn/wattpm-express-demo",
                 "description": "Watt Quick Start",
@@ -3526,7 +3545,7 @@
                     "shadcn-ui",
                     "tailwindcss"
                 ],
-                "updated_at": "2026-07-25T04:55:31Z"
+                "updated_at": "2026-07-28T16:03:50Z"
             },
             {
                 "name": "react-router-v7-tailwinds-v4-app",
@@ -3557,25 +3576,6 @@
                     "typescript"
                 ],
                 "updated_at": "2026-07-17T14:57:56Z"
-            },
-            {
-                "name": "untypeable-wretch-demo",
-                "full_name": "jellydn/untypeable-wretch-demo",
-                "description": "This is a demo project that showcases how to use the Untypeable library with Wretch to make API requests to JsonPlaceholder and display the data on a webpage.",
-                "url": "https://github.com/jellydn/untypeable-wretch-demo",
-                "homepage": "https://untypeable-demo.productsway.com/",
-                "stars": 2,
-                "forks": 1,
-                "language": "TypeScript",
-                "topics": [
-                    "react",
-                    "signals",
-                    "typesafe",
-                    "typescript",
-                    "untypeable",
-                    "wretch"
-                ],
-                "updated_at": "2026-07-09T00:50:39Z"
             },
             {
                 "name": "i18n-react-app",
@@ -3726,7 +3726,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-07-27T06:20:59Z"
+                "updated_at": "2026-07-28T05:39:51Z"
             },
             {
                 "name": "vite-react-demo",
