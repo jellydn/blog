@@ -18,7 +18,7 @@
                     "open-code",
                     "skills"
                 ],
-                "updated_at": "2026-07-24T20:27:12Z"
+                "updated_at": "2026-07-30T04:59:19Z"
             },
             {
                 "name": "gpt4free-demo",
@@ -96,14 +96,14 @@
                 "description": "QwenCloud provider for pi — Qwen3.8, DeepSeek V4, GLM-5.2, Wan image, HappyHorse video via OpenAI-compatible API",
                 "url": "https://github.com/jellydn/pi-qwencloud-provider",
                 "homepage": "https://jellydn.github.io/pi-qwencloud-provider/",
-                "stars": 10,
+                "stars": 11,
                 "forks": 1,
                 "language": "TypeScript",
                 "topics": [
                     "pi",
                     "pi-plugins"
                 ],
-                "updated_at": "2026-07-26T01:02:52Z"
+                "updated_at": "2026-07-29T19:43:40Z"
             },
             {
                 "name": "ai-launcher",
@@ -171,6 +171,23 @@
                 "updated_at": "2026-07-05T02:58:59Z"
             },
             {
+                "name": "logpilot",
+                "full_name": "jellydn/logpilot",
+                "description": "AI-Native tmux Log Copilot for Support Incident Tracking",
+                "url": "https://github.com/jellydn/logpilot",
+                "homepage": "",
+                "stars": 2,
+                "forks": 1,
+                "language": "Rust",
+                "topics": [
+                    "ai-tools",
+                    "mcp",
+                    "mcp-server",
+                    "tmux"
+                ],
+                "updated_at": "2026-07-29T17:53:46Z"
+            },
+            {
                 "name": "prompt-bench",
                 "full_name": "jellydn/prompt-bench",
                 "description": "PromptBench - A tool for benchmarking LLM prompts",
@@ -200,23 +217,6 @@
                     "flueframework"
                 ],
                 "updated_at": "2026-07-24T11:59:17Z"
-            },
-            {
-                "name": "logpilot",
-                "full_name": "jellydn/logpilot",
-                "description": "AI-Native tmux Log Copilot for Support Incident Tracking",
-                "url": "https://github.com/jellydn/logpilot",
-                "homepage": "",
-                "stars": 2,
-                "forks": 1,
-                "language": "Rust",
-                "topics": [
-                    "ai-tools",
-                    "mcp",
-                    "mcp-server",
-                    "tmux"
-                ],
-                "updated_at": "2026-05-03T08:23:04Z"
             },
             {
                 "name": "ai-flow",
@@ -513,7 +513,7 @@
                 "description": "Your ultimate guide to setting up Zed with Vim mode, tailored settings, and key bindings for a seamless coding experience",
                 "url": "https://github.com/jellydn/zed-101-setup",
                 "homepage": "https://itman.fyi",
-                "stars": 1409,
+                "stars": 1410,
                 "forks": 29,
                 "language": "TypeScript",
                 "topics": [
@@ -521,7 +521,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-07-29T04:43:15Z"
+                "updated_at": "2026-07-29T14:29:04Z"
             },
             {
                 "name": "typescript-tips",
@@ -705,6 +705,23 @@
                 "updated_at": "2024-01-06T02:33:12Z"
             },
             {
+                "name": "zed-codemux",
+                "full_name": "jellydn/zed-codemux",
+                "description": "Open Zed terminals inside tmux or zellij — port of vscode-mux to the Zed editor.",
+                "url": "https://github.com/jellydn/zed-codemux",
+                "homepage": "",
+                "stars": 13,
+                "forks": 1,
+                "language": "Rust",
+                "topics": [
+                    "tmux",
+                    "zed",
+                    "zed-extension",
+                    "zellij"
+                ],
+                "updated_at": "2026-07-29T10:56:16Z"
+            },
+            {
                 "name": "thirdweb-foundry-starter",
                 "full_name": "jellydn/thirdweb-foundry-starter",
                 "description": "Third Web Foundry Stater Template",
@@ -720,23 +737,6 @@
                     "thirdweb"
                 ],
                 "updated_at": "2026-07-29T05:37:33Z"
-            },
-            {
-                "name": "zed-codemux",
-                "full_name": "jellydn/zed-codemux",
-                "description": "Open Zed terminals inside tmux or zellij — port of vscode-mux to the Zed editor.",
-                "url": "https://github.com/jellydn/zed-codemux",
-                "homepage": "",
-                "stars": 12,
-                "forks": 1,
-                "language": "Rust",
-                "topics": [
-                    "tmux",
-                    "zed",
-                    "zed-extension",
-                    "zellij"
-                ],
-                "updated_at": "2026-07-21T13:03:05Z"
             },
             {
                 "name": "modern-python-2024-demo",
@@ -850,7 +850,7 @@
                     "mailwind",
                     "tailwindcss"
                 ],
-                "updated_at": "2026-07-28T18:46:50Z"
+                "updated_at": "2026-07-29T18:12:28Z"
             },
             {
                 "name": "promise-should-be-fun",
@@ -1509,7 +1509,24 @@
                 "forks": 0,
                 "language": "TypeScript",
                 "topics": [],
-                "updated_at": "2026-07-28T19:49:32Z"
+                "updated_at": "2026-07-29T18:53:19Z"
+            },
+            {
+                "name": "db-management-demo",
+                "full_name": "jellydn/db-management-demo",
+                "description": "This is simple demo of how to manage database using prisma and tbls for documentation.",
+                "url": "https://github.com/jellydn/db-management-demo",
+                "homepage": "",
+                "stars": 1,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [
+                    "bunjs",
+                    "db",
+                    "prisma",
+                    "tbls"
+                ],
+                "updated_at": "2026-07-29T10:44:47Z"
             },
             {
                 "name": "preview-url",
@@ -1575,23 +1592,6 @@
                 "language": "TypeScript",
                 "topics": [],
                 "updated_at": "2026-07-26T05:02:47Z"
-            },
-            {
-                "name": "db-management-demo",
-                "full_name": "jellydn/db-management-demo",
-                "description": "This is simple demo of how to manage database using prisma and tbls for documentation.",
-                "url": "https://github.com/jellydn/db-management-demo",
-                "homepage": "",
-                "stars": 1,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [
-                    "bunjs",
-                    "db",
-                    "prisma",
-                    "tbls"
-                ],
-                "updated_at": "2026-07-21T06:01:27Z"
             },
             {
                 "name": "server-timing-demo",
@@ -1867,6 +1867,21 @@
                 "updated_at": "2022-05-29T07:50:37Z"
             },
             {
+                "name": "remix-spa",
+                "full_name": "jellydn/remix-spa",
+                "description": "Remix SPA Starter",
+                "url": "https://github.com/jellydn/remix-spa",
+                "homepage": "",
+                "stars": 0,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [
+                    "remix",
+                    "spa"
+                ],
+                "updated_at": "2026-07-29T16:41:26Z"
+            },
+            {
                 "name": "pulumi-kubernetes-typescript",
                 "full_name": "jellydn/pulumi-kubernetes-typescript",
                 "description": "Simple Kubernetes cluster with TypeScript for Pulumi.",
@@ -1880,21 +1895,6 @@
                     "typescript"
                 ],
                 "updated_at": "2026-07-28T22:51:38Z"
-            },
-            {
-                "name": "remix-spa",
-                "full_name": "jellydn/remix-spa",
-                "description": "Remix SPA Starter",
-                "url": "https://github.com/jellydn/remix-spa",
-                "homepage": "",
-                "stars": 0,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [
-                    "remix",
-                    "spa"
-                ],
-                "updated_at": "2026-07-28T17:43:16Z"
             },
             {
                 "name": "ioc-demo",
@@ -3545,7 +3545,7 @@
                     "shadcn-ui",
                     "tailwindcss"
                 ],
-                "updated_at": "2026-07-28T16:03:50Z"
+                "updated_at": "2026-07-29T18:37:00Z"
             },
             {
                 "name": "react-router-v7-tailwinds-v4-app",
@@ -3726,7 +3726,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-07-28T05:39:51Z"
+                "updated_at": "2026-07-29T05:45:04Z"
             },
             {
                 "name": "vite-react-demo",
