@@ -8,7 +8,7 @@
                 "description": "Comprehensive configuration management for AI coding tools - Replicate my complete setup for Claude Code, OpenCode, Amp, Li, Codex and Claude Code Switch with custom configurations, MCP servers, plugins, and commands.",
                 "url": "https://github.com/jellydn/my-ai-tools",
                 "homepage": "http://ai-tools.itman.fyi/",
-                "stars": 106,
+                "stars": 107,
                 "forks": 13,
                 "language": "Shell",
                 "topics": [
@@ -18,7 +18,7 @@
                     "open-code",
                     "skills"
                 ],
-                "updated_at": "2026-07-30T04:59:19Z"
+                "updated_at": "2026-07-31T04:13:37Z"
             },
             {
                 "name": "gpt4free-demo",
@@ -88,7 +88,7 @@
                     "cli",
                     "coding-assistant"
                 ],
-                "updated_at": "2026-07-28T12:48:08Z"
+                "updated_at": "2026-07-31T02:59:21Z"
             },
             {
                 "name": "pi-qwencloud-provider",
@@ -96,14 +96,14 @@
                 "description": "QwenCloud provider for pi — Qwen3.8, DeepSeek V4, GLM-5.2, Wan image, HappyHorse video via OpenAI-compatible API",
                 "url": "https://github.com/jellydn/pi-qwencloud-provider",
                 "homepage": "https://jellydn.github.io/pi-qwencloud-provider/",
-                "stars": 11,
+                "stars": 10,
                 "forks": 1,
                 "language": "TypeScript",
                 "topics": [
                     "pi",
                     "pi-plugins"
                 ],
-                "updated_at": "2026-07-29T19:43:40Z"
+                "updated_at": "2026-07-31T01:25:14Z"
             },
             {
                 "name": "ai-launcher",
@@ -513,7 +513,7 @@
                 "description": "Your ultimate guide to setting up Zed with Vim mode, tailored settings, and key bindings for a seamless coding experience",
                 "url": "https://github.com/jellydn/zed-101-setup",
                 "homepage": "https://itman.fyi",
-                "stars": 1410,
+                "stars": 1412,
                 "forks": 29,
                 "language": "TypeScript",
                 "topics": [
@@ -521,7 +521,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-07-29T14:29:04Z"
+                "updated_at": "2026-07-30T23:30:41Z"
             },
             {
                 "name": "typescript-tips",
@@ -768,7 +768,7 @@
                     "crawlee",
                     "playwright-typescript"
                 ],
-                "updated_at": "2026-07-27T04:37:31Z"
+                "updated_at": "2026-07-30T22:58:37Z"
             },
             {
                 "name": "oak",
@@ -1010,7 +1010,7 @@
                     "cloudflare-worker",
                     "honojs"
                 ],
-                "updated_at": "2026-07-29T01:09:30Z"
+                "updated_at": "2026-07-31T02:51:28Z"
             },
             {
                 "name": "edge-network-demo",
@@ -1867,6 +1867,18 @@
                 "updated_at": "2022-05-29T07:50:37Z"
             },
             {
+                "name": "playwright-mock-api",
+                "full_name": "jellydn/playwright-mock-api",
+                "description": "Mocking API with Playwright",
+                "url": "https://github.com/jellydn/playwright-mock-api",
+                "homepage": "",
+                "stars": 0,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [],
+                "updated_at": "2026-07-31T03:33:12Z"
+            },
+            {
                 "name": "remix-spa",
                 "full_name": "jellydn/remix-spa",
                 "description": "Remix SPA Starter",
@@ -1954,18 +1966,6 @@
                     "tanstack-router"
                 ],
                 "updated_at": "2026-07-25T04:51:07Z"
-            },
-            {
-                "name": "playwright-mock-api",
-                "full_name": "jellydn/playwright-mock-api",
-                "description": "Mocking API with Playwright",
-                "url": "https://github.com/jellydn/playwright-mock-api",
-                "homepage": "",
-                "stars": 0,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [],
-                "updated_at": "2026-07-25T02:26:33Z"
             },
             {
                 "name": "homebrew-tap",
@@ -2722,7 +2722,7 @@
                     "typescript",
                     "vscode"
                 ],
-                "updated_at": "2026-07-14T02:57:18Z"
+                "updated_at": "2026-07-30T22:32:03Z"
             },
             {
                 "name": "my-nvim-ide",
@@ -3545,7 +3545,7 @@
                     "shadcn-ui",
                     "tailwindcss"
                 ],
-                "updated_at": "2026-07-29T18:37:00Z"
+                "updated_at": "2026-07-31T05:33:04Z"
             },
             {
                 "name": "react-router-v7-tailwinds-v4-app",
@@ -3714,6 +3714,23 @@
                 "updated_at": "2021-07-01T07:11:50Z"
             },
             {
+                "name": "zod-tutorial-kit",
+                "full_name": "jellydn/zod-tutorial-kit",
+                "description": "TBD",
+                "url": "https://github.com/jellydn/zod-tutorial-kit",
+                "homepage": "https://zod-tutorial.productsway.com",
+                "stars": 0,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [
+                    "kit",
+                    "react",
+                    "tutorial",
+                    "zod"
+                ],
+                "updated_at": "2026-07-30T22:50:47Z"
+            },
+            {
                 "name": "blog",
                 "full_name": "jellydn/blog",
                 "description": "Senior Full Stack Software Engineer. Building blockchain-based carbon exchange platforms with TypeScript, Node.js, and React.",
@@ -3726,7 +3743,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-07-29T05:45:04Z"
+                "updated_at": "2026-07-30T05:34:02Z"
             },
             {
                 "name": "vite-react-demo",
@@ -3745,23 +3762,6 @@
                     "tailwindcss"
                 ],
                 "updated_at": "2026-07-08T23:55:53Z"
-            },
-            {
-                "name": "zod-tutorial-kit",
-                "full_name": "jellydn/zod-tutorial-kit",
-                "description": "TBD",
-                "url": "https://github.com/jellydn/zod-tutorial-kit",
-                "homepage": "https://zod-tutorial.productsway.com",
-                "stars": 0,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [
-                    "kit",
-                    "react",
-                    "tutorial",
-                    "zod"
-                ],
-                "updated_at": "2024-10-31T04:01:51Z"
             },
             {
                 "name": "nhost-quickstart-app",
