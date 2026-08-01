@@ -34,7 +34,7 @@
                     "gpt4free",
                     "raycast-extension"
                 ],
-                "updated_at": "2026-07-27T06:07:05Z"
+                "updated_at": "2026-07-31T17:28:03Z"
             },
             {
                 "name": "gpt4all-cli",
@@ -88,7 +88,7 @@
                     "cli",
                     "coding-assistant"
                 ],
-                "updated_at": "2026-07-31T02:59:21Z"
+                "updated_at": "2026-08-01T05:14:51Z"
             },
             {
                 "name": "pi-qwencloud-provider",
@@ -171,6 +171,22 @@
                 "updated_at": "2026-07-05T02:58:59Z"
             },
             {
+                "name": "flue-repo-assistant",
+                "full_name": "jellydn/flue-repo-assistant",
+                "description": "Repository Analysis Agent with Flue",
+                "url": "https://github.com/jellydn/flue-repo-assistant",
+                "homepage": "https://jellydn.github.io/flue-repo-assistant/",
+                "stars": 2,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [
+                    "agent",
+                    "flue",
+                    "flueframework"
+                ],
+                "updated_at": "2026-08-01T03:26:01Z"
+            },
+            {
                 "name": "logpilot",
                 "full_name": "jellydn/logpilot",
                 "description": "AI-Native tmux Log Copilot for Support Incident Tracking",
@@ -193,30 +209,14 @@
                 "description": "PromptBench - A tool for benchmarking LLM prompts",
                 "url": "https://github.com/jellydn/prompt-bench",
                 "homepage": "https://prompt-bench.itman.fyi/",
-                "stars": 2,
+                "stars": 1,
                 "forks": 0,
                 "language": "Python",
                 "topics": [
                     "ai",
                     "llm"
                 ],
-                "updated_at": "2026-07-29T03:00:57Z"
-            },
-            {
-                "name": "flue-repo-assistant",
-                "full_name": "jellydn/flue-repo-assistant",
-                "description": "Repository Analysis Agent with Flue",
-                "url": "https://github.com/jellydn/flue-repo-assistant",
-                "homepage": "https://jellydn.github.io/flue-repo-assistant/",
-                "stars": 2,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [
-                    "agent",
-                    "flue",
-                    "flueframework"
-                ],
-                "updated_at": "2026-07-24T11:59:17Z"
+                "updated_at": "2026-07-31T10:58:45Z"
             },
             {
                 "name": "ai-flow",
@@ -349,14 +349,14 @@
                 "description": "ClinePass provider for pi — 11 curated open-weight coding models (GLM-5.2, Kimi K2.7 Code, Kimi K3, DeepSeek V4, Qwen3.7, and more)",
                 "url": "https://github.com/jellydn/pi-clinepass-provider",
                 "homepage": "https://jellydn.github.io/pi-clinepass-provider/",
-                "stars": 13,
+                "stars": 14,
                 "forks": 4,
                 "language": "TypeScript",
                 "topics": [
                     "pi",
                     "pi-plugins"
                 ],
-                "updated_at": "2026-07-24T11:57:39Z"
+                "updated_at": "2026-07-31T15:49:35Z"
             },
             {
                 "name": "cspell-tool",
@@ -513,7 +513,7 @@
                 "description": "Your ultimate guide to setting up Zed with Vim mode, tailored settings, and key bindings for a seamless coding experience",
                 "url": "https://github.com/jellydn/zed-101-setup",
                 "homepage": "https://itman.fyi",
-                "stars": 1412,
+                "stars": 1413,
                 "forks": 29,
                 "language": "TypeScript",
                 "topics": [
@@ -521,7 +521,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-07-30T23:30:41Z"
+                "updated_at": "2026-07-31T15:36:04Z"
             },
             {
                 "name": "typescript-tips",
@@ -1010,7 +1010,7 @@
                     "cloudflare-worker",
                     "honojs"
                 ],
-                "updated_at": "2026-07-31T02:51:28Z"
+                "updated_at": "2026-07-31T18:13:46Z"
             },
             {
                 "name": "edge-network-demo",
@@ -2760,7 +2760,7 @@
                 "description": "Starter Template for Web Developers",
                 "url": "https://github.com/jellydn/nvim-for-webdev",
                 "homepage": "",
-                "stars": 33,
+                "stars": 32,
                 "forks": 2,
                 "language": "Lua",
                 "topics": [
@@ -2768,7 +2768,7 @@
                     "nvim",
                     "web-development"
                 ],
-                "updated_at": "2026-07-28T15:54:48Z"
+                "updated_at": "2026-07-31T07:27:22Z"
             },
             {
                 "name": "quick-code-runner.nvim",
@@ -3714,6 +3714,21 @@
                 "updated_at": "2021-07-01T07:11:50Z"
             },
             {
+                "name": "blog",
+                "full_name": "jellydn/blog",
+                "description": "Senior Full Stack Software Engineer. Building blockchain-based carbon exchange platforms with TypeScript, Node.js, and React.",
+                "url": "https://github.com/jellydn/blog",
+                "homepage": "https://productsway.com/",
+                "stars": 0,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [
+                    "blog",
+                    "nextjs"
+                ],
+                "updated_at": "2026-07-31T05:58:05Z"
+            },
+            {
                 "name": "zod-tutorial-kit",
                 "full_name": "jellydn/zod-tutorial-kit",
                 "description": "TBD",
@@ -3729,21 +3744,6 @@
                     "zod"
                 ],
                 "updated_at": "2026-07-30T22:50:47Z"
-            },
-            {
-                "name": "blog",
-                "full_name": "jellydn/blog",
-                "description": "Senior Full Stack Software Engineer. Building blockchain-based carbon exchange platforms with TypeScript, Node.js, and React.",
-                "url": "https://github.com/jellydn/blog",
-                "homepage": "https://productsway.com/",
-                "stars": 0,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [
-                    "blog",
-                    "nextjs"
-                ],
-                "updated_at": "2026-07-30T05:34:02Z"
             },
             {
                 "name": "vite-react-demo",
