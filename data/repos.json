@@ -18,7 +18,7 @@
                     "open-code",
                     "skills"
                 ],
-                "updated_at": "2026-07-31T04:13:37Z"
+                "updated_at": "2026-08-01T11:08:49Z"
             },
             {
                 "name": "gpt4free-demo",
@@ -184,7 +184,7 @@
                     "flue",
                     "flueframework"
                 ],
-                "updated_at": "2026-08-01T03:26:01Z"
+                "updated_at": "2026-08-01T15:06:37Z"
             },
             {
                 "name": "logpilot",
@@ -243,18 +243,6 @@
                 "updated_at": "2026-07-21T23:59:08Z"
             },
             {
-                "name": "ai-smart-gmail",
-                "full_name": "jellydn/ai-smart-gmail",
-                "description": "Semantic email search library (hybrid RAG) + 30-day AI learning lab",
-                "url": "https://github.com/jellydn/ai-smart-gmail",
-                "homepage": "https://jellydn.github.io/ai-smart-gmail/lessons/0001-what-is-an-embedding.html",
-                "stars": 0,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [],
-                "updated_at": "2026-07-13T22:38:06Z"
-            },
-            {
                 "name": "ai-photo-coach",
                 "full_name": "jellydn/ai-photo-coach",
                 "description": "Real-time visual guide camera app that helps everyday users take better photos. Built with React Native + VisionCamera v5.",
@@ -266,7 +254,19 @@
                 "topics": [
                     "react-native"
                 ],
-                "updated_at": "2026-05-02T14:51:29Z"
+                "updated_at": "2026-08-01T13:55:22Z"
+            },
+            {
+                "name": "ai-smart-gmail",
+                "full_name": "jellydn/ai-smart-gmail",
+                "description": "Semantic email search library (hybrid RAG) + 30-day AI learning lab",
+                "url": "https://github.com/jellydn/ai-smart-gmail",
+                "homepage": "https://jellydn.github.io/ai-smart-gmail/lessons/0001-what-is-an-embedding.html",
+                "stars": 0,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [],
+                "updated_at": "2026-07-13T22:38:06Z"
             },
             {
                 "name": "hello-mastra",
@@ -521,7 +521,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-07-31T15:36:04Z"
+                "updated_at": "2026-08-02T05:27:23Z"
             },
             {
                 "name": "typescript-tips",
@@ -546,7 +546,7 @@
                 "description": "A curated list of awesome 🔥 TypeScript Typesafe Libraries🔥",
                 "url": "https://github.com/jellydn/awesome-typesafe",
                 "homepage": "http://typesafe.itman.fyi/",
-                "stars": 174,
+                "stars": 175,
                 "forks": 20,
                 "language": "",
                 "topics": [
@@ -555,7 +555,7 @@
                     "typesafe",
                     "typescript"
                 ],
-                "updated_at": "2026-07-08T03:11:30Z"
+                "updated_at": "2026-08-01T18:51:40Z"
             },
             {
                 "name": "fastify-starter",
@@ -1867,6 +1867,18 @@
                 "updated_at": "2022-05-29T07:50:37Z"
             },
             {
+                "name": "personal-ai",
+                "full_name": "jellydn/personal-ai",
+                "description": "My AI projects from the last nine months",
+                "url": "https://github.com/jellydn/personal-ai",
+                "homepage": "https://jellydn.github.io/personal-ai/",
+                "stars": 0,
+                "forks": 0,
+                "language": "HTML",
+                "topics": [],
+                "updated_at": "2026-08-01T15:01:35Z"
+            },
+            {
                 "name": "playwright-mock-api",
                 "full_name": "jellydn/playwright-mock-api",
                 "description": "Mocking API with Playwright",
@@ -1978,18 +1990,6 @@
                 "language": "Ruby",
                 "topics": [],
                 "updated_at": "2026-07-21T15:08:52Z"
-            },
-            {
-                "name": "personal-ai",
-                "full_name": "jellydn/personal-ai",
-                "description": "My AI projects from the last nine months",
-                "url": "https://github.com/jellydn/personal-ai",
-                "homepage": "https://jellydn.github.io/personal-ai/",
-                "stars": 0,
-                "forks": 0,
-                "language": "HTML",
-                "topics": [],
-                "updated_at": "2026-07-21T04:23:09Z"
             },
             {
                 "name": "mac-cleaner",
@@ -3326,7 +3326,7 @@
                     "recoiljs",
                     "vitejs"
                 ],
-                "updated_at": "2026-07-27T04:59:17Z"
+                "updated_at": "2026-08-01T09:50:04Z"
             },
             {
                 "name": "use-wait-for-transaction-hash",
@@ -3545,7 +3545,7 @@
                     "shadcn-ui",
                     "tailwindcss"
                 ],
-                "updated_at": "2026-07-31T05:33:04Z"
+                "updated_at": "2026-08-01T09:29:06Z"
             },
             {
                 "name": "react-router-v7-tailwinds-v4-app",
@@ -3726,7 +3726,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-07-31T05:58:05Z"
+                "updated_at": "2026-08-01T05:48:04Z"
             },
             {
                 "name": "zod-tutorial-kit",
