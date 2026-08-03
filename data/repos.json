@@ -70,7 +70,7 @@
                     "pythagora",
                     "turso"
                 ],
-                "updated_at": "2026-07-27T05:57:27Z"
+                "updated_at": "2026-08-02T20:51:20Z"
             },
             {
                 "name": "tiny-coding-agent",
@@ -123,7 +123,7 @@
                     "open-code",
                     "open-source"
                 ],
-                "updated_at": "2026-07-18T09:24:33Z"
+                "updated_at": "2026-08-03T03:41:10Z"
             },
             {
                 "name": "summary-chatbot-demo",
@@ -184,7 +184,7 @@
                     "flue",
                     "flueframework"
                 ],
-                "updated_at": "2026-08-01T15:06:37Z"
+                "updated_at": "2026-08-02T14:42:00Z"
             },
             {
                 "name": "logpilot",
@@ -247,14 +247,14 @@
                 "full_name": "jellydn/ai-photo-coach",
                 "description": "Real-time visual guide camera app that helps everyday users take better photos. Built with React Native + VisionCamera v5.",
                 "url": "https://github.com/jellydn/ai-photo-coach",
-                "homepage": "",
+                "homepage": "https://jellydn.github.io/ai-photo-coach/",
                 "stars": 0,
                 "forks": 0,
                 "language": "TypeScript",
                 "topics": [
                     "react-native"
                 ],
-                "updated_at": "2026-08-01T13:55:22Z"
+                "updated_at": "2026-08-03T04:42:16Z"
             },
             {
                 "name": "ai-smart-gmail",
@@ -513,7 +513,7 @@
                 "description": "Your ultimate guide to setting up Zed with Vim mode, tailored settings, and key bindings for a seamless coding experience",
                 "url": "https://github.com/jellydn/zed-101-setup",
                 "homepage": "https://itman.fyi",
-                "stars": 1413,
+                "stars": 1417,
                 "forks": 29,
                 "language": "TypeScript",
                 "topics": [
@@ -521,7 +521,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-08-02T05:27:23Z"
+                "updated_at": "2026-08-02T21:12:30Z"
             },
             {
                 "name": "typescript-tips",
@@ -538,7 +538,7 @@
                     "tips-and-tricks",
                     "typescript"
                 ],
-                "updated_at": "2026-07-27T05:50:45Z"
+                "updated_at": "2026-08-03T05:15:47Z"
             },
             {
                 "name": "awesome-typesafe",
@@ -768,7 +768,7 @@
                     "crawlee",
                     "playwright-typescript"
                 ],
-                "updated_at": "2026-07-30T22:58:37Z"
+                "updated_at": "2026-08-03T04:34:40Z"
             },
             {
                 "name": "oak",
@@ -786,7 +786,7 @@
                     "pomodoro-timer",
                     "swift"
                 ],
-                "updated_at": "2026-07-27T01:12:27Z"
+                "updated_at": "2026-08-02T16:11:46Z"
             },
             {
                 "name": "github-action-locally",
@@ -850,7 +850,7 @@
                     "mailwind",
                     "tailwindcss"
                 ],
-                "updated_at": "2026-07-29T18:12:28Z"
+                "updated_at": "2026-08-02T16:55:30Z"
             },
             {
                 "name": "promise-should-be-fun",
@@ -997,6 +997,22 @@
                 "updated_at": "2024-10-16T16:51:32Z"
             },
             {
+                "name": "typescript-starter",
+                "full_name": "jellydn/typescript-starter",
+                "description": "Typescript starter project",
+                "url": "https://github.com/jellydn/typescript-starter",
+                "homepage": "",
+                "stars": 4,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [
+                    "starter",
+                    "template",
+                    "typescript"
+                ],
+                "updated_at": "2026-08-02T16:36:12Z"
+            },
+            {
                 "name": "hono-minimal-app",
                 "full_name": "jellydn/hono-minimal-app",
                 "description": "This is a minimal project with honojs",
@@ -1027,22 +1043,6 @@
                     "wrangler"
                 ],
                 "updated_at": "2026-07-27T06:31:25Z"
-            },
-            {
-                "name": "typescript-starter",
-                "full_name": "jellydn/typescript-starter",
-                "description": "Typescript starter project",
-                "url": "https://github.com/jellydn/typescript-starter",
-                "homepage": "",
-                "stars": 4,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [
-                    "starter",
-                    "template",
-                    "typescript"
-                ],
-                "updated_at": "2026-07-27T04:48:29Z"
             },
             {
                 "name": "docklight",
@@ -1122,7 +1122,7 @@
                     "stenciljs",
                     "web-component"
                 ],
-                "updated_at": "2026-07-27T05:42:24Z"
+                "updated_at": "2026-08-03T05:30:37Z"
             },
             {
                 "name": "tempora-saga-demo",
@@ -1266,6 +1266,22 @@
                 "updated_at": "2024-10-19T17:02:45Z"
             },
             {
+                "name": "better-async-demo",
+                "full_name": "jellydn/better-async-demo",
+                "description": "Easy to handle the async await without try catch",
+                "url": "https://github.com/jellydn/better-async-demo",
+                "homepage": "https://www.youtube.com/watch?v=iLB75jzQrJ8",
+                "stars": 2,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [
+                    "async-await",
+                    "js",
+                    "typescript"
+                ],
+                "updated_at": "2026-08-02T22:13:41Z"
+            },
+            {
                 "name": "deno-pkg-starter",
                 "full_name": "jellydn/deno-pkg-starter",
                 "description": "Publish your Typescript library to NPM and Deno",
@@ -1343,22 +1359,6 @@
                 "language": "Rust",
                 "topics": [],
                 "updated_at": "2026-07-18T06:52:47Z"
-            },
-            {
-                "name": "better-async-demo",
-                "full_name": "jellydn/better-async-demo",
-                "description": "Easy to handle the async await without try catch",
-                "url": "https://github.com/jellydn/better-async-demo",
-                "homepage": "https://www.youtube.com/watch?v=iLB75jzQrJ8",
-                "stars": 2,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [
-                    "async-await",
-                    "js",
-                    "typescript"
-                ],
-                "updated_at": "2026-07-13T18:50:20Z"
             },
             {
                 "name": ".dotfiles",
@@ -1500,18 +1500,6 @@
                 "updated_at": "2022-06-22T10:27:12Z"
             },
             {
-                "name": "nextjs15-react19-demo",
-                "full_name": "jellydn/nextjs15-react19-demo",
-                "description": "",
-                "url": "https://github.com/jellydn/nextjs15-react19-demo",
-                "homepage": "",
-                "stars": 1,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [],
-                "updated_at": "2026-07-29T18:53:19Z"
-            },
-            {
                 "name": "db-management-demo",
                 "full_name": "jellydn/db-management-demo",
                 "description": "This is simple demo of how to manage database using prisma and tbls for documentation.",
@@ -1526,19 +1514,7 @@
                     "prisma",
                     "tbls"
                 ],
-                "updated_at": "2026-07-29T10:44:47Z"
-            },
-            {
-                "name": "preview-url",
-                "full_name": "jellydn/preview-url",
-                "description": "",
-                "url": "https://github.com/jellydn/preview-url",
-                "homepage": "",
-                "stars": 1,
-                "forks": 0,
-                "language": "Svelte",
-                "topics": [],
-                "updated_at": "2026-07-27T17:55:54Z"
+                "updated_at": "2026-08-03T05:40:41Z"
             },
             {
                 "name": "remix-app-demo",
@@ -1553,7 +1529,55 @@
                     "remix",
                     "vercel"
                 ],
-                "updated_at": "2026-07-27T06:00:28Z"
+                "updated_at": "2026-08-03T04:46:19Z"
+            },
+            {
+                "name": "cube-quest",
+                "full_name": "jellydn/cube-quest",
+                "description": "🎲 Cube Quest — Interactive Rubik's Cube learning app for kids (ages 6-12)",
+                "url": "https://github.com/jellydn/cube-quest",
+                "homepage": "https://jellydn.github.io/cube-quest/",
+                "stars": 1,
+                "forks": 0,
+                "language": "JavaScript",
+                "topics": [],
+                "updated_at": "2026-08-02T07:22:42Z"
+            },
+            {
+                "name": "personal-ai",
+                "full_name": "jellydn/personal-ai",
+                "description": "My AI projects from the last nine months",
+                "url": "https://github.com/jellydn/personal-ai",
+                "homepage": "https://jellydn.github.io/personal-ai/",
+                "stars": 1,
+                "forks": 0,
+                "language": "HTML",
+                "topics": [],
+                "updated_at": "2026-08-02T06:29:22Z"
+            },
+            {
+                "name": "nextjs15-react19-demo",
+                "full_name": "jellydn/nextjs15-react19-demo",
+                "description": "",
+                "url": "https://github.com/jellydn/nextjs15-react19-demo",
+                "homepage": "",
+                "stars": 1,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [],
+                "updated_at": "2026-07-29T18:53:19Z"
+            },
+            {
+                "name": "preview-url",
+                "full_name": "jellydn/preview-url",
+                "description": "",
+                "url": "https://github.com/jellydn/preview-url",
+                "homepage": "",
+                "stars": 1,
+                "forks": 0,
+                "language": "Svelte",
+                "topics": [],
+                "updated_at": "2026-07-27T17:55:54Z"
             },
             {
                 "name": "practicepython",
@@ -1867,16 +1891,49 @@
                 "updated_at": "2022-05-29T07:50:37Z"
             },
             {
-                "name": "personal-ai",
-                "full_name": "jellydn/personal-ai",
-                "description": "My AI projects from the last nine months",
-                "url": "https://github.com/jellydn/personal-ai",
-                "homepage": "https://jellydn.github.io/personal-ai/",
+                "name": "tiny-pomodoro",
+                "full_name": "jellydn/tiny-pomodoro",
+                "description": "A simple, fast Pomodoro timer app with presets, background operation, and lock screen widgets.",
+                "url": "https://github.com/jellydn/tiny-pomodoro",
+                "homepage": "",
                 "stars": 0,
                 "forks": 0,
-                "language": "HTML",
+                "language": "TypeScript",
+                "topics": [
+                    "expo",
+                    "pomodoro",
+                    "react-native"
+                ],
+                "updated_at": "2026-08-03T05:10:31Z"
+            },
+            {
+                "name": "echo-note",
+                "full_name": "jellydn/echo-note",
+                "description": "Privacy-first meeting transcription and summarization app",
+                "url": "https://github.com/jellydn/echo-note",
+                "homepage": "",
+                "stars": 0,
+                "forks": 0,
+                "language": "Rust",
                 "topics": [],
-                "updated_at": "2026-08-01T15:01:35Z"
+                "updated_at": "2026-08-03T00:43:25Z"
+            },
+            {
+                "name": "rabbitmq-demo",
+                "full_name": "jellydn/rabbitmq-demo",
+                "description": "Receiving messages based on a pattern (topics) & RPC call",
+                "url": "https://github.com/jellydn/rabbitmq-demo",
+                "homepage": "",
+                "stars": 0,
+                "forks": 0,
+                "language": "Go",
+                "topics": [
+                    "patterns",
+                    "rabbitmq",
+                    "rpc",
+                    "typescript"
+                ],
+                "updated_at": "2026-08-02T17:58:46Z"
             },
             {
                 "name": "playwright-mock-api",
@@ -1946,23 +2003,6 @@
                 "language": "Makefile",
                 "topics": [],
                 "updated_at": "2026-07-27T05:00:50Z"
-            },
-            {
-                "name": "rabbitmq-demo",
-                "full_name": "jellydn/rabbitmq-demo",
-                "description": "Receiving messages based on a pattern (topics) & RPC call",
-                "url": "https://github.com/jellydn/rabbitmq-demo",
-                "homepage": "",
-                "stars": 0,
-                "forks": 0,
-                "language": "Go",
-                "topics": [
-                    "patterns",
-                    "rabbitmq",
-                    "rpc",
-                    "typescript"
-                ],
-                "updated_at": "2026-07-27T05:00:08Z"
             },
             {
                 "name": "router-demo-app",
@@ -2109,18 +2149,6 @@
                 "updated_at": "2026-06-02T18:53:42Z"
             },
             {
-                "name": "echo-note",
-                "full_name": "jellydn/echo-note",
-                "description": "Privacy-first meeting transcription and summarization app",
-                "url": "https://github.com/jellydn/echo-note",
-                "homepage": "",
-                "stars": 0,
-                "forks": 0,
-                "language": "Rust",
-                "topics": [],
-                "updated_at": "2026-05-19T11:44:39Z"
-            },
-            {
                 "name": "keypulse",
                 "full_name": "jellydn/keypulse",
                 "description": "Make any keyboard feel satisfying.",
@@ -2158,22 +2186,6 @@
                 "language": "Python",
                 "topics": [],
                 "updated_at": "2026-02-11T15:39:23Z"
-            },
-            {
-                "name": "tiny-pomodoro",
-                "full_name": "jellydn/tiny-pomodoro",
-                "description": "A simple, fast Pomodoro timer app with presets, background operation, and lock screen widgets.",
-                "url": "https://github.com/jellydn/tiny-pomodoro",
-                "homepage": "",
-                "stars": 0,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [
-                    "expo",
-                    "pomodoro",
-                    "react-native"
-                ],
-                "updated_at": "2026-01-18T07:28:57Z"
             },
             {
                 "name": "EffortlessAlphabet",
@@ -2994,7 +3006,7 @@
                 "topics": [
                     "vscode-extension"
                 ],
-                "updated_at": "2026-07-27T04:29:04Z"
+                "updated_at": "2026-08-03T05:12:40Z"
             },
             {
                 "name": "vscode-fff-gpui",
@@ -3326,7 +3338,7 @@
                     "recoiljs",
                     "vitejs"
                 ],
-                "updated_at": "2026-08-01T09:50:04Z"
+                "updated_at": "2026-08-03T06:02:50Z"
             },
             {
                 "name": "use-wait-for-transaction-hash",
@@ -3399,7 +3411,7 @@
                     "react",
                     "react-email"
                 ],
-                "updated_at": "2026-07-27T06:11:09Z"
+                "updated_at": "2026-08-03T04:29:12Z"
             },
             {
                 "name": "react-18-demo",
@@ -3714,6 +3726,24 @@
                 "updated_at": "2021-07-01T07:11:50Z"
             },
             {
+                "name": "vite-react-demo",
+                "full_name": "jellydn/vite-react-demo",
+                "description": "This is a demo project for Vite + React + TailwindCSS + @TanStack/Query + React-Hook-Form + TypeScript.",
+                "url": "https://github.com/jellydn/vite-react-demo",
+                "homepage": "https://vite-react.productsway.com",
+                "stars": 0,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [
+                    "react",
+                    "react-hook-form",
+                    "react-query",
+                    "shadcn-ui",
+                    "tailwindcss"
+                ],
+                "updated_at": "2026-08-02T17:53:15Z"
+            },
+            {
                 "name": "blog",
                 "full_name": "jellydn/blog",
                 "description": "Senior Full Stack Software Engineer. Building blockchain-based carbon exchange platforms with TypeScript, Node.js, and React.",
@@ -3726,7 +3756,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-08-01T05:48:04Z"
+                "updated_at": "2026-08-02T05:48:32Z"
             },
             {
                 "name": "zod-tutorial-kit",
@@ -3744,24 +3774,6 @@
                     "zod"
                 ],
                 "updated_at": "2026-07-30T22:50:47Z"
-            },
-            {
-                "name": "vite-react-demo",
-                "full_name": "jellydn/vite-react-demo",
-                "description": "This is a demo project for Vite + React + TailwindCSS + @TanStack/Query + React-Hook-Form + TypeScript.",
-                "url": "https://github.com/jellydn/vite-react-demo",
-                "homepage": "https://vite-react.productsway.com",
-                "stars": 0,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [
-                    "react",
-                    "react-hook-form",
-                    "react-query",
-                    "shadcn-ui",
-                    "tailwindcss"
-                ],
-                "updated_at": "2026-07-08T23:55:53Z"
             },
             {
                 "name": "nhost-quickstart-app",
