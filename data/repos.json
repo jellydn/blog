@@ -8,7 +8,7 @@
                 "description": "Comprehensive configuration management for AI coding tools - Replicate my complete setup for Claude Code, OpenCode, Amp, Li, Codex and Claude Code Switch with custom configurations, MCP servers, plugins, and commands.",
                 "url": "https://github.com/jellydn/my-ai-tools",
                 "homepage": "http://ai-tools.itman.fyi/",
-                "stars": 109,
+                "stars": 110,
                 "forks": 13,
                 "language": "Shell",
                 "topics": [
@@ -18,7 +18,7 @@
                     "open-code",
                     "skills"
                 ],
-                "updated_at": "2026-08-04T03:07:07Z"
+                "updated_at": "2026-08-04T14:16:55Z"
             },
             {
                 "name": "gpt4free-demo",
@@ -88,7 +88,7 @@
                     "cli",
                     "coding-assistant"
                 ],
-                "updated_at": "2026-08-01T05:14:51Z"
+                "updated_at": "2026-08-04T14:39:32Z"
             },
             {
                 "name": "pi-qwencloud-provider",
@@ -111,7 +111,7 @@
                 "description": "A fast, secure launcher CLI tool that lets you switch between different AI coding assistants using fuzzy search.",
                 "url": "https://github.com/jellydn/ai-launcher",
                 "homepage": "http://ai-cli.itman.fyi/",
-                "stars": 9,
+                "stars": 10,
                 "forks": 2,
                 "language": "TypeScript",
                 "topics": [
@@ -123,7 +123,7 @@
                     "open-code",
                     "open-source"
                 ],
-                "updated_at": "2026-08-03T03:41:10Z"
+                "updated_at": "2026-08-04T14:27:19Z"
             },
             {
                 "name": "summary-chatbot-demo",
@@ -171,11 +171,11 @@
                 "updated_at": "2026-07-05T02:58:59Z"
             },
             {
-                "name": "flue-repo-assistant",
-                "full_name": "jellydn/flue-repo-assistant",
-                "description": "Repository Analysis Agent with Flue",
-                "url": "https://github.com/jellydn/flue-repo-assistant",
-                "homepage": "https://jellydn.github.io/flue-repo-assistant/",
+                "name": "flowly",
+                "full_name": "jellydn/flowly",
+                "description": "AI-native engineering assistant for modern development.",
+                "url": "https://github.com/jellydn/flowly",
+                "homepage": "https://jellydn.github.io/flowly/",
                 "stars": 2,
                 "forks": 0,
                 "language": "TypeScript",
@@ -184,7 +184,7 @@
                     "flue",
                     "flueframework"
                 ],
-                "updated_at": "2026-08-04T05:34:33Z"
+                "updated_at": "2026-08-05T03:36:07Z"
             },
             {
                 "name": "logpilot",
@@ -252,9 +252,11 @@
                 "forks": 0,
                 "language": "TypeScript",
                 "topics": [
+                    "ai",
+                    "llm",
                     "react-router"
                 ],
-                "updated_at": "2026-08-04T05:16:52Z"
+                "updated_at": "2026-08-05T03:30:08Z"
             },
             {
                 "name": "ai-photo-coach",
@@ -513,7 +515,7 @@
                 "description": "Your ultimate guide to setting up Zed with Vim mode, tailored settings, and key bindings for a seamless coding experience",
                 "url": "https://github.com/jellydn/zed-101-setup",
                 "homepage": "https://itman.fyi",
-                "stars": 1417,
+                "stars": 1422,
                 "forks": 29,
                 "language": "TypeScript",
                 "topics": [
@@ -521,7 +523,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-08-04T02:12:06Z"
+                "updated_at": "2026-08-04T23:03:02Z"
             },
             {
                 "name": "typescript-tips",
@@ -555,7 +557,7 @@
                     "typesafe",
                     "typescript"
                 ],
-                "updated_at": "2026-08-01T18:51:40Z"
+                "updated_at": "2026-08-05T02:53:41Z"
             },
             {
                 "name": "fastify-starter",
@@ -710,7 +712,7 @@
                 "description": "Open Zed terminals inside tmux or zellij — port of vscode-mux to the Zed editor.",
                 "url": "https://github.com/jellydn/zed-codemux",
                 "homepage": "",
-                "stars": 13,
+                "stars": 14,
                 "forks": 1,
                 "language": "Rust",
                 "topics": [
@@ -719,7 +721,7 @@
                     "zed-extension",
                     "zellij"
                 ],
-                "updated_at": "2026-07-29T10:56:16Z"
+                "updated_at": "2026-08-04T23:02:38Z"
             },
             {
                 "name": "thirdweb-foundry-starter",
@@ -768,7 +770,7 @@
                     "crawlee",
                     "playwright-typescript"
                 ],
-                "updated_at": "2026-08-03T12:57:06Z"
+                "updated_at": "2026-08-04T22:45:26Z"
             },
             {
                 "name": "oak",
@@ -1010,7 +1012,7 @@
                     "cloudflare-worker",
                     "honojs"
                 ],
-                "updated_at": "2026-08-03T13:01:24Z"
+                "updated_at": "2026-08-04T06:15:55Z"
             },
             {
                 "name": "typescript-starter",
@@ -1279,7 +1281,7 @@
                     "js",
                     "typescript"
                 ],
-                "updated_at": "2026-08-03T09:59:38Z"
+                "updated_at": "2026-08-05T05:31:55Z"
             },
             {
                 "name": "deno-pkg-starter",
@@ -1500,6 +1502,22 @@
                 "updated_at": "2022-06-22T10:27:12Z"
             },
             {
+                "name": "reflex-demo",
+                "full_name": "jellydn/reflex-demo",
+                "description": "This is a demonstration project using reflex: Web apps in pure Python 🐍.",
+                "url": "https://github.com/jellydn/reflex-demo",
+                "homepage": "https://reflex-hello-world.reflex.run",
+                "stars": 1,
+                "forks": 0,
+                "language": "Python",
+                "topics": [
+                    "python",
+                    "reflex",
+                    "webapp"
+                ],
+                "updated_at": "2026-08-05T01:05:42Z"
+            },
+            {
                 "name": "mole-tui",
                 "full_name": "jellydn/mole-tui",
                 "description": "A keyboard-driven TUI that orchestrates Mole (mo) for disk cleanup.",
@@ -1509,19 +1527,7 @@
                 "forks": 0,
                 "language": "Go",
                 "topics": [],
-                "updated_at": "2026-08-04T00:05:30Z"
-            },
-            {
-                "name": "echo-note",
-                "full_name": "jellydn/echo-note",
-                "description": "Privacy-first meeting transcription and summarization app",
-                "url": "https://github.com/jellydn/echo-note",
-                "homepage": "",
-                "stars": 1,
-                "forks": 0,
-                "language": "Rust",
-                "topics": [],
-                "updated_at": "2026-08-03T09:23:24Z"
+                "updated_at": "2026-08-04T06:49:14Z"
             },
             {
                 "name": "practicepython",
@@ -1656,22 +1662,6 @@
                     "server-timing"
                 ],
                 "updated_at": "2026-07-16T05:44:54Z"
-            },
-            {
-                "name": "reflex-demo",
-                "full_name": "jellydn/reflex-demo",
-                "description": "This is a demonstration project using reflex: Web apps in pure Python 🐍.",
-                "url": "https://github.com/jellydn/reflex-demo",
-                "homepage": "https://reflex-hello-world.reflex.run",
-                "stars": 1,
-                "forks": 0,
-                "language": "Python",
-                "topics": [
-                    "python",
-                    "reflex",
-                    "webapp"
-                ],
-                "updated_at": "2026-07-16T04:31:42Z"
             },
             {
                 "name": "tiny-local-ai",
@@ -1903,6 +1893,45 @@
                 "updated_at": "2022-05-29T07:50:37Z"
             },
             {
+                "name": "pulumi-kubernetes-typescript",
+                "full_name": "jellydn/pulumi-kubernetes-typescript",
+                "description": "Simple Kubernetes cluster with TypeScript for Pulumi.",
+                "url": "https://github.com/jellydn/pulumi-kubernetes-typescript",
+                "homepage": "",
+                "stars": 0,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [
+                    "pulumi",
+                    "typescript"
+                ],
+                "updated_at": "2026-08-05T02:42:10Z"
+            },
+            {
+                "name": "echo-note",
+                "full_name": "jellydn/echo-note",
+                "description": "Privacy-first meeting transcription and summarization app",
+                "url": "https://github.com/jellydn/echo-note",
+                "homepage": "",
+                "stars": 0,
+                "forks": 0,
+                "language": "Rust",
+                "topics": [],
+                "updated_at": "2026-08-04T10:43:30Z"
+            },
+            {
+                "name": "muse-frame",
+                "full_name": "jellydn/muse-frame",
+                "description": "WIP: Muse Frame — AI photo frame MVP (TanStack Start + Cloudflare)",
+                "url": "https://github.com/jellydn/muse-frame",
+                "homepage": "",
+                "stars": 0,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [],
+                "updated_at": "2026-08-04T06:31:41Z"
+            },
+            {
                 "name": "tiny-pomodoro",
                 "full_name": "jellydn/tiny-pomodoro",
                 "description": "A simple, fast Pomodoro timer app with presets, background operation, and lock screen widgets.",
@@ -1917,21 +1946,6 @@
                     "react-native"
                 ],
                 "updated_at": "2026-08-03T16:32:32Z"
-            },
-            {
-                "name": "pulumi-kubernetes-typescript",
-                "full_name": "jellydn/pulumi-kubernetes-typescript",
-                "description": "Simple Kubernetes cluster with TypeScript for Pulumi.",
-                "url": "https://github.com/jellydn/pulumi-kubernetes-typescript",
-                "homepage": "",
-                "stars": 0,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [
-                    "pulumi",
-                    "typescript"
-                ],
-                "updated_at": "2026-08-03T06:45:48Z"
             },
             {
                 "name": "spin-demo-apps",
@@ -2717,7 +2731,7 @@
                     "neovim",
                     "nvim-config"
                 ],
-                "updated_at": "2026-08-04T03:32:15Z"
+                "updated_at": "2026-08-04T23:17:22Z"
             },
             {
                 "name": "ts-inlay-hints",
@@ -3051,7 +3065,7 @@
                 "description": "This package reads your JSDoc-annotated source code on NextJS API route and generates an OpenAPI (Swagger) specification.",
                 "url": "https://github.com/jellydn/next-swagger-doc",
                 "homepage": "https://next-swagger-doc-demo.productsway.com/api-doc",
-                "stars": 520,
+                "stars": 518,
                 "forks": 37,
                 "language": "TypeScript",
                 "topics": [
@@ -3061,7 +3075,7 @@
                     "nextjs",
                     "swagger"
                 ],
-                "updated_at": "2026-06-05T05:27:17Z"
+                "updated_at": "2026-08-04T12:51:17Z"
             },
             {
                 "name": "dapp-starter",
@@ -3738,7 +3752,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-08-03T06:12:58Z"
+                "updated_at": "2026-08-04T05:41:13Z"
             },
             {
                 "name": "vite-react-demo",
