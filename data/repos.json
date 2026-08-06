@@ -8,7 +8,7 @@
                 "description": "Comprehensive configuration management for AI coding tools - Replicate my complete setup for Claude Code, OpenCode, Amp, Li, Codex and Claude Code Switch with custom configurations, MCP servers, plugins, and commands.",
                 "url": "https://github.com/jellydn/my-ai-tools",
                 "homepage": "http://ai-tools.itman.fyi/",
-                "stars": 110,
+                "stars": 111,
                 "forks": 13,
                 "language": "Shell",
                 "topics": [
@@ -18,7 +18,7 @@
                     "open-code",
                     "skills"
                 ],
-                "updated_at": "2026-08-04T14:16:55Z"
+                "updated_at": "2026-08-05T10:54:09Z"
             },
             {
                 "name": "gpt4free-demo",
@@ -70,7 +70,7 @@
                     "pythagora",
                     "turso"
                 ],
-                "updated_at": "2026-08-03T07:45:00Z"
+                "updated_at": "2026-08-05T10:06:43Z"
             },
             {
                 "name": "tiny-coding-agent",
@@ -168,7 +168,7 @@
                 "topics": [
                     "hermes-agent"
                 ],
-                "updated_at": "2026-07-05T02:58:59Z"
+                "updated_at": "2026-08-06T05:00:49Z"
             },
             {
                 "name": "flowly",
@@ -184,7 +184,7 @@
                     "flue",
                     "flueframework"
                 ],
-                "updated_at": "2026-08-05T03:36:07Z"
+                "updated_at": "2026-08-05T08:11:25Z"
             },
             {
                 "name": "logpilot",
@@ -247,7 +247,7 @@
                 "full_name": "jellydn/smart-resume-matcher",
                 "description": "AI-Powered Resume Tailoring for Job Applications",
                 "url": "https://github.com/jellydn/smart-resume-matcher",
-                "homepage": "https://smart-resume.itman.fyi",
+                "homepage": "https://smart-resume-matcher.itman.fyi/",
                 "stars": 0,
                 "forks": 0,
                 "language": "TypeScript",
@@ -256,7 +256,7 @@
                     "llm",
                     "react-router"
                 ],
-                "updated_at": "2026-08-05T03:30:08Z"
+                "updated_at": "2026-08-06T03:07:31Z"
             },
             {
                 "name": "ai-photo-coach",
@@ -472,6 +472,18 @@
                 "updated_at": "2024-07-28T07:21:24Z"
             },
             {
+                "name": "gmail-cleaner-cli",
+                "full_name": "jellydn/gmail-cleaner-cli",
+                "description": "the current implementation: Gmail OAuth login and read-only metadata listing now exist, while Gmail trash/restore/purge operations remain intentionally stubbed;",
+                "url": "https://github.com/jellydn/gmail-cleaner-cli",
+                "homepage": "",
+                "stars": 0,
+                "forks": 0,
+                "language": "Go",
+                "topics": [],
+                "updated_at": "2026-08-06T00:09:11Z"
+            },
+            {
                 "name": "devlog",
                 "full_name": "jellydn/devlog",
                 "description": "Zero-code log capture for local development. Captures server logs via tmux and browser console logs via a native messaging host — all controlled by a single YAML config.",
@@ -523,7 +535,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-08-04T23:03:02Z"
+                "updated_at": "2026-08-05T23:03:46Z"
             },
             {
                 "name": "typescript-tips",
@@ -770,7 +782,7 @@
                     "crawlee",
                     "playwright-typescript"
                 ],
-                "updated_at": "2026-08-04T22:45:26Z"
+                "updated_at": "2026-08-05T22:01:45Z"
             },
             {
                 "name": "oak",
@@ -852,7 +864,7 @@
                     "mailwind",
                     "tailwindcss"
                 ],
-                "updated_at": "2026-08-03T14:59:42Z"
+                "updated_at": "2026-08-05T22:30:00Z"
             },
             {
                 "name": "promise-should-be-fun",
@@ -999,22 +1011,6 @@
                 "updated_at": "2024-10-16T16:51:32Z"
             },
             {
-                "name": "hono-minimal-app",
-                "full_name": "jellydn/hono-minimal-app",
-                "description": "This is a minimal project with honojs",
-                "url": "https://github.com/jellydn/hono-minimal-app",
-                "homepage": "https://hono-demo-app.jellydn.workers.dev/",
-                "stars": 4,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [
-                    "cloudflare",
-                    "cloudflare-worker",
-                    "honojs"
-                ],
-                "updated_at": "2026-08-04T06:15:55Z"
-            },
-            {
                 "name": "typescript-starter",
                 "full_name": "jellydn/typescript-starter",
                 "description": "Typescript starter project",
@@ -1028,7 +1024,23 @@
                     "template",
                     "typescript"
                 ],
-                "updated_at": "2026-08-03T06:32:47Z"
+                "updated_at": "2026-08-05T22:41:24Z"
+            },
+            {
+                "name": "hono-minimal-app",
+                "full_name": "jellydn/hono-minimal-app",
+                "description": "This is a minimal project with honojs",
+                "url": "https://github.com/jellydn/hono-minimal-app",
+                "homepage": "https://hono-demo-app.jellydn.workers.dev/",
+                "stars": 4,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [
+                    "cloudflare",
+                    "cloudflare-worker",
+                    "honojs"
+                ],
+                "updated_at": "2026-08-05T18:46:57Z"
             },
             {
                 "name": "edge-network-demo",
@@ -1281,7 +1293,7 @@
                     "js",
                     "typescript"
                 ],
-                "updated_at": "2026-08-05T05:31:55Z"
+                "updated_at": "2026-08-05T23:39:39Z"
             },
             {
                 "name": "deno-pkg-starter",
@@ -1502,46 +1514,16 @@
                 "updated_at": "2022-06-22T10:27:12Z"
             },
             {
-                "name": "reflex-demo",
-                "full_name": "jellydn/reflex-demo",
-                "description": "This is a demonstration project using reflex: Web apps in pure Python 🐍.",
-                "url": "https://github.com/jellydn/reflex-demo",
-                "homepage": "https://reflex-hello-world.reflex.run",
+                "name": "personal-ai",
+                "full_name": "jellydn/personal-ai",
+                "description": "My AI projects from the last nine months",
+                "url": "https://github.com/jellydn/personal-ai",
+                "homepage": "https://jellydn.github.io/personal-ai/",
                 "stars": 1,
                 "forks": 0,
-                "language": "Python",
-                "topics": [
-                    "python",
-                    "reflex",
-                    "webapp"
-                ],
-                "updated_at": "2026-08-05T01:05:42Z"
-            },
-            {
-                "name": "mole-tui",
-                "full_name": "jellydn/mole-tui",
-                "description": "A keyboard-driven TUI that orchestrates Mole (mo) for disk cleanup.",
-                "url": "https://github.com/jellydn/mole-tui",
-                "homepage": "",
-                "stars": 1,
-                "forks": 0,
-                "language": "Go",
+                "language": "HTML",
                 "topics": [],
-                "updated_at": "2026-08-04T06:49:14Z"
-            },
-            {
-                "name": "practicepython",
-                "full_name": "jellydn/practicepython",
-                "description": "Learn how to code by practicing Python exercises.",
-                "url": "https://github.com/jellydn/practicepython",
-                "homepage": "",
-                "stars": 1,
-                "forks": 0,
-                "language": "",
-                "topics": [
-                    "python"
-                ],
-                "updated_at": "2026-08-03T07:06:18Z"
+                "updated_at": "2026-08-06T02:57:46Z"
             },
             {
                 "name": "db-management-demo",
@@ -1558,7 +1540,49 @@
                     "prisma",
                     "tbls"
                 ],
-                "updated_at": "2026-08-03T05:40:41Z"
+                "updated_at": "2026-08-05T17:54:21Z"
+            },
+            {
+                "name": "mole-tui",
+                "full_name": "jellydn/mole-tui",
+                "description": "A keyboard-driven TUI that orchestrates Mole (mo) for disk cleanup.",
+                "url": "https://github.com/jellydn/mole-tui",
+                "homepage": "",
+                "stars": 1,
+                "forks": 0,
+                "language": "Go",
+                "topics": [],
+                "updated_at": "2026-08-05T09:43:02Z"
+            },
+            {
+                "name": "reflex-demo",
+                "full_name": "jellydn/reflex-demo",
+                "description": "This is a demonstration project using reflex: Web apps in pure Python 🐍.",
+                "url": "https://github.com/jellydn/reflex-demo",
+                "homepage": "https://reflex-hello-world.reflex.run",
+                "stars": 1,
+                "forks": 0,
+                "language": "Python",
+                "topics": [
+                    "python",
+                    "reflex",
+                    "webapp"
+                ],
+                "updated_at": "2026-08-05T01:05:42Z"
+            },
+            {
+                "name": "practicepython",
+                "full_name": "jellydn/practicepython",
+                "description": "Learn how to code by practicing Python exercises.",
+                "url": "https://github.com/jellydn/practicepython",
+                "homepage": "",
+                "stars": 1,
+                "forks": 0,
+                "language": "",
+                "topics": [
+                    "python"
+                ],
+                "updated_at": "2026-08-03T07:06:18Z"
             },
             {
                 "name": "remix-app-demo",
@@ -1586,18 +1610,6 @@
                 "language": "JavaScript",
                 "topics": [],
                 "updated_at": "2026-08-02T07:22:42Z"
-            },
-            {
-                "name": "personal-ai",
-                "full_name": "jellydn/personal-ai",
-                "description": "My AI projects from the last nine months",
-                "url": "https://github.com/jellydn/personal-ai",
-                "homepage": "https://jellydn.github.io/personal-ai/",
-                "stars": 1,
-                "forks": 0,
-                "language": "HTML",
-                "topics": [],
-                "updated_at": "2026-08-02T06:29:22Z"
             },
             {
                 "name": "nextjs15-react19-demo",
@@ -2836,7 +2848,7 @@
                 "description": "A set of vim, zsh, fish, tmux, zeliij, git configuration files and tools.",
                 "url": "https://github.com/jellydn/dotfiles",
                 "homepage": "",
-                "stars": 17,
+                "stars": 18,
                 "forks": 3,
                 "language": "Shell",
                 "topics": [
@@ -2854,7 +2866,7 @@
                     "zellij",
                     "zsh"
                 ],
-                "updated_at": "2026-06-23T22:09:09Z"
+                "updated_at": "2026-08-06T03:06:29Z"
             },
             {
                 "name": "learn-vim-with-vscode",
@@ -3571,7 +3583,7 @@
                     "shadcn-ui",
                     "tailwindcss"
                 ],
-                "updated_at": "2026-08-01T09:29:06Z"
+                "updated_at": "2026-08-05T14:04:23Z"
             },
             {
                 "name": "react-router-v7-tailwinds-v4-app",
@@ -3752,7 +3764,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-08-04T05:41:13Z"
+                "updated_at": "2026-08-05T05:39:07Z"
             },
             {
                 "name": "vite-react-demo",
