@@ -8,7 +8,7 @@
                 "description": "Comprehensive configuration management for AI coding tools - Replicate my complete setup for Claude Code, OpenCode, Amp, Li, Codex and Claude Code Switch with custom configurations, MCP servers, plugins, and commands.",
                 "url": "https://github.com/jellydn/my-ai-tools",
                 "homepage": "http://ai-tools.itman.fyi/",
-                "stars": 111,
+                "stars": 112,
                 "forks": 13,
                 "language": "Shell",
                 "topics": [
@@ -18,7 +18,7 @@
                     "open-code",
                     "skills"
                 ],
-                "updated_at": "2026-08-05T10:54:09Z"
+                "updated_at": "2026-08-07T13:11:34Z"
             },
             {
                 "name": "gpt4free-demo",
@@ -168,7 +168,7 @@
                 "topics": [
                     "hermes-agent"
                 ],
-                "updated_at": "2026-08-07T00:59:17Z"
+                "updated_at": "2026-08-07T17:40:59Z"
             },
             {
                 "name": "flowly",
@@ -256,7 +256,7 @@
                     "llm",
                     "react-router"
                 ],
-                "updated_at": "2026-08-06T03:07:31Z"
+                "updated_at": "2026-08-07T06:28:24Z"
             },
             {
                 "name": "ai-photo-coach",
@@ -535,7 +535,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-08-06T19:11:49Z"
+                "updated_at": "2026-08-08T01:27:52Z"
             },
             {
                 "name": "typescript-tips",
@@ -724,7 +724,7 @@
                 "description": "Open Zed terminals inside tmux or zellij — port of vscode-mux to the Zed editor.",
                 "url": "https://github.com/jellydn/zed-codemux",
                 "homepage": "",
-                "stars": 14,
+                "stars": 13,
                 "forks": 1,
                 "language": "Rust",
                 "topics": [
@@ -733,7 +733,7 @@
                     "zed-extension",
                     "zellij"
                 ],
-                "updated_at": "2026-08-04T23:02:38Z"
+                "updated_at": "2026-08-07T20:41:04Z"
             },
             {
                 "name": "thirdweb-foundry-starter",
@@ -782,7 +782,7 @@
                     "crawlee",
                     "playwright-typescript"
                 ],
-                "updated_at": "2026-08-06T19:03:25Z"
+                "updated_at": "2026-08-07T20:38:31Z"
             },
             {
                 "name": "oak",
@@ -864,7 +864,7 @@
                     "mailwind",
                     "tailwindcss"
                 ],
-                "updated_at": "2026-08-06T16:59:43Z"
+                "updated_at": "2026-08-07T18:15:01Z"
             },
             {
                 "name": "promise-should-be-fun",
@@ -929,7 +929,7 @@
                     "websocket",
                     "ws"
                 ],
-                "updated_at": "2026-08-04T01:32:43Z"
+                "updated_at": "2026-08-07T21:03:04Z"
             },
             {
                 "name": "monorepo-starter",
@@ -1024,7 +1024,7 @@
                     "template",
                     "typescript"
                 ],
-                "updated_at": "2026-08-06T18:52:03Z"
+                "updated_at": "2026-08-07T22:29:22Z"
             },
             {
                 "name": "hono-minimal-app",
@@ -1040,7 +1040,7 @@
                     "cloudflare-worker",
                     "honojs"
                 ],
-                "updated_at": "2026-08-05T18:46:57Z"
+                "updated_at": "2026-08-07T18:32:02Z"
             },
             {
                 "name": "edge-network-demo",
@@ -1293,7 +1293,7 @@
                     "js",
                     "typescript"
                 ],
-                "updated_at": "2026-08-06T17:09:24Z"
+                "updated_at": "2026-08-07T17:15:58Z"
             },
             {
                 "name": "deno-pkg-starter",
@@ -1514,18 +1514,6 @@
                 "updated_at": "2022-06-22T10:27:12Z"
             },
             {
-                "name": "nextjs15-react19-demo",
-                "full_name": "jellydn/nextjs15-react19-demo",
-                "description": "",
-                "url": "https://github.com/jellydn/nextjs15-react19-demo",
-                "homepage": "",
-                "stars": 1,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [],
-                "updated_at": "2026-08-07T01:56:58Z"
-            },
-            {
                 "name": "db-management-demo",
                 "full_name": "jellydn/db-management-demo",
                 "description": "This is simple demo of how to manage database using prisma and tbls for documentation.",
@@ -1540,7 +1528,31 @@
                     "prisma",
                     "tbls"
                 ],
-                "updated_at": "2026-08-06T18:54:34Z"
+                "updated_at": "2026-08-07T16:50:21Z"
+            },
+            {
+                "name": "personal-ai",
+                "full_name": "jellydn/personal-ai",
+                "description": "My AI projects from the last nine months",
+                "url": "https://github.com/jellydn/personal-ai",
+                "homepage": "https://jellydn.github.io/personal-ai/",
+                "stars": 1,
+                "forks": 0,
+                "language": "HTML",
+                "topics": [],
+                "updated_at": "2026-08-07T06:37:17Z"
+            },
+            {
+                "name": "nextjs15-react19-demo",
+                "full_name": "jellydn/nextjs15-react19-demo",
+                "description": "",
+                "url": "https://github.com/jellydn/nextjs15-react19-demo",
+                "homepage": "",
+                "stars": 1,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [],
+                "updated_at": "2026-08-07T01:56:58Z"
             },
             {
                 "name": "practicepython",
@@ -1555,18 +1567,6 @@
                     "python"
                 ],
                 "updated_at": "2026-08-06T08:43:52Z"
-            },
-            {
-                "name": "personal-ai",
-                "full_name": "jellydn/personal-ai",
-                "description": "My AI projects from the last nine months",
-                "url": "https://github.com/jellydn/personal-ai",
-                "homepage": "https://jellydn.github.io/personal-ai/",
-                "stars": 1,
-                "forks": 0,
-                "language": "HTML",
-                "topics": [],
-                "updated_at": "2026-08-06T02:57:46Z"
             },
             {
                 "name": "mole-tui",
@@ -1905,6 +1905,35 @@
                 "updated_at": "2022-05-29T07:50:37Z"
             },
             {
+                "name": "rabbitmq-demo",
+                "full_name": "jellydn/rabbitmq-demo",
+                "description": "Receiving messages based on a pattern (topics) & RPC call",
+                "url": "https://github.com/jellydn/rabbitmq-demo",
+                "homepage": "",
+                "stars": 0,
+                "forks": 0,
+                "language": "Go",
+                "topics": [
+                    "patterns",
+                    "rabbitmq",
+                    "rpc",
+                    "typescript"
+                ],
+                "updated_at": "2026-08-07T10:12:20Z"
+            },
+            {
+                "name": "homebrew-tap",
+                "full_name": "jellydn/homebrew-tap",
+                "description": "Homebrew tap for jellydn packages",
+                "url": "https://github.com/jellydn/homebrew-tap",
+                "homepage": "",
+                "stars": 0,
+                "forks": 0,
+                "language": "Ruby",
+                "topics": [],
+                "updated_at": "2026-08-07T07:50:25Z"
+            },
+            {
                 "name": "remix-spa",
                 "full_name": "jellydn/remix-spa",
                 "description": "Remix SPA Starter",
@@ -2002,23 +2031,6 @@
                 "updated_at": "2026-08-03T06:13:19Z"
             },
             {
-                "name": "rabbitmq-demo",
-                "full_name": "jellydn/rabbitmq-demo",
-                "description": "Receiving messages based on a pattern (topics) & RPC call",
-                "url": "https://github.com/jellydn/rabbitmq-demo",
-                "homepage": "",
-                "stars": 0,
-                "forks": 0,
-                "language": "Go",
-                "topics": [
-                    "patterns",
-                    "rabbitmq",
-                    "rpc",
-                    "typescript"
-                ],
-                "updated_at": "2026-08-02T17:58:46Z"
-            },
-            {
                 "name": "playwright-mock-api",
                 "full_name": "jellydn/playwright-mock-api",
                 "description": "Mocking API with Playwright",
@@ -2044,18 +2056,6 @@
                     "tanstack-router"
                 ],
                 "updated_at": "2026-07-25T04:51:07Z"
-            },
-            {
-                "name": "homebrew-tap",
-                "full_name": "jellydn/homebrew-tap",
-                "description": "Homebrew tap for jellydn packages",
-                "url": "https://github.com/jellydn/homebrew-tap",
-                "homepage": "",
-                "stars": 0,
-                "forks": 0,
-                "language": "Ruby",
-                "topics": [],
-                "updated_at": "2026-07-21T15:08:52Z"
             },
             {
                 "name": "mac-cleaner",
@@ -3764,7 +3764,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-08-06T05:42:10Z"
+                "updated_at": "2026-08-07T04:49:53Z"
             },
             {
                 "name": "vite-react-demo",
