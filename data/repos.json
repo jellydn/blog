@@ -2702,7 +2702,7 @@
                 "description": "Hurl.nvim is a Neovim plugin designed to run HTTP requests directly from `.hurl` files. Elevate your API development workflow by executing and viewing responses without leaving your editor.",
                 "url": "https://github.com/jellydn/hurl.nvim",
                 "homepage": "https://gyazo.com/19492e8b5366cec3f22d5fd97a63f37a",
-                "stars": 257,
+                "stars": 258,
                 "forks": 20,
                 "language": "Lua",
                 "topics": [
@@ -2711,7 +2711,7 @@
                     "neovim",
                     "neovim-plugin"
                 ],
-                "updated_at": "2026-08-03T15:56:22Z"
+                "updated_at": "2026-08-09T09:51:54Z"
             },
             {
                 "name": "lazy-nvim-ide",
@@ -3764,7 +3764,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-08-08T04:07:06Z"
+                "updated_at": "2026-08-09T04:12:09Z"
             },
             {
                 "name": "vite-react-demo",
