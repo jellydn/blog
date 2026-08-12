@@ -527,7 +527,7 @@
                 "description": "Your ultimate guide to setting up Zed with Vim mode, tailored settings, and key bindings for a seamless coding experience",
                 "url": "https://github.com/jellydn/zed-101-setup",
                 "homepage": "https://itman.fyi",
-                "stars": 1426,
+                "stars": 1427,
                 "forks": 29,
                 "language": "TypeScript",
                 "topics": [
@@ -535,7 +535,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-08-10T16:33:56Z"
+                "updated_at": "2026-08-11T17:09:20Z"
             },
             {
                 "name": "typescript-tips",
@@ -3764,7 +3764,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-08-10T04:23:47Z"
+                "updated_at": "2026-08-11T04:13:54Z"
             },
             {
                 "name": "vite-react-demo",
