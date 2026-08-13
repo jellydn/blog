@@ -8,7 +8,7 @@
                 "description": "Comprehensive configuration management for AI coding tools - Replicate my complete setup for Claude Code, OpenCode, Amp, Li, Codex and Claude Code Switch with custom configurations, MCP servers, plugins, and commands.",
                 "url": "https://github.com/jellydn/my-ai-tools",
                 "homepage": "http://ai-tools.itman.fyi/",
-                "stars": 114,
+                "stars": 115,
                 "forks": 13,
                 "language": "Shell",
                 "topics": [
@@ -18,7 +18,7 @@
                     "open-code",
                     "skills"
                 ],
-                "updated_at": "2026-08-08T07:27:13Z"
+                "updated_at": "2026-08-12T07:02:31Z"
             },
             {
                 "name": "gpt4free-demo",
@@ -527,7 +527,7 @@
                 "description": "Your ultimate guide to setting up Zed with Vim mode, tailored settings, and key bindings for a seamless coding experience",
                 "url": "https://github.com/jellydn/zed-101-setup",
                 "homepage": "https://itman.fyi",
-                "stars": 1427,
+                "stars": 1428,
                 "forks": 29,
                 "language": "TypeScript",
                 "topics": [
@@ -535,7 +535,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-08-11T17:09:20Z"
+                "updated_at": "2026-08-12T19:51:56Z"
             },
             {
                 "name": "typescript-tips",
@@ -753,6 +753,24 @@
                 "updated_at": "2026-07-29T05:37:33Z"
             },
             {
+                "name": "oak",
+                "full_name": "jellydn/oak",
+                "description": "Oak is a lightweight macOS focus companion app with notch-based Pomodoro-style focus sessions and ambient audio.",
+                "url": "https://github.com/jellydn/oak",
+                "homepage": "https://jellydn.github.io/oak/",
+                "stars": 12,
+                "forks": 0,
+                "language": "Swift",
+                "topics": [
+                    "macos",
+                    "pomodoro",
+                    "pomodoro-clock",
+                    "pomodoro-timer",
+                    "swift"
+                ],
+                "updated_at": "2026-08-12T06:32:15Z"
+            },
+            {
                 "name": "modern-python-2024-demo",
                 "full_name": "jellydn/modern-python-2024-demo",
                 "description": "Modern development with Python in 2024",
@@ -782,25 +800,7 @@
                     "crawlee",
                     "playwright-typescript"
                 ],
-                "updated_at": "2026-08-10T10:41:13Z"
-            },
-            {
-                "name": "oak",
-                "full_name": "jellydn/oak",
-                "description": "Oak is a lightweight macOS focus companion app with notch-based Pomodoro-style focus sessions and ambient audio.",
-                "url": "https://github.com/jellydn/oak",
-                "homepage": "https://jellydn.github.io/oak/",
-                "stars": 11,
-                "forks": 0,
-                "language": "Swift",
-                "topics": [
-                    "macos",
-                    "pomodoro",
-                    "pomodoro-clock",
-                    "pomodoro-timer",
-                    "swift"
-                ],
-                "updated_at": "2026-08-02T16:11:46Z"
+                "updated_at": "2026-08-13T03:35:20Z"
             },
             {
                 "name": "github-action-locally",
@@ -1024,7 +1024,7 @@
                     "cloudflare-worker",
                     "honojs"
                 ],
-                "updated_at": "2026-08-10T22:34:52Z"
+                "updated_at": "2026-08-13T02:38:42Z"
             },
             {
                 "name": "typescript-starter",
@@ -3143,7 +3143,7 @@
                 "description": "How to create your own NFT and mint NFT token",
                 "url": "https://github.com/jellydn/nft-app",
                 "homepage": "https://nft-app.productsway.com/",
-                "stars": 223,
+                "stars": 224,
                 "forks": 103,
                 "language": "TypeScript",
                 "topics": [
@@ -3157,7 +3157,7 @@
                     "vitejs",
                     "web3"
                 ],
-                "updated_at": "2026-07-01T09:51:55Z"
+                "updated_at": "2026-08-13T03:40:30Z"
             },
             {
                 "name": "dapp-token-ico",
@@ -3764,7 +3764,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-08-11T04:13:54Z"
+                "updated_at": "2026-08-13T04:04:44Z"
             },
             {
                 "name": "vite-react-demo",
@@ -3782,7 +3782,7 @@
                     "shadcn-ui",
                     "tailwindcss"
                 ],
-                "updated_at": "2026-08-02T17:53:15Z"
+                "updated_at": "2026-08-12T18:35:29Z"
             },
             {
                 "name": "zod-tutorial-kit",
