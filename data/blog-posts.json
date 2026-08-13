@@ -56,14 +56,6 @@
         "hero_image": "https://cdn.hashnode.com/res/hashnode/image/upload/v1769048358793/b6ac629e-23fb-45da-b12f-672073702d15.png"
     },
     {
-        "slug": "power-up-2-plannotator-visual-plan-review-for-coding-agents",
-        "title": "Power-Up #2: Plannotator — Visual Plan Review for Coding Agents",
-        "description": "In the first entry of this series, I discussed Amp: an opinionated AI that integrates naturally into real developer workflows. This time, I want to highlight a tool that solves a specific but painful problem when working with AI coding agents: review...",
-        "date": "2026-01-06T05:30:55.035Z",
-        "tags": [],
-        "hero_image": "https://cdn.hashnode.com/res/hashnode/image/upload/v1770029871305/76965cf1-e3bc-44dd-a0e3-fbd02d3aa113.png"
-    },
-    {
         "slug": "power-up-1-amp-opinionated-ai-that-fits-real-developer-workflows",
         "title": "Power-Up #1: Amp — Opinionated AI That Fits Real Developer Workflows",
         "description": "In this entry of my AI DX/Tools series, I want to discuss Amp: an AI coding agent designed for developers who spend most of their time in the terminal and editor, rather than in chat windows.\n\nAmp is free to try, works locally, and integrates directl...",
