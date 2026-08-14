@@ -8,7 +8,7 @@
                 "description": "Comprehensive configuration management for AI coding tools - Replicate my complete setup for Claude Code, OpenCode, Amp, Li, Codex and Claude Code Switch with custom configurations, MCP servers, plugins, and commands.",
                 "url": "https://github.com/jellydn/my-ai-tools",
                 "homepage": "http://ai-tools.itman.fyi/",
-                "stars": 115,
+                "stars": 114,
                 "forks": 13,
                 "language": "Shell",
                 "topics": [
@@ -18,7 +18,7 @@
                     "open-code",
                     "skills"
                 ],
-                "updated_at": "2026-08-12T07:02:31Z"
+                "updated_at": "2026-08-13T15:04:26Z"
             },
             {
                 "name": "gpt4free-demo",
@@ -527,7 +527,7 @@
                 "description": "Your ultimate guide to setting up Zed with Vim mode, tailored settings, and key bindings for a seamless coding experience",
                 "url": "https://github.com/jellydn/zed-101-setup",
                 "homepage": "https://itman.fyi",
-                "stars": 1428,
+                "stars": 1429,
                 "forks": 29,
                 "language": "TypeScript",
                 "topics": [
@@ -535,7 +535,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-08-12T19:51:56Z"
+                "updated_at": "2026-08-13T11:37:14Z"
             },
             {
                 "name": "typescript-tips",
@@ -560,7 +560,7 @@
                 "description": "A curated list of awesome 🔥 TypeScript Typesafe Libraries🔥",
                 "url": "https://github.com/jellydn/awesome-typesafe",
                 "homepage": "http://typesafe.itman.fyi/",
-                "stars": 176,
+                "stars": 177,
                 "forks": 20,
                 "language": "",
                 "topics": [
@@ -569,7 +569,7 @@
                     "typesafe",
                     "typescript"
                 ],
-                "updated_at": "2026-08-08T06:42:03Z"
+                "updated_at": "2026-08-13T12:51:18Z"
             },
             {
                 "name": "fastify-starter",
@@ -1024,7 +1024,7 @@
                     "cloudflare-worker",
                     "honojs"
                 ],
-                "updated_at": "2026-08-13T02:38:42Z"
+                "updated_at": "2026-08-13T23:09:30Z"
             },
             {
                 "name": "typescript-starter",
@@ -1905,6 +1905,21 @@
                 "updated_at": "2022-05-29T07:50:37Z"
             },
             {
+                "name": "pulumi-kubernetes-typescript",
+                "full_name": "jellydn/pulumi-kubernetes-typescript",
+                "description": "Simple Kubernetes cluster with TypeScript for Pulumi.",
+                "url": "https://github.com/jellydn/pulumi-kubernetes-typescript",
+                "homepage": "",
+                "stars": 0,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [
+                    "pulumi",
+                    "typescript"
+                ],
+                "updated_at": "2026-08-13T22:03:53Z"
+            },
+            {
                 "name": "ioc-demo",
                 "full_name": "jellydn/ioc-demo",
                 "description": "Demo app with inversion of control container",
@@ -1930,21 +1945,6 @@
                 "language": "Makefile",
                 "topics": [],
                 "updated_at": "2026-08-10T04:44:49Z"
-            },
-            {
-                "name": "pulumi-kubernetes-typescript",
-                "full_name": "jellydn/pulumi-kubernetes-typescript",
-                "description": "Simple Kubernetes cluster with TypeScript for Pulumi.",
-                "url": "https://github.com/jellydn/pulumi-kubernetes-typescript",
-                "homepage": "",
-                "stars": 0,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [
-                    "pulumi",
-                    "typescript"
-                ],
-                "updated_at": "2026-08-10T04:41:53Z"
             },
             {
                 "name": "rabbitmq-demo",
@@ -2760,7 +2760,7 @@
                     "typescript",
                     "vscode"
                 ],
-                "updated_at": "2026-08-08T13:19:30Z"
+                "updated_at": "2026-08-13T21:28:25Z"
             },
             {
                 "name": "my-nvim-ide",
@@ -2967,7 +2967,7 @@
                     "hurl",
                     "vscode-extension"
                 ],
-                "updated_at": "2026-06-10T09:07:47Z"
+                "updated_at": "2026-08-13T22:36:53Z"
             },
             {
                 "name": "vscode-like-pro",
@@ -3764,7 +3764,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-08-13T04:04:44Z"
+                "updated_at": "2026-08-14T04:00:41Z"
             },
             {
                 "name": "vite-react-demo",
