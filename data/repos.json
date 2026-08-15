@@ -18,7 +18,7 @@
                     "open-code",
                     "skills"
                 ],
-                "updated_at": "2026-08-13T15:04:26Z"
+                "updated_at": "2026-08-14T14:25:59Z"
             },
             {
                 "name": "gpt4free-demo",
@@ -481,7 +481,7 @@
                 "forks": 0,
                 "language": "Go",
                 "topics": [],
-                "updated_at": "2026-08-06T00:09:11Z"
+                "updated_at": "2026-08-14T15:25:13Z"
             },
             {
                 "name": "devlog",
@@ -527,7 +527,7 @@
                 "description": "Your ultimate guide to setting up Zed with Vim mode, tailored settings, and key bindings for a seamless coding experience",
                 "url": "https://github.com/jellydn/zed-101-setup",
                 "homepage": "https://itman.fyi",
-                "stars": 1429,
+                "stars": 1428,
                 "forks": 29,
                 "language": "TypeScript",
                 "topics": [
@@ -535,7 +535,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-08-13T11:37:14Z"
+                "updated_at": "2026-08-14T20:00:49Z"
             },
             {
                 "name": "typescript-tips",
@@ -2760,7 +2760,7 @@
                     "typescript",
                     "vscode"
                 ],
-                "updated_at": "2026-08-13T21:28:25Z"
+                "updated_at": "2026-08-15T00:03:39Z"
             },
             {
                 "name": "my-nvim-ide",
@@ -3087,7 +3087,7 @@
                     "nextjs",
                     "swagger"
                 ],
-                "updated_at": "2026-08-06T18:25:23Z"
+                "updated_at": "2026-08-14T20:03:50Z"
             },
             {
                 "name": "dapp-starter",
@@ -3764,7 +3764,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-08-14T04:00:41Z"
+                "updated_at": "2026-08-14T04:43:30Z"
             },
             {
                 "name": "vite-react-demo",
