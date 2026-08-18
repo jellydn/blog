@@ -34,7 +34,7 @@
                     "gpt4free",
                     "raycast-extension"
                 ],
-                "updated_at": "2026-08-10T05:34:13Z"
+                "updated_at": "2026-08-17T06:13:49Z"
             },
             {
                 "name": "gpt4all-cli",
@@ -70,7 +70,7 @@
                     "pythagora",
                     "turso"
                 ],
-                "updated_at": "2026-08-10T10:56:39Z"
+                "updated_at": "2026-08-17T06:05:41Z"
             },
             {
                 "name": "tiny-coding-agent",
@@ -527,7 +527,7 @@
                 "description": "Your ultimate guide to setting up Zed with Vim mode, tailored settings, and key bindings for a seamless coding experience",
                 "url": "https://github.com/jellydn/zed-101-setup",
                 "homepage": "https://itman.fyi",
-                "stars": 1427,
+                "stars": 1428,
                 "forks": 29,
                 "language": "TypeScript",
                 "topics": [
@@ -535,7 +535,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-08-16T07:59:17Z"
+                "updated_at": "2026-08-17T20:49:11Z"
             },
             {
                 "name": "typescript-tips",
@@ -552,7 +552,7 @@
                     "tips-and-tricks",
                     "typescript"
                 ],
-                "updated_at": "2026-08-16T07:59:16Z"
+                "updated_at": "2026-08-17T05:31:16Z"
             },
             {
                 "name": "awesome-typesafe",
@@ -561,7 +561,7 @@
                 "url": "https://github.com/jellydn/awesome-typesafe",
                 "homepage": "http://typesafe.itman.fyi/",
                 "stars": 178,
-                "forks": 21,
+                "forks": 22,
                 "language": "",
                 "topics": [
                     "awesome",
@@ -668,7 +668,7 @@
                     "miryoku",
                     "silakka54"
                 ],
-                "updated_at": "2026-08-08T10:25:41Z"
+                "updated_at": "2026-08-17T03:53:25Z"
             },
             {
                 "name": "arch-linux-on-m2",
@@ -800,7 +800,7 @@
                     "crawlee",
                     "playwright-typescript"
                 ],
-                "updated_at": "2026-08-13T03:35:20Z"
+                "updated_at": "2026-08-17T05:12:13Z"
             },
             {
                 "name": "github-action-locally",
@@ -864,7 +864,7 @@
                     "mailwind",
                     "tailwindcss"
                 ],
-                "updated_at": "2026-08-10T09:11:35Z"
+                "updated_at": "2026-08-17T06:44:43Z"
             },
             {
                 "name": "promise-should-be-fun",
@@ -929,7 +929,7 @@
                     "websocket",
                     "ws"
                 ],
-                "updated_at": "2026-08-10T05:59:15Z"
+                "updated_at": "2026-08-17T04:42:15Z"
             },
             {
                 "name": "monorepo-starter",
@@ -1011,20 +1011,20 @@
                 "updated_at": "2024-10-16T16:51:32Z"
             },
             {
-                "name": "hono-minimal-app",
-                "full_name": "jellydn/hono-minimal-app",
-                "description": "This is a minimal project with honojs",
-                "url": "https://github.com/jellydn/hono-minimal-app",
-                "homepage": "https://hono-demo-app.jellydn.workers.dev/",
+                "name": "edge-network-demo",
+                "full_name": "jellydn/edge-network-demo",
+                "description": "Edge Network Demo",
+                "url": "https://github.com/jellydn/edge-network-demo",
+                "homepage": "https://hello.jellydn.workers.dev/",
                 "stars": 4,
-                "forks": 0,
+                "forks": 1,
                 "language": "TypeScript",
                 "topics": [
-                    "cloudflare",
-                    "cloudflare-worker",
-                    "honojs"
+                    "edge",
+                    "netlify-functions",
+                    "wrangler"
                 ],
-                "updated_at": "2026-08-13T23:09:30Z"
+                "updated_at": "2026-08-17T05:56:54Z"
             },
             {
                 "name": "typescript-starter",
@@ -1040,23 +1040,23 @@
                     "template",
                     "typescript"
                 ],
-                "updated_at": "2026-08-10T08:51:47Z"
+                "updated_at": "2026-08-17T04:29:50Z"
             },
             {
-                "name": "edge-network-demo",
-                "full_name": "jellydn/edge-network-demo",
-                "description": "Edge Network Demo",
-                "url": "https://github.com/jellydn/edge-network-demo",
-                "homepage": "https://hello.jellydn.workers.dev/",
+                "name": "hono-minimal-app",
+                "full_name": "jellydn/hono-minimal-app",
+                "description": "This is a minimal project with honojs",
+                "url": "https://github.com/jellydn/hono-minimal-app",
+                "homepage": "https://hono-demo-app.jellydn.workers.dev/",
                 "stars": 4,
-                "forks": 1,
+                "forks": 0,
                 "language": "TypeScript",
                 "topics": [
-                    "edge",
-                    "netlify-functions",
-                    "wrangler"
+                    "cloudflare",
+                    "cloudflare-worker",
+                    "honojs"
                 ],
-                "updated_at": "2026-08-03T06:13:03Z"
+                "updated_at": "2026-08-13T23:09:30Z"
             },
             {
                 "name": "docklight",
@@ -1136,7 +1136,7 @@
                     "stenciljs",
                     "web-component"
                 ],
-                "updated_at": "2026-08-10T05:03:18Z"
+                "updated_at": "2026-08-17T05:58:32Z"
             },
             {
                 "name": "tempora-saga-demo",
@@ -1523,7 +1523,36 @@
                 "forks": 0,
                 "language": "Go",
                 "topics": [],
-                "updated_at": "2026-08-17T02:43:30Z"
+                "updated_at": "2026-08-17T07:58:03Z"
+            },
+            {
+                "name": "remix-app-demo",
+                "full_name": "jellydn/remix-app-demo",
+                "description": "Remix Demo App with Vercel for deployment",
+                "url": "https://github.com/jellydn/remix-app-demo",
+                "homepage": "https://remix-app-demo.vercel.app/",
+                "stars": 1,
+                "forks": 1,
+                "language": "TypeScript",
+                "topics": [
+                    "remix",
+                    "vercel"
+                ],
+                "updated_at": "2026-08-17T07:07:21Z"
+            },
+            {
+                "name": "practicepython",
+                "full_name": "jellydn/practicepython",
+                "description": "Learn how to code by practicing Python exercises.",
+                "url": "https://github.com/jellydn/practicepython",
+                "homepage": "",
+                "stars": 1,
+                "forks": 0,
+                "language": "",
+                "topics": [
+                    "python"
+                ],
+                "updated_at": "2026-08-17T06:41:53Z"
             },
             {
                 "name": "personal-ai",
@@ -1553,35 +1582,6 @@
                     "tbls"
                 ],
                 "updated_at": "2026-08-10T08:57:43Z"
-            },
-            {
-                "name": "practicepython",
-                "full_name": "jellydn/practicepython",
-                "description": "Learn how to code by practicing Python exercises.",
-                "url": "https://github.com/jellydn/practicepython",
-                "homepage": "",
-                "stars": 1,
-                "forks": 0,
-                "language": "",
-                "topics": [
-                    "python"
-                ],
-                "updated_at": "2026-08-10T06:10:59Z"
-            },
-            {
-                "name": "remix-app-demo",
-                "full_name": "jellydn/remix-app-demo",
-                "description": "Remix Demo App with Vercel for deployment",
-                "url": "https://github.com/jellydn/remix-app-demo",
-                "homepage": "https://remix-app-demo.vercel.app/",
-                "stars": 1,
-                "forks": 1,
-                "language": "TypeScript",
-                "topics": [
-                    "remix",
-                    "vercel"
-                ],
-                "updated_at": "2026-08-10T05:50:13Z"
             },
             {
                 "name": "nextjs15-react19-demo",
@@ -1905,18 +1905,6 @@
                 "updated_at": "2022-05-29T07:50:37Z"
             },
             {
-                "name": "homebrew-tap",
-                "full_name": "jellydn/homebrew-tap",
-                "description": "Homebrew tap for jellydn packages",
-                "url": "https://github.com/jellydn/homebrew-tap",
-                "homepage": "",
-                "stars": 0,
-                "forks": 0,
-                "language": "Ruby",
-                "topics": [],
-                "updated_at": "2026-08-16T18:52:26Z"
-            },
-            {
                 "name": "pulumi-kubernetes-typescript",
                 "full_name": "jellydn/pulumi-kubernetes-typescript",
                 "description": "Simple Kubernetes cluster with TypeScript for Pulumi.",
@@ -1929,7 +1917,19 @@
                     "pulumi",
                     "typescript"
                 ],
-                "updated_at": "2026-08-13T22:03:53Z"
+                "updated_at": "2026-08-18T01:52:51Z"
+            },
+            {
+                "name": "spin-demo-apps",
+                "full_name": "jellydn/spin-demo-apps",
+                "description": "This repository contains three demo applications for Spin, written in Typescript, Go, and Rust. Each demo has its own README file with detailed instructions on how to run and use the application.",
+                "url": "https://github.com/jellydn/spin-demo-apps",
+                "homepage": "",
+                "stars": 0,
+                "forks": 0,
+                "language": "Makefile",
+                "topics": [],
+                "updated_at": "2026-08-17T05:49:53Z"
             },
             {
                 "name": "ioc-demo",
@@ -1944,19 +1944,19 @@
                     "inverifyjs",
                     "inversion-of-control"
                 ],
-                "updated_at": "2026-08-10T04:50:47Z"
+                "updated_at": "2026-08-17T05:43:32Z"
             },
             {
-                "name": "spin-demo-apps",
-                "full_name": "jellydn/spin-demo-apps",
-                "description": "This repository contains three demo applications for Spin, written in Typescript, Go, and Rust. Each demo has its own README file with detailed instructions on how to run and use the application.",
-                "url": "https://github.com/jellydn/spin-demo-apps",
+                "name": "homebrew-tap",
+                "full_name": "jellydn/homebrew-tap",
+                "description": "Homebrew tap for jellydn packages",
+                "url": "https://github.com/jellydn/homebrew-tap",
                 "homepage": "",
                 "stars": 0,
                 "forks": 0,
-                "language": "Makefile",
+                "language": "Ruby",
                 "topics": [],
-                "updated_at": "2026-08-10T04:44:49Z"
+                "updated_at": "2026-08-16T18:52:26Z"
             },
             {
                 "name": "rabbitmq-demo",
@@ -2866,7 +2866,7 @@
                     "zellij",
                     "zsh"
                 ],
-                "updated_at": "2026-08-16T02:54:48Z"
+                "updated_at": "2026-08-17T11:58:36Z"
             },
             {
                 "name": "learn-vim-with-vscode",
@@ -3032,7 +3032,7 @@
                 "topics": [
                     "vscode-extension"
                 ],
-                "updated_at": "2026-08-10T04:31:38Z"
+                "updated_at": "2026-08-17T06:00:47Z"
             },
             {
                 "name": "vscode-fff-gpui",
@@ -3364,7 +3364,7 @@
                     "recoiljs",
                     "vitejs"
                 ],
-                "updated_at": "2026-08-10T04:32:58Z"
+                "updated_at": "2026-08-17T06:43:19Z"
             },
             {
                 "name": "use-wait-for-transaction-hash",
@@ -3437,7 +3437,7 @@
                     "react",
                     "react-email"
                 ],
-                "updated_at": "2026-08-10T05:34:46Z"
+                "updated_at": "2026-08-17T05:29:17Z"
             },
             {
                 "name": "react-18-demo",
@@ -3764,7 +3764,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-08-16T03:41:18Z"
+                "updated_at": "2026-08-17T03:42:54Z"
             },
             {
                 "name": "vite-react-demo",
