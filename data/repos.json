@@ -34,7 +34,7 @@
                     "gpt4free",
                     "raycast-extension"
                 ],
-                "updated_at": "2026-08-17T06:13:49Z"
+                "updated_at": "2026-08-18T21:29:49Z"
             },
             {
                 "name": "gpt4all-cli",
@@ -168,7 +168,7 @@
                 "topics": [
                     "hermes-agent"
                 ],
-                "updated_at": "2026-08-08T15:14:04Z"
+                "updated_at": "2026-08-18T22:21:21Z"
             },
             {
                 "name": "flowly",
@@ -481,7 +481,7 @@
                 "forks": 0,
                 "language": "Go",
                 "topics": [],
-                "updated_at": "2026-08-16T14:09:05Z"
+                "updated_at": "2026-08-18T03:41:49Z"
             },
             {
                 "name": "devlog",
@@ -527,7 +527,7 @@
                 "description": "Your ultimate guide to setting up Zed with Vim mode, tailored settings, and key bindings for a seamless coding experience",
                 "url": "https://github.com/jellydn/zed-101-setup",
                 "homepage": "https://itman.fyi",
-                "stars": 1428,
+                "stars": 1429,
                 "forks": 29,
                 "language": "TypeScript",
                 "topics": [
@@ -535,7 +535,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-08-17T20:49:11Z"
+                "updated_at": "2026-08-18T19:04:57Z"
             },
             {
                 "name": "typescript-tips",
@@ -1011,6 +1011,22 @@
                 "updated_at": "2024-10-16T16:51:32Z"
             },
             {
+                "name": "hono-minimal-app",
+                "full_name": "jellydn/hono-minimal-app",
+                "description": "This is a minimal project with honojs",
+                "url": "https://github.com/jellydn/hono-minimal-app",
+                "homepage": "https://hono-demo-app.jellydn.workers.dev/",
+                "stars": 4,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [
+                    "cloudflare",
+                    "cloudflare-worker",
+                    "honojs"
+                ],
+                "updated_at": "2026-08-18T22:43:16Z"
+            },
+            {
                 "name": "edge-network-demo",
                 "full_name": "jellydn/edge-network-demo",
                 "description": "Edge Network Demo",
@@ -1041,22 +1057,6 @@
                     "typescript"
                 ],
                 "updated_at": "2026-08-17T04:29:50Z"
-            },
-            {
-                "name": "hono-minimal-app",
-                "full_name": "jellydn/hono-minimal-app",
-                "description": "This is a minimal project with honojs",
-                "url": "https://github.com/jellydn/hono-minimal-app",
-                "homepage": "https://hono-demo-app.jellydn.workers.dev/",
-                "stars": 4,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [
-                    "cloudflare",
-                    "cloudflare-worker",
-                    "honojs"
-                ],
-                "updated_at": "2026-08-13T23:09:30Z"
             },
             {
                 "name": "docklight",
@@ -1523,7 +1523,7 @@
                 "forks": 0,
                 "language": "Go",
                 "topics": [],
-                "updated_at": "2026-08-17T07:58:03Z"
+                "updated_at": "2026-08-18T03:51:51Z"
             },
             {
                 "name": "remix-app-demo",
@@ -2760,7 +2760,7 @@
                     "typescript",
                     "vscode"
                 ],
-                "updated_at": "2026-08-15T00:03:39Z"
+                "updated_at": "2026-08-19T02:45:50Z"
             },
             {
                 "name": "my-nvim-ide",
@@ -3143,7 +3143,7 @@
                 "description": "How to create your own NFT and mint NFT token",
                 "url": "https://github.com/jellydn/nft-app",
                 "homepage": "https://nft-app.productsway.com/",
-                "stars": 224,
+                "stars": 223,
                 "forks": 103,
                 "language": "TypeScript",
                 "topics": [
@@ -3157,7 +3157,7 @@
                     "vitejs",
                     "web3"
                 ],
-                "updated_at": "2026-08-13T03:40:30Z"
+                "updated_at": "2026-08-18T08:45:32Z"
             },
             {
                 "name": "dapp-token-ico",
@@ -3764,7 +3764,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-08-17T03:42:54Z"
+                "updated_at": "2026-08-18T03:38:04Z"
             },
             {
                 "name": "vite-react-demo",
