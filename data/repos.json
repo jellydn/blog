@@ -18,7 +18,7 @@
                     "open-code",
                     "skills"
                 ],
-                "updated_at": "2026-08-17T01:55:29Z"
+                "updated_at": "2026-08-20T02:39:59Z"
             },
             {
                 "name": "gpt4free-demo",
@@ -123,7 +123,7 @@
                     "open-code",
                     "open-source"
                 ],
-                "updated_at": "2026-08-04T14:27:19Z"
+                "updated_at": "2026-08-19T13:14:55Z"
             },
             {
                 "name": "summary-chatbot-demo",
@@ -168,7 +168,7 @@
                 "topics": [
                     "hermes-agent"
                 ],
-                "updated_at": "2026-08-18T22:21:21Z"
+                "updated_at": "2026-08-19T22:24:25Z"
             },
             {
                 "name": "flowly",
@@ -184,7 +184,7 @@
                     "flue",
                     "flueframework"
                 ],
-                "updated_at": "2026-08-17T00:41:08Z"
+                "updated_at": "2026-08-19T11:31:19Z"
             },
             {
                 "name": "logpilot",
@@ -256,7 +256,7 @@
                     "llm",
                     "react-router"
                 ],
-                "updated_at": "2026-08-07T06:28:24Z"
+                "updated_at": "2026-08-19T15:47:09Z"
             },
             {
                 "name": "ai-photo-coach",
@@ -527,7 +527,7 @@
                 "description": "Your ultimate guide to setting up Zed with Vim mode, tailored settings, and key bindings for a seamless coding experience",
                 "url": "https://github.com/jellydn/zed-101-setup",
                 "homepage": "https://itman.fyi",
-                "stars": 1429,
+                "stars": 1430,
                 "forks": 29,
                 "language": "TypeScript",
                 "topics": [
@@ -535,7 +535,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-08-18T19:04:57Z"
+                "updated_at": "2026-08-19T17:31:33Z"
             },
             {
                 "name": "typescript-tips",
@@ -561,7 +561,7 @@
                 "url": "https://github.com/jellydn/awesome-typesafe",
                 "homepage": "http://typesafe.itman.fyi/",
                 "stars": 178,
-                "forks": 22,
+                "forks": 23,
                 "language": "",
                 "topics": [
                     "awesome",
@@ -1514,6 +1514,22 @@
                 "updated_at": "2022-06-22T10:27:12Z"
             },
             {
+                "name": "reflex-demo",
+                "full_name": "jellydn/reflex-demo",
+                "description": "This is a demonstration project using reflex: Web apps in pure Python 🐍.",
+                "url": "https://github.com/jellydn/reflex-demo",
+                "homepage": "https://reflex-hello-world.reflex.run",
+                "stars": 1,
+                "forks": 0,
+                "language": "Python",
+                "topics": [
+                    "python",
+                    "reflex",
+                    "webapp"
+                ],
+                "updated_at": "2026-08-19T05:53:40Z"
+            },
+            {
                 "name": "mole-tui",
                 "full_name": "jellydn/mole-tui",
                 "description": "A keyboard-driven TUI that orchestrates Mole (mo) for disk cleanup.",
@@ -1594,22 +1610,6 @@
                 "language": "TypeScript",
                 "topics": [],
                 "updated_at": "2026-08-07T01:56:58Z"
-            },
-            {
-                "name": "reflex-demo",
-                "full_name": "jellydn/reflex-demo",
-                "description": "This is a demonstration project using reflex: Web apps in pure Python 🐍.",
-                "url": "https://github.com/jellydn/reflex-demo",
-                "homepage": "https://reflex-hello-world.reflex.run",
-                "stars": 1,
-                "forks": 0,
-                "language": "Python",
-                "topics": [
-                    "python",
-                    "reflex",
-                    "webapp"
-                ],
-                "updated_at": "2026-08-05T01:05:42Z"
             },
             {
                 "name": "cube-quest",
@@ -3764,7 +3764,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-08-18T03:38:04Z"
+                "updated_at": "2026-08-19T03:40:46Z"
             },
             {
                 "name": "vite-react-demo",
