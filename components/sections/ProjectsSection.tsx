@@ -16,7 +16,7 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
                             Featured Projects
                         </h2>
                         <p className="text-xl text-base-content/70">
-                            Open source projects and tools I&apos;ve created
+                            Open source projects I maintain on GitHub
                         </p>
                     </div>
                     <Button

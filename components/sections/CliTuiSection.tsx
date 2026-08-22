@@ -18,8 +18,7 @@ export function CliTuiSection({ tools }: CliTuiSectionProps) {
                             CLI &amp; TUI DX Tools
                         </h2>
                         <p className="text-xl text-base-content/70">
-                            Terminal-first tools to speed up day-to-day
-                            developer workflows
+                            CLI and TUI tools I reach for daily in the terminal
                         </p>
                     </div>
                     <Button

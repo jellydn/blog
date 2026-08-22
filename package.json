@@ -14,7 +14,8 @@
         "start": "next start",
         "fetch:videos": "bun scripts/fetch-youtube-videos.ts",
         "fetch:repos": "bun scripts/fetch-repos.ts",
-        "fetch:blog": "bun scripts/fetch-blog-posts.ts"
+        "fetch:blog": "bun scripts/fetch-blog-posts.ts",
+        "clarity:lint": "bash scripts/clarity-lint-posts.sh"
     },
     "config": {
         "commitizen": {

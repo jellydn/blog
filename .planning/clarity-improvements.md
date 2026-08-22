@@ -1,0 +1,36 @@
+# Clarity Writing Improvements
+
+Applied [addyosmani/clarity](https://github.com/addyosmani/clarity) principles across the blog.
+
+## Scope
+
+| Area | Files | Register |
+|------|-------|----------|
+| Site copy | `data/config.json`, hero/about/contact sections | Evocation |
+| Notes / TIL posts | `posts/*.md` (51 files) | Guide |
+| Lint tooling | `.agents/skills/clarity/`, `scripts/clarity-lint-posts.sh` | — |
+
+## Clarity rules applied
+
+1. **Specific enough to be wrong** — descriptions name the tool, error, or outcome
+2. **Someone in the sentence** — use "you" in Context/Why sections
+3. **Plain word, short sentence** — cut filler, fix typos
+4. **Every sentence pays** — Why explains mechanism, not title restatement
+5. **Guide register** — TIL posts keep What/Why/How; no forced thesis
+
+## Tooling
+
+```bash
+pnpm clarity:lint              # lint all posts
+pnpm clarity:lint posts/foo.md # lint one file
+```
+
+Uses clarity's `strip_markdown.py` + `prose_stats.py` from `.agents/skills/clarity/scripts/`.
+
+## Posts unchanged
+
+These already met clarity standards:
+
+- `til-20-how-to-fix-unsupported-scan-storing-driver.value-type-uint8-into-type.md`
+- `til-31-fix-build-error-on-oclif-cli-for-typescript-4.8.3.md`
+- `til-44-free-disk-space-for-docker-and-dokku-deploys.md`

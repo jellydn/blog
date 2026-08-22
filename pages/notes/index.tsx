@@ -23,7 +23,8 @@ const BlogPage = ({ title, description, items }: BlogPageProps) => {
                             Notes
                         </h1>
                         <p className="text-lg md:text-xl text-base-content/70">
-                            Thoughts, tutorials, and TILs
+                            TIL notes and tutorials — the things I looked up so
+                            you don&apos;t have to
                         </p>
                     </div>
                 </section>
