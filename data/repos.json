@@ -8,7 +8,7 @@
                 "description": "Comprehensive configuration management for AI coding tools - Replicate my complete setup for Claude Code, OpenCode, Amp, Li, Codex and Claude Code Switch with custom configurations, MCP servers, plugins, and commands.",
                 "url": "https://github.com/jellydn/my-ai-tools",
                 "homepage": "http://ai-tools.itman.fyi/",
-                "stars": 114,
+                "stars": 116,
                 "forks": 13,
                 "language": "Shell",
                 "topics": [
@@ -18,7 +18,7 @@
                     "open-code",
                     "skills"
                 ],
-                "updated_at": "2026-08-21T00:32:47Z"
+                "updated_at": "2026-08-21T19:37:41Z"
             },
             {
                 "name": "gpt4free-demo",
@@ -184,7 +184,7 @@
                     "flue",
                     "flueframework"
                 ],
-                "updated_at": "2026-08-21T03:38:08Z"
+                "updated_at": "2026-08-22T02:02:45Z"
             },
             {
                 "name": "logpilot",
@@ -527,7 +527,7 @@
                 "description": "Your ultimate guide to setting up Zed with Vim mode, tailored settings, and key bindings for a seamless coding experience",
                 "url": "https://github.com/jellydn/zed-101-setup",
                 "homepage": "https://itman.fyi",
-                "stars": 1431,
+                "stars": 1433,
                 "forks": 29,
                 "language": "TypeScript",
                 "topics": [
@@ -535,7 +535,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-08-21T02:12:22Z"
+                "updated_at": "2026-08-21T22:53:18Z"
             },
             {
                 "name": "typescript-tips",
@@ -2735,7 +2735,7 @@
                 "description": "Slim Neovim config for 0.11+ with minimal plugins.",
                 "url": "https://github.com/jellydn/tiny-nvim",
                 "homepage": "https://itman.fyi",
-                "stars": 52,
+                "stars": 53,
                 "forks": 6,
                 "language": "Lua",
                 "topics": [
@@ -2743,7 +2743,7 @@
                     "neovim",
                     "nvim-config"
                 ],
-                "updated_at": "2026-08-04T23:17:22Z"
+                "updated_at": "2026-08-21T08:44:10Z"
             },
             {
                 "name": "ts-inlay-hints",
@@ -2751,7 +2751,7 @@
                 "description": "A guide on how to utilize TypeScript inlay hints in VS Code / Neovim with the TypeScript Language Server",
                 "url": "https://github.com/jellydn/ts-inlay-hints",
                 "homepage": "https://jellydn.github.io/ts-inlay-hints/",
-                "stars": 48,
+                "stars": 49,
                 "forks": 1,
                 "language": "TypeScript",
                 "topics": [
@@ -2760,7 +2760,7 @@
                     "typescript",
                     "vscode"
                 ],
-                "updated_at": "2026-08-19T02:45:50Z"
+                "updated_at": "2026-08-21T17:57:04Z"
             },
             {
                 "name": "my-nvim-ide",
@@ -2848,7 +2848,7 @@
                 "description": "A set of vim, zsh, fish, tmux, zeliij, git configuration files and tools.",
                 "url": "https://github.com/jellydn/dotfiles",
                 "homepage": "",
-                "stars": 18,
+                "stars": 19,
                 "forks": 3,
                 "language": "Shell",
                 "topics": [
@@ -2866,7 +2866,7 @@
                     "zellij",
                     "zsh"
                 ],
-                "updated_at": "2026-08-17T11:58:36Z"
+                "updated_at": "2026-08-21T14:17:07Z"
             },
             {
                 "name": "learn-vim-with-vscode",
@@ -3752,6 +3752,21 @@
                 "updated_at": "2021-07-01T07:11:50Z"
             },
             {
+                "name": "blog",
+                "full_name": "jellydn/blog",
+                "description": "Senior Full Stack Software Engineer. Building blockchain-based carbon exchange platforms with TypeScript, Node.js, and React.",
+                "url": "https://github.com/jellydn/blog",
+                "homepage": "https://productsway.com/",
+                "stars": 0,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [
+                    "blog",
+                    "nextjs"
+                ],
+                "updated_at": "2026-08-21T03:43:44Z"
+            },
+            {
                 "name": "redux-toolkit-app",
                 "full_name": "jellydn/redux-toolkit-app",
                 "description": "How to migrate from CRA (Redux Toolkit App) to NextJS v11",
@@ -3800,21 +3815,6 @@
                     "tailwindcss"
                 ],
                 "updated_at": "2026-08-21T03:18:34Z"
-            },
-            {
-                "name": "blog",
-                "full_name": "jellydn/blog",
-                "description": "Senior Full Stack Software Engineer. Building blockchain-based carbon exchange platforms with TypeScript, Node.js, and React.",
-                "url": "https://github.com/jellydn/blog",
-                "homepage": "https://productsway.com/",
-                "stars": 0,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [
-                    "blog",
-                    "nextjs"
-                ],
-                "updated_at": "2026-08-20T03:39:49Z"
             },
             {
                 "name": "zod-tutorial-kit",
