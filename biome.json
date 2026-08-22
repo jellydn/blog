@@ -40,6 +40,11 @@
             "formatter": { "enabled": false }
         },
         {
+            "includes": [".agents/skills/**"],
+            "linter": { "enabled": false },
+            "formatter": { "enabled": false }
+        },
+        {
             "includes": ["pages/posts/\\[slug\\].tsx"],
             "linter": {
                 "rules": {
