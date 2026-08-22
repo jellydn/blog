@@ -6,17 +6,17 @@ tag:
 author: Dung Huynh
 hero_image: /static/til.jpeg
 title: "#TIL 37 - How to fix Session ID unknown with socket.io"
-description: Fix Socket.io session errors in multi-server setups
+description: "Fix Socket.io Session ID unknown in multi-server setups by forcing websocket transport only"
 _template: post
 ---
 
 ## What
 
-Fix "Session ID unknown" errors in Socket.io deployments.
+Fix "Session ID unknown" errors when Socket.io runs behind a load balancer with multiple server instances.
 
 ## Why
 
-HTTP long-polling requires sticky sessions. Without load balancer affinity, requests hit different servers causing session mismatch.
+HTTP long-polling sends separate requests that can land on different nodes — each node maintains its own session store, so the second request finds no matching session ID. Restricting transport to `websocket` keeps a persistent connection on one node, eliminating the need for sticky sessions.
 
 ## How
 

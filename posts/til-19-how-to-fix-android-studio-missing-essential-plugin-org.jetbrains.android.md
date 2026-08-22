@@ -8,17 +8,17 @@ hero_image: /static/til.jpeg
 title: >-
   #TIL 19 - How to fix Android Studio missing essential plugin
   org.jetbrains.android
-description: Fix Android Studio plugin error after upgrade
+description: "Fix Android Studio missing essential plugin org.jetbrains.android by deleting disabled_plugins.txt"
 _template: post
 ---
 
 ## What
 
-Fix "missing essential plugin" error after Android Studio upgrade.
+Fix the "missing essential plugin org.jetbrains.android" error after an Android Studio upgrade.
 
 ## Why
 
-Upgrade may disable plugins incorrectly. The `disabled_plugins.txt` file blocks required plugins.
+Upgrades sometimes write plugin names to `disabled_plugins.txt` even though they're required for Android development. Deleting that file lets Android Studio re-enable the bundled Android plugin on next launch.
 
 ## How
 

@@ -6,17 +6,17 @@ tag:
 author: Dung Huynh
 hero_image: /static/til.jpeg
 title: "#TIL 38 - Cherry pick git merge from CLI"
-description: Cherry-pick a merge commit
+description: "Cherry-pick a merge commit to another branch with git cherry-pick -m 1"
 _template: post
 ---
 
 ## What
 
-Cherry-pick a merge commit to another branch.
+Cherry-pick a merge commit onto another branch using the `-m 1` parent flag.
 
 ## Why
 
-Sometimes you need the changes from a merge commit without merging the entire branch.
+A merge commit has two parents, so git doesn't know which diff to apply. `-m 1` tells git to treat the first parent (usually main) as the baseline and replay the changes introduced by the merge.
 
 ## How
 

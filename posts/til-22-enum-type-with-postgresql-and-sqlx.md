@@ -7,17 +7,17 @@ tag:
 author: Dung Huynh
 hero_image: /static/til.jpeg
 title: "#TIL 22 - Enum Type with PostgreSQL and sqlx"
-description: Custom Scan/Value for PostgreSQL enums in Go
+description: "Implement Scan and Value for PostgreSQL enum arrays in Go with sqlx"
 _template: post
 ---
 
 ## What
 
-Implement custom `Scan` and `Value` methods for PostgreSQL enum types with sqlx.
+Implement custom `Scan` and `Value` methods so sqlx can read and write PostgreSQL enum types in Go.
 
 ## Why
 
-PostgreSQL returns enums as `"{value1,value2}"`. Need parsing to convert to Go types.
+PostgreSQL returns enum values as quoted strings like `"{value1,value2}"` — Go's default scanner treats them as opaque bytes. Parsing the braces and quotes in `Scan`/`Value` maps them to typed Go strings your application can use safely.
 
 ## How
 

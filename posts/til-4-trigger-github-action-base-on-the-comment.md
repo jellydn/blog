@@ -6,17 +6,17 @@ tag:
 author: Dung Huynh
 hero_image: /static/til.jpeg
 title: "#TIL 4 - Trigger github action base on the comment"
-description: Trigger GitHub Actions via issue comments
+description: "Run a GitHub Actions workflow when someone posts a specific comment on an issue or PR"
 _template: post
 ---
 
 ## What
 
-Run GitHub Actions workflows when specific comments are posted on issues/PRs.
+Trigger a GitHub Actions workflow when a specific comment is posted on an issue or pull request.
 
 ## Why
 
-Enable manual deployments via comments without push access or creating branches.
+The `issue_comment` event fires on every comment, but you can gate the job with an `if` condition on `github.event.comment.body`. That lets you deploy from a PR by typing a keyword — no push access or extra branch needed.
 
 ## How
 

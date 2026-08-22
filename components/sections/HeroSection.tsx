@@ -57,9 +57,9 @@ export function HeroSection() {
                         <span className="text-primary">Dung Huynh Duc</span>
                     </h1>
                     <p className="py-6 text-xl text-base-content/70">
-                        Senior Full Stack Software Engineer at ACX. Building
-                        blockchain-based carbon exchange platforms with
-                        TypeScript, Node.js, and React.
+                        I build blockchain carbon exchange platforms at ACX with
+                        TypeScript, Node.js, and React — and write TIL notes
+                        when I figure something out.
                     </p>
                     <div className="flex justify-center gap-4 flex-wrap">
                         {socialLinks.map((social) => (

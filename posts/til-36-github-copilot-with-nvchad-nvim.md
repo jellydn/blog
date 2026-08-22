@@ -6,17 +6,17 @@ tag:
 author: Dung Huynh
 hero_image: /static/til.jpeg
 title: "#TIL 36 - Github Copilot with NvChad/Nvim"
-description: Setup GitHub Copilot in Neovim
+description: "Install and configure github/copilot.vim in Neovim with custom Ctrl-j/k/l keybindings"
 _template: post
 ---
 
 ## What
 
-Install and configure GitHub Copilot in Neovim with custom keybindings.
+Install GitHub Copilot in Neovim and map custom keybindings for accepting and cycling suggestions.
 
 ## Why
 
-Copilot provides AI-powered code suggestions. Official vim plugin works with Neovim.
+The official `copilot.vim` plugin ships with Tab-based defaults that conflict with snippet expanders in NvChad. Setting `copilot_assume_mapped = true` and binding `<C-j>`/`<C-k>`/`<C-l>` gives you explicit control over suggestion navigation.
 
 ## How
 

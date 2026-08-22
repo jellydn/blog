@@ -8,7 +8,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](#)
 [![Twitter: jellydn](https://img.shields.io/twitter/follow/jellydn.svg?style=social)](https://twitter.com/jellydn)
 
-> An experimental blog for coder
+> Notes, TILs, and deep dives on web and blockchain development
 
 ### 🏠 [Homepage](productsway.com)
 

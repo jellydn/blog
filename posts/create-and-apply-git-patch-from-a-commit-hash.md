@@ -6,17 +6,17 @@ tag:
 author: Dung Huynh
 hero_image: /static/til.jpeg
 title: "#TIL 2 - Create and apply git patch from a commit hash"
-description: Port commits between branches with git patch
+description: "Export one commit as a patch with format-patch and apply it on another branch with git am"
 _template: post
 ---
 
 ## What
 
-Create a patch from one branch and apply it to another branch.
+Export a single commit as a `.patch` file with `git format-patch`, then apply it on another branch with `git am`.
 
 ## Why
 
-Cherry-pick commits when direct merge isn't possible or desired.
+Cherry-pick rewrites the commit hash and can conflict when the target branch diverged. A patch file carries the full diff plus the original commit message, so you can port one change to a fork, a release branch, or a teammate's repo without merging entire histories.
 
 ## How
 

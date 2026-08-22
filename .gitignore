@@ -33,6 +33,7 @@ yarn-error.log*
 .eslintcache
 node_modules
 .agents/skills/vercel-react-best-practices/AGENTS.md
+.agents/skills/clarity/
 .agents/skills/vercel-react-best-practices/SKILL.md
 .agents/skills/vercel-react-best-practices/rules/advanced-event-handler-refs.md
 .agents/skills/vercel-react-best-practices/rules/advanced-use-latest.md

@@ -6,17 +6,17 @@ tag:
 author: Dung Huynh
 hero_image: /static/til.jpeg
 title: "#TIL 10 - Add User Define Function to TypeORM entity"
-description: Use database UDFs with TypeORM QueryBuilder
+description: "Select from a SQL user-defined function in TypeORM QueryBuilder with addSelect"
 _template: post
 ---
 
 ## What
 
-Select from a user-defined function (UDF) in TypeORM QueryBuilder.
+Map a SQL user-defined function (UDF) result to a TypeORM entity field using `addSelect`.
 
 ## Why
 
-TypeORM doesn't natively support database functions in selects. This workaround maps UDF results to entity fields.
+TypeORM has no first-class UDF support — it only knows about table columns. Adding a virtual `@Column` with `insert: false` and aliasing the UDF as `tableName_columnName` in QueryBuilder lets you read computed values as entity properties.
 
 ## How
 

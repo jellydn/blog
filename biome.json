@@ -36,6 +36,15 @@
             "linter": { "enabled": false }
         },
         {
+            "includes": ["data/*.json"],
+            "formatter": { "enabled": false }
+        },
+        {
+            "includes": [".agents/skills/**"],
+            "linter": { "enabled": false },
+            "formatter": { "enabled": false }
+        },
+        {
             "includes": ["pages/posts/\\[slug\\].tsx"],
             "linter": {
                 "rules": {

@@ -6,17 +6,17 @@ tag:
 author: Dung Huynh
 hero_image: /static/til.jpeg
 title: "#TIL 21 - How to fix PostgreSQL duplicate key violates (out of sync)"
-description: Fix PostgreSQL sequence out of sync
+description: "Fix PostgreSQL duplicate key violates unique constraint by resetting an out-of-sync serial sequence"
 _template: post
 ---
 
 ## What
 
-Fix "duplicate key violates unique constraint" when primary key sequence is out of sync.
+Fix "duplicate key value violates unique constraint" when a PostgreSQL serial sequence falls behind the actual max ID.
 
 ## Why
 
-Sequence may be behind actual data due to manual inserts or imports.
+Bulk imports or manual `INSERT` with explicit IDs advance table rows without bumping the sequence. The next auto-generated ID collides with an existing row — `SETVAL` resets the sequence to `MAX(id) + 1` so new inserts get fresh keys.
 
 ## How
 

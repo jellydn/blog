@@ -6,16 +6,16 @@ tag:
 author: Dung Huynh
 hero_image: "/static/til.jpeg"
 title: "#TIL 29 - Git version"
-description: Generate semantic version from git history
+description: "Auto-generate semantic versions from git history in GitHub Actions with codacy/git-version"
 ---
 
 ## What
 
-Auto-generate semantic version from git commits in GitHub Actions.
+Generate a semantic version string from your git commit history inside a GitHub Actions workflow.
 
 ## Why
 
-Automate versioning based on commit history and tags.
+Manual version bumps drift from actual releases. The `codacy/git-version` action reads tags and conventional commits to produce a semver string you can tag artifacts or Docker images with on every push.
 
 ## How
 

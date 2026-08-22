@@ -7,17 +7,17 @@ tag:
 author: Dung Huynh
 hero_image: /static/til.jpeg
 title: "#TIL 26 - How to connect to Redis on AWS (Amazon ElastiCache)"
-description: Connect ioredis to AWS ElastiCache with TLS
+description: "Connect ioredis to AWS ElastiCache over TLS with lazyConnect and reconnectOnError"
 _template: post
 ---
 
 ## What
 
-Connect ioredis to AWS ElastiCache Redis with proper TLS and reconnection handling.
+Connect ioredis to AWS ElastiCache Redis with TLS and resilient reconnection settings.
 
 ## Why
 
-ElastiCache requires TLS (`rediss://`) and needs special handling for connection errors.
+ElastiCache enforces TLS on the `rediss://` protocol and can briefly fail over to a replica. `lazyConnect` defers the handshake until your app is ready, and `reconnectOnError` retries on `READONLY`/`ETIMEDOUT` instead of crashing the process.
 
 ## How
 

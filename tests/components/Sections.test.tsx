@@ -38,7 +38,9 @@ describe('HeroSection', () => {
 
         expect(screen.getByText('Dung Huynh Duc')).toBeInTheDocument();
         expect(
-            screen.getByText(/Senior Full Stack Software Engineer/),
+            screen.getByText(
+                /I build blockchain carbon exchange platforms at ACX/,
+            ),
         ).toBeInTheDocument();
     });
 
@@ -93,7 +95,9 @@ describe('AboutSection', () => {
         render(<AboutSection />);
 
         expect(
-            screen.getByText(/Senior Full Stack Software Engineer at ACX/),
+            screen.getByText(
+                /At ACX I build blockchain carbon exchange platforms/,
+            ),
         ).toBeInTheDocument();
     });
 });
@@ -104,7 +108,7 @@ describe('ContactSection', () => {
 
         expect(screen.getByText("Let's Connect")).toBeInTheDocument();
         expect(
-            screen.getByText(/Interested in collaborating/),
+            screen.getByText(/Have a project in mind or a question/),
         ).toBeInTheDocument();
     });
 

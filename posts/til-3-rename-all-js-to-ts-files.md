@@ -6,17 +6,17 @@ tag:
 author: Dung Huynh
 hero_image: /static/til.jpeg
 title: "#TIL 3 - Rename all JS to TS files"
-description: Bulk rename JavaScript to TypeScript files
+description: "Bulk-rename .js files to .ts recursively with find and mv during a TypeScript migration"
 _template: post
 ---
 
 ## What
 
-Rename all `.js` files to `.ts` in a directory recursively.
+Rename every `.js` file under a directory to `.ts` in one shell command.
 
 ## Why
 
-Migrating to TypeScript requires renaming files first. Manual renaming is tedious for large codebases.
+TypeScript only type-checks files with a `.ts` or `.tsx` extension. When you migrate a large codebase, renaming hundreds of files by hand is error-prone — a `find` loop handles the whole tree at once.
 
 ## How
 

@@ -6,17 +6,17 @@ tag:
 author: Dung Huynh
 hero_image: /static/til.jpeg
 title: "#TIL 17 - Call eth_sync"
-description: Call unsupported ETH RPC methods with ethers.js
+description: "Call unsupported JSON-RPC methods like eth_syncing with ethers.js provider.send"
 _template: post
 ---
 
 ## What
 
-Call Ethereum JSON-RPC methods not directly exposed by ethers.js.
+Call Ethereum JSON-RPC methods that ethers.js does not wrap (like `eth_syncing`) via `provider.send`.
 
 ## Why
 
-Ethers.js doesn't wrap every RPC method. Some like `eth_syncing` need raw calls.
+Ethers.js exposes common methods as typed functions but skips admin and debug RPC calls. The underlying `JsonRpcProvider.send(method, params)` passes through any valid JSON-RPC request to your node.
 
 ## How
 

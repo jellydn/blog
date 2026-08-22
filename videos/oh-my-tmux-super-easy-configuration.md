@@ -7,7 +7,7 @@ tag: ["CLI"]
 hero_image: "https://i.ytimg.com/vi/vrzkCz8Vl-4/mqdefault.jpg"
 ---
 
-Welcome to IT Man Channel! In this video, we dive into how tmux can be super powerful yet incredibly easy to configure, thanks to the Oh My tmux setup:  https://github.com/gpakosz/.tmux
+Welcome to IT Man Channel! In this video, we dive into how tmux can be super powerful yet incredibly easy to configure, thanks to the Oh My tmux setup: https://github.com/gpakosz/.tmux
 
 For a more detailed guide, check out my README https://github.com/jellydn/dotfiles/tree/master/tmux
 
@@ -21,7 +21,6 @@ https://github.com/tmux/tmux/wiki
 https://github.com/rebelot/kanagawa.nvim
 https://github.com/tmux-plugins/tmux-resurrect
 https://github.com/christoomey/vim-tmux-navigator
-
 
 👍 Like, Comment, and Subscribe to the IT Man Channel for more tech tutorials and updates. Hit the bell icon to get notified about new content every Sunday!
 

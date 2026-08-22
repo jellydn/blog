@@ -8,20 +8,16 @@ export function AboutSection() {
                     <div className="card-body">
                         <h2 className="card-title text-3xl mb-4">About Me</h2>
                         <p className="text-lg leading-relaxed">
-                            With over {years} years of experience as a
-                            full-stack developer, I&apos;ve had the opportunity
-                            to spearhead project teams at tech startups in
-                            Vietnam, Thailand, Japan, and Singapore.
-                            Additionally, I have worked as a freelance engineer
-                            for various companies based in Asia Pacific, Europe,
-                            and North America.
+                            I&apos;ve spent {years} years as a full-stack
+                            developer — leading teams at startups in Vietnam,
+                            Thailand, Japan, and Singapore, and freelancing for
+                            companies across Asia Pacific, Europe, and North
+                            America.
                         </p>
                         <p className="text-lg leading-relaxed mt-4">
-                            Currently, I serve as a Senior Full Stack Software
-                            Engineer at ACX, where I focus on developing
-                            blockchain-based carbon exchange platforms and
-                            innovative solutions using TypeScript, Node.js, and
-                            React.
+                            At ACX I build blockchain carbon exchange platforms
+                            with TypeScript, Node.js, and React. This blog is
+                            where I write down what I learn along the way.
                         </p>
                     </div>
                 </div>

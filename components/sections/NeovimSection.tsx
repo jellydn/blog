@@ -18,7 +18,8 @@ export function NeovimSection({ plugins }: NeovimSectionProps) {
                             Neovim Plugins
                         </h2>
                         <p className="text-xl text-base-content/70">
-                            Lua plugins to supercharge your Neovim workflow
+                            Lua plugins I built to speed up my own Neovim
+                            workflow
                         </p>
                     </div>
                     <Button

@@ -6,17 +6,17 @@ tag:
 author: Dung Huynh
 hero_image: /static/til.jpeg
 title: "#TIL 24 - Workaround for tRPC Fastify adapter CORS policy"
-description: Handle CORS preflight in tRPC Fastify adapter
+description: "Fix tRPC Fastify adapter CORS preflight by returning 204 for OPTIONS in responseMeta"
 _template: post
 ---
 
 ## What
 
-Fix CORS preflight (OPTIONS) requests in tRPC with Fastify adapter.
+Handle CORS preflight (OPTIONS) requests in tRPC's Fastify adapter via `responseMeta`.
 
 ## Why
 
-tRPC Fastify adapter doesn't handle OPTIONS requests by default, causing browser CORS errors.
+Browsers send an OPTIONS request before cross-origin POSTs. The tRPC Fastify adapter rejects OPTIONS with `METHOD_NOT_SUPPORTED`, so the browser never sends the real request. Returning 204 with CORS headers in `responseMeta` satisfies the preflight check.
 
 ## How
 

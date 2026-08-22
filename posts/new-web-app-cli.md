@@ -6,12 +6,12 @@ tag:
 author: Dung Huynh
 hero_image: /static/new-web-app.png
 title: New Web APP CLI
-description: "React app generator built on Vite"
+description: "Scaffold a Vite React app with optional ESLint, Tailwind, React Query, Hook Form, and Storybook"
 ---
 
 ## Context
 
-Vite is fast, but creating a new app requires additional setup: ESLint, Prettier, Tailwind, Storybook, React Query, React Hook Form. `new-web-app` CLI provides pre-configured templates so you don't have to manually add these tools.
+Vite gets you a fast dev server, but you still need to wire up ESLint, Prettier, Tailwind, Storybook, React Query, and React Hook Form yourself. The `new-web-app` CLI scaffolds a Vite React project and adds whichever of those tools you pick via flags — no manual config copy-paste.
 
 ## Usage
 

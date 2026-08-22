@@ -6,17 +6,17 @@ tag:
 author: Dung Huynh
 hero_image: /static/til.jpeg
 title: "#TIL 9 - Delete all databases on mongo db on local"
-description: Drop all MongoDB databases
+description: "Drop every MongoDB database on localhost with one mongo or mongosh eval command"
 _template: post
 ---
 
 ## What
 
-Delete all local MongoDB databases in one command.
+Drop every database on your local MongoDB instance in one command.
 
 ## Why
 
-Quick cleanup for local development environments.
+Switching between projects leaves test databases behind. Iterating `getDBNames()` and calling `dropDatabase()` on each sibling DB resets your local instance without reinstalling MongoDB.
 
 ## How
 

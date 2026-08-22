@@ -44,8 +44,8 @@ export function ContactSection() {
                     Let&apos;s Connect
                 </h2>
                 <p className="text-lg text-base-content/70 mb-8 leading-relaxed">
-                    Interested in collaborating or have a question? Reach out
-                    through any of these platforms.
+                    Have a project in mind or a question about something I
+                    wrote? Pick whichever channel works best for you.
                 </p>
                 <div className="flex justify-center gap-4 flex-wrap">
                     {socialLinks.map((social) => (
