@@ -275,14 +275,14 @@ Diagnosis: the headings are doing all the organizing; the reader understands eve
 Fix:       add a hinge sentence naming the relation, and keep it factual rather than grand
 ```
 
-| Relation | Form |
-|---|---|
-| Cause | `Because X, Y.` |
-| Contrast | `Although X, Y.` |
-| Dependency | `Without X, Y cannot happen.` |
-| State change | `Once X is visible, Y becomes inspectable.` |
-| Scope change | `At that level, Y stops being A and behaves like B.` |
-| Level of detail | `The same object at three resolutions: A, B, C.` |
+| Relation         | Form                                                                  |
+| ---------------- | --------------------------------------------------------------------- |
+| Cause            | `Because X, Y.`                                                       |
+| Contrast         | `Although X, Y.`                                                      |
+| Dependency       | `Without X, Y cannot happen.`                                         |
+| State change     | `Once X is visible, Y becomes inspectable.`                           |
+| Scope change     | `At that level, Y stops being A and behaves like B.`                  |
+| Level of detail  | `The same object at three resolutions: A, B, C.`                      |
 | Carrier to claim | `Because the example is small and memorable, it can carry the claim.` |
 
 ### 2.7 Broken unity

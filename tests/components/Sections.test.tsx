@@ -38,7 +38,9 @@ describe('HeroSection', () => {
 
         expect(screen.getByText('Dung Huynh Duc')).toBeInTheDocument();
         expect(
-            screen.getByText(/I build blockchain carbon exchange platforms at ACX/),
+            screen.getByText(
+                /I build blockchain carbon exchange platforms at ACX/,
+            ),
         ).toBeInTheDocument();
     });
 
@@ -93,7 +95,9 @@ describe('AboutSection', () => {
         render(<AboutSection />);
 
         expect(
-            screen.getByText(/At ACX I build blockchain carbon exchange platforms/),
+            screen.getByText(
+                /At ACX I build blockchain carbon exchange platforms/,
+            ),
         ).toBeInTheDocument();
     });
 });

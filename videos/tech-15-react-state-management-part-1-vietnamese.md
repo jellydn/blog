@@ -17,5 +17,5 @@ hero_image: "https://i.ytimg.com/vi/5rsM84taJX4/mqdefault.jpg"
 - Zustand (https://github.com/pmndrs/zustand): Bear necessities for state management in React
 - Jotai (https://jotai.org/): Primitive and flexible state management for React
 - Recoil (https://recoiljs.org/): Recoil is an experimental state management library for React apps
-Reference: 
-https://leerob.io/blog/react-state-management
+  Reference:
+  https://leerob.io/blog/react-state-management

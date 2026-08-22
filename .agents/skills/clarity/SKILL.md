@@ -82,11 +82,11 @@ nothing else. An unrecognised first word is part of the topic, not a mode.
 
 With no argument, infer:
 
-| Situation | Mode | Where to start |
-|---|---|---|
-| The piece does not exist yet | **Co-write** | Interview first. Do not draft. |
-| A draft exists and needs to be better | **Rewrite** | Substance gate, then the edit pass. |
-| The user wants feedback, not a new file | **Review** | `references/critique.md` format. |
+| Situation                               | Mode         | Where to start                      |
+| --------------------------------------- | ------------ | ----------------------------------- |
+| The piece does not exist yet            | **Co-write** | Interview first. Do not draft.      |
+| A draft exists and needs to be better   | **Rewrite**  | Substance gate, then the edit pass. |
+| The user wants feedback, not a new file | **Review**   | `references/critique.md` format.    |
 
 When the mode is still ambiguous, ask once, in one sentence. Then commit.
 
@@ -515,13 +515,13 @@ Provenance
 
 Five dimensions, one to ten each. Below 35 out of 50, revise.
 
-| Dimension | Question |
-|---|---|
-| Substance | Does it say anything only this author could say? |
-| Directness | Statements, or announcements? |
-| Rhythm | Varied, or metronomic? |
-| Trust | Does it respect the reader? |
-| Restraint | Anything left to cut, and anything over-cut? |
+| Dimension  | Question                                         |
+| ---------- | ------------------------------------------------ |
+| Substance  | Does it say anything only this author could say? |
+| Directness | Statements, or announcements?                    |
+| Rhythm     | Varied, or metronomic?                           |
+| Trust      | Does it respect the reader?                      |
+| Restraint  | Anything left to cut, and anything over-cut?     |
 
 Treat this as a stop condition, not an optimizer. Score once, fix the weakest dimension once,
 and ship. Iterating a numeric score to convergence produces even prose, which is the thing you

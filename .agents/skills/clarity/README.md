@@ -50,7 +50,7 @@ This is not hypothetical: you are, right now, writing. So consider that you are 
 > Your whole duty as a writer is to please and satisfy yourself, and the true writer always
 > plays to an audience of one.
 >
-> — Strunk & White, *The Elements of Style*
+> — Strunk & White, _The Elements of Style_
 
 ### 2. Know what they bring, and what they need from you
 
@@ -67,7 +67,7 @@ That is to say, the difference is between subject and claim. A subject lets you 
 > Every successful piece of nonfiction should leave the reader with one provocative thought
 > that he or she didn't have before. Not two thoughts, or five, just one.
 >
-> — William Zinsser, *On Writing Well*
+> — William Zinsser, _On Writing Well_
 
 ### 4. Say something only you could say
 
@@ -97,7 +97,7 @@ Try to be as specific as you can. Take a sentence like "a dependency that made u
 
 > Prefer the specific to the general, the definite to the vague, the concrete to the abstract.
 >
-> — Strunk & White, *The Elements of Style*
+> — Strunk & White, _The Elements of Style_
 
 If you can't think of a verifiable example, then delete it rather than blurring it. If you can't think of a sensible example, then don't invent one, because when you fabricate a detail, you destroy any residual trust.
 
@@ -132,9 +132,9 @@ Strip qualifiers that hide a claim. Keep those that honestly represent genuine u
 
 Putting two sentences next to each other can create a sense of logical connection between them based only on rhythm. "The benchmark is saturated. The model still fails in production." Is the second sentence the cause of the first, or the consequence? The rhythm implies an answer, and while you are reading it feels like reasoning.
 
-Try to supply the word: *because*, *although*, *once*, *where*, *so that*. If you cannot supply it without inventing the relation, then the relation was never there.
+Try to supply the word: _because_, _although_, _once_, _where_, _so that_. If you cannot supply it without inventing the relation, then the relation was never there.
 
-*Although the benchmark is saturated, the model still fails in production, which means the benchmark has stopped measuring what ships.* Adding an explicit connector, such as *although*, as we did here, turns a mere juxtaposition into a real claim.
+_Although the benchmark is saturated, the model still fails in production, which means the benchmark has stopped measuring what ships._ Adding an explicit connector, such as _although_, as we did here, turns a mere juxtaposition into a real claim.
 
 ---
 
@@ -156,7 +156,7 @@ This is why contractions, sentence-initial "but," and the first person are appro
 
 > Never say anything in writing that you wouldn't comfortably say in conversation.
 >
-> — William Zinsser, *On Writing Well*
+> — William Zinsser, _On Writing Well_
 
 ### 13. Do not perform
 
@@ -192,7 +192,7 @@ Smoothing is not rewriting. Smoothing turns a rough authentic sentence into a bl
 
 > Rewriting is the essence of writing well: it's where the game is won or lost.
 >
-> — William Zinsser, *On Writing Well*
+> — William Zinsser, _On Writing Well_
 
 ### 18. Read it aloud
 
@@ -286,7 +286,7 @@ The example in section 5 could be anyone's. Do you have your own version of it?
 The ending restates the thesis. What do you want the reader to do differently on Monday?
 ```
 
-That last shape of question, *what would you cut from this that everyone else would keep*, tends
+That last shape of question, _what would you cut from this that everyone else would keep_, tends
 to produce more usable material than any other single prompt in the file.
 
 ### What that actually buys you
@@ -305,11 +305,11 @@ way.
 The two model-written versions in `samples/` had the same rules applied and are worth comparing.
 Look at the hedge density in particular:
 
-| | hedge words per 100 |
-|---|---|
-| model-written, rewritten by the skill | 1.05 |
-| the original slop draft | 2.04 |
-| **the interviewed version** | **4.45** |
+|                                       | hedge words per 100 |
+| ------------------------------------- | ------------------- |
+| model-written, rewritten by the skill | 1.05                |
+| the original slop draft               | 2.04                |
+| **the interviewed version**           | **4.45**            |
 
 Nobody was aiming at that number. It is simply how a person talks, and no amount of editing gets
 a model-written draft there. If you want prose that reads as yours, the lever is not the edit
@@ -327,8 +327,8 @@ The output localizes habits and refuses to produce a score. Read it as a map of 
 
 ## Further reading
 
-**Books.** *On Writing Well* by William Zinsser, which is the one to read if you read one.
-*The Elements of Style* by Strunk & White. *Several Short Sentences About Writing* by Verlyn
+**Books.** _On Writing Well_ by William Zinsser, which is the one to read if you read one.
+_The Elements of Style_ by Strunk & White. _Several Short Sentences About Writing_ by Verlyn
 Klinkenborg, for the argument that the sentence is the unit of composition and everything else
 follows from it.
 
@@ -353,7 +353,7 @@ follows from it.
 - [Wikipedia: Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing),
   maintained by WikiProject AI Cleanup, built from thousands of real cleanups.
 
-**Related projects.** 
+**Related projects.**
 
 [hardikpandya/stop-slop](https://github.com/hardikpandya/stop-slop),
 [blader/humanizer](https://github.com/blader/humanizer), and

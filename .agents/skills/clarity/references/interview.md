@@ -19,11 +19,11 @@ So the interview is not a briefing. You are collecting raw language.
 
 ## Which interview to run
 
-| Situation | Run |
-|---|---|
-| Nothing written yet | **The full interview.** Before any drafting. |
+| Situation                  | Run                                                         |
+| -------------------------- | ----------------------------------------------------------- |
+| Nothing written yet        | **The full interview.** Before any drafting.                |
 | Draft exists, fails Gate 0 | **The extraction interview.** Targeted at the hollow parts. |
-| Draft exists and is good | **The gap interview.** Three or four questions, at most. |
+| Draft exists and is good   | **The gap interview.** Three or four questions, at most.    |
 
 ---
 
@@ -38,7 +38,7 @@ Send this to the author close to verbatim. Adapt the bracketed parts to the topi
 >
 > **Cover whatever subset of this you actually have:**
 >
-> 1. **What happened?** What made you want to write this *this week*. The conversation, the
+> 1. **What happened?** What made you want to write this _this week_. The conversation, the
 >    thing you read, the bug, the meeting, the moment. The trigger, not the topic.
 > 2. **Who are you arguing with?** Who have you been talking to about this lately, and what
 >    are they getting wrong, or worried about, or repeating that annoys you?
@@ -139,7 +139,7 @@ The ending currently restates the thesis. What do you actually want the reader t
 
 ## What the interview is not for
 
-Do not use the answers as *steering* while you generate. That is the failure case measured
+Do not use the answers as _steering_ while you generate. That is the failure case measured
 above: absorbing the author's situation and re-expressing it in model words produces the same
 output as inventing it. The answers are source text. Paste them in and cut, do not read them
 and write.

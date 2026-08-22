@@ -53,7 +53,7 @@ mischief      the writer is enjoying themselves
 What is not available is neutrality with the affect sanded off. "There are arguments on both
 sides" is the absence of a stance, and readers register absence as evasion.
 
-**Warmth is compatible with rigour.** The BBC's *Being Human* essay is factually careful and
+**Warmth is compatible with rigour.** The BBC's _Being Human_ essay is factually careful and
 openly enthusiastic at the same time. Precision does not require coldness, and the habit of
 mistaking flatness for seriousness is one of the strongest pulls in machine-written prose.
 
@@ -75,9 +75,9 @@ test is whether the subject stays in view.
 Seventy-seven words, one subject, six clauses, and it accelerates. Do not break it.
 
 **The rhythmic series.** Three concrete nouns in a row is a figure with a long history, and it
-works when the members are things you can picture: *danger, hope, and love*; *the hours, days,
-and months after we die*. The tell is the abstract triad reaching for completeness:
-*correctness, maintainability, and scalability*. Judge the members, not the count.
+works when the members are things you can picture: _danger, hope, and love_; _the hours, days,
+and months after we die_. The tell is the abstract triad reaching for completeness:
+_correctness, maintainability, and scalability_. Judge the members, not the count.
 
 **The short sentence after a long one.** Earn it, then use it.
 

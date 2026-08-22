@@ -4,11 +4,11 @@ Applied [addyosmani/clarity](https://github.com/addyosmani/clarity) principles a
 
 ## Scope
 
-| Area | Files | Register |
-|------|-------|----------|
-| Site copy | `data/config.json`, hero/about/contact sections | Evocation |
-| Notes / TIL posts | `posts/*.md` (51 files) | Guide |
-| Lint tooling | `.agents/skills/clarity/`, `scripts/clarity-lint-posts.sh` | — |
+| Area              | Files                                                      | Register  |
+| ----------------- | ---------------------------------------------------------- | --------- |
+| Site copy         | `data/config.json`, hero/about/contact sections            | Evocation |
+| Notes / TIL posts | `posts/*.md` (51 files)                                    | Guide     |
+| Lint tooling      | `.agents/skills/clarity/`, `scripts/clarity-lint-posts.sh` | —         |
 
 ## Clarity rules applied
 

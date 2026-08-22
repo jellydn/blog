@@ -23,14 +23,14 @@ Where they disagree with a popular rule, the measurement wins.
 Across fifteen full-length drafts in eight registers, the classifier's human percentage tracked
 the share of words the author actually wrote, close to linearly.
 
-| Author share of words | Result |
-|---|---|
-| 0% | 89–100% machine |
-| ~40% | 71–81% machine |
-| ~55% | 56% machine |
-| ~68% | 79% human |
-| ~75% | 81% human |
-| 100% | 100% human |
+| Author share of words | Result          |
+| --------------------- | --------------- |
+| 0%                    | 89–100% machine |
+| ~40%                  | 71–81% machine  |
+| ~55%                  | 56% machine     |
+| ~68%                  | 79% human       |
+| ~75%                  | 81% human       |
+| 100%                  | 100% human      |
 
 Register, structure, lint compliance, and literary quality moved results within roughly ten
 points of that line. Authorship share moved them by eighty.
@@ -66,13 +66,13 @@ Every attempt to simulate human texture scored worse than a clean draft, and thr
 tripped the classifier's dedicated warning for text that shows signs of deliberate
 humanization.
 
-| Attempt | Result |
-|---|---|
-| Real typos, missing apostrophes, comma splices injected | 92% machine, plus the humanization warning |
-| Question-and-answer rewrite | 95% machine, plus the warning |
-| Telegraphic notes, compressed to fragments | 100% machine, plus the warning |
-| Staged messy-draft-then-revise pipeline, run by the model | 100% machine |
-| Casual first-person voice with swearing and a war story, over the same structure | 100% machine |
+| Attempt                                                                          | Result                                     |
+| -------------------------------------------------------------------------------- | ------------------------------------------ |
+| Real typos, missing apostrophes, comma splices injected                          | 92% machine, plus the humanization warning |
+| Question-and-answer rewrite                                                      | 95% machine, plus the warning              |
+| Telegraphic notes, compressed to fragments                                       | 100% machine, plus the warning             |
+| Staged messy-draft-then-revise pipeline, run by the model                        | 100% machine                               |
+| Casual first-person voice with swearing and a war story, over the same structure | 100% machine                               |
 
 Two things follow. Stylization toward mess and stylization toward terseness both read as
 trying to hide, and a warning that reads as deliberate evasion is a worse outcome than an
@@ -95,16 +95,16 @@ undershooting.
 
 **Read this before using any number below.** The control was a single text: a conversational
 personal note. The targets describe that register and generalise badly outside it. Measured
-against the BBC Earth *Being Human* essay, a piece of confident broadcast prose that a
+against the BBC Earth _Being Human_ essay, a piece of confident broadcast prose that a
 classifier scored fully human, four of the five targets read "off":
 
-| | BBC essay | target | verdict |
-|---|---|---|---|
-| body sentence CV | 0.515 | > 0.60 | off |
-| hedge + booster / 100 | 0.79 | 3.5-4.5 | off by a factor of four |
-| anchors / 100 | 2.48 | 3-4 | off |
-| triads | 5 | low | off |
-| sentences past 40 words | 2 | 0 | off |
+|                         | BBC essay | target  | verdict                 |
+| ----------------------- | --------- | ------- | ----------------------- |
+| body sentence CV        | 0.515     | > 0.60  | off                     |
+| hedge + booster / 100   | 0.79      | 3.5-4.5 | off by a factor of four |
+| anchors / 100           | 2.48      | 3-4     | off                     |
+| triads                  | 5         | low     | off                     |
+| sentences past 40 words | 2         | 0       | off                     |
 
 That piece is good writing. So the numbers below are register-bound, not laws. Conversational
 and reflective prose hedges; declarative, broadcast, and promotional prose does not, and
