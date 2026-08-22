@@ -10,11 +10,11 @@ npx skills add addyosmani/clarity
 
 ## Scope
 
-| Area | Files | Register |
-|------|-------|----------|
-| Site copy | `data/config.json`, hero/about/contact sections | Evocation |
-| Notes / TIL posts | `posts/*.md` (51 files) | Guide |
-| Video metadata | `videos/*.md` (descriptions) | Guide |
+| Area              | Files                                           | Register  |
+| ----------------- | ----------------------------------------------- | --------- |
+| Site copy         | `data/config.json`, hero/about/contact sections | Evocation |
+| Notes / TIL posts | `posts/*.md` (51 files)                         | Guide     |
+| Video metadata    | `videos/*.md` (descriptions)                    | Guide     |
 
 ## Clarity rules applied
 
