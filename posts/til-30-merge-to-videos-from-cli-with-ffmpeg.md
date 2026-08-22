@@ -6,17 +6,17 @@ tag:
 author: Dung Huynh
 hero_image: /static/til.jpeg
 title: "#TIL 30 - Merge to videos from CLI with ffmpeg"
-description: Concatenate videos with ffmpeg
+description: "Concatenate multiple video files with ffmpeg concat demuxer and -c copy (no re-encode)"
 _template: post
 ---
 
 ## What
 
-Merge multiple video files into one using ffmpeg.
+Merge multiple video files into one using ffmpeg's concat demuxer.
 
 ## Why
 
-Quick way to combine videos without re-encoding (preserves quality).
+Re-encoding merged videos is slow and lossy. The concat demuxer with `-c copy` streams each file's packets directly into the output container — you get a single file in seconds with identical quality.
 
 ## How
 

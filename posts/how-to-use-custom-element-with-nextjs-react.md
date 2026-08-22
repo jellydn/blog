@@ -6,12 +6,12 @@ tag:
 author: Dung Huynh
 hero_image: /IT Man Main Logo 800x600.png
 title: How to use custom element with NextJS/React
-description: "Use lite-youtube-embed with Next.js dynamic import"
+description: "Embed YouTube with lite-youtube-embed in Next.js — disable SSR and handle React's unknown custom element"
 ---
 
 ## Context
 
-Embedding YouTube's default player loads heavy JS/CSS. `lite-youtube-embed` is a lightweight alternative using custom elements. React doesn't recognize custom elements, requiring `@ts-expect-error` and dynamic import with SSR disabled.
+When you embed YouTube's default player, the page loads heavy JS and CSS. `lite-youtube-embed` gives you a lighter custom element instead. React doesn't recognize custom elements out of the box, so you need `@ts-expect-error` on the tag and a dynamic import with SSR turned off.
 
 ## Usage
 

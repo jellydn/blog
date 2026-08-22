@@ -6,17 +6,17 @@ tag:
 author: Dung Huynh
 hero_image: /static/til.jpeg
 title: "#TIL 25 - Yarn global upgrade all packages"
-description: Upgrade all global Yarn packages
+description: "Upgrade every globally installed Yarn package at once with yarn-upgrade-all"
 _template: post
 ---
 
 ## What
 
-Upgrade all globally installed Yarn packages to their latest versions.
+Upgrade all globally installed Yarn packages to their latest versions in one command.
 
 ## Why
 
-Yarn has no built-in command to upgrade all global packages at once.
+Yarn has no built-in `yarn global upgrade` that touches every package. The `yarn-upgrade-all -g` utility reads your global list and bumps each entry individually.
 
 ## How
 

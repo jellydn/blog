@@ -6,17 +6,17 @@ tag:
 author: Dung Huynh
 hero_image: /static/til.jpeg
 title: "#TIL 32 - List all express routes"
-description: Get all registered Express routes
+description: "List every registered Express route by walking app._router.stack programmatically"
 _template: post
 ---
 
 ## What
 
-List all registered routes in an Express application programmatically.
+Print every HTTP method and path registered in an Express application.
 
 ## Why
 
-Express has no built-in method to list routes. Useful for debugging and documentation.
+Express has no built-in route listing — middleware and nested routers hide paths from a simple grep. Walking `app._router.stack` recursively resolves regex patterns and sub-routers into readable `GET /users` lines for debugging or docs.
 
 ## How
 

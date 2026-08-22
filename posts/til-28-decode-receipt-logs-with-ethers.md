@@ -6,17 +6,17 @@ tag:
 author: Dung Huynh
 hero_image: /static/til.jpeg
 title: "#TIL 28 - Decode receipt logs with ethers"
-description: Decode event logs with ethers.js
+description: "Decode Ethereum transaction receipt event logs with ethers.js Interface.parseLog"
 _template: post
 ---
 
 ## What
 
-Decode transaction receipt event logs using contract ABI with ethers.js.
+Decode hex-encoded event logs from an Ethereum transaction receipt using your contract ABI.
 
 ## Why
 
-Logs are hex-encoded. Need ABI to parse them into readable event data.
+Receipt logs store topics and data as raw bytes — you can't read event names or arguments without the ABI. `Interface.parseLog` matches topic0 to the event signature and decodes the remaining fields into typed JavaScript values.
 
 ## How
 

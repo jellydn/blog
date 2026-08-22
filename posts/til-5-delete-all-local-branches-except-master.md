@@ -6,17 +6,17 @@ tag:
 author: Dung Huynh
 hero_image: /static/til.jpeg
 title: "#TIL 5 - Delete all local branches except master"
-description: Clean up local git branches
+description: "Delete every local git branch except master or main with grep and xargs"
 _template: post
 ---
 
 ## What
 
-Delete all local branches except the current branch (master/main).
+Delete all local git branches except the one you want to keep (master or main).
 
 ## Why
 
-Local branches accumulate over time. Clean up to reduce clutter and confusion.
+Feature branches pile up after merges and clutter `git branch` output. Piping branch names through `grep -v` and `xargs git branch -D` removes stale locals in one shot without touching the remote.
 
 ## How
 

@@ -6,16 +6,16 @@ tag:
 author: Dung Huynh
 hero_image: /til.jpeg
 title: "#TIL 11 - Mac OSX - Open file from anywhere"
-description: Bypass macOS Gatekeeper for unsigned apps
+description: "Run unsigned macOS apps by disabling Gatekeeper with spctl and clearing quarantine xattrs"
 ---
 
 ## What
 
-Disable Gatekeeper to run apps from unidentified developers.
+Disable macOS Gatekeeper temporarily and remove quarantine attributes so you can open an unsigned app.
 
 ## Why
 
-Some apps aren't signed or can't be verified by Apple. Gatekeeper blocks them by default.
+Gatekeeper checks app signatures before launch and blocks anything Apple hasn't notarized. `spctl --master-disable` turns off that check, and `xattr -cr` strips the quarantine flag downloaded files carry — both are reversible when you're done.
 
 ## How
 

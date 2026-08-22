@@ -7,13 +7,13 @@ tag:
 author: Dung Huynh
 hero_image: ""
 title: Reload page from iframe with cross-domain support
-description: Trigger parent page reload from iframe
+description: "Reload the parent page from a cross-origin iframe using window.postMessage"
 _template: post
 ---
 
 ## Context
 
-When an iframe is cross-domain, direct parent access is blocked. Use `postMessage` API with a message listener to communicate between iframe and parent.
+When your iframe loads a page from a different domain, the browser blocks direct access to `window.parent.location` — the same-origin policy prevents cross-domain DOM reads. Instead, you send a message from the iframe with `window.parent.postMessage` and listen for it on the parent page to trigger a reload.
 
 ## Usage
 

@@ -3,7 +3,7 @@ author: Dung Huynh
 date: "07/14/2023 9:48 PM +0800"
 hero_image: /til.jpeg
 title: "#TIL 41 - How to deploy old legacy documentation with MkDocs"
-description: Host legacy documentation versions with MkDocs
+description: "Host legacy documentation versions (e.g. TypeORM v0.2) with MkDocs and deploy to Vercel"
 tag:
   - typeorm
   - markdown
@@ -11,11 +11,11 @@ tag:
 
 ## What
 
-Deploy older versions of documentation (e.g., TypeORM v0.2) when official site only shows latest.
+Deploy an older version of a project's documentation when the official site only shows the latest release.
 
 ## Why
 
-Some projects only host latest docs. Older versions may still be in use.
+Projects like TypeORM retire old docs when they ship a major version, but you may still be on v0.2. Cloning a tagged release with `degit`, building it with MkDocs, and deploying to Vercel gives you a standalone docs site for the version you're actually running.
 
 ## How
 

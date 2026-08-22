@@ -6,17 +6,17 @@ tag:
 author: Dung Huynh
 hero_image: /static/til.jpeg
 title: "#TIL 12 - Fix the SSH issue with droplet on Digital Ocean "
-description: Enable password authentication for SSH
+description: "Fix DigitalOcean droplet Permission denied (publickey) by enabling SSH password auth"
 _template: post
 ---
 
 ## What
 
-Fix "Permission denied (publickey)" SSH error by enabling password authentication.
+Fix "Permission denied (publickey)" on a DigitalOcean droplet by enabling password authentication in `sshd_config`.
 
 ## Why
 
-New droplets disable password auth. If you lose your SSH key or can't use key-based auth, you're locked out.
+Fresh droplets ship with key-only SSH — if you lost your private key or need console access without one, the server rejects every password attempt. Flipping `PasswordAuthentication yes` lets you log in with a password while you add a new key.
 
 ## How
 

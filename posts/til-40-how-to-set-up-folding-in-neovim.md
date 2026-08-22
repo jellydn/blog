@@ -9,17 +9,17 @@ tag:
 author: Dung Huynh
 hero_image: /static/til.jpeg
 title: "TIL #40 - How to Set Up Folding in Neovim"
-description: Advanced code folding in Neovim
+description: "Set up Treesitter-based code folding in Neovim with nvim-ufo and fold-preview.nvim"
 _template: post
 ---
 
 ## What
 
-Set up modern code folding in Neovim with nvim-ufo and fold preview.
+Configure fast, Treesitter-aware code folding in Neovim with nvim-ufo and a fold preview popup.
 
 ## Why
 
-Native folding is slow and limited. UFO provides fast, Treesitter-based folding with preview.
+Built-in Neovim folding uses slow syntax-based providers and gives no preview of folded content. nvim-ufo uses Treesitter for accurate fold boundaries, and fold-preview.nvim shows the hidden lines in a popup before you expand.
 
 ## How
 
