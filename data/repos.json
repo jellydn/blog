@@ -352,7 +352,7 @@
                 "url": "https://github.com/jellydn/pi-clinepass-provider",
                 "homepage": "https://jellydn.github.io/pi-clinepass-provider/",
                 "stars": 14,
-                "forks": 6,
+                "forks": 5,
                 "language": "TypeScript",
                 "topics": [
                     "pi",
@@ -560,7 +560,7 @@
                 "description": "A curated list of awesome 🔥 TypeScript Typesafe Libraries🔥",
                 "url": "https://github.com/jellydn/awesome-typesafe",
                 "homepage": "http://typesafe.itman.fyi/",
-                "stars": 178,
+                "stars": 180,
                 "forks": 24,
                 "language": "",
                 "topics": [
@@ -569,7 +569,7 @@
                     "typesafe",
                     "typescript"
                 ],
-                "updated_at": "2026-08-16T10:42:04Z"
+                "updated_at": "2026-08-22T15:18:49Z"
             },
             {
                 "name": "fastify-starter",
@@ -2702,7 +2702,7 @@
                 "description": "Hurl.nvim is a Neovim plugin designed to run HTTP requests directly from `.hurl` files. Elevate your API development workflow by executing and viewing responses without leaving your editor.",
                 "url": "https://github.com/jellydn/hurl.nvim",
                 "homepage": "https://gyazo.com/19492e8b5366cec3f22d5fd97a63f37a",
-                "stars": 258,
+                "stars": 257,
                 "forks": 20,
                 "language": "Lua",
                 "topics": [
@@ -2711,7 +2711,7 @@
                     "neovim",
                     "neovim-plugin"
                 ],
-                "updated_at": "2026-08-09T09:51:54Z"
+                "updated_at": "2026-08-22T10:37:21Z"
             },
             {
                 "name": "lazy-nvim-ide",
@@ -3764,7 +3764,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-08-21T03:43:44Z"
+                "updated_at": "2026-08-22T03:35:14Z"
             },
             {
                 "name": "redux-toolkit-app",
