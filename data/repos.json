@@ -3120,7 +3120,7 @@
                 "description": "Another awesome starter for your app base on nextjs + tailwind + react-query + zod + react-hook-form + next-auth +  jotai",
                 "url": "https://github.com/jellydn/next-app-starter",
                 "homepage": "https://next-app-starter.productsway.com",
-                "stars": 282,
+                "stars": 283,
                 "forks": 34,
                 "language": "TypeScript",
                 "topics": [
@@ -3135,7 +3135,7 @@
                     "storybook",
                     "tailwindcss"
                 ],
-                "updated_at": "2026-07-27T12:56:00Z"
+                "updated_at": "2026-08-23T15:11:40Z"
             },
             {
                 "name": "nft-app",
@@ -3764,7 +3764,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-08-22T03:35:14Z"
+                "updated_at": "2026-08-23T03:43:18Z"
             },
             {
                 "name": "redux-toolkit-app",
