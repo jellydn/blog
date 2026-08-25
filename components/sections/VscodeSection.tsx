@@ -18,8 +18,8 @@ export function VscodeSection({ extensions }: VscodeSectionProps) {
                             VS Code Extensions
                         </h2>
                         <p className="text-xl text-base-content/70">
-                            Tools I&apos;ve built to improve developer
-                            experience
+                            VS Code extensions I wrote to fix my own workflow
+                            gaps
                         </p>
                     </div>
                     <Button

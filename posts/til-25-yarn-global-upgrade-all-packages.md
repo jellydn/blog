@@ -6,20 +6,23 @@ tag:
 author: Dung Huynh
 hero_image: /static/til.jpeg
 title: "#TIL 25 - Yarn global upgrade all packages"
-description: Upgrade all global Yarn packages
+description: "Upgrade globally installed Yarn Classic packages with yarn global upgrade"
 _template: post
 ---
 
 ## What
 
-Upgrade all globally installed Yarn packages to their latest versions.
+Upgrade all globally installed Yarn packages to their latest versions in one command.
 
 ## Why
 
-Yarn has no built-in command to upgrade all global packages at once.
+Yarn Classic includes `yarn global upgrade`, which updates global packages within their declared version ranges. Add `--latest` when you intentionally want the latest releases even if that ignores those ranges.
 
 ## How
 
 ```sh
-npx yarn-upgrade-all -g
+yarn global upgrade
+
+# Ignore declared version ranges and install the latest releases
+yarn global upgrade --latest
 ```

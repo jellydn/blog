@@ -424,7 +424,7 @@ function slugify(title: string): string {
 }
 
 function escapeYaml(str: string): string {
-    return str.replace(/"/g, '\\"').replace(/'/g, "''").replace(/\n/g, ' ');
+    return str.replace(/"/g, '\\"').replace(/\n/g, ' ');
 }
 
 async function generateVideoPages(videos: VideoWithTags[]): Promise<void> {

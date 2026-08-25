@@ -7,8 +7,9 @@ tag:
 author: Dung Huynh
 hero_image: /uploads/productsway.jpeg
 description: >-
-  I’m Dung Huynh Duc. I work at AirCarbon as a Software Engineer. I often get
-  into something new and always feel exciting when trying with hot technology.
+  Introducing Dung Huynh Duc — Software Engineer at AirCarbon, blogger at
+  productsway.com, and creator of IT Man Channel. TIL notes and deep dives on
+  web and blockchain development.
 _template: post
 ---
 
@@ -18,10 +19,10 @@ _template: post
 
 👨‍💻 All of my projects are available at productsway.com
 
-📝 I regulary write articles on productsway.com
+📝 I regularly write articles on productsway.com
 
 📫 How to reach me dung@productsway.com
 
 📹 I often publish my video every Sunday on IT Man Channel
 
-I will write articles those are `TIL`(Today I learned) and some dedicated articles about website and blockchain development. Hopefully, you would find something useful for you on my blog.
+You'll find `TIL` (Today I learned) notes and longer articles on web and blockchain development here. I hope something on this blog helps you.

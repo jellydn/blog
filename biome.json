@@ -36,6 +36,10 @@
             "linter": { "enabled": false }
         },
         {
+            "includes": ["data/*.json"],
+            "formatter": { "enabled": false }
+        },
+        {
             "includes": ["pages/posts/\\[slug\\].tsx"],
             "linter": {
                 "rules": {

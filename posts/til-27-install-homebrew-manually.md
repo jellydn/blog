@@ -5,17 +5,17 @@ tag:
 author: Dung Huynh
 hero_image: /static/til.jpeg
 title: "#TIL 27 - Install Homebrew manually"
-description: Install Homebrew without sudo
+description: "Install Homebrew to a local directory without sudo on restricted servers"
 _template: post
 ---
 
 ## What
 
-Install Homebrew to a local directory without root access.
+Install Homebrew into a local directory when you don't have sudo access.
 
 ## Why
 
-Some servers don't allow sudo. Local installation works without system permissions.
+The default Homebrew installer writes to `/usr/local` and needs admin rights. Cloning the brew repo into your home folder and adding `eval "$(brew shellenv)"` to your shell gives you the same package manager without touching system paths.
 
 ## How
 

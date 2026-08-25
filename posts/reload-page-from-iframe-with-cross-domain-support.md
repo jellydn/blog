@@ -7,20 +7,22 @@ tag:
 author: Dung Huynh
 hero_image: ""
 title: Reload page from iframe with cross-domain support
-description: Trigger parent page reload from iframe
+description: "Reload the parent page from a cross-origin iframe using window.postMessage"
 _template: post
 ---
 
 ## Context
 
-When an iframe is cross-domain, direct parent access is blocked. Use `postMessage` API with a message listener to communicate between iframe and parent.
+When your iframe loads a page from a different domain, the browser blocks direct access to `window.parent.location` — the same-origin policy prevents cross-domain DOM reads. Instead, you send a message to the parent page with `window.parent.postMessage`, using the parent's exact origin, and verify the iframe's origin before reloading.
 
 ## Usage
 
 **Inside iframe (sender):**
 
 ```typescript
-<button onClick={() => window.parent.postMessage("reload-page", "*")}>
+const parentOrigin = "https://parent.example.com";
+
+<button onClick={() => window.parent.postMessage("reload-page", parentOrigin)}>
   Reload Parent
 </button>
 ```
@@ -29,9 +31,10 @@ When an iframe is cross-domain, direct parent access is blocked. Use `postMessag
 
 ```typescript
 useEffect(() => {
+  const iframeOrigin = "https://iframe.example.com";
+
   const listener = (event: MessageEvent) => {
-    // TODO: Verify event.origin for security
-    if (event.data === "reload-page") {
+    if (event.origin === iframeOrigin && event.data === "reload-page") {
       window.location.reload();
     }
   };
@@ -47,5 +50,3 @@ useEffect(() => {
   sandbox="allow-same-origin allow-scripts"
 />
 ```
-
-**Security:** Replace `"*"` with specific origin in production.

@@ -6,17 +6,17 @@ tag:
 author: Dung Huynh
 hero_image: /static/til.jpeg
 title: "#TIL 4 - Trigger github action base on the comment"
-description: Trigger GitHub Actions via issue comments
+description: "Run a GitHub Actions workflow from an authorized pull-request comment"
 _template: post
 ---
 
 ## What
 
-Run GitHub Actions workflows when specific comments are posted on issues/PRs.
+Trigger a GitHub Actions workflow when an authorized collaborator posts a specific comment on a pull request.
 
 ## Why
 
-Enable manual deployments via comments without push access or creating branches.
+The `issue_comment` event fires for issues and pull requests, including comments from untrusted users. Before a deployment job runs, verify the comment belongs to a pull request, matches the exact command, and comes from a repository owner, member, or collaborator.
 
 ## How
 
@@ -30,7 +30,13 @@ name: Deploy action
 jobs:
   web-image:
     runs-on: ubuntu-latest
-    if: github.event.comment.body == 'Build web'
+    if: >-
+      github.event.issue.pull_request &&
+      github.event.comment.body == 'Build web' &&
+      contains(
+        fromJSON('["OWNER", "MEMBER", "COLLABORATOR"]'),
+        github.event.comment.author_association
+      )
     steps:
       - run: echo "Deploying..."
 ```

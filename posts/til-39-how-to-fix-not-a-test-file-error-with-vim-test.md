@@ -8,17 +8,17 @@ tag:
 author: Dung Huynh
 hero_image: /static/til.jpeg
 title: '#TIL 39 - How to fix "Not a test file" error with vim-test'
-description: Fix vim-test in monorepos
+description: "Fix vim-test Not a test file error in monorepos by setting test#project_root dynamically"
 _template: post
 ---
 
 ## What
 
-Fix "Not a test file" error in vim-test for monorepos.
+Fix the vim-test "Not a test file" error when running tests from nested directories in a monorepo.
 
 ## Why
 
-vim-test can't find project root in large codebases. Needs `test#project_root` configured.
+vim-test looks for a project root marker (like `package.json`) starting from the current file's directory. In monorepos the nearest `package.json` may be several levels up — walking the path and setting `g:test#project_root` before running tells vim-test where Jest lives.
 
 ## How
 

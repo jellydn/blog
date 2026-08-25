@@ -7,12 +7,12 @@ tag:
 author: Dung Huynh
 hero_image: /IT Man Main Logo 800x600.png
 title: Simply the flutter flow with Makefile
-description: Streamline Flutter development workflow with Makefile
+description: "Wrap Flutter clean, build, test, format, and lint in a Makefile with pre-commit checks"
 ---
 
 ## Context
 
-Flutter development involves repetitive commands: clean, build, test, format, lint. A Makefile provides consistent shortcuts and ensures quality checks (format, lint, tests) run automatically before commits.
+When you work on a Flutter app, you run the same commands over and over — clean, build, test, format, lint. A Makefile gives you one-word shortcuts for each step and lets you chain format, lint, and tests into a `commit` target so you do not commit unformatted or broken code.
 
 ## Usage
 

@@ -6,17 +6,17 @@ tag:
 author: Dung Huynh
 hero_image: /static/til.jpeg
 title: "#TIL 32 - List all express routes"
-description: Get all registered Express routes
+description: "Inspect registered Express routes by walking the internal router stack"
 _template: post
 ---
 
 ## What
 
-List all registered routes in an Express application programmatically.
+Print HTTP methods and paths from an Express application's internal router stack.
 
 ## Why
 
-Express has no built-in method to list routes. Useful for debugging and documentation.
+Express has no public route-listing API. Walking the internal router stack recursively can turn route layers and nested routers into readable `GET /users` lines for debugging. Express 4 exposes `_router`, while newer versions may expose `router`; because both are private internals, verify this helper when upgrading Express.
 
 ## How
 
@@ -36,11 +36,11 @@ function split(thing: any): string {
 
 function getRoutesOfLayer(path: string, layer: any): string[] {
   if (layer.method) return [`${layer.method.toUpperCase()} ${path}`];
-  if (layer.route)
-    return getRoutesOfLayer(
-      path + split(layer.route.path),
-      layer.route.stack[0],
+  if (layer.route) {
+    return layer.route.stack.flatMap((item: any) =>
+      getRoutesOfLayer(path + split(layer.route.path), item),
     );
+  }
   if (layer.name === "router" && layer.handle.stack) {
     return layer.handle.stack.flatMap((item: any) =>
       getRoutesOfLayer(path + split(layer.regexp), item),
@@ -50,7 +50,10 @@ function getRoutesOfLayer(path: string, layer: any): string[] {
 }
 
 export function getRoutes(app: Application): string[] {
-  return app._router.stack.flatMap((layer: any) => getRoutesOfLayer("", layer));
+  const router = (app as any).router ?? (app as any)._router;
+  return (router?.stack ?? []).flatMap((layer: any) =>
+    getRoutesOfLayer("", layer),
+  );
 }
 
 // Usage

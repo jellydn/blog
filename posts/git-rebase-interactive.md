@@ -6,17 +6,17 @@ tag:
 author: Dung Huynh
 hero_image: /static/til.jpeg
 title: "#TIL 1 - Git Rebase Interactive"
-description: Clean up git history before PR
+description: "Squash, reorder, or edit recent commits with git rebase -i before opening a PR"
 _template: post
 ---
 
 ## What
 
-Interactive rebase to squash, reorder, or edit recent commits.
+Use `git rebase -i` to squash, reorder, reword, or drop commits from your local branch before you push.
 
 ## Why
 
-Clean commit history before submitting PRs. Combine related commits or fix mistakes.
+Reviewers see one commit per logical change when you squash related work together. Interactive rebase rewrites local commit IDs. Use it freely on an unpublished branch, but coordinate before rewriting a shared branch. If you already pushed the branch, update it with `git push --force-with-lease` rather than `--force` so you do not overwrite someone else's new commits.
 
 ## How
 

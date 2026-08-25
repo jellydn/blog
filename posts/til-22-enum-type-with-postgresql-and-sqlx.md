@@ -7,48 +7,52 @@ tag:
 author: Dung Huynh
 hero_image: /static/til.jpeg
 title: "#TIL 22 - Enum Type with PostgreSQL and sqlx"
-description: Custom Scan/Value for PostgreSQL enums in Go
+description: "Implement Scan and Value for PostgreSQL enum arrays in Go with lib/pq"
 _template: post
 ---
 
 ## What
 
-Implement custom `Scan` and `Value` methods for PostgreSQL enum types with sqlx.
+Implement custom `Scan` and `Value` methods so sqlx can read and write PostgreSQL enum arrays in Go.
 
 ## Why
 
-PostgreSQL returns enums as `"{value1,value2}"`. Need parsing to convert to Go types.
+PostgreSQL returns enum arrays in its array text format, which includes quoting and escaping rules. Delegate that format to `lib/pq` instead of splitting on commas, then convert between `[]string` and your enum type.
 
 ## How
 
 ```go
+import (
+    "database/sql/driver"
+
+    "github.com/lib/pq"
+)
+
 type ProjectSector string
 type ProjectSectors []ProjectSector
 
-func parseEnumFormat(str []byte) string {
-    if len(str) == 0 { return "" }
-    return strings.Replace(string(str[1:len(str)-1]), "\"", "", -1)
-}
-
-func (ps *ProjectSector) Scan(val interface{}) error {
-    if b, ok := val.([]byte); ok {
-        *ps = ProjectSector(parseEnumFormat(b))
-        return nil
-    }
-    return fmt.Errorf("unsupported type: %T", val)
-}
-
 func (ps *ProjectSectors) Scan(val interface{}) error {
-    if val == nil { *ps = []ProjectSector{}; return }
-    parts := strings.Split(parseEnumFormat(val.([]byte)), ",")
-    for _, p := range parts {
-        *ps = append(*ps, ProjectSector(p))
+    var values pq.StringArray
+    if err := values.Scan(val); err != nil {
+        return err
+    }
+
+    *ps = make(ProjectSectors, len(values))
+    for i, value := range values {
+        (*ps)[i] = ProjectSector(value)
     }
     return nil
 }
 
 func (ps ProjectSectors) Value() (driver.Value, error) {
-    if ps == nil { return "", nil }
-    return fmt.Sprintf(`{%s}`, ps), nil
+    if ps == nil {
+        return nil, nil
+    }
+
+    values := make(pq.StringArray, len(ps))
+    for i, value := range ps {
+        values[i] = string(value)
+    }
+    return values.Value()
 }
 ```
