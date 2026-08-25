@@ -12,7 +12,7 @@ description: "Wrap Flutter clean, build, test, format, and lint in a Makefile wi
 
 ## Context
 
-When you work on a Flutter app, you run the same commands over and over — clean, build, test, format, lint. A Makefile gives you one-word shortcuts for each step and lets you chain format, lint, and tests into a `commit` target so you never push unformatted or broken code.
+When you work on a Flutter app, you run the same commands over and over — clean, build, test, format, lint. A Makefile gives you one-word shortcuts for each step and lets you chain format, lint, and tests into a `commit` target so you do not commit unformatted or broken code.
 
 ## Usage
 

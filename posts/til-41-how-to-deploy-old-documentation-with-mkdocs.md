@@ -15,11 +15,11 @@ Deploy an older version of a project's documentation when the official site only
 
 ## Why
 
-Projects like TypeORM retire old docs when they ship a major version, but you may still be on v0.2. Cloning a tagged release with `degit`, building it with MkDocs, and deploying to Vercel gives you a standalone docs site for the version you're actually running.
+Projects like TypeORM retire old docs when they ship a major version, but you may still be on v0.2. Downloading a snapshot of a tagged release with `degit`, building it with MkDocs, and deploying to Vercel gives you a standalone docs site for the version you're actually running. The snapshot does not include Git history.
 
 ## How
 
-**1. Clone specific version:**
+**1. Download a specific version:**
 
 ```sh
 npx degit typeorm/typeorm#0.2.38 typeorm-legacy

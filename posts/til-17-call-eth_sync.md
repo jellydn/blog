@@ -16,7 +16,7 @@ Call Ethereum JSON-RPC methods that ethers.js does not wrap (like `eth_syncing`)
 
 ## Why
 
-Ethers.js exposes common methods as typed functions but skips admin and debug RPC calls. The underlying `JsonRpcProvider.send(method, params)` passes through any valid JSON-RPC request to your node.
+Ethers.js exposes many JSON-RPC methods as typed functions, but a particular version may not wrap every standard method. The underlying `JsonRpcProvider.send(method, params)` lets you call standard methods such as `eth_syncing`, as well as node-specific methods that your endpoint supports.
 
 ## How
 

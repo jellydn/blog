@@ -19,7 +19,7 @@ Configure fast, Treesitter-aware code folding in Neovim with nvim-ufo and a fold
 
 ## Why
 
-Built-in Neovim folding uses slow syntax-based providers and gives no preview of folded content. nvim-ufo uses Treesitter for accurate fold boundaries, and fold-preview.nvim shows the hidden lines in a popup before you expand.
+Neovim supports several built-in fold methods, including manual, indent, expression, marker, and syntax folding. nvim-ufo adds convenient Treesitter and indent providers, while fold-preview.nvim shows hidden lines in a popup before you expand a fold.
 
 ## How
 

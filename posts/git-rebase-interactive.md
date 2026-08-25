@@ -16,7 +16,7 @@ Use `git rebase -i` to squash, reorder, reword, or drop commits from your local 
 
 ## Why
 
-Reviewers see one commit per logical change when you squash related work together. Interactive rebase rewrites commit history on your branch only — it does not affect remote history until you force-push, so you can fix typos or split oversized commits without opening extra PRs.
+Reviewers see one commit per logical change when you squash related work together. Interactive rebase rewrites local commit IDs. Use it freely on an unpublished branch, but coordinate before rewriting a shared branch. If you already pushed the branch, update it with `git push --force-with-lease` rather than `--force` so you do not overwrite someone else's new commits.
 
 ## How
 

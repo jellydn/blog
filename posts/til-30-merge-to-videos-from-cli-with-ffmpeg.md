@@ -16,7 +16,7 @@ Merge multiple video files into one using ffmpeg's concat demuxer.
 
 ## Why
 
-Re-encoding merged videos is slow and lossy. The concat demuxer with `-c copy` streams each file's packets directly into the output container — you get a single file in seconds with identical quality.
+Re-encoding merged videos is slow and lossy. When every input has compatible codecs, stream layouts, time bases, and other parameters, the concat demuxer with `-c copy` can copy their packets directly into one output without changing quality. Re-encode or normalize incompatible inputs first.
 
 ## How
 
@@ -33,4 +33,4 @@ Run:
 ffmpeg -f concat -safe 0 -i list.txt -c copy output.mp4
 ```
 
-The `-c copy` flag streams without re-encoding for fast merging.
+The `-c copy` flag avoids re-encoding; it does not make incompatible inputs compatible.

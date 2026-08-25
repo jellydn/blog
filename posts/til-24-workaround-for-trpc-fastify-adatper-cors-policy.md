@@ -25,9 +25,15 @@ app.register(fp(fastifyTRPCPlugin), {
   prefix: "/trpc",
   trpcOptions: {
     router: appRouter,
-    responseMeta({ errors }) {
+    createContext({ req }) {
+      return { requestMethod: req.method };
+    },
+    responseMeta({ ctx, errors }) {
       // Handle OPTIONS preflight
-      if (errors?.[0]?.code === "METHOD_NOT_SUPPORTED") {
+      if (
+        ctx?.requestMethod === "OPTIONS" &&
+        errors?.[0]?.code === "METHOD_NOT_SUPPORTED"
+      ) {
         return {
           status: 204,
           headers: {

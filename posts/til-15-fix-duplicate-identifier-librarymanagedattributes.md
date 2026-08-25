@@ -15,7 +15,7 @@ Fix the TypeScript "Duplicate identifier 'LibraryManagedAttributes'" error in Re
 
 ## Why
 
-When two packages each depend on a different `@types/react` version, Yarn installs both and TypeScript sees conflicting global type declarations. `yarn-deduplicate` collapses them to a single version in the lockfile.
+When two packages depend on compatible ranges of `@types/react`, Yarn can still install duplicate versions and TypeScript sees conflicting global declarations. `yarn-deduplicate` can select one version that satisfies both ranges. If the ranges are incompatible, align the dependencies or add a resolution before deduplicating.
 
 ## How
 

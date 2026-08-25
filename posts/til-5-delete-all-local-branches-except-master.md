@@ -6,7 +6,7 @@ tag:
 author: Dung Huynh
 hero_image: /static/til.jpeg
 title: "#TIL 5 - Delete all local branches except master"
-description: "Delete every local git branch except master or main with grep and xargs"
+description: "Delete local Git branches except the checked-out keeper branch"
 _template: post
 ---
 
@@ -16,16 +16,21 @@ Delete all local git branches except the one you want to keep (master or main).
 
 ## Why
 
-Feature branches pile up after merges and clutter `git branch` output. Piping branch names through `grep -v` and `xargs git branch -D` removes stale locals in one shot without touching the remote.
+Feature branches pile up after merges and clutter `git branch` output. Check out the branch you want to keep, list local refs, and exclude that exact branch name. Preview the list before using `-D`, which discards even unmerged work.
 
 ## How
 
 ```sh
-git branch | grep -v "master" | xargs git branch -D
+git switch master
+git for-each-ref --format='%(refname:short)' refs/heads | grep -vx master
 ```
 
-**For main branch:**
+After you verify the preview, delete the listed branches:
 
 ```sh
-git branch | grep -v "main" | xargs git branch -D
+git for-each-ref --format='%(refname:short)' refs/heads \
+  | grep -vx master \
+  | while IFS= read -r branch; do git branch -D "$branch"; done
 ```
+
+Replace `master` with `main` in all three places if `main` is your keeper branch.

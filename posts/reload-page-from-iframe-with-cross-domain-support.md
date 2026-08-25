@@ -13,14 +13,16 @@ _template: post
 
 ## Context
 
-When your iframe loads a page from a different domain, the browser blocks direct access to `window.parent.location` — the same-origin policy prevents cross-domain DOM reads. Instead, you send a message from the iframe with `window.parent.postMessage` and listen for it on the parent page to trigger a reload.
+When your iframe loads a page from a different domain, the browser blocks direct access to `window.parent.location` — the same-origin policy prevents cross-domain DOM reads. Instead, you send a message to the parent page with `window.parent.postMessage`, using the parent's exact origin, and verify the iframe's origin before reloading.
 
 ## Usage
 
 **Inside iframe (sender):**
 
 ```typescript
-<button onClick={() => window.parent.postMessage("reload-page", "*")}>
+const parentOrigin = "https://parent.example.com";
+
+<button onClick={() => window.parent.postMessage("reload-page", parentOrigin)}>
   Reload Parent
 </button>
 ```
@@ -29,9 +31,10 @@ When your iframe loads a page from a different domain, the browser blocks direct
 
 ```typescript
 useEffect(() => {
+  const iframeOrigin = "https://iframe.example.com";
+
   const listener = (event: MessageEvent) => {
-    // TODO: Verify event.origin for security
-    if (event.data === "reload-page") {
+    if (event.origin === iframeOrigin && event.data === "reload-page") {
       window.location.reload();
     }
   };
@@ -47,5 +50,3 @@ useEffect(() => {
   sandbox="allow-same-origin allow-scripts"
 />
 ```
-
-**Security:** Replace `"*"` with specific origin in production.

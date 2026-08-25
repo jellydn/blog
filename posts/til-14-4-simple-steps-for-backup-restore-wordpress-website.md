@@ -18,7 +18,7 @@ Move a WordPress site to a new server by backing up with UpdraftPlus and restori
 
 ## Why
 
-Manual mysqldump + rsync works but misses plugin settings and uploads paths. UpdraftPlus packages the database, themes, plugins, and uploads into one archive on Google Drive — you install WordPress on the new host with EasyEngine, connect the same Drive account, and restore in place.
+Manual `mysqldump` and `rsync` can copy the same data, but you must select and restore each component yourself. UpdraftPlus creates separate backup archives for the database, themes, plugins, uploads, and other files, and may split large components into multiple archives. Store them on Google Drive, install WordPress on the new host with EasyEngine, connect the same Drive account, and restore each component in place.
 
 ## How
 
