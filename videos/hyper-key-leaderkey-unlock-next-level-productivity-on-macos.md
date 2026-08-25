@@ -15,8 +15,8 @@ Want to streamline your macOS workflow? Hyper Key and LeaderKey bring next-level
 🔹 My Config (Dotfiles) → https://github.com/jellydn/dotfiles/tree/master/leader-key
 
 🔹 Alternative Hyper Key Tools:
-• Hyperkey.app → https://hyperkey.app/
-• Karabiner-Elements → https://karabiner-elements.pqrs.org/
+ • Hyperkey.app → https://hyperkey.app/
+ • Karabiner-Elements → https://karabiner-elements.pqrs.org/
 
 In this video, I’ll cover:
 

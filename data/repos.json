@@ -8,7 +8,7 @@
                 "description": "Comprehensive configuration management for AI coding tools - Replicate my complete setup for Claude Code, OpenCode, Amp, Li, Codex and Claude Code Switch with custom configurations, MCP servers, plugins, and commands.",
                 "url": "https://github.com/jellydn/my-ai-tools",
                 "homepage": "http://ai-tools.itman.fyi/",
-                "stars": 116,
+                "stars": 117,
                 "forks": 13,
                 "language": "Shell",
                 "topics": [
@@ -18,7 +18,7 @@
                     "open-code",
                     "skills"
                 ],
-                "updated_at": "2026-08-21T19:37:41Z"
+                "updated_at": "2026-08-25T03:13:02Z"
             },
             {
                 "name": "gpt4free-demo",
@@ -96,14 +96,14 @@
                 "description": "QwenCloud provider for pi — Qwen3.8, DeepSeek V4, GLM-5.2, Wan image, HappyHorse video via OpenAI-compatible API",
                 "url": "https://github.com/jellydn/pi-qwencloud-provider",
                 "homepage": "https://jellydn.github.io/pi-qwencloud-provider/",
-                "stars": 11,
+                "stars": 12,
                 "forks": 1,
                 "language": "TypeScript",
                 "topics": [
                     "pi",
                     "pi-plugins"
                 ],
-                "updated_at": "2026-08-10T16:06:04Z"
+                "updated_at": "2026-08-24T09:52:32Z"
             },
             {
                 "name": "ai-launcher",
@@ -527,15 +527,15 @@
                 "description": "Your ultimate guide to setting up Zed with Vim mode, tailored settings, and key bindings for a seamless coding experience",
                 "url": "https://github.com/jellydn/zed-101-setup",
                 "homepage": "https://itman.fyi",
-                "stars": 1433,
-                "forks": 29,
+                "stars": 1434,
+                "forks": 30,
                 "language": "TypeScript",
                 "topics": [
                     "guide",
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-08-21T22:53:18Z"
+                "updated_at": "2026-08-24T17:59:04Z"
             },
             {
                 "name": "typescript-tips",
@@ -916,6 +916,22 @@
                 "updated_at": "2022-07-15T10:46:24Z"
             },
             {
+                "name": "ws-sockette",
+                "full_name": "jellydn/ws-sockette",
+                "description": "The little WebSocket wrapper for nodejs",
+                "url": "https://github.com/jellydn/ws-sockette",
+                "homepage": "",
+                "stars": 5,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [
+                    "nodejs",
+                    "websocket",
+                    "ws"
+                ],
+                "updated_at": "2026-08-24T05:45:10Z"
+            },
+            {
                 "name": "remix-spa-demo",
                 "full_name": "jellydn/remix-spa-demo",
                 "description": "How to use Biome with Bun.js and Remix to create a Single Page Application",
@@ -931,22 +947,6 @@
                     "spa"
                 ],
                 "updated_at": "2026-08-21T03:18:21Z"
-            },
-            {
-                "name": "ws-sockette",
-                "full_name": "jellydn/ws-sockette",
-                "description": "The little WebSocket wrapper for nodejs",
-                "url": "https://github.com/jellydn/ws-sockette",
-                "homepage": "",
-                "stars": 5,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [
-                    "nodejs",
-                    "websocket",
-                    "ws"
-                ],
-                "updated_at": "2026-08-17T04:42:15Z"
             },
             {
                 "name": "monorepo-starter",
@@ -1011,6 +1011,22 @@
                 "updated_at": "2024-10-16T16:51:32Z"
             },
             {
+                "name": "typescript-starter",
+                "full_name": "jellydn/typescript-starter",
+                "description": "Typescript starter project",
+                "url": "https://github.com/jellydn/typescript-starter",
+                "homepage": "",
+                "stars": 4,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [
+                    "starter",
+                    "template",
+                    "typescript"
+                ],
+                "updated_at": "2026-08-24T07:05:19Z"
+            },
+            {
                 "name": "hono-minimal-app",
                 "full_name": "jellydn/hono-minimal-app",
                 "description": "This is a minimal project with honojs",
@@ -1061,22 +1077,6 @@
                 "updated_at": "2026-08-21T03:17:54Z"
             },
             {
-                "name": "typescript-starter",
-                "full_name": "jellydn/typescript-starter",
-                "description": "Typescript starter project",
-                "url": "https://github.com/jellydn/typescript-starter",
-                "homepage": "",
-                "stars": 4,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [
-                    "starter",
-                    "template",
-                    "typescript"
-                ],
-                "updated_at": "2026-08-17T04:29:50Z"
-            },
-            {
                 "name": "docklight",
                 "full_name": "jellydn/docklight",
                 "description": "A minimal, self-hosted web UI for managing a single-node Dokku server.",
@@ -1122,6 +1122,21 @@
                 "language": "HTML",
                 "topics": [],
                 "updated_at": "2024-11-14T11:34:49Z"
+            },
+            {
+                "name": "sharing-btn",
+                "full_name": "jellydn/sharing-btn",
+                "description": "Sharing Button - Web Component using Stencil",
+                "url": "https://github.com/jellydn/sharing-btn",
+                "homepage": "",
+                "stars": 3,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [
+                    "stenciljs",
+                    "web-component"
+                ],
+                "updated_at": "2026-08-24T08:03:04Z"
             },
             {
                 "name": "fresh-deno-app",
@@ -1208,21 +1223,6 @@
                     "react-native"
                 ],
                 "updated_at": "2026-08-21T03:17:49Z"
-            },
-            {
-                "name": "sharing-btn",
-                "full_name": "jellydn/sharing-btn",
-                "description": "Sharing Button - Web Component using Stencil",
-                "url": "https://github.com/jellydn/sharing-btn",
-                "homepage": "",
-                "stars": 3,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [
-                    "stenciljs",
-                    "web-component"
-                ],
-                "updated_at": "2026-08-17T05:58:32Z"
             },
             {
                 "name": "sky-alert",
@@ -1514,6 +1514,20 @@
                 "updated_at": "2022-06-22T10:27:12Z"
             },
             {
+                "name": "practicepython",
+                "full_name": "jellydn/practicepython",
+                "description": "Learn how to code by practicing Python exercises.",
+                "url": "https://github.com/jellydn/practicepython",
+                "homepage": "",
+                "stars": 1,
+                "forks": 0,
+                "language": "",
+                "topics": [
+                    "python"
+                ],
+                "updated_at": "2026-08-24T04:52:30Z"
+            },
+            {
                 "name": "solid-app",
                 "full_name": "jellydn/solid-app",
                 "description": "Solid Demo App",
@@ -1742,20 +1756,6 @@
                 "updated_at": "2026-08-18T03:51:51Z"
             },
             {
-                "name": "practicepython",
-                "full_name": "jellydn/practicepython",
-                "description": "Learn how to code by practicing Python exercises.",
-                "url": "https://github.com/jellydn/practicepython",
-                "homepage": "",
-                "stars": 1,
-                "forks": 0,
-                "language": "",
-                "topics": [
-                    "python"
-                ],
-                "updated_at": "2026-08-17T06:41:53Z"
-            },
-            {
                 "name": "personal-ai",
                 "full_name": "jellydn/personal-ai",
                 "description": "My AI projects from the last nine months",
@@ -1905,6 +1905,48 @@
                 "updated_at": "2022-12-28T04:11:44Z"
             },
             {
+                "name": "pulumi-kubernetes-typescript",
+                "full_name": "jellydn/pulumi-kubernetes-typescript",
+                "description": "Simple Kubernetes cluster with TypeScript for Pulumi.",
+                "url": "https://github.com/jellydn/pulumi-kubernetes-typescript",
+                "homepage": "",
+                "stars": 0,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [
+                    "pulumi",
+                    "typescript"
+                ],
+                "updated_at": "2026-08-24T07:48:52Z"
+            },
+            {
+                "name": "spin-demo-apps",
+                "full_name": "jellydn/spin-demo-apps",
+                "description": "This repository contains three demo applications for Spin, written in Typescript, Go, and Rust. Each demo has its own README file with detailed instructions on how to run and use the application.",
+                "url": "https://github.com/jellydn/spin-demo-apps",
+                "homepage": "",
+                "stars": 0,
+                "forks": 0,
+                "language": "Makefile",
+                "topics": [],
+                "updated_at": "2026-08-24T07:47:47Z"
+            },
+            {
+                "name": "ioc-demo",
+                "full_name": "jellydn/ioc-demo",
+                "description": "Demo app with inversion of control container",
+                "url": "https://github.com/jellydn/ioc-demo",
+                "homepage": "",
+                "stars": 0,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [
+                    "inverifyjs",
+                    "inversion-of-control"
+                ],
+                "updated_at": "2026-08-24T07:13:20Z"
+            },
+            {
                 "name": "wasmtime-examples",
                 "full_name": "jellydn/wasmtime-examples",
                 "description": "Simple Hello World WebAssembly and Markdown parser programs then running it with Wasmtime (a fast and secure runtime for WebAssembly)",
@@ -1971,48 +2013,6 @@
                     "remix"
                 ],
                 "updated_at": "2026-08-21T03:18:00Z"
-            },
-            {
-                "name": "pulumi-kubernetes-typescript",
-                "full_name": "jellydn/pulumi-kubernetes-typescript",
-                "description": "Simple Kubernetes cluster with TypeScript for Pulumi.",
-                "url": "https://github.com/jellydn/pulumi-kubernetes-typescript",
-                "homepage": "",
-                "stars": 0,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [
-                    "pulumi",
-                    "typescript"
-                ],
-                "updated_at": "2026-08-20T14:53:43Z"
-            },
-            {
-                "name": "spin-demo-apps",
-                "full_name": "jellydn/spin-demo-apps",
-                "description": "This repository contains three demo applications for Spin, written in Typescript, Go, and Rust. Each demo has its own README file with detailed instructions on how to run and use the application.",
-                "url": "https://github.com/jellydn/spin-demo-apps",
-                "homepage": "",
-                "stars": 0,
-                "forks": 0,
-                "language": "Makefile",
-                "topics": [],
-                "updated_at": "2026-08-17T05:49:53Z"
-            },
-            {
-                "name": "ioc-demo",
-                "full_name": "jellydn/ioc-demo",
-                "description": "Demo app with inversion of control container",
-                "url": "https://github.com/jellydn/ioc-demo",
-                "homepage": "",
-                "stars": 0,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [
-                    "inverifyjs",
-                    "inversion-of-control"
-                ],
-                "updated_at": "2026-08-17T05:43:32Z"
             },
             {
                 "name": "homebrew-tap",
@@ -3032,7 +3032,7 @@
                 "topics": [
                     "vscode-extension"
                 ],
-                "updated_at": "2026-08-17T06:00:47Z"
+                "updated_at": "2026-08-24T05:52:53Z"
             },
             {
                 "name": "vscode-fff-gpui",
@@ -3764,7 +3764,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-08-23T03:43:18Z"
+                "updated_at": "2026-08-25T02:35:36Z"
             },
             {
                 "name": "redux-toolkit-app",

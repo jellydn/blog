@@ -1,6 +1,6 @@
 ---
 title: "Boost Your Neovim Productivity with GitHub Copilot Chat"
-description: "Welcome to IT Man, where we dive into the latest tech to supercharge your coding journey! Today, we''re exploring how to significantly enhance your Neovim productivity by integrating GitHub Copilot Cha"
+description: "Welcome to IT Man, where we dive into the latest tech to supercharge your coding journey! Today, we're exploring how to significantly enhance your Neovim productivity by integrating GitHub Copilot Cha"
 date: "2024-02-04"
 youtube_id: "6oOPGaKCd_Q"
 tag: ["AI", "Neovim"]

@@ -1,6 +1,6 @@
 ---
 title: "Introducing quick-code-runner.nvim - A simple and efficient code runner for Neovim"
-description: "🚀 In today''s video, we''re diving into the powerful capabilities of quick-code-runner.nvim, an innovative plugin for Neovim that''s transforming the way developers run code!  🎯 What''s Inside:  Efficie"
+description: "🚀 In today's video, we're diving into the powerful capabilities of quick-code-runner.nvim, an innovative plugin for Neovim that's transforming the way developers run code!  🎯 What's Inside:  Efficie"
 date: "2024-01-21"
 youtube_id: "Pz9TZ6AZ1pU"
 tag: ["Neovim"]

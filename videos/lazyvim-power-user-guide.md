@@ -1,6 +1,6 @@
 ---
 title: "LazyVim Power User Guide"
-description: "Unlock the full potential of LazyVim with the IT Man Channel''s comprehensive guide. Whether you''re a seasoned developer or new to Neovim, our step-by-step tutorial will transform your coding environme"
+description: "Unlock the full potential of LazyVim with the IT Man Channel's comprehensive guide. Whether you're a seasoned developer or new to Neovim, our step-by-step tutorial will transform your coding environme"
 date: "2024-03-31"
 youtube_id: "jveM3hZs_oI"
 tag: ["Neovim"]

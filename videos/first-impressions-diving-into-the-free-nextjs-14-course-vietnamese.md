@@ -1,6 +1,6 @@
 ---
 title: "First Impressions: Diving into the Free Next.js 14 Course [Vietnamese]"
-description: "Today, I''m excited to share my initial impressions of the free Next.js 14 course offered by the Vercel. Join me as I delve into what makes this course stand out!  👉 Free Next.js 14 Course: /nextjs.or"
+description: "Today, I'm excited to share my initial impressions of the free Next.js 14 course offered by the Vercel. Join me as I delve into what makes this course stand out!  👉 Free Next.js 14 Course: /nextjs.or"
 date: "2023-11-12"
 youtube_id: "ccV582wobvQ"
 tag: ["React", "Web"]

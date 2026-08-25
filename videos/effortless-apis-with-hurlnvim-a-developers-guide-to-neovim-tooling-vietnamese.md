@@ -1,6 +1,6 @@
 ---
-title: "Effortless APIs with Hurl.nvim: A Developer''s Guide to Neovim Tooling [Vietnamese]"
-description: "🚀 **Welcome to IT Man Channel!** 🚀  In today’s video, we''re unveiling the power of `Hurl.nvim`, a #Neovim plugin I''ve created to supercharge your API development workflow. Dive deep into the motivat"
+title: "Effortless APIs with Hurl.nvim: A Developer's Guide to Neovim Tooling [Vietnamese]"
+description: "🚀 **Welcome to IT Man Channel!** 🚀  In today’s video, we're unveiling the power of `Hurl.nvim`, a #Neovim plugin I've created to supercharge your API development workflow. Dive deep into the motivat"
 date: "2023-11-05"
 youtube_id: "nr_RbHvnnwk"
 tag: ["Neovim", "Web"]
@@ -16,7 +16,6 @@ In today’s video, we're unveiling the power of `Hurl.nvim`, a #Neovim plugin I
 
 **Live Demo**
 💡 See `Hurl.nvim` in action as we walk through:
-
 - Enabling debugging mode for detailed insights.
 - Customizing key bindings for your convenience.
 - Using the plugin in visual mode for selective API calls.
