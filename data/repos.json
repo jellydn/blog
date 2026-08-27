@@ -88,7 +88,7 @@
                     "cli",
                     "coding-assistant"
                 ],
-                "updated_at": "2026-08-04T14:39:32Z"
+                "updated_at": "2026-08-26T09:13:00Z"
             },
             {
                 "name": "pi-qwencloud-provider",
@@ -123,7 +123,7 @@
                     "open-code",
                     "open-source"
                 ],
-                "updated_at": "2026-08-19T13:14:55Z"
+                "updated_at": "2026-08-26T09:44:23Z"
             },
             {
                 "name": "summary-chatbot-demo",
@@ -168,23 +168,7 @@
                 "topics": [
                     "hermes-agent"
                 ],
-                "updated_at": "2026-08-20T07:10:44Z"
-            },
-            {
-                "name": "flowly",
-                "full_name": "jellydn/flowly",
-                "description": "AI-native engineering assistant for modern development.",
-                "url": "https://github.com/jellydn/flowly",
-                "homepage": "https://jellydn.github.io/flowly/",
-                "stars": 2,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [
-                    "agent",
-                    "flue",
-                    "flueframework"
-                ],
-                "updated_at": "2026-08-22T02:02:45Z"
+                "updated_at": "2026-08-26T08:57:55Z"
             },
             {
                 "name": "logpilot",
@@ -201,19 +185,39 @@
                     "mcp-server",
                     "tmux"
                 ],
-                "updated_at": "2026-07-29T17:53:46Z"
+                "updated_at": "2026-08-26T09:52:48Z"
+            },
+            {
+                "name": "flowly",
+                "full_name": "jellydn/flowly",
+                "description": "AI-native engineering assistant for modern development.",
+                "url": "https://github.com/jellydn/flowly",
+                "homepage": "https://jellydn.github.io/flowly/",
+                "stars": 2,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [
+                    "agent",
+                    "flue",
+                    "flueframework"
+                ],
+                "updated_at": "2026-08-26T09:49:38Z"
             },
             {
                 "name": "ai-flow",
                 "full_name": "jellydn/ai-flow",
                 "description": "Turn GitHub URLs into structured AI workflows.",
                 "url": "https://github.com/jellydn/ai-flow",
-                "homepage": "https://ai-flow.itman.fyi/",
+                "homepage": "https://ai-flow-staging.itman.fyi/",
                 "stars": 1,
                 "forks": 0,
                 "language": "PHP",
-                "topics": [],
-                "updated_at": "2026-08-21T03:09:52Z"
+                "topics": [
+                    "ai",
+                    "laravel",
+                    "llm"
+                ],
+                "updated_at": "2026-08-27T10:23:02Z"
             },
             {
                 "name": "prompt-bench",
@@ -352,13 +356,13 @@
                 "url": "https://github.com/jellydn/pi-clinepass-provider",
                 "homepage": "https://jellydn.github.io/pi-clinepass-provider/",
                 "stars": 14,
-                "forks": 5,
+                "forks": 6,
                 "language": "TypeScript",
                 "topics": [
                     "pi",
                     "pi-plugins"
                 ],
-                "updated_at": "2026-08-21T02:01:54Z"
+                "updated_at": "2026-08-26T09:43:25Z"
             },
             {
                 "name": "cspell-tool",
@@ -527,7 +531,7 @@
                 "description": "Your ultimate guide to setting up Zed with Vim mode, tailored settings, and key bindings for a seamless coding experience",
                 "url": "https://github.com/jellydn/zed-101-setup",
                 "homepage": "https://itman.fyi",
-                "stars": 1434,
+                "stars": 1435,
                 "forks": 30,
                 "language": "TypeScript",
                 "topics": [
@@ -535,7 +539,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-08-26T02:32:51Z"
+                "updated_at": "2026-08-26T04:12:03Z"
             },
             {
                 "name": "typescript-tips",
@@ -1280,6 +1284,22 @@
                 "updated_at": "2025-02-05T02:52:59Z"
             },
             {
+                "name": "keybinder",
+                "full_name": "jellydn/keybinder",
+                "description": "A modern, user-friendly GUI application for managing skhd keyboard shortcuts on macOS.",
+                "url": "https://github.com/jellydn/keybinder",
+                "homepage": "",
+                "stars": 2,
+                "forks": 0,
+                "language": "Rust",
+                "topics": [
+                    "gui",
+                    "skhd",
+                    "tauri-app"
+                ],
+                "updated_at": "2026-08-27T10:57:12Z"
+            },
+            {
                 "name": "modern-nodejs-2024",
                 "full_name": "jellydn/modern-nodejs-2024",
                 "description": "Master the 2024 Node.js Development: Key Updates & Features from 18 to 22",
@@ -1466,22 +1486,6 @@
                     "writting"
                 ],
                 "updated_at": "2026-06-26T15:27:06Z"
-            },
-            {
-                "name": "keybinder",
-                "full_name": "jellydn/keybinder",
-                "description": "A modern, user-friendly GUI application for managing skhd keyboard shortcuts on macOS.",
-                "url": "https://github.com/jellydn/keybinder",
-                "homepage": "",
-                "stars": 2,
-                "forks": 0,
-                "language": "Rust",
-                "topics": [
-                    "gui",
-                    "skhd",
-                    "tauri-app"
-                ],
-                "updated_at": "2026-01-18T03:04:17Z"
             },
             {
                 "name": "justext",
@@ -1905,6 +1909,18 @@
                 "updated_at": "2022-12-28T04:11:44Z"
             },
             {
+                "name": "tiny-code-model",
+                "full_name": "jellydn/tiny-code-model",
+                "description": "Train a tiny Transformer from scratch and learn what every stage does.",
+                "url": "https://github.com/jellydn/tiny-code-model",
+                "homepage": "",
+                "stars": 0,
+                "forks": 0,
+                "language": "Shell",
+                "topics": [],
+                "updated_at": "2026-08-26T10:36:00Z"
+            },
+            {
                 "name": "typeorm-mssql-postgres-demo",
                 "full_name": "jellydn/typeorm-mssql-postgres-demo",
                 "description": "",
@@ -1946,21 +1962,6 @@
                 "updated_at": "2026-08-26T02:42:00Z"
             },
             {
-                "name": "tsp-demo",
-                "full_name": "jellydn/tsp-demo",
-                "description": "",
-                "url": "https://github.com/jellydn/tsp-demo",
-                "homepage": "",
-                "stars": 0,
-                "forks": 0,
-                "language": "Makefile",
-                "topics": [
-                    "tsp",
-                    "typespec"
-                ],
-                "updated_at": "2026-08-26T02:41:59Z"
-            },
-            {
                 "name": "modus-demo",
                 "full_name": "jellydn/modus-demo",
                 "description": "Simple demo project for Modus App",
@@ -1972,6 +1973,21 @@
                 "topics": [
                     "hypermode",
                     "modus"
+                ],
+                "updated_at": "2026-08-26T02:41:59Z"
+            },
+            {
+                "name": "tsp-demo",
+                "full_name": "jellydn/tsp-demo",
+                "description": "",
+                "url": "https://github.com/jellydn/tsp-demo",
+                "homepage": "",
+                "stars": 0,
+                "forks": 0,
+                "language": "Makefile",
+                "topics": [
+                    "tsp",
+                    "typespec"
                 ],
                 "updated_at": "2026-08-26T02:41:59Z"
             },
@@ -2702,7 +2718,7 @@
                 "description": "Hurl.nvim is a Neovim plugin designed to run HTTP requests directly from `.hurl` files. Elevate your API development workflow by executing and viewing responses without leaving your editor.",
                 "url": "https://github.com/jellydn/hurl.nvim",
                 "homepage": "https://gyazo.com/19492e8b5366cec3f22d5fd97a63f37a",
-                "stars": 257,
+                "stars": 258,
                 "forks": 20,
                 "language": "Lua",
                 "topics": [
@@ -2711,7 +2727,7 @@
                     "neovim",
                     "neovim-plugin"
                 ],
-                "updated_at": "2026-08-22T10:37:21Z"
+                "updated_at": "2026-08-27T13:22:21Z"
             },
             {
                 "name": "lazy-nvim-ide",
@@ -2866,7 +2882,7 @@
                     "zellij",
                     "zsh"
                 ],
-                "updated_at": "2026-08-21T14:17:07Z"
+                "updated_at": "2026-08-27T11:12:42Z"
             },
             {
                 "name": "learn-vim-with-vscode",
@@ -3087,7 +3103,7 @@
                     "nextjs",
                     "swagger"
                 ],
-                "updated_at": "2026-08-21T03:29:20Z"
+                "updated_at": "2026-08-26T14:30:10Z"
             },
             {
                 "name": "dapp-starter",
@@ -3752,6 +3768,21 @@
                 "updated_at": "2023-03-30T20:43:40Z"
             },
             {
+                "name": "blog",
+                "full_name": "jellydn/blog",
+                "description": "Senior Full Stack Software Engineer. Building blockchain-based carbon exchange platforms with TypeScript, Node.js, and React.",
+                "url": "https://github.com/jellydn/blog",
+                "homepage": "https://productsway.com/",
+                "stars": 0,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [
+                    "blog",
+                    "nextjs"
+                ],
+                "updated_at": "2026-08-26T03:47:33Z"
+            },
+            {
                 "name": "vite-react-query-gridjs-demo-app",
                 "full_name": "jellydn/vite-react-query-gridjs-demo-app",
                 "description": "Demo app for fetching data with react-query and show data on gridjs table",
@@ -3778,21 +3809,6 @@
                 "language": "JavaScript",
                 "topics": [],
                 "updated_at": "2026-08-26T02:42:01Z"
-            },
-            {
-                "name": "blog",
-                "full_name": "jellydn/blog",
-                "description": "Senior Full Stack Software Engineer. Building blockchain-based carbon exchange platforms with TypeScript, Node.js, and React.",
-                "url": "https://github.com/jellydn/blog",
-                "homepage": "https://productsway.com/",
-                "stars": 0,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [
-                    "blog",
-                    "nextjs"
-                ],
-                "updated_at": "2026-08-25T03:41:45Z"
             },
             {
                 "name": "redux-toolkit-app",
