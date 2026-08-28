@@ -8,7 +8,7 @@
                 "description": "Comprehensive configuration management for AI coding tools - Replicate my complete setup for Claude Code, OpenCode, Amp, Li, Codex and Claude Code Switch with custom configurations, MCP servers, plugins, and commands.",
                 "url": "https://github.com/jellydn/my-ai-tools",
                 "homepage": "http://ai-tools.itman.fyi/",
-                "stars": 117,
+                "stars": 118,
                 "forks": 13,
                 "language": "Shell",
                 "topics": [
@@ -18,7 +18,7 @@
                     "open-code",
                     "skills"
                 ],
-                "updated_at": "2026-08-25T10:15:40Z"
+                "updated_at": "2026-08-28T01:03:59Z"
             },
             {
                 "name": "gpt4free-demo",
@@ -171,6 +171,22 @@
                 "updated_at": "2026-08-26T08:57:55Z"
             },
             {
+                "name": "flowly",
+                "full_name": "jellydn/flowly",
+                "description": "AI-native engineering assistant for modern development.",
+                "url": "https://github.com/jellydn/flowly",
+                "homepage": "https://jellydn.github.io/flowly/",
+                "stars": 2,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [
+                    "agent",
+                    "flue",
+                    "flueframework"
+                ],
+                "updated_at": "2026-08-28T08:27:05Z"
+            },
+            {
                 "name": "logpilot",
                 "full_name": "jellydn/logpilot",
                 "description": "AI-Native tmux Log Copilot for Support Incident Tracking",
@@ -186,22 +202,6 @@
                     "tmux"
                 ],
                 "updated_at": "2026-08-26T09:52:48Z"
-            },
-            {
-                "name": "flowly",
-                "full_name": "jellydn/flowly",
-                "description": "AI-native engineering assistant for modern development.",
-                "url": "https://github.com/jellydn/flowly",
-                "homepage": "https://jellydn.github.io/flowly/",
-                "stars": 2,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [
-                    "agent",
-                    "flue",
-                    "flueframework"
-                ],
-                "updated_at": "2026-08-26T09:49:38Z"
             },
             {
                 "name": "ai-flow",
@@ -485,7 +485,7 @@
                 "forks": 0,
                 "language": "Go",
                 "topics": [],
-                "updated_at": "2026-08-25T12:16:09Z"
+                "updated_at": "2026-08-28T08:03:23Z"
             },
             {
                 "name": "ts-pretty-error",
@@ -531,7 +531,7 @@
                 "description": "Your ultimate guide to setting up Zed with Vim mode, tailored settings, and key bindings for a seamless coding experience",
                 "url": "https://github.com/jellydn/zed-101-setup",
                 "homepage": "https://itman.fyi",
-                "stars": 1435,
+                "stars": 1437,
                 "forks": 30,
                 "language": "TypeScript",
                 "topics": [
@@ -539,7 +539,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-08-26T04:12:03Z"
+                "updated_at": "2026-08-28T10:42:52Z"
             },
             {
                 "name": "typescript-tips",
@@ -547,7 +547,7 @@
                 "description": "A curated list of awesome 🔥 TypeScript Tips 🔥",
                 "url": "https://github.com/jellydn/typescript-tips",
                 "homepage": "https://jellydn.github.io/typescript-tips/",
-                "stars": 439,
+                "stars": 440,
                 "forks": 86,
                 "language": "",
                 "topics": [
@@ -556,7 +556,7 @@
                     "tips-and-tricks",
                     "typescript"
                 ],
-                "updated_at": "2026-08-17T05:31:16Z"
+                "updated_at": "2026-08-28T08:36:48Z"
             },
             {
                 "name": "awesome-typesafe",
@@ -1015,18 +1015,6 @@
                 "updated_at": "2024-10-16T16:51:32Z"
             },
             {
-                "name": "hyperstack-demo-app",
-                "full_name": "jellydn/hyperstack-demo-app",
-                "description": "",
-                "url": "https://github.com/jellydn/hyperstack-demo-app",
-                "homepage": "",
-                "stars": 4,
-                "forks": 0,
-                "language": "HTML",
-                "topics": [],
-                "updated_at": "2026-08-26T02:41:56Z"
-            },
-            {
                 "name": "typescript-starter",
                 "full_name": "jellydn/typescript-starter",
                 "description": "Typescript starter project",
@@ -1040,7 +1028,19 @@
                     "template",
                     "typescript"
                 ],
-                "updated_at": "2026-08-24T07:05:19Z"
+                "updated_at": "2026-08-27T23:11:30Z"
+            },
+            {
+                "name": "hyperstack-demo-app",
+                "full_name": "jellydn/hyperstack-demo-app",
+                "description": "",
+                "url": "https://github.com/jellydn/hyperstack-demo-app",
+                "homepage": "",
+                "stars": 4,
+                "forks": 0,
+                "language": "HTML",
+                "topics": [],
+                "updated_at": "2026-08-26T02:41:56Z"
             },
             {
                 "name": "hono-minimal-app",
@@ -1297,7 +1297,7 @@
                     "skhd",
                     "tauri-app"
                 ],
-                "updated_at": "2026-08-27T10:57:12Z"
+                "updated_at": "2026-08-28T06:53:37Z"
             },
             {
                 "name": "modern-nodejs-2024",
@@ -1909,6 +1909,21 @@
                 "updated_at": "2022-12-28T04:11:44Z"
             },
             {
+                "name": "pulumi-kubernetes-typescript",
+                "full_name": "jellydn/pulumi-kubernetes-typescript",
+                "description": "Simple Kubernetes cluster with TypeScript for Pulumi.",
+                "url": "https://github.com/jellydn/pulumi-kubernetes-typescript",
+                "homepage": "",
+                "stars": 0,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [
+                    "pulumi",
+                    "typescript"
+                ],
+                "updated_at": "2026-08-28T02:12:29Z"
+            },
+            {
                 "name": "tiny-code-model",
                 "full_name": "jellydn/tiny-code-model",
                 "description": "Train a tiny Transformer from scratch and learn what every stage does.",
@@ -1962,21 +1977,6 @@
                 "updated_at": "2026-08-26T02:42:00Z"
             },
             {
-                "name": "modus-demo",
-                "full_name": "jellydn/modus-demo",
-                "description": "Simple demo project for Modus App",
-                "url": "https://github.com/jellydn/modus-demo",
-                "homepage": "https://docs.hypermode.com/introduction",
-                "stars": 0,
-                "forks": 0,
-                "language": "Go",
-                "topics": [
-                    "hypermode",
-                    "modus"
-                ],
-                "updated_at": "2026-08-26T02:41:59Z"
-            },
-            {
                 "name": "tsp-demo",
                 "full_name": "jellydn/tsp-demo",
                 "description": "",
@@ -1988,6 +1988,21 @@
                 "topics": [
                     "tsp",
                     "typespec"
+                ],
+                "updated_at": "2026-08-26T02:41:59Z"
+            },
+            {
+                "name": "modus-demo",
+                "full_name": "jellydn/modus-demo",
+                "description": "Simple demo project for Modus App",
+                "url": "https://github.com/jellydn/modus-demo",
+                "homepage": "https://docs.hypermode.com/introduction",
+                "stars": 0,
+                "forks": 0,
+                "language": "Go",
+                "topics": [
+                    "hypermode",
+                    "modus"
                 ],
                 "updated_at": "2026-08-26T02:41:59Z"
             },
@@ -2044,21 +2059,6 @@
                     "inversion-of-control"
                 ],
                 "updated_at": "2026-08-26T02:37:46Z"
-            },
-            {
-                "name": "pulumi-kubernetes-typescript",
-                "full_name": "jellydn/pulumi-kubernetes-typescript",
-                "description": "Simple Kubernetes cluster with TypeScript for Pulumi.",
-                "url": "https://github.com/jellydn/pulumi-kubernetes-typescript",
-                "homepage": "",
-                "stars": 0,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [
-                    "pulumi",
-                    "typescript"
-                ],
-                "updated_at": "2026-08-24T07:48:52Z"
             },
             {
                 "name": "wasmtime-examples",
@@ -2727,7 +2727,7 @@
                     "neovim",
                     "neovim-plugin"
                 ],
-                "updated_at": "2026-08-27T13:22:21Z"
+                "updated_at": "2026-08-28T02:26:03Z"
             },
             {
                 "name": "lazy-nvim-ide",
@@ -3780,7 +3780,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-08-26T03:47:33Z"
+                "updated_at": "2026-08-27T13:32:52Z"
             },
             {
                 "name": "vite-react-query-gridjs-demo-app",
