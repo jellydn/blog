@@ -184,7 +184,7 @@
                     "flue",
                     "flueframework"
                 ],
-                "updated_at": "2026-08-28T08:27:05Z"
+                "updated_at": "2026-08-29T05:36:24Z"
             },
             {
                 "name": "logpilot",
@@ -531,7 +531,7 @@
                 "description": "Your ultimate guide to setting up Zed with Vim mode, tailored settings, and key bindings for a seamless coding experience",
                 "url": "https://github.com/jellydn/zed-101-setup",
                 "homepage": "https://itman.fyi",
-                "stars": 1437,
+                "stars": 1438,
                 "forks": 30,
                 "language": "TypeScript",
                 "topics": [
@@ -539,7 +539,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-08-28T10:42:52Z"
+                "updated_at": "2026-08-29T04:44:58Z"
             },
             {
                 "name": "typescript-tips",
@@ -1921,7 +1921,7 @@
                     "pulumi",
                     "typescript"
                 ],
-                "updated_at": "2026-08-28T02:12:29Z"
+                "updated_at": "2026-08-28T19:38:20Z"
             },
             {
                 "name": "tiny-code-model",
@@ -3780,7 +3780,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-08-27T13:32:52Z"
+                "updated_at": "2026-08-28T14:50:03Z"
             },
             {
                 "name": "vite-react-query-gridjs-demo-app",
