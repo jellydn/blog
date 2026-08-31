@@ -182,7 +182,7 @@
                 "topics": [
                     "react-native"
                 ],
-                "updated_at": "2026-08-30T06:52:36Z"
+                "updated_at": "2026-08-31T02:32:36Z"
             },
             {
                 "name": "flowly",
@@ -460,6 +460,23 @@
                 "updated_at": "2026-02-17T06:11:32Z"
             },
             {
+                "name": "gclean",
+                "full_name": "jellydn/gclean",
+                "description": "Gmail cleaner for desktop and terminal",
+                "url": "https://github.com/jellydn/gclean",
+                "homepage": "",
+                "stars": 1,
+                "forks": 0,
+                "language": "Go",
+                "topics": [
+                    "cli",
+                    "gmail",
+                    "golang",
+                    "gui"
+                ],
+                "updated_at": "2026-08-30T16:25:55Z"
+            },
+            {
                 "name": "eslint-fixer",
                 "full_name": "jellydn/eslint-fixer",
                 "description": "ESLint Fixer simplifies linting TypeScript files using @typescript-eslint/parser and @typescript-eslint/eslint-plugin. Enforce best practices and catch common errors efficiently until BiomeJs type-aware linting is available.",
@@ -474,18 +491,6 @@
                     "typecheck"
                 ],
                 "updated_at": "2024-07-28T07:21:24Z"
-            },
-            {
-                "name": "gmail-cleaner-cli",
-                "full_name": "jellydn/gmail-cleaner-cli",
-                "description": "the current implementation: Gmail OAuth login and read-only metadata listing now exist, while Gmail trash/restore/purge operations remain intentionally stubbed;",
-                "url": "https://github.com/jellydn/gmail-cleaner-cli",
-                "homepage": "",
-                "stars": 0,
-                "forks": 0,
-                "language": "Go",
-                "topics": [],
-                "updated_at": "2026-08-28T08:03:23Z"
             },
             {
                 "name": "ts-pretty-error",
@@ -556,7 +561,7 @@
                     "tips-and-tricks",
                     "typescript"
                 ],
-                "updated_at": "2026-08-30T02:45:43Z"
+                "updated_at": "2026-08-31T07:05:11Z"
             },
             {
                 "name": "awesome-typesafe",
@@ -1028,7 +1033,7 @@
                     "template",
                     "typescript"
                 ],
-                "updated_at": "2026-08-30T05:54:33Z"
+                "updated_at": "2026-08-31T05:38:49Z"
             },
             {
                 "name": "hyperstack-demo-app",
@@ -1518,6 +1523,18 @@
                 "updated_at": "2022-06-22T10:27:12Z"
             },
             {
+                "name": "foldimals",
+                "full_name": "jellydn/foldimals",
+                "description": "Foldimals is a tablet-first origami learning PWA for children ages 7–12. It turns each animal into a calm sequence of one-fold-at-a-time instructions—no account, ads, scores, or distracting navigation.",
+                "url": "https://github.com/jellydn/foldimals",
+                "homepage": "http://foldimals.itman.fyi/",
+                "stars": 1,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [],
+                "updated_at": "2026-08-31T07:57:02Z"
+            },
+            {
                 "name": "reflex-demo",
                 "full_name": "jellydn/reflex-demo",
                 "description": "This is a demonstration project using reflex: Web apps in pure Python 🐍.",
@@ -1909,18 +1926,6 @@
                 "updated_at": "2022-12-28T04:11:44Z"
             },
             {
-                "name": "foldimals",
-                "full_name": "jellydn/foldimals",
-                "description": "Foldimals is a tablet-first origami learning PWA for children ages 7–12. It turns each animal into a calm sequence of one-fold-at-a-time instructions—no account, ads, scores, or distracting navigation.",
-                "url": "https://github.com/jellydn/foldimals",
-                "homepage": "http://foldimals.itman.fyi/",
-                "stars": 0,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [],
-                "updated_at": "2026-08-29T14:45:54Z"
-            },
-            {
                 "name": "pulumi-kubernetes-typescript",
                 "full_name": "jellydn/pulumi-kubernetes-typescript",
                 "description": "Simple Kubernetes cluster with TypeScript for Pulumi.",
@@ -1933,7 +1938,19 @@
                     "pulumi",
                     "typescript"
                 ],
-                "updated_at": "2026-08-28T19:38:20Z"
+                "updated_at": "2026-08-31T06:38:08Z"
+            },
+            {
+                "name": "homebrew-tap",
+                "full_name": "jellydn/homebrew-tap",
+                "description": "Homebrew tap for jellydn packages",
+                "url": "https://github.com/jellydn/homebrew-tap",
+                "homepage": "",
+                "stars": 0,
+                "forks": 0,
+                "language": "Ruby",
+                "topics": [],
+                "updated_at": "2026-08-30T12:02:55Z"
             },
             {
                 "name": "tiny-code-model",
@@ -1989,21 +2006,6 @@
                 "updated_at": "2026-08-26T02:42:00Z"
             },
             {
-                "name": "modus-demo",
-                "full_name": "jellydn/modus-demo",
-                "description": "Simple demo project for Modus App",
-                "url": "https://github.com/jellydn/modus-demo",
-                "homepage": "https://docs.hypermode.com/introduction",
-                "stars": 0,
-                "forks": 0,
-                "language": "Go",
-                "topics": [
-                    "hypermode",
-                    "modus"
-                ],
-                "updated_at": "2026-08-26T02:41:59Z"
-            },
-            {
                 "name": "tsp-demo",
                 "full_name": "jellydn/tsp-demo",
                 "description": "",
@@ -2015,6 +2017,21 @@
                 "topics": [
                     "tsp",
                     "typespec"
+                ],
+                "updated_at": "2026-08-26T02:41:59Z"
+            },
+            {
+                "name": "modus-demo",
+                "full_name": "jellydn/modus-demo",
+                "description": "Simple demo project for Modus App",
+                "url": "https://github.com/jellydn/modus-demo",
+                "homepage": "https://docs.hypermode.com/introduction",
+                "stars": 0,
+                "forks": 0,
+                "language": "Go",
+                "topics": [
+                    "hypermode",
+                    "modus"
                 ],
                 "updated_at": "2026-08-26T02:41:59Z"
             },
@@ -2139,18 +2156,6 @@
                     "remix"
                 ],
                 "updated_at": "2026-08-21T03:18:00Z"
-            },
-            {
-                "name": "homebrew-tap",
-                "full_name": "jellydn/homebrew-tap",
-                "description": "Homebrew tap for jellydn packages",
-                "url": "https://github.com/jellydn/homebrew-tap",
-                "homepage": "",
-                "stars": 0,
-                "forks": 0,
-                "language": "Ruby",
-                "topics": [],
-                "updated_at": "2026-08-16T18:52:26Z"
             },
             {
                 "name": "remix-spa",
@@ -3060,7 +3065,7 @@
                 "topics": [
                     "vscode-extension"
                 ],
-                "updated_at": "2026-08-24T05:52:53Z"
+                "updated_at": "2026-08-31T07:10:49Z"
             },
             {
                 "name": "vscode-fff-gpui",
@@ -3451,6 +3456,23 @@
                 "updated_at": "2026-07-17T11:49:05Z"
             },
             {
+                "name": "react-email-starter",
+                "full_name": "jellydn/react-email-starter",
+                "description": "React Email Starter",
+                "url": "https://github.com/jellydn/react-email-starter",
+                "homepage": "https://demo.react.email/preview/airbnb-review",
+                "stars": 4,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [
+                    "email",
+                    "nextjs",
+                    "react",
+                    "react-email"
+                ],
+                "updated_at": "2026-08-31T05:15:35Z"
+            },
+            {
                 "name": "waku-rsc-async-demo",
                 "full_name": "jellydn/waku-rsc-async-demo",
                 "description": "",
@@ -3477,23 +3499,6 @@
                 "language": "TypeScript",
                 "topics": [],
                 "updated_at": "2026-08-21T03:18:17Z"
-            },
-            {
-                "name": "react-email-starter",
-                "full_name": "jellydn/react-email-starter",
-                "description": "React Email Starter",
-                "url": "https://github.com/jellydn/react-email-starter",
-                "homepage": "https://demo.react.email/preview/airbnb-review",
-                "stars": 4,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [
-                    "email",
-                    "nextjs",
-                    "react",
-                    "react-email"
-                ],
-                "updated_at": "2026-08-17T05:29:17Z"
             },
             {
                 "name": "lens-demo-app",
@@ -3792,7 +3797,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-08-29T09:38:31Z"
+                "updated_at": "2026-08-30T08:46:25Z"
             },
             {
                 "name": "vite-react-query-gridjs-demo-app",
