@@ -18,7 +18,7 @@
                     "open-code",
                     "skills"
                 ],
-                "updated_at": "2026-08-28T01:03:59Z"
+                "updated_at": "2026-08-31T22:16:49Z"
             },
             {
                 "name": "gpt4free-demo",
@@ -103,7 +103,7 @@
                     "pi",
                     "pi-plugins"
                 ],
-                "updated_at": "2026-08-24T09:52:32Z"
+                "updated_at": "2026-08-31T18:50:46Z"
             },
             {
                 "name": "ai-launcher",
@@ -536,7 +536,7 @@
                 "description": "Your ultimate guide to setting up Zed with Vim mode, tailored settings, and key bindings for a seamless coding experience",
                 "url": "https://github.com/jellydn/zed-101-setup",
                 "homepage": "https://itman.fyi",
-                "stars": 1438,
+                "stars": 1439,
                 "forks": 30,
                 "language": "TypeScript",
                 "topics": [
@@ -544,7 +544,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-08-29T10:32:14Z"
+                "updated_at": "2026-08-31T18:37:19Z"
             },
             {
                 "name": "typescript-tips",
@@ -938,7 +938,7 @@
                     "websocket",
                     "ws"
                 ],
-                "updated_at": "2026-08-24T05:45:10Z"
+                "updated_at": "2026-08-31T10:55:01Z"
             },
             {
                 "name": "remix-spa-demo",
@@ -1145,7 +1145,7 @@
                     "stenciljs",
                     "web-component"
                 ],
-                "updated_at": "2026-08-24T08:03:04Z"
+                "updated_at": "2026-08-31T10:24:56Z"
             },
             {
                 "name": "fresh-deno-app",
@@ -1523,6 +1523,32 @@
                 "updated_at": "2022-06-22T10:27:12Z"
             },
             {
+                "name": "personal-ai",
+                "full_name": "jellydn/personal-ai",
+                "description": "My AI projects from the last nine months",
+                "url": "https://github.com/jellydn/personal-ai",
+                "homepage": "https://jellydn.github.io/personal-ai/",
+                "stars": 1,
+                "forks": 0,
+                "language": "HTML",
+                "topics": [],
+                "updated_at": "2026-08-31T23:46:21Z"
+            },
+            {
+                "name": "practicepython",
+                "full_name": "jellydn/practicepython",
+                "description": "Learn how to code by practicing Python exercises.",
+                "url": "https://github.com/jellydn/practicepython",
+                "homepage": "",
+                "stars": 1,
+                "forks": 0,
+                "language": "",
+                "topics": [
+                    "python"
+                ],
+                "updated_at": "2026-08-31T11:01:45Z"
+            },
+            {
                 "name": "foldimals",
                 "full_name": "jellydn/foldimals",
                 "description": "Foldimals is a tablet-first origami learning PWA for children ages 7–12. It turns each animal into a calm sequence of one-fold-at-a-time instructions—no account, ads, scores, or distracting navigation.",
@@ -1561,20 +1587,6 @@
                 "language": "TypeScript",
                 "topics": [],
                 "updated_at": "2026-08-26T02:37:05Z"
-            },
-            {
-                "name": "practicepython",
-                "full_name": "jellydn/practicepython",
-                "description": "Learn how to code by practicing Python exercises.",
-                "url": "https://github.com/jellydn/practicepython",
-                "homepage": "",
-                "stars": 1,
-                "forks": 0,
-                "language": "",
-                "topics": [
-                    "python"
-                ],
-                "updated_at": "2026-08-24T04:52:30Z"
             },
             {
                 "name": "solid-app",
@@ -1787,18 +1799,6 @@
                 "language": "Go",
                 "topics": [],
                 "updated_at": "2026-08-18T03:51:51Z"
-            },
-            {
-                "name": "personal-ai",
-                "full_name": "jellydn/personal-ai",
-                "description": "My AI projects from the last nine months",
-                "url": "https://github.com/jellydn/personal-ai",
-                "homepage": "https://jellydn.github.io/personal-ai/",
-                "stars": 1,
-                "forks": 0,
-                "language": "HTML",
-                "topics": [],
-                "updated_at": "2026-08-17T02:23:00Z"
             },
             {
                 "name": "cube-quest",
@@ -3797,7 +3797,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-08-30T08:46:25Z"
+                "updated_at": "2026-08-31T09:12:35Z"
             },
             {
                 "name": "vite-react-query-gridjs-demo-app",
