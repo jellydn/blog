@@ -9,7 +9,7 @@
                 "url": "https://github.com/jellydn/my-ai-tools",
                 "homepage": "http://ai-tools.itman.fyi/",
                 "stars": 118,
-                "forks": 13,
+                "forks": 14,
                 "language": "Shell",
                 "topics": [
                     "amp",
@@ -18,7 +18,7 @@
                     "open-code",
                     "skills"
                 ],
-                "updated_at": "2026-08-31T22:16:49Z"
+                "updated_at": "2026-09-02T03:05:43Z"
             },
             {
                 "name": "gpt4free-demo",
@@ -157,6 +157,22 @@
                 "updated_at": "2026-08-21T03:26:03Z"
             },
             {
+                "name": "flowly",
+                "full_name": "jellydn/flowly",
+                "description": "AI-native engineering assistant for modern development.",
+                "url": "https://github.com/jellydn/flowly",
+                "homepage": "https://jellydn.github.io/flowly/",
+                "stars": 3,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [
+                    "agent",
+                    "flue",
+                    "flueframework"
+                ],
+                "updated_at": "2026-09-02T04:04:13Z"
+            },
+            {
                 "name": "hermes-hub",
                 "full_name": "jellydn/hermes-hub",
                 "description": "Your personal AI agent in 5 minutes. Zero terminal required.",
@@ -183,22 +199,6 @@
                     "react-native"
                 ],
                 "updated_at": "2026-08-31T02:32:36Z"
-            },
-            {
-                "name": "flowly",
-                "full_name": "jellydn/flowly",
-                "description": "AI-native engineering assistant for modern development.",
-                "url": "https://github.com/jellydn/flowly",
-                "homepage": "https://jellydn.github.io/flowly/",
-                "stars": 2,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [
-                    "agent",
-                    "flue",
-                    "flueframework"
-                ],
-                "updated_at": "2026-08-30T04:23:43Z"
             },
             {
                 "name": "logpilot",
@@ -544,7 +544,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-08-31T18:37:19Z"
+                "updated_at": "2026-09-01T16:36:52Z"
             },
             {
                 "name": "typescript-tips",
@@ -570,7 +570,7 @@
                 "url": "https://github.com/jellydn/awesome-typesafe",
                 "homepage": "http://typesafe.itman.fyi/",
                 "stars": 182,
-                "forks": 24,
+                "forks": 25,
                 "language": "",
                 "topics": [
                     "awesome",
@@ -1977,18 +1977,6 @@
                 "updated_at": "2026-08-26T02:42:01Z"
             },
             {
-                "name": "rari-demo",
-                "full_name": "jellydn/rari-demo",
-                "description": "",
-                "url": "https://github.com/jellydn/rari-demo",
-                "homepage": "",
-                "stars": 0,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [],
-                "updated_at": "2026-08-26T02:42:00Z"
-            },
-            {
                 "name": "rabbitmq-demo",
                 "full_name": "jellydn/rabbitmq-demo",
                 "description": "Receiving messages based on a pattern (topics) & RPC call",
@@ -2006,19 +1994,16 @@
                 "updated_at": "2026-08-26T02:42:00Z"
             },
             {
-                "name": "tsp-demo",
-                "full_name": "jellydn/tsp-demo",
+                "name": "rari-demo",
+                "full_name": "jellydn/rari-demo",
                 "description": "",
-                "url": "https://github.com/jellydn/tsp-demo",
+                "url": "https://github.com/jellydn/rari-demo",
                 "homepage": "",
                 "stars": 0,
                 "forks": 0,
-                "language": "Makefile",
-                "topics": [
-                    "tsp",
-                    "typespec"
-                ],
-                "updated_at": "2026-08-26T02:41:59Z"
+                "language": "TypeScript",
+                "topics": [],
+                "updated_at": "2026-08-26T02:42:00Z"
             },
             {
                 "name": "modus-demo",
@@ -2032,6 +2017,21 @@
                 "topics": [
                     "hypermode",
                     "modus"
+                ],
+                "updated_at": "2026-08-26T02:41:59Z"
+            },
+            {
+                "name": "tsp-demo",
+                "full_name": "jellydn/tsp-demo",
+                "description": "",
+                "url": "https://github.com/jellydn/tsp-demo",
+                "homepage": "",
+                "stars": 0,
+                "forks": 0,
+                "language": "Makefile",
+                "topics": [
+                    "tsp",
+                    "typespec"
                 ],
                 "updated_at": "2026-08-26T02:41:59Z"
             },
@@ -3000,7 +3000,7 @@
                     "hurl",
                     "vscode-extension"
                 ],
-                "updated_at": "2026-08-13T22:36:53Z"
+                "updated_at": "2026-09-02T00:52:30Z"
             },
             {
                 "name": "vscode-like-pro",
@@ -3256,7 +3256,7 @@
                     "yup-validation",
                     "zod"
                 ],
-                "updated_at": "2026-07-21T00:46:44Z"
+                "updated_at": "2026-09-02T01:37:00Z"
             },
             {
                 "name": "react-dapp",
@@ -3797,7 +3797,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-08-31T09:12:35Z"
+                "updated_at": "2026-09-01T08:24:47Z"
             },
             {
                 "name": "vite-react-query-gridjs-demo-app",
