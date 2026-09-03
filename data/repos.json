@@ -8,7 +8,7 @@
                 "description": "Comprehensive configuration management for AI coding tools - Replicate my complete setup for Claude Code, OpenCode, Amp, Li, Codex and Claude Code Switch with custom configurations, MCP servers, plugins, and commands.",
                 "url": "https://github.com/jellydn/my-ai-tools",
                 "homepage": "http://ai-tools.itman.fyi/",
-                "stars": 118,
+                "stars": 119,
                 "forks": 14,
                 "language": "Shell",
                 "topics": [
@@ -18,7 +18,7 @@
                     "open-code",
                     "skills"
                 ],
-                "updated_at": "2026-09-02T03:05:43Z"
+                "updated_at": "2026-09-02T10:55:13Z"
             },
             {
                 "name": "gpt4free-demo",
@@ -103,7 +103,7 @@
                     "pi",
                     "pi-plugins"
                 ],
-                "updated_at": "2026-08-31T18:50:46Z"
+                "updated_at": "2026-09-02T16:19:27Z"
             },
             {
                 "name": "ai-launcher",
@@ -170,7 +170,7 @@
                     "flue",
                     "flueframework"
                 ],
-                "updated_at": "2026-09-02T04:04:13Z"
+                "updated_at": "2026-09-02T08:53:33Z"
             },
             {
                 "name": "hermes-hub",
@@ -536,7 +536,7 @@
                 "description": "Your ultimate guide to setting up Zed with Vim mode, tailored settings, and key bindings for a seamless coding experience",
                 "url": "https://github.com/jellydn/zed-101-setup",
                 "homepage": "https://itman.fyi",
-                "stars": 1439,
+                "stars": 1440,
                 "forks": 30,
                 "language": "TypeScript",
                 "topics": [
@@ -544,7 +544,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-09-01T16:36:52Z"
+                "updated_at": "2026-09-03T05:40:16Z"
             },
             {
                 "name": "typescript-tips",
@@ -733,7 +733,7 @@
                 "description": "Open Zed terminals inside tmux or zellij — port of vscode-mux to the Zed editor.",
                 "url": "https://github.com/jellydn/zed-codemux",
                 "homepage": "",
-                "stars": 14,
+                "stars": 15,
                 "forks": 1,
                 "language": "Rust",
                 "topics": [
@@ -742,7 +742,7 @@
                     "zed-extension",
                     "zellij"
                 ],
-                "updated_at": "2026-08-16T09:11:27Z"
+                "updated_at": "2026-09-03T05:40:10Z"
             },
             {
                 "name": "thirdweb-foundry-starter",
@@ -1938,7 +1938,7 @@
                     "pulumi",
                     "typescript"
                 ],
-                "updated_at": "2026-08-31T06:38:08Z"
+                "updated_at": "2026-09-03T05:49:07Z"
             },
             {
                 "name": "homebrew-tap",
@@ -2006,21 +2006,6 @@
                 "updated_at": "2026-08-26T02:42:00Z"
             },
             {
-                "name": "modus-demo",
-                "full_name": "jellydn/modus-demo",
-                "description": "Simple demo project for Modus App",
-                "url": "https://github.com/jellydn/modus-demo",
-                "homepage": "https://docs.hypermode.com/introduction",
-                "stars": 0,
-                "forks": 0,
-                "language": "Go",
-                "topics": [
-                    "hypermode",
-                    "modus"
-                ],
-                "updated_at": "2026-08-26T02:41:59Z"
-            },
-            {
                 "name": "tsp-demo",
                 "full_name": "jellydn/tsp-demo",
                 "description": "",
@@ -2032,6 +2017,21 @@
                 "topics": [
                     "tsp",
                     "typespec"
+                ],
+                "updated_at": "2026-08-26T02:41:59Z"
+            },
+            {
+                "name": "modus-demo",
+                "full_name": "jellydn/modus-demo",
+                "description": "Simple demo project for Modus App",
+                "url": "https://github.com/jellydn/modus-demo",
+                "homepage": "https://docs.hypermode.com/introduction",
+                "stars": 0,
+                "forks": 0,
+                "language": "Go",
+                "topics": [
+                    "hypermode",
+                    "modus"
                 ],
                 "updated_at": "2026-08-26T02:41:59Z"
             },
@@ -3797,7 +3797,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-09-01T08:24:47Z"
+                "updated_at": "2026-09-03T06:46:11Z"
             },
             {
                 "name": "vite-react-query-gridjs-demo-app",
