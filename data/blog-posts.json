@@ -120,14 +120,6 @@
         "hero_image": "https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/WhAQMsdRKMI/upload/d65303f6a85d36b3da5fba70477cef76.jpeg"
     },
     {
-        "slug": "tdd-test-driven-nope-tab-driven-development",
-        "title": "Revolutionizing Coding with Tab Driven Development",
-        "description": "Explore Tab-Driven Development: a new way to code with efficiency and ease, enhancing your workflow in modern IDEs",
-        "date": "2025-02-18T13:10:22.189Z",
-        "tags": [],
-        "hero_image": "https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/_0iV9LmPDn0/upload/1ef52a2014c206ddba0555517ec58459.jpeg"
-    },
-    {
         "slug": "a-curated-list-of-awesome-typescript-typesafe-libraries",
         "title": "Awesome 🔥 TypeScript Typesafe Libraries🔥",
         "description": "TypeScript typesafe libraries improve code quality, promote best practices, and enhance development with early error detection",
@@ -206,14 +198,6 @@
         "date": "2024-02-04T19:53:38.296Z",
         "tags": [],
         "hero_image": "https://cdn.hashnode.com/res/hashnode/image/upload/v1707072213284/2cb58a45-de84-4077-a8dd-44ee221c1645.png"
-    },
-    {
-        "slug": "looking-back-moving-forward-2023-reflections-and-2024-visions",
-        "title": "Looking Back, Moving Forward: 2023 Reflections and 2024 Visions",
-        "description": "My goals in 2018\n\nThis was my target six years ago. It didn't go as planned. Now, I'm ready to revive this habit again :)\nWhat about 2023?\nThere are a few things for which I am grateful:\n\nRelocating from Japan to Singapore has been a pivotal change f...",
-        "date": "2024-01-01T15:37:04.697Z",
-        "tags": [],
-        "hero_image": "https://cdn.hashnode.com/res/hashnode/image/upload/v1704123405189/bcae00de-0a7a-4225-a94f-1f51a0cbcefd.png"
     },
     {
         "slug": "how-to-use-copilot-chat-with-neovim",
