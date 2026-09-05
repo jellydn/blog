@@ -18,7 +18,7 @@
                     "open-code",
                     "skills"
                 ],
-                "updated_at": "2026-09-03T16:08:37Z"
+                "updated_at": "2026-09-04T10:44:15Z"
             },
             {
                 "name": "gpt4free-demo",
@@ -536,7 +536,7 @@
                 "description": "Your ultimate guide to setting up Zed with Vim mode, tailored settings, and key bindings for a seamless coding experience",
                 "url": "https://github.com/jellydn/zed-101-setup",
                 "homepage": "https://itman.fyi",
-                "stars": 1442,
+                "stars": 1444,
                 "forks": 30,
                 "language": "TypeScript",
                 "topics": [
@@ -544,7 +544,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-09-04T06:49:12Z"
+                "updated_at": "2026-09-04T20:42:47Z"
             },
             {
                 "name": "typescript-tips",
@@ -714,6 +714,23 @@
                 "updated_at": "2026-03-10T23:44:46Z"
             },
             {
+                "name": "zed-codemux",
+                "full_name": "jellydn/zed-codemux",
+                "description": "Open Zed terminals inside tmux or zellij — port of vscode-mux to the Zed editor.",
+                "url": "https://github.com/jellydn/zed-codemux",
+                "homepage": "",
+                "stars": 16,
+                "forks": 1,
+                "language": "Rust",
+                "topics": [
+                    "tmux",
+                    "zed",
+                    "zed-extension",
+                    "zellij"
+                ],
+                "updated_at": "2026-09-04T08:54:46Z"
+            },
+            {
                 "name": "llama2-personal-ai",
                 "full_name": "jellydn/llama2-personal-ai",
                 "description": "Build your personal AI with the llama2 model 🤖. Easy to use, and perfect for your development needs!",
@@ -726,23 +743,6 @@
                     "ollama"
                 ],
                 "updated_at": "2026-08-21T03:26:17Z"
-            },
-            {
-                "name": "zed-codemux",
-                "full_name": "jellydn/zed-codemux",
-                "description": "Open Zed terminals inside tmux or zellij — port of vscode-mux to the Zed editor.",
-                "url": "https://github.com/jellydn/zed-codemux",
-                "homepage": "",
-                "stars": 15,
-                "forks": 1,
-                "language": "Rust",
-                "topics": [
-                    "tmux",
-                    "zed",
-                    "zed-extension",
-                    "zellij"
-                ],
-                "updated_at": "2026-09-03T05:40:10Z"
             },
             {
                 "name": "thirdweb-foundry-starter",
@@ -1926,6 +1926,18 @@
                 "updated_at": "2022-12-28T04:11:44Z"
             },
             {
+                "name": "playwright-mock-api",
+                "full_name": "jellydn/playwright-mock-api",
+                "description": "Mocking API with Playwright",
+                "url": "https://github.com/jellydn/playwright-mock-api",
+                "homepage": "",
+                "stars": 0,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [],
+                "updated_at": "2026-09-05T05:00:45Z"
+            },
+            {
                 "name": "remix-spa",
                 "full_name": "jellydn/remix-spa",
                 "description": "Remix SPA Starter",
@@ -1938,7 +1950,7 @@
                     "remix",
                     "spa"
                 ],
-                "updated_at": "2026-09-04T02:11:37Z"
+                "updated_at": "2026-09-04T18:54:16Z"
             },
             {
                 "name": "pulumi-kubernetes-typescript",
@@ -2211,18 +2223,6 @@
                     "react-native"
                 ],
                 "updated_at": "2026-08-03T16:32:32Z"
-            },
-            {
-                "name": "playwright-mock-api",
-                "full_name": "jellydn/playwright-mock-api",
-                "description": "Mocking API with Playwright",
-                "url": "https://github.com/jellydn/playwright-mock-api",
-                "homepage": "",
-                "stars": 0,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [],
-                "updated_at": "2026-07-31T03:33:12Z"
             },
             {
                 "name": "mac-cleaner",
@@ -2793,7 +2793,7 @@
                     "typescript",
                     "vscode"
                 ],
-                "updated_at": "2026-08-21T17:57:04Z"
+                "updated_at": "2026-09-04T16:15:29Z"
             },
             {
                 "name": "my-nvim-ide",
@@ -3153,7 +3153,7 @@
                 "description": "Another awesome starter for your app base on nextjs + tailwind + react-query + zod + react-hook-form + next-auth +  jotai",
                 "url": "https://github.com/jellydn/next-app-starter",
                 "homepage": "https://next-app-starter.productsway.com",
-                "stars": 283,
+                "stars": 282,
                 "forks": 34,
                 "language": "TypeScript",
                 "topics": [
@@ -3168,7 +3168,7 @@
                     "storybook",
                     "tailwindcss"
                 ],
-                "updated_at": "2026-09-04T02:59:39Z"
+                "updated_at": "2026-09-04T22:17:43Z"
             },
             {
                 "name": "nft-app",
@@ -3797,7 +3797,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-09-04T06:51:03Z"
+                "updated_at": "2026-09-04T07:42:56Z"
             },
             {
                 "name": "vite-react-query-gridjs-demo-app",
