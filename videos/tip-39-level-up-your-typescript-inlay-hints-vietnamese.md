@@ -23,7 +23,6 @@ Happy coding!
 
 00:30 - Introduction and Overview of TypeScript Inlay Hints
 02:20 - Utilizing TypeScript Inlay Hints in VS Code
-10:57 -  Utilizing TypeScript Inlay Hints in Neovim
-
+10:57 - Utilizing TypeScript Inlay Hints in Neovim
 
 #TypeScript #VSCode #Neovim #Fastify #Swagger #Coding #Developer
