@@ -12,13 +12,13 @@ hero_image: "https://i.ytimg.com/vi/enYXn3AYhYQ/mqdefault.jpg"
 02:58 What's New in React 18
 
 How to Upgrade to React 18
-  https://github.com/jellydn/react-18-migration-demo
+https://github.com/jellydn/react-18-migration-demo
 
 ```sh
 npx new-web-app@latest react upgrade-react-18
 ```
 
-  - Upgrade guide https://reactjs.org/blog/2022/03/08/react-18-upgrade-guide.html
+- Upgrade guide https://reactjs.org/blog/2022/03/08/react-18-upgrade-guide.html
 
 - What news in React v18 https://reactjs.org/blog/2022/03/29/react-v18.html#whats-new-in-react-18
   - New Feature: Automatic Batching
