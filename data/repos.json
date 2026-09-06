@@ -170,7 +170,7 @@
                     "flue",
                     "flueframework"
                 ],
-                "updated_at": "2026-09-02T08:53:33Z"
+                "updated_at": "2026-09-06T03:30:11Z"
             },
             {
                 "name": "hermes-hub",
@@ -544,7 +544,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-09-04T20:42:47Z"
+                "updated_at": "2026-09-06T06:39:57Z"
             },
             {
                 "name": "typescript-tips",
@@ -552,7 +552,7 @@
                 "description": "A curated list of awesome 🔥 TypeScript Tips 🔥",
                 "url": "https://github.com/jellydn/typescript-tips",
                 "homepage": "https://jellydn.github.io/typescript-tips/",
-                "stars": 441,
+                "stars": 440,
                 "forks": 86,
                 "language": "",
                 "topics": [
@@ -561,7 +561,7 @@
                     "tips-and-tricks",
                     "typescript"
                 ],
-                "updated_at": "2026-08-31T07:05:11Z"
+                "updated_at": "2026-09-05T17:56:37Z"
             },
             {
                 "name": "awesome-typesafe",
@@ -600,7 +600,7 @@
                     "swagger",
                     "typescript"
                 ],
-                "updated_at": "2026-07-23T23:49:51Z"
+                "updated_at": "2026-09-06T00:59:03Z"
             },
             {
                 "name": "elysia-demo-app",
@@ -667,7 +667,7 @@
                 "url": "https://github.com/jellydn/miryoku-silakka54-layout",
                 "homepage": "https://kb.itman.fyi/",
                 "stars": 22,
-                "forks": 8,
+                "forks": 9,
                 "language": "HTML",
                 "topics": [
                     "colemak-dh",
@@ -1926,6 +1926,18 @@
                 "updated_at": "2022-12-28T04:11:44Z"
             },
             {
+                "name": "imagi",
+                "full_name": "jellydn/imagi",
+                "description": "A native SwiftUI image studio for iPhone, iPad, and Mac. Describe → generate variants → compare → refine → save.",
+                "url": "https://github.com/jellydn/imagi",
+                "homepage": "",
+                "stars": 0,
+                "forks": 0,
+                "language": "Swift",
+                "topics": [],
+                "updated_at": "2026-09-05T17:05:00Z"
+            },
+            {
                 "name": "playwright-mock-api",
                 "full_name": "jellydn/playwright-mock-api",
                 "description": "Mocking API with Playwright",
@@ -2004,6 +2016,18 @@
                 "updated_at": "2026-08-26T02:42:01Z"
             },
             {
+                "name": "rari-demo",
+                "full_name": "jellydn/rari-demo",
+                "description": "",
+                "url": "https://github.com/jellydn/rari-demo",
+                "homepage": "",
+                "stars": 0,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [],
+                "updated_at": "2026-08-26T02:42:00Z"
+            },
+            {
                 "name": "rabbitmq-demo",
                 "full_name": "jellydn/rabbitmq-demo",
                 "description": "Receiving messages based on a pattern (topics) & RPC call",
@@ -2018,18 +2042,6 @@
                     "rpc",
                     "typescript"
                 ],
-                "updated_at": "2026-08-26T02:42:00Z"
-            },
-            {
-                "name": "rari-demo",
-                "full_name": "jellydn/rari-demo",
-                "description": "",
-                "url": "https://github.com/jellydn/rari-demo",
-                "homepage": "",
-                "stars": 0,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [],
                 "updated_at": "2026-08-26T02:42:00Z"
             },
             {
@@ -3797,7 +3809,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-09-04T07:42:56Z"
+                "updated_at": "2026-09-05T07:15:45Z"
             },
             {
                 "name": "vite-react-query-gridjs-demo-app",
