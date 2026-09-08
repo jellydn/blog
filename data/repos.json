@@ -666,7 +666,7 @@
                 "description": "Interactive visualization and educational resource for adapting the Miryoku keyboard layout system to the Silakka54 split keyboard",
                 "url": "https://github.com/jellydn/miryoku-silakka54-layout",
                 "homepage": "https://kb.itman.fyi/",
-                "stars": 22,
+                "stars": 21,
                 "forks": 9,
                 "language": "HTML",
                 "topics": [
@@ -677,7 +677,7 @@
                     "miryoku",
                     "silakka54"
                 ],
-                "updated_at": "2026-08-17T03:53:25Z"
+                "updated_at": "2026-09-07T22:00:18Z"
             },
             {
                 "name": "arch-linux-on-m2",
@@ -762,23 +762,6 @@
                 "updated_at": "2026-07-29T05:37:33Z"
             },
             {
-                "name": "modern-python-2024-demo",
-                "full_name": "jellydn/modern-python-2024-demo",
-                "description": "Modern development with Python in 2024",
-                "url": "https://github.com/jellydn/modern-python-2024-demo",
-                "homepage": "https://modern-python-demo.fly.dev/docs",
-                "stars": 12,
-                "forks": 2,
-                "language": "Python",
-                "topics": [
-                    "python",
-                    "ruff",
-                    "rye",
-                    "uv"
-                ],
-                "updated_at": "2026-08-21T03:18:11Z"
-            },
-            {
                 "name": "oak",
                 "full_name": "jellydn/oak",
                 "description": "Oak is a lightweight macOS focus companion app with notch-based Pomodoro-style focus sessions and ambient audio.",
@@ -794,7 +777,7 @@
                     "pomodoro-timer",
                     "swift"
                 ],
-                "updated_at": "2026-08-12T06:32:15Z"
+                "updated_at": "2026-09-08T02:03:59Z"
             },
             {
                 "name": "playwright-crawler-demo",
@@ -802,14 +785,31 @@
                 "description": "This template is a production ready boilerplate for developing with `PlaywrightCrawler`. Use this to bootstrap your projects using the most up-to-date code.",
                 "url": "https://github.com/jellydn/playwright-crawler-demo",
                 "homepage": "",
-                "stars": 11,
+                "stars": 12,
                 "forks": 5,
                 "language": "Dockerfile",
                 "topics": [
                     "crawlee",
                     "playwright-typescript"
                 ],
-                "updated_at": "2026-08-21T03:18:13Z"
+                "updated_at": "2026-09-07T09:47:30Z"
+            },
+            {
+                "name": "modern-python-2024-demo",
+                "full_name": "jellydn/modern-python-2024-demo",
+                "description": "Modern development with Python in 2024",
+                "url": "https://github.com/jellydn/modern-python-2024-demo",
+                "homepage": "https://modern-python-demo.fly.dev/docs",
+                "stars": 12,
+                "forks": 2,
+                "language": "Python",
+                "topics": [
+                    "python",
+                    "ruff",
+                    "rye",
+                    "uv"
+                ],
+                "updated_at": "2026-08-21T03:18:11Z"
             },
             {
                 "name": "github-action-locally",
@@ -1523,6 +1523,20 @@
                 "updated_at": "2022-06-22T10:27:12Z"
             },
             {
+                "name": "practicepython",
+                "full_name": "jellydn/practicepython",
+                "description": "Learn how to code by practicing Python exercises.",
+                "url": "https://github.com/jellydn/practicepython",
+                "homepage": "",
+                "stars": 1,
+                "forks": 0,
+                "language": "",
+                "topics": [
+                    "python"
+                ],
+                "updated_at": "2026-09-07T08:30:12Z"
+            },
+            {
                 "name": "preview-url",
                 "full_name": "jellydn/preview-url",
                 "description": "",
@@ -1545,20 +1559,6 @@
                 "language": "HTML",
                 "topics": [],
                 "updated_at": "2026-08-31T23:46:21Z"
-            },
-            {
-                "name": "practicepython",
-                "full_name": "jellydn/practicepython",
-                "description": "Learn how to code by practicing Python exercises.",
-                "url": "https://github.com/jellydn/practicepython",
-                "homepage": "",
-                "stars": 1,
-                "forks": 0,
-                "language": "",
-                "topics": [
-                    "python"
-                ],
-                "updated_at": "2026-08-31T11:01:45Z"
             },
             {
                 "name": "foldimals",
@@ -2911,7 +2911,7 @@
                     "zellij",
                     "zsh"
                 ],
-                "updated_at": "2026-08-27T11:12:42Z"
+                "updated_at": "2026-09-08T06:59:48Z"
             },
             {
                 "name": "learn-vim-with-vscode",
@@ -3809,7 +3809,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-09-06T07:28:00Z"
+                "updated_at": "2026-09-07T07:44:11Z"
             },
             {
                 "name": "vite-react-query-gridjs-demo-app",
