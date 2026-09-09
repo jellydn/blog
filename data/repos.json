@@ -536,7 +536,7 @@
                 "description": "Your ultimate guide to setting up Zed with Vim mode, tailored settings, and key bindings for a seamless coding experience",
                 "url": "https://github.com/jellydn/zed-101-setup",
                 "homepage": "https://itman.fyi",
-                "stars": 1446,
+                "stars": 1447,
                 "forks": 30,
                 "language": "TypeScript",
                 "topics": [
@@ -544,7 +544,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-09-06T19:49:19Z"
+                "updated_at": "2026-09-09T04:54:34Z"
             },
             {
                 "name": "typescript-tips",
@@ -569,7 +569,7 @@
                 "description": "A curated list of awesome 🔥 TypeScript Typesafe Libraries🔥",
                 "url": "https://github.com/jellydn/awesome-typesafe",
                 "homepage": "http://typesafe.itman.fyi/",
-                "stars": 182,
+                "stars": 183,
                 "forks": 25,
                 "language": "",
                 "topics": [
@@ -578,7 +578,7 @@
                     "typesafe",
                     "typescript"
                 ],
-                "updated_at": "2026-08-25T16:23:26Z"
+                "updated_at": "2026-09-08T10:06:22Z"
             },
             {
                 "name": "fastify-starter",
@@ -777,7 +777,7 @@
                     "pomodoro-timer",
                     "swift"
                 ],
-                "updated_at": "2026-09-08T02:03:59Z"
+                "updated_at": "2026-09-09T02:33:47Z"
             },
             {
                 "name": "playwright-crawler-demo",
@@ -2911,7 +2911,7 @@
                     "zellij",
                     "zsh"
                 ],
-                "updated_at": "2026-09-08T06:59:48Z"
+                "updated_at": "2026-09-08T08:49:53Z"
             },
             {
                 "name": "learn-vim-with-vscode",
@@ -3809,7 +3809,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-09-07T07:44:11Z"
+                "updated_at": "2026-09-08T07:38:05Z"
             },
             {
                 "name": "vite-react-query-gridjs-demo-app",
