@@ -5,11 +5,16 @@ function generateNonce(): string {
     return crypto.randomUUID();
 }
 
+// Static pages cannot receive a request nonce, so pin the trusted next-themes bootstrap by hash.
+const THEME_SCRIPT_HASH =
+    "'sha256-NY+BIt+ZGRNmG4/d2Z4ec2+FJA2jpviW1ym3egy0Axc='";
+
 const cspDirectives: Record<string, string[]> = {
     'default-src': ["'self'"],
     'script-src': [
         "'self'",
         `'nonce-%nonce%'`,
+        THEME_SCRIPT_HASH,
         'https://gc.zgo.at',
         'https://dunghd.goatcounter.com',
         'https://cloud.umami.is',
@@ -49,20 +54,22 @@ function buildCsp(nonce: string): string {
 
 export function proxy(request: NextRequest) {
     const nonce = generateNonce();
+    const contentSecurityPolicy = buildCsp(nonce);
 
     const requestHeaders = new Headers(request.headers);
     requestHeaders.set('x-nonce', nonce);
+    requestHeaders.set('Content-Security-Policy', contentSecurityPolicy);
 
     const response = NextResponse.next({
         request: { headers: requestHeaders },
     });
 
-    response.headers.set('Content-Security-Policy', buildCsp(nonce));
+    response.headers.set('Content-Security-Policy', contentSecurityPolicy);
     response.headers.set('X-Content-Type-Options', 'nosniff');
     response.headers.set('Referrer-Policy', 'strict-origin-when-cross-origin');
     response.headers.set(
         'Permissions-Policy',
-        'camera=(), microphone=(), geolocation=(), interest-cohort=()',
+        'camera=(), microphone=(), geolocation=()',
     );
 
     return response;
