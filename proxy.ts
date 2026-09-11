@@ -5,11 +5,16 @@ function generateNonce(): string {
     return crypto.randomUUID();
 }
 
+// Static pages cannot receive a request nonce, so pin the trusted next-themes bootstrap by hash.
+const THEME_SCRIPT_HASH =
+    "'sha256-NY+BIt+ZGRNmG4/d2Z4ec2+FJA2jpviW1ym3egy0Axc='";
+
 const cspDirectives: Record<string, string[]> = {
     'default-src': ["'self'"],
     'script-src': [
         "'self'",
         `'nonce-%nonce%'`,
+        THEME_SCRIPT_HASH,
         'https://gc.zgo.at',
         'https://dunghd.goatcounter.com',
         'https://cloud.umami.is',
