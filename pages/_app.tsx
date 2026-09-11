@@ -12,7 +12,10 @@ interface SecurityPageProps {
     nonce?: string;
 }
 
-const MyApp = ({ Component, pageProps }: AppProps<SecurityPageProps>) => (
+const MyApp: React.FC<AppProps<SecurityPageProps>> = ({
+    Component,
+    pageProps,
+}) => (
     <ThemeProvider nonce={pageProps.nonce}>
         <div>
             <Script

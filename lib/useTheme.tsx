@@ -7,13 +7,15 @@ import {
 
 type Theme = 'minimal' | 'dark';
 
+interface ThemeProviderProps {
+    children: React.ReactNode;
+    nonce?: string;
+}
+
 export function ThemeProvider({
     children,
     nonce,
-}: {
-    children: React.ReactNode;
-    nonce?: string;
-}) {
+}: ThemeProviderProps): React.JSX.Element {
     return (
         <NextThemesProvider
             themes={['minimal', 'dark']}

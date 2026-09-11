@@ -3,10 +3,10 @@ import { getSiteConfig } from 'lib/config';
 import { generateNextSeo, pageSeo } from 'lib/seo';
 import type { GetServerSidePropsContext, GetServerSidePropsResult } from 'next';
 
-type ResumePageProps = {
+interface ResumePageProps {
     siteTitle: string;
     nonce?: string;
-};
+}
 
 const ResumePage = ({ siteTitle }: ResumePageProps) => {
     const description =
