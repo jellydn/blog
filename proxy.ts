@@ -23,7 +23,7 @@ const cspDirectives: Record<string, string[]> = {
         'https://i.ytimg.com',
         'data:',
     ],
-    'frame-src': ['https://www.youtube.com'],
+    'frame-src': ["'self'", 'https://www.youtube.com'],
     'connect-src': [
         "'self'",
         'https://dunghd.goatcounter.com',
@@ -49,20 +49,22 @@ function buildCsp(nonce: string): string {
 
 export function proxy(request: NextRequest) {
     const nonce = generateNonce();
+    const contentSecurityPolicy = buildCsp(nonce);
 
     const requestHeaders = new Headers(request.headers);
     requestHeaders.set('x-nonce', nonce);
+    requestHeaders.set('Content-Security-Policy', contentSecurityPolicy);
 
     const response = NextResponse.next({
         request: { headers: requestHeaders },
     });
 
-    response.headers.set('Content-Security-Policy', buildCsp(nonce));
+    response.headers.set('Content-Security-Policy', contentSecurityPolicy);
     response.headers.set('X-Content-Type-Options', 'nosniff');
     response.headers.set('Referrer-Policy', 'strict-origin-when-cross-origin');
     response.headers.set(
         'Permissions-Policy',
-        'camera=(), microphone=(), geolocation=(), interest-cohort=()',
+        'camera=(), microphone=(), geolocation=()',
     );
 
     return response;

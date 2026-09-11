@@ -7,7 +7,13 @@ import {
 
 type Theme = 'minimal' | 'dark';
 
-export function ThemeProvider({ children }: { children: React.ReactNode }) {
+export function ThemeProvider({
+    children,
+    nonce,
+}: {
+    children: React.ReactNode;
+    nonce?: string;
+}) {
     return (
         <NextThemesProvider
             themes={['minimal', 'dark']}
@@ -15,6 +21,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
             storageKey="theme"
             enableSystem={false}
             attribute="data-theme"
+            nonce={nonce}
         >
             {children}
         </NextThemesProvider>

@@ -1,9 +1,11 @@
 import Layout from 'components/Layout';
 import { getSiteConfig } from 'lib/config';
 import { generateNextSeo, pageSeo } from 'lib/seo';
+import type { GetServerSidePropsContext, GetServerSidePropsResult } from 'next';
 
 type ResumePageProps = {
     siteTitle: string;
+    nonce?: string;
 };
 
 const ResumePage = ({ siteTitle }: ResumePageProps) => {
@@ -72,12 +74,18 @@ const ResumePage = ({ siteTitle }: ResumePageProps) => {
 
 export default ResumePage;
 
-export async function getStaticProps() {
+export async function getServerSideProps({
+    req,
+}: GetServerSidePropsContext): Promise<
+    GetServerSidePropsResult<ResumePageProps>
+> {
     const config = getSiteConfig();
+    const nonce = req.headers['x-nonce'] as string | undefined;
 
     return {
         props: {
             siteTitle: config.title,
+            nonce,
         },
     };
 }
