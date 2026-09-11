@@ -55,18 +55,6 @@ const ResumePage = ({ siteTitle }: ResumePageProps) => {
                         </div>
                     </div>
                 </section>
-
-                <section className="py-8 md:py-12 bg-base-100">
-                    <div className="container mx-auto px-4 max-w-5xl">
-                        <div className="aspect-[4/5] w-full rounded-xl overflow-hidden border border-base-300 shadow-sm bg-base-200">
-                            <iframe
-                                title="Resume PDF"
-                                src={resumeUrl}
-                                className="w-full h-full"
-                            />
-                        </div>
-                    </div>
-                </section>
             </div>
         </Layout>
     );

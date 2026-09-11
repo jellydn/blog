@@ -23,7 +23,7 @@ const cspDirectives: Record<string, string[]> = {
         'https://i.ytimg.com',
         'data:',
     ],
-    'frame-src': ["'self'", 'https://www.youtube.com'],
+    'frame-src': ['https://www.youtube.com'],
     'connect-src': [
         "'self'",
         'https://dunghd.goatcounter.com',
