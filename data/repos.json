@@ -96,14 +96,14 @@
                 "description": "QwenCloud provider for pi — Qwen3.8, DeepSeek V4, GLM-5.2, Wan image, HappyHorse video via OpenAI-compatible API",
                 "url": "https://github.com/jellydn/pi-qwencloud-provider",
                 "homepage": "https://jellydn.github.io/pi-qwencloud-provider/",
-                "stars": 12,
+                "stars": 13,
                 "forks": 1,
                 "language": "TypeScript",
                 "topics": [
                     "pi",
                     "pi-plugins"
                 ],
-                "updated_at": "2026-09-02T16:19:27Z"
+                "updated_at": "2026-09-10T13:14:11Z"
             },
             {
                 "name": "ai-launcher",
@@ -340,7 +340,7 @@
                 "url": "https://github.com/jellydn/twt-dl-cli",
                 "homepage": "",
                 "stars": 50,
-                "forks": 8,
+                "forks": 9,
                 "language": "TypeScript",
                 "topics": [
                     "cli",
@@ -544,7 +544,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-09-10T07:03:33Z"
+                "updated_at": "2026-09-11T05:34:09Z"
             },
             {
                 "name": "typescript-tips",
@@ -569,7 +569,7 @@
                 "description": "A curated list of awesome 🔥 TypeScript Typesafe Libraries🔥",
                 "url": "https://github.com/jellydn/awesome-typesafe",
                 "homepage": "http://typesafe.itman.fyi/",
-                "stars": 183,
+                "stars": 184,
                 "forks": 25,
                 "language": "",
                 "topics": [
@@ -578,7 +578,7 @@
                     "typesafe",
                     "typescript"
                 ],
-                "updated_at": "2026-09-08T10:06:22Z"
+                "updated_at": "2026-09-11T00:36:32Z"
             },
             {
                 "name": "fastify-starter",
@@ -786,7 +786,7 @@
                 "url": "https://github.com/jellydn/playwright-crawler-demo",
                 "homepage": "",
                 "stars": 12,
-                "forks": 5,
+                "forks": 4,
                 "language": "Dockerfile",
                 "topics": [
                     "crawlee",
@@ -925,6 +925,25 @@
                 "updated_at": "2022-07-15T10:46:24Z"
             },
             {
+                "name": "monorepo-starter",
+                "full_name": "jellydn/monorepo-starter",
+                "description": "A feature-rich monorepo starter with full Kubernetes support base on with-docker turbo example",
+                "url": "https://github.com/jellydn/monorepo-starter",
+                "homepage": "",
+                "stars": 5,
+                "forks": 0,
+                "language": "Shell",
+                "topics": [
+                    "docker",
+                    "docker-compose",
+                    "k8s",
+                    "monorepo",
+                    "starter-template",
+                    "turborepo"
+                ],
+                "updated_at": "2026-09-11T06:03:11Z"
+            },
+            {
                 "name": "ws-sockette",
                 "full_name": "jellydn/ws-sockette",
                 "description": "The little WebSocket wrapper for nodejs",
@@ -956,25 +975,6 @@
                     "spa"
                 ],
                 "updated_at": "2026-08-21T03:18:21Z"
-            },
-            {
-                "name": "monorepo-starter",
-                "full_name": "jellydn/monorepo-starter",
-                "description": "A feature-rich monorepo starter with full Kubernetes support base on with-docker turbo example",
-                "url": "https://github.com/jellydn/monorepo-starter",
-                "homepage": "",
-                "stars": 5,
-                "forks": 0,
-                "language": "Shell",
-                "topics": [
-                    "docker",
-                    "docker-compose",
-                    "k8s",
-                    "monorepo",
-                    "starter-template",
-                    "turborepo"
-                ],
-                "updated_at": "2026-07-21T23:37:32Z"
             },
             {
                 "name": "eslint-config-productsway",
@@ -1289,6 +1289,26 @@
                 "updated_at": "2025-02-05T02:52:59Z"
             },
             {
+                "name": "deno-pkg-starter",
+                "full_name": "jellydn/deno-pkg-starter",
+                "description": "Publish your Typescript library to NPM and Deno",
+                "url": "https://github.com/jellydn/deno-pkg-starter",
+                "homepage": "",
+                "stars": 2,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [
+                    "deno",
+                    "deno-starter",
+                    "esm",
+                    "npm",
+                    "rust",
+                    "typescript",
+                    "wasm"
+                ],
+                "updated_at": "2026-09-10T21:23:11Z"
+            },
+            {
                 "name": "keybinder",
                 "full_name": "jellydn/keybinder",
                 "description": "A modern, user-friendly GUI application for managing skhd keyboard shortcuts on macOS.",
@@ -1415,26 +1435,6 @@
                 "updated_at": "2026-08-21T03:17:50Z"
             },
             {
-                "name": "deno-pkg-starter",
-                "full_name": "jellydn/deno-pkg-starter",
-                "description": "Publish your Typescript library to NPM and Deno",
-                "url": "https://github.com/jellydn/deno-pkg-starter",
-                "homepage": "",
-                "stars": 2,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [
-                    "deno",
-                    "deno-starter",
-                    "esm",
-                    "npm",
-                    "rust",
-                    "typescript",
-                    "wasm"
-                ],
-                "updated_at": "2026-07-27T05:12:48Z"
-            },
-            {
                 "name": "typescript-mini-starter",
                 "full_name": "jellydn/typescript-mini-starter",
                 "description": "A streamlined and efficient TypeScript starter kit, supporting both ESM and CJS, for quick and versatile project setups.",
@@ -1532,7 +1532,7 @@
                 "forks": 0,
                 "language": "TypeScript",
                 "topics": [],
-                "updated_at": "2026-09-10T06:42:01Z"
+                "updated_at": "2026-09-10T09:57:42Z"
             },
             {
                 "name": "brave-buddy",
@@ -1938,6 +1938,21 @@
                 "updated_at": "2022-12-28T04:11:44Z"
             },
             {
+                "name": "remix-spa",
+                "full_name": "jellydn/remix-spa",
+                "description": "Remix SPA Starter",
+                "url": "https://github.com/jellydn/remix-spa",
+                "homepage": "",
+                "stars": 0,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [
+                    "remix",
+                    "spa"
+                ],
+                "updated_at": "2026-09-11T02:27:07Z"
+            },
+            {
                 "name": "pulumi-kubernetes-typescript",
                 "full_name": "jellydn/pulumi-kubernetes-typescript",
                 "description": "Simple Kubernetes cluster with TypeScript for Pulumi.",
@@ -1950,7 +1965,7 @@
                     "pulumi",
                     "typescript"
                 ],
-                "updated_at": "2026-09-10T04:33:00Z"
+                "updated_at": "2026-09-11T00:36:20Z"
             },
             {
                 "name": "playwright-mock-api",
@@ -1975,21 +1990,6 @@
                 "language": "Swift",
                 "topics": [],
                 "updated_at": "2026-09-05T17:05:00Z"
-            },
-            {
-                "name": "remix-spa",
-                "full_name": "jellydn/remix-spa",
-                "description": "Remix SPA Starter",
-                "url": "https://github.com/jellydn/remix-spa",
-                "homepage": "",
-                "stars": 0,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [
-                    "remix",
-                    "spa"
-                ],
-                "updated_at": "2026-09-04T18:54:16Z"
             },
             {
                 "name": "homebrew-tap",
@@ -2028,6 +2028,18 @@
                 "updated_at": "2026-08-26T02:42:01Z"
             },
             {
+                "name": "rari-demo",
+                "full_name": "jellydn/rari-demo",
+                "description": "",
+                "url": "https://github.com/jellydn/rari-demo",
+                "homepage": "",
+                "stars": 0,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [],
+                "updated_at": "2026-08-26T02:42:00Z"
+            },
+            {
                 "name": "rabbitmq-demo",
                 "full_name": "jellydn/rabbitmq-demo",
                 "description": "Receiving messages based on a pattern (topics) & RPC call",
@@ -2045,16 +2057,19 @@
                 "updated_at": "2026-08-26T02:42:00Z"
             },
             {
-                "name": "rari-demo",
-                "full_name": "jellydn/rari-demo",
+                "name": "tsp-demo",
+                "full_name": "jellydn/tsp-demo",
                 "description": "",
-                "url": "https://github.com/jellydn/rari-demo",
+                "url": "https://github.com/jellydn/tsp-demo",
                 "homepage": "",
                 "stars": 0,
                 "forks": 0,
-                "language": "TypeScript",
-                "topics": [],
-                "updated_at": "2026-08-26T02:42:00Z"
+                "language": "Makefile",
+                "topics": [
+                    "tsp",
+                    "typespec"
+                ],
+                "updated_at": "2026-08-26T02:41:59Z"
             },
             {
                 "name": "modus-demo",
@@ -2068,21 +2083,6 @@
                 "topics": [
                     "hypermode",
                     "modus"
-                ],
-                "updated_at": "2026-08-26T02:41:59Z"
-            },
-            {
-                "name": "tsp-demo",
-                "full_name": "jellydn/tsp-demo",
-                "description": "",
-                "url": "https://github.com/jellydn/tsp-demo",
-                "homepage": "",
-                "stars": 0,
-                "forks": 0,
-                "language": "Makefile",
-                "topics": [
-                    "tsp",
-                    "typespec"
                 ],
                 "updated_at": "2026-08-26T02:41:59Z"
             },
@@ -3089,7 +3089,7 @@
                 "topics": [
                     "vscode-extension"
                 ],
-                "updated_at": "2026-09-07T07:27:37Z"
+                "updated_at": "2026-09-10T11:28:32Z"
             },
             {
                 "name": "vscode-fff-gpui",
@@ -3821,7 +3821,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-09-09T07:43:47Z"
+                "updated_at": "2026-09-10T07:42:16Z"
             },
             {
                 "name": "vite-react-query-gridjs-demo-app",
