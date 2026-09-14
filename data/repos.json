@@ -18,7 +18,7 @@
                     "open-code",
                     "skills"
                 ],
-                "updated_at": "2026-09-11T09:57:10Z"
+                "updated_at": "2026-09-13T23:40:43Z"
             },
             {
                 "name": "gpt4free-demo",
@@ -347,7 +347,7 @@
                     "download-videos",
                     "twitter"
                 ],
-                "updated_at": "2026-09-11T10:49:52Z"
+                "updated_at": "2026-09-14T06:09:49Z"
             },
             {
                 "name": "pi-clinepass-provider",
@@ -474,7 +474,7 @@
                     "golang",
                     "gui"
                 ],
-                "updated_at": "2026-09-11T10:40:31Z"
+                "updated_at": "2026-09-14T08:17:42Z"
             },
             {
                 "name": "eslint-fixer",
@@ -536,7 +536,7 @@
                 "description": "Your ultimate guide to setting up Zed with Vim mode, tailored settings, and key bindings for a seamless coding experience",
                 "url": "https://github.com/jellydn/zed-101-setup",
                 "homepage": "https://itman.fyi",
-                "stars": 1448,
+                "stars": 1449,
                 "forks": 30,
                 "language": "TypeScript",
                 "topics": [
@@ -544,7 +544,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-09-13T04:52:06Z"
+                "updated_at": "2026-09-14T07:45:28Z"
             },
             {
                 "name": "typescript-tips",
@@ -600,7 +600,7 @@
                     "swagger",
                     "typescript"
                 ],
-                "updated_at": "2026-09-11T18:06:46Z"
+                "updated_at": "2026-09-14T05:05:43Z"
             },
             {
                 "name": "elysia-demo-app",
@@ -658,7 +658,7 @@
                     "express-js",
                     "vercel"
                 ],
-                "updated_at": "2026-09-11T10:49:50Z"
+                "updated_at": "2026-09-14T05:29:15Z"
             },
             {
                 "name": "miryoku-silakka54-layout",
@@ -677,7 +677,7 @@
                     "miryoku",
                     "silakka54"
                 ],
-                "updated_at": "2026-09-07T22:00:18Z"
+                "updated_at": "2026-09-14T03:28:11Z"
             },
             {
                 "name": "arch-linux-on-m2",
@@ -925,6 +925,38 @@
                 "updated_at": "2026-08-26T02:41:55Z"
             },
             {
+                "name": "ws-sockette",
+                "full_name": "jellydn/ws-sockette",
+                "description": "The little WebSocket wrapper for nodejs",
+                "url": "https://github.com/jellydn/ws-sockette",
+                "homepage": "",
+                "stars": 5,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [
+                    "nodejs",
+                    "websocket",
+                    "ws"
+                ],
+                "updated_at": "2026-09-14T06:11:31Z"
+            },
+            {
+                "name": "docklight",
+                "full_name": "jellydn/docklight",
+                "description": "A minimal, self-hosted web UI for managing a single-node Dokku server.",
+                "url": "https://github.com/jellydn/docklight",
+                "homepage": "https://docklight.itman.fyi/",
+                "stars": 5,
+                "forks": 2,
+                "language": "TypeScript",
+                "topics": [
+                    "dokku",
+                    "dokku-ui",
+                    "dokku-web"
+                ],
+                "updated_at": "2026-09-14T06:10:21Z"
+            },
+            {
                 "name": "monorepo-starter",
                 "full_name": "jellydn/monorepo-starter",
                 "description": "A feature-rich monorepo starter with full Kubernetes support base on with-docker turbo example",
@@ -972,22 +1004,6 @@
                 "updated_at": "2026-09-11T10:49:51Z"
             },
             {
-                "name": "ws-sockette",
-                "full_name": "jellydn/ws-sockette",
-                "description": "The little WebSocket wrapper for nodejs",
-                "url": "https://github.com/jellydn/ws-sockette",
-                "homepage": "",
-                "stars": 5,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [
-                    "nodejs",
-                    "websocket",
-                    "ws"
-                ],
-                "updated_at": "2026-09-11T10:47:17Z"
-            },
-            {
                 "name": "remix-spa-demo",
                 "full_name": "jellydn/remix-spa-demo",
                 "description": "How to use Biome with Bun.js and Remix to create a Single Page Application",
@@ -1020,20 +1036,20 @@
                 "updated_at": "2024-10-16T16:51:32Z"
             },
             {
-                "name": "docklight",
-                "full_name": "jellydn/docklight",
-                "description": "A minimal, self-hosted web UI for managing a single-node Dokku server.",
-                "url": "https://github.com/jellydn/docklight",
-                "homepage": "https://docklight.itman.fyi/",
+                "name": "typescript-starter",
+                "full_name": "jellydn/typescript-starter",
+                "description": "Typescript starter project",
+                "url": "https://github.com/jellydn/typescript-starter",
+                "homepage": "",
                 "stars": 4,
-                "forks": 2,
+                "forks": 0,
                 "language": "TypeScript",
                 "topics": [
-                    "dokku",
-                    "dokku-ui",
-                    "dokku-web"
+                    "starter",
+                    "template",
+                    "typescript"
                 ],
-                "updated_at": "2026-09-12T08:26:19Z"
+                "updated_at": "2026-09-14T06:33:23Z"
             },
             {
                 "name": "platformatic-starter",
@@ -1053,22 +1069,6 @@
                     "starter-template"
                 ],
                 "updated_at": "2026-09-11T11:55:26Z"
-            },
-            {
-                "name": "typescript-starter",
-                "full_name": "jellydn/typescript-starter",
-                "description": "Typescript starter project",
-                "url": "https://github.com/jellydn/typescript-starter",
-                "homepage": "",
-                "stars": 4,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [
-                    "starter",
-                    "template",
-                    "typescript"
-                ],
-                "updated_at": "2026-09-11T10:49:31Z"
             },
             {
                 "name": "hyperstack-demo-app",
@@ -1145,7 +1145,7 @@
                     "stenciljs",
                     "web-component"
                 ],
-                "updated_at": "2026-09-12T05:50:25Z"
+                "updated_at": "2026-09-14T06:27:48Z"
             },
             {
                 "name": "nestjs-7day-journey",
@@ -1289,22 +1289,6 @@
                 "updated_at": "2025-02-05T02:52:59Z"
             },
             {
-                "name": "keybinder",
-                "full_name": "jellydn/keybinder",
-                "description": "A modern, user-friendly GUI application for managing skhd keyboard shortcuts on macOS.",
-                "url": "https://github.com/jellydn/keybinder",
-                "homepage": "",
-                "stars": 2,
-                "forks": 0,
-                "language": "Rust",
-                "topics": [
-                    "gui",
-                    "skhd",
-                    "tauri-app"
-                ],
-                "updated_at": "2026-09-12T13:36:49Z"
-            },
-            {
                 "name": "typescript-mini-starter",
                 "full_name": "jellydn/typescript-mini-starter",
                 "description": "A streamlined and efficient TypeScript starter kit, supporting both ESM and CJS, for quick and versatile project setups.",
@@ -1319,7 +1303,23 @@
                     "starter",
                     "typescript"
                 ],
-                "updated_at": "2026-09-11T18:56:14Z"
+                "updated_at": "2026-09-14T05:44:06Z"
+            },
+            {
+                "name": "keybinder",
+                "full_name": "jellydn/keybinder",
+                "description": "A modern, user-friendly GUI application for managing skhd keyboard shortcuts on macOS.",
+                "url": "https://github.com/jellydn/keybinder",
+                "homepage": "",
+                "stars": 2,
+                "forks": 0,
+                "language": "Rust",
+                "topics": [
+                    "gui",
+                    "skhd",
+                    "tauri-app"
+                ],
+                "updated_at": "2026-09-12T13:36:49Z"
             },
             {
                 "name": ".dotfiles",
@@ -1523,18 +1523,6 @@
                 "updated_at": "2022-06-22T10:27:12Z"
             },
             {
-                "name": "personal-ai",
-                "full_name": "jellydn/personal-ai",
-                "description": "My AI projects from the last nine months",
-                "url": "https://github.com/jellydn/personal-ai",
-                "homepage": "https://jellydn.github.io/personal-ai/",
-                "stars": 1,
-                "forks": 0,
-                "language": "HTML",
-                "topics": [],
-                "updated_at": "2026-09-12T03:41:12Z"
-            },
-            {
                 "name": "practicepython",
                 "full_name": "jellydn/practicepython",
                 "description": "Learn how to code by practicing Python exercises.",
@@ -1546,7 +1534,19 @@
                 "topics": [
                     "python"
                 ],
-                "updated_at": "2026-09-11T18:57:50Z"
+                "updated_at": "2026-09-14T05:53:17Z"
+            },
+            {
+                "name": "personal-ai",
+                "full_name": "jellydn/personal-ai",
+                "description": "My AI projects from the last nine months",
+                "url": "https://github.com/jellydn/personal-ai",
+                "homepage": "https://jellydn.github.io/personal-ai/",
+                "stars": 1,
+                "forks": 0,
+                "language": "HTML",
+                "topics": [],
+                "updated_at": "2026-09-12T03:41:12Z"
             },
             {
                 "name": "preview-url",
@@ -1938,6 +1938,21 @@
                 "updated_at": "2022-12-28T04:11:44Z"
             },
             {
+                "name": "pulumi-kubernetes-typescript",
+                "full_name": "jellydn/pulumi-kubernetes-typescript",
+                "description": "Simple Kubernetes cluster with TypeScript for Pulumi.",
+                "url": "https://github.com/jellydn/pulumi-kubernetes-typescript",
+                "homepage": "",
+                "stars": 0,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [
+                    "pulumi",
+                    "typescript"
+                ],
+                "updated_at": "2026-09-14T05:11:21Z"
+            },
+            {
                 "name": "shichida-memory-card-native",
                 "full_name": "jellydn/shichida-memory-card-native",
                 "description": "",
@@ -2241,21 +2256,6 @@
                 "language": "",
                 "topics": [],
                 "updated_at": "2026-09-11T10:25:07Z"
-            },
-            {
-                "name": "pulumi-kubernetes-typescript",
-                "full_name": "jellydn/pulumi-kubernetes-typescript",
-                "description": "Simple Kubernetes cluster with TypeScript for Pulumi.",
-                "url": "https://github.com/jellydn/pulumi-kubernetes-typescript",
-                "homepage": "",
-                "stars": 0,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [
-                    "pulumi",
-                    "typescript"
-                ],
-                "updated_at": "2026-09-11T00:36:20Z"
             },
             {
                 "name": "tiny-code-model",
@@ -2935,7 +2935,7 @@
                     "zellij",
                     "zsh"
                 ],
-                "updated_at": "2026-09-10T03:18:33Z"
+                "updated_at": "2026-09-14T08:10:22Z"
             },
             {
                 "name": "learn-vim-with-vscode",
@@ -3036,7 +3036,7 @@
                     "hurl",
                     "vscode-extension"
                 ],
-                "updated_at": "2026-09-11T10:49:40Z"
+                "updated_at": "2026-09-14T06:30:02Z"
             },
             {
                 "name": "vscode-like-pro",
@@ -3101,7 +3101,7 @@
                 "topics": [
                     "vscode-extension"
                 ],
-                "updated_at": "2026-09-11T10:47:01Z"
+                "updated_at": "2026-09-14T06:53:00Z"
             },
             {
                 "name": "vscode-fff-gpui",
@@ -3506,7 +3506,7 @@
                     "react",
                     "react-email"
                 ],
-                "updated_at": "2026-09-11T10:49:30Z"
+                "updated_at": "2026-09-14T06:07:27Z"
             },
             {
                 "name": "waku-rsc-async-demo",
@@ -3649,7 +3649,7 @@
                     "react",
                     "typescript"
                 ],
-                "updated_at": "2026-09-12T05:59:29Z"
+                "updated_at": "2026-09-14T05:14:56Z"
             },
             {
                 "name": "i18n-react-app",
@@ -3833,7 +3833,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-09-12T07:30:50Z"
+                "updated_at": "2026-09-13T07:51:26Z"
             },
             {
                 "name": "vite-react-jotai",
