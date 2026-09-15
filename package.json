@@ -62,7 +62,7 @@
         "sort-package-json": "4.0.0",
         "tailwindcss": "4.3.3",
         "typescript": "6.0.3",
-        "vitest": "4.1.10"
+        "vitest": "5.0.0"
     },
     "packageManager": "pnpm@11.15.0",
     "overrides": {}
