@@ -13,12 +13,14 @@ Timestamps:
 
 0:20 - Introduction
 04:25 - 101 Setup
-11:05 -  Demo
+11:05 - Demo
 
 Resources
+
 - https://github.com/jellydn/zed-101-setup
 
 Follow Me:
+
 - Website: productsway.com
 - Twitter: @jellydn
 - GitHub: @jellydn
