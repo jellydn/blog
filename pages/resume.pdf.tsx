@@ -1,4 +1,5 @@
 import Layout from 'components/Layout';
+import { ResumePdfPreview } from 'components/ResumePdfPreview';
 import { getSiteConfig } from 'lib/config';
 import { generateNextSeo, pageSeo } from 'lib/seo';
 import type { GetServerSidePropsContext, GetServerSidePropsResult } from 'next';
@@ -53,6 +54,12 @@ const ResumePage = ({ siteTitle }: ResumePageProps) => {
                                 Open in new tab
                             </a>
                         </div>
+                    </div>
+                </section>
+
+                <section className="bg-base-100 py-8 md:py-12">
+                    <div className="container mx-auto max-w-5xl px-4">
+                        <ResumePdfPreview src={resumeUrl} />
                     </div>
                 </section>
             </div>
