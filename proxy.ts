@@ -45,9 +45,14 @@ const cspDirectives: Record<string, string[]> = {
 
 function buildCsp(
     nonce: string,
-    overrides: Partial<Record<string, string[]>> = {},
+    overrides: Record<string, string[]> = {},
 ): string {
-    return Object.entries({ ...cspDirectives, ...overrides })
+    const directives: Record<string, string[]> = {
+        ...cspDirectives,
+        ...overrides,
+    };
+
+    return Object.entries(directives)
         .map(([key, values]) => {
             const resolved = values.map((v) => v.replace('%nonce%', nonce));
             return resolved.length > 0 ? `${key} ${resolved.join(' ')}` : key;
