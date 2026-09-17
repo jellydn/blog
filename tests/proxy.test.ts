@@ -7,7 +7,7 @@ import { describe, expect, it } from 'vitest';
 import { proxy } from '../proxy';
 
 describe('security headers', () => {
-    it('keeps frames restricted under a nonce-based script policy', () => {
+    it('allows same-origin frames under a nonce-based script policy', () => {
         const response = proxy(
             new NextRequest('https://productsway.com/resume.pdf'),
         );
@@ -15,7 +15,7 @@ describe('security headers', () => {
 
         expect(policy).toMatch(/script-src 'self' 'nonce-[^']+'/);
         expect(policy).not.toMatch(/script-src[^;]*'unsafe-inline'/);
-        expect(policy).toContain('frame-src https://www.youtube.com');
+        expect(policy).toContain("frame-src 'self' https://www.youtube.com");
         expect(policy).toContain("frame-ancestors 'none'");
     });
 
@@ -32,6 +32,16 @@ describe('security headers', () => {
 
         expect(script).toBeTruthy();
         expect(policy).toContain(`'sha256-${hash}'`);
+    });
+
+    it('lets the resume PDF be framed by this origin', () => {
+        const response = proxy(
+            new NextRequest('https://productsway.com/files/resume.pdf'),
+        );
+        const policy = response.headers.get('Content-Security-Policy');
+
+        expect(policy).toContain("frame-ancestors 'self'");
+        expect(policy).not.toContain("frame-ancestors 'none'");
     });
 
     it('uses only supported Permissions-Policy features', () => {

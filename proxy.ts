@@ -28,7 +28,7 @@ const cspDirectives: Record<string, string[]> = {
         'https://i.ytimg.com',
         'data:',
     ],
-    'frame-src': ['https://www.youtube.com'],
+    'frame-src': ["'self'", 'https://www.youtube.com'],
     'connect-src': [
         "'self'",
         'https://dunghd.goatcounter.com',
@@ -43,8 +43,16 @@ const cspDirectives: Record<string, string[]> = {
     'upgrade-insecure-requests': [],
 };
 
-function buildCsp(nonce: string): string {
-    return Object.entries(cspDirectives)
+function buildCsp(
+    nonce: string,
+    overrides: Record<string, string[]> = {},
+): string {
+    const directives: Record<string, string[]> = {
+        ...cspDirectives,
+        ...overrides,
+    };
+
+    return Object.entries(directives)
         .map(([key, values]) => {
             const resolved = values.map((v) => v.replace('%nonce%', nonce));
             return resolved.length > 0 ? `${key} ${resolved.join(' ')}` : key;
@@ -54,7 +62,12 @@ function buildCsp(nonce: string): string {
 
 export function proxy(request: NextRequest) {
     const nonce = generateNonce();
-    const contentSecurityPolicy = buildCsp(nonce);
+    const allowSameOriginFrame =
+        request.nextUrl.pathname === '/files/resume.pdf';
+    const contentSecurityPolicy = buildCsp(
+        nonce,
+        allowSameOriginFrame ? { 'frame-ancestors': ["'self'"] } : {},
+    );
 
     const requestHeaders = new Headers(request.headers);
     requestHeaders.set('x-nonce', nonce);
