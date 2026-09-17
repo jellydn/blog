@@ -16,7 +16,7 @@ Discord community: https://discord.gg/vy6hJsTWaZ
 
 Timestamps:
 
-00:50 -  GitHub Copilot Chat in VS Code
+00:50 - GitHub Copilot Chat in VS Code
 2:16 - Overview & Demo
 2:36 - Config
 3:04 - Generate Git Commit Message
@@ -28,8 +28,8 @@ Timestamps:
 10:44 - Fix Diagnostic
 11:49 - Language Support
 13:30 - Quick Chat
-17:00  Release Highlights
+17:00 Release Highlights
 
 Remember to like, subscribe, and share this video to support the channel. Your feedback is invaluable, so please leave a comment below with your thoughts or suggestions for future content. Stay tuned for more tech insights and updates with IT Man Channel!
 
-#itman  #neovim #copilot #copilotchat
+#itman #neovim #copilot #copilotchat
