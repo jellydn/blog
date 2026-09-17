@@ -8,7 +8,7 @@
                 "description": "Comprehensive configuration management for AI coding tools - Replicate my complete setup for Claude Code, OpenCode, Amp, Li, Codex and Claude Code Switch with custom configurations, MCP servers, plugins, and commands.",
                 "url": "https://github.com/jellydn/my-ai-tools",
                 "homepage": "http://ai-tools.itman.fyi/",
-                "stars": 120,
+                "stars": 121,
                 "forks": 13,
                 "language": "Shell",
                 "topics": [
@@ -18,7 +18,7 @@
                     "open-code",
                     "skills"
                 ],
-                "updated_at": "2026-09-13T23:40:43Z"
+                "updated_at": "2026-09-17T02:07:16Z"
             },
             {
                 "name": "gpt4free-demo",
@@ -168,7 +168,7 @@
                 "topics": [
                     "hermes-agent"
                 ],
-                "updated_at": "2026-09-15T22:16:15Z"
+                "updated_at": "2026-09-16T23:44:42Z"
             },
             {
                 "name": "flowly",
@@ -347,7 +347,7 @@
                     "download-videos",
                     "twitter"
                 ],
-                "updated_at": "2026-09-16T02:07:01Z"
+                "updated_at": "2026-09-16T19:31:54Z"
             },
             {
                 "name": "pi-clinepass-provider",
@@ -544,7 +544,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-09-15T21:09:45Z"
+                "updated_at": "2026-09-16T21:32:56Z"
             },
             {
                 "name": "typescript-tips",
@@ -600,7 +600,7 @@
                     "swagger",
                     "typescript"
                 ],
-                "updated_at": "2026-09-16T02:13:22Z"
+                "updated_at": "2026-09-16T21:56:22Z"
             },
             {
                 "name": "elysia-demo-app",
@@ -938,7 +938,7 @@
                     "websocket",
                     "ws"
                 ],
-                "updated_at": "2026-09-16T06:35:50Z"
+                "updated_at": "2026-09-16T21:21:29Z"
             },
             {
                 "name": "docklight",
@@ -1049,7 +1049,7 @@
                     "template",
                     "typescript"
                 ],
-                "updated_at": "2026-09-14T06:33:23Z"
+                "updated_at": "2026-09-16T23:07:22Z"
             },
             {
                 "name": "platformatic-starter",
@@ -1303,7 +1303,7 @@
                     "starter",
                     "typescript"
                 ],
-                "updated_at": "2026-09-14T05:44:06Z"
+                "updated_at": "2026-09-16T20:12:26Z"
             },
             {
                 "name": "keybinder",
@@ -1523,6 +1523,21 @@
                 "updated_at": "2022-06-22T10:27:12Z"
             },
             {
+                "name": "token-pulse",
+                "full_name": "jellydn/token-pulse",
+                "description": "A local-first token usage dashboard for CodexBar",
+                "url": "https://github.com/jellydn/token-pulse",
+                "homepage": "https://myusage.itman.fyi/",
+                "stars": 1,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [
+                    "codexbar",
+                    "token-usage"
+                ],
+                "updated_at": "2026-09-17T04:20:27Z"
+            },
+            {
                 "name": "knulli-app-store",
                 "full_name": "jellydn/knulli-app-store",
                 "description": "Knulli App Store is a safe community package manager for Knulli utilities, themes, and integrations. It has a reviewable catalogue, a transactional installer, and a controller-only SDL2 interface.",
@@ -1535,7 +1550,7 @@
                     "knulli",
                     "knulli-theme"
                 ],
-                "updated_at": "2026-09-16T03:19:59Z"
+                "updated_at": "2026-09-16T14:59:50Z"
             },
             {
                 "name": "practicepython",
@@ -1953,16 +1968,16 @@
                 "updated_at": "2022-12-28T04:11:44Z"
             },
             {
-                "name": "learning-hub",
-                "full_name": "jellydn/learning-hub",
-                "description": "A local-first personal learning dashboard for three ongoing learning tracks",
-                "url": "https://github.com/jellydn/learning-hub",
-                "homepage": "https://jellydn.github.io/learning-hub/",
+                "name": "signal-gate",
+                "full_name": "jellydn/signal-gate",
+                "description": "",
+                "url": "https://github.com/jellydn/signal-gate",
+                "homepage": "",
                 "stars": 0,
                 "forks": 0,
-                "language": "HTML",
+                "language": "TypeScript",
                 "topics": [],
-                "updated_at": "2026-09-16T07:00:34Z"
+                "updated_at": "2026-09-17T01:05:58Z"
             },
             {
                 "name": "pulumi-kubernetes-typescript",
@@ -1977,7 +1992,7 @@
                     "pulumi",
                     "typescript"
                 ],
-                "updated_at": "2026-09-16T05:37:18Z"
+                "updated_at": "2026-09-16T22:45:55Z"
             },
             {
                 "name": "playwright-mock-api",
@@ -1989,7 +2004,19 @@
                 "forks": 0,
                 "language": "TypeScript",
                 "topics": [],
-                "updated_at": "2026-09-16T05:03:25Z"
+                "updated_at": "2026-09-16T13:30:57Z"
+            },
+            {
+                "name": "learning-hub",
+                "full_name": "jellydn/learning-hub",
+                "description": "A local-first personal learning dashboard for three ongoing learning tracks",
+                "url": "https://github.com/jellydn/learning-hub",
+                "homepage": "https://jellydn.github.io/learning-hub/",
+                "stars": 0,
+                "forks": 0,
+                "language": "HTML",
+                "topics": [],
+                "updated_at": "2026-09-16T09:55:25Z"
             },
             {
                 "name": "shichida-memory-card-native",
@@ -3173,7 +3200,7 @@
                 "description": "This package reads your JSDoc-annotated source code on NextJS API route and generates an OpenAPI (Swagger) specification.",
                 "url": "https://github.com/jellydn/next-swagger-doc",
                 "homepage": "https://next-swagger-doc-demo.productsway.com/api-doc",
-                "stars": 519,
+                "stars": 520,
                 "forks": 37,
                 "language": "TypeScript",
                 "topics": [
@@ -3183,7 +3210,7 @@
                     "nextjs",
                     "swagger"
                 ],
-                "updated_at": "2026-08-26T14:30:10Z"
+                "updated_at": "2026-09-17T03:17:53Z"
             },
             {
                 "name": "dapp-starter",
@@ -3676,7 +3703,7 @@
                     "react",
                     "typescript"
                 ],
-                "updated_at": "2026-09-14T05:14:56Z"
+                "updated_at": "2026-09-16T20:42:11Z"
             },
             {
                 "name": "i18n-react-app",
@@ -3860,7 +3887,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-09-15T08:15:06Z"
+                "updated_at": "2026-09-17T07:52:48Z"
             },
             {
                 "name": "vite-react-jotai",

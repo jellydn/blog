@@ -13,10 +13,10 @@ In this video, we’re diving into the latest features and enhancements of the H
 
 🚀 What’s New in Hurl.nvim v2?
 
-• New Commands: Explore HurlRerun, HurlVeryVerbose, and HurlJson for deeper debugging flexibility.
-• Enhanced Response Management: Now includes a response history, auto-save for captures to global variables, and displays full URLs and curl commands.
-• UI Improvements: Refactored split and popup views for better organization and readability.
-• Customizable Configurations: Learn how to set up custom formatters for JSON and HTML with tools like jq and prettier.
+ • New Commands: Explore HurlRerun, HurlVeryVerbose, and HurlJson for deeper debugging flexibility.
+ • Enhanced Response Management: Now includes a response history, auto-save for captures to global variables, and displays full URLs and curl commands.
+ • UI Improvements: Refactored split and popup views for better organization and readability.
+ • Customizable Configurations: Learn how to set up custom formatters for JSON and HTML with tools like jq and prettier.
 
 🛠️ Try Hurl.nvim v2 Today!
 Add the canary branch to your setup and start taking advantage of these improvements. Check out the updated configurations and new keybindings to see how Hurl.nvim v2 fits into your Neovim workflow.
@@ -25,9 +25,10 @@ Add the canary branch to your setup and start taking advantage of these improvem
 
 🔗 Links
 
-• GitHub Pull Request: https://github.com/jellydn/hurl.nvim/pull/207
-• Blog: https://productsway.com
-• Subscribe for Weekly Updates: https://bit.ly/m/itman
+ • GitHub Pull Request: https://github.com/jellydn/hurl.nvim/pull/207
+ • Blog: https://productsway.com
+ • Subscribe for Weekly Updates: https://bit.ly/m/itman
+
 
 ⏰ Timestamps
 0:05 - Intro
