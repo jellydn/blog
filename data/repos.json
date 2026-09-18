@@ -18,7 +18,7 @@
                     "open-code",
                     "skills"
                 ],
-                "updated_at": "2026-09-17T02:07:16Z"
+                "updated_at": "2026-09-18T03:50:15Z"
             },
             {
                 "name": "gpt4free-demo",
@@ -78,7 +78,7 @@
                 "description": "A lightweight, extensible coding agent built in TypeScript that helps developers with coding tasks across TypeScript, React, JavaScript, Node.js, Bash, and markdown/JSON.",
                 "url": "https://github.com/jellydn/tiny-coding-agent",
                 "homepage": "",
-                "stars": 14,
+                "stars": 15,
                 "forks": 2,
                 "language": "TypeScript",
                 "topics": [
@@ -88,7 +88,7 @@
                     "cli",
                     "coding-assistant"
                 ],
-                "updated_at": "2026-09-11T10:43:58Z"
+                "updated_at": "2026-09-17T16:21:21Z"
             },
             {
                 "name": "pi-qwencloud-provider",
@@ -96,14 +96,14 @@
                 "description": "QwenCloud provider for pi — Qwen3.8, DeepSeek V4, GLM-5.2, Wan image, HappyHorse video via OpenAI-compatible API",
                 "url": "https://github.com/jellydn/pi-qwencloud-provider",
                 "homepage": "https://jellydn.github.io/pi-qwencloud-provider/",
-                "stars": 13,
+                "stars": 14,
                 "forks": 1,
                 "language": "TypeScript",
                 "topics": [
                     "pi",
                     "pi-plugins"
                 ],
-                "updated_at": "2026-09-11T10:44:28Z"
+                "updated_at": "2026-09-17T23:39:08Z"
             },
             {
                 "name": "ai-launcher",
@@ -347,7 +347,7 @@
                     "download-videos",
                     "twitter"
                 ],
-                "updated_at": "2026-09-16T19:31:54Z"
+                "updated_at": "2026-09-18T05:15:45Z"
             },
             {
                 "name": "pi-clinepass-provider",
@@ -355,14 +355,14 @@
                 "description": "ClinePass provider for pi — 11 curated open-weight coding models (GLM-5.2, Kimi K2.7 Code, Kimi K3, DeepSeek V4, Qwen3.7, and more)",
                 "url": "https://github.com/jellydn/pi-clinepass-provider",
                 "homepage": "https://jellydn.github.io/pi-clinepass-provider/",
-                "stars": 14,
+                "stars": 15,
                 "forks": 7,
                 "language": "TypeScript",
                 "topics": [
                     "pi",
                     "pi-plugins"
                 ],
-                "updated_at": "2026-09-11T10:43:54Z"
+                "updated_at": "2026-09-17T16:14:53Z"
             },
             {
                 "name": "cspell-tool",
@@ -536,7 +536,7 @@
                 "description": "Your ultimate guide to setting up Zed with Vim mode, tailored settings, and key bindings for a seamless coding experience",
                 "url": "https://github.com/jellydn/zed-101-setup",
                 "homepage": "https://itman.fyi",
-                "stars": 1451,
+                "stars": 1450,
                 "forks": 30,
                 "language": "TypeScript",
                 "topics": [
@@ -544,7 +544,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-09-16T21:32:56Z"
+                "updated_at": "2026-09-18T02:08:53Z"
             },
             {
                 "name": "typescript-tips",
@@ -552,7 +552,7 @@
                 "description": "A curated list of awesome 🔥 TypeScript Tips 🔥",
                 "url": "https://github.com/jellydn/typescript-tips",
                 "homepage": "https://jellydn.github.io/typescript-tips/",
-                "stars": 441,
+                "stars": 442,
                 "forks": 86,
                 "language": "",
                 "topics": [
@@ -561,7 +561,7 @@
                     "tips-and-tricks",
                     "typescript"
                 ],
-                "updated_at": "2026-09-10T06:47:57Z"
+                "updated_at": "2026-09-18T02:16:24Z"
             },
             {
                 "name": "awesome-typesafe",
@@ -569,7 +569,7 @@
                 "description": "A curated list of awesome 🔥 TypeScript Typesafe Libraries🔥",
                 "url": "https://github.com/jellydn/awesome-typesafe",
                 "homepage": "http://typesafe.itman.fyi/",
-                "stars": 184,
+                "stars": 189,
                 "forks": 25,
                 "language": "",
                 "topics": [
@@ -578,7 +578,7 @@
                     "typesafe",
                     "typescript"
                 ],
-                "updated_at": "2026-09-11T00:36:32Z"
+                "updated_at": "2026-09-18T07:35:48Z"
             },
             {
                 "name": "fastify-starter",
@@ -938,7 +938,7 @@
                     "websocket",
                     "ws"
                 ],
-                "updated_at": "2026-09-16T21:21:29Z"
+                "updated_at": "2026-09-18T01:24:59Z"
             },
             {
                 "name": "docklight",
@@ -1049,7 +1049,7 @@
                     "template",
                     "typescript"
                 ],
-                "updated_at": "2026-09-16T23:07:22Z"
+                "updated_at": "2026-09-18T01:53:05Z"
             },
             {
                 "name": "platformatic-starter",
@@ -1523,6 +1523,18 @@
                 "updated_at": "2022-06-22T10:27:12Z"
             },
             {
+                "name": "personal-ai",
+                "full_name": "jellydn/personal-ai",
+                "description": "My AI projects from the last nine months",
+                "url": "https://github.com/jellydn/personal-ai",
+                "homepage": "https://jellydn.github.io/personal-ai/",
+                "stars": 1,
+                "forks": 0,
+                "language": "HTML",
+                "topics": [],
+                "updated_at": "2026-09-18T07:23:32Z"
+            },
+            {
                 "name": "token-pulse",
                 "full_name": "jellydn/token-pulse",
                 "description": "A local-first token usage dashboard for CodexBar",
@@ -1535,7 +1547,7 @@
                     "codexbar",
                     "token-usage"
                 ],
-                "updated_at": "2026-09-17T04:20:27Z"
+                "updated_at": "2026-09-18T01:23:27Z"
             },
             {
                 "name": "knulli-app-store",
@@ -1565,18 +1577,6 @@
                     "python"
                 ],
                 "updated_at": "2026-09-14T05:53:17Z"
-            },
-            {
-                "name": "personal-ai",
-                "full_name": "jellydn/personal-ai",
-                "description": "My AI projects from the last nine months",
-                "url": "https://github.com/jellydn/personal-ai",
-                "homepage": "https://jellydn.github.io/personal-ai/",
-                "stars": 1,
-                "forks": 0,
-                "language": "HTML",
-                "topics": [],
-                "updated_at": "2026-09-12T03:41:12Z"
             },
             {
                 "name": "preview-url",
@@ -2825,7 +2825,7 @@
                 "description": "Hurl.nvim is a Neovim plugin designed to run HTTP requests directly from `.hurl` files. Elevate your API development workflow by executing and viewing responses without leaving your editor.",
                 "url": "https://github.com/jellydn/hurl.nvim",
                 "homepage": "https://gyazo.com/19492e8b5366cec3f22d5fd97a63f37a",
-                "stars": 258,
+                "stars": 259,
                 "forks": 20,
                 "language": "Lua",
                 "topics": [
@@ -2834,7 +2834,7 @@
                     "neovim",
                     "neovim-plugin"
                 ],
-                "updated_at": "2026-08-28T02:26:03Z"
+                "updated_at": "2026-09-17T20:50:23Z"
             },
             {
                 "name": "lazy-nvim-ide",
@@ -3605,7 +3605,7 @@
                     "starter",
                     "typescript"
                 ],
-                "updated_at": "2026-09-11T22:43:41Z"
+                "updated_at": "2026-09-18T04:34:25Z"
             },
             {
                 "name": "go-react-blog-app",
@@ -3703,7 +3703,7 @@
                     "react",
                     "typescript"
                 ],
-                "updated_at": "2026-09-16T20:42:11Z"
+                "updated_at": "2026-09-18T04:41:21Z"
             },
             {
                 "name": "i18n-react-app",
@@ -3887,7 +3887,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-09-17T07:52:48Z"
+                "updated_at": "2026-09-18T06:55:51Z"
             },
             {
                 "name": "vite-react-jotai",
