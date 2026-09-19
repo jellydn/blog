@@ -157,20 +157,6 @@
                 "updated_at": "2026-08-21T03:26:03Z"
             },
             {
-                "name": "hermes-hub",
-                "full_name": "jellydn/hermes-hub",
-                "description": "Your personal AI agent in 5 minutes. Zero terminal required.",
-                "url": "https://github.com/jellydn/hermes-hub",
-                "homepage": "https://hermes-hub.itman.fyi/",
-                "stars": 3,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [
-                    "hermes-agent"
-                ],
-                "updated_at": "2026-09-16T23:44:42Z"
-            },
-            {
                 "name": "flowly",
                 "full_name": "jellydn/flowly",
                 "description": "AI-native engineering assistant for modern development.",
@@ -184,7 +170,21 @@
                     "flue",
                     "flueframework"
                 ],
-                "updated_at": "2026-09-13T02:28:47Z"
+                "updated_at": "2026-09-18T10:23:58Z"
+            },
+            {
+                "name": "hermes-hub",
+                "full_name": "jellydn/hermes-hub",
+                "description": "Your personal AI agent in 5 minutes. Zero terminal required.",
+                "url": "https://github.com/jellydn/hermes-hub",
+                "homepage": "https://hermes-hub.itman.fyi/",
+                "stars": 3,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [
+                    "hermes-agent"
+                ],
+                "updated_at": "2026-09-16T23:44:42Z"
             },
             {
                 "name": "ai-photo-coach",
@@ -347,7 +347,7 @@
                     "download-videos",
                     "twitter"
                 ],
-                "updated_at": "2026-09-18T05:15:45Z"
+                "updated_at": "2026-09-19T06:30:56Z"
             },
             {
                 "name": "pi-clinepass-provider",
@@ -536,7 +536,7 @@
                 "description": "Your ultimate guide to setting up Zed with Vim mode, tailored settings, and key bindings for a seamless coding experience",
                 "url": "https://github.com/jellydn/zed-101-setup",
                 "homepage": "https://itman.fyi",
-                "stars": 1450,
+                "stars": 1453,
                 "forks": 30,
                 "language": "TypeScript",
                 "topics": [
@@ -544,7 +544,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-09-18T02:08:53Z"
+                "updated_at": "2026-09-19T02:00:21Z"
             },
             {
                 "name": "typescript-tips",
@@ -569,7 +569,7 @@
                 "description": "A curated list of awesome 🔥 TypeScript Typesafe Libraries🔥",
                 "url": "https://github.com/jellydn/awesome-typesafe",
                 "homepage": "http://typesafe.itman.fyi/",
-                "stars": 189,
+                "stars": 191,
                 "forks": 25,
                 "language": "",
                 "topics": [
@@ -578,7 +578,7 @@
                     "typesafe",
                     "typescript"
                 ],
-                "updated_at": "2026-09-18T07:35:48Z"
+                "updated_at": "2026-09-18T15:03:03Z"
             },
             {
                 "name": "fastify-starter",
@@ -600,7 +600,7 @@
                     "swagger",
                     "typescript"
                 ],
-                "updated_at": "2026-09-16T21:56:22Z"
+                "updated_at": "2026-09-18T13:16:21Z"
             },
             {
                 "name": "elysia-demo-app",
@@ -938,7 +938,7 @@
                     "websocket",
                     "ws"
                 ],
-                "updated_at": "2026-09-18T01:24:59Z"
+                "updated_at": "2026-09-19T06:40:36Z"
             },
             {
                 "name": "docklight",
@@ -1523,6 +1523,21 @@
                 "updated_at": "2022-06-22T10:27:12Z"
             },
             {
+                "name": "knulli-app-store",
+                "full_name": "jellydn/knulli-app-store",
+                "description": "Knulli App Store is a safe community package manager for Knulli utilities, themes, and integrations. It has a reviewable catalogue, a transactional installer, and a controller-only SDL2 interface.",
+                "url": "https://github.com/jellydn/knulli-app-store",
+                "homepage": "",
+                "stars": 1,
+                "forks": 0,
+                "language": "Go",
+                "topics": [
+                    "knulli",
+                    "knulli-theme"
+                ],
+                "updated_at": "2026-09-19T07:15:20Z"
+            },
+            {
                 "name": "personal-ai",
                 "full_name": "jellydn/personal-ai",
                 "description": "My AI projects from the last nine months",
@@ -1548,21 +1563,6 @@
                     "token-usage"
                 ],
                 "updated_at": "2026-09-18T01:23:27Z"
-            },
-            {
-                "name": "knulli-app-store",
-                "full_name": "jellydn/knulli-app-store",
-                "description": "Knulli App Store is a safe community package manager for Knulli utilities, themes, and integrations. It has a reviewable catalogue, a transactional installer, and a controller-only SDL2 interface.",
-                "url": "https://github.com/jellydn/knulli-app-store",
-                "homepage": "",
-                "stars": 1,
-                "forks": 0,
-                "language": "Go",
-                "topics": [
-                    "knulli",
-                    "knulli-theme"
-                ],
-                "updated_at": "2026-09-16T14:59:50Z"
             },
             {
                 "name": "practicepython",
@@ -1968,18 +1968,6 @@
                 "updated_at": "2022-12-28T04:11:44Z"
             },
             {
-                "name": "signal-gate",
-                "full_name": "jellydn/signal-gate",
-                "description": "",
-                "url": "https://github.com/jellydn/signal-gate",
-                "homepage": "",
-                "stars": 0,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [],
-                "updated_at": "2026-09-17T01:05:58Z"
-            },
-            {
                 "name": "pulumi-kubernetes-typescript",
                 "full_name": "jellydn/pulumi-kubernetes-typescript",
                 "description": "Simple Kubernetes cluster with TypeScript for Pulumi.",
@@ -1992,7 +1980,19 @@
                     "pulumi",
                     "typescript"
                 ],
-                "updated_at": "2026-09-16T22:45:55Z"
+                "updated_at": "2026-09-19T05:43:40Z"
+            },
+            {
+                "name": "signal-gate",
+                "full_name": "jellydn/signal-gate",
+                "description": "",
+                "url": "https://github.com/jellydn/signal-gate",
+                "homepage": "",
+                "stars": 0,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [],
+                "updated_at": "2026-09-17T01:05:58Z"
             },
             {
                 "name": "playwright-mock-api",
@@ -3155,7 +3155,7 @@
                 "topics": [
                     "vscode-extension"
                 ],
-                "updated_at": "2026-09-16T02:00:57Z"
+                "updated_at": "2026-09-19T06:04:43Z"
             },
             {
                 "name": "vscode-fff-gpui",
@@ -3887,7 +3887,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-09-18T06:55:51Z"
+                "updated_at": "2026-09-18T07:49:05Z"
             },
             {
                 "name": "vite-react-jotai",
