@@ -18,7 +18,7 @@
                     "open-code",
                     "skills"
                 ],
-                "updated_at": "2026-09-18T03:50:15Z"
+                "updated_at": "2026-09-20T04:24:40Z"
             },
             {
                 "name": "gpt4free-demo",
@@ -362,7 +362,7 @@
                     "pi",
                     "pi-plugins"
                 ],
-                "updated_at": "2026-09-17T16:14:53Z"
+                "updated_at": "2026-09-20T06:12:43Z"
             },
             {
                 "name": "cspell-tool",
@@ -536,15 +536,15 @@
                 "description": "Your ultimate guide to setting up Zed with Vim mode, tailored settings, and key bindings for a seamless coding experience",
                 "url": "https://github.com/jellydn/zed-101-setup",
                 "homepage": "https://itman.fyi",
-                "stars": 1453,
-                "forks": 30,
+                "stars": 1455,
+                "forks": 31,
                 "language": "TypeScript",
                 "topics": [
                     "guide",
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-09-19T02:00:21Z"
+                "updated_at": "2026-09-19T21:20:56Z"
             },
             {
                 "name": "typescript-tips",
@@ -569,7 +569,7 @@
                 "description": "A curated list of awesome 🔥 TypeScript Typesafe Libraries🔥",
                 "url": "https://github.com/jellydn/awesome-typesafe",
                 "homepage": "http://typesafe.itman.fyi/",
-                "stars": 191,
+                "stars": 192,
                 "forks": 25,
                 "language": "",
                 "topics": [
@@ -578,7 +578,7 @@
                     "typesafe",
                     "typescript"
                 ],
-                "updated_at": "2026-09-18T15:03:03Z"
+                "updated_at": "2026-09-20T06:16:21Z"
             },
             {
                 "name": "fastify-starter",
@@ -1535,7 +1535,7 @@
                     "knulli",
                     "knulli-theme"
                 ],
-                "updated_at": "2026-09-19T07:15:20Z"
+                "updated_at": "2026-09-19T09:38:55Z"
             },
             {
                 "name": "personal-ai",
@@ -3887,7 +3887,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-09-18T07:49:05Z"
+                "updated_at": "2026-09-19T07:41:56Z"
             },
             {
                 "name": "vite-react-jotai",
