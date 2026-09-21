@@ -18,7 +18,7 @@
                     "open-code",
                     "skills"
                 ],
-                "updated_at": "2026-09-20T04:24:40Z"
+                "updated_at": "2026-09-21T02:52:31Z"
             },
             {
                 "name": "gpt4free-demo",
@@ -347,7 +347,7 @@
                     "download-videos",
                     "twitter"
                 ],
-                "updated_at": "2026-09-19T06:30:56Z"
+                "updated_at": "2026-09-21T05:36:03Z"
             },
             {
                 "name": "pi-clinepass-provider",
@@ -536,7 +536,7 @@
                 "description": "Your ultimate guide to setting up Zed with Vim mode, tailored settings, and key bindings for a seamless coding experience",
                 "url": "https://github.com/jellydn/zed-101-setup",
                 "homepage": "https://itman.fyi",
-                "stars": 1455,
+                "stars": 1454,
                 "forks": 31,
                 "language": "TypeScript",
                 "topics": [
@@ -544,7 +544,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-09-19T21:20:56Z"
+                "updated_at": "2026-09-21T02:29:23Z"
             },
             {
                 "name": "typescript-tips",
@@ -561,7 +561,7 @@
                     "tips-and-tricks",
                     "typescript"
                 ],
-                "updated_at": "2026-09-18T02:16:24Z"
+                "updated_at": "2026-09-21T06:13:11Z"
             },
             {
                 "name": "awesome-typesafe",
@@ -569,7 +569,7 @@
                 "description": "A curated list of awesome 🔥 TypeScript Typesafe Libraries🔥",
                 "url": "https://github.com/jellydn/awesome-typesafe",
                 "homepage": "http://typesafe.itman.fyi/",
-                "stars": 192,
+                "stars": 196,
                 "forks": 25,
                 "language": "",
                 "topics": [
@@ -578,7 +578,7 @@
                     "typesafe",
                     "typescript"
                 ],
-                "updated_at": "2026-09-20T06:16:21Z"
+                "updated_at": "2026-09-21T08:04:39Z"
             },
             {
                 "name": "fastify-starter",
@@ -658,7 +658,7 @@
                     "express-js",
                     "vercel"
                 ],
-                "updated_at": "2026-09-14T05:29:15Z"
+                "updated_at": "2026-09-21T07:40:50Z"
             },
             {
                 "name": "miryoku-silakka54-layout",
@@ -938,7 +938,7 @@
                     "websocket",
                     "ws"
                 ],
-                "updated_at": "2026-09-19T06:40:36Z"
+                "updated_at": "2026-09-21T06:55:47Z"
             },
             {
                 "name": "docklight",
@@ -954,7 +954,7 @@
                     "dokku-ui",
                     "dokku-web"
                 ],
-                "updated_at": "2026-09-14T12:56:59Z"
+                "updated_at": "2026-09-21T00:01:29Z"
             },
             {
                 "name": "monorepo-starter",
@@ -1049,7 +1049,7 @@
                     "template",
                     "typescript"
                 ],
-                "updated_at": "2026-09-18T01:53:05Z"
+                "updated_at": "2026-09-21T06:16:17Z"
             },
             {
                 "name": "platformatic-starter",
@@ -1303,7 +1303,27 @@
                     "starter",
                     "typescript"
                 ],
-                "updated_at": "2026-09-16T20:12:26Z"
+                "updated_at": "2026-09-21T04:42:28Z"
+            },
+            {
+                "name": "deno-pkg-starter",
+                "full_name": "jellydn/deno-pkg-starter",
+                "description": "Publish your Typescript library to NPM and Deno",
+                "url": "https://github.com/jellydn/deno-pkg-starter",
+                "homepage": "",
+                "stars": 2,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [
+                    "deno",
+                    "deno-starter",
+                    "esm",
+                    "npm",
+                    "rust",
+                    "typescript",
+                    "wasm"
+                ],
+                "updated_at": "2026-09-21T04:41:41Z"
             },
             {
                 "name": "keybinder",
@@ -1349,26 +1369,6 @@
                     "writting"
                 ],
                 "updated_at": "2026-09-11T10:50:48Z"
-            },
-            {
-                "name": "deno-pkg-starter",
-                "full_name": "jellydn/deno-pkg-starter",
-                "description": "Publish your Typescript library to NPM and Deno",
-                "url": "https://github.com/jellydn/deno-pkg-starter",
-                "homepage": "",
-                "stars": 2,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [
-                    "deno",
-                    "deno-starter",
-                    "esm",
-                    "npm",
-                    "rust",
-                    "typescript",
-                    "wasm"
-                ],
-                "updated_at": "2026-09-10T21:23:11Z"
             },
             {
                 "name": "modern-nodejs-2024",
@@ -1523,6 +1523,20 @@
                 "updated_at": "2022-06-22T10:27:12Z"
             },
             {
+                "name": "practicepython",
+                "full_name": "jellydn/practicepython",
+                "description": "Learn how to code by practicing Python exercises.",
+                "url": "https://github.com/jellydn/practicepython",
+                "homepage": "",
+                "stars": 1,
+                "forks": 0,
+                "language": "",
+                "topics": [
+                    "python"
+                ],
+                "updated_at": "2026-09-21T05:41:35Z"
+            },
+            {
                 "name": "knulli-app-store",
                 "full_name": "jellydn/knulli-app-store",
                 "description": "Knulli App Store is a safe community package manager for Knulli utilities, themes, and integrations. It has a reviewable catalogue, a transactional installer, and a controller-only SDL2 interface.",
@@ -1563,20 +1577,6 @@
                     "token-usage"
                 ],
                 "updated_at": "2026-09-18T01:23:27Z"
-            },
-            {
-                "name": "practicepython",
-                "full_name": "jellydn/practicepython",
-                "description": "Learn how to code by practicing Python exercises.",
-                "url": "https://github.com/jellydn/practicepython",
-                "homepage": "",
-                "stars": 1,
-                "forks": 0,
-                "language": "",
-                "topics": [
-                    "python"
-                ],
-                "updated_at": "2026-09-14T05:53:17Z"
             },
             {
                 "name": "preview-url",
@@ -1980,7 +1980,7 @@
                     "pulumi",
                     "typescript"
                 ],
-                "updated_at": "2026-09-19T05:43:40Z"
+                "updated_at": "2026-09-21T06:50:49Z"
             },
             {
                 "name": "signal-gate",
@@ -2905,7 +2905,7 @@
                 "description": "A Neovim plugin for seamless TypeScript type checking.",
                 "url": "https://github.com/jellydn/typecheck.nvim",
                 "homepage": "",
-                "stars": 34,
+                "stars": 33,
                 "forks": 1,
                 "language": "Lua",
                 "topics": [
@@ -2913,7 +2913,7 @@
                     "tsc",
                     "typescript"
                 ],
-                "updated_at": "2026-07-24T22:04:31Z"
+                "updated_at": "2026-09-21T04:52:44Z"
             },
             {
                 "name": "nvim-for-webdev",
@@ -2989,7 +2989,7 @@
                     "zellij",
                     "zsh"
                 ],
-                "updated_at": "2026-09-16T03:38:16Z"
+                "updated_at": "2026-09-21T02:56:25Z"
             },
             {
                 "name": "learn-vim-with-vscode",
@@ -3155,7 +3155,7 @@
                 "topics": [
                     "vscode-extension"
                 ],
-                "updated_at": "2026-09-19T06:04:43Z"
+                "updated_at": "2026-09-21T04:40:18Z"
             },
             {
                 "name": "vscode-fff-gpui",
@@ -3560,7 +3560,7 @@
                     "react",
                     "react-email"
                 ],
-                "updated_at": "2026-09-14T06:07:27Z"
+                "updated_at": "2026-09-21T05:49:08Z"
             },
             {
                 "name": "waku-rsc-async-demo",
@@ -3703,7 +3703,7 @@
                     "react",
                     "typescript"
                 ],
-                "updated_at": "2026-09-18T04:41:21Z"
+                "updated_at": "2026-09-21T05:14:56Z"
             },
             {
                 "name": "i18n-react-app",
@@ -3887,7 +3887,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-09-19T07:41:56Z"
+                "updated_at": "2026-09-21T05:57:35Z"
             },
             {
                 "name": "vite-react-jotai",
