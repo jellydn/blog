@@ -18,7 +18,7 @@
                     "open-code",
                     "skills"
                 ],
-                "updated_at": "2026-09-21T02:52:31Z"
+                "updated_at": "2026-09-21T09:56:43Z"
             },
             {
                 "name": "gpt4free-demo",
@@ -536,7 +536,7 @@
                 "description": "Your ultimate guide to setting up Zed with Vim mode, tailored settings, and key bindings for a seamless coding experience",
                 "url": "https://github.com/jellydn/zed-101-setup",
                 "homepage": "https://itman.fyi",
-                "stars": 1454,
+                "stars": 1455,
                 "forks": 31,
                 "language": "TypeScript",
                 "topics": [
@@ -544,7 +544,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-09-21T02:29:23Z"
+                "updated_at": "2026-09-22T00:16:01Z"
             },
             {
                 "name": "typescript-tips",
@@ -578,7 +578,7 @@
                     "typesafe",
                     "typescript"
                 ],
-                "updated_at": "2026-09-21T08:04:39Z"
+                "updated_at": "2026-09-21T12:49:06Z"
             },
             {
                 "name": "fastify-starter",
@@ -1980,7 +1980,19 @@
                     "pulumi",
                     "typescript"
                 ],
-                "updated_at": "2026-09-21T06:50:49Z"
+                "updated_at": "2026-09-22T03:55:23Z"
+            },
+            {
+                "name": "homebrew-tap",
+                "full_name": "jellydn/homebrew-tap",
+                "description": "Homebrew tap for jellydn packages",
+                "url": "https://github.com/jellydn/homebrew-tap",
+                "homepage": "",
+                "stars": 0,
+                "forks": 0,
+                "language": "Ruby",
+                "topics": [],
+                "updated_at": "2026-09-21T13:02:46Z"
             },
             {
                 "name": "signal-gate",
@@ -2129,18 +2141,6 @@
                 "language": "Python",
                 "topics": [],
                 "updated_at": "2026-09-11T10:48:11Z"
-            },
-            {
-                "name": "homebrew-tap",
-                "full_name": "jellydn/homebrew-tap",
-                "description": "Homebrew tap for jellydn packages",
-                "url": "https://github.com/jellydn/homebrew-tap",
-                "homepage": "",
-                "stars": 0,
-                "forks": 0,
-                "language": "Ruby",
-                "topics": [],
-                "updated_at": "2026-09-11T10:48:06Z"
             },
             {
                 "name": "mac-cleaner",
@@ -3887,7 +3887,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-09-21T05:57:35Z"
+                "updated_at": "2026-09-21T08:25:14Z"
             },
             {
                 "name": "vite-react-jotai",
