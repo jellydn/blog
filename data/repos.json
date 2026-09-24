@@ -18,7 +18,7 @@
                     "open-code",
                     "skills"
                 ],
-                "updated_at": "2026-09-21T09:56:43Z"
+                "updated_at": "2026-09-23T18:18:14Z"
             },
             {
                 "name": "gpt4free-demo",
@@ -347,7 +347,7 @@
                     "download-videos",
                     "twitter"
                 ],
-                "updated_at": "2026-09-21T05:36:03Z"
+                "updated_at": "2026-09-24T02:04:13Z"
             },
             {
                 "name": "pi-clinepass-provider",
@@ -536,7 +536,7 @@
                 "description": "Your ultimate guide to setting up Zed with Vim mode, tailored settings, and key bindings for a seamless coding experience",
                 "url": "https://github.com/jellydn/zed-101-setup",
                 "homepage": "https://itman.fyi",
-                "stars": 1455,
+                "stars": 1454,
                 "forks": 31,
                 "language": "TypeScript",
                 "topics": [
@@ -544,7 +544,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-09-22T00:16:01Z"
+                "updated_at": "2026-09-23T15:26:54Z"
             },
             {
                 "name": "typescript-tips",
@@ -938,7 +938,7 @@
                     "websocket",
                     "ws"
                 ],
-                "updated_at": "2026-09-21T06:55:47Z"
+                "updated_at": "2026-09-24T00:06:10Z"
             },
             {
                 "name": "docklight",
@@ -1049,7 +1049,7 @@
                     "template",
                     "typescript"
                 ],
-                "updated_at": "2026-09-21T06:16:17Z"
+                "updated_at": "2026-09-24T05:44:04Z"
             },
             {
                 "name": "platformatic-starter",
@@ -3100,12 +3100,12 @@
                 "homepage": "",
                 "stars": 11,
                 "forks": 1,
-                "language": "Lua",
+                "language": "Shell",
                 "topics": [
                     "minimalist",
                     "vscode"
                 ],
-                "updated_at": "2026-09-22T12:27:35Z"
+                "updated_at": "2026-09-23T09:53:43Z"
             },
             {
                 "name": "vscode-seal-code",
@@ -3703,7 +3703,7 @@
                     "react",
                     "typescript"
                 ],
-                "updated_at": "2026-09-21T05:14:56Z"
+                "updated_at": "2026-09-24T03:13:52Z"
             },
             {
                 "name": "i18n-react-app",
@@ -3887,7 +3887,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-09-22T08:06:31Z"
+                "updated_at": "2026-09-23T08:09:09Z"
             },
             {
                 "name": "vite-react-jotai",
