@@ -18,7 +18,7 @@
                     "open-code",
                     "skills"
                 ],
-                "updated_at": "2026-09-23T18:18:14Z"
+                "updated_at": "2026-09-25T07:56:24Z"
             },
             {
                 "name": "gpt4free-demo",
@@ -355,14 +355,14 @@
                 "description": "ClinePass provider for pi — 11 curated open-weight coding models (GLM-5.2, Kimi K2.7 Code, Kimi K3, DeepSeek V4, Qwen3.7, and more)",
                 "url": "https://github.com/jellydn/pi-clinepass-provider",
                 "homepage": "https://jellydn.github.io/pi-clinepass-provider/",
-                "stars": 15,
+                "stars": 16,
                 "forks": 7,
                 "language": "TypeScript",
                 "topics": [
                     "pi",
                     "pi-plugins"
                 ],
-                "updated_at": "2026-09-20T06:12:43Z"
+                "updated_at": "2026-09-24T08:25:08Z"
             },
             {
                 "name": "cspell-tool",
@@ -378,7 +378,7 @@
                     "cspell",
                     "spell-check"
                 ],
-                "updated_at": "2026-09-11T10:49:42Z"
+                "updated_at": "2026-09-24T19:39:08Z"
             },
             {
                 "name": "biome-interactive",
@@ -536,7 +536,7 @@
                 "description": "Your ultimate guide to setting up Zed with Vim mode, tailored settings, and key bindings for a seamless coding experience",
                 "url": "https://github.com/jellydn/zed-101-setup",
                 "homepage": "https://itman.fyi",
-                "stars": 1454,
+                "stars": 1455,
                 "forks": 31,
                 "language": "TypeScript",
                 "topics": [
@@ -544,7 +544,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-09-23T15:26:54Z"
+                "updated_at": "2026-09-24T08:04:51Z"
             },
             {
                 "name": "typescript-tips",
@@ -925,6 +925,22 @@
                 "updated_at": "2026-08-26T02:41:55Z"
             },
             {
+                "name": "docklight",
+                "full_name": "jellydn/docklight",
+                "description": "A minimal, self-hosted web UI for managing a single-node Dokku server.",
+                "url": "https://github.com/jellydn/docklight",
+                "homepage": "https://docklight.itman.fyi/",
+                "stars": 5,
+                "forks": 2,
+                "language": "TypeScript",
+                "topics": [
+                    "dokku",
+                    "dokku-ui",
+                    "dokku-web"
+                ],
+                "updated_at": "2026-09-24T14:32:29Z"
+            },
+            {
                 "name": "ws-sockette",
                 "full_name": "jellydn/ws-sockette",
                 "description": "The little WebSocket wrapper for nodejs",
@@ -939,22 +955,6 @@
                     "ws"
                 ],
                 "updated_at": "2026-09-24T00:06:10Z"
-            },
-            {
-                "name": "docklight",
-                "full_name": "jellydn/docklight",
-                "description": "A minimal, self-hosted web UI for managing a single-node Dokku server.",
-                "url": "https://github.com/jellydn/docklight",
-                "homepage": "https://docklight.itman.fyi/",
-                "stars": 5,
-                "forks": 2,
-                "language": "TypeScript",
-                "topics": [
-                    "dokku",
-                    "dokku-ui",
-                    "dokku-web"
-                ],
-                "updated_at": "2026-09-21T00:01:29Z"
             },
             {
                 "name": "monorepo-starter",
@@ -1289,6 +1289,22 @@
                 "updated_at": "2025-02-05T02:52:59Z"
             },
             {
+                "name": "keybinder",
+                "full_name": "jellydn/keybinder",
+                "description": "A modern, user-friendly GUI application for managing skhd keyboard shortcuts on macOS.",
+                "url": "https://github.com/jellydn/keybinder",
+                "homepage": "",
+                "stars": 2,
+                "forks": 0,
+                "language": "Rust",
+                "topics": [
+                    "gui",
+                    "skhd",
+                    "tauri-app"
+                ],
+                "updated_at": "2026-09-24T14:44:13Z"
+            },
+            {
                 "name": "typescript-mini-starter",
                 "full_name": "jellydn/typescript-mini-starter",
                 "description": "A streamlined and efficient TypeScript starter kit, supporting both ESM and CJS, for quick and versatile project setups.",
@@ -1324,22 +1340,6 @@
                     "wasm"
                 ],
                 "updated_at": "2026-09-21T04:41:41Z"
-            },
-            {
-                "name": "keybinder",
-                "full_name": "jellydn/keybinder",
-                "description": "A modern, user-friendly GUI application for managing skhd keyboard shortcuts on macOS.",
-                "url": "https://github.com/jellydn/keybinder",
-                "homepage": "",
-                "stars": 2,
-                "forks": 0,
-                "language": "Rust",
-                "topics": [
-                    "gui",
-                    "skhd",
-                    "tauri-app"
-                ],
-                "updated_at": "2026-09-12T13:36:49Z"
             },
             {
                 "name": ".dotfiles",
@@ -1968,6 +1968,20 @@
                 "updated_at": "2022-12-28T04:11:44Z"
             },
             {
+                "name": "esp32-pomodoro-clock",
+                "full_name": "jellydn/esp32-pomodoro-clock",
+                "description": "Always-on NTP clock and touch-controlled Pomodoro firmware",
+                "url": "https://github.com/jellydn/esp32-pomodoro-clock",
+                "homepage": "",
+                "stars": 0,
+                "forks": 0,
+                "language": "C++",
+                "topics": [
+                    "esp32-s3"
+                ],
+                "updated_at": "2026-09-25T06:46:43Z"
+            },
+            {
                 "name": "pulumi-kubernetes-typescript",
                 "full_name": "jellydn/pulumi-kubernetes-typescript",
                 "description": "Simple Kubernetes cluster with TypeScript for Pulumi.",
@@ -1980,7 +1994,7 @@
                     "pulumi",
                     "typescript"
                 ],
-                "updated_at": "2026-09-22T03:55:23Z"
+                "updated_at": "2026-09-24T21:01:55Z"
             },
             {
                 "name": "homebrew-tap",
@@ -3560,7 +3574,7 @@
                     "react",
                     "react-email"
                 ],
-                "updated_at": "2026-09-21T05:49:08Z"
+                "updated_at": "2026-09-25T00:47:39Z"
             },
             {
                 "name": "waku-rsc-async-demo",
@@ -3887,7 +3901,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-09-23T08:09:09Z"
+                "updated_at": "2026-09-24T08:00:12Z"
             },
             {
                 "name": "vite-react-jotai",
