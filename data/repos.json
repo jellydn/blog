@@ -544,7 +544,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-09-24T08:04:51Z"
+                "updated_at": "2026-09-26T05:00:44Z"
             },
             {
                 "name": "typescript-tips",
@@ -569,7 +569,7 @@
                 "description": "A curated list of awesome 🔥 TypeScript Typesafe Libraries🔥",
                 "url": "https://github.com/jellydn/awesome-typesafe",
                 "homepage": "http://typesafe.itman.fyi/",
-                "stars": 196,
+                "stars": 197,
                 "forks": 26,
                 "language": "",
                 "topics": [
@@ -578,7 +578,7 @@
                     "typesafe",
                     "typescript"
                 ],
-                "updated_at": "2026-09-21T12:49:06Z"
+                "updated_at": "2026-09-25T23:46:29Z"
             },
             {
                 "name": "fastify-starter",
@@ -1049,7 +1049,7 @@
                     "template",
                     "typescript"
                 ],
-                "updated_at": "2026-09-24T05:44:04Z"
+                "updated_at": "2026-09-25T16:39:47Z"
             },
             {
                 "name": "platformatic-starter",
@@ -1289,6 +1289,26 @@
                 "updated_at": "2025-02-05T02:52:59Z"
             },
             {
+                "name": "deno-pkg-starter",
+                "full_name": "jellydn/deno-pkg-starter",
+                "description": "Publish your Typescript library to NPM and Deno",
+                "url": "https://github.com/jellydn/deno-pkg-starter",
+                "homepage": "",
+                "stars": 2,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [
+                    "deno",
+                    "deno-starter",
+                    "esm",
+                    "npm",
+                    "rust",
+                    "typescript",
+                    "wasm"
+                ],
+                "updated_at": "2026-09-25T19:50:04Z"
+            },
+            {
                 "name": "keybinder",
                 "full_name": "jellydn/keybinder",
                 "description": "A modern, user-friendly GUI application for managing skhd keyboard shortcuts on macOS.",
@@ -1320,26 +1340,6 @@
                     "typescript"
                 ],
                 "updated_at": "2026-09-21T04:42:28Z"
-            },
-            {
-                "name": "deno-pkg-starter",
-                "full_name": "jellydn/deno-pkg-starter",
-                "description": "Publish your Typescript library to NPM and Deno",
-                "url": "https://github.com/jellydn/deno-pkg-starter",
-                "homepage": "",
-                "stars": 2,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [
-                    "deno",
-                    "deno-starter",
-                    "esm",
-                    "npm",
-                    "rust",
-                    "typescript",
-                    "wasm"
-                ],
-                "updated_at": "2026-09-21T04:41:41Z"
             },
             {
                 "name": ".dotfiles",
@@ -1968,20 +1968,6 @@
                 "updated_at": "2022-12-28T04:11:44Z"
             },
             {
-                "name": "esp32-pomodoro-clock",
-                "full_name": "jellydn/esp32-pomodoro-clock",
-                "description": "Always-on NTP clock and touch-controlled Pomodoro firmware",
-                "url": "https://github.com/jellydn/esp32-pomodoro-clock",
-                "homepage": "",
-                "stars": 0,
-                "forks": 0,
-                "language": "C++",
-                "topics": [
-                    "esp32-s3"
-                ],
-                "updated_at": "2026-09-25T06:46:43Z"
-            },
-            {
                 "name": "pulumi-kubernetes-typescript",
                 "full_name": "jellydn/pulumi-kubernetes-typescript",
                 "description": "Simple Kubernetes cluster with TypeScript for Pulumi.",
@@ -1994,7 +1980,21 @@
                     "pulumi",
                     "typescript"
                 ],
-                "updated_at": "2026-09-24T21:01:55Z"
+                "updated_at": "2026-09-26T00:45:16Z"
+            },
+            {
+                "name": "esp32-pomodoro-clock",
+                "full_name": "jellydn/esp32-pomodoro-clock",
+                "description": "Always-on NTP clock and touch-controlled Pomodoro firmware",
+                "url": "https://github.com/jellydn/esp32-pomodoro-clock",
+                "homepage": "",
+                "stars": 0,
+                "forks": 0,
+                "language": "C++",
+                "topics": [
+                    "esp32-s3"
+                ],
+                "updated_at": "2026-09-25T06:46:43Z"
             },
             {
                 "name": "homebrew-tap",
@@ -3003,7 +3003,7 @@
                     "zellij",
                     "zsh"
                 ],
-                "updated_at": "2026-09-21T02:56:25Z"
+                "updated_at": "2026-09-26T00:27:10Z"
             },
             {
                 "name": "learn-vim-with-vscode",
@@ -3169,7 +3169,7 @@
                 "topics": [
                     "vscode-extension"
                 ],
-                "updated_at": "2026-09-21T04:40:18Z"
+                "updated_at": "2026-09-26T05:50:31Z"
             },
             {
                 "name": "vscode-fff-gpui",
@@ -3224,7 +3224,7 @@
                     "nextjs",
                     "swagger"
                 ],
-                "updated_at": "2026-09-17T03:17:53Z"
+                "updated_at": "2026-09-26T00:37:49Z"
             },
             {
                 "name": "dapp-starter",
@@ -3717,7 +3717,7 @@
                     "react",
                     "typescript"
                 ],
-                "updated_at": "2026-09-24T03:13:52Z"
+                "updated_at": "2026-09-25T10:53:11Z"
             },
             {
                 "name": "i18n-react-app",
@@ -3901,7 +3901,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-09-24T08:00:12Z"
+                "updated_at": "2026-09-25T08:24:27Z"
             },
             {
                 "name": "vite-react-jotai",
