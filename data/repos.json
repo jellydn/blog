@@ -339,7 +339,7 @@
                 "description": "The easiest way to download any Twitter video from CLI",
                 "url": "https://github.com/jellydn/twt-dl-cli",
                 "homepage": "",
-                "stars": 50,
+                "stars": 51,
                 "forks": 10,
                 "language": "TypeScript",
                 "topics": [
@@ -347,7 +347,7 @@
                     "download-videos",
                     "twitter"
                 ],
-                "updated_at": "2026-09-24T02:04:13Z"
+                "updated_at": "2026-09-26T13:10:27Z"
             },
             {
                 "name": "pi-clinepass-provider",
@@ -544,7 +544,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-09-26T05:00:44Z"
+                "updated_at": "2026-09-26T12:52:09Z"
             },
             {
                 "name": "typescript-tips",
@@ -552,7 +552,7 @@
                 "description": "A curated list of awesome 🔥 TypeScript Tips 🔥",
                 "url": "https://github.com/jellydn/typescript-tips",
                 "homepage": "https://jellydn.github.io/typescript-tips/",
-                "stars": 442,
+                "stars": 441,
                 "forks": 86,
                 "language": "",
                 "topics": [
@@ -561,7 +561,7 @@
                     "tips-and-tricks",
                     "typescript"
                 ],
-                "updated_at": "2026-09-21T06:13:11Z"
+                "updated_at": "2026-09-27T03:20:21Z"
             },
             {
                 "name": "awesome-typesafe",
@@ -696,6 +696,23 @@
                 "updated_at": "2026-08-21T03:26:00Z"
             },
             {
+                "name": "zed-codemux",
+                "full_name": "jellydn/zed-codemux",
+                "description": "Open Zed terminals inside tmux or zellij — port of vscode-mux to the Zed editor.",
+                "url": "https://github.com/jellydn/zed-codemux",
+                "homepage": "",
+                "stars": 17,
+                "forks": 1,
+                "language": "Rust",
+                "topics": [
+                    "tmux",
+                    "zed",
+                    "zed-extension",
+                    "zellij"
+                ],
+                "updated_at": "2026-09-27T06:06:45Z"
+            },
+            {
                 "name": "moleculer-typescript-template",
                 "full_name": "jellydn/moleculer-typescript-template",
                 "description": "This is a Moleculer-based microservices project",
@@ -712,23 +729,6 @@
                     "typescript"
                 ],
                 "updated_at": "2026-03-10T23:44:46Z"
-            },
-            {
-                "name": "zed-codemux",
-                "full_name": "jellydn/zed-codemux",
-                "description": "Open Zed terminals inside tmux or zellij — port of vscode-mux to the Zed editor.",
-                "url": "https://github.com/jellydn/zed-codemux",
-                "homepage": "",
-                "stars": 16,
-                "forks": 1,
-                "language": "Rust",
-                "topics": [
-                    "tmux",
-                    "zed",
-                    "zed-extension",
-                    "zellij"
-                ],
-                "updated_at": "2026-09-04T08:54:46Z"
             },
             {
                 "name": "llama2-personal-ai",
@@ -925,6 +925,22 @@
                 "updated_at": "2026-08-26T02:41:55Z"
             },
             {
+                "name": "ws-sockette",
+                "full_name": "jellydn/ws-sockette",
+                "description": "The little WebSocket wrapper for nodejs",
+                "url": "https://github.com/jellydn/ws-sockette",
+                "homepage": "",
+                "stars": 5,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [
+                    "nodejs",
+                    "websocket",
+                    "ws"
+                ],
+                "updated_at": "2026-09-26T21:41:37Z"
+            },
+            {
                 "name": "docklight",
                 "full_name": "jellydn/docklight",
                 "description": "A minimal, self-hosted web UI for managing a single-node Dokku server.",
@@ -939,22 +955,6 @@
                     "dokku-web"
                 ],
                 "updated_at": "2026-09-24T14:32:29Z"
-            },
-            {
-                "name": "ws-sockette",
-                "full_name": "jellydn/ws-sockette",
-                "description": "The little WebSocket wrapper for nodejs",
-                "url": "https://github.com/jellydn/ws-sockette",
-                "homepage": "",
-                "stars": 5,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [
-                    "nodejs",
-                    "websocket",
-                    "ws"
-                ],
-                "updated_at": "2026-09-24T00:06:10Z"
             },
             {
                 "name": "monorepo-starter",
@@ -1371,20 +1371,6 @@
                 "updated_at": "2026-09-11T10:50:48Z"
             },
             {
-                "name": "modern-nodejs-2024",
-                "full_name": "jellydn/modern-nodejs-2024",
-                "description": "Master the 2024 Node.js Development: Key Updates & Features from 18 to 22",
-                "url": "https://github.com/jellydn/modern-nodejs-2024",
-                "homepage": "",
-                "stars": 2,
-                "forks": 0,
-                "language": "",
-                "topics": [
-                    "nodejs"
-                ],
-                "updated_at": "2026-08-21T03:26:18Z"
-            },
-            {
                 "name": "ts-pattern-demo-app",
                 "full_name": "jellydn/ts-pattern-demo-app",
                 "description": "A state reducer example with ts-pattern with React App",
@@ -1521,6 +1507,20 @@
                     "remix-stack"
                 ],
                 "updated_at": "2022-06-22T10:27:12Z"
+            },
+            {
+                "name": "modern-nodejs-2024",
+                "full_name": "jellydn/modern-nodejs-2024",
+                "description": "Master the 2024 Node.js Development: Key Updates & Features from 18 to 22",
+                "url": "https://github.com/jellydn/modern-nodejs-2024",
+                "homepage": "",
+                "stars": 1,
+                "forks": 0,
+                "language": "",
+                "topics": [
+                    "nodejs"
+                ],
+                "updated_at": "2026-09-27T03:17:03Z"
             },
             {
                 "name": "practicepython",
@@ -1968,6 +1968,20 @@
                 "updated_at": "2022-12-28T04:11:44Z"
             },
             {
+                "name": "esp32-pomodoro-clock",
+                "full_name": "jellydn/esp32-pomodoro-clock",
+                "description": "Always-on NTP clock and touch-controlled Pomodoro firmware",
+                "url": "https://github.com/jellydn/esp32-pomodoro-clock",
+                "homepage": "",
+                "stars": 0,
+                "forks": 0,
+                "language": "C++",
+                "topics": [
+                    "esp32-s3"
+                ],
+                "updated_at": "2026-09-26T14:02:19Z"
+            },
+            {
                 "name": "pulumi-kubernetes-typescript",
                 "full_name": "jellydn/pulumi-kubernetes-typescript",
                 "description": "Simple Kubernetes cluster with TypeScript for Pulumi.",
@@ -1981,20 +1995,6 @@
                     "typescript"
                 ],
                 "updated_at": "2026-09-26T00:45:16Z"
-            },
-            {
-                "name": "esp32-pomodoro-clock",
-                "full_name": "jellydn/esp32-pomodoro-clock",
-                "description": "Always-on NTP clock and touch-controlled Pomodoro firmware",
-                "url": "https://github.com/jellydn/esp32-pomodoro-clock",
-                "homepage": "",
-                "stars": 0,
-                "forks": 0,
-                "language": "C++",
-                "topics": [
-                    "esp32-s3"
-                ],
-                "updated_at": "2026-09-25T06:46:43Z"
             },
             {
                 "name": "homebrew-tap",
@@ -2985,7 +2985,7 @@
                 "description": "A set of vim, zsh, fish, tmux, zeliij, git configuration files and tools.",
                 "url": "https://github.com/jellydn/dotfiles",
                 "homepage": "",
-                "stars": 19,
+                "stars": 18,
                 "forks": 3,
                 "language": "Shell",
                 "topics": [
@@ -3003,7 +3003,7 @@
                     "zellij",
                     "zsh"
                 ],
-                "updated_at": "2026-09-26T00:27:10Z"
+                "updated_at": "2026-09-26T10:15:21Z"
             },
             {
                 "name": "learn-vim-with-vscode",
@@ -3901,7 +3901,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-09-25T08:24:27Z"
+                "updated_at": "2026-09-26T08:10:55Z"
             },
             {
                 "name": "vite-react-jotai",
