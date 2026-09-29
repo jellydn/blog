@@ -18,7 +18,7 @@
                     "open-code",
                     "skills"
                 ],
-                "updated_at": "2026-09-28T07:18:10Z"
+                "updated_at": "2026-09-29T04:34:28Z"
             },
             {
                 "name": "gpt4free-demo",
@@ -347,7 +347,7 @@
                     "download-videos",
                     "twitter"
                 ],
-                "updated_at": "2026-09-28T05:06:04Z"
+                "updated_at": "2026-09-29T02:58:33Z"
             },
             {
                 "name": "pi-clinepass-provider",
@@ -544,7 +544,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-09-26T12:52:09Z"
+                "updated_at": "2026-09-28T20:33:49Z"
             },
             {
                 "name": "typescript-tips",
@@ -561,7 +561,7 @@
                     "tips-and-tricks",
                     "typescript"
                 ],
-                "updated_at": "2026-09-27T03:20:21Z"
+                "updated_at": "2026-09-28T20:28:07Z"
             },
             {
                 "name": "awesome-typesafe",
@@ -666,7 +666,7 @@
                 "description": "Interactive visualization and educational resource for adapting the Miryoku keyboard layout system to the Silakka54 split keyboard",
                 "url": "https://github.com/jellydn/miryoku-silakka54-layout",
                 "homepage": "https://kb.itman.fyi/",
-                "stars": 21,
+                "stars": 22,
                 "forks": 10,
                 "language": "HTML",
                 "topics": [
@@ -677,7 +677,7 @@
                     "miryoku",
                     "silakka54"
                 ],
-                "updated_at": "2026-09-14T11:16:25Z"
+                "updated_at": "2026-09-28T11:10:33Z"
             },
             {
                 "name": "arch-linux-on-m2",
@@ -893,6 +893,21 @@
                 "updated_at": "2026-08-21T03:18:10Z"
             },
             {
+                "name": "bnb-testnet-auto-faucet",
+                "full_name": "jellydn/bnb-testnet-auto-faucet",
+                "description": "",
+                "url": "https://github.com/jellydn/bnb-testnet-auto-faucet",
+                "homepage": "",
+                "stars": 6,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [
+                    "deno",
+                    "denoland"
+                ],
+                "updated_at": "2026-09-29T09:02:01Z"
+            },
+            {
                 "name": "tx-revert-reason",
                 "full_name": "jellydn/tx-revert-reason",
                 "description": "Get the revert reason from an Ethereum transaction hash",
@@ -1021,21 +1036,6 @@
                 "updated_at": "2026-08-21T03:18:21Z"
             },
             {
-                "name": "bnb-testnet-auto-faucet",
-                "full_name": "jellydn/bnb-testnet-auto-faucet",
-                "description": "",
-                "url": "https://github.com/jellydn/bnb-testnet-auto-faucet",
-                "homepage": "",
-                "stars": 5,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [
-                    "deno",
-                    "denoland"
-                ],
-                "updated_at": "2024-10-16T16:51:32Z"
-            },
-            {
                 "name": "typescript-starter",
                 "full_name": "jellydn/typescript-starter",
                 "description": "Typescript starter project",
@@ -1049,7 +1049,7 @@
                     "template",
                     "typescript"
                 ],
-                "updated_at": "2026-09-25T16:39:47Z"
+                "updated_at": "2026-09-28T11:04:31Z"
             },
             {
                 "name": "platformatic-starter",
@@ -1289,6 +1289,23 @@
                 "updated_at": "2025-02-05T02:52:59Z"
             },
             {
+                "name": "typescript-mini-starter",
+                "full_name": "jellydn/typescript-mini-starter",
+                "description": "A streamlined and efficient TypeScript starter kit, supporting both ESM and CJS, for quick and versatile project setups.",
+                "url": "https://github.com/jellydn/typescript-mini-starter",
+                "homepage": "",
+                "stars": 2,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [
+                    "cjs",
+                    "esm",
+                    "starter",
+                    "typescript"
+                ],
+                "updated_at": "2026-09-28T19:06:13Z"
+            },
+            {
                 "name": "deno-pkg-starter",
                 "full_name": "jellydn/deno-pkg-starter",
                 "description": "Publish your Typescript library to NPM and Deno",
@@ -1323,23 +1340,6 @@
                     "tauri-app"
                 ],
                 "updated_at": "2026-09-24T14:44:13Z"
-            },
-            {
-                "name": "typescript-mini-starter",
-                "full_name": "jellydn/typescript-mini-starter",
-                "description": "A streamlined and efficient TypeScript starter kit, supporting both ESM and CJS, for quick and versatile project setups.",
-                "url": "https://github.com/jellydn/typescript-mini-starter",
-                "homepage": "",
-                "stars": 2,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [
-                    "cjs",
-                    "esm",
-                    "starter",
-                    "typescript"
-                ],
-                "updated_at": "2026-09-21T04:42:28Z"
             },
             {
                 "name": ".dotfiles",
@@ -3119,7 +3119,7 @@
                     "minimalist",
                     "vscode"
                 ],
-                "updated_at": "2026-09-28T06:53:24Z"
+                "updated_at": "2026-09-28T10:35:59Z"
             },
             {
                 "name": "vscode-seal-code",
@@ -3169,7 +3169,7 @@
                 "topics": [
                     "vscode-extension"
                 ],
-                "updated_at": "2026-09-26T05:50:31Z"
+                "updated_at": "2026-09-28T19:50:56Z"
             },
             {
                 "name": "vscode-fff-gpui",
@@ -3901,7 +3901,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-09-28T06:37:05Z"
+                "updated_at": "2026-09-29T04:03:33Z"
             },
             {
                 "name": "vite-react-jotai",
