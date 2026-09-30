@@ -18,7 +18,7 @@
                     "open-code",
                     "skills"
                 ],
-                "updated_at": "2026-09-29T04:34:28Z"
+                "updated_at": "2026-09-30T05:01:43Z"
             },
             {
                 "name": "gpt4free-demo",
@@ -339,7 +339,7 @@
                 "description": "The easiest way to download any Twitter video from CLI",
                 "url": "https://github.com/jellydn/twt-dl-cli",
                 "homepage": "",
-                "stars": 51,
+                "stars": 52,
                 "forks": 10,
                 "language": "TypeScript",
                 "topics": [
@@ -347,7 +347,7 @@
                     "download-videos",
                     "twitter"
                 ],
-                "updated_at": "2026-09-29T02:58:33Z"
+                "updated_at": "2026-09-29T13:41:01Z"
             },
             {
                 "name": "pi-clinepass-provider",
@@ -355,14 +355,14 @@
                 "description": "ClinePass provider for pi — 11 curated open-weight coding models (GLM-5.2, Kimi K2.7 Code, Kimi K3, DeepSeek V4, Qwen3.7, and more)",
                 "url": "https://github.com/jellydn/pi-clinepass-provider",
                 "homepage": "https://jellydn.github.io/pi-clinepass-provider/",
-                "stars": 16,
+                "stars": 17,
                 "forks": 7,
                 "language": "TypeScript",
                 "topics": [
                     "pi",
                     "pi-plugins"
                 ],
-                "updated_at": "2026-09-24T08:25:08Z"
+                "updated_at": "2026-09-30T03:09:06Z"
             },
             {
                 "name": "cspell-tool",
@@ -536,7 +536,7 @@
                 "description": "Your ultimate guide to setting up Zed with Vim mode, tailored settings, and key bindings for a seamless coding experience",
                 "url": "https://github.com/jellydn/zed-101-setup",
                 "homepage": "https://itman.fyi",
-                "stars": 1455,
+                "stars": 1456,
                 "forks": 31,
                 "language": "TypeScript",
                 "topics": [
@@ -544,7 +544,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-09-28T20:33:49Z"
+                "updated_at": "2026-09-29T21:32:18Z"
             },
             {
                 "name": "typescript-tips",
@@ -666,7 +666,7 @@
                 "description": "Interactive visualization and educational resource for adapting the Miryoku keyboard layout system to the Silakka54 split keyboard",
                 "url": "https://github.com/jellydn/miryoku-silakka54-layout",
                 "homepage": "https://kb.itman.fyi/",
-                "stars": 22,
+                "stars": 21,
                 "forks": 10,
                 "language": "HTML",
                 "topics": [
@@ -677,7 +677,7 @@
                     "miryoku",
                     "silakka54"
                 ],
-                "updated_at": "2026-09-28T11:10:33Z"
+                "updated_at": "2026-09-30T06:25:50Z"
             },
             {
                 "name": "arch-linux-on-m2",
@@ -809,7 +809,7 @@
                     "pomodoro-timer",
                     "swift"
                 ],
-                "updated_at": "2026-09-15T22:18:29Z"
+                "updated_at": "2026-09-29T16:46:49Z"
             },
             {
                 "name": "github-action-locally",
@@ -953,7 +953,7 @@
                     "websocket",
                     "ws"
                 ],
-                "updated_at": "2026-09-28T05:30:49Z"
+                "updated_at": "2026-09-29T19:28:26Z"
             },
             {
                 "name": "docklight",
@@ -3901,7 +3901,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-09-29T04:03:33Z"
+                "updated_at": "2026-09-29T09:20:25Z"
             },
             {
                 "name": "vite-react-jotai",
