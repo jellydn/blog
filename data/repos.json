@@ -8,7 +8,7 @@
                 "description": "Comprehensive configuration management for AI coding tools - Replicate my complete setup for Claude Code, OpenCode, Amp, Li, Codex and Claude Code Switch with custom configurations, MCP servers, plugins, and commands.",
                 "url": "https://github.com/jellydn/my-ai-tools",
                 "homepage": "http://ai-tools.itman.fyi/",
-                "stars": 121,
+                "stars": 122,
                 "forks": 13,
                 "language": "Shell",
                 "topics": [
@@ -18,7 +18,7 @@
                     "open-code",
                     "skills"
                 ],
-                "updated_at": "2026-09-30T05:01:43Z"
+                "updated_at": "2026-10-01T05:57:41Z"
             },
             {
                 "name": "gpt4free-demo",
@@ -193,7 +193,7 @@
                 "url": "https://github.com/jellydn/ai-photo-coach",
                 "homepage": "https://jellydn.github.io/ai-photo-coach/",
                 "stars": 2,
-                "forks": 1,
+                "forks": 2,
                 "language": "TypeScript",
                 "topics": [
                     "react-native"
@@ -216,6 +216,18 @@
                     "tmux"
                 ],
                 "updated_at": "2026-09-11T10:43:50Z"
+            },
+            {
+                "name": "awesome-ai-agent-orchestrators",
+                "full_name": "jellydn/awesome-ai-agent-orchestrators",
+                "description": "",
+                "url": "https://github.com/jellydn/awesome-ai-agent-orchestrators",
+                "homepage": "",
+                "stars": 1,
+                "forks": 0,
+                "language": "",
+                "topics": [],
+                "updated_at": "2026-10-01T07:42:19Z"
             },
             {
                 "name": "opencode-qwencloud-provider",
@@ -493,6 +505,22 @@
                 "updated_at": "2024-07-28T07:21:24Z"
             },
             {
+                "name": "devlog",
+                "full_name": "jellydn/devlog",
+                "description": "Zero-code log capture for local development. Captures server logs via tmux and browser console logs via a native messaging host — all controlled by a single YAML config.",
+                "url": "https://github.com/jellydn/devlog",
+                "homepage": "https://jellydn.github.io/devlog/",
+                "stars": 0,
+                "forks": 0,
+                "language": "Go",
+                "topics": [
+                    "cli",
+                    "logging",
+                    "tmux"
+                ],
+                "updated_at": "2026-10-01T08:02:39Z"
+            },
+            {
                 "name": "ts-pretty-error",
                 "full_name": "jellydn/ts-pretty-error",
                 "description": "CLI or plugin for formatting TypeScript errors [WIP]",
@@ -508,22 +536,6 @@
                     "typescript"
                 ],
                 "updated_at": "2026-08-21T03:18:30Z"
-            },
-            {
-                "name": "devlog",
-                "full_name": "jellydn/devlog",
-                "description": "Zero-code log capture for local development. Captures server logs via tmux and browser console logs via a native messaging host — all controlled by a single YAML config.",
-                "url": "https://github.com/jellydn/devlog",
-                "homepage": "https://jellydn.github.io/devlog/",
-                "stars": 0,
-                "forks": 0,
-                "language": "Go",
-                "topics": [
-                    "cli",
-                    "logging",
-                    "tmux"
-                ],
-                "updated_at": "2026-07-19T08:47:22Z"
             }
         ]
     },
@@ -536,7 +548,7 @@
                 "description": "Your ultimate guide to setting up Zed with Vim mode, tailored settings, and key bindings for a seamless coding experience",
                 "url": "https://github.com/jellydn/zed-101-setup",
                 "homepage": "https://itman.fyi",
-                "stars": 1456,
+                "stars": 1457,
                 "forks": 31,
                 "language": "TypeScript",
                 "topics": [
@@ -544,7 +556,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-09-29T21:32:18Z"
+                "updated_at": "2026-09-30T13:43:57Z"
             },
             {
                 "name": "typescript-tips",
@@ -1509,6 +1521,18 @@
                 "updated_at": "2022-06-22T10:27:12Z"
             },
             {
+                "name": "personal-ai",
+                "full_name": "jellydn/personal-ai",
+                "description": "My AI projects from the last nine months",
+                "url": "https://github.com/jellydn/personal-ai",
+                "homepage": "https://jellydn.github.io/personal-ai/",
+                "stars": 1,
+                "forks": 0,
+                "language": "HTML",
+                "topics": [],
+                "updated_at": "2026-10-01T03:02:59Z"
+            },
+            {
                 "name": "practicepython",
                 "full_name": "jellydn/practicepython",
                 "description": "Learn how to code by practicing Python exercises.",
@@ -1550,18 +1574,6 @@
                     "knulli-theme"
                 ],
                 "updated_at": "2026-09-19T09:38:55Z"
-            },
-            {
-                "name": "personal-ai",
-                "full_name": "jellydn/personal-ai",
-                "description": "My AI projects from the last nine months",
-                "url": "https://github.com/jellydn/personal-ai",
-                "homepage": "https://jellydn.github.io/personal-ai/",
-                "stars": 1,
-                "forks": 0,
-                "language": "HTML",
-                "topics": [],
-                "updated_at": "2026-09-18T07:23:32Z"
             },
             {
                 "name": "token-pulse",
@@ -2839,7 +2851,7 @@
                 "description": "Hurl.nvim is a Neovim plugin designed to run HTTP requests directly from `.hurl` files. Elevate your API development workflow by executing and viewing responses without leaving your editor.",
                 "url": "https://github.com/jellydn/hurl.nvim",
                 "homepage": "https://gyazo.com/19492e8b5366cec3f22d5fd97a63f37a",
-                "stars": 259,
+                "stars": 260,
                 "forks": 20,
                 "language": "Lua",
                 "topics": [
@@ -2848,7 +2860,7 @@
                     "neovim",
                     "neovim-plugin"
                 ],
-                "updated_at": "2026-09-17T20:50:23Z"
+                "updated_at": "2026-09-30T13:39:37Z"
             },
             {
                 "name": "lazy-nvim-ide",
@@ -3003,7 +3015,7 @@
                     "zellij",
                     "zsh"
                 ],
-                "updated_at": "2026-09-28T02:55:28Z"
+                "updated_at": "2026-09-30T13:07:38Z"
             },
             {
                 "name": "learn-vim-with-vscode",
@@ -3214,7 +3226,7 @@
                 "description": "This package reads your JSDoc-annotated source code on NextJS API route and generates an OpenAPI (Swagger) specification.",
                 "url": "https://github.com/jellydn/next-swagger-doc",
                 "homepage": "https://next-swagger-doc-demo.productsway.com/api-doc",
-                "stars": 520,
+                "stars": 521,
                 "forks": 36,
                 "language": "TypeScript",
                 "topics": [
@@ -3224,7 +3236,7 @@
                     "nextjs",
                     "swagger"
                 ],
-                "updated_at": "2026-09-26T00:37:49Z"
+                "updated_at": "2026-09-30T14:37:54Z"
             },
             {
                 "name": "dapp-starter",
@@ -3901,7 +3913,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-09-29T09:20:25Z"
+                "updated_at": "2026-09-30T09:10:52Z"
             },
             {
                 "name": "vite-react-jotai",
