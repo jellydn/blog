@@ -18,7 +18,7 @@
                     "open-code",
                     "skills"
                 ],
-                "updated_at": "2026-10-01T05:57:41Z"
+                "updated_at": "2026-10-01T14:20:53Z"
             },
             {
                 "name": "gpt4free-demo",
@@ -359,7 +359,7 @@
                     "download-videos",
                     "twitter"
                 ],
-                "updated_at": "2026-09-29T13:41:01Z"
+                "updated_at": "2026-10-02T06:14:26Z"
             },
             {
                 "name": "pi-clinepass-provider",
@@ -368,7 +368,7 @@
                 "url": "https://github.com/jellydn/pi-clinepass-provider",
                 "homepage": "https://jellydn.github.io/pi-clinepass-provider/",
                 "stars": 17,
-                "forks": 7,
+                "forks": 8,
                 "language": "TypeScript",
                 "topics": [
                     "pi",
@@ -390,7 +390,7 @@
                     "cspell",
                     "spell-check"
                 ],
-                "updated_at": "2026-09-24T19:39:08Z"
+                "updated_at": "2026-10-01T19:16:56Z"
             },
             {
                 "name": "biome-interactive",
@@ -548,7 +548,7 @@
                 "description": "Your ultimate guide to setting up Zed with Vim mode, tailored settings, and key bindings for a seamless coding experience",
                 "url": "https://github.com/jellydn/zed-101-setup",
                 "homepage": "https://itman.fyi",
-                "stars": 1457,
+                "stars": 1458,
                 "forks": 31,
                 "language": "TypeScript",
                 "topics": [
@@ -556,7 +556,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-09-30T13:43:57Z"
+                "updated_at": "2026-10-01T21:52:06Z"
             },
             {
                 "name": "typescript-tips",
@@ -678,7 +678,7 @@
                 "description": "Interactive visualization and educational resource for adapting the Miryoku keyboard layout system to the Silakka54 split keyboard",
                 "url": "https://github.com/jellydn/miryoku-silakka54-layout",
                 "homepage": "https://kb.itman.fyi/",
-                "stars": 21,
+                "stars": 22,
                 "forks": 10,
                 "language": "HTML",
                 "topics": [
@@ -689,7 +689,7 @@
                     "miryoku",
                     "silakka54"
                 ],
-                "updated_at": "2026-09-30T06:25:50Z"
+                "updated_at": "2026-10-01T09:55:21Z"
             },
             {
                 "name": "arch-linux-on-m2",
@@ -965,7 +965,7 @@
                     "websocket",
                     "ws"
                 ],
-                "updated_at": "2026-09-29T19:28:26Z"
+                "updated_at": "2026-10-02T06:30:09Z"
             },
             {
                 "name": "docklight",
@@ -1061,7 +1061,7 @@
                     "template",
                     "typescript"
                 ],
-                "updated_at": "2026-09-28T11:04:31Z"
+                "updated_at": "2026-10-01T22:00:05Z"
             },
             {
                 "name": "platformatic-starter",
@@ -1315,7 +1315,7 @@
                     "starter",
                     "typescript"
                 ],
-                "updated_at": "2026-09-28T19:06:13Z"
+                "updated_at": "2026-10-01T19:25:42Z"
             },
             {
                 "name": "deno-pkg-starter",
@@ -3181,7 +3181,7 @@
                 "topics": [
                     "vscode-extension"
                 ],
-                "updated_at": "2026-09-28T19:50:56Z"
+                "updated_at": "2026-10-02T05:46:26Z"
             },
             {
                 "name": "vscode-fff-gpui",
@@ -3729,7 +3729,7 @@
                     "react",
                     "typescript"
                 ],
-                "updated_at": "2026-09-28T06:42:23Z"
+                "updated_at": "2026-10-01T21:10:41Z"
             },
             {
                 "name": "i18n-react-app",
@@ -3913,7 +3913,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-09-30T09:10:52Z"
+                "updated_at": "2026-10-01T09:38:33Z"
             },
             {
                 "name": "vite-react-jotai",
