@@ -556,7 +556,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-10-01T21:52:06Z"
+                "updated_at": "2026-10-03T02:17:34Z"
             },
             {
                 "name": "typescript-tips",
@@ -1521,16 +1521,16 @@
                 "updated_at": "2022-06-22T10:27:12Z"
             },
             {
-                "name": "personal-ai",
-                "full_name": "jellydn/personal-ai",
-                "description": "My AI projects from the last nine months",
-                "url": "https://github.com/jellydn/personal-ai",
-                "homepage": "https://jellydn.github.io/personal-ai/",
+                "name": "prosody",
+                "full_name": "jellydn/prosody",
+                "description": "English Rhythm Coach",
+                "url": "https://github.com/jellydn/prosody",
+                "homepage": "",
                 "stars": 1,
                 "forks": 0,
-                "language": "HTML",
+                "language": "TypeScript",
                 "topics": [],
-                "updated_at": "2026-10-01T03:02:59Z"
+                "updated_at": "2026-10-03T04:41:46Z"
             },
             {
                 "name": "practicepython",
@@ -1544,7 +1544,19 @@
                 "topics": [
                     "python"
                 ],
-                "updated_at": "2026-09-28T04:58:50Z"
+                "updated_at": "2026-10-02T09:55:57Z"
+            },
+            {
+                "name": "personal-ai",
+                "full_name": "jellydn/personal-ai",
+                "description": "My AI projects from the last nine months",
+                "url": "https://github.com/jellydn/personal-ai",
+                "homepage": "https://jellydn.github.io/personal-ai/",
+                "stars": 1,
+                "forks": 0,
+                "language": "HTML",
+                "topics": [],
+                "updated_at": "2026-10-01T03:02:59Z"
             },
             {
                 "name": "modern-nodejs-2024",
@@ -1916,18 +1928,6 @@
                 "language": "Python",
                 "topics": [],
                 "updated_at": "2026-06-16T14:58:53Z"
-            },
-            {
-                "name": "prosody",
-                "full_name": "jellydn/prosody",
-                "description": "English Rhythm Coach",
-                "url": "https://github.com/jellydn/prosody",
-                "homepage": "",
-                "stars": 1,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [],
-                "updated_at": "2026-03-21T06:52:30Z"
             },
             {
                 "name": "resume-latex",
@@ -2852,7 +2852,7 @@
                 "url": "https://github.com/jellydn/hurl.nvim",
                 "homepage": "https://gyazo.com/19492e8b5366cec3f22d5fd97a63f37a",
                 "stars": 260,
-                "forks": 20,
+                "forks": 21,
                 "language": "Lua",
                 "topics": [
                     "hacktoberfest",
@@ -2963,7 +2963,7 @@
                 "description": "A simple and efficient code runner for Neovim.",
                 "url": "https://github.com/jellydn/quick-code-runner.nvim",
                 "homepage": "",
-                "stars": 25,
+                "stars": 24,
                 "forks": 0,
                 "language": "Lua",
                 "topics": [
@@ -2972,7 +2972,7 @@
                     "neovim",
                     "neovim-plugin"
                 ],
-                "updated_at": "2026-09-11T10:28:46Z"
+                "updated_at": "2026-10-02T18:45:35Z"
             },
             {
                 "name": "spinner.nvim",
@@ -3244,7 +3244,7 @@
                 "description": "Opinionated Dapp Starter Template provides a solid foundation for building Ethereum-based applications. It incorporates various tools and frameworks such as React, Next.js, Hardhat, TypeChain, web3-react, daisyUI Tailwind CSS Components, and OpenZeppelin.",
                 "url": "https://github.com/jellydn/dapp-starter",
                 "homepage": "https://dapp-starter.productsway.com/",
-                "stars": 327,
+                "stars": 326,
                 "forks": 78,
                 "language": "TypeScript",
                 "topics": [
@@ -3261,7 +3261,7 @@
                     "web3",
                     "web3-react"
                 ],
-                "updated_at": "2026-07-20T18:42:13Z"
+                "updated_at": "2026-10-02T15:26:00Z"
             },
             {
                 "name": "next-app-starter",
@@ -3913,7 +3913,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-10-01T09:38:33Z"
+                "updated_at": "2026-10-02T09:12:39Z"
             },
             {
                 "name": "vite-react-jotai",
