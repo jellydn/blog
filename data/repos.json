@@ -573,7 +573,7 @@
                     "tips-and-tricks",
                     "typescript"
                 ],
-                "updated_at": "2026-09-28T20:28:07Z"
+                "updated_at": "2026-10-03T12:13:23Z"
             },
             {
                 "name": "awesome-typesafe",
@@ -1530,7 +1530,7 @@
                 "forks": 0,
                 "language": "TypeScript",
                 "topics": [],
-                "updated_at": "2026-10-03T04:41:46Z"
+                "updated_at": "2026-10-04T03:55:27Z"
             },
             {
                 "name": "practicepython",
@@ -1980,6 +1980,21 @@
                 "updated_at": "2022-12-28T04:11:44Z"
             },
             {
+                "name": "pulumi-kubernetes-typescript",
+                "full_name": "jellydn/pulumi-kubernetes-typescript",
+                "description": "Simple Kubernetes cluster with TypeScript for Pulumi.",
+                "url": "https://github.com/jellydn/pulumi-kubernetes-typescript",
+                "homepage": "",
+                "stars": 0,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [
+                    "pulumi",
+                    "typescript"
+                ],
+                "updated_at": "2026-10-03T13:23:05Z"
+            },
+            {
                 "name": "homebrew-tap",
                 "full_name": "jellydn/homebrew-tap",
                 "description": "Homebrew tap for jellydn packages",
@@ -2004,21 +2019,6 @@
                     "esp32-s3"
                 ],
                 "updated_at": "2026-09-26T14:02:19Z"
-            },
-            {
-                "name": "pulumi-kubernetes-typescript",
-                "full_name": "jellydn/pulumi-kubernetes-typescript",
-                "description": "Simple Kubernetes cluster with TypeScript for Pulumi.",
-                "url": "https://github.com/jellydn/pulumi-kubernetes-typescript",
-                "homepage": "",
-                "stars": 0,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [
-                    "pulumi",
-                    "typescript"
-                ],
-                "updated_at": "2026-09-26T00:45:16Z"
             },
             {
                 "name": "signal-gate",
@@ -2851,7 +2851,7 @@
                 "description": "Hurl.nvim is a Neovim plugin designed to run HTTP requests directly from `.hurl` files. Elevate your API development workflow by executing and viewing responses without leaving your editor.",
                 "url": "https://github.com/jellydn/hurl.nvim",
                 "homepage": "https://gyazo.com/19492e8b5366cec3f22d5fd97a63f37a",
-                "stars": 260,
+                "stars": 259,
                 "forks": 21,
                 "language": "Lua",
                 "topics": [
@@ -2860,7 +2860,7 @@
                     "neovim",
                     "neovim-plugin"
                 ],
-                "updated_at": "2026-09-30T13:39:37Z"
+                "updated_at": "2026-10-03T15:13:41Z"
             },
             {
                 "name": "lazy-nvim-ide",
@@ -3381,7 +3381,7 @@
                 "url": "https://github.com/jellydn/react-dapp",
                 "homepage": "https://dapp-demo.productsway.com/",
                 "stars": 48,
-                "forks": 17,
+                "forks": 16,
                 "language": "TypeScript",
                 "topics": [
                     "ethereum",
@@ -3913,7 +3913,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-10-02T09:12:39Z"
+                "updated_at": "2026-10-04T04:58:55Z"
             },
             {
                 "name": "vite-react-jotai",
