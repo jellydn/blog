@@ -18,7 +18,7 @@
                     "open-code",
                     "skills"
                 ],
-                "updated_at": "2026-10-01T14:20:53Z"
+                "updated_at": "2026-10-05T09:11:08Z"
             },
             {
                 "name": "gpt4free-demo",
@@ -359,7 +359,7 @@
                     "download-videos",
                     "twitter"
                 ],
-                "updated_at": "2026-10-02T06:14:26Z"
+                "updated_at": "2026-10-05T05:39:22Z"
             },
             {
                 "name": "pi-clinepass-provider",
@@ -581,7 +581,7 @@
                 "description": "A curated list of awesome 🔥 TypeScript Typesafe Libraries🔥",
                 "url": "https://github.com/jellydn/awesome-typesafe",
                 "homepage": "http://typesafe.itman.fyi/",
-                "stars": 197,
+                "stars": 198,
                 "forks": 26,
                 "language": "",
                 "topics": [
@@ -590,7 +590,7 @@
                     "typesafe",
                     "typescript"
                 ],
-                "updated_at": "2026-09-25T23:46:29Z"
+                "updated_at": "2026-10-04T21:09:32Z"
             },
             {
                 "name": "fastify-starter",
@@ -670,7 +670,7 @@
                     "express-js",
                     "vercel"
                 ],
-                "updated_at": "2026-09-28T06:09:04Z"
+                "updated_at": "2026-10-05T05:29:46Z"
             },
             {
                 "name": "miryoku-silakka54-layout",
@@ -965,7 +965,7 @@
                     "websocket",
                     "ws"
                 ],
-                "updated_at": "2026-10-02T06:30:09Z"
+                "updated_at": "2026-10-05T04:28:51Z"
             },
             {
                 "name": "docklight",
@@ -1061,7 +1061,7 @@
                     "template",
                     "typescript"
                 ],
-                "updated_at": "2026-10-01T22:00:05Z"
+                "updated_at": "2026-10-05T04:32:57Z"
             },
             {
                 "name": "platformatic-starter",
@@ -1315,7 +1315,7 @@
                     "starter",
                     "typescript"
                 ],
-                "updated_at": "2026-10-01T19:25:42Z"
+                "updated_at": "2026-10-05T05:42:45Z"
             },
             {
                 "name": "deno-pkg-starter",
@@ -1521,18 +1521,6 @@
                 "updated_at": "2022-06-22T10:27:12Z"
             },
             {
-                "name": "prosody",
-                "full_name": "jellydn/prosody",
-                "description": "English Rhythm Coach",
-                "url": "https://github.com/jellydn/prosody",
-                "homepage": "",
-                "stars": 1,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [],
-                "updated_at": "2026-10-04T03:55:27Z"
-            },
-            {
                 "name": "practicepython",
                 "full_name": "jellydn/practicepython",
                 "description": "Learn how to code by practicing Python exercises.",
@@ -1544,7 +1532,19 @@
                 "topics": [
                     "python"
                 ],
-                "updated_at": "2026-10-02T09:55:57Z"
+                "updated_at": "2026-10-05T04:54:54Z"
+            },
+            {
+                "name": "prosody",
+                "full_name": "jellydn/prosody",
+                "description": "English Rhythm Coach",
+                "url": "https://github.com/jellydn/prosody",
+                "homepage": "",
+                "stars": 1,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [],
+                "updated_at": "2026-10-04T03:55:27Z"
             },
             {
                 "name": "personal-ai",
@@ -1992,7 +1992,7 @@
                     "pulumi",
                     "typescript"
                 ],
-                "updated_at": "2026-10-03T13:23:05Z"
+                "updated_at": "2026-10-05T05:41:57Z"
             },
             {
                 "name": "homebrew-tap",
@@ -3181,7 +3181,7 @@
                 "topics": [
                     "vscode-extension"
                 ],
-                "updated_at": "2026-10-02T05:46:26Z"
+                "updated_at": "2026-10-05T05:03:51Z"
             },
             {
                 "name": "vscode-fff-gpui",
@@ -3729,7 +3729,7 @@
                     "react",
                     "typescript"
                 ],
-                "updated_at": "2026-10-01T21:10:41Z"
+                "updated_at": "2026-10-05T05:13:25Z"
             },
             {
                 "name": "i18n-react-app",
@@ -3913,7 +3913,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-10-04T04:58:55Z"
+                "updated_at": "2026-10-05T04:46:45Z"
             },
             {
                 "name": "vite-react-jotai",
