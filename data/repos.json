@@ -18,7 +18,7 @@
                     "open-code",
                     "skills"
                 ],
-                "updated_at": "2026-10-06T07:54:53Z"
+                "updated_at": "2026-10-07T00:34:47Z"
             },
             {
                 "name": "gpt4free-demo",
@@ -170,7 +170,7 @@
                     "flue",
                     "flueframework"
                 ],
-                "updated_at": "2026-09-18T10:23:58Z"
+                "updated_at": "2026-10-06T12:52:49Z"
             },
             {
                 "name": "hermes-hub",
@@ -367,14 +367,14 @@
                 "description": "ClinePass provider for pi — 11 curated open-weight coding models (GLM-5.2, Kimi K2.7 Code, Kimi K3, DeepSeek V4, Qwen3.7, and more)",
                 "url": "https://github.com/jellydn/pi-clinepass-provider",
                 "homepage": "https://jellydn.github.io/pi-clinepass-provider/",
-                "stars": 17,
+                "stars": 18,
                 "forks": 8,
                 "language": "TypeScript",
                 "topics": [
                     "pi",
                     "pi-plugins"
                 ],
-                "updated_at": "2026-09-30T03:09:06Z"
+                "updated_at": "2026-10-07T02:55:07Z"
             },
             {
                 "name": "cspell-tool",
@@ -390,7 +390,7 @@
                     "cspell",
                     "spell-check"
                 ],
-                "updated_at": "2026-10-01T19:16:56Z"
+                "updated_at": "2026-10-06T09:49:21Z"
             },
             {
                 "name": "biome-interactive",
@@ -518,7 +518,7 @@
                     "logging",
                     "tmux"
                 ],
-                "updated_at": "2026-10-01T08:02:39Z"
+                "updated_at": "2026-10-06T10:25:07Z"
             },
             {
                 "name": "ts-pretty-error",
@@ -621,7 +621,7 @@
                 "url": "https://github.com/jellydn/elysia-demo-app",
                 "homepage": "https://elysia-demo-app.fly.dev/swagger",
                 "stars": 112,
-                "forks": 10,
+                "forks": 9,
                 "language": "TypeScript",
                 "topics": [
                     "bun",
@@ -1061,7 +1061,7 @@
                     "template",
                     "typescript"
                 ],
-                "updated_at": "2026-10-05T04:32:57Z"
+                "updated_at": "2026-10-06T09:44:01Z"
             },
             {
                 "name": "platformatic-starter",
@@ -1521,6 +1521,21 @@
                 "updated_at": "2022-06-22T10:27:12Z"
             },
             {
+                "name": "knulli-app-store",
+                "full_name": "jellydn/knulli-app-store",
+                "description": "Knulli App Store is a safe community package manager for Knulli utilities, themes, and integrations. It has a reviewable catalogue, a transactional installer, and a controller-only SDL2 interface.",
+                "url": "https://github.com/jellydn/knulli-app-store",
+                "homepage": "",
+                "stars": 1,
+                "forks": 0,
+                "language": "Go",
+                "topics": [
+                    "knulli",
+                    "knulli-theme"
+                ],
+                "updated_at": "2026-10-06T23:06:30Z"
+            },
+            {
                 "name": "practicepython",
                 "full_name": "jellydn/practicepython",
                 "description": "Learn how to code by practicing Python exercises.",
@@ -1571,21 +1586,6 @@
                     "nodejs"
                 ],
                 "updated_at": "2026-09-27T03:17:03Z"
-            },
-            {
-                "name": "knulli-app-store",
-                "full_name": "jellydn/knulli-app-store",
-                "description": "Knulli App Store is a safe community package manager for Knulli utilities, themes, and integrations. It has a reviewable catalogue, a transactional installer, and a controller-only SDL2 interface.",
-                "url": "https://github.com/jellydn/knulli-app-store",
-                "homepage": "",
-                "stars": 1,
-                "forks": 0,
-                "language": "Go",
-                "topics": [
-                    "knulli",
-                    "knulli-theme"
-                ],
-                "updated_at": "2026-09-19T09:38:55Z"
             },
             {
                 "name": "token-pulse",
@@ -2868,7 +2868,7 @@
                 "description": "My 💤 LazyVim IDE config for Neovim",
                 "url": "https://github.com/jellydn/lazy-nvim-ide",
                 "homepage": "",
-                "stars": 142,
+                "stars": 141,
                 "forks": 15,
                 "language": "Lua",
                 "topics": [
@@ -2876,7 +2876,7 @@
                     "neovim",
                     "nvim"
                 ],
-                "updated_at": "2026-08-21T03:26:12Z"
+                "updated_at": "2026-10-07T07:49:09Z"
             },
             {
                 "name": "tiny-nvim",
@@ -3729,7 +3729,7 @@
                     "react",
                     "typescript"
                 ],
-                "updated_at": "2026-10-05T05:13:25Z"
+                "updated_at": "2026-10-06T10:53:52Z"
             },
             {
                 "name": "i18n-react-app",
@@ -3913,7 +3913,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-10-05T09:51:26Z"
+                "updated_at": "2026-10-06T09:39:11Z"
             },
             {
                 "name": "vite-react-jotai",
