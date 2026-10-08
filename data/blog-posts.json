@@ -1,5 +1,13 @@
 [
     {
+        "slug": "power-up-8-three-months-with-amp-orb-from-cli-to-cloud-agents",
+        "title": "Power-Up #8: Three Months with Amp Orb: From CLI to Cloud Agents",
+        "description": "I've been using Amp Orbs for about three months, and it has changed how I build software.\n\n\nI've used AI coding assistants for a long time, from terminal agents to IDE integrations. Amp is the first o",
+        "date": "2026-10-08T07:34:50.529Z",
+        "tags": [],
+        "hero_image": "https://cdn.hashnode.com/uploads/covers/56ee654dbcca2d711e191e2a/5201ff80-62a1-4c43-8554-0923911a096c.png"
+    },
+    {
         "slug": "power-up-7-let-ai-research-your-code-while-you-sleep",
         "title": "Power-Up #7: Let AI Research Your Code While You Sleep",
         "description": "In the previous Power-Up posts, I've explored AI coding assistants, AI workflows, agent-based development, and AI launchers.\nThis week, I want to talk about something that feels like the next step: au",
