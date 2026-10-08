@@ -18,7 +18,7 @@
                     "open-code",
                     "skills"
                 ],
-                "updated_at": "2026-10-07T00:34:47Z"
+                "updated_at": "2026-10-08T00:11:48Z"
             },
             {
                 "name": "gpt4free-demo",
@@ -103,7 +103,7 @@
                     "pi",
                     "pi-plugins"
                 ],
-                "updated_at": "2026-09-17T23:39:08Z"
+                "updated_at": "2026-10-07T12:10:44Z"
             },
             {
                 "name": "ai-launcher",
@@ -364,7 +364,7 @@
             {
                 "name": "pi-clinepass-provider",
                 "full_name": "jellydn/pi-clinepass-provider",
-                "description": "ClinePass provider for pi — 11 curated open-weight coding models (GLM-5.2, Kimi K2.7 Code, Kimi K3, DeepSeek V4, Qwen3.7, and more)",
+                "description": "ClinePass provider for pi — 12 curated coding models (GLM-5.3, Kimi K3, DeepSeek V4.1 Flash, Muse Spark 1.3 Contributor, Qwen3.8 Max, and more) through Cline's $9.99/month subscription with 2-5x the usage compared to standard API rates.",
                 "url": "https://github.com/jellydn/pi-clinepass-provider",
                 "homepage": "https://jellydn.github.io/pi-clinepass-provider/",
                 "stars": 18,
@@ -374,7 +374,7 @@
                     "pi",
                     "pi-plugins"
                 ],
-                "updated_at": "2026-10-07T02:55:07Z"
+                "updated_at": "2026-10-07T12:01:51Z"
             },
             {
                 "name": "cspell-tool",
@@ -548,7 +548,7 @@
                 "description": "Your ultimate guide to setting up Zed with Vim mode, tailored settings, and key bindings for a seamless coding experience",
                 "url": "https://github.com/jellydn/zed-101-setup",
                 "homepage": "https://itman.fyi",
-                "stars": 1458,
+                "stars": 1459,
                 "forks": 31,
                 "language": "TypeScript",
                 "topics": [
@@ -556,7 +556,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-10-06T03:22:28Z"
+                "updated_at": "2026-10-08T04:53:04Z"
             },
             {
                 "name": "typescript-tips",
@@ -598,7 +598,7 @@
                 "description": "Fastify starter template support RestAPI with Swagger and Graphql",
                 "url": "https://github.com/jellydn/fastify-starter",
                 "homepage": "https://fastify.itman.fyi/documentation/static/index.html",
-                "stars": 128,
+                "stars": 127,
                 "forks": 11,
                 "language": "TypeScript",
                 "topics": [
@@ -612,7 +612,7 @@
                     "swagger",
                     "typescript"
                 ],
-                "updated_at": "2026-09-18T13:16:21Z"
+                "updated_at": "2026-10-07T10:52:01Z"
             },
             {
                 "name": "elysia-demo-app",
@@ -1521,6 +1521,21 @@
                 "updated_at": "2022-06-22T10:27:12Z"
             },
             {
+                "name": "token-pulse",
+                "full_name": "jellydn/token-pulse",
+                "description": "A local-first token usage dashboard for CodexBar",
+                "url": "https://github.com/jellydn/token-pulse",
+                "homepage": "https://myusage.itman.fyi/",
+                "stars": 1,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [
+                    "codexbar",
+                    "token-usage"
+                ],
+                "updated_at": "2026-10-07T14:20:55Z"
+            },
+            {
                 "name": "knulli-app-store",
                 "full_name": "jellydn/knulli-app-store",
                 "description": "Knulli App Store is a safe community package manager for Knulli utilities, themes, and integrations. It has a reviewable catalogue, a transactional installer, and a controller-only SDL2 interface.",
@@ -1586,21 +1601,6 @@
                     "nodejs"
                 ],
                 "updated_at": "2026-09-27T03:17:03Z"
-            },
-            {
-                "name": "token-pulse",
-                "full_name": "jellydn/token-pulse",
-                "description": "A local-first token usage dashboard for CodexBar",
-                "url": "https://github.com/jellydn/token-pulse",
-                "homepage": "https://myusage.itman.fyi/",
-                "stars": 1,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [
-                    "codexbar",
-                    "token-usage"
-                ],
-                "updated_at": "2026-09-18T01:23:27Z"
             },
             {
                 "name": "preview-url",
@@ -1992,7 +1992,7 @@
                     "pulumi",
                     "typescript"
                 ],
-                "updated_at": "2026-10-05T05:41:57Z"
+                "updated_at": "2026-10-07T22:38:10Z"
             },
             {
                 "name": "homebrew-tap",
@@ -3913,7 +3913,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-10-06T09:39:11Z"
+                "updated_at": "2026-10-08T08:15:03Z"
             },
             {
                 "name": "vite-react-jotai",
