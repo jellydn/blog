@@ -359,7 +359,7 @@
                     "download-videos",
                     "twitter"
                 ],
-                "updated_at": "2026-10-06T09:36:41Z"
+                "updated_at": "2026-10-10T12:52:03Z"
             },
             {
                 "name": "pi-clinepass-provider",
@@ -398,7 +398,7 @@
                 "description": "Simple interactive to install biome to your project. Migrate from ESLint and Prettier with a single command",
                 "url": "https://github.com/jellydn/biome-interactive",
                 "homepage": "",
-                "stars": 7,
+                "stars": 8,
                 "forks": 0,
                 "language": "Go",
                 "topics": [
@@ -406,7 +406,7 @@
                     "cli",
                     "golang"
                 ],
-                "updated_at": "2026-09-11T10:49:58Z"
+                "updated_at": "2026-10-11T03:29:41Z"
             },
             {
                 "name": "moleculer-connect",
@@ -548,7 +548,7 @@
                 "description": "Your ultimate guide to setting up Zed with Vim mode, tailored settings, and key bindings for a seamless coding experience",
                 "url": "https://github.com/jellydn/zed-101-setup",
                 "homepage": "https://itman.fyi",
-                "stars": 1461,
+                "stars": 1462,
                 "forks": 31,
                 "language": "TypeScript",
                 "topics": [
@@ -556,7 +556,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-10-09T20:12:25Z"
+                "updated_at": "2026-10-10T10:45:03Z"
             },
             {
                 "name": "typescript-tips",
@@ -952,6 +952,22 @@
                 "updated_at": "2026-08-26T02:41:55Z"
             },
             {
+                "name": "ws-sockette",
+                "full_name": "jellydn/ws-sockette",
+                "description": "The little WebSocket wrapper for nodejs",
+                "url": "https://github.com/jellydn/ws-sockette",
+                "homepage": "",
+                "stars": 5,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [
+                    "nodejs",
+                    "websocket",
+                    "ws"
+                ],
+                "updated_at": "2026-10-10T13:56:48Z"
+            },
+            {
                 "name": "docklight",
                 "full_name": "jellydn/docklight",
                 "description": "A minimal, self-hosted web UI for managing a single-node Dokku server.",
@@ -966,22 +982,6 @@
                     "dokku-web"
                 ],
                 "updated_at": "2026-10-09T02:37:50Z"
-            },
-            {
-                "name": "ws-sockette",
-                "full_name": "jellydn/ws-sockette",
-                "description": "The little WebSocket wrapper for nodejs",
-                "url": "https://github.com/jellydn/ws-sockette",
-                "homepage": "",
-                "stars": 5,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [
-                    "nodejs",
-                    "websocket",
-                    "ws"
-                ],
-                "updated_at": "2026-10-05T04:28:51Z"
             },
             {
                 "name": "monorepo-starter",
@@ -1061,7 +1061,7 @@
                     "template",
                     "typescript"
                 ],
-                "updated_at": "2026-10-08T18:25:57Z"
+                "updated_at": "2026-10-10T12:40:53Z"
             },
             {
                 "name": "platformatic-starter",
@@ -1978,6 +1978,18 @@
                     "typescript"
                 ],
                 "updated_at": "2022-12-28T04:11:44Z"
+            },
+            {
+                "name": "macsweep",
+                "full_name": "jellydn/macsweep",
+                "description": "",
+                "url": "https://github.com/jellydn/macsweep",
+                "homepage": "",
+                "stars": 0,
+                "forks": 0,
+                "language": "Shell",
+                "topics": [],
+                "updated_at": "2026-10-10T14:34:09Z"
             },
             {
                 "name": "imagi",
@@ -2997,7 +3009,7 @@
                 "description": "A set of vim, zsh, fish, tmux, zeliij, git configuration files and tools.",
                 "url": "https://github.com/jellydn/dotfiles",
                 "homepage": "",
-                "stars": 18,
+                "stars": 19,
                 "forks": 3,
                 "language": "Shell",
                 "topics": [
@@ -3015,7 +3027,7 @@
                     "zellij",
                     "zsh"
                 ],
-                "updated_at": "2026-10-06T02:43:54Z"
+                "updated_at": "2026-10-11T03:30:59Z"
             },
             {
                 "name": "learn-vim-with-vscode",
@@ -3586,7 +3598,7 @@
                     "react",
                     "react-email"
                 ],
-                "updated_at": "2026-09-28T06:43:33Z"
+                "updated_at": "2026-10-11T00:32:51Z"
             },
             {
                 "name": "waku-rsc-async-demo",
@@ -3729,7 +3741,7 @@
                     "react",
                     "typescript"
                 ],
-                "updated_at": "2026-10-09T04:57:23Z"
+                "updated_at": "2026-10-10T13:40:37Z"
             },
             {
                 "name": "i18n-react-app",
@@ -3913,7 +3925,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-10-09T09:51:09Z"
+                "updated_at": "2026-10-10T09:15:20Z"
             },
             {
                 "name": "vite-react-jotai",
