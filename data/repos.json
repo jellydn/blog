@@ -9,7 +9,7 @@
                 "url": "https://github.com/jellydn/my-ai-tools",
                 "homepage": "http://ai-tools.itman.fyi/",
                 "stars": 123,
-                "forks": 13,
+                "forks": 12,
                 "language": "Shell",
                 "topics": [
                     "amp",
@@ -560,7 +560,7 @@
                 "description": "Your ultimate guide to setting up Zed with Vim mode, tailored settings, and key bindings for a seamless coding experience",
                 "url": "https://github.com/jellydn/zed-101-setup",
                 "homepage": "https://itman.fyi",
-                "stars": 1462,
+                "stars": 1461,
                 "forks": 31,
                 "language": "TypeScript",
                 "topics": [
@@ -568,7 +568,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-10-14T08:09:21Z"
+                "updated_at": "2026-10-14T17:48:59Z"
             },
             {
                 "name": "typescript-tips",
@@ -593,7 +593,7 @@
                 "description": "A curated list of awesome 🔥 TypeScript Typesafe Libraries🔥",
                 "url": "https://github.com/jellydn/awesome-typesafe",
                 "homepage": "http://typesafe.itman.fyi/",
-                "stars": 198,
+                "stars": 199,
                 "forks": 27,
                 "language": "",
                 "topics": [
@@ -602,7 +602,7 @@
                     "typesafe",
                     "typescript"
                 ],
-                "updated_at": "2026-10-04T21:09:32Z"
+                "updated_at": "2026-10-14T19:23:22Z"
             },
             {
                 "name": "fastify-starter",
@@ -3027,7 +3027,7 @@
                     "zellij",
                     "zsh"
                 ],
-                "updated_at": "2026-10-11T03:30:59Z"
+                "updated_at": "2026-10-14T14:34:19Z"
             },
             {
                 "name": "learn-vim-with-vscode",
@@ -3598,7 +3598,7 @@
                     "react",
                     "react-email"
                 ],
-                "updated_at": "2026-10-12T04:45:23Z"
+                "updated_at": "2026-10-15T06:54:32Z"
             },
             {
                 "name": "waku-rsc-async-demo",
@@ -3925,7 +3925,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-10-13T09:55:23Z"
+                "updated_at": "2026-10-14T08:15:37Z"
             },
             {
                 "name": "vite-react-jotai",
