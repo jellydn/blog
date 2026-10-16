@@ -371,7 +371,7 @@
                     "download-videos",
                     "twitter"
                 ],
-                "updated_at": "2026-10-12T14:27:25Z"
+                "updated_at": "2026-10-15T17:15:05Z"
             },
             {
                 "name": "pi-clinepass-provider",
@@ -568,7 +568,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-10-14T17:48:59Z"
+                "updated_at": "2026-10-16T04:21:11Z"
             },
             {
                 "name": "typescript-tips",
@@ -964,6 +964,25 @@
                 "updated_at": "2026-08-26T02:41:55Z"
             },
             {
+                "name": "monorepo-starter",
+                "full_name": "jellydn/monorepo-starter",
+                "description": "A feature-rich monorepo starter with full Kubernetes support base on with-docker turbo example",
+                "url": "https://github.com/jellydn/monorepo-starter",
+                "homepage": "",
+                "stars": 5,
+                "forks": 0,
+                "language": "Shell",
+                "topics": [
+                    "docker",
+                    "docker-compose",
+                    "k8s",
+                    "monorepo",
+                    "starter-template",
+                    "turborepo"
+                ],
+                "updated_at": "2026-10-16T02:15:39Z"
+            },
+            {
                 "name": "docklight",
                 "full_name": "jellydn/docklight",
                 "description": "A minimal, self-hosted web UI for managing a single-node Dokku server.",
@@ -994,25 +1013,6 @@
                     "ws"
                 ],
                 "updated_at": "2026-10-12T05:51:59Z"
-            },
-            {
-                "name": "monorepo-starter",
-                "full_name": "jellydn/monorepo-starter",
-                "description": "A feature-rich monorepo starter with full Kubernetes support base on with-docker turbo example",
-                "url": "https://github.com/jellydn/monorepo-starter",
-                "homepage": "",
-                "stars": 5,
-                "forks": 0,
-                "language": "Shell",
-                "topics": [
-                    "docker",
-                    "docker-compose",
-                    "k8s",
-                    "monorepo",
-                    "starter-template",
-                    "turborepo"
-                ],
-                "updated_at": "2026-09-11T21:48:12Z"
             },
             {
                 "name": "eslint-config-productsway",
@@ -1313,6 +1313,23 @@
                 "updated_at": "2025-02-05T02:52:59Z"
             },
             {
+                "name": "typescript-mini-starter",
+                "full_name": "jellydn/typescript-mini-starter",
+                "description": "A streamlined and efficient TypeScript starter kit, supporting both ESM and CJS, for quick and versatile project setups.",
+                "url": "https://github.com/jellydn/typescript-mini-starter",
+                "homepage": "",
+                "stars": 2,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [
+                    "cjs",
+                    "esm",
+                    "starter",
+                    "typescript"
+                ],
+                "updated_at": "2026-10-15T17:35:10Z"
+            },
+            {
                 "name": "deno-pkg-starter",
                 "full_name": "jellydn/deno-pkg-starter",
                 "description": "Publish your Typescript library to NPM and Deno",
@@ -1331,23 +1348,6 @@
                     "wasm"
                 ],
                 "updated_at": "2026-10-12T06:15:00Z"
-            },
-            {
-                "name": "typescript-mini-starter",
-                "full_name": "jellydn/typescript-mini-starter",
-                "description": "A streamlined and efficient TypeScript starter kit, supporting both ESM and CJS, for quick and versatile project setups.",
-                "url": "https://github.com/jellydn/typescript-mini-starter",
-                "homepage": "",
-                "stars": 2,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [
-                    "cjs",
-                    "esm",
-                    "starter",
-                    "typescript"
-                ],
-                "updated_at": "2026-10-12T05:22:55Z"
             },
             {
                 "name": "keybinder",
@@ -3925,7 +3925,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-10-14T08:15:37Z"
+                "updated_at": "2026-10-15T07:52:42Z"
             },
             {
                 "name": "vite-react-jotai",
