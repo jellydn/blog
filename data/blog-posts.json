@@ -48,6 +48,14 @@
         "hero_image": "https://cdn.hashnode.com/uploads/covers/56ee654dbcca2d711e191e2a/8ddff3a9-9222-41a8-8e0a-9994c4bee3b4.jpg"
     },
     {
+        "slug": "keep-your-global-dev-tools-fresh",
+        "title": "Keep Your Global Dev Tools Fresh",
+        "description": "One habit that quietly saves me hours every month: regularly updating global developer tools. Here’s my simple routine.\nGo: Update Installed Binaries\ngo install github.com/Gelio/go-global-update@latest\ngo-global-update\n\nThis re-installs Go tools at t...",
+        "date": "2026-02-03T01:48:26.018Z",
+        "tags": [],
+        "hero_image": "https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/mY9NpmCwwKE/upload/a7752fb3a08bc0d64b85649be457bbf0.jpeg"
+    },
+    {
         "slug": "power-up-3-opencode-composable-ai-agents-for-real-coding-workflows",
         "title": "Power-Up #3: OpenCode — Composable AI Agents for Real Coding Workflows",
         "description": "After experimenting with Amp and Plannotator, I’ve been spending more time with OpenCode, and it’s quickly becoming one of the most thoughtfully designed AI coding agents I’ve used.\nThis post focuses on why OpenCode feels different, and when you migh...",
