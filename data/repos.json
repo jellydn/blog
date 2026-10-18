@@ -18,7 +18,7 @@
                     "open-code",
                     "skills"
                 ],
-                "updated_at": "2026-10-12T01:10:34Z"
+                "updated_at": "2026-10-18T06:57:10Z"
             },
             {
                 "name": "gpt4free-demo",
@@ -560,7 +560,7 @@
                 "description": "Your ultimate guide to setting up Zed with Vim mode, tailored settings, and key bindings for a seamless coding experience",
                 "url": "https://github.com/jellydn/zed-101-setup",
                 "homepage": "https://itman.fyi",
-                "stars": 1462,
+                "stars": 1463,
                 "forks": 31,
                 "language": "TypeScript",
                 "topics": [
@@ -568,7 +568,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-10-17T05:48:38Z"
+                "updated_at": "2026-10-17T09:10:51Z"
             },
             {
                 "name": "typescript-tips",
@@ -1544,7 +1544,7 @@
                 "topics": [
                     "python"
                 ],
-                "updated_at": "2026-10-13T18:40:13Z"
+                "updated_at": "2026-10-18T00:52:21Z"
             },
             {
                 "name": "prosody",
@@ -3925,7 +3925,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-10-17T06:27:04Z"
+                "updated_at": "2026-10-18T06:51:53Z"
             },
             {
                 "name": "vite-react-jotai",
