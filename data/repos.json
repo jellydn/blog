@@ -18,7 +18,7 @@
                     "open-code",
                     "skills"
                 ],
-                "updated_at": "2026-10-18T06:57:10Z"
+                "updated_at": "2026-10-18T14:47:13Z"
             },
             {
                 "name": "gpt4free-demo",
@@ -168,7 +168,7 @@
                 "topics": [
                     "hermes-agent"
                 ],
-                "updated_at": "2026-10-14T03:10:36Z"
+                "updated_at": "2026-10-19T01:08:22Z"
             },
             {
                 "name": "flowly",
@@ -184,7 +184,7 @@
                     "flue",
                     "flueframework"
                 ],
-                "updated_at": "2026-10-12T01:04:28Z"
+                "updated_at": "2026-10-19T01:07:28Z"
             },
             {
                 "name": "logpilot",
@@ -201,7 +201,7 @@
                     "mcp-server",
                     "tmux"
                 ],
-                "updated_at": "2026-10-12T01:10:25Z"
+                "updated_at": "2026-10-19T01:07:48Z"
             },
             {
                 "name": "ai-photo-coach",
@@ -371,7 +371,7 @@
                     "download-videos",
                     "twitter"
                 ],
-                "updated_at": "2026-10-15T17:15:05Z"
+                "updated_at": "2026-10-19T05:45:17Z"
             },
             {
                 "name": "pi-clinepass-provider",
@@ -418,7 +418,7 @@
                     "cli",
                     "golang"
                 ],
-                "updated_at": "2026-10-11T03:29:41Z"
+                "updated_at": "2026-10-19T01:07:08Z"
             },
             {
                 "name": "moleculer-connect",
@@ -498,7 +498,7 @@
                     "golang",
                     "gui"
                 ],
-                "updated_at": "2026-10-12T01:09:16Z"
+                "updated_at": "2026-10-19T01:07:31Z"
             },
             {
                 "name": "eslint-fixer",
@@ -682,7 +682,7 @@
                     "express-js",
                     "vercel"
                 ],
-                "updated_at": "2026-10-12T05:01:17Z"
+                "updated_at": "2026-10-19T06:46:11Z"
             },
             {
                 "name": "miryoku-silakka54-layout",
@@ -964,6 +964,22 @@
                 "updated_at": "2026-08-26T02:41:55Z"
             },
             {
+                "name": "ws-sockette",
+                "full_name": "jellydn/ws-sockette",
+                "description": "The little WebSocket wrapper for nodejs",
+                "url": "https://github.com/jellydn/ws-sockette",
+                "homepage": "",
+                "stars": 5,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [
+                    "nodejs",
+                    "websocket",
+                    "ws"
+                ],
+                "updated_at": "2026-10-19T06:25:34Z"
+            },
+            {
                 "name": "monorepo-starter",
                 "full_name": "jellydn/monorepo-starter",
                 "description": "A feature-rich monorepo starter with full Kubernetes support base on with-docker turbo example",
@@ -997,22 +1013,6 @@
                     "dokku-web"
                 ],
                 "updated_at": "2026-10-14T00:46:00Z"
-            },
-            {
-                "name": "ws-sockette",
-                "full_name": "jellydn/ws-sockette",
-                "description": "The little WebSocket wrapper for nodejs",
-                "url": "https://github.com/jellydn/ws-sockette",
-                "homepage": "",
-                "stars": 5,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [
-                    "nodejs",
-                    "websocket",
-                    "ws"
-                ],
-                "updated_at": "2026-10-12T05:51:59Z"
             },
             {
                 "name": "eslint-config-productsway",
@@ -1073,7 +1073,7 @@
                     "template",
                     "typescript"
                 ],
-                "updated_at": "2026-10-12T06:06:18Z"
+                "updated_at": "2026-10-19T04:39:22Z"
             },
             {
                 "name": "platformatic-starter",
@@ -1313,23 +1313,6 @@
                 "updated_at": "2025-02-05T02:52:59Z"
             },
             {
-                "name": "typescript-mini-starter",
-                "full_name": "jellydn/typescript-mini-starter",
-                "description": "A streamlined and efficient TypeScript starter kit, supporting both ESM and CJS, for quick and versatile project setups.",
-                "url": "https://github.com/jellydn/typescript-mini-starter",
-                "homepage": "",
-                "stars": 2,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [
-                    "cjs",
-                    "esm",
-                    "starter",
-                    "typescript"
-                ],
-                "updated_at": "2026-10-15T17:35:10Z"
-            },
-            {
                 "name": "deno-pkg-starter",
                 "full_name": "jellydn/deno-pkg-starter",
                 "description": "Publish your Typescript library to NPM and Deno",
@@ -1347,7 +1330,24 @@
                     "typescript",
                     "wasm"
                 ],
-                "updated_at": "2026-10-12T06:15:00Z"
+                "updated_at": "2026-10-19T06:34:06Z"
+            },
+            {
+                "name": "typescript-mini-starter",
+                "full_name": "jellydn/typescript-mini-starter",
+                "description": "A streamlined and efficient TypeScript starter kit, supporting both ESM and CJS, for quick and versatile project setups.",
+                "url": "https://github.com/jellydn/typescript-mini-starter",
+                "homepage": "",
+                "stars": 2,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [
+                    "cjs",
+                    "esm",
+                    "starter",
+                    "typescript"
+                ],
+                "updated_at": "2026-10-19T05:47:29Z"
             },
             {
                 "name": "keybinder",
@@ -1363,7 +1363,7 @@
                     "skhd",
                     "tauri-app"
                 ],
-                "updated_at": "2026-10-12T01:09:40Z"
+                "updated_at": "2026-10-19T01:08:26Z"
             },
             {
                 "name": ".dotfiles",
@@ -1533,44 +1533,6 @@
                 "updated_at": "2022-06-22T10:27:12Z"
             },
             {
-                "name": "practicepython",
-                "full_name": "jellydn/practicepython",
-                "description": "Learn how to code by practicing Python exercises.",
-                "url": "https://github.com/jellydn/practicepython",
-                "homepage": "",
-                "stars": 1,
-                "forks": 0,
-                "language": "",
-                "topics": [
-                    "python"
-                ],
-                "updated_at": "2026-10-18T00:52:21Z"
-            },
-            {
-                "name": "prosody",
-                "full_name": "jellydn/prosody",
-                "description": "English Rhythm Coach",
-                "url": "https://github.com/jellydn/prosody",
-                "homepage": "",
-                "stars": 1,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [],
-                "updated_at": "2026-10-12T01:10:50Z"
-            },
-            {
-                "name": "brave-buddy",
-                "full_name": "jellydn/brave-buddy",
-                "description": "Create a short, playful practice experience for children aged 6–12. Children learn to SEE → THINK → RESPOND → GET HELP in common social situations. The app uses only reviewed, human-authored scenarios.",
-                "url": "https://github.com/jellydn/brave-buddy",
-                "homepage": "http://brave-buddy.itman.fyi/",
-                "stars": 1,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [],
-                "updated_at": "2026-10-12T01:08:13Z"
-            },
-            {
                 "name": "knulli-app-store",
                 "full_name": "jellydn/knulli-app-store",
                 "description": "Knulli App Store is a safe community package manager for Knulli utilities, themes, and integrations. It has a reviewable catalogue, a transactional installer, and a controller-only SDL2 interface.",
@@ -1583,7 +1545,45 @@
                     "knulli",
                     "knulli-theme"
                 ],
-                "updated_at": "2026-10-12T01:04:57Z"
+                "updated_at": "2026-10-19T08:01:39Z"
+            },
+            {
+                "name": "practicepython",
+                "full_name": "jellydn/practicepython",
+                "description": "Learn how to code by practicing Python exercises.",
+                "url": "https://github.com/jellydn/practicepython",
+                "homepage": "",
+                "stars": 1,
+                "forks": 0,
+                "language": "",
+                "topics": [
+                    "python"
+                ],
+                "updated_at": "2026-10-19T05:47:15Z"
+            },
+            {
+                "name": "brave-buddy",
+                "full_name": "jellydn/brave-buddy",
+                "description": "Create a short, playful practice experience for children aged 6–12. Children learn to SEE → THINK → RESPOND → GET HELP in common social situations. The app uses only reviewed, human-authored scenarios.",
+                "url": "https://github.com/jellydn/brave-buddy",
+                "homepage": "http://brave-buddy.itman.fyi/",
+                "stars": 1,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [],
+                "updated_at": "2026-10-19T01:07:12Z"
+            },
+            {
+                "name": "prosody",
+                "full_name": "jellydn/prosody",
+                "description": "English Rhythm Coach",
+                "url": "https://github.com/jellydn/prosody",
+                "homepage": "",
+                "stars": 1,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [],
+                "updated_at": "2026-10-12T01:10:50Z"
             },
             {
                 "name": "foldimals",
@@ -1980,6 +1980,18 @@
                 "updated_at": "2022-12-28T04:11:44Z"
             },
             {
+                "name": "knulli-random-game-picker",
+                "full_name": "jellydn/knulli-random-game-picker",
+                "description": "",
+                "url": "https://github.com/jellydn/knulli-random-game-picker",
+                "homepage": "",
+                "stars": 0,
+                "forks": 0,
+                "language": "C++",
+                "topics": [],
+                "updated_at": "2026-10-19T07:52:15Z"
+            },
+            {
                 "name": "pulumi-kubernetes-typescript",
                 "full_name": "jellydn/pulumi-kubernetes-typescript",
                 "description": "Simple Kubernetes cluster with TypeScript for Pulumi.",
@@ -1992,7 +2004,45 @@
                     "pulumi",
                     "typescript"
                 ],
-                "updated_at": "2026-10-17T05:58:46Z"
+                "updated_at": "2026-10-19T04:42:49Z"
+            },
+            {
+                "name": "stay-awake",
+                "full_name": "jellydn/stay-awake",
+                "description": "Stay Awake - macOS system tray app to prevent system and display sleep",
+                "url": "https://github.com/jellydn/stay-awake",
+                "homepage": "",
+                "stars": 0,
+                "forks": 0,
+                "language": "Shell",
+                "topics": [],
+                "updated_at": "2026-10-19T01:09:36Z"
+            },
+            {
+                "name": "echo-note",
+                "full_name": "jellydn/echo-note",
+                "description": "Privacy-first meeting transcription and summarization app",
+                "url": "https://github.com/jellydn/echo-note",
+                "homepage": "",
+                "stars": 0,
+                "forks": 0,
+                "language": "Rust",
+                "topics": [],
+                "updated_at": "2026-10-19T01:08:57Z"
+            },
+            {
+                "name": "esp32-pomodoro-clock",
+                "full_name": "jellydn/esp32-pomodoro-clock",
+                "description": "Always-on NTP clock and touch-controlled Pomodoro firmware",
+                "url": "https://github.com/jellydn/esp32-pomodoro-clock",
+                "homepage": "",
+                "stars": 0,
+                "forks": 0,
+                "language": "C++",
+                "topics": [
+                    "esp32-s3"
+                ],
+                "updated_at": "2026-10-19T01:07:22Z"
             },
             {
                 "name": "macsweep",
@@ -2029,44 +2079,6 @@
                 "language": "TypeScript",
                 "topics": [],
                 "updated_at": "2026-10-12T01:11:18Z"
-            },
-            {
-                "name": "echo-note",
-                "full_name": "jellydn/echo-note",
-                "description": "Privacy-first meeting transcription and summarization app",
-                "url": "https://github.com/jellydn/echo-note",
-                "homepage": "",
-                "stars": 0,
-                "forks": 0,
-                "language": "Rust",
-                "topics": [],
-                "updated_at": "2026-10-12T01:08:55Z"
-            },
-            {
-                "name": "stay-awake",
-                "full_name": "jellydn/stay-awake",
-                "description": "Stay Awake - macOS system tray app to prevent system and display sleep",
-                "url": "https://github.com/jellydn/stay-awake",
-                "homepage": "",
-                "stars": 0,
-                "forks": 0,
-                "language": "Shell",
-                "topics": [],
-                "updated_at": "2026-10-12T01:05:54Z"
-            },
-            {
-                "name": "esp32-pomodoro-clock",
-                "full_name": "jellydn/esp32-pomodoro-clock",
-                "description": "Always-on NTP clock and touch-controlled Pomodoro firmware",
-                "url": "https://github.com/jellydn/esp32-pomodoro-clock",
-                "homepage": "",
-                "stars": 0,
-                "forks": 0,
-                "language": "C++",
-                "topics": [
-                    "esp32-s3"
-                ],
-                "updated_at": "2026-10-12T01:04:22Z"
             },
             {
                 "name": "imagi",
@@ -3193,7 +3205,7 @@
                 "topics": [
                     "vscode-extension"
                 ],
-                "updated_at": "2026-10-12T05:21:45Z"
+                "updated_at": "2026-10-19T04:46:53Z"
             },
             {
                 "name": "vscode-fff-gpui",
@@ -3925,7 +3937,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-10-18T06:51:53Z"
+                "updated_at": "2026-10-19T05:16:03Z"
             },
             {
                 "name": "vite-react-jotai",
