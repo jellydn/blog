@@ -218,6 +218,18 @@
                 "updated_at": "2026-10-12T01:04:04Z"
             },
             {
+                "name": "awesome-ai-agent-orchestrators",
+                "full_name": "jellydn/awesome-ai-agent-orchestrators",
+                "description": "",
+                "url": "https://github.com/jellydn/awesome-ai-agent-orchestrators",
+                "homepage": "",
+                "stars": 1,
+                "forks": 0,
+                "language": "",
+                "topics": [],
+                "updated_at": "2026-10-19T09:22:13Z"
+            },
+            {
                 "name": "personal-ai",
                 "full_name": "jellydn/personal-ai",
                 "description": "My public original repositories created while exploring AI-assisted development since Oct 2025 ",
@@ -256,18 +268,6 @@
                 "language": "TypeScript",
                 "topics": [],
                 "updated_at": "2026-10-12T01:05:22Z"
-            },
-            {
-                "name": "awesome-ai-agent-orchestrators",
-                "full_name": "jellydn/awesome-ai-agent-orchestrators",
-                "description": "",
-                "url": "https://github.com/jellydn/awesome-ai-agent-orchestrators",
-                "homepage": "",
-                "stars": 1,
-                "forks": 0,
-                "language": "",
-                "topics": [],
-                "updated_at": "2026-10-01T07:42:19Z"
             },
             {
                 "name": "prompt-bench",
@@ -568,7 +568,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-10-17T09:10:51Z"
+                "updated_at": "2026-10-19T18:19:13Z"
             },
             {
                 "name": "typescript-tips",
@@ -1545,7 +1545,7 @@
                     "knulli",
                     "knulli-theme"
                 ],
-                "updated_at": "2026-10-19T08:01:39Z"
+                "updated_at": "2026-10-20T07:43:19Z"
             },
             {
                 "name": "practicepython",
@@ -1978,6 +1978,18 @@
                     "typescript"
                 ],
                 "updated_at": "2022-12-28T04:11:44Z"
+            },
+            {
+                "name": "try-win11",
+                "full_name": "jellydn/try-win11",
+                "description": "",
+                "url": "https://github.com/jellydn/try-win11",
+                "homepage": "",
+                "stars": 0,
+                "forks": 0,
+                "language": "Python",
+                "topics": [],
+                "updated_at": "2026-10-19T12:58:27Z"
             },
             {
                 "name": "knulli-random-game-picker",
@@ -3004,7 +3016,7 @@
                 "description": "spinner.nvim is a single file, no-dependency plugin for Neovim",
                 "url": "https://github.com/jellydn/spinner.nvim",
                 "homepage": "",
-                "stars": 23,
+                "stars": 22,
                 "forks": 0,
                 "language": "Lua",
                 "topics": [
@@ -3013,7 +3025,7 @@
                     "neovim-plugin",
                     "spinner"
                 ],
-                "updated_at": "2026-04-27T12:53:55Z"
+                "updated_at": "2026-10-20T05:55:56Z"
             },
             {
                 "name": "dotfiles",
@@ -3080,7 +3092,7 @@
                 "description": "A lightweight Neovim plugin that masks sensitive data (API keys, secrets, tokens) in .env, JSON, and YAML files",
                 "url": "https://github.com/jellydn/tiny-cloak.nvim",
                 "homepage": "",
-                "stars": 10,
+                "stars": 9,
                 "forks": 0,
                 "language": "Lua",
                 "topics": [
@@ -3088,7 +3100,7 @@
                     "nvim",
                     "nvim-plugin"
                 ],
-                "updated_at": "2026-09-11T10:31:00Z"
+                "updated_at": "2026-10-20T05:56:28Z"
             },
             {
                 "name": "tiny-term.nvim",
@@ -3096,7 +3108,7 @@
                 "description": "A minimal, standalone Neovim 0.11+ terminal",
                 "url": "https://github.com/jellydn/tiny-term.nvim",
                 "homepage": "",
-                "stars": 7,
+                "stars": 6,
                 "forks": 0,
                 "language": "Lua",
                 "topics": [
@@ -3104,7 +3116,7 @@
                     "nvim-plugin",
                     "terminal"
                 ],
-                "updated_at": "2026-09-11T10:31:04Z"
+                "updated_at": "2026-10-20T05:56:31Z"
             },
             {
                 "name": "nvim-ide",
@@ -3937,7 +3949,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-10-19T05:16:03Z"
+                "updated_at": "2026-10-20T06:58:25Z"
             },
             {
                 "name": "vite-react-jotai",
