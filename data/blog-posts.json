@@ -2,7 +2,7 @@
     {
         "slug": "power-up-8-three-months-with-amp-orb-from-cli-to-cloud-agents",
         "title": "Power-Up #8: Three Months with Amp Orb: From CLI to Cloud Agents",
-        "description": "I've been using Amp Orbs for about three months, and it has changed how I build software.\n\n\nI've used AI coding assistants for a long time, from terminal agents to IDE integrations. Amp is the first o",
+        "description": "The best AI coding workflow isn't the one with the most powerful model. It's the one that needs the least unnecessary attention from me.",
         "date": "2026-10-08T07:34:50.529Z",
         "tags": [],
         "hero_image": "https://cdn.hashnode.com/uploads/covers/56ee654dbcca2d711e191e2a/5201ff80-62a1-4c43-8554-0923911a096c.png"
@@ -10,7 +10,7 @@
     {
         "slug": "power-up-7-let-ai-research-your-code-while-you-sleep",
         "title": "Power-Up #7: Let AI Research Your Code While You Sleep",
-        "description": "In the previous Power-Up posts, I've explored AI coding assistants, AI workflows, agent-based development, and AI launchers.\nThis week, I want to talk about something that feels like the next step: au",
+        "description": "In the previous Power-Up posts, I've explored AI coding assistants, AI workflows, agent-based development, and AI launchers. This week, I want to talk…",
         "date": "2026-06-10T05:51:08.728Z",
         "tags": [],
         "hero_image": "https://cdn.hashnode.com/uploads/og-images/56ee654dbcca2d711e191e2a/20fbb481-d596-41c4-bf20-b5f8e3c02a7a.png"
@@ -18,7 +18,7 @@
     {
         "slug": "power-up-6-my-ai-launcher",
         "title": "Power-Up #6: My AI Launcher",
-        "description": "AI coding tools are everywhere now: Claude Code, Codex, OpenCode, Amp, Pi, etc.\nThe problem is not “which AI is best” anymore. The real problem is: How do you actually integrate them into your daily w",
+        "description": "AI coding tools are everywhere now: Claude Code, Codex, OpenCode, Amp, Pi, etc. The problem is not “which AI is best” anymore. The real problem is: How do…",
         "date": "2026-05-26T01:03:03.991Z",
         "tags": [],
         "hero_image": "https://cdn.hashnode.com/uploads/og-images/56ee654dbcca2d711e191e2a/95034ee2-cfb8-42e3-97f8-628d10cd5c1e.jpg"
@@ -26,7 +26,7 @@
     {
         "slug": "power-up-5-my-ai-builder-workflow-in-2026",
         "title": "Power-Up #5: My AI Builder Workflow in 2026",
-        "description": "This is my current AI builder system. Instead of relying on one tool for everything, I now use different AI tools for different stages of product development. This creates a workflow that feels like h",
+        "description": "AI is no longer just a chatbot. For engineers, it has become a team of specialists.",
         "date": "2026-04-19T10:21:29.355Z",
         "tags": [],
         "hero_image": "https://cdn.hashnode.com/uploads/og-images/56ee654dbcca2d711e191e2a/0a28582d-bb18-4d63-ab22-846f1b0a3168.png"
@@ -34,7 +34,7 @@
     {
         "slug": "power-up-4-my-ai-workflow",
         "title": "Power-Up #4: My AI Workflow",
-        "description": "In the previous post, I shared about OpenCode works. Now, let’s go one level deeper. This is the exact workflow I use daily to ship code faster, combining GitHub issue, Copilot Agent, and multiple AI",
+        "description": "In the previous post, I shared about OpenCode works. Now, let’s go one level deeper. This is the exact workflow I use daily to ship code faster, combining…",
         "date": "2026-04-07T02:30:00.000Z",
         "tags": [],
         "hero_image": "https://cdn.hashnode.com/uploads/og-images/56ee654dbcca2d711e191e2a/78b879a4-6d1a-44d8-bd88-6a2610307a2f.png"
@@ -42,7 +42,7 @@
     {
         "slug": "amp-hack-night-singapore",
         "title": "Amp Hack Night Singapore!",
-        "description": "I just returned from the meetup and wanted to share a few thoughts while they’re still fresh.\nTo be honest, I came in expecting to see something new, maybe a beta feature, an experimental workflow, or",
+        "description": "I just returned from the meetup and wanted to share a few thoughts while they’re still fresh. To be honest, I came in expecting to see something new, maybe…",
         "date": "2026-02-26T14:11:43.669Z",
         "tags": [],
         "hero_image": "https://cdn.hashnode.com/uploads/covers/56ee654dbcca2d711e191e2a/8ddff3a9-9222-41a8-8e0a-9994c4bee3b4.jpg"
@@ -50,7 +50,7 @@
     {
         "slug": "keep-your-global-dev-tools-fresh",
         "title": "Keep Your Global Dev Tools Fresh",
-        "description": "One habit that quietly saves me hours every month: regularly updating global developer tools. Here’s my simple routine.\nGo: Update Installed Binaries\ngo install github.com/Gelio/go-global-update@latest\ngo-global-update\n\nThis re-installs Go tools at t...",
+        "description": "Without Thinking Too Hard",
         "date": "2026-02-03T01:48:26.018Z",
         "tags": [],
         "hero_image": "https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/mY9NpmCwwKE/upload/a7752fb3a08bc0d64b85649be457bbf0.jpeg"
@@ -58,7 +58,7 @@
     {
         "slug": "power-up-3-opencode-composable-ai-agents-for-real-coding-workflows",
         "title": "Power-Up #3: OpenCode — Composable AI Agents for Real Coding Workflows",
-        "description": "After experimenting with Amp and Plannotator, I’ve been spending more time with OpenCode, and it’s quickly becoming one of the most thoughtfully designed AI coding agents I’ve used.\nThis post focuses on why OpenCode feels different, and when you migh...",
+        "description": "Open source AI coding agent with free models or connect your own, like Claude, GPT, Gemini.",
         "date": "2026-01-22T02:18:12.002Z",
         "tags": [],
         "hero_image": "https://cdn.hashnode.com/res/hashnode/image/upload/v1769048358793/b6ac629e-23fb-45da-b12f-672073702d15.png"
@@ -66,7 +66,7 @@
     {
         "slug": "power-up-2-plannotator-visual-plan-review-for-coding-agents",
         "title": "Power-Up #2: Plannotator — Visual Plan Review for Coding Agents",
-        "description": "In the first entry of this series, I discussed Amp: an opinionated AI that integrates naturally into real developer workflows. This time, I want to highlight a tool that solves a specific but painful problem when working with AI coding agents: review...",
+        "description": "Transform Plan Reviews Into an Enjoyable Experience",
         "date": "2026-01-06T05:30:55.035Z",
         "tags": [],
         "hero_image": "https://cdn.hashnode.com/res/hashnode/image/upload/v1770029871305/76965cf1-e3bc-44dd-a0e3-fbd02d3aa113.png"
@@ -74,7 +74,7 @@
     {
         "slug": "power-up-1-amp-opinionated-ai-that-fits-real-developer-workflows",
         "title": "Power-Up #1: Amp — Opinionated AI That Fits Real Developer Workflows",
-        "description": "In this entry of my AI DX/Tools series, I want to discuss Amp: an AI coding agent designed for developers who spend most of their time in the terminal and editor, rather than in chat windows.\n\nAmp is free to try, works locally, and integrates directl...",
+        "description": "The free-with-ads CLI is a smart move: accessible, usable",
         "date": "2026-01-05T01:21:47.826Z",
         "tags": [],
         "hero_image": "https://cdn.hashnode.com/res/hashnode/image/upload/v1770029911005/7a284f41-4329-4043-ba1b-4b5bc2ed813d.png"
@@ -90,7 +90,7 @@
     {
         "slug": "4-levels-of-ai-assistant-customization-with-claude-code",
         "title": "4 Levels of AI Assistant Customization with Claude Code",
-        "description": "Tired of re-explaining project standards or copy-pasting documentation links to your AI coding assistant? I’ve been exploring Claude Code’s customization layers, and they offer a powerful progression from simple prompts to a fully automated developme...",
+        "description": "Tired of re-explaining project standards or copy-pasting documentation links to your AI coding assistant? I’ve been exploring Claude Code’s customization…",
         "date": "2025-12-23T16:00:16.667Z",
         "tags": [],
         "hero_image": "https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/FHgWFzDDAOs/upload/0e31e736760887b500f840c03fc44ed4.jpeg"
@@ -106,7 +106,7 @@
     {
         "slug": "must-have-tool-for-your-javascript-monorepo-sherif",
         "title": "Must-Have tool for your JavaScript monorepo — Sherif",
-        "description": "Managing monorepos at scale? Don’t miss Sherif — an opinionated, zero-config linter for JavaScript monorepos that enforces consistency, improves DevX, and prevents regressions.\n💡 Why Sherif?\n\n⚡ Fast — Written in Rust, no need for node_modules\n\n🔧 Ze...",
+        "description": "Managing monorepos at scale? Don’t miss Sherif — an opinionated, zero-config linter for JavaScript monorepos that enforces consistency, improves DevX, and…",
         "date": "2025-07-21T12:29:36.257Z",
         "tags": [],
         "hero_image": "https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/g6YO_FyafLc/upload/fc6d67c6664b4c6a4400946261ee529d.jpeg"
@@ -114,7 +114,7 @@
     {
         "slug": "label-your-ai-vs-human-code-in-commit",
         "title": "Label Your AI vs Human Code in Commit",
-        "description": "Quick Tip for Better Team Collaboration\nSince many teams already have their git commit practices, here’s a simple addition that makes a big difference:\nAI-Generated Code:\nThore are good examples from my https://github.com/jellydn/moleculer-typescript...",
+        "description": "Since many teams already have their git commit practices, here’s a simple addition that makes a big difference: AI-Generated Code: Thore are good examples…",
         "date": "2025-07-16T02:10:14.914Z",
         "tags": [],
         "hero_image": "https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/505eectW54k/upload/cd7691d4eb7e9a4cb6baf98335b2337c.jpeg"
@@ -218,7 +218,7 @@
     {
         "slug": "looking-back-moving-forward-2023-reflections-and-2024-visions",
         "title": "Looking Back, Moving Forward: 2023 Reflections and 2024 Visions",
-        "description": "My goals in 2018\n\nThis was my target six years ago. It didn't go as planned. Now, I'm ready to revive this habit again :)\nWhat about 2023?\nThere are a few things for which I am grateful:\n\nRelocating from Japan to Singapore has been a pivotal change f...",
+        "description": "Embracing Change and Setting New Goals",
         "date": "2024-01-01T15:37:04.697Z",
         "tags": [],
         "hero_image": "https://cdn.hashnode.com/res/hashnode/image/upload/v1704123405189/bcae00de-0a7a-4225-a94f-1f51a0cbcefd.png"
@@ -242,7 +242,7 @@
     {
         "slug": "introducing-hurlnvim-a-new-neovim-plugin-for-http-requests",
         "title": "hurl.nvim - A New Neovim Plugin for HTTP Requests",
-        "description": "Hurl.nvim is a Neovim plugin designed to run HTTP requests directly from `.hurl` files. Elevate your API development workflow by executing and viewing respo",
+        "description": "Hurl.nvim is a Neovim plugin designed to run HTTP requests directly from `.hurl` files. Elevate your API development workflow by executing and viewing…",
         "date": "2023-11-09T14:08:38.807Z",
         "tags": [],
         "hero_image": "https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/f77Bh3inUpE/upload/c0ecc400d8c1c25bf15f55f8d1d4ecae.jpeg"
