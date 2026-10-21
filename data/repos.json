@@ -18,7 +18,7 @@
                     "open-code",
                     "skills"
                 ],
-                "updated_at": "2026-10-18T14:47:13Z"
+                "updated_at": "2026-10-21T07:50:54Z"
             },
             {
                 "name": "gpt4free-demo",
@@ -103,7 +103,7 @@
                     "pi",
                     "pi-plugins"
                 ],
-                "updated_at": "2026-10-17T06:35:01Z"
+                "updated_at": "2026-10-20T15:58:26Z"
             },
             {
                 "name": "ai-launcher",
@@ -560,7 +560,7 @@
                 "description": "Your ultimate guide to setting up Zed with Vim mode, tailored settings, and key bindings for a seamless coding experience",
                 "url": "https://github.com/jellydn/zed-101-setup",
                 "homepage": "https://itman.fyi",
-                "stars": 1463,
+                "stars": 1464,
                 "forks": 31,
                 "language": "TypeScript",
                 "topics": [
@@ -568,7 +568,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-10-19T18:19:13Z"
+                "updated_at": "2026-10-21T04:38:45Z"
             },
             {
                 "name": "typescript-tips",
@@ -1545,7 +1545,7 @@
                     "knulli",
                     "knulli-theme"
                 ],
-                "updated_at": "2026-10-20T07:43:19Z"
+                "updated_at": "2026-10-21T07:42:51Z"
             },
             {
                 "name": "practicepython",
@@ -3051,7 +3051,7 @@
                     "zellij",
                     "zsh"
                 ],
-                "updated_at": "2026-10-14T14:34:19Z"
+                "updated_at": "2026-10-21T07:09:30Z"
             },
             {
                 "name": "learn-vim-with-vscode",
@@ -3351,7 +3351,7 @@
                 "url": "https://github.com/jellydn/dapp-token-ico",
                 "homepage": "https://dapp-token-ico.productsway.com/",
                 "stars": 125,
-                "forks": 62,
+                "forks": 61,
                 "language": "TypeScript",
                 "topics": [
                     "crowdsale",
@@ -3949,7 +3949,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-10-20T06:58:25Z"
+                "updated_at": "2026-10-21T00:45:39Z"
             },
             {
                 "name": "vite-react-jotai",
