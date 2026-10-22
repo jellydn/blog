@@ -371,7 +371,7 @@
                     "download-videos",
                     "twitter"
                 ],
-                "updated_at": "2026-10-19T05:45:17Z"
+                "updated_at": "2026-10-21T17:08:40Z"
             },
             {
                 "name": "pi-clinepass-provider",
@@ -402,7 +402,7 @@
                     "cspell",
                     "spell-check"
                 ],
-                "updated_at": "2026-10-08T20:10:24Z"
+                "updated_at": "2026-10-22T06:38:27Z"
             },
             {
                 "name": "biome-interactive",
@@ -568,7 +568,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-10-21T04:38:45Z"
+                "updated_at": "2026-10-22T05:48:31Z"
             },
             {
                 "name": "typescript-tips",
@@ -1073,7 +1073,7 @@
                     "template",
                     "typescript"
                 ],
-                "updated_at": "2026-10-19T04:39:22Z"
+                "updated_at": "2026-10-21T13:53:02Z"
             },
             {
                 "name": "platformatic-starter",
@@ -1313,6 +1313,23 @@
                 "updated_at": "2025-02-05T02:52:59Z"
             },
             {
+                "name": "typescript-mini-starter",
+                "full_name": "jellydn/typescript-mini-starter",
+                "description": "A streamlined and efficient TypeScript starter kit, supporting both ESM and CJS, for quick and versatile project setups.",
+                "url": "https://github.com/jellydn/typescript-mini-starter",
+                "homepage": "",
+                "stars": 2,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [
+                    "cjs",
+                    "esm",
+                    "starter",
+                    "typescript"
+                ],
+                "updated_at": "2026-10-21T19:50:41Z"
+            },
+            {
                 "name": "deno-pkg-starter",
                 "full_name": "jellydn/deno-pkg-starter",
                 "description": "Publish your Typescript library to NPM and Deno",
@@ -1331,23 +1348,6 @@
                     "wasm"
                 ],
                 "updated_at": "2026-10-19T06:34:06Z"
-            },
-            {
-                "name": "typescript-mini-starter",
-                "full_name": "jellydn/typescript-mini-starter",
-                "description": "A streamlined and efficient TypeScript starter kit, supporting both ESM and CJS, for quick and versatile project setups.",
-                "url": "https://github.com/jellydn/typescript-mini-starter",
-                "homepage": "",
-                "stars": 2,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [
-                    "cjs",
-                    "esm",
-                    "starter",
-                    "typescript"
-                ],
-                "updated_at": "2026-10-19T05:47:29Z"
             },
             {
                 "name": "keybinder",
@@ -1533,6 +1533,20 @@
                 "updated_at": "2022-06-22T10:27:12Z"
             },
             {
+                "name": "practicepython",
+                "full_name": "jellydn/practicepython",
+                "description": "Learn how to code by practicing Python exercises.",
+                "url": "https://github.com/jellydn/practicepython",
+                "homepage": "",
+                "stars": 1,
+                "forks": 0,
+                "language": "",
+                "topics": [
+                    "python"
+                ],
+                "updated_at": "2026-10-22T06:24:16Z"
+            },
+            {
                 "name": "knulli-app-store",
                 "full_name": "jellydn/knulli-app-store",
                 "description": "Knulli App Store is a safe community package manager for Knulli utilities, themes, and integrations. It has a reviewable catalogue, a transactional installer, and a controller-only SDL2 interface.",
@@ -1546,20 +1560,6 @@
                     "knulli-theme"
                 ],
                 "updated_at": "2026-10-21T07:42:51Z"
-            },
-            {
-                "name": "practicepython",
-                "full_name": "jellydn/practicepython",
-                "description": "Learn how to code by practicing Python exercises.",
-                "url": "https://github.com/jellydn/practicepython",
-                "homepage": "",
-                "stars": 1,
-                "forks": 0,
-                "language": "",
-                "topics": [
-                    "python"
-                ],
-                "updated_at": "2026-10-19T05:47:15Z"
             },
             {
                 "name": "brave-buddy",
@@ -1980,6 +1980,33 @@
                 "updated_at": "2022-12-28T04:11:44Z"
             },
             {
+                "name": "eight-weeks-health",
+                "full_name": "jellydn/eight-weeks-health",
+                "description": "A privacy-friendly, mobile-first 56-day wellness tracker.",
+                "url": "https://github.com/jellydn/eight-weeks-health",
+                "homepage": "http://8-weeks.itman.fyi/",
+                "stars": 0,
+                "forks": 0,
+                "language": "HTML",
+                "topics": [],
+                "updated_at": "2026-10-22T03:34:52Z"
+            },
+            {
+                "name": "pulumi-kubernetes-typescript",
+                "full_name": "jellydn/pulumi-kubernetes-typescript",
+                "description": "Simple Kubernetes cluster with TypeScript for Pulumi.",
+                "url": "https://github.com/jellydn/pulumi-kubernetes-typescript",
+                "homepage": "",
+                "stars": 0,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [
+                    "pulumi",
+                    "typescript"
+                ],
+                "updated_at": "2026-10-22T00:01:20Z"
+            },
+            {
                 "name": "try-win11",
                 "full_name": "jellydn/try-win11",
                 "description": "",
@@ -2002,21 +2029,6 @@
                 "language": "C++",
                 "topics": [],
                 "updated_at": "2026-10-19T07:52:15Z"
-            },
-            {
-                "name": "pulumi-kubernetes-typescript",
-                "full_name": "jellydn/pulumi-kubernetes-typescript",
-                "description": "Simple Kubernetes cluster with TypeScript for Pulumi.",
-                "url": "https://github.com/jellydn/pulumi-kubernetes-typescript",
-                "homepage": "",
-                "stars": 0,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [
-                    "pulumi",
-                    "typescript"
-                ],
-                "updated_at": "2026-10-19T04:42:49Z"
             },
             {
                 "name": "stay-awake",
@@ -3949,7 +3961,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-10-21T00:45:39Z"
+                "updated_at": "2026-10-21T08:09:27Z"
             },
             {
                 "name": "vite-react-jotai",
