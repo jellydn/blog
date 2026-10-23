@@ -18,7 +18,7 @@
                     "open-code",
                     "skills"
                 ],
-                "updated_at": "2026-10-21T07:50:54Z"
+                "updated_at": "2026-10-22T08:27:36Z"
             },
             {
                 "name": "gpt4free-demo",
@@ -103,7 +103,7 @@
                     "pi",
                     "pi-plugins"
                 ],
-                "updated_at": "2026-10-20T15:58:26Z"
+                "updated_at": "2026-10-23T02:36:16Z"
             },
             {
                 "name": "ai-launcher",
@@ -123,7 +123,7 @@
                     "open-code",
                     "open-source"
                 ],
-                "updated_at": "2026-10-12T01:04:11Z"
+                "updated_at": "2026-10-22T14:17:43Z"
             },
             {
                 "name": "summary-chatbot-demo",
@@ -402,7 +402,7 @@
                     "cspell",
                     "spell-check"
                 ],
-                "updated_at": "2026-10-22T06:38:27Z"
+                "updated_at": "2026-10-22T19:03:32Z"
             },
             {
                 "name": "biome-interactive",
@@ -568,7 +568,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-10-22T05:48:31Z"
+                "updated_at": "2026-10-23T07:05:36Z"
             },
             {
                 "name": "typescript-tips",
@@ -783,7 +783,7 @@
                     "foundry",
                     "thirdweb"
                 ],
-                "updated_at": "2026-09-11T10:47:57Z"
+                "updated_at": "2026-10-22T20:42:57Z"
             },
             {
                 "name": "playwright-crawler-demo",
@@ -1327,7 +1327,7 @@
                     "starter",
                     "typescript"
                 ],
-                "updated_at": "2026-10-21T19:50:41Z"
+                "updated_at": "2026-10-22T18:15:01Z"
             },
             {
                 "name": "deno-pkg-starter",
@@ -1980,18 +1980,6 @@
                 "updated_at": "2022-12-28T04:11:44Z"
             },
             {
-                "name": "eight-weeks-health",
-                "full_name": "jellydn/eight-weeks-health",
-                "description": "A privacy-friendly, mobile-first 56-day wellness tracker.",
-                "url": "https://github.com/jellydn/eight-weeks-health",
-                "homepage": "http://8-weeks.itman.fyi/",
-                "stars": 0,
-                "forks": 0,
-                "language": "HTML",
-                "topics": [],
-                "updated_at": "2026-10-22T03:34:52Z"
-            },
-            {
                 "name": "pulumi-kubernetes-typescript",
                 "full_name": "jellydn/pulumi-kubernetes-typescript",
                 "description": "Simple Kubernetes cluster with TypeScript for Pulumi.",
@@ -2004,7 +1992,19 @@
                     "pulumi",
                     "typescript"
                 ],
-                "updated_at": "2026-10-22T00:01:20Z"
+                "updated_at": "2026-10-23T02:49:54Z"
+            },
+            {
+                "name": "eight-weeks-health",
+                "full_name": "jellydn/eight-weeks-health",
+                "description": "A privacy-friendly, mobile-first 56-day wellness tracker.",
+                "url": "https://github.com/jellydn/eight-weeks-health",
+                "homepage": "http://8-weeks.itman.fyi/",
+                "stars": 0,
+                "forks": 0,
+                "language": "HTML",
+                "topics": [],
+                "updated_at": "2026-10-22T03:34:52Z"
             },
             {
                 "name": "try-win11",
@@ -2908,7 +2908,7 @@
                     "neovim",
                     "neovim-plugin"
                 ],
-                "updated_at": "2026-10-08T23:48:19Z"
+                "updated_at": "2026-10-23T07:25:50Z"
             },
             {
                 "name": "lazy-nvim-ide",
@@ -2940,7 +2940,7 @@
                     "neovim",
                     "nvim-config"
                 ],
-                "updated_at": "2026-09-28T07:55:48Z"
+                "updated_at": "2026-10-22T13:46:41Z"
             },
             {
                 "name": "ts-inlay-hints",
@@ -3096,7 +3096,7 @@
                     "note-taking",
                     "nvim-plugin"
                 ],
-                "updated_at": "2026-07-24T22:04:29Z"
+                "updated_at": "2026-10-23T07:49:17Z"
             },
             {
                 "name": "tiny-cloak.nvim",
@@ -3128,7 +3128,7 @@
                     "nvim-plugin",
                     "terminal"
                 ],
-                "updated_at": "2026-10-20T05:56:31Z"
+                "updated_at": "2026-10-23T07:32:30Z"
             },
             {
                 "name": "nvim-ide",
@@ -3961,7 +3961,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-10-21T08:09:27Z"
+                "updated_at": "2026-10-22T08:10:03Z"
             },
             {
                 "name": "vite-react-jotai",
