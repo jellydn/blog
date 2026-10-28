@@ -560,7 +560,7 @@
                 "description": "Your ultimate guide to setting up Zed with Vim mode, tailored settings, and key bindings for a seamless coding experience",
                 "url": "https://github.com/jellydn/zed-101-setup",
                 "homepage": "https://itman.fyi",
-                "stars": 1461,
+                "stars": 1460,
                 "forks": 30,
                 "language": "TypeScript",
                 "topics": [
@@ -568,7 +568,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-10-26T20:04:57Z"
+                "updated_at": "2026-10-27T14:45:34Z"
             },
             {
                 "name": "typescript-tips",
@@ -690,7 +690,7 @@
                 "description": "Interactive visualization and educational resource for adapting the Miryoku keyboard layout system to the Silakka54 split keyboard",
                 "url": "https://github.com/jellydn/miryoku-silakka54-layout",
                 "homepage": "https://kb.itman.fyi/",
-                "stars": 22,
+                "stars": 23,
                 "forks": 10,
                 "language": "HTML",
                 "topics": [
@@ -701,7 +701,7 @@
                     "miryoku",
                     "silakka54"
                 ],
-                "updated_at": "2026-10-01T09:55:21Z"
+                "updated_at": "2026-10-27T22:18:51Z"
             },
             {
                 "name": "arch-linux-on-m2",
@@ -1544,7 +1544,7 @@
                 "topics": [
                     "python"
                 ],
-                "updated_at": "2026-10-27T05:50:18Z"
+                "updated_at": "2026-10-28T05:07:00Z"
             },
             {
                 "name": "knulli-app-store",
@@ -1980,6 +1980,18 @@
                 "updated_at": "2022-12-28T04:11:44Z"
             },
             {
+                "name": "try-win11",
+                "full_name": "jellydn/try-win11",
+                "description": "Try Win11 is a proposed open-source native macOS app that helps Apple Silicon Mac users install and run Windows 11 ARM with minimal host setup.",
+                "url": "https://github.com/jellydn/try-win11",
+                "homepage": "",
+                "stars": 0,
+                "forks": 0,
+                "language": "Python",
+                "topics": [],
+                "updated_at": "2026-10-27T12:12:49Z"
+            },
+            {
                 "name": "sellsnap",
                 "full_name": "jellydn/sellsnap",
                 "description": "Sell in a snap — the fastest way for creators to sell digital products online.",
@@ -2200,18 +2212,6 @@
                 "language": "HTML",
                 "topics": [],
                 "updated_at": "2026-10-22T03:34:52Z"
-            },
-            {
-                "name": "try-win11",
-                "full_name": "jellydn/try-win11",
-                "description": "",
-                "url": "https://github.com/jellydn/try-win11",
-                "homepage": "",
-                "stars": 0,
-                "forks": 0,
-                "language": "Python",
-                "topics": [],
-                "updated_at": "2026-10-19T12:58:27Z"
             },
             {
                 "name": "macsweep",
@@ -3286,7 +3286,7 @@
                 "description": "This package reads your JSDoc-annotated source code on NextJS API route and generates an OpenAPI (Swagger) specification.",
                 "url": "https://github.com/jellydn/next-swagger-doc",
                 "homepage": "https://next-swagger-doc-demo.productsway.com/api-doc",
-                "stars": 520,
+                "stars": 521,
                 "forks": 37,
                 "language": "TypeScript",
                 "topics": [
@@ -3296,7 +3296,7 @@
                     "nextjs",
                     "swagger"
                 ],
-                "updated_at": "2026-10-23T14:29:43Z"
+                "updated_at": "2026-10-27T15:43:41Z"
             },
             {
                 "name": "dapp-starter",
@@ -3304,8 +3304,8 @@
                 "description": "Opinionated Dapp Starter Template provides a solid foundation for building Ethereum-based applications. It incorporates various tools and frameworks such as React, Next.js, Hardhat, TypeChain, web3-react, daisyUI Tailwind CSS Components, and OpenZeppelin.",
                 "url": "https://github.com/jellydn/dapp-starter",
                 "homepage": "https://dapp-starter.productsway.com/",
-                "stars": 326,
-                "forks": 78,
+                "stars": 327,
+                "forks": 79,
                 "language": "TypeScript",
                 "topics": [
                     "dapp-starter",
@@ -3321,7 +3321,7 @@
                     "web3",
                     "web3-react"
                 ],
-                "updated_at": "2026-10-02T15:26:00Z"
+                "updated_at": "2026-10-27T15:43:41Z"
             },
             {
                 "name": "next-app-starter",
@@ -3352,7 +3352,7 @@
                 "description": "How to create your own NFT and mint NFT token",
                 "url": "https://github.com/jellydn/nft-app",
                 "homepage": "https://nft-app.productsway.com/",
-                "stars": 223,
+                "stars": 224,
                 "forks": 103,
                 "language": "TypeScript",
                 "topics": [
@@ -3366,7 +3366,7 @@
                     "vitejs",
                     "web3"
                 ],
-                "updated_at": "2026-10-25T20:50:19Z"
+                "updated_at": "2026-10-28T00:33:08Z"
             },
             {
                 "name": "dapp-token-ico",
@@ -3646,7 +3646,7 @@
                     "react",
                     "react-email"
                 ],
-                "updated_at": "2026-10-26T04:40:34Z"
+                "updated_at": "2026-10-28T01:36:28Z"
             },
             {
                 "name": "waku-rsc-async-demo",
@@ -3973,7 +3973,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-10-26T08:19:53Z"
+                "updated_at": "2026-10-27T08:31:48Z"
             },
             {
                 "name": "vite-react-jotai",
