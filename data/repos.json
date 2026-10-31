@@ -568,7 +568,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-10-30T05:09:31Z"
+                "updated_at": "2026-10-31T05:48:29Z"
             },
             {
                 "name": "typescript-tips",
@@ -1313,6 +1313,26 @@
                 "updated_at": "2025-08-11T02:28:22Z"
             },
             {
+                "name": "deno-pkg-starter",
+                "full_name": "jellydn/deno-pkg-starter",
+                "description": "Publish your Typescript library to NPM and Deno",
+                "url": "https://github.com/jellydn/deno-pkg-starter",
+                "homepage": "",
+                "stars": 2,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [
+                    "deno",
+                    "deno-starter",
+                    "esm",
+                    "npm",
+                    "rust",
+                    "typescript",
+                    "wasm"
+                ],
+                "updated_at": "2026-10-30T14:45:56Z"
+            },
+            {
                 "name": "typescript-mini-starter",
                 "full_name": "jellydn/typescript-mini-starter",
                 "description": "A streamlined and efficient TypeScript starter kit, supporting both ESM and CJS, for quick and versatile project setups.",
@@ -1344,26 +1364,6 @@
                     "tauri-app"
                 ],
                 "updated_at": "2026-10-26T01:13:49Z"
-            },
-            {
-                "name": "deno-pkg-starter",
-                "full_name": "jellydn/deno-pkg-starter",
-                "description": "Publish your Typescript library to NPM and Deno",
-                "url": "https://github.com/jellydn/deno-pkg-starter",
-                "homepage": "",
-                "stars": 2,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [
-                    "deno",
-                    "deno-starter",
-                    "esm",
-                    "npm",
-                    "rust",
-                    "typescript",
-                    "wasm"
-                ],
-                "updated_at": "2026-10-19T06:34:06Z"
             },
             {
                 "name": ".dotfiles",
@@ -1989,7 +1989,7 @@
                 "forks": 0,
                 "language": "",
                 "topics": [],
-                "updated_at": "2026-10-29T06:53:18Z"
+                "updated_at": "2026-10-30T13:29:18Z"
             },
             {
                 "name": "pulumi-kubernetes-typescript",
@@ -3132,7 +3132,7 @@
                 "description": "A minimal, standalone Neovim 0.11+ terminal",
                 "url": "https://github.com/jellydn/tiny-term.nvim",
                 "homepage": "",
-                "stars": 6,
+                "stars": 7,
                 "forks": 0,
                 "language": "Lua",
                 "topics": [
@@ -3140,7 +3140,7 @@
                     "nvim-plugin",
                     "terminal"
                 ],
-                "updated_at": "2026-10-24T10:39:21Z"
+                "updated_at": "2026-10-30T17:14:24Z"
             },
             {
                 "name": "nvim-ide",
@@ -3973,7 +3973,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-10-29T09:09:52Z"
+                "updated_at": "2026-10-30T09:21:09Z"
             },
             {
                 "name": "vite-react-jotai",
