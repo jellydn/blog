@@ -142,6 +142,22 @@
                 "updated_at": "2026-08-21T03:18:24Z"
             },
             {
+                "name": "flowly",
+                "full_name": "jellydn/flowly",
+                "description": "AI-native engineering assistant for modern development.",
+                "url": "https://github.com/jellydn/flowly",
+                "homepage": "https://jellydn.github.io/flowly/",
+                "stars": 4,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [
+                    "agent",
+                    "flue",
+                    "flueframework"
+                ],
+                "updated_at": "2026-11-02T15:54:47Z"
+            },
+            {
                 "name": "copilot-tips",
                 "full_name": "jellydn/copilot-tips",
                 "description": "Learn how to improve your code with Github Copilot",
@@ -157,22 +173,6 @@
                 "updated_at": "2026-08-21T03:26:03Z"
             },
             {
-                "name": "flowly",
-                "full_name": "jellydn/flowly",
-                "description": "AI-native engineering assistant for modern development.",
-                "url": "https://github.com/jellydn/flowly",
-                "homepage": "https://jellydn.github.io/flowly/",
-                "stars": 3,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [
-                    "agent",
-                    "flue",
-                    "flueframework"
-                ],
-                "updated_at": "2026-10-27T07:36:51Z"
-            },
-            {
                 "name": "hermes-hub",
                 "full_name": "jellydn/hermes-hub",
                 "description": "Your personal AI agent in 5 minutes. Zero terminal required.",
@@ -185,6 +185,61 @@
                     "hermes-agent"
                 ],
                 "updated_at": "2026-10-19T01:08:22Z"
+            },
+            {
+                "name": "personal-ai",
+                "full_name": "jellydn/personal-ai",
+                "description": "My public original repositories created while exploring AI-assisted development since Oct 2025 ",
+                "url": "https://github.com/jellydn/personal-ai",
+                "homepage": "https://jellydn.github.io/personal-ai/",
+                "stars": 2,
+                "forks": 0,
+                "language": "HTML",
+                "topics": [],
+                "updated_at": "2026-11-02T16:28:25Z"
+            },
+            {
+                "name": "awesome-ai-agent-orchestrators",
+                "full_name": "jellydn/awesome-ai-agent-orchestrators",
+                "description": "",
+                "url": "https://github.com/jellydn/awesome-ai-agent-orchestrators",
+                "homepage": "",
+                "stars": 2,
+                "forks": 0,
+                "language": "",
+                "topics": [],
+                "updated_at": "2026-11-02T16:27:52Z"
+            },
+            {
+                "name": "prompt-bench",
+                "full_name": "jellydn/prompt-bench",
+                "description": "PromptBench - A tool for benchmarking LLM prompts",
+                "url": "https://github.com/jellydn/prompt-bench",
+                "homepage": "https://prompt-bench.itman.fyi/",
+                "stars": 2,
+                "forks": 0,
+                "language": "Python",
+                "topics": [
+                    "ai",
+                    "llm"
+                ],
+                "updated_at": "2026-11-02T16:09:33Z"
+            },
+            {
+                "name": "ai-flow",
+                "full_name": "jellydn/ai-flow",
+                "description": "Turn GitHub URLs into structured AI workflows.",
+                "url": "https://github.com/jellydn/ai-flow",
+                "homepage": "https://ai-flow-staging.itman.fyi/",
+                "stars": 2,
+                "forks": 0,
+                "language": "PHP",
+                "topics": [
+                    "ai",
+                    "laravel",
+                    "llm"
+                ],
+                "updated_at": "2026-11-02T16:09:20Z"
             },
             {
                 "name": "ai-photo-coach",
@@ -218,30 +273,6 @@
                 "updated_at": "2026-10-19T01:07:48Z"
             },
             {
-                "name": "personal-ai",
-                "full_name": "jellydn/personal-ai",
-                "description": "My public original repositories created while exploring AI-assisted development since Oct 2025 ",
-                "url": "https://github.com/jellydn/personal-ai",
-                "homepage": "https://jellydn.github.io/personal-ai/",
-                "stars": 1,
-                "forks": 0,
-                "language": "HTML",
-                "topics": [],
-                "updated_at": "2026-11-02T06:14:53Z"
-            },
-            {
-                "name": "awesome-ai-agent-orchestrators",
-                "full_name": "jellydn/awesome-ai-agent-orchestrators",
-                "description": "",
-                "url": "https://github.com/jellydn/awesome-ai-agent-orchestrators",
-                "homepage": "",
-                "stars": 1,
-                "forks": 0,
-                "language": "",
-                "topics": [],
-                "updated_at": "2026-11-02T00:28:11Z"
-            },
-            {
                 "name": "opencode-qwencloud-provider",
                 "full_name": "jellydn/opencode-qwencloud-provider",
                 "description": "QwenCloud provider config for opencode — Qwen3.8, Qwen3.7, Qwen3.6, DeepSeek V4, and GLM-5.2 via QwenCloud's OpenAI-compatible API.",
@@ -252,37 +283,6 @@
                 "language": "TypeScript",
                 "topics": [],
                 "updated_at": "2026-10-26T01:19:37Z"
-            },
-            {
-                "name": "ai-flow",
-                "full_name": "jellydn/ai-flow",
-                "description": "Turn GitHub URLs into structured AI workflows.",
-                "url": "https://github.com/jellydn/ai-flow",
-                "homepage": "https://ai-flow-staging.itman.fyi/",
-                "stars": 1,
-                "forks": 0,
-                "language": "PHP",
-                "topics": [
-                    "ai",
-                    "laravel",
-                    "llm"
-                ],
-                "updated_at": "2026-10-26T01:18:12Z"
-            },
-            {
-                "name": "prompt-bench",
-                "full_name": "jellydn/prompt-bench",
-                "description": "PromptBench - A tool for benchmarking LLM prompts",
-                "url": "https://github.com/jellydn/prompt-bench",
-                "homepage": "https://prompt-bench.itman.fyi/",
-                "stars": 1,
-                "forks": 0,
-                "language": "Python",
-                "topics": [
-                    "ai",
-                    "llm"
-                ],
-                "updated_at": "2026-07-31T10:58:45Z"
             },
             {
                 "name": "focus-flow-ios",
@@ -371,7 +371,7 @@
                     "download-videos",
                     "twitter"
                 ],
-                "updated_at": "2026-11-02T04:57:30Z"
+                "updated_at": "2026-11-02T21:48:40Z"
             },
             {
                 "name": "pi-clinepass-provider",
@@ -386,7 +386,7 @@
                     "pi",
                     "pi-plugins"
                 ],
-                "updated_at": "2026-10-26T01:19:47Z"
+                "updated_at": "2026-11-02T11:47:28Z"
             },
             {
                 "name": "cspell-tool",
@@ -568,7 +568,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-11-01T17:33:41Z"
+                "updated_at": "2026-11-03T06:31:17Z"
             },
             {
                 "name": "typescript-tips",
@@ -576,7 +576,7 @@
                 "description": "A curated list of awesome 🔥 TypeScript Tips 🔥",
                 "url": "https://github.com/jellydn/typescript-tips",
                 "homepage": "https://jellydn.github.io/typescript-tips/",
-                "stars": 440,
+                "stars": 441,
                 "forks": 86,
                 "language": "",
                 "topics": [
@@ -585,7 +585,7 @@
                     "tips-and-tricks",
                     "typescript"
                 ],
-                "updated_at": "2026-11-02T06:05:23Z"
+                "updated_at": "2026-11-02T16:48:07Z"
             },
             {
                 "name": "awesome-typesafe",
@@ -964,22 +964,6 @@
                 "updated_at": "2026-08-26T02:41:55Z"
             },
             {
-                "name": "ws-sockette",
-                "full_name": "jellydn/ws-sockette",
-                "description": "The little WebSocket wrapper for nodejs",
-                "url": "https://github.com/jellydn/ws-sockette",
-                "homepage": "",
-                "stars": 5,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [
-                    "nodejs",
-                    "websocket",
-                    "ws"
-                ],
-                "updated_at": "2026-11-02T04:46:19Z"
-            },
-            {
                 "name": "monorepo-starter",
                 "full_name": "jellydn/monorepo-starter",
                 "description": "A feature-rich monorepo starter with full Kubernetes support base on with-docker turbo example",
@@ -996,7 +980,23 @@
                     "starter-template",
                     "turborepo"
                 ],
-                "updated_at": "2026-10-31T12:30:01Z"
+                "updated_at": "2026-11-03T01:25:53Z"
+            },
+            {
+                "name": "ws-sockette",
+                "full_name": "jellydn/ws-sockette",
+                "description": "The little WebSocket wrapper for nodejs",
+                "url": "https://github.com/jellydn/ws-sockette",
+                "homepage": "",
+                "stars": 5,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [
+                    "nodejs",
+                    "websocket",
+                    "ws"
+                ],
+                "updated_at": "2026-11-02T04:46:19Z"
             },
             {
                 "name": "docklight",
@@ -1545,20 +1545,6 @@
                 "updated_at": "2022-06-22T10:27:12Z"
             },
             {
-                "name": "practicepython",
-                "full_name": "jellydn/practicepython",
-                "description": "Learn how to code by practicing Python exercises.",
-                "url": "https://github.com/jellydn/practicepython",
-                "homepage": "",
-                "stars": 1,
-                "forks": 0,
-                "language": "",
-                "topics": [
-                    "python"
-                ],
-                "updated_at": "2026-11-02T06:24:45Z"
-            },
-            {
                 "name": "knulli-app-store",
                 "full_name": "jellydn/knulli-app-store",
                 "description": "Knulli App Store is a safe community package manager for Knulli utilities, themes, and integrations. It has a reviewable catalogue, a transactional installer, and a controller-only SDL2 interface.",
@@ -1571,7 +1557,21 @@
                     "knulli",
                     "knulli-theme"
                 ],
-                "updated_at": "2026-10-31T13:37:56Z"
+                "updated_at": "2026-11-03T01:32:33Z"
+            },
+            {
+                "name": "practicepython",
+                "full_name": "jellydn/practicepython",
+                "description": "Learn how to code by practicing Python exercises.",
+                "url": "https://github.com/jellydn/practicepython",
+                "homepage": "",
+                "stars": 1,
+                "forks": 0,
+                "language": "",
+                "topics": [
+                    "python"
+                ],
+                "updated_at": "2026-11-02T06:24:45Z"
             },
             {
                 "name": "brave-buddy",
@@ -1992,7 +1992,7 @@
                     "pulumi",
                     "typescript"
                 ],
-                "updated_at": "2026-11-02T06:13:02Z"
+                "updated_at": "2026-11-03T06:30:43Z"
             },
             {
                 "name": "awesome-bot",
@@ -3296,7 +3296,7 @@
                     "nextjs",
                     "swagger"
                 ],
-                "updated_at": "2026-11-02T03:58:31Z"
+                "updated_at": "2026-11-03T00:22:08Z"
             },
             {
                 "name": "dapp-starter",
@@ -3973,7 +3973,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-11-02T08:42:51Z"
+                "updated_at": "2026-11-02T10:22:14Z"
             },
             {
                 "name": "vite-react-jotai",
