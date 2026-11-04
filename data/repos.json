@@ -8,7 +8,7 @@
                 "description": "Comprehensive configuration management for AI coding tools - Replicate my complete setup for Claude Code, OpenCode, Amp, Li, Codex and Claude Code Switch with custom configurations, MCP servers, plugins, and commands.",
                 "url": "https://github.com/jellydn/my-ai-tools",
                 "homepage": "http://ai-tools.itman.fyi/",
-                "stars": 126,
+                "stars": 127,
                 "forks": 13,
                 "language": "Shell",
                 "topics": [
@@ -18,7 +18,7 @@
                     "open-code",
                     "skills"
                 ],
-                "updated_at": "2026-10-31T13:57:38Z"
+                "updated_at": "2026-11-03T22:07:09Z"
             },
             {
                 "name": "gpt4free-demo",
@@ -568,7 +568,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-11-03T06:31:17Z"
+                "updated_at": "2026-11-04T02:41:38Z"
             },
             {
                 "name": "typescript-tips",
@@ -610,7 +610,7 @@
                 "description": "Fastify starter template support RestAPI with Swagger and Graphql",
                 "url": "https://github.com/jellydn/fastify-starter",
                 "homepage": "https://fastify.itman.fyi/documentation/static/index.html",
-                "stars": 127,
+                "stars": 126,
                 "forks": 11,
                 "language": "TypeScript",
                 "topics": [
@@ -624,7 +624,7 @@
                     "swagger",
                     "typescript"
                 ],
-                "updated_at": "2026-10-07T10:52:01Z"
+                "updated_at": "2026-11-04T03:40:22Z"
             },
             {
                 "name": "elysia-demo-app",
@@ -1557,7 +1557,7 @@
                     "knulli",
                     "knulli-theme"
                 ],
-                "updated_at": "2026-11-03T01:32:33Z"
+                "updated_at": "2026-11-04T04:48:07Z"
             },
             {
                 "name": "practicepython",
@@ -2952,7 +2952,7 @@
                     "neovim",
                     "nvim-config"
                 ],
-                "updated_at": "2026-10-22T13:46:41Z"
+                "updated_at": "2026-11-04T07:03:42Z"
             },
             {
                 "name": "ts-inlay-hints",
@@ -3176,7 +3176,7 @@
                     "hurl",
                     "vscode-extension"
                 ],
-                "updated_at": "2026-11-02T08:51:20Z"
+                "updated_at": "2026-11-04T01:20:19Z"
             },
             {
                 "name": "vscode-like-pro",
@@ -3973,7 +3973,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-11-02T10:22:14Z"
+                "updated_at": "2026-11-03T10:20:47Z"
             },
             {
                 "name": "vite-react-jotai",
