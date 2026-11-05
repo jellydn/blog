@@ -18,7 +18,7 @@
                     "open-code",
                     "skills"
                 ],
-                "updated_at": "2026-11-03T22:07:09Z"
+                "updated_at": "2026-11-04T13:41:32Z"
             },
             {
                 "name": "gpt4free-demo",
@@ -26,7 +26,7 @@
                 "description": "A slow guide on setting up a free OpenAI GPT-4 API on your local machine.",
                 "url": "https://github.com/jellydn/gpt4free-demo",
                 "homepage": "",
-                "stars": 98,
+                "stars": 97,
                 "forks": 15,
                 "language": "TypeScript",
                 "topics": [
@@ -34,7 +34,7 @@
                     "gpt4free",
                     "raycast-extension"
                 ],
-                "updated_at": "2026-08-21T03:18:05Z"
+                "updated_at": "2026-11-04T23:21:36Z"
             },
             {
                 "name": "gpt4all-cli",
@@ -103,7 +103,7 @@
                     "pi",
                     "pi-plugins"
                 ],
-                "updated_at": "2026-10-26T02:27:19Z"
+                "updated_at": "2026-11-05T03:50:02Z"
             },
             {
                 "name": "ai-launcher",
@@ -285,18 +285,6 @@
                 "updated_at": "2026-10-26T01:19:37Z"
             },
             {
-                "name": "focus-flow-ios",
-                "full_name": "jellydn/focus-flow-ios",
-                "description": "A modern Pomodoro timer app built with React Native and Expo, developed using spec-kit methodology and Cursor Agent for rapid, reliable development",
-                "url": "https://github.com/jellydn/focus-flow-ios",
-                "homepage": "",
-                "stars": 0,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [],
-                "updated_at": "2026-10-26T01:18:55Z"
-            },
-            {
                 "name": "smart-resume-matcher",
                 "full_name": "jellydn/smart-resume-matcher",
                 "description": "AI-Powered Resume Tailoring for Job Applications",
@@ -310,7 +298,19 @@
                     "llm",
                     "react-router"
                 ],
-                "updated_at": "2026-09-11T10:44:47Z"
+                "updated_at": "2026-11-05T09:23:54Z"
+            },
+            {
+                "name": "focus-flow-ios",
+                "full_name": "jellydn/focus-flow-ios",
+                "description": "A modern Pomodoro timer app built with React Native and Expo, developed using spec-kit methodology and Cursor Agent for rapid, reliable development",
+                "url": "https://github.com/jellydn/focus-flow-ios",
+                "homepage": "",
+                "stars": 0,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [],
+                "updated_at": "2026-10-26T01:18:55Z"
             },
             {
                 "name": "ai-smart-gmail",
@@ -371,7 +371,7 @@
                     "download-videos",
                     "twitter"
                 ],
-                "updated_at": "2026-11-02T21:48:40Z"
+                "updated_at": "2026-11-04T21:07:47Z"
             },
             {
                 "name": "pi-clinepass-provider",
@@ -568,7 +568,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-11-04T02:41:38Z"
+                "updated_at": "2026-11-05T04:37:27Z"
             },
             {
                 "name": "typescript-tips",
@@ -1313,6 +1313,35 @@
                 "updated_at": "2025-08-11T02:28:22Z"
             },
             {
+                "name": "little-writing",
+                "full_name": "jellydn/little-writing",
+                "description": "A handwriting tracing app for kids built with React, react-konva, and Capacitor.",
+                "url": "https://github.com/jellydn/little-writing",
+                "homepage": "https://jellydn.github.io/little-writing/",
+                "stars": 2,
+                "forks": 1,
+                "language": "TypeScript",
+                "topics": [
+                    "app",
+                    "capacitor",
+                    "ios",
+                    "writting"
+                ],
+                "updated_at": "2026-11-05T07:58:39Z"
+            },
+            {
+                "name": "awesome-software-factories",
+                "full_name": "jellydn/awesome-software-factories",
+                "description": "",
+                "url": "https://github.com/jellydn/awesome-software-factories",
+                "homepage": "",
+                "stars": 2,
+                "forks": 0,
+                "language": "",
+                "topics": [],
+                "updated_at": "2026-11-04T23:07:52Z"
+            },
+            {
                 "name": "prosody",
                 "full_name": "jellydn/prosody",
                 "description": "English Rhythm Coach",
@@ -1388,23 +1417,6 @@
                 "language": "Nix",
                 "topics": [],
                 "updated_at": "2026-09-11T10:51:00Z"
-            },
-            {
-                "name": "little-writing",
-                "full_name": "jellydn/little-writing",
-                "description": "A handwriting tracing app for kids built with React, react-konva, and Capacitor.",
-                "url": "https://github.com/jellydn/little-writing",
-                "homepage": "https://jellydn.github.io/little-writing/",
-                "stars": 2,
-                "forks": 1,
-                "language": "TypeScript",
-                "topics": [
-                    "app",
-                    "capacitor",
-                    "ios",
-                    "writting"
-                ],
-                "updated_at": "2026-09-11T10:50:48Z"
             },
             {
                 "name": "ts-pattern-demo-app",
@@ -1980,6 +1992,18 @@
                 "updated_at": "2022-12-28T04:11:44Z"
             },
             {
+                "name": "echo-note",
+                "full_name": "jellydn/echo-note",
+                "description": "Privacy-first meeting transcription and summarization app",
+                "url": "https://github.com/jellydn/echo-note",
+                "homepage": "",
+                "stars": 0,
+                "forks": 0,
+                "language": "Rust",
+                "topics": [],
+                "updated_at": "2026-11-05T09:39:38Z"
+            },
+            {
                 "name": "pulumi-kubernetes-typescript",
                 "full_name": "jellydn/pulumi-kubernetes-typescript",
                 "description": "Simple Kubernetes cluster with TypeScript for Pulumi.",
@@ -1992,7 +2016,7 @@
                     "pulumi",
                     "typescript"
                 ],
-                "updated_at": "2026-11-03T06:30:43Z"
+                "updated_at": "2026-11-04T20:55:47Z"
             },
             {
                 "name": "awesome-bot",
@@ -2121,18 +2145,6 @@
                     "react-native"
                 ],
                 "updated_at": "2026-10-26T01:20:24Z"
-            },
-            {
-                "name": "echo-note",
-                "full_name": "jellydn/echo-note",
-                "description": "Privacy-first meeting transcription and summarization app",
-                "url": "https://github.com/jellydn/echo-note",
-                "homepage": "",
-                "stars": 0,
-                "forks": 0,
-                "language": "Rust",
-                "topics": [],
-                "updated_at": "2026-10-26T01:18:51Z"
             },
             {
                 "name": "db-migration-nodejs",
@@ -3973,7 +3985,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-11-03T10:20:47Z"
+                "updated_at": "2026-11-04T10:16:32Z"
             },
             {
                 "name": "vite-react-jotai",
