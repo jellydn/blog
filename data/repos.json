@@ -8,7 +8,7 @@
                 "description": "Comprehensive configuration management for AI coding tools - Replicate my complete setup for Claude Code, OpenCode, Amp, Li, Codex and Claude Code Switch with custom configurations, MCP servers, plugins, and commands.",
                 "url": "https://github.com/jellydn/my-ai-tools",
                 "homepage": "http://ai-tools.itman.fyi/",
-                "stars": 127,
+                "stars": 126,
                 "forks": 13,
                 "language": "Shell",
                 "topics": [
@@ -18,7 +18,7 @@
                     "open-code",
                     "skills"
                 ],
-                "updated_at": "2026-11-04T13:41:32Z"
+                "updated_at": "2026-11-05T14:08:31Z"
             },
             {
                 "name": "gpt4free-demo",
@@ -142,22 +142,6 @@
                 "updated_at": "2026-08-21T03:18:24Z"
             },
             {
-                "name": "flowly",
-                "full_name": "jellydn/flowly",
-                "description": "AI-native engineering assistant for modern development.",
-                "url": "https://github.com/jellydn/flowly",
-                "homepage": "https://jellydn.github.io/flowly/",
-                "stars": 4,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [
-                    "agent",
-                    "flue",
-                    "flueframework"
-                ],
-                "updated_at": "2026-11-02T15:54:47Z"
-            },
-            {
                 "name": "copilot-tips",
                 "full_name": "jellydn/copilot-tips",
                 "description": "Learn how to improve your code with Github Copilot",
@@ -173,6 +157,22 @@
                 "updated_at": "2026-08-21T03:26:03Z"
             },
             {
+                "name": "flowly",
+                "full_name": "jellydn/flowly",
+                "description": "AI-native engineering assistant for modern development.",
+                "url": "https://github.com/jellydn/flowly",
+                "homepage": "https://jellydn.github.io/flowly/",
+                "stars": 3,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [
+                    "agent",
+                    "flue",
+                    "flueframework"
+                ],
+                "updated_at": "2026-11-05T14:21:03Z"
+            },
+            {
                 "name": "hermes-hub",
                 "full_name": "jellydn/hermes-hub",
                 "description": "Your personal AI agent in 5 minutes. Zero terminal required.",
@@ -185,61 +185,6 @@
                     "hermes-agent"
                 ],
                 "updated_at": "2026-10-19T01:08:22Z"
-            },
-            {
-                "name": "personal-ai",
-                "full_name": "jellydn/personal-ai",
-                "description": "My public original repositories created while exploring AI-assisted development since Oct 2025 ",
-                "url": "https://github.com/jellydn/personal-ai",
-                "homepage": "https://jellydn.github.io/personal-ai/",
-                "stars": 2,
-                "forks": 0,
-                "language": "HTML",
-                "topics": [],
-                "updated_at": "2026-11-02T16:28:25Z"
-            },
-            {
-                "name": "awesome-ai-agent-orchestrators",
-                "full_name": "jellydn/awesome-ai-agent-orchestrators",
-                "description": "",
-                "url": "https://github.com/jellydn/awesome-ai-agent-orchestrators",
-                "homepage": "",
-                "stars": 2,
-                "forks": 0,
-                "language": "",
-                "topics": [],
-                "updated_at": "2026-11-02T16:27:52Z"
-            },
-            {
-                "name": "prompt-bench",
-                "full_name": "jellydn/prompt-bench",
-                "description": "PromptBench - A tool for benchmarking LLM prompts",
-                "url": "https://github.com/jellydn/prompt-bench",
-                "homepage": "https://prompt-bench.itman.fyi/",
-                "stars": 2,
-                "forks": 0,
-                "language": "Python",
-                "topics": [
-                    "ai",
-                    "llm"
-                ],
-                "updated_at": "2026-11-02T16:09:33Z"
-            },
-            {
-                "name": "ai-flow",
-                "full_name": "jellydn/ai-flow",
-                "description": "Turn GitHub URLs into structured AI workflows.",
-                "url": "https://github.com/jellydn/ai-flow",
-                "homepage": "https://ai-flow-staging.itman.fyi/",
-                "stars": 2,
-                "forks": 0,
-                "language": "PHP",
-                "topics": [
-                    "ai",
-                    "laravel",
-                    "llm"
-                ],
-                "updated_at": "2026-11-02T16:09:20Z"
             },
             {
                 "name": "ai-photo-coach",
@@ -271,6 +216,61 @@
                     "tmux"
                 ],
                 "updated_at": "2026-10-19T01:07:48Z"
+            },
+            {
+                "name": "awesome-ai-agent-orchestrators",
+                "full_name": "jellydn/awesome-ai-agent-orchestrators",
+                "description": "",
+                "url": "https://github.com/jellydn/awesome-ai-agent-orchestrators",
+                "homepage": "",
+                "stars": 1,
+                "forks": 0,
+                "language": "",
+                "topics": [],
+                "updated_at": "2026-11-05T14:30:27Z"
+            },
+            {
+                "name": "prompt-bench",
+                "full_name": "jellydn/prompt-bench",
+                "description": "PromptBench - A tool for benchmarking LLM prompts",
+                "url": "https://github.com/jellydn/prompt-bench",
+                "homepage": "https://prompt-bench.itman.fyi/",
+                "stars": 1,
+                "forks": 0,
+                "language": "Python",
+                "topics": [
+                    "ai",
+                    "llm"
+                ],
+                "updated_at": "2026-11-05T14:21:36Z"
+            },
+            {
+                "name": "personal-ai",
+                "full_name": "jellydn/personal-ai",
+                "description": "My public original repositories created while exploring AI-assisted development since Oct 2025 ",
+                "url": "https://github.com/jellydn/personal-ai",
+                "homepage": "https://jellydn.github.io/personal-ai/",
+                "stars": 1,
+                "forks": 0,
+                "language": "HTML",
+                "topics": [],
+                "updated_at": "2026-11-05T14:21:02Z"
+            },
+            {
+                "name": "ai-flow",
+                "full_name": "jellydn/ai-flow",
+                "description": "Turn GitHub URLs into structured AI workflows.",
+                "url": "https://github.com/jellydn/ai-flow",
+                "homepage": "https://ai-flow-staging.itman.fyi/",
+                "stars": 1,
+                "forks": 0,
+                "language": "PHP",
+                "topics": [
+                    "ai",
+                    "laravel",
+                    "llm"
+                ],
+                "updated_at": "2026-11-05T14:20:17Z"
             },
             {
                 "name": "opencode-qwencloud-provider",
@@ -402,7 +402,7 @@
                     "cspell",
                     "spell-check"
                 ],
-                "updated_at": "2026-10-22T19:03:32Z"
+                "updated_at": "2026-11-05T22:39:33Z"
             },
             {
                 "name": "biome-interactive",
@@ -568,7 +568,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-11-05T04:37:27Z"
+                "updated_at": "2026-11-06T05:06:20Z"
             },
             {
                 "name": "typescript-tips",
@@ -1073,7 +1073,7 @@
                     "template",
                     "typescript"
                 ],
-                "updated_at": "2026-11-02T04:26:26Z"
+                "updated_at": "2026-11-05T11:04:14Z"
             },
             {
                 "name": "platformatic-starter",
@@ -1992,18 +1992,6 @@
                 "updated_at": "2022-12-28T04:11:44Z"
             },
             {
-                "name": "echo-note",
-                "full_name": "jellydn/echo-note",
-                "description": "Privacy-first meeting transcription and summarization app",
-                "url": "https://github.com/jellydn/echo-note",
-                "homepage": "",
-                "stars": 0,
-                "forks": 0,
-                "language": "Rust",
-                "topics": [],
-                "updated_at": "2026-11-05T09:39:38Z"
-            },
-            {
                 "name": "pulumi-kubernetes-typescript",
                 "full_name": "jellydn/pulumi-kubernetes-typescript",
                 "description": "Simple Kubernetes cluster with TypeScript for Pulumi.",
@@ -2016,7 +2004,19 @@
                     "pulumi",
                     "typescript"
                 ],
-                "updated_at": "2026-11-04T20:55:47Z"
+                "updated_at": "2026-11-06T07:00:48Z"
+            },
+            {
+                "name": "echo-note",
+                "full_name": "jellydn/echo-note",
+                "description": "Privacy-first meeting transcription and summarization app",
+                "url": "https://github.com/jellydn/echo-note",
+                "homepage": "",
+                "stars": 0,
+                "forks": 0,
+                "language": "Rust",
+                "topics": [],
+                "updated_at": "2026-11-05T09:39:38Z"
             },
             {
                 "name": "awesome-bot",
@@ -3658,7 +3658,7 @@
                     "react",
                     "react-email"
                 ],
-                "updated_at": "2026-11-02T04:54:35Z"
+                "updated_at": "2026-11-06T06:53:19Z"
             },
             {
                 "name": "waku-rsc-async-demo",
@@ -3985,7 +3985,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-11-04T10:16:32Z"
+                "updated_at": "2026-11-05T10:06:47Z"
             },
             {
                 "name": "vite-react-jotai",
