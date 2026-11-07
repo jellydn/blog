@@ -18,7 +18,7 @@
                     "open-code",
                     "skills"
                 ],
-                "updated_at": "2026-11-05T14:08:31Z"
+                "updated_at": "2026-11-06T23:52:42Z"
             },
             {
                 "name": "gpt4free-demo",
@@ -371,7 +371,7 @@
                     "download-videos",
                     "twitter"
                 ],
-                "updated_at": "2026-11-04T21:07:47Z"
+                "updated_at": "2026-11-06T21:58:09Z"
             },
             {
                 "name": "pi-clinepass-provider",
@@ -560,7 +560,7 @@
                 "description": "Your ultimate guide to setting up Zed with Vim mode, tailored settings, and key bindings for a seamless coding experience",
                 "url": "https://github.com/jellydn/zed-101-setup",
                 "homepage": "https://itman.fyi",
-                "stars": 1464,
+                "stars": 1465,
                 "forks": 30,
                 "language": "TypeScript",
                 "topics": [
@@ -568,7 +568,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-11-06T05:06:20Z"
+                "updated_at": "2026-11-07T05:43:36Z"
             },
             {
                 "name": "typescript-tips",
@@ -3087,7 +3087,7 @@
                     "zellij",
                     "zsh"
                 ],
-                "updated_at": "2026-10-30T07:19:24Z"
+                "updated_at": "2026-11-06T13:36:04Z"
             },
             {
                 "name": "learn-vim-with-vscode",
@@ -3658,7 +3658,7 @@
                     "react",
                     "react-email"
                 ],
-                "updated_at": "2026-11-06T06:53:19Z"
+                "updated_at": "2026-11-06T21:13:24Z"
             },
             {
                 "name": "waku-rsc-async-demo",
@@ -3985,7 +3985,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-11-05T10:06:47Z"
+                "updated_at": "2026-11-06T10:46:05Z"
             },
             {
                 "name": "vite-react-jotai",
