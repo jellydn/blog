@@ -8,7 +8,7 @@
                 "description": "Comprehensive configuration management for AI coding tools - Replicate my complete setup for Claude Code, OpenCode, Amp, Li, Codex and Claude Code Switch with custom configurations, MCP servers, plugins, and commands.",
                 "url": "https://github.com/jellydn/my-ai-tools",
                 "homepage": "http://ai-tools.itman.fyi/",
-                "stars": 126,
+                "stars": 128,
                 "forks": 13,
                 "language": "Shell",
                 "topics": [
@@ -18,7 +18,7 @@
                     "open-code",
                     "skills"
                 ],
-                "updated_at": "2026-11-06T23:52:42Z"
+                "updated_at": "2026-11-09T01:07:52Z"
             },
             {
                 "name": "gpt4free-demo",
@@ -103,7 +103,7 @@
                     "pi",
                     "pi-plugins"
                 ],
-                "updated_at": "2026-11-05T03:50:02Z"
+                "updated_at": "2026-11-09T01:08:11Z"
             },
             {
                 "name": "ai-launcher",
@@ -123,7 +123,7 @@
                     "open-code",
                     "open-source"
                 ],
-                "updated_at": "2026-10-26T01:07:21Z"
+                "updated_at": "2026-11-09T01:04:40Z"
             },
             {
                 "name": "summary-chatbot-demo",
@@ -170,7 +170,7 @@
                     "flue",
                     "flueframework"
                 ],
-                "updated_at": "2026-11-05T14:21:03Z"
+                "updated_at": "2026-11-09T01:07:30Z"
             },
             {
                 "name": "hermes-hub",
@@ -187,20 +187,6 @@
                 "updated_at": "2026-10-19T01:08:22Z"
             },
             {
-                "name": "ai-photo-coach",
-                "full_name": "jellydn/ai-photo-coach",
-                "description": "Real-time visual guide camera app that helps everyday users take better photos. Built with React Native + VisionCamera v5.",
-                "url": "https://github.com/jellydn/ai-photo-coach",
-                "homepage": "https://jellydn.github.io/ai-photo-coach/",
-                "stars": 2,
-                "forks": 2,
-                "language": "TypeScript",
-                "topics": [
-                    "react-native"
-                ],
-                "updated_at": "2026-10-26T01:18:22Z"
-            },
-            {
                 "name": "logpilot",
                 "full_name": "jellydn/logpilot",
                 "description": "AI-Native tmux Log Copilot for Support Incident Tracking",
@@ -215,7 +201,49 @@
                     "mcp-server",
                     "tmux"
                 ],
-                "updated_at": "2026-10-19T01:07:48Z"
+                "updated_at": "2026-11-09T01:05:16Z"
+            },
+            {
+                "name": "ai-photo-coach",
+                "full_name": "jellydn/ai-photo-coach",
+                "description": "Real-time visual guide camera app that helps everyday users take better photos. Built with React Native + VisionCamera v5.",
+                "url": "https://github.com/jellydn/ai-photo-coach",
+                "homepage": "https://jellydn.github.io/ai-photo-coach/",
+                "stars": 2,
+                "forks": 2,
+                "language": "TypeScript",
+                "topics": [
+                    "react-native"
+                ],
+                "updated_at": "2026-10-26T01:18:22Z"
+            },
+            {
+                "name": "opencode-qwencloud-provider",
+                "full_name": "jellydn/opencode-qwencloud-provider",
+                "description": "QwenCloud provider config for opencode — Qwen3.8, Qwen3.7, Qwen3.6, DeepSeek V4, and GLM-5.2 via QwenCloud's OpenAI-compatible API.",
+                "url": "https://github.com/jellydn/opencode-qwencloud-provider",
+                "homepage": "https://jellydn.github.io/opencode-qwencloud-provider/",
+                "stars": 1,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [],
+                "updated_at": "2026-11-09T01:07:56Z"
+            },
+            {
+                "name": "ai-flow",
+                "full_name": "jellydn/ai-flow",
+                "description": "Turn GitHub URLs into structured AI workflows.",
+                "url": "https://github.com/jellydn/ai-flow",
+                "homepage": "https://ai-flow-staging.itman.fyi/",
+                "stars": 1,
+                "forks": 0,
+                "language": "PHP",
+                "topics": [
+                    "ai",
+                    "laravel",
+                    "llm"
+                ],
+                "updated_at": "2026-11-09T01:07:09Z"
             },
             {
                 "name": "awesome-ai-agent-orchestrators",
@@ -227,7 +255,7 @@
                 "forks": 0,
                 "language": "",
                 "topics": [],
-                "updated_at": "2026-11-05T14:30:27Z"
+                "updated_at": "2026-11-09T00:46:30Z"
             },
             {
                 "name": "prompt-bench",
@@ -257,34 +285,6 @@
                 "updated_at": "2026-11-05T14:21:02Z"
             },
             {
-                "name": "ai-flow",
-                "full_name": "jellydn/ai-flow",
-                "description": "Turn GitHub URLs into structured AI workflows.",
-                "url": "https://github.com/jellydn/ai-flow",
-                "homepage": "https://ai-flow-staging.itman.fyi/",
-                "stars": 1,
-                "forks": 0,
-                "language": "PHP",
-                "topics": [
-                    "ai",
-                    "laravel",
-                    "llm"
-                ],
-                "updated_at": "2026-11-05T14:20:17Z"
-            },
-            {
-                "name": "opencode-qwencloud-provider",
-                "full_name": "jellydn/opencode-qwencloud-provider",
-                "description": "QwenCloud provider config for opencode — Qwen3.8, Qwen3.7, Qwen3.6, DeepSeek V4, and GLM-5.2 via QwenCloud's OpenAI-compatible API.",
-                "url": "https://github.com/jellydn/opencode-qwencloud-provider",
-                "homepage": "https://jellydn.github.io/opencode-qwencloud-provider/",
-                "stars": 1,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [],
-                "updated_at": "2026-10-26T01:19:37Z"
-            },
-            {
                 "name": "smart-resume-matcher",
                 "full_name": "jellydn/smart-resume-matcher",
                 "description": "AI-Powered Resume Tailoring for Job Applications",
@@ -298,7 +298,7 @@
                     "llm",
                     "react-router"
                 ],
-                "updated_at": "2026-11-05T09:23:54Z"
+                "updated_at": "2026-11-09T01:06:17Z"
             },
             {
                 "name": "focus-flow-ios",
@@ -310,7 +310,7 @@
                 "forks": 0,
                 "language": "TypeScript",
                 "topics": [],
-                "updated_at": "2026-10-26T01:18:55Z"
+                "updated_at": "2026-11-09T01:04:57Z"
             },
             {
                 "name": "ai-smart-gmail",
@@ -371,7 +371,7 @@
                     "download-videos",
                     "twitter"
                 ],
-                "updated_at": "2026-11-06T21:58:09Z"
+                "updated_at": "2026-11-09T04:42:59Z"
             },
             {
                 "name": "pi-clinepass-provider",
@@ -386,7 +386,7 @@
                     "pi",
                     "pi-plugins"
                 ],
-                "updated_at": "2026-11-02T11:47:28Z"
+                "updated_at": "2026-11-09T01:08:08Z"
             },
             {
                 "name": "cspell-tool",
@@ -434,7 +434,7 @@
                     "moleculerjs",
                     "repl"
                 ],
-                "updated_at": "2026-10-26T01:14:48Z"
+                "updated_at": "2026-11-09T01:07:44Z"
             },
             {
                 "name": "pkg-cli-simple-app",
@@ -498,7 +498,7 @@
                     "golang",
                     "gui"
                 ],
-                "updated_at": "2026-10-26T01:18:58Z"
+                "updated_at": "2026-11-09T01:07:37Z"
             },
             {
                 "name": "eslint-fixer",
@@ -560,7 +560,7 @@
                 "description": "Your ultimate guide to setting up Zed with Vim mode, tailored settings, and key bindings for a seamless coding experience",
                 "url": "https://github.com/jellydn/zed-101-setup",
                 "homepage": "https://itman.fyi",
-                "stars": 1465,
+                "stars": 1466,
                 "forks": 30,
                 "language": "TypeScript",
                 "topics": [
@@ -568,7 +568,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-11-07T05:43:36Z"
+                "updated_at": "2026-11-09T01:06:34Z"
             },
             {
                 "name": "typescript-tips",
@@ -585,7 +585,7 @@
                     "tips-and-tricks",
                     "typescript"
                 ],
-                "updated_at": "2026-11-02T16:48:07Z"
+                "updated_at": "2026-11-09T06:09:19Z"
             },
             {
                 "name": "awesome-typesafe",
@@ -682,7 +682,7 @@
                     "express-js",
                     "vercel"
                 ],
-                "updated_at": "2026-11-02T05:16:32Z"
+                "updated_at": "2026-11-09T06:07:00Z"
             },
             {
                 "name": "miryoku-silakka54-layout",
@@ -964,6 +964,38 @@
                 "updated_at": "2026-08-26T02:41:55Z"
             },
             {
+                "name": "ws-sockette",
+                "full_name": "jellydn/ws-sockette",
+                "description": "The little WebSocket wrapper for nodejs",
+                "url": "https://github.com/jellydn/ws-sockette",
+                "homepage": "",
+                "stars": 5,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [
+                    "nodejs",
+                    "websocket",
+                    "ws"
+                ],
+                "updated_at": "2026-11-09T04:47:00Z"
+            },
+            {
+                "name": "docklight",
+                "full_name": "jellydn/docklight",
+                "description": "A minimal, self-hosted web UI for managing a single-node Dokku server.",
+                "url": "https://github.com/jellydn/docklight",
+                "homepage": "https://docklight.itman.fyi/",
+                "stars": 5,
+                "forks": 2,
+                "language": "TypeScript",
+                "topics": [
+                    "dokku",
+                    "dokku-ui",
+                    "dokku-web"
+                ],
+                "updated_at": "2026-11-09T01:04:40Z"
+            },
+            {
                 "name": "monorepo-starter",
                 "full_name": "jellydn/monorepo-starter",
                 "description": "A feature-rich monorepo starter with full Kubernetes support base on with-docker turbo example",
@@ -981,38 +1013,6 @@
                     "turborepo"
                 ],
                 "updated_at": "2026-11-03T01:25:53Z"
-            },
-            {
-                "name": "ws-sockette",
-                "full_name": "jellydn/ws-sockette",
-                "description": "The little WebSocket wrapper for nodejs",
-                "url": "https://github.com/jellydn/ws-sockette",
-                "homepage": "",
-                "stars": 5,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [
-                    "nodejs",
-                    "websocket",
-                    "ws"
-                ],
-                "updated_at": "2026-11-02T04:46:19Z"
-            },
-            {
-                "name": "docklight",
-                "full_name": "jellydn/docklight",
-                "description": "A minimal, self-hosted web UI for managing a single-node Dokku server.",
-                "url": "https://github.com/jellydn/docklight",
-                "homepage": "https://docklight.itman.fyi/",
-                "stars": 5,
-                "forks": 2,
-                "language": "TypeScript",
-                "topics": [
-                    "dokku",
-                    "dokku-ui",
-                    "dokku-web"
-                ],
-                "updated_at": "2026-10-26T01:10:18Z"
             },
             {
                 "name": "eslint-config-productsway",
@@ -1073,7 +1073,7 @@
                     "template",
                     "typescript"
                 ],
-                "updated_at": "2026-11-05T11:04:14Z"
+                "updated_at": "2026-11-09T05:23:38Z"
             },
             {
                 "name": "platformatic-starter",
@@ -1327,7 +1327,7 @@
                     "ios",
                     "writting"
                 ],
-                "updated_at": "2026-11-05T07:58:39Z"
+                "updated_at": "2026-11-09T01:10:17Z"
             },
             {
                 "name": "awesome-software-factories",
@@ -1339,7 +1339,7 @@
                 "forks": 0,
                 "language": "",
                 "topics": [],
-                "updated_at": "2026-11-04T23:07:52Z"
+                "updated_at": "2026-11-09T00:54:53Z"
             },
             {
                 "name": "prosody",
@@ -1557,6 +1557,56 @@
                 "updated_at": "2022-06-22T10:27:12Z"
             },
             {
+                "name": "practicepython",
+                "full_name": "jellydn/practicepython",
+                "description": "Learn how to code by practicing Python exercises.",
+                "url": "https://github.com/jellydn/practicepython",
+                "homepage": "",
+                "stars": 1,
+                "forks": 0,
+                "language": "",
+                "topics": [
+                    "python"
+                ],
+                "updated_at": "2026-11-09T05:28:51Z"
+            },
+            {
+                "name": "shelf",
+                "full_name": "jellydn/shelf",
+                "description": "Review what a cleanup level would tick. Confirm does not delete.",
+                "url": "https://github.com/jellydn/shelf",
+                "homepage": "",
+                "stars": 1,
+                "forks": 0,
+                "language": "Rust",
+                "topics": [],
+                "updated_at": "2026-11-09T02:14:36Z"
+            },
+            {
+                "name": "brave-buddy",
+                "full_name": "jellydn/brave-buddy",
+                "description": "Create a short, playful practice experience for children aged 6–12. Children learn to SEE → THINK → RESPOND → GET HELP in common social situations. The app uses only reviewed, human-authored scenarios.",
+                "url": "https://github.com/jellydn/brave-buddy",
+                "homepage": "http://brave-buddy.itman.fyi/",
+                "stars": 1,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [],
+                "updated_at": "2026-11-09T01:07:27Z"
+            },
+            {
+                "name": "mole-tui",
+                "full_name": "jellydn/mole-tui",
+                "description": "A keyboard-driven TUI that orchestrates Mole (mo) for disk cleanup.",
+                "url": "https://github.com/jellydn/mole-tui",
+                "homepage": "",
+                "stars": 1,
+                "forks": 0,
+                "language": "Go",
+                "topics": [],
+                "updated_at": "2026-11-09T01:05:21Z"
+            },
+            {
                 "name": "knulli-app-store",
                 "full_name": "jellydn/knulli-app-store",
                 "description": "Knulli App Store is a safe community package manager for Knulli utilities, themes, and integrations. It has a reviewable catalogue, a transactional installer, and a controller-only SDL2 interface.",
@@ -1570,44 +1620,6 @@
                     "knulli-theme"
                 ],
                 "updated_at": "2026-11-04T04:48:07Z"
-            },
-            {
-                "name": "practicepython",
-                "full_name": "jellydn/practicepython",
-                "description": "Learn how to code by practicing Python exercises.",
-                "url": "https://github.com/jellydn/practicepython",
-                "homepage": "",
-                "stars": 1,
-                "forks": 0,
-                "language": "",
-                "topics": [
-                    "python"
-                ],
-                "updated_at": "2026-11-02T06:24:45Z"
-            },
-            {
-                "name": "brave-buddy",
-                "full_name": "jellydn/brave-buddy",
-                "description": "Create a short, playful practice experience for children aged 6–12. Children learn to SEE → THINK → RESPOND → GET HELP in common social situations. The app uses only reviewed, human-authored scenarios.",
-                "url": "https://github.com/jellydn/brave-buddy",
-                "homepage": "http://brave-buddy.itman.fyi/",
-                "stars": 1,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [],
-                "updated_at": "2026-10-26T01:18:34Z"
-            },
-            {
-                "name": "mole-tui",
-                "full_name": "jellydn/mole-tui",
-                "description": "A keyboard-driven TUI that orchestrates Mole (mo) for disk cleanup.",
-                "url": "https://github.com/jellydn/mole-tui",
-                "homepage": "",
-                "stars": 1,
-                "forks": 0,
-                "language": "Go",
-                "topics": [],
-                "updated_at": "2026-10-26T01:14:42Z"
             },
             {
                 "name": "foldimals",
@@ -2004,7 +2016,69 @@
                     "pulumi",
                     "typescript"
                 ],
-                "updated_at": "2026-11-06T07:00:48Z"
+                "updated_at": "2026-11-09T05:40:19Z"
+            },
+            {
+                "name": "homebrew-tap",
+                "full_name": "jellydn/homebrew-tap",
+                "description": "Homebrew tap for jellydn packages",
+                "url": "https://github.com/jellydn/homebrew-tap",
+                "homepage": "",
+                "stars": 0,
+                "forks": 0,
+                "language": "Ruby",
+                "topics": [],
+                "updated_at": "2026-11-09T02:29:03Z"
+            },
+            {
+                "name": "signal-gate",
+                "full_name": "jellydn/signal-gate",
+                "description": "",
+                "url": "https://github.com/jellydn/signal-gate",
+                "homepage": "",
+                "stars": 0,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [],
+                "updated_at": "2026-11-09T01:08:20Z"
+            },
+            {
+                "name": "stay-awake",
+                "full_name": "jellydn/stay-awake",
+                "description": "Stay Awake - macOS system tray app to prevent system and display sleep",
+                "url": "https://github.com/jellydn/stay-awake",
+                "homepage": "",
+                "stars": 0,
+                "forks": 0,
+                "language": "Shell",
+                "topics": [],
+                "updated_at": "2026-11-09T01:06:24Z"
+            },
+            {
+                "name": "sellsnap",
+                "full_name": "jellydn/sellsnap",
+                "description": "Sell in a snap — the fastest way for creators to sell digital products online.",
+                "url": "https://github.com/jellydn/sellsnap",
+                "homepage": "https://store.itman.fyi",
+                "stars": 0,
+                "forks": 0,
+                "language": "TypeScript",
+                "topics": [],
+                "updated_at": "2026-11-09T01:06:01Z"
+            },
+            {
+                "name": "esp32-pomodoro-clock",
+                "full_name": "jellydn/esp32-pomodoro-clock",
+                "description": "Always-on NTP clock and touch-controlled Pomodoro firmware",
+                "url": "https://github.com/jellydn/esp32-pomodoro-clock",
+                "homepage": "",
+                "stars": 0,
+                "forks": 0,
+                "language": "C++",
+                "topics": [
+                    "esp32-s3"
+                ],
+                "updated_at": "2026-11-09T01:04:48Z"
             },
             {
                 "name": "echo-note",
@@ -2016,7 +2090,7 @@
                 "forks": 0,
                 "language": "Rust",
                 "topics": [],
-                "updated_at": "2026-11-05T09:39:38Z"
+                "updated_at": "2026-11-09T01:04:44Z"
             },
             {
                 "name": "awesome-bot",
@@ -2041,18 +2115,6 @@
                 "language": "Python",
                 "topics": [],
                 "updated_at": "2026-10-27T12:12:49Z"
-            },
-            {
-                "name": "sellsnap",
-                "full_name": "jellydn/sellsnap",
-                "description": "Sell in a snap — the fastest way for creators to sell digital products online.",
-                "url": "https://github.com/jellydn/sellsnap",
-                "homepage": "https://store.itman.fyi",
-                "stars": 0,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [],
-                "updated_at": "2026-10-27T07:10:00Z"
             },
             {
                 "name": "knulli-random-game-picker",
@@ -2104,30 +2166,6 @@
                 "language": "JavaScript",
                 "topics": [],
                 "updated_at": "2026-10-26T01:21:31Z"
-            },
-            {
-                "name": "stay-awake",
-                "full_name": "jellydn/stay-awake",
-                "description": "Stay Awake - macOS system tray app to prevent system and display sleep",
-                "url": "https://github.com/jellydn/stay-awake",
-                "homepage": "",
-                "stars": 0,
-                "forks": 0,
-                "language": "Shell",
-                "topics": [],
-                "updated_at": "2026-10-26T01:20:53Z"
-            },
-            {
-                "name": "signal-gate",
-                "full_name": "jellydn/signal-gate",
-                "description": "",
-                "url": "https://github.com/jellydn/signal-gate",
-                "homepage": "",
-                "stars": 0,
-                "forks": 0,
-                "language": "TypeScript",
-                "topics": [],
-                "updated_at": "2026-10-26T01:20:38Z"
             },
             {
                 "name": "shichida-memory-card",
@@ -2188,20 +2226,6 @@
                 "updated_at": "2026-10-26T01:17:56Z"
             },
             {
-                "name": "esp32-pomodoro-clock",
-                "full_name": "jellydn/esp32-pomodoro-clock",
-                "description": "Always-on NTP clock and touch-controlled Pomodoro firmware",
-                "url": "https://github.com/jellydn/esp32-pomodoro-clock",
-                "homepage": "",
-                "stars": 0,
-                "forks": 0,
-                "language": "C++",
-                "topics": [
-                    "esp32-s3"
-                ],
-                "updated_at": "2026-10-26T01:11:50Z"
-            },
-            {
                 "name": "deno-serverless-example",
                 "full_name": "jellydn/deno-serverless-example",
                 "description": "Begin app",
@@ -2236,18 +2260,6 @@
                 "language": "Go",
                 "topics": [],
                 "updated_at": "2026-10-13T15:07:20Z"
-            },
-            {
-                "name": "homebrew-tap",
-                "full_name": "jellydn/homebrew-tap",
-                "description": "Homebrew tap for jellydn packages",
-                "url": "https://github.com/jellydn/homebrew-tap",
-                "homepage": "",
-                "stars": 0,
-                "forks": 0,
-                "language": "Ruby",
-                "topics": [],
-                "updated_at": "2026-09-27T14:53:56Z"
             },
             {
                 "name": "playwright-mock-api",
@@ -3188,7 +3200,7 @@
                     "hurl",
                     "vscode-extension"
                 ],
-                "updated_at": "2026-11-04T01:20:19Z"
+                "updated_at": "2026-11-09T06:10:03Z"
             },
             {
                 "name": "vscode-like-pro",
@@ -3203,7 +3215,7 @@
                     "minimalist",
                     "vscode"
                 ],
-                "updated_at": "2026-10-26T01:21:02Z"
+                "updated_at": "2026-11-09T01:06:29Z"
             },
             {
                 "name": "vscode-seal-code",
@@ -3253,7 +3265,7 @@
                 "topics": [
                     "vscode-extension"
                 ],
-                "updated_at": "2026-11-02T06:00:57Z"
+                "updated_at": "2026-11-09T05:55:37Z"
             },
             {
                 "name": "vscode-fff-gpui",
@@ -3658,7 +3670,7 @@
                     "react",
                     "react-email"
                 ],
-                "updated_at": "2026-11-06T21:13:24Z"
+                "updated_at": "2026-11-09T05:39:55Z"
             },
             {
                 "name": "waku-rsc-async-demo",
@@ -3985,7 +3997,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-11-06T10:46:05Z"
+                "updated_at": "2026-11-09T05:50:37Z"
             },
             {
                 "name": "vite-react-jotai",
