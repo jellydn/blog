@@ -18,7 +18,7 @@
                     "open-code",
                     "skills"
                 ],
-                "updated_at": "2026-11-10T07:47:06Z"
+                "updated_at": "2026-11-10T13:17:07Z"
             },
             {
                 "name": "gpt4free-demo",
@@ -298,7 +298,7 @@
                     "llm",
                     "react-router"
                 ],
-                "updated_at": "2026-11-09T01:06:17Z"
+                "updated_at": "2026-11-11T09:17:54Z"
             },
             {
                 "name": "focus-flow-ios",
@@ -484,6 +484,22 @@
                 "updated_at": "2026-02-17T06:11:32Z"
             },
             {
+                "name": "eslint-fixer",
+                "full_name": "jellydn/eslint-fixer",
+                "description": "ESLint Fixer simplifies linting TypeScript files using @typescript-eslint/parser and @typescript-eslint/eslint-plugin. Enforce best practices and catch common errors efficiently until BiomeJs type-aware linting is available.",
+                "url": "https://github.com/jellydn/eslint-fixer",
+                "homepage": "",
+                "stars": 1,
+                "forks": 0,
+                "language": "JavaScript",
+                "topics": [
+                    "cli",
+                    "eslint",
+                    "typecheck"
+                ],
+                "updated_at": "2026-11-10T11:32:13Z"
+            },
+            {
                 "name": "gclean",
                 "full_name": "jellydn/gclean",
                 "description": "Gmail cleaner for desktop and terminal",
@@ -499,22 +515,6 @@
                     "gui"
                 ],
                 "updated_at": "2026-11-09T01:07:37Z"
-            },
-            {
-                "name": "eslint-fixer",
-                "full_name": "jellydn/eslint-fixer",
-                "description": "ESLint Fixer simplifies linting TypeScript files using @typescript-eslint/parser and @typescript-eslint/eslint-plugin. Enforce best practices and catch common errors efficiently until BiomeJs type-aware linting is available.",
-                "url": "https://github.com/jellydn/eslint-fixer",
-                "homepage": "",
-                "stars": 1,
-                "forks": 0,
-                "language": "JavaScript",
-                "topics": [
-                    "cli",
-                    "eslint",
-                    "typecheck"
-                ],
-                "updated_at": "2024-07-28T07:21:24Z"
             },
             {
                 "name": "devlog",
@@ -560,7 +560,7 @@
                 "description": "Your ultimate guide to setting up Zed with Vim mode, tailored settings, and key bindings for a seamless coding experience",
                 "url": "https://github.com/jellydn/zed-101-setup",
                 "homepage": "https://itman.fyi",
-                "stars": 1466,
+                "stars": 1467,
                 "forks": 30,
                 "language": "TypeScript",
                 "topics": [
@@ -568,7 +568,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-11-10T05:47:16Z"
+                "updated_at": "2026-11-11T04:15:51Z"
             },
             {
                 "name": "typescript-tips",
@@ -752,7 +752,7 @@
                     "moleculerjs",
                     "typescript"
                 ],
-                "updated_at": "2026-11-10T09:45:40Z"
+                "updated_at": "2026-11-11T10:00:57Z"
             },
             {
                 "name": "llama2-personal-ai",
@@ -786,6 +786,24 @@
                 "updated_at": "2026-10-22T20:42:57Z"
             },
             {
+                "name": "oak",
+                "full_name": "jellydn/oak",
+                "description": "Oak is a lightweight macOS focus companion app with notch-based Pomodoro-style focus sessions and ambient audio.",
+                "url": "https://github.com/jellydn/oak",
+                "homepage": "https://jellydn.github.io/oak/",
+                "stars": 12,
+                "forks": 0,
+                "language": "Swift",
+                "topics": [
+                    "macos",
+                    "pomodoro",
+                    "pomodoro-clock",
+                    "pomodoro-timer",
+                    "swift"
+                ],
+                "updated_at": "2026-11-11T09:18:50Z"
+            },
+            {
                 "name": "playwright-crawler-demo",
                 "full_name": "jellydn/playwright-crawler-demo",
                 "description": "This template is a production ready boilerplate for developing with `PlaywrightCrawler`. Use this to bootstrap your projects using the most up-to-date code.",
@@ -816,24 +834,6 @@
                     "uv"
                 ],
                 "updated_at": "2026-08-21T03:18:11Z"
-            },
-            {
-                "name": "oak",
-                "full_name": "jellydn/oak",
-                "description": "Oak is a lightweight macOS focus companion app with notch-based Pomodoro-style focus sessions and ambient audio.",
-                "url": "https://github.com/jellydn/oak",
-                "homepage": "https://jellydn.github.io/oak/",
-                "stars": 11,
-                "forks": 0,
-                "language": "Swift",
-                "topics": [
-                    "macos",
-                    "pomodoro",
-                    "pomodoro-clock",
-                    "pomodoro-timer",
-                    "swift"
-                ],
-                "updated_at": "2026-10-26T01:22:50Z"
             },
             {
                 "name": "github-action-locally",
@@ -1073,7 +1073,7 @@
                     "template",
                     "typescript"
                 ],
-                "updated_at": "2026-11-09T23:49:51Z"
+                "updated_at": "2026-11-11T05:39:09Z"
             },
             {
                 "name": "platformatic-starter",
@@ -1311,6 +1311,18 @@
                 "language": "TypeScript",
                 "topics": [],
                 "updated_at": "2025-08-11T02:28:22Z"
+            },
+            {
+                "name": "awesome-bot",
+                "full_name": "jellydn/awesome-bot",
+                "description": "Curated research on affordable, self-hostable autonomous AI assistants as alternatives to Grok Bot, prioritizing Slack, Gmail, GitHub, and Sentry.",
+                "url": "https://github.com/jellydn/awesome-bot",
+                "homepage": "",
+                "stars": 2,
+                "forks": 0,
+                "language": "",
+                "topics": [],
+                "updated_at": "2026-11-11T07:53:09Z"
             },
             {
                 "name": "little-writing",
@@ -1566,7 +1578,7 @@
                 "forks": 0,
                 "language": "Rust",
                 "topics": [],
-                "updated_at": "2026-11-10T08:23:50Z"
+                "updated_at": "2026-11-11T08:55:34Z"
             },
             {
                 "name": "practicepython",
@@ -2091,18 +2103,6 @@
                 "language": "Rust",
                 "topics": [],
                 "updated_at": "2026-11-09T01:04:44Z"
-            },
-            {
-                "name": "awesome-bot",
-                "full_name": "jellydn/awesome-bot",
-                "description": "Curated research on affordable, self-hostable autonomous AI assistants as alternatives to Grok Bot, prioritizing Slack, Gmail, GitHub, and Sentry.",
-                "url": "https://github.com/jellydn/awesome-bot",
-                "homepage": "",
-                "stars": 0,
-                "forks": 0,
-                "language": "",
-                "topics": [],
-                "updated_at": "2026-11-01T02:59:49Z"
             },
             {
                 "name": "try-win11",
@@ -3099,7 +3099,7 @@
                     "zellij",
                     "zsh"
                 ],
-                "updated_at": "2026-11-10T07:32:15Z"
+                "updated_at": "2026-11-11T03:40:59Z"
             },
             {
                 "name": "learn-vim-with-vscode",
@@ -3670,7 +3670,7 @@
                     "react",
                     "react-email"
                 ],
-                "updated_at": "2026-11-10T06:01:02Z"
+                "updated_at": "2026-11-11T01:13:18Z"
             },
             {
                 "name": "waku-rsc-async-demo",
@@ -3997,7 +3997,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-11-09T10:42:24Z"
+                "updated_at": "2026-11-10T10:39:09Z"
             },
             {
                 "name": "vite-react-jotai",
