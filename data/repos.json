@@ -18,7 +18,7 @@
                     "open-code",
                     "skills"
                 ],
-                "updated_at": "2026-11-10T13:17:07Z"
+                "updated_at": "2026-11-11T23:25:32Z"
             },
             {
                 "name": "gpt4free-demo",
@@ -371,7 +371,7 @@
                     "download-videos",
                     "twitter"
                 ],
-                "updated_at": "2026-11-10T01:49:29Z"
+                "updated_at": "2026-11-12T08:07:45Z"
             },
             {
                 "name": "pi-clinepass-provider",
@@ -402,7 +402,7 @@
                     "cspell",
                     "spell-check"
                 ],
-                "updated_at": "2026-11-10T01:52:56Z"
+                "updated_at": "2026-11-11T11:49:43Z"
             },
             {
                 "name": "biome-interactive",
@@ -560,7 +560,7 @@
                 "description": "Your ultimate guide to setting up Zed with Vim mode, tailored settings, and key bindings for a seamless coding experience",
                 "url": "https://github.com/jellydn/zed-101-setup",
                 "homepage": "https://itman.fyi",
-                "stars": 1467,
+                "stars": 1468,
                 "forks": 30,
                 "language": "TypeScript",
                 "topics": [
@@ -568,7 +568,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-11-11T04:15:51Z"
+                "updated_at": "2026-11-12T03:43:21Z"
             },
             {
                 "name": "typescript-tips",
@@ -752,7 +752,7 @@
                     "moleculerjs",
                     "typescript"
                 ],
-                "updated_at": "2026-11-11T10:00:57Z"
+                "updated_at": "2026-11-12T10:02:00Z"
             },
             {
                 "name": "llama2-personal-ai",
@@ -977,7 +977,7 @@
                     "websocket",
                     "ws"
                 ],
-                "updated_at": "2026-11-09T04:47:00Z"
+                "updated_at": "2026-11-12T01:52:16Z"
             },
             {
                 "name": "docklight",
@@ -1073,7 +1073,7 @@
                     "template",
                     "typescript"
                 ],
-                "updated_at": "2026-11-11T05:39:09Z"
+                "updated_at": "2026-11-12T03:48:43Z"
             },
             {
                 "name": "platformatic-starter",
@@ -1569,6 +1569,21 @@
                 "updated_at": "2022-06-22T10:27:12Z"
             },
             {
+                "name": "knulli-app-store",
+                "full_name": "jellydn/knulli-app-store",
+                "description": "Knulli App Store is a safe community package manager for Knulli utilities, themes, and integrations. It has a reviewable catalogue, a transactional installer, and a controller-only SDL2 interface.",
+                "url": "https://github.com/jellydn/knulli-app-store",
+                "homepage": "",
+                "stars": 1,
+                "forks": 0,
+                "language": "Go",
+                "topics": [
+                    "knulli",
+                    "knulli-theme"
+                ],
+                "updated_at": "2026-11-12T02:11:25Z"
+            },
+            {
                 "name": "folderlens",
                 "full_name": "jellydn/folderlens",
                 "description": "Review what a cleanup level would tick. Confirm does not delete.",
@@ -1578,7 +1593,7 @@
                 "forks": 0,
                 "language": "Rust",
                 "topics": [],
-                "updated_at": "2026-11-11T08:55:34Z"
+                "updated_at": "2026-11-12T01:57:44Z"
             },
             {
                 "name": "practicepython",
@@ -1617,21 +1632,6 @@
                 "language": "Go",
                 "topics": [],
                 "updated_at": "2026-11-09T01:05:21Z"
-            },
-            {
-                "name": "knulli-app-store",
-                "full_name": "jellydn/knulli-app-store",
-                "description": "Knulli App Store is a safe community package manager for Knulli utilities, themes, and integrations. It has a reviewable catalogue, a transactional installer, and a controller-only SDL2 interface.",
-                "url": "https://github.com/jellydn/knulli-app-store",
-                "homepage": "",
-                "stars": 1,
-                "forks": 0,
-                "language": "Go",
-                "topics": [
-                    "knulli",
-                    "knulli-theme"
-                ],
-                "updated_at": "2026-11-04T04:48:07Z"
             },
             {
                 "name": "foldimals",
@@ -2025,7 +2025,19 @@
                 "forks": 0,
                 "language": "Python",
                 "topics": [],
-                "updated_at": "2026-11-10T08:34:02Z"
+                "updated_at": "2026-11-12T04:40:36Z"
+            },
+            {
+                "name": "knulli-random-game-picker",
+                "full_name": "jellydn/knulli-random-game-picker",
+                "description": "",
+                "url": "https://github.com/jellydn/knulli-random-game-picker",
+                "homepage": "",
+                "stars": 0,
+                "forks": 0,
+                "language": "Go",
+                "topics": [],
+                "updated_at": "2026-11-12T01:55:37Z"
             },
             {
                 "name": "pulumi-kubernetes-typescript",
@@ -2115,18 +2127,6 @@
                 "language": "Python",
                 "topics": [],
                 "updated_at": "2026-10-27T12:12:49Z"
-            },
-            {
-                "name": "knulli-random-game-picker",
-                "full_name": "jellydn/knulli-random-game-picker",
-                "description": "",
-                "url": "https://github.com/jellydn/knulli-random-game-picker",
-                "homepage": "",
-                "stars": 0,
-                "forks": 0,
-                "language": "Go",
-                "topics": [],
-                "updated_at": "2026-10-27T01:52:39Z"
             },
             {
                 "name": "with-iron-session-app",
@@ -3997,7 +3997,7 @@
                     "blog",
                     "nextjs"
                 ],
-                "updated_at": "2026-11-10T10:39:09Z"
+                "updated_at": "2026-11-11T11:06:14Z"
             },
             {
                 "name": "vite-react-jotai",
