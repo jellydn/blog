@@ -560,7 +560,7 @@
                 "description": "Your ultimate guide to setting up Zed with Vim mode, tailored settings, and key bindings for a seamless coding experience",
                 "url": "https://github.com/jellydn/zed-101-setup",
                 "homepage": "https://itman.fyi",
-                "stars": 1469,
+                "stars": 1468,
                 "forks": 30,
                 "language": "TypeScript",
                 "topics": [
@@ -568,7 +568,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-11-13T03:10:38Z"
+                "updated_at": "2026-11-13T14:53:09Z"
             },
             {
                 "name": "typescript-tips",
@@ -825,7 +825,7 @@
                 "url": "https://github.com/jellydn/modern-python-2024-demo",
                 "homepage": "https://modern-python-demo.fly.dev/docs",
                 "stars": 12,
-                "forks": 2,
+                "forks": 1,
                 "language": "Python",
                 "topics": [
                     "python",
