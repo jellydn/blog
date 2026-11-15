@@ -252,7 +252,7 @@
                 "url": "https://github.com/jellydn/awesome-ai-agent-orchestrators",
                 "homepage": "",
                 "stars": 1,
-                "forks": 0,
+                "forks": 1,
                 "language": "",
                 "topics": [],
                 "updated_at": "2026-11-09T00:46:30Z"
@@ -917,6 +917,22 @@
                 "updated_at": "2026-08-21T03:18:10Z"
             },
             {
+                "name": "docklight",
+                "full_name": "jellydn/docklight",
+                "description": "A minimal, self-hosted web UI for managing a single-node Dokku server.",
+                "url": "https://github.com/jellydn/docklight",
+                "homepage": "https://docklight.itman.fyi/",
+                "stars": 6,
+                "forks": 2,
+                "language": "TypeScript",
+                "topics": [
+                    "dokku",
+                    "dokku-ui",
+                    "dokku-web"
+                ],
+                "updated_at": "2026-11-15T06:41:36Z"
+            },
+            {
                 "name": "bnb-testnet-auto-faucet",
                 "full_name": "jellydn/bnb-testnet-auto-faucet",
                 "description": "",
@@ -978,22 +994,6 @@
                     "ws"
                 ],
                 "updated_at": "2026-11-12T01:52:16Z"
-            },
-            {
-                "name": "docklight",
-                "full_name": "jellydn/docklight",
-                "description": "A minimal, self-hosted web UI for managing a single-node Dokku server.",
-                "url": "https://github.com/jellydn/docklight",
-                "homepage": "https://docklight.itman.fyi/",
-                "stars": 5,
-                "forks": 2,
-                "language": "TypeScript",
-                "topics": [
-                    "dokku",
-                    "dokku-ui",
-                    "dokku-web"
-                ],
-                "updated_at": "2026-11-09T01:04:40Z"
             },
             {
                 "name": "monorepo-starter",
@@ -2014,6 +2014,18 @@
                     "typescript"
                 ],
                 "updated_at": "2022-12-28T04:11:44Z"
+            },
+            {
+                "name": "awesome-coding-fonts",
+                "full_name": "jellydn/awesome-coding-fonts",
+                "description": "10 free monospaced Nerd Fonts",
+                "url": "https://github.com/jellydn/awesome-coding-fonts",
+                "homepage": "https://jellydn.github.io/awesome-coding-fonts/",
+                "stars": 0,
+                "forks": 0,
+                "language": "HTML",
+                "topics": [],
+                "updated_at": "2026-11-14T12:15:12Z"
             },
             {
                 "name": "homebrew-tap",
