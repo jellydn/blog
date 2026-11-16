@@ -560,7 +560,7 @@
                 "description": "Your ultimate guide to setting up Zed with Vim mode, tailored settings, and key bindings for a seamless coding experience",
                 "url": "https://github.com/jellydn/zed-101-setup",
                 "homepage": "https://itman.fyi",
-                "stars": 1468,
+                "stars": 1469,
                 "forks": 30,
                 "language": "TypeScript",
                 "topics": [
@@ -568,7 +568,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-11-13T14:53:09Z"
+                "updated_at": "2026-11-15T14:39:15Z"
             },
             {
                 "name": "typescript-tips",
@@ -3168,7 +3168,7 @@
                 "description": "A minimal, standalone Neovim 0.11+ terminal",
                 "url": "https://github.com/jellydn/tiny-term.nvim",
                 "homepage": "",
-                "stars": 7,
+                "stars": 8,
                 "forks": 0,
                 "language": "Lua",
                 "topics": [
@@ -3176,7 +3176,7 @@
                     "nvim-plugin",
                     "terminal"
                 ],
-                "updated_at": "2026-10-30T17:14:24Z"
+                "updated_at": "2026-11-16T09:44:26Z"
             },
             {
                 "name": "nvim-ide",
