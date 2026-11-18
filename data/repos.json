@@ -8,7 +8,7 @@
                 "description": "Comprehensive configuration management for AI coding tools - Replicate my complete setup for Claude Code, OpenCode, Amp, Li, Codex and Claude Code Switch with custom configurations, MCP servers, plugins, and commands.",
                 "url": "https://github.com/jellydn/my-ai-tools",
                 "homepage": "http://ai-tools.itman.fyi/",
-                "stars": 129,
+                "stars": 130,
                 "forks": 13,
                 "language": "Shell",
                 "topics": [
@@ -18,7 +18,7 @@
                     "open-code",
                     "skills"
                 ],
-                "updated_at": "2026-11-12T16:45:15Z"
+                "updated_at": "2026-11-18T05:42:12Z"
             },
             {
                 "name": "gpt4free-demo",
@@ -124,6 +124,18 @@
                     "open-source"
                 ],
                 "updated_at": "2026-11-10T07:44:48Z"
+            },
+            {
+                "name": "awesome-software-factories",
+                "full_name": "jellydn/awesome-software-factories",
+                "description": "A curated list of AI-powered software factories: systems that automate multiple stages of the software delivery lifecycle, from intake and planning through implementation, verification, review, and feedback.",
+                "url": "https://github.com/jellydn/awesome-software-factories",
+                "homepage": "",
+                "stars": 7,
+                "forks": 0,
+                "language": "",
+                "topics": [],
+                "updated_at": "2026-11-18T04:33:46Z"
             },
             {
                 "name": "summary-chatbot-demo",
@@ -1340,18 +1352,6 @@
                     "writting"
                 ],
                 "updated_at": "2026-11-09T01:10:17Z"
-            },
-            {
-                "name": "awesome-software-factories",
-                "full_name": "jellydn/awesome-software-factories",
-                "description": "",
-                "url": "https://github.com/jellydn/awesome-software-factories",
-                "homepage": "",
-                "stars": 2,
-                "forks": 0,
-                "language": "",
-                "topics": [],
-                "updated_at": "2026-11-09T00:54:53Z"
             },
             {
                 "name": "prosody",
