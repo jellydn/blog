@@ -391,14 +391,14 @@
                 "description": "ClinePass provider for pi — 12 curated coding models (GLM-5.3, Kimi K3, DeepSeek V4.1 Flash, Muse Spark 1.3 Contributor, Qwen3.8 Max, and more) through Cline's $9.99/month subscription with 2-5x the usage compared to standard API rates.",
                 "url": "https://github.com/jellydn/pi-clinepass-provider",
                 "homepage": "https://jellydn.github.io/pi-clinepass-provider/",
-                "stars": 18,
+                "stars": 19,
                 "forks": 9,
                 "language": "TypeScript",
                 "topics": [
                     "pi",
                     "pi-plugins"
                 ],
-                "updated_at": "2026-11-09T01:08:08Z"
+                "updated_at": "2026-11-19T12:06:26Z"
             },
             {
                 "name": "cspell-tool",
@@ -572,7 +572,7 @@
                 "description": "Your ultimate guide to setting up Zed with Vim mode, tailored settings, and key bindings for a seamless coding experience",
                 "url": "https://github.com/jellydn/zed-101-setup",
                 "homepage": "https://itman.fyi",
-                "stars": 1470,
+                "stars": 1469,
                 "forks": 30,
                 "language": "TypeScript",
                 "topics": [
@@ -580,7 +580,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-11-17T02:02:58Z"
+                "updated_at": "2026-11-19T23:16:55Z"
             },
             {
                 "name": "typescript-tips",
@@ -588,7 +588,7 @@
                 "description": "A curated list of awesome 🔥 TypeScript Tips 🔥",
                 "url": "https://github.com/jellydn/typescript-tips",
                 "homepage": "https://jellydn.github.io/typescript-tips/",
-                "stars": 442,
+                "stars": 441,
                 "forks": 86,
                 "language": "",
                 "topics": [
@@ -597,7 +597,7 @@
                     "tips-and-tricks",
                     "typescript"
                 ],
-                "updated_at": "2026-11-10T09:44:28Z"
+                "updated_at": "2026-11-19T22:44:49Z"
             },
             {
                 "name": "awesome-typesafe",
@@ -3322,7 +3322,7 @@
                 "description": "This package reads your JSDoc-annotated source code on NextJS API route and generates an OpenAPI (Swagger) specification.",
                 "url": "https://github.com/jellydn/next-swagger-doc",
                 "homepage": "https://next-swagger-doc-demo.productsway.com/api-doc",
-                "stars": 522,
+                "stars": 521,
                 "forks": 37,
                 "language": "TypeScript",
                 "topics": [
@@ -3332,7 +3332,7 @@
                     "nextjs",
                     "swagger"
                 ],
-                "updated_at": "2026-11-16T20:05:40Z"
+                "updated_at": "2026-11-19T22:12:40Z"
             },
             {
                 "name": "dapp-starter",
@@ -3340,7 +3340,7 @@
                 "description": "Opinionated Dapp Starter Template provides a solid foundation for building Ethereum-based applications. It incorporates various tools and frameworks such as React, Next.js, Hardhat, TypeChain, web3-react, daisyUI Tailwind CSS Components, and OpenZeppelin.",
                 "url": "https://github.com/jellydn/dapp-starter",
                 "homepage": "https://dapp-starter.productsway.com/",
-                "stars": 328,
+                "stars": 327,
                 "forks": 79,
                 "language": "TypeScript",
                 "topics": [
@@ -3357,7 +3357,7 @@
                     "web3",
                     "web3-react"
                 ],
-                "updated_at": "2026-11-10T09:53:58Z"
+                "updated_at": "2026-11-19T22:18:57Z"
             },
             {
                 "name": "next-app-starter",
@@ -3748,7 +3748,7 @@
                 "url": "https://github.com/jellydn/lens-demo-app",
                 "homepage": "https://lens-app.productsway.com",
                 "stars": 3,
-                "forks": 3,
+                "forks": 2,
                 "language": "TypeScript",
                 "topics": [
                     "ethersjs",
