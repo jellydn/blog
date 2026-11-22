@@ -1325,6 +1325,20 @@
                 "updated_at": "2025-08-11T02:28:22Z"
             },
             {
+                "name": "tiny-local-ai",
+                "full_name": "jellydn/tiny-local-ai",
+                "description": "A beginner handbook for running AI on your own computer",
+                "url": "https://github.com/jellydn/tiny-local-ai",
+                "homepage": "https://jellydn.github.io/tiny-local-ai/",
+                "stars": 2,
+                "forks": 0,
+                "language": "Shell",
+                "topics": [
+                    "local-a"
+                ],
+                "updated_at": "2026-11-22T02:41:58Z"
+            },
+            {
                 "name": "awesome-bot",
                 "full_name": "jellydn/awesome-bot",
                 "description": "Curated research on affordable, self-hostable autonomous AI assistants as alternatives to Grok Bot, prioritizing Slack, Gmail, GitHub, and Sentry.",
@@ -1952,18 +1966,6 @@
                 "language": "JavaScript",
                 "topics": [],
                 "updated_at": "2026-08-02T07:22:42Z"
-            },
-            {
-                "name": "tiny-local-ai",
-                "full_name": "jellydn/tiny-local-ai",
-                "description": "Run local LLM on MacBook A, access from MacBook B over LAN",
-                "url": "https://github.com/jellydn/tiny-local-ai",
-                "homepage": "",
-                "stars": 1,
-                "forks": 0,
-                "language": "Python",
-                "topics": [],
-                "updated_at": "2026-06-16T14:58:53Z"
             },
             {
                 "name": "resume-latex",
