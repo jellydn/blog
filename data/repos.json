@@ -131,11 +131,11 @@
                 "description": "A curated list of AI-powered software factories: systems that automate multiple stages of the software delivery lifecycle, from intake and planning through implementation, verification, review, and feedback.",
                 "url": "https://github.com/jellydn/awesome-software-factories",
                 "homepage": "",
-                "stars": 7,
+                "stars": 8,
                 "forks": 0,
                 "language": "",
                 "topics": [],
-                "updated_at": "2026-11-18T04:33:46Z"
+                "updated_at": "2026-11-22T13:49:37Z"
             },
             {
                 "name": "summary-chatbot-demo",
@@ -205,7 +205,7 @@
                 "url": "https://github.com/jellydn/logpilot",
                 "homepage": "",
                 "stars": 2,
-                "forks": 1,
+                "forks": 2,
                 "language": "Rust",
                 "topics": [
                     "ai-tools",
@@ -853,14 +853,14 @@
                 "description": "How to run GitHub Action locally with act.",
                 "url": "https://github.com/jellydn/github-action-locally",
                 "homepage": "",
-                "stars": 9,
+                "stars": 8,
                 "forks": 1,
                 "language": "TypeScript",
                 "topics": [
                     "act",
                     "github-actions"
                 ],
-                "updated_at": "2026-08-21T03:26:08Z"
+                "updated_at": "2026-11-23T11:29:58Z"
             },
             {
                 "name": "learn-tdd-with-katas",
@@ -1169,6 +1169,20 @@
                 "updated_at": "2026-08-21T03:17:54Z"
             },
             {
+                "name": "tiny-local-ai",
+                "full_name": "jellydn/tiny-local-ai",
+                "description": "A beginner handbook for running AI on your own computer",
+                "url": "https://github.com/jellydn/tiny-local-ai",
+                "homepage": "https://jellydn.github.io/tiny-local-ai/",
+                "stars": 3,
+                "forks": 0,
+                "language": "Shell",
+                "topics": [
+                    "local-a"
+                ],
+                "updated_at": "2026-11-22T14:22:07Z"
+            },
+            {
                 "name": "nestjs-7day-journey",
                 "full_name": "jellydn/nestjs-7day-journey",
                 "description": "NestJourney: Embark on a 7-day journey through the realm of Nest.js. This journey is designed for experienced developers looking to boost their Node.js skills with Nest.js.",
@@ -1323,20 +1337,6 @@
                 "language": "TypeScript",
                 "topics": [],
                 "updated_at": "2025-08-11T02:28:22Z"
-            },
-            {
-                "name": "tiny-local-ai",
-                "full_name": "jellydn/tiny-local-ai",
-                "description": "A beginner handbook for running AI on your own computer",
-                "url": "https://github.com/jellydn/tiny-local-ai",
-                "homepage": "https://jellydn.github.io/tiny-local-ai/",
-                "stars": 2,
-                "forks": 0,
-                "language": "Shell",
-                "topics": [
-                    "local-a"
-                ],
-                "updated_at": "2026-11-22T02:41:58Z"
             },
             {
                 "name": "awesome-bot",
@@ -1581,6 +1581,24 @@
                     "remix-stack"
                 ],
                 "updated_at": "2022-06-22T10:27:12Z"
+            },
+            {
+                "name": "retone",
+                "full_name": "jellydn/retone",
+                "description": "Retone rewrites the text you select in any macOS app. Press your own hotkey, pick a style, and replace the text in place — with a local model or your own AI CLI. ",
+                "url": "https://github.com/jellydn/retone",
+                "homepage": "",
+                "stars": 1,
+                "forks": 0,
+                "language": "Rust",
+                "topics": [
+                    "local-ai",
+                    "local-llm",
+                    "rune",
+                    "writing-tool",
+                    "writting"
+                ],
+                "updated_at": "2026-11-22T15:44:25Z"
             },
             {
                 "name": "knulli-app-store",
@@ -2018,22 +2036,16 @@
                 "updated_at": "2022-12-28T04:11:44Z"
             },
             {
-                "name": "retone",
-                "full_name": "jellydn/retone",
-                "description": "Retone rewrites the text you select in any macOS app. Press your own hotkey, pick a style, and replace the text in place — with a local model or your own AI CLI. ",
-                "url": "https://github.com/jellydn/retone",
+                "name": "cadivo",
+                "full_name": "jellydn/cadivo",
+                "description": "",
+                "url": "https://github.com/jellydn/cadivo",
                 "homepage": "",
                 "stars": 0,
                 "forks": 0,
-                "language": "Rust",
-                "topics": [
-                    "local-ai",
-                    "local-llm",
-                    "rune",
-                    "writing-tool",
-                    "writting"
-                ],
-                "updated_at": "2026-11-21T07:24:40Z"
+                "language": "Swift",
+                "topics": [],
+                "updated_at": "2026-11-23T10:33:00Z"
             },
             {
                 "name": "awesome-coding-fonts",
@@ -3079,7 +3091,7 @@
                 "description": "A simple and efficient code runner for Neovim.",
                 "url": "https://github.com/jellydn/quick-code-runner.nvim",
                 "homepage": "",
-                "stars": 24,
+                "stars": 25,
                 "forks": 0,
                 "language": "Lua",
                 "topics": [
@@ -3088,7 +3100,7 @@
                     "neovim",
                     "neovim-plugin"
                 ],
-                "updated_at": "2026-10-02T18:45:35Z"
+                "updated_at": "2026-11-22T15:37:52Z"
             },
             {
                 "name": "spinner.nvim",
