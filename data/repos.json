@@ -205,7 +205,7 @@
                 "url": "https://github.com/jellydn/logpilot",
                 "homepage": "",
                 "stars": 2,
-                "forks": 2,
+                "forks": 1,
                 "language": "Rust",
                 "topics": [
                     "ai-tools",
@@ -572,7 +572,7 @@
                 "description": "Your ultimate guide to setting up Zed with Vim mode, tailored settings, and key bindings for a seamless coding experience",
                 "url": "https://github.com/jellydn/zed-101-setup",
                 "homepage": "https://itman.fyi",
-                "stars": 1469,
+                "stars": 1470,
                 "forks": 30,
                 "language": "TypeScript",
                 "topics": [
@@ -580,7 +580,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-11-20T12:11:48Z"
+                "updated_at": "2026-11-24T11:50:52Z"
             },
             {
                 "name": "typescript-tips",
@@ -606,7 +606,7 @@
                 "url": "https://github.com/jellydn/awesome-typesafe",
                 "homepage": "http://typesafe.itman.fyi/",
                 "stars": 201,
-                "forks": 27,
+                "forks": 28,
                 "language": "",
                 "topics": [
                     "awesome",
@@ -3012,7 +3012,7 @@
                 "description": "Slim Neovim config for 0.11+ with minimal plugins.",
                 "url": "https://github.com/jellydn/tiny-nvim",
                 "homepage": "https://itman.fyi",
-                "stars": 53,
+                "stars": 52,
                 "forks": 6,
                 "language": "Lua",
                 "topics": [
@@ -3020,7 +3020,7 @@
                     "neovim",
                     "nvim-config"
                 ],
-                "updated_at": "2026-11-10T06:49:42Z"
+                "updated_at": "2026-11-23T18:28:50Z"
             },
             {
                 "name": "ts-inlay-hints",
