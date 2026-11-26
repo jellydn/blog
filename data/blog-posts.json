@@ -1,5 +1,13 @@
 [
     {
+        "slug": "power-up-9-build-a-personal-ai-coding-cloud-on-your-mac",
+        "title": "Power-Up #9: Build a Personal AI Coding Cloud on Your Mac",
+        "description": "With Amp, Claude Model Routing and smolvm, we can build a personal AI coding environment using hardware and subscriptions we already have.",
+        "date": "2026-11-26T03:55:39.285Z",
+        "tags": [],
+        "hero_image": "https://cdn.hashnode.com/uploads/covers/56ee654dbcca2d711e191e2a/2c0abe78-63d2-4c47-aaa2-c84f918ffe3e.png"
+    },
+    {
         "slug": "looking-for-a-grok-bot-alternative",
         "title": "Looking for a Grok Bot Alternative",
         "description": "4 Open Source AI Bots I Tried (and 1 I'm Watching)",
