@@ -580,7 +580,7 @@
                     "hacktoberfest",
                     "zed"
                 ],
-                "updated_at": "2026-11-27T05:59:27Z"
+                "updated_at": "2026-11-27T22:12:47Z"
             },
             {
                 "name": "typescript-tips",
@@ -1587,7 +1587,7 @@
                 "full_name": "jellydn/retone",
                 "description": "Retone rewrites the text you select in any macOS app. Press your own hotkey, pick a style, and replace the text in place — with a local model or your own AI CLI. ",
                 "url": "https://github.com/jellydn/retone",
-                "homepage": "",
+                "homepage": "https://jellydn.github.io/retone/",
                 "stars": 1,
                 "forks": 0,
                 "language": "Rust",
@@ -1598,7 +1598,7 @@
                     "writing-tool",
                     "writting"
                 ],
-                "updated_at": "2026-11-22T15:44:25Z"
+                "updated_at": "2026-11-27T12:40:20Z"
             },
             {
                 "name": "knulli-app-store",
